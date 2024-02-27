@@ -50,6 +50,7 @@ members = [
 # tidy-alphabetical-end
 ]
 
+<<<<<<< HEAD
 exclude = [
   "build",
   "compiler/rustc_codegen_cranelift",
@@ -120,3 +121,15 @@ codegen-units = 1
 # If you want to use a crate with local modifications, you can set a path or git dependency here.
 # For git dependencies, also add your source to ALLOWED_SOURCES in src/tools/tidy/src/extdeps.rs.
 #[patch.crates-io]
+=======
+[lib]
+name        = "rust"
+version = "0.1.0"
+authors= ["rust"]
+path = "library/std/src/lib.rs"
+# include = ["build.rs",
+# "src/**/*",
+# "compiler/**/*",
+# "library/**/*",
+# "test/**/*", "LICENSE", "README.md", "CHANGELOG.md"]
+>>>>>>> 6c9c15a439e (update)
