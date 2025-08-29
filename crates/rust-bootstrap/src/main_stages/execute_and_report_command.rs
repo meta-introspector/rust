@@ -5,7 +5,7 @@ use std::string::String;
 
 pub fn execute_and_report_command(
     stage0: &Stage0,
-) -> Result<command_executor::CommandExecutionResult, Box<dyn Error>> {
+) -> Result<command_executor::timed_execute::CommandExecutionResult, Box<dyn Error>> {
     println!("Before running cargo --version (via sh -c)..."); // Trace 1
 
     let command_str = format!("{} --version", stage0.cargo.to_string_lossy());

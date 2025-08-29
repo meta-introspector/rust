@@ -1,15 +1,14 @@
 mod config;
 mod parquet_reporter;
-mod bootstrap_stages;
-mod main_stages;
 mod git_analyzer;
 mod build_state;
-
+mod command_executor;
+mod bootstrap_stages;
 use crate::config::args::Args;
 use crate::config::loader::load_config;
 use clap::Parser;
 use std::path::Path;
-use crate::bootstrap_stages::command_executor::execute_shell_command;
+use crate::command_executor::shell;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args = Args::parse();
