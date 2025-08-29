@@ -7,6 +7,8 @@ pub mod bootstrap_stages;
 pub mod trace_events;
 pub mod tracer;
 pub mod parquet_trace_reporter;
+pub mod builder;
+pub mod cargo_integration;
 
 pub use config::args::Args;
 pub use bootstrap_stages::config_loader as loader;

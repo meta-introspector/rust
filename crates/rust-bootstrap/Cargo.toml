@@ -29,3 +29,7 @@ xz2 = "0.1"
 tempfile = "3.20.0"
 chrono = { version = "0.4", features = ["serde"] }
 once_cell = "1.19"
+cargo = { path = "../../../mcp/monomcp/vendor/cargo-rust-lang" }
+tracing-core = { path = "../../../mcp/monomcp/vendor/tracing-vendor/tracing/tracing-core" }
+tracing = { path = "../../../mcp/monomcp/vendor/tracing-vendor/tracing-0.1.41/tracing" }
+syscall_instrumentation_macro = { path = "../syscall_instrumentation_macro" }

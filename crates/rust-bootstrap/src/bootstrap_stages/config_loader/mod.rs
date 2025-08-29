@@ -9,6 +9,14 @@ pub struct BuildConfig {
     pub download_ci_llvm: bool,
     #[serde(default = "default_false", rename = "patch-binaries-for-nix")]
     pub patch_binaries_for_nix: bool,
+    #[serde(default)]
+    pub deny_warnings: Option<bool>,
+    #[serde(default = "default_false", rename = "locked-deps")]
+    pub use_locked_deps: bool,
+    #[serde(default = "default_false", rename = "vendor")]
+    pub use_vendored_sources: bool,
+    #[serde(default = "default_false")]
+    pub metrics: bool,
 }
 
 fn default_false() -> bool {
