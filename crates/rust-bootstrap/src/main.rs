@@ -1,85 +1,22 @@
-use clap::Parser;
-use serde::Deserialize;
-use std::fs;
-use std::env;
-use std::process::Command;
-use std::path::PathBuf; // Import PathBuf
+mod parquet_reporter;
+mod bootstrap_stages;
+mod main_stages;
+mod git_analyzer;
 
-#[derive(Parser, Debug)]
-#[command(author, version, about, long_about = None)]
-struct Args {
-    /// Turn debugging information on
-    #[arg(short, long, action = clap::ArgAction::Count)]
-    verbose: u8,
-}
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let args = main_stages::parse_and_handle_cli_args::parse_and_handle_cli_args();
 
-#[derive(Debug, Deserialize, Default)]
-struct BuildConfig {
-    #[serde(default = "default_false")]
-    download_ci_rustc: bool,
-    #[serde(default = "default_false")]
-    download_ci_llvm: bool,
-}
+    let _config = main_stages::load_and_print_config::load_and_print_config(&args)?;
 
-fn default_false() -> bool {
-    false
-}
+    let stage0 = main_stages::detect_and_setup_stage0::detect_and_setup_stage0();
 
-#[derive(Debug, Deserialize)]
-struct Config {
-    #[serde(default)]
-    build: BuildConfig,
-}
+    let command_result = main_stages::execute_and_report_command::execute_and_report_command(&stage0)?;
 
-// New struct to represent our Stage0 compiler
-#[derive(Debug)]
-struct Stage0 {
-    rustc: PathBuf,
-    cargo: PathBuf,
-}
+    main_stages::process_build_metrics::process_build_metrics(command_result)?;
 
-impl Stage0 {
-    fn detect() -> Self {
-        let rustc_path = env::var_os("RUSTC")
-            .unwrap_or_else(|| "/data/data/com.termux/files/usr/bin/rustc".into());
-        let cargo_path = env::var_os("CARGO")
-            .unwrap_or_else(|| "/data/data/com.termux/files/usr/bin/cargo".into());
+    // Initiate Git analysis
+    crate::git_analyzer::analyze_git_repository("/data/data/com.termux/files/home/storage/github/rust")?;
 
-        Stage0 {
-            rustc: PathBuf::from(rustc_path),
-            cargo: PathBuf::from(cargo_path),
-        }
-    }
-}
-
-fn main() {
-    let args = Args::parse();
-
-    if args.verbose > 0 {
-        println!("Verbose mode is on!");
-    }
-
-    let config_path = "/data/data/com.termux/files/home/storage/github/rust/config.toml";
-    let config_content = fs::read_to_string(config_path)
-        .expect("Could not read config.toml");
-    let config: Config = toml::from_str(&config_content)
-        .expect("Could not parse config.toml");
-
-    println!("Config: {:?}\n", config);
-
-    let stage0 = Stage0::detect();
-    println!("Detected Stage0: {:?}\n", stage0);
-
-    // Run cargo --version using the detected stage0 cargo
-    println!("Running cargo --version using detected Stage0 cargo:");
-    let output = Command::new(&stage0.cargo) // Use stage0.cargo
-        .arg("--version")
-        .output()
-        .expect("Failed to execute cargo command");
-
-    println!("Status: {}", output.status);
-    println!("Stdout: {}", String::from_utf8_lossy(&output.stdout));
-    eprintln!("Stderr: {}", String::from_utf8_lossy(&output.stderr));
-
-    println!("Hello from rust-bootstrap!");
+    main_stages::print_final_message::print_final_message();
+    Ok(())
 }
