@@ -19,11 +19,15 @@ We are actively migrating the functionality of the Python-based `x.py` and `boot
 
 -   **Argument Parsing:** Command-line arguments previously handled by `x.py` are now parsed using `clap` in Rust.
 -   **Configuration Loading:** Build configurations from `bootstrap.toml` or `config.toml` are now loaded and deserialized using `toml` and `serde` in Rust.
+-   **Git Analysis:** The tool can now analyze a Git repository and extract commits, blobs, trees, tags, and refs.
+-   **Parquet Reporting:** The extracted Git data is stored in Parquet files for efficient storage and analysis. The tool also generates a build configuration report in Parquet format.
+-   **Command Execution Metrics:** The tool now captures and reports command execution times, providing insights into build performance.
 
 ### Next Steps:
 
 -   **Parquet Report Generation:** Generate a comprehensive Parquet report detailing all available command-line arguments and configuration options.
 -   **Refactoring Duplicate Code:** Address identified duplicate code, specifically in `src/bootstrap_stages/command_executor` and `src/main_stages/command_executor`, to ensure a clean and efficient codebase.
+-   **Complete `x.py` Migration:** Continue migrating the remaining functionality from `x.py` and `bootstrap.py` to the `rust-bootstrap` crate.
 
 ## Usage
 
