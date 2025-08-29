@@ -15,7 +15,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     main_stages::process_build_metrics::process_build_metrics(command_result)?;
 
     // Initiate Git analysis
-    crate::git_analyzer::analyze_git_repository("/data/data/com.termux/files/home/storage/github/rust")?;
+    crate::git_analyzer::analyze_git_repository(&args.repo_path)?;
 
     main_stages::print_final_message::print_final_message();
     Ok(())
