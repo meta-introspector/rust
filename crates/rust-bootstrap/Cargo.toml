@@ -3,6 +3,13 @@ name = "rust-bootstrap"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "git-analyzer-cli"
+path = "src/bin/git_analyzer_cli.rs"
+
 [dependencies]
 clap = { version = "4", features = ["derive"] }
 serde = { version = "1", features = ["derive"] }
@@ -20,3 +27,5 @@ tar = "0.4"
 flate2 = "1.0"
 xz2 = "0.1"
 tempfile = "3.20.0"
+chrono = { version = "0.4", features = ["serde"] }
+once_cell = "1.19"
