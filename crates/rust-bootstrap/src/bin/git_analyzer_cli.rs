@@ -16,12 +16,12 @@ fn main() -> Result<(), Box<dyn Error>> {
     std::env::set_current_dir(&PathBuf::from(repo_path.clone()))?;
 
     let git_analysis_result = get_all_commits(&git2::Repository::open(&repo_path)?)?;
-    crate::parquet_reporter::write_record_batch_to_parquet(git_analysis_result.record_batch, "git_commits.parquet")?;
-    write_errata_to_parquet(git_analysis_result.errata, "git_errata.parquet")?;
+        rust_bootstrap::parquet_reporter::write_record_batch_to_parquet(git_analysis_result.record_batch.clone(), "git_commits.parquet")?; // Write record_batch
+        write_errata_to_parquet(git_analysis_result.errata.clone(), "git_errata.parquet")?; // Write errata
 
-    let git_analysis_summary = crate::git_analyzer::analysis::analyze_git_repository::analyze_git_repository(&git2::Repository::open(&repo_path)?, git_analysis_result, "git_commits.parquet".to_string())?;
-    crate::parquet_reporter::write_git_analysis_summary_to_parquet(git_analysis_summary, "git_analysis_summary.parquet")?;
-    crate::parquet_reporter::read_and_summarize_git_analysis_metrics("git_analysis_summary.parquet")?;
+    let git_analysis_summary = rust_bootstrap::git_analyzer::analysis::analyze_git_repository(&git2::Repository::open(&repo_path)?, git_analysis_result, "git_commits.parquet".to_string())?;
+    rust_bootstrap::parquet_reporter::write_git_analysis_summary_to_parquet(git_analysis_summary, "git_analysis_summary.parquet")?;
+    rust_bootstrap::parquet_reporter::read_and_summarize_git_analysis_metrics("git_analysis_summary.parquet")?;
 
     println!("Git analysis and reporting complete.");
 

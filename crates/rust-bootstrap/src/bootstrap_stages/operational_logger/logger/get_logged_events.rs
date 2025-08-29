@@ -1,6 +1,7 @@
 use super::log_entry::LOG_ENTRIES;
 use crate::bootstrap_stages::operational_logger::schemas::bootstrap_operational_log_schema;
-use arrow_array::{RecordBatch, StringArray, TimestampNanosecondArray, UInt64Array};
+use arrow_array::{RecordBatch, StringArray, TimestampNanosecondArray, UInt64Array, Array}; // Added Array
+use arrow_data::ArrayData; // Added ArrayData
 use std::sync::Arc;
 
 pub fn get_logged_events_as_record_batch() -> Result<RecordBatch, Box<dyn std::error::Error>> {
@@ -31,7 +32,14 @@ pub fn get_logged_events_as_record_batch() -> Result<RecordBatch, Box<dyn std::e
     let record_batch = RecordBatch::try_new(
         schema.clone(),
         vec![
-            Arc::new(TimestampNanosecondArray::from(timestamps)),
+            Arc::new(TimestampNanosecondArray::from(
+                ArrayData::builder(
+                    schema.field_with_name("timestamp")?.data_type().clone()
+                )
+                .len(timestamps.len())
+                .add_buffer(arrow_array::PrimitiveArray::<arrow_array::types::TimestampNanosecondType>::from(timestamps).to_data().buffers()[0].clone())
+                .build()?,
+            )),
             Arc::new(StringArray::from(event_types)),
             Arc::new(StringArray::from(modules)),
             Arc::new(StringArray::from(functions)),
