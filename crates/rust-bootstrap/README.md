@@ -11,6 +11,20 @@ The primary goals of `rust-bootstrap` are:
 -   **Build Metrics Reporting:** Capture and report detailed metrics about the build process, including command execution times, to identify performance bottlenecks and improve build efficiency.
 -   **Extreme Modularity:** Adhere to an "one function per file per basic block" modularity principle, enhancing maintainability, testability, and future extensibility.
 
+## Current Status: `x.py` Migration in Progress
+
+We are actively migrating the functionality of the Python-based `x.py` and `bootstrap.py` scripts into this Rust crate. The first major step in this migration is the implementation of argument parsing and configuration loading, which is now complete.
+
+### Implemented Features:
+
+-   **Argument Parsing:** Command-line arguments previously handled by `x.py` are now parsed using `clap` in Rust.
+-   **Configuration Loading:** Build configurations from `bootstrap.toml` or `config.toml` are now loaded and deserialized using `toml` and `serde` in Rust.
+
+### Next Steps:
+
+-   **Parquet Report Generation:** Generate a comprehensive Parquet report detailing all available command-line arguments and configuration options.
+-   **Refactoring Duplicate Code:** Address identified duplicate code, specifically in `src/bootstrap_stages/command_executor` and `src/main_stages/command_executor`, to ensure a clean and efficient codebase.
+
 ## Usage
 
 To run `rust-bootstrap`, navigate to the root of the Rust project and execute:
