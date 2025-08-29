@@ -52,6 +52,10 @@ For detailed development documentation, including project goals, architecture, d
 
 All major development phases and features for `rust-bootstrap` are managed through Change Request (CRQ) documents, located in the `docs/crqs/` directory.
 
+### Git Analysis CLI Tool
+
+As part of the `rust-bootstrap` initiative, a new command-line interface tool, `git-analyzer-cli`, has been developed. This tool allows for independent analysis of Git repositories, extracting detailed information about commits, blobs, trees, tags, and references, and storing this data in Parquet files for further analysis and metrics. It also includes robust error handling for missing Git objects, logging them to a separate errata file.
+
 ## Getting Help
 
 See https://www.rust-lang.org/community for a list of chat platforms and forums.
