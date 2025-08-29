@@ -5,8 +5,16 @@ use std::sync::Arc;
 use crate::git_analyzer::schemas::git_commits_schema;
 use arrow_array::Array; // Import Array trait
 use arrow_data::ArrayData; // Import ArrayData
+use crate::tracer::record_trace_event;
+use crate::git_analyzer::errata::GitErrata;
 
-pub fn get_all_commits(repo: &Repository) -> Result<RecordBatch, Box<dyn std::error::Error>> {
+pub struct GitAnalysisResult {
+    pub record_batch: RecordBatch,
+    pub errata: Vec<GitErrata>,
+}
+
+pub fn get_all_commits(repo: &Repository) -> Result<GitAnalysisResult, Box<dyn std::error::Error>> {
+    record_trace_event("GitExtractor", "Starting commit extraction", None);
     let mut commit_hashes = Vec::new();
     let mut author_names = Vec::new();
     let mut author_emails = Vec::new();
@@ -15,13 +23,27 @@ pub fn get_all_commits(repo: &Repository) -> Result<RecordBatch, Box<dyn std::er
     let mut commit_times = Vec::new();
     let mut messages = Vec::new();
     let mut parent_hashes_list = Vec::new(); // For ListArray builder
+    let mut errata_list: Vec<GitErrata> = Vec::new(); // Collect errata here
 
     let mut revwalk = repo.revwalk()?;
+    record_trace_event("GitExtractor", "Initialized revwalk", None);
     revwalk.push_head()?;
 
     for oid in revwalk {
         let oid = oid?;
-        let commit = repo.find_commit(oid)?;
+        record_trace_event("GitExtractor", "Processing OID", Some(&format!("oid: {}", oid)));
+        let commit_result = repo.find_commit(oid);
+        let commit = match commit_result {
+            Ok(c) => {
+                record_trace_event("GitExtractor", "Found commit", Some(&format!("oid: {}", oid)));
+                c
+            },
+            Err(e) => {
+                record_trace_event("GitExtractor", "Failed to find commit", Some(&format!("oid: {}, error: {}", oid, e)));
+                errata_list.push(GitErrata::new(oid.to_string(), e.to_string()));
+                continue; // Skip this OID and continue with the next one
+            }
+        };
 
         commit_hashes.push(commit.id().to_string());
         author_names.push(commit.author().name().unwrap_or("").to_string());
@@ -81,6 +103,7 @@ pub fn get_all_commits(repo: &Repository) -> Result<RecordBatch, Box<dyn std::er
     )?;
 
     println!("Actual RecordBatch Schema: {:#?}", record_batch.schema());
+    record_trace_event("GitExtractor", "Finished commit extraction", Some(&format!("extracted_count: {}", record_batch.num_rows())));
 
-    Ok(record_batch)
+    Ok(GitAnalysisResult { record_batch, errata: errata_list })
 }

@@ -10,6 +10,7 @@ pub mod print_total_records;
 pub mod get_record_batch_reader;
 pub mod process_record_batches;
 pub mod print_summary_footer;
+pub mod errata_reporter;
 use arrow_array::{RecordBatch, UInt64Array, StringArray, BooleanArray};
 use std::sync::Arc;
 use crate::build_state::BuildState;

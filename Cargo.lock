@@ -756,8 +756,10 @@ checksum = "c469d952047f47f91b68d1cba3f10d63c11d73e4636f24f08daf0278abf01c4d"
 dependencies = [
  "android-tzdata",
  "iana-time-zone",
+ "js-sys",
  "num-traits",
  "serde",
+ "wasm-bindgen",
  "windows-link",
 ]
 
@@ -3975,10 +3977,12 @@ dependencies = [
  "arrow-array",
  "arrow-data",
  "arrow-schema",
+ "chrono",
  "clap",
  "flate2",
  "git2",
  "lazy_static",
+ "once_cell",
  "parquet",
  "reqwest",
  "serde",
