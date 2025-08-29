@@ -28,4 +28,8 @@ pub struct Args {
 
     #[arg(short, long, action = clap::ArgAction::Count)]
     pub verbose: u8,
+
+    /// Path to the Git repository to analyze
+    #[arg(long)]
+    pub repo_path: Option<String>,
 }
