@@ -1,4 +1,4 @@
-use rust_bootstrap::{Args, BuildState, loader, parquet_reporter, bootstrap_stages};
+use rust_bootstrap::{Args, BuildState, loader, parquet_reporter, bootstrap_stages, builder::Builder};
 use rust_bootstrap::bootstrap_stages::stage0_detector::Stage0;
 use rust_bootstrap::bootstrap_stages::operational_logger::logger;
 
@@ -29,14 +29,19 @@ fn main() -> Result<(), Box<dyn Error>> {
         String::from("x86_64-unknown-linux-gnu"), // Default build triple
     );
 
+    let builder = Builder::new(&build_state);
+
     // Placeholder for download_and_setup_toolchain
     // rust_bootstrap::bootstrap_stages::toolchain_downloader::download_and_setup_toolchain(&build_state)?;
 
     // Placeholder for build_bootstrap
-    // rust_bootstrap::bootstrap_stages::build_bootstrap::build_bootstrap(&build_state)?;
+    rust_bootstrap::bootstrap_stages::build_bootstrap::build_bootstrap(&build_state)?;
 
     // Placeholder for execute_and_report_command
-    // let command_result = rust_bootstrap::bootstrap_stages::command_executor::execute_and_report_command(&build_state.stage0)?;
+    let command_result = rust_bootstrap::bootstrap_stages::command_executor::execute_and_report_command(
+        builder.bootstrap_binary().to_str().unwrap(),
+        &std::env::args().skip(1).collect::<Vec<String>>().iter().map(|s| s.as_str()).collect::<Vec<&str>>()
+    )?;
     // rust_bootstrap::bootstrap_stages::process_build_metrics::process_build_metrics(command_result)?;
 
     // Write build config to parquet

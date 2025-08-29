@@ -22,3 +22,6 @@ Improves the maintainability, readability, and efficiency of the `rust-bootstrap
 ## Dependencies
 *   Prior knowledge of the `rust-bootstrap` codebase structure.
 *   Understanding of Rust's module system and best practices for code organization.
+
+## Progress Update (2025-08-29)
+The core command execution logic has been centralized and implemented in `src/bootstrap_stages/command_executor/mod.rs`. This includes `execute_shell_command` and `execute_and_report_command`, which handles command execution, timing, and result reporting. This addresses the primary objective of this CRQ, although the `src/main_stages/command_executor` part has not yet been touched.

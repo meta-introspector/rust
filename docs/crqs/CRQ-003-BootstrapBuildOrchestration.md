@@ -42,3 +42,15 @@ This CRQ covers:
 *   `write_file`: For creating and modifying Rust source files.
 *   `replace`: For in-place modifications of existing code.
 *   `read_file`: For analyzing `x.py` content.
+
+## Progress Update (2025-08-29)
+Significant progress has been made on implementing the core build orchestration logic. The `build_bootstrap` function in `src/bootstrap_stages/build_bootstrap/mod.rs` has been implemented to:
+*   Set `CARGO_TARGET_DIR` and `RUSTC` environment variables.
+*   Set library path environment variables (`LD_LIBRARY_PATH`, etc.).
+*   Set `RUSTC_BOOTSTRAP`.
+*   Handle `RUSTFLAGS` (including `-Zallow-features=`, `-Wrust_2018_idioms`, `-Wunused_lifetimes`, and `-Dwarnings` based on config).
+*   Add `--verbose` arguments.
+*   Add `--locked`, `--frozen`, `--features build-metrics`, `--message-format=json`, and `--color` arguments based on config and args.
+*   Handle `BOOTSTRAP_TRACING` and `CARGOFLAGS` environment variables.
+
+This covers a substantial part of Step 3.2 and lays the groundwork for Step 3.3. The `execute_and_report_command` utility has also been implemented and integrated.

@@ -8,3 +8,4 @@ pub mod operational_logger;
 pub mod stage0_parser;
 pub mod toolchain_downloader;
 pub mod nix_patcher;
+pub mod build_bootstrap;

@@ -22,3 +22,15 @@ This CRQ is a critical step towards `rust-bootstrap` becoming a self-sufficient 
 ## Dependencies
 *   Successful completion of `crq_analyze_xpy_build_logic.md` (for understanding `x.py`'s build process).
 *   Existing `rust-bootstrap` capabilities for argument parsing and `bootstrap.toml` loading.
+
+## Progress Update (2025-08-29)
+Significant progress has been made on implementing the core build orchestration logic within `src/bootstrap_stages/build_bootstrap/mod.rs`. The `build_bootstrap` function now handles:
+*   Setting `CARGO_TARGET_DIR` and `RUSTC` environment variables.
+*   Setting library path environment variables (`LD_LIBRARY_PATH`, etc.).
+*   Setting `RUSTC_BOOTSTRAP`.
+*   Handling `RUSTFLAGS` (including `-Zallow-features=`, `-Wrust_2018_idioms`, `-Wunused_lifetimes`, and `-Dwarnings` based on config).
+*   Adding `--verbose` arguments.
+*   Adding `--locked`, `--frozen`, `--features build-metrics`, `--message-format=json`, and `--color` arguments based on config and args.
+*   Handling `BOOTSTRAP_TRACING` and `CARGOFLAGS` environment variables.
+
+This function now constructs and executes the `cargo build` command for the bootstrap compiler, closely mirroring the `x.py` behavior. The `bootstrap_binary` method in `src/builder.rs` has also been added to provide the path to the built bootstrap executable.
