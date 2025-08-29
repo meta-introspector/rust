@@ -1,0 +1,2667 @@
+build-manifest v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/build-manifest)
+├── anyhow v1.0.99
+├── flate2 v1.1.2
+│   ├── crc32fast v1.5.0
+│   │   └── cfg-if v1.0.3
+│   ├── libz-rs-sys v0.5.1
+│   │   └── zlib-rs v0.5.1
+│   └── miniz_oxide v0.8.9
+│       └── adler2 v2.0.1
+├── hex v0.4.3
+├── rayon v1.11.0
+│   ├── either v1.15.0
+│   └── rayon-core v1.13.0
+│       ├── crossbeam-deque v0.8.6
+│       │   ├── crossbeam-epoch v0.9.18
+│       │   │   └── crossbeam-utils v0.8.21
+│       │   └── crossbeam-utils v0.8.21
+│       └── crossbeam-utils v0.8.21
+├── serde v1.0.219
+│   └── serde_derive v1.0.219 (proc-macro)
+│       ├── proc-macro2 v1.0.101
+│       │   └── unicode-ident v1.0.18
+│       ├── quote v1.0.40
+│       │   └── proc-macro2 v1.0.101 (*)
+│       └── syn v2.0.106
+│           ├── proc-macro2 v1.0.101 (*)
+│           ├── quote v1.0.40 (*)
+│           └── unicode-ident v1.0.18
+├── serde_json v1.0.143
+│   ├── itoa v1.0.15
+│   ├── memchr v2.7.5
+│   ├── ryu v1.0.20
+│   └── serde v1.0.219 (*)
+├── sha2 v0.10.9
+│   ├── cfg-if v1.0.3
+│   ├── cpufeatures v0.2.17
+│   │   └── libc v0.2.174
+│   └── digest v0.10.7
+│       ├── block-buffer v0.10.4
+│       │   └── generic-array v0.14.7
+│       │       └── typenum v1.18.0
+│       │       [build-dependencies]
+│       │       └── version_check v0.9.5
+│       └── crypto-common v0.1.6
+│           ├── generic-array v0.14.7 (*)
+│           └── typenum v1.18.0
+├── tar v0.4.44
+│   ├── filetime v0.2.26
+│   │   ├── cfg-if v1.0.3
+│   │   └── libc v0.2.174
+│   ├── libc v0.2.174
+│   └── xattr v1.5.1
+│       └── rustix v1.0.8
+│           ├── bitflags v2.9.3
+│           ├── errno v0.3.13
+│           │   └── libc v0.2.174
+│           ├── libc v0.2.174
+│           └── linux-raw-sys v0.9.4
+├── toml v0.7.8
+│   ├── serde v1.0.219 (*)
+│   ├── serde_spanned v0.6.9
+│   │   └── serde v1.0.219 (*)
+│   ├── toml_datetime v0.6.11
+│   │   └── serde v1.0.219 (*)
+│   └── toml_edit v0.19.15
+│       ├── indexmap v2.11.0
+│       │   ├── equivalent v1.0.2
+│       │   ├── hashbrown v0.15.5
+│       │   │   ├── allocator-api2 v0.2.21
+│       │   │   ├── equivalent v1.0.2
+│       │   │   ├── foldhash v0.1.5
+│       │   │   └── serde v1.0.219 (*)
+│       │   └── serde v1.0.219 (*)
+│       ├── serde v1.0.219 (*)
+│       ├── serde_spanned v0.6.9 (*)
+│       ├── toml_datetime v0.6.11 (*)
+│       └── winnow v0.5.40
+└── xz2 v0.1.7
+    └── lzma-sys v0.1.20
+        └── libc v0.2.174
+        [build-dependencies]
+        ├── cc v1.2.16
+        │   ├── jobserver v0.1.34
+        │   │   └── libc v0.2.174
+        │   ├── libc v0.2.174
+        │   └── shlex v1.3.0
+        └── pkg-config v0.3.32
+
+build_helper v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/build_helper)
+├── serde v1.0.219 (*)
+└── serde_derive v1.0.219 (proc-macro) (*)
+
+bump-stage0 v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/bump-stage0)
+├── anyhow v1.0.99
+├── build_helper v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/build_helper) (*)
+├── curl v0.4.49
+│   ├── curl-sys v0.4.83+curl-8.15.0
+│   │   ├── libc v0.2.174
+│   │   ├── libz-sys v1.1.22
+│   │   │   └── libc v0.2.174
+│   │   │   [build-dependencies]
+│   │   │   ├── cc v1.2.16 (*)
+│   │   │   ├── pkg-config v0.3.32
+│   │   │   └── vcpkg v0.2.15
+│   │   └── openssl-sys v0.9.109
+│   │       └── libc v0.2.174
+│   │       [build-dependencies]
+│   │       ├── cc v1.2.16 (*)
+│   │       ├── pkg-config v0.3.32
+│   │       └── vcpkg v0.2.15
+│   │   [build-dependencies]
+│   │   ├── cc v1.2.16 (*)
+│   │   └── pkg-config v0.3.32
+│   ├── libc v0.2.174
+│   ├── openssl-probe v0.1.6
+│   ├── openssl-sys v0.9.109 (*)
+│   └── socket2 v0.6.0
+│       └── libc v0.2.174
+├── indexmap v2.11.0 (*)
+├── serde v1.0.219 (*)
+└── toml v0.7.8 (*)
+
+cargo-miri v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/miri/cargo-miri)
+├── cargo_metadata v0.21.0
+│   ├── camino v1.1.12
+│   │   └── serde v1.0.219 (*)
+│   ├── cargo-platform v0.2.0
+│   │   └── serde v1.0.219 (*)
+│   ├── cargo-util-schemas v0.8.2
+│   │   ├── semver v1.0.26
+│   │   │   └── serde v1.0.219 (*)
+│   │   ├── serde v1.0.219 (*)
+│   │   ├── serde-untagged v0.1.8
+│   │   │   ├── erased-serde v0.4.6
+│   │   │   │   ├── serde v1.0.219 (*)
+│   │   │   │   └── typeid v1.0.3
+│   │   │   ├── serde v1.0.219 (*)
+│   │   │   └── typeid v1.0.3
+│   │   ├── serde-value v0.7.0
+│   │   │   ├── ordered-float v2.10.1
+│   │   │   │   └── num-traits v0.2.19
+│   │   │   │       └── libm v0.2.15
+│   │   │   │       [build-dependencies]
+│   │   │   │       └── autocfg v1.5.0
+│   │   │   └── serde v1.0.219 (*)
+│   │   ├── thiserror v2.0.16
+│   │   │   └── thiserror-impl v2.0.16 (proc-macro)
+│   │   │       ├── proc-macro2 v1.0.101 (*)
+│   │   │       ├── quote v1.0.40 (*)
+│   │   │       └── syn v2.0.106 (*)
+│   │   ├── toml v0.8.23
+│   │   │   ├── indexmap v2.11.0 (*)
+│   │   │   ├── serde v1.0.219 (*)
+│   │   │   ├── serde_spanned v0.6.9 (*)
+│   │   │   ├── toml_datetime v0.6.11 (*)
+│   │   │   └── toml_edit v0.22.27
+│   │   │       ├── indexmap v2.11.0 (*)
+│   │   │       ├── serde v1.0.219 (*)
+│   │   │       ├── serde_spanned v0.6.9 (*)
+│   │   │       ├── toml_datetime v0.6.11 (*)
+│   │   │       ├── toml_write v0.1.2
+│   │   │       └── winnow v0.7.13
+│   │   ├── unicode-xid v0.2.6
+│   │   └── url v2.5.7
+│   │       ├── form_urlencoded v1.2.2
+│   │       │   └── percent-encoding v2.3.2
+│   │       ├── idna v1.1.0
+│   │       │   ├── idna_adapter v1.2.1
+│   │       │   │   ├── icu_normalizer v2.0.0
+│   │       │   │   │   ├── displaydoc v0.2.5 (proc-macro)
+│   │       │   │   │   │   ├── proc-macro2 v1.0.101 (*)
+│   │       │   │   │   │   ├── quote v1.0.40 (*)
+│   │       │   │   │   │   └── syn v2.0.106 (*)
+│   │       │   │   │   ├── icu_collections v2.0.0
+│   │       │   │   │   │   ├── displaydoc v0.2.5 (proc-macro) (*)
+│   │       │   │   │   │   ├── potential_utf v0.1.3
+│   │       │   │   │   │   │   └── zerovec v0.11.4
+│   │       │   │   │   │   │       ├── yoke v0.8.0
+│   │       │   │   │   │   │       │   ├── stable_deref_trait v1.2.0
+│   │       │   │   │   │   │       │   ├── yoke-derive v0.8.0 (proc-macro)
+│   │       │   │   │   │   │       │   │   ├── proc-macro2 v1.0.101 (*)
+│   │       │   │   │   │   │       │   │   ├── quote v1.0.40 (*)
+│   │       │   │   │   │   │       │   │   ├── syn v2.0.106 (*)
+│   │       │   │   │   │   │       │   │   └── synstructure v0.13.2
+│   │       │   │   │   │   │       │   │       ├── proc-macro2 v1.0.101 (*)
+│   │       │   │   │   │   │       │   │       ├── quote v1.0.40 (*)
+│   │       │   │   │   │   │       │   │       └── syn v2.0.106 (*)
+│   │       │   │   │   │   │       │   └── zerofrom v0.1.6
+│   │       │   │   │   │   │       │       └── zerofrom-derive v0.1.6 (proc-macro)
+│   │       │   │   │   │   │       │           ├── proc-macro2 v1.0.101 (*)
+│   │       │   │   │   │   │       │           ├── quote v1.0.40 (*)
+│   │       │   │   │   │   │       │           ├── syn v2.0.106 (*)
+│   │       │   │   │   │   │       │           └── synstructure v0.13.2 (*)
+│   │       │   │   │   │   │       ├── zerofrom v0.1.6 (*)
+│   │       │   │   │   │   │       └── zerovec-derive v0.11.1 (proc-macro)
+│   │       │   │   │   │   │           ├── proc-macro2 v1.0.101 (*)
+│   │       │   │   │   │   │           ├── quote v1.0.40 (*)
+│   │       │   │   │   │   │           └── syn v2.0.106 (*)
+│   │       │   │   │   │   ├── yoke v0.8.0 (*)
+│   │       │   │   │   │   ├── zerofrom v0.1.6 (*)
+│   │       │   │   │   │   └── zerovec v0.11.4 (*)
+│   │       │   │   │   ├── icu_normalizer_data v2.0.0
+│   │       │   │   │   ├── icu_provider v2.0.0
+│   │       │   │   │   │   ├── displaydoc v0.2.5 (proc-macro) (*)
+│   │       │   │   │   │   ├── icu_locale_core v2.0.0
+│   │       │   │   │   │   │   ├── displaydoc v0.2.5 (proc-macro) (*)
+│   │       │   │   │   │   │   ├── litemap v0.8.0
+│   │       │   │   │   │   │   ├── tinystr v0.8.1
+│   │       │   │   │   │   │   │   ├── displaydoc v0.2.5 (proc-macro) (*)
+│   │       │   │   │   │   │   │   └── zerovec v0.11.4 (*)
+│   │       │   │   │   │   │   ├── writeable v0.6.1
+│   │       │   │   │   │   │   └── zerovec v0.11.4 (*)
+│   │       │   │   │   │   ├── stable_deref_trait v1.2.0
+│   │       │   │   │   │   ├── tinystr v0.8.1 (*)
+│   │       │   │   │   │   ├── writeable v0.6.1
+│   │       │   │   │   │   ├── yoke v0.8.0 (*)
+│   │       │   │   │   │   ├── zerofrom v0.1.6 (*)
+│   │       │   │   │   │   ├── zerotrie v0.2.2
+│   │       │   │   │   │   │   ├── displaydoc v0.2.5 (proc-macro) (*)
+│   │       │   │   │   │   │   ├── yoke v0.8.0 (*)
+│   │       │   │   │   │   │   └── zerofrom v0.1.6 (*)
+│   │       │   │   │   │   └── zerovec v0.11.4 (*)
+│   │       │   │   │   ├── smallvec v1.15.1
+│   │       │   │   │   └── zerovec v0.11.4 (*)
+│   │       │   │   └── icu_properties v2.0.1
+│   │       │   │       ├── displaydoc v0.2.5 (proc-macro) (*)
+│   │       │   │       ├── icu_collections v2.0.0 (*)
+│   │       │   │       ├── icu_locale_core v2.0.0 (*)
+│   │       │   │       ├── icu_properties_data v2.0.1
+│   │       │   │       ├── icu_provider v2.0.0 (*)
+│   │       │   │       ├── potential_utf v0.1.3 (*)
+│   │       │   │       ├── zerotrie v0.2.2 (*)
+│   │       │   │       └── zerovec v0.11.4 (*)
+│   │       │   ├── smallvec v1.15.1
+│   │       │   └── utf8_iter v1.0.4
+│   │       ├── percent-encoding v2.3.2
+│   │       └── serde v1.0.219 (*)
+│   ├── semver v1.0.26 (*)
+│   ├── serde v1.0.219 (*)
+│   ├── serde_json v1.0.143 (*)
+│   └── thiserror v2.0.16 (*)
+├── directories v6.0.0
+│   └── dirs-sys v0.5.0
+│       ├── libc v0.2.174
+│       └── option-ext v0.2.0
+├── rustc-build-sysroot v0.5.11
+│   ├── anyhow v1.0.99
+│   ├── rustc_version v0.4.1
+│   │   └── semver v1.0.26 (*)
+│   ├── tempfile v3.21.0
+│   │   ├── fastrand v2.3.0
+│   │   ├── getrandom v0.3.3
+│   │   │   ├── cfg-if v1.0.3
+│   │   │   └── libc v0.2.174
+│   │   ├── once_cell v1.21.3
+│   │   └── rustix v1.0.8 (*)
+│   ├── toml v0.8.23 (*)
+│   └── walkdir v2.5.0
+│       └── same-file v1.0.6
+├── rustc_version v0.4.1 (*)
+├── serde v1.0.219 (*)
+└── serde_json v1.0.143 (*)
+[build-dependencies]
+└── rustc_tools_util v0.4.2
+
+cargotest2 v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/cargotest)
+
+clippy v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy)
+├── anstream v0.6.20
+│   ├── anstyle v1.0.11
+│   ├── anstyle-parse v0.2.7
+│   │   └── utf8parse v0.2.2
+│   ├── anstyle-query v1.1.4
+│   ├── colorchoice v1.0.4
+│   ├── is_terminal_polyfill v1.70.1
+│   └── utf8parse v0.2.2
+├── clippy_config v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/clippy_config)
+│   ├── clippy_utils v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/clippy_utils)
+│   │   ├── arrayvec v0.7.6
+│   │   ├── itertools v0.12.1
+│   │   │   └── either v1.15.0
+│   │   ├── rustc_apfloat v0.2.3+llvm-462a31f5a5ab
+│   │   │   ├── bitflags v2.9.3
+│   │   │   └── smallvec v1.15.1
+│   │   └── serde v1.0.219 (*)
+│   ├── itertools v0.12.1 (*)
+│   ├── serde v1.0.219 (*)
+│   └── toml v0.7.8 (*)
+│   [dev-dependencies]
+│   └── walkdir v2.5.0 (*)
+├── clippy_lints v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/clippy_lints)
+│   ├── arrayvec v0.7.6
+│   ├── cargo_metadata v0.18.1
+│   │   ├── camino v1.1.12 (*)
+│   │   ├── cargo-platform v0.1.9
+│   │   │   └── serde v1.0.219 (*)
+│   │   ├── semver v1.0.26 (*)
+│   │   ├── serde v1.0.219 (*)
+│   │   ├── serde_json v1.0.143 (*)
+│   │   └── thiserror v1.0.69
+│   │       └── thiserror-impl v1.0.69 (proc-macro)
+│   │           ├── proc-macro2 v1.0.101 (*)
+│   │           ├── quote v1.0.40 (*)
+│   │           └── syn v2.0.106 (*)
+│   ├── clippy_config v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/clippy_config) (*)
+│   ├── clippy_utils v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/clippy_utils) (*)
+│   ├── declare_clippy_lint v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/declare_clippy_lint)
+│   ├── itertools v0.12.1 (*)
+│   ├── quine-mc_cluskey v0.2.4
+│   ├── regex-syntax v0.8.6
+│   ├── semver v1.0.26 (*)
+│   ├── serde v1.0.219 (*)
+│   ├── toml v0.7.8 (*)
+│   ├── unicode-normalization v0.1.24
+│   │   └── tinyvec v1.10.0
+│   │       └── tinyvec_macros v0.1.1
+│   ├── unicode-script v0.5.7
+│   └── url v2.5.7 (*)
+│   [dev-dependencies]
+│   └── walkdir v2.5.0 (*)
+├── clippy_utils v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/clippy_utils) (*)
+├── color-print v0.3.7
+│   └── color-print-proc-macro v0.3.7 (proc-macro)
+│       ├── nom v7.1.3
+│       │   ├── memchr v2.7.5
+│       │   └── minimal-lexical v0.2.1
+│       ├── proc-macro2 v1.0.101 (*)
+│       ├── quote v1.0.40 (*)
+│       └── syn v2.0.106 (*)
+├── declare_clippy_lint v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/declare_clippy_lint)
+├── rustc_tools_util v0.4.2 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/rustc_tools_util)
+└── termize v0.2.0
+    └── libc v0.2.174
+[build-dependencies]
+└── rustc_tools_util v0.4.2 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/rustc_tools_util)
+[dev-dependencies]
+├── askama v0.14.0
+│   ├── askama_derive v0.14.0 (proc-macro)
+│   │   ├── askama_parser v0.14.0
+│   │   │   ├── memchr v2.7.5
+│   │   │   ├── serde v1.0.219
+│   │   │   │   └── serde_derive v1.0.219 (proc-macro) (*)
+│   │   │   ├── serde_derive v1.0.219 (proc-macro) (*)
+│   │   │   └── winnow v0.7.13
+│   │   ├── basic-toml v0.1.10
+│   │   │   └── serde v1.0.219 (*)
+│   │   ├── memchr v2.7.5
+│   │   ├── proc-macro2 v1.0.101 (*)
+│   │   ├── quote v1.0.40 (*)
+│   │   ├── rustc-hash v2.1.1
+│   │   ├── serde v1.0.219 (*)
+│   │   ├── serde_derive v1.0.219 (proc-macro) (*)
+│   │   └── syn v2.0.106 (*)
+│   ├── itoa v1.0.15
+│   └── percent-encoding v2.3.2
+├── cargo_metadata v0.18.1 (*)
+├── filetime v0.2.26 (*)
+├── itertools v0.12.1 (*)
+├── pulldown-cmark v0.11.3
+│   ├── bitflags v2.9.3
+│   ├── memchr v2.7.5
+│   ├── pulldown-cmark-escape v0.11.0
+│   └── unicase v2.8.1
+├── regex v1.11.2
+│   ├── aho-corasick v1.1.3
+│   │   └── memchr v2.7.5
+│   ├── memchr v2.7.5
+│   ├── regex-automata v0.4.10
+│   │   ├── aho-corasick v1.1.3 (*)
+│   │   ├── memchr v2.7.5
+│   │   └── regex-syntax v0.8.6
+│   └── regex-syntax v0.8.6
+├── serde v1.0.219 (*)
+├── serde_json v1.0.143 (*)
+├── toml v0.7.8 (*)
+├── ui_test v0.30.2
+│   ├── annotate-snippets v0.11.5
+│   │   ├── anstyle v1.0.11
+│   │   └── unicode-width v0.2.1
+│   ├── anyhow v1.0.99
+│   ├── bstr v1.12.0
+│   │   ├── memchr v2.7.5
+│   │   └── regex-automata v0.4.10 (*)
+│   ├── cargo-platform v0.1.9 (*)
+│   ├── cargo_metadata v0.18.1 (*)
+│   ├── color-eyre v0.6.5
+│   │   ├── backtrace v0.3.75
+│   │   │   ├── addr2line v0.24.2
+│   │   │   │   └── gimli v0.31.1
+│   │   │   │       ├── fallible-iterator v0.3.0
+│   │   │   │       ├── indexmap v2.11.0 (*)
+│   │   │   │       └── stable_deref_trait v1.2.0
+│   │   │   ├── cfg-if v1.0.3
+│   │   │   ├── libc v0.2.174
+│   │   │   ├── miniz_oxide v0.8.9 (*)
+│   │   │   ├── object v0.36.7
+│   │   │   │   ├── crc32fast v1.5.0 (*)
+│   │   │   │   ├── flate2 v1.1.2 (*)
+│   │   │   │   ├── hashbrown v0.15.5 (*)
+│   │   │   │   ├── indexmap v2.11.0 (*)
+│   │   │   │   ├── memchr v2.7.5
+│   │   │   │   └── ruzstd v0.7.3
+│   │   │   │       └── twox-hash v1.6.3
+│   │   │   │           ├── cfg-if v1.0.3
+│   │   │   │           ├── rand v0.8.5
+│   │   │   │           │   ├── libc v0.2.174
+│   │   │   │           │   ├── rand_chacha v0.3.1
+│   │   │   │           │   │   ├── ppv-lite86 v0.2.21
+│   │   │   │           │   │   │   └── zerocopy v0.8.26
+│   │   │   │           │   │   └── rand_core v0.6.4
+│   │   │   │           │   │       └── getrandom v0.2.16
+│   │   │   │           │   │           ├── cfg-if v1.0.3
+│   │   │   │           │   │           └── libc v0.2.174
+│   │   │   │           │   └── rand_core v0.6.4 (*)
+│   │   │   │           └── static_assertions v1.1.0
+│   │   │   └── rustc-demangle v0.1.26
+│   │   ├── color-spantrace v0.3.0
+│   │   │   ├── once_cell v1.21.3
+│   │   │   ├── owo-colors v4.2.2
+│   │   │   ├── tracing-core v0.1.30
+│   │   │   │   └── once_cell v1.21.3
+│   │   │   └── tracing-error v0.2.1
+│   │   │       ├── tracing v0.1.37
+│   │   │       │   ├── cfg-if v1.0.3
+│   │   │       │   ├── pin-project-lite v0.2.16
+│   │   │       │   ├── tracing-attributes v0.1.30 (proc-macro)
+│   │   │       │   │   ├── proc-macro2 v1.0.101 (*)
+│   │   │       │   │   ├── quote v1.0.40 (*)
+│   │   │       │   │   └── syn v2.0.106 (*)
+│   │   │       │   └── tracing-core v0.1.30 (*)
+│   │   │       └── tracing-subscriber v0.3.18
+│   │   │           ├── matchers v0.1.0
+│   │   │           │   └── regex-automata v0.1.10
+│   │   │           │       └── regex-syntax v0.6.29
+│   │   │           ├── nu-ansi-term v0.46.0
+│   │   │           │   └── overload v0.1.1
+│   │   │           ├── once_cell v1.21.3
+│   │   │           ├── parking_lot v0.12.4
+│   │   │           │   ├── lock_api v0.4.13
+│   │   │           │   │   └── scopeguard v1.2.0
+│   │   │           │   │   [build-dependencies]
+│   │   │           │   │   └── autocfg v1.5.0
+│   │   │           │   └── parking_lot_core v0.9.11
+│   │   │           │       ├── cfg-if v1.0.3
+│   │   │           │       ├── libc v0.2.174
+│   │   │           │       └── smallvec v1.15.1
+│   │   │           ├── regex v1.11.2 (*)
+│   │   │           ├── sharded-slab v0.1.7
+│   │   │           │   └── lazy_static v1.5.0
+│   │   │           ├── smallvec v1.15.1
+│   │   │           ├── thread_local v1.1.9
+│   │   │           │   └── cfg-if v1.0.3
+│   │   │           ├── tracing v0.1.37 (*)
+│   │   │           ├── tracing-core v0.1.30 (*)
+│   │   │           └── tracing-log v0.2.0
+│   │   │               ├── log v0.4.27
+│   │   │               ├── once_cell v1.21.3
+│   │   │               └── tracing-core v0.1.30 (*)
+│   │   ├── eyre v0.6.12
+│   │   │   ├── indenter v0.3.4
+│   │   │   └── once_cell v1.21.3
+│   │   ├── indenter v0.3.4
+│   │   ├── once_cell v1.21.3
+│   │   ├── owo-colors v4.2.2
+│   │   └── tracing-error v0.2.1 (*)
+│   ├── colored v2.2.0
+│   │   └── lazy_static v1.5.0
+│   ├── comma v1.0.0
+│   ├── crossbeam-channel v0.5.15
+│   │   └── crossbeam-utils v0.8.21
+│   ├── indicatif v0.17.11
+│   │   ├── console v0.15.11
+│   │   │   ├── libc v0.2.174
+│   │   │   ├── once_cell v1.21.3
+│   │   │   └── unicode-width v0.2.1
+│   │   ├── number_prefix v0.4.0
+│   │   ├── portable-atomic v1.11.1
+│   │   └── unicode-width v0.2.1
+│   ├── levenshtein v1.0.5
+│   ├── prettydiff v0.7.0
+│   │   ├── owo-colors v3.5.0
+│   │   └── pad v0.1.6
+│   │       └── unicode-width v0.1.14
+│   ├── regex v1.11.2 (*)
+│   ├── rustc_version v0.4.1 (*)
+│   ├── rustfix v0.8.1
+│   │   ├── serde v1.0.219 (*)
+│   │   ├── serde_json v1.0.143 (*)
+│   │   ├── thiserror v1.0.69 (*)
+│   │   └── tracing v0.1.37 (*)
+│   ├── serde v1.0.219 (*)
+│   ├── serde_json v1.0.143 (*)
+│   └── spanned v0.4.1
+│       ├── anyhow v1.0.99
+│       ├── bstr v1.12.0 (*)
+│       └── color-eyre v0.6.5 (*)
+└── walkdir v2.5.0 (*)
+
+clippy_config v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/clippy_config) (*)
+
+clippy_dev v0.0.1 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/clippy_dev)
+├── chrono v0.4.41
+│   ├── android-tzdata v0.1.1
+│   ├── iana-time-zone v0.1.63
+│   │   └── android_system_properties v0.1.5
+│   │       └── libc v0.2.174
+│   ├── num-traits v0.2.19 (*)
+│   └── serde v1.0.219 (*)
+├── clap v4.5.46
+│   ├── clap_builder v4.5.46
+│   │   ├── anstream v0.6.20 (*)
+│   │   ├── anstyle v1.0.11
+│   │   ├── clap_lex v0.7.5
+│   │   └── strsim v0.11.1
+│   └── clap_derive v4.5.45 (proc-macro)
+│       ├── heck v0.5.0
+│       ├── proc-macro2 v1.0.101 (*)
+│       ├── quote v1.0.40 (*)
+│       └── syn v2.0.106 (*)
+├── indoc v1.0.9 (proc-macro)
+├── itertools v0.12.1 (*)
+├── opener v0.7.2
+└── walkdir v2.5.0 (*)
+
+clippy_lints v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/clippy_lints) (*)
+
+clippy_lints_internal v0.0.1 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/clippy_lints_internal)
+├── clippy_config v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/clippy_config) (*)
+├── clippy_utils v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/clippy_utils) (*)
+├── regex v1.11.2 (*)
+└── rustc-semver v1.1.0
+
+clippy_utils v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/clippy_utils) (*)
+
+collect-license-metadata v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/collect-license-metadata)
+├── anyhow v1.0.99
+├── serde v1.0.219 (*)
+├── serde_json v1.0.143 (*)
+└── spdx-rs v0.5.5
+    ├── chrono v0.4.41 (*)
+    ├── log v0.4.27
+    ├── nom v7.1.3 (*)
+    ├── serde v1.0.219 (*)
+    ├── spdx-expression v0.5.2
+    │   ├── nom v7.1.3 (*)
+    │   ├── serde v1.0.219 (*)
+    │   ├── thiserror v1.0.69 (*)
+    │   └── tracing v0.1.37 (*)
+    ├── strum v0.24.1
+    ├── strum_macros v0.24.3 (proc-macro)
+    │   ├── heck v0.4.1
+    │   ├── proc-macro2 v1.0.101 (*)
+    │   ├── quote v1.0.40 (*)
+    │   ├── rustversion v1.0.22 (proc-macro)
+    │   └── syn v1.0.109
+    │       ├── proc-macro2 v1.0.101 (*)
+    │       ├── quote v1.0.40 (*)
+    │       └── unicode-ident v1.0.18
+    ├── thiserror v1.0.69 (*)
+    └── uuid v1.18.0
+        └── getrandom v0.3.3 (*)
+
+compiletest v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/compiletest)
+├── anstyle-svg v0.1.10
+│   ├── anstyle v1.0.11
+│   ├── anstyle-lossy v1.1.4
+│   │   └── anstyle v1.0.11
+│   ├── anstyle-parse v0.2.7 (*)
+│   ├── html-escape v0.2.13
+│   │   └── utf8-width v0.1.7
+│   └── unicode-width v0.2.1
+├── build_helper v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/build_helper) (*)
+├── camino v1.1.12 (*)
+├── colored v2.2.0 (*)
+├── diff v0.1.13
+├── getopts v0.2.24
+│   └── unicode-width v0.2.1
+├── glob v0.3.3
+├── home v0.5.11
+├── indexmap v2.11.0 (*)
+├── libc v0.2.174
+├── miropt-test-tools v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/miropt-test-tools)
+├── rayon v1.11.0 (*)
+├── regex v1.11.2 (*)
+├── rustfix v0.8.1 (*)
+├── semver v1.0.26 (*)
+├── serde v1.0.219 (*)
+├── serde_json v1.0.143 (*)
+├── tracing v0.1.37 (*)
+├── tracing-subscriber v0.3.18 (*)
+├── unified-diff v0.2.1
+│   └── diff v0.1.13
+└── walkdir v2.5.0 (*)
+
+coverage-dump v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/coverage-dump)
+├── anyhow v1.0.99
+├── itertools v0.12.1 (*)
+├── leb128 v0.2.5
+├── md-5 v0.10.6
+│   ├── cfg-if v1.0.3
+│   └── digest v0.10.7 (*)
+├── miniz_oxide v0.8.9 (*)
+├── regex v1.11.2 (*)
+└── rustc-demangle v0.1.26
+
+declare_clippy_lint v0.1.91 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/declare_clippy_lint)
+
+features-status-dump v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/features-status-dump)
+├── anyhow v1.0.99
+├── clap v4.5.46 (*)
+├── serde v1.0.219 (*)
+├── serde_json v1.0.143 (*)
+└── tidy v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/tidy)
+    ├── build_helper v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/build_helper) (*)
+    ├── cargo_metadata v0.21.0 (*)
+    ├── fluent-syntax v0.12.0
+    │   ├── memchr v2.7.5
+    │   └── thiserror v2.0.16 (*)
+    ├── ignore v0.4.23
+    │   ├── crossbeam-deque v0.8.6 (*)
+    │   ├── globset v0.4.16
+    │   │   ├── aho-corasick v1.1.3 (*)
+    │   │   ├── bstr v1.12.0 (*)
+    │   │   ├── log v0.4.27
+    │   │   ├── regex-automata v0.4.10 (*)
+    │   │   └── regex-syntax v0.8.6
+    │   ├── log v0.4.27
+    │   ├── memchr v2.7.5
+    │   ├── regex-automata v0.4.10 (*)
+    │   ├── same-file v1.0.6
+    │   └── walkdir v2.5.0 (*)
+    ├── miropt-test-tools v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/miropt-test-tools)
+    ├── regex v1.11.2 (*)
+    ├── rustc-hash v2.1.1
+    ├── semver v1.0.26 (*)
+    ├── serde v1.0.219 (*)
+    ├── similar v2.7.0
+    ├── termcolor v1.4.1
+    ├── toml v0.7.8 (*)
+    └── walkdir v2.5.0 (*)
+
+generate-copyright v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/generate-copyright)
+├── anyhow v1.0.99
+├── askama v0.14.0 (*)
+├── cargo_metadata v0.21.0 (*)
+├── serde v1.0.219 (*)
+├── serde_json v1.0.143 (*)
+└── thiserror v1.0.69 (*)
+
+generate-windows-sys v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/generate-windows-sys)
+└── windows-bindgen v0.61.1
+    ├── serde v1.0.219 (*)
+    ├── serde_json v1.0.143 (*)
+    └── windows-threading v0.1.0
+        └── windows-link v0.1.3
+
+genmc-sys v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/miri/genmc-sys)
+└── cxx v1.0.173
+    ├── cxxbridge-macro v1.0.173 (proc-macro)
+    │   ├── indexmap v2.11.0
+    │   │   ├── equivalent v1.0.2
+    │   │   └── hashbrown v0.15.5
+    │   ├── proc-macro2 v1.0.101 (*)
+    │   ├── quote v1.0.40 (*)
+    │   ├── rustversion v1.0.22 (proc-macro)
+    │   └── syn v2.0.106 (*)
+    ├── foldhash v0.2.0
+    └── link-cplusplus v1.0.10
+        [build-dependencies]
+        └── cc v1.2.16 (*)
+    [build-dependencies]
+    ├── cc v1.2.16 (*)
+    └── cxxbridge-flags v1.0.173
+[build-dependencies]
+├── cc v1.2.16 (*)
+├── cmake v0.1.54
+│   └── cc v1.2.16 (*)
+├── cxx-build v1.0.173
+│   ├── cc v1.2.16 (*)
+│   ├── codespan-reporting v0.12.0
+│   │   ├── termcolor v1.4.1
+│   │   └── unicode-width v0.2.1
+│   ├── indexmap v2.11.0 (*)
+│   ├── proc-macro2 v1.0.101 (*)
+│   ├── quote v1.0.40 (*)
+│   ├── scratch v1.0.9
+│   └── syn v2.0.106 (*)
+└── git2 v0.20.2
+    ├── bitflags v2.9.3
+    ├── libc v0.2.174
+    ├── libgit2-sys v0.18.2+1.9.1
+    │   ├── libc v0.2.174
+    │   ├── libz-sys v1.1.22 (*)
+    │   └── openssl-sys v0.9.109 (*)
+    │   [build-dependencies]
+    │   ├── cc v1.2.16 (*)
+    │   └── pkg-config v0.3.32
+    ├── log v0.4.27
+    ├── openssl-probe v0.1.6
+    ├── openssl-sys v0.9.109 (*)
+    └── url v2.5.7 (*)
+
+html-checker v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/html-checker)
+├── rayon v1.11.0 (*)
+└── walkdir v2.5.0 (*)
+
+installer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/rust-installer)
+├── anyhow v1.0.99
+├── clap v4.5.46 (*)
+├── flate2 v1.1.2 (*)
+├── rayon v1.11.0 (*)
+├── tar v0.4.44 (*)
+├── walkdir v2.5.0 (*)
+└── xz2 v0.1.7 (*)
+
+jsondocck v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/jsondocck)
+├── fs-err v2.11.0
+│   [build-dependencies]
+│   └── autocfg v1.5.0
+├── getopts v0.2.24 (*)
+├── jsonpath-rust v1.0.4
+│   ├── pest v2.8.1
+│   │   ├── memchr v2.7.5
+│   │   ├── thiserror v2.0.16 (*)
+│   │   └── ucd-trie v0.1.7
+│   ├── pest_derive v2.8.1 (proc-macro)
+│   │   ├── pest v2.8.1 (*)
+│   │   └── pest_generator v2.8.1
+│   │       ├── pest v2.8.1 (*)
+│   │       ├── pest_meta v2.8.1
+│   │       │   └── pest v2.8.1 (*)
+│   │       │   [build-dependencies]
+│   │       │   └── sha2 v0.10.9 (*)
+│   │       ├── proc-macro2 v1.0.101 (*)
+│   │       ├── quote v1.0.40 (*)
+│   │       └── syn v2.0.106 (*)
+│   ├── regex v1.11.2 (*)
+│   ├── serde_json v1.0.143 (*)
+│   └── thiserror v2.0.16 (*)
+├── regex v1.11.2 (*)
+├── serde_json v1.0.143 (*)
+└── shlex v1.3.0
+
+jsondoclint v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/jsondoclint)
+├── anyhow v1.0.99
+├── clap v4.5.46 (*)
+├── fs-err v2.11.0 (*)
+├── rustc-hash v2.1.1
+├── rustdoc-json-types v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/rustdoc-json-types)
+│   ├── rustc-hash v2.1.1
+│   ├── serde v1.0.219 (*)
+│   └── serde_derive v1.0.219 (proc-macro) (*)
+│   [dev-dependencies]
+│   ├── bincode v1.3.3
+│   │   └── serde v1.0.219 (*)
+│   └── serde_json v1.0.143 (*)
+├── serde v1.0.219 (*)
+└── serde_json v1.0.143 (*)
+
+linkchecker v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/linkchecker)
+├── html5ever v0.29.1
+│   ├── log v0.4.27
+│   ├── mac v0.1.1
+│   ├── markup5ever v0.14.1
+│   │   ├── log v0.4.27
+│   │   ├── phf v0.11.3
+│   │   │   └── phf_shared v0.11.3
+│   │   │       └── siphasher v1.0.1
+│   │   ├── string_cache v0.8.9
+│   │   │   ├── new_debug_unreachable v1.0.6
+│   │   │   ├── parking_lot v0.12.4 (*)
+│   │   │   ├── phf_shared v0.11.3 (*)
+│   │   │   ├── precomputed-hash v0.1.1
+│   │   │   └── serde v1.0.219 (*)
+│   │   └── tendril v0.4.3
+│   │       ├── futf v0.1.5
+│   │       │   ├── mac v0.1.1
+│   │       │   └── new_debug_unreachable v1.0.6
+│   │       ├── mac v0.1.1
+│   │       └── utf-8 v0.7.6
+│   │   [build-dependencies]
+│   │   ├── phf_codegen v0.11.3
+│   │   │   ├── phf_generator v0.11.3
+│   │   │   │   ├── phf_shared v0.11.3 (*)
+│   │   │   │   └── rand v0.8.5
+│   │   │   │       └── rand_core v0.6.4
+│   │   │   └── phf_shared v0.11.3 (*)
+│   │   └── string_cache_codegen v0.5.4
+│   │       ├── phf_generator v0.11.3 (*)
+│   │       ├── phf_shared v0.11.3 (*)
+│   │       ├── proc-macro2 v1.0.101 (*)
+│   │       └── quote v1.0.40 (*)
+│   └── match_token v0.1.0 (proc-macro)
+│       ├── proc-macro2 v1.0.101 (*)
+│       ├── quote v1.0.40 (*)
+│       └── syn v2.0.106 (*)
+└── regex v1.11.2 (*)
+
+lint-docs v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/lint-docs)
+├── rustc-literal-escaper v0.0.5
+├── serde_json v1.0.143 (*)
+├── tempfile v3.21.0 (*)
+└── walkdir v2.5.0 (*)
+
+lld-wrapper v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/lld-wrapper)
+
+llvm-bitcode-linker v0.0.1 (/data/data/com.termux/files/home/storage/github/rust/src/tools/llvm-bitcode-linker)
+├── anyhow v1.0.99
+├── clap v4.5.46 (*)
+├── thiserror v1.0.69 (*)
+├── tracing v0.1.37 (*)
+└── tracing-subscriber v0.3.18 (*)
+
+miri v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/miri)
+├── aes v0.8.4
+│   ├── cfg-if v1.0.3
+│   ├── cipher v0.4.4
+│   │   ├── crypto-common v0.1.6 (*)
+│   │   └── inout v0.1.4
+│   │       └── generic-array v0.14.7 (*)
+│   └── cpufeatures v0.2.17 (*)
+├── bitflags v2.9.3
+├── chrono v0.4.41 (*)
+├── chrono-tz v0.10.4
+│   ├── chrono v0.4.41 (*)
+│   └── phf v0.12.1
+│       └── phf_shared v0.12.1
+│           └── siphasher v1.0.1
+├── directories v6.0.0 (*)
+├── getrandom v0.3.3 (*)
+├── libc v0.2.174
+├── libffi v4.1.1
+│   ├── libc v0.2.174
+│   └── libffi-sys v3.3.2
+│       [build-dependencies]
+│       └── cc v1.2.16 (*)
+├── libloading v0.8.8
+│   └── cfg-if v1.0.3
+├── measureme v12.0.3
+│   ├── log v0.4.27
+│   ├── parking_lot v0.12.4 (*)
+│   ├── rustc-hash v1.1.0
+│   └── smallvec v1.15.1
+├── rand v0.9.2
+│   ├── rand_chacha v0.9.0
+│   │   ├── ppv-lite86 v0.2.21 (*)
+│   │   └── rand_core v0.9.3
+│   │       └── getrandom v0.3.3 (*)
+│   └── rand_core v0.9.3 (*)
+├── serde v1.0.219 (*)
+└── smallvec v1.15.1
+[dev-dependencies]
+├── colored v3.0.0
+├── regex v1.11.2 (*)
+├── rustc_version v0.4.1 (*)
+├── tempfile v3.21.0 (*)
+└── ui_test v0.30.2 (*)
+
+miropt-test-tools v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/miropt-test-tools)
+
+opt-dist v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/opt-dist)
+├── anyhow v1.0.99
+├── build_helper v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/build_helper) (*)
+├── camino v1.1.12 (*)
+├── clap v4.5.46 (*)
+├── derive_builder v0.20.2
+│   └── derive_builder_macro v0.20.2 (proc-macro)
+│       ├── derive_builder_core v0.20.2
+│       │   ├── darling v0.20.11
+│       │   │   ├── darling_core v0.20.11
+│       │   │   │   ├── fnv v1.0.7
+│       │   │   │   ├── ident_case v1.0.1
+│       │   │   │   ├── proc-macro2 v1.0.101 (*)
+│       │   │   │   ├── quote v1.0.40 (*)
+│       │   │   │   ├── strsim v0.11.1
+│       │   │   │   └── syn v2.0.106 (*)
+│       │   │   └── darling_macro v0.20.11 (proc-macro)
+│       │   │       ├── darling_core v0.20.11 (*)
+│       │   │       ├── quote v1.0.40 (*)
+│       │   │       └── syn v2.0.106 (*)
+│       │   ├── proc-macro2 v1.0.101 (*)
+│       │   ├── quote v1.0.40 (*)
+│       │   └── syn v2.0.106 (*)
+│       └── syn v2.0.106 (*)
+├── env_logger v0.11.8
+│   ├── anstream v0.6.20 (*)
+│   ├── anstyle v1.0.11
+│   ├── env_filter v0.1.3
+│   │   ├── log v0.4.27
+│   │   └── regex v1.11.2 (*)
+│   ├── jiff v0.2.15
+│   └── log v0.4.27
+├── fs_extra v1.3.0
+├── glob v0.3.3
+├── humansize v2.1.3
+│   └── libm v0.2.15
+├── humantime v2.2.0
+├── log v0.4.27
+├── serde_json v1.0.143 (*)
+├── sysinfo v0.37.0
+│   └── libc v0.2.174
+├── tabled v0.15.0
+│   ├── papergrid v0.11.0
+│   │   ├── bytecount v0.6.9
+│   │   ├── fnv v1.0.7
+│   │   └── unicode-width v0.1.14
+│   └── unicode-width v0.1.14
+├── tar v0.4.44 (*)
+├── tempfile v3.21.0 (*)
+└── xz2 v0.1.7 (*)
+
+remote-test-client v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/remote-test-client)
+
+remote-test-server v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/remote-test-server)
+
+replace-version-placeholder v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/replace-version-placeholder)
+├── tidy v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/tidy) (*)
+└── walkdir v2.5.0 (*)
+
+run_make_support v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/run-make-support)
+├── bstr v1.12.0 (*)
+├── build_helper v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/build_helper) (*)
+├── gimli v0.32.2
+│   ├── fallible-iterator v0.3.0
+│   ├── indexmap v2.11.0 (*)
+│   └── stable_deref_trait v1.2.0
+├── libc v0.2.174
+├── object v0.37.3
+│   ├── crc32fast v1.5.0 (*)
+│   ├── flate2 v1.1.2 (*)
+│   ├── hashbrown v0.15.5 (*)
+│   ├── indexmap v2.11.0 (*)
+│   ├── memchr v2.7.5
+│   ├── ruzstd v0.8.1
+│   │   └── twox-hash v2.1.1
+│   └── wasmparser v0.236.1
+│       └── bitflags v2.9.3
+├── regex v1.11.2 (*)
+├── serde_json v1.0.143 (*)
+├── similar v2.7.0
+└── wasmparser v0.236.1 (*)
+
+rust-bootstrap v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/crates/rust-bootstrap)
+├── arrow v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow)
+│   ├── arrow-arith v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-arith)
+│   │   ├── arrow-array v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-array)
+│   │   │   ├── ahash v0.8.12
+│   │   │   │   ├── cfg-if v1.0.3
+│   │   │   │   ├── getrandom v0.3.3 (*)
+│   │   │   │   ├── once_cell v1.21.3
+│   │   │   │   └── zerocopy v0.8.26
+│   │   │   │   [build-dependencies]
+│   │   │   │   └── version_check v0.9.5
+│   │   │   ├── arrow-buffer v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-buffer)
+│   │   │   │   ├── bytes v1.10.1
+│   │   │   │   ├── half v2.6.0
+│   │   │   │   │   ├── cfg-if v1.0.3
+│   │   │   │   │   └── num-traits v0.2.19 (*)
+│   │   │   │   └── num v0.4.3
+│   │   │   │       ├── num-bigint v0.4.6
+│   │   │   │       │   ├── num-integer v0.1.46
+│   │   │   │       │   │   └── num-traits v0.2.19 (*)
+│   │   │   │       │   └── num-traits v0.2.19 (*)
+│   │   │   │       ├── num-complex v0.4.6
+│   │   │   │       │   └── num-traits v0.2.19 (*)
+│   │   │   │       ├── num-integer v0.1.46 (*)
+│   │   │   │       ├── num-iter v0.1.45
+│   │   │   │       │   ├── num-integer v0.1.46 (*)
+│   │   │   │       │   └── num-traits v0.2.19 (*)
+│   │   │   │       │   [build-dependencies]
+│   │   │   │       │   └── autocfg v1.5.0
+│   │   │   │       ├── num-rational v0.4.2
+│   │   │   │       │   ├── num-bigint v0.4.6 (*)
+│   │   │   │       │   ├── num-integer v0.1.46 (*)
+│   │   │   │       │   └── num-traits v0.2.19 (*)
+│   │   │   │       └── num-traits v0.2.19 (*)
+│   │   │   ├── arrow-data v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-data)
+│   │   │   │   ├── arrow-buffer v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-buffer) (*)
+│   │   │   │   ├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+│   │   │   │   ├── half v2.6.0 (*)
+│   │   │   │   └── num v0.4.3 (*)
+│   │   │   ├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+│   │   │   ├── chrono v0.4.41 (*)
+│   │   │   ├── half v2.6.0 (*)
+│   │   │   ├── hashbrown v0.15.5 (*)
+│   │   │   └── num v0.4.3 (*)
+│   │   ├── arrow-buffer v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-buffer) (*)
+│   │   ├── arrow-data v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-data) (*)
+│   │   ├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+│   │   ├── chrono v0.4.41 (*)
+│   │   └── num v0.4.3 (*)
+│   ├── arrow-array v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-array) (*)
+│   ├── arrow-buffer v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-buffer) (*)
+│   ├── arrow-cast v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-cast)
+│   │   ├── arrow-array v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-array) (*)
+│   │   ├── arrow-buffer v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-buffer) (*)
+│   │   ├── arrow-data v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-data) (*)
+│   │   ├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+│   │   ├── arrow-select v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-select)
+│   │   │   ├── ahash v0.8.12 (*)
+│   │   │   ├── arrow-array v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-array) (*)
+│   │   │   ├── arrow-buffer v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-buffer) (*)
+│   │   │   ├── arrow-data v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-data) (*)
+│   │   │   ├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+│   │   │   └── num v0.4.3 (*)
+│   │   ├── atoi v2.0.0
+│   │   │   └── num-traits v0.2.19 (*)
+│   │   ├── base64 v0.22.1
+│   │   ├── chrono v0.4.41 (*)
+│   │   ├── half v2.6.0 (*)
+│   │   ├── lexical-core v1.0.5
+│   │   │   ├── lexical-parse-float v1.0.5
+│   │   │   │   ├── lexical-parse-integer v1.0.5
+│   │   │   │   │   ├── lexical-util v1.0.6
+│   │   │   │   │   │   └── static_assertions v1.1.0
+│   │   │   │   │   └── static_assertions v1.1.0
+│   │   │   │   ├── lexical-util v1.0.6 (*)
+│   │   │   │   └── static_assertions v1.1.0
+│   │   │   ├── lexical-parse-integer v1.0.5 (*)
+│   │   │   ├── lexical-util v1.0.6 (*)
+│   │   │   ├── lexical-write-float v1.0.5
+│   │   │   │   ├── lexical-util v1.0.6 (*)
+│   │   │   │   ├── lexical-write-integer v1.0.5
+│   │   │   │   │   ├── lexical-util v1.0.6 (*)
+│   │   │   │   │   └── static_assertions v1.1.0
+│   │   │   │   └── static_assertions v1.1.0
+│   │   │   └── lexical-write-integer v1.0.5 (*)
+│   │   ├── num v0.4.3 (*)
+│   │   └── ryu v1.0.20
+│   ├── arrow-csv v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-csv)
+│   │   ├── arrow-array v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-array) (*)
+│   │   ├── arrow-cast v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-cast) (*)
+│   │   ├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+│   │   ├── chrono v0.4.41 (*)
+│   │   ├── csv v1.3.1
+│   │   │   ├── csv-core v0.1.12
+│   │   │   │   └── memchr v2.7.5
+│   │   │   ├── itoa v1.0.15
+│   │   │   ├── ryu v1.0.20
+│   │   │   └── serde v1.0.219 (*)
+│   │   ├── csv-core v0.1.12 (*)
+│   │   └── regex v1.11.2 (*)
+│   ├── arrow-data v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-data) (*)
+│   ├── arrow-ipc v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-ipc)
+│   │   ├── arrow-array v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-array) (*)
+│   │   ├── arrow-buffer v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-buffer) (*)
+│   │   ├── arrow-data v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-data) (*)
+│   │   ├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+│   │   ├── arrow-select v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-select) (*)
+│   │   └── flatbuffers v25.2.10
+│   │       └── bitflags v2.9.3
+│   │       [build-dependencies]
+│   │       └── rustc_version v0.4.1 (*)
+│   ├── arrow-json v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-json)
+│   │   ├── arrow-array v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-array) (*)
+│   │   ├── arrow-buffer v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-buffer) (*)
+│   │   ├── arrow-cast v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-cast) (*)
+│   │   ├── arrow-data v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-data) (*)
+│   │   ├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+│   │   ├── chrono v0.4.41 (*)
+│   │   ├── half v2.6.0 (*)
+│   │   ├── indexmap v2.11.0 (*)
+│   │   ├── lexical-core v1.0.5 (*)
+│   │   ├── memchr v2.7.5
+│   │   ├── num v0.4.3 (*)
+│   │   ├── serde v1.0.219 (*)
+│   │   ├── serde_json v1.0.143 (*)
+│   │   └── simdutf8 v0.1.5
+│   ├── arrow-ord v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-ord)
+│   │   ├── ahash v0.8.12 (*)
+│   │   ├── arrow-array v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-array) (*)
+│   │   ├── arrow-buffer v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-buffer) (*)
+│   │   ├── arrow-data v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-data) (*)
+│   │   ├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+│   │   ├── arrow-select v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-select) (*)
+│   │   └── num v0.4.3 (*)
+│   ├── arrow-row v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-row)
+│   │   ├── arrow-array v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-array) (*)
+│   │   ├── arrow-buffer v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-buffer) (*)
+│   │   ├── arrow-data v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-data) (*)
+│   │   ├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+│   │   └── half v2.6.0 (*)
+│   ├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+│   ├── arrow-select v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-select) (*)
+│   └── arrow-string v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-string)
+│       ├── arrow-array v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-array) (*)
+│       ├── arrow-buffer v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-buffer) (*)
+│       ├── arrow-data v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-data) (*)
+│       ├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+│       ├── arrow-select v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-select) (*)
+│       ├── memchr v2.7.5
+│       ├── num v0.4.3 (*)
+│       ├── regex v1.11.2 (*)
+│       └── regex-syntax v0.8.6
+├── arrow-array v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-array) (*)
+├── arrow-data v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-data) (*)
+├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+├── clap v4.5.46 (*)
+├── flate2 v1.1.2 (*)
+├── git2 v0.20.2
+│   ├── bitflags v2.9.3
+│   ├── libc v0.2.174
+│   ├── libgit2-sys v0.18.2+1.9.1
+│   │   ├── libc v0.2.174
+│   │   ├── libssh2-sys v0.3.1
+│   │   │   ├── libc v0.2.174
+│   │   │   ├── libz-sys v1.1.22 (*)
+│   │   │   └── openssl-sys v0.9.109 (*)
+│   │   │   [build-dependencies]
+│   │   │   ├── cc v1.2.16 (*)
+│   │   │   └── pkg-config v0.3.32
+│   │   ├── libz-sys v1.1.22 (*)
+│   │   └── openssl-sys v0.9.109 (*)
+│   │   [build-dependencies]
+│   │   ├── cc v1.2.16 (*)
+│   │   └── pkg-config v0.3.32
+│   ├── log v0.4.27
+│   ├── openssl-probe v0.1.6
+│   ├── openssl-sys v0.9.109 (*)
+│   └── url v2.5.7 (*)
+├── lazy_static v1.5.0
+├── parquet v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/parquet)
+│   ├── ahash v0.8.12 (*)
+│   ├── arrow-array v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-array) (*)
+│   ├── arrow-buffer v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-buffer) (*)
+│   ├── arrow-cast v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-cast) (*)
+│   ├── arrow-data v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-data) (*)
+│   ├── arrow-ipc v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-ipc) (*)
+│   ├── arrow-schema v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-schema)
+│   ├── arrow-select v56.1.0 (/data/data/com.termux/files/home/storage/github/mcp/monomcp/vendor/arrow-rs/arrow-select) (*)
+│   ├── base64 v0.22.1
+│   ├── brotli v8.0.2
+│   │   ├── alloc-no-stdlib v2.0.4
+│   │   ├── alloc-stdlib v0.2.2
+│   │   │   └── alloc-no-stdlib v2.0.4
+│   │   └── brotli-decompressor v5.0.0
+│   │       ├── alloc-no-stdlib v2.0.4
+│   │       └── alloc-stdlib v0.2.2 (*)
+│   ├── bytes v1.10.1
+│   ├── chrono v0.4.41 (*)
+│   ├── flate2 v1.1.2 (*)
+│   ├── half v2.6.0 (*)
+│   ├── hashbrown v0.15.5 (*)
+│   ├── lz4_flex v0.11.5
+│   │   └── twox-hash v2.1.1
+│   ├── num v0.4.3 (*)
+│   ├── num-bigint v0.4.6 (*)
+│   ├── paste v1.0.15 (proc-macro)
+│   ├── seq-macro v0.3.6 (proc-macro)
+│   ├── simdutf8 v0.1.5
+│   ├── snap v1.1.1
+│   ├── thrift v0.17.0
+│   │   ├── byteorder v1.5.0
+│   │   ├── integer-encoding v3.0.4
+│   │   └── ordered-float v2.10.1 (*)
+│   ├── twox-hash v2.1.1
+│   └── zstd v0.13.3
+│       └── zstd-safe v7.2.4
+│           └── zstd-sys v2.0.15+zstd.1.5.7
+│               [build-dependencies]
+│               ├── cc v1.2.16 (*)
+│               └── pkg-config v0.3.32
+├── reqwest v0.11.27
+│   ├── base64 v0.21.7
+│   ├── bytes v1.10.1
+│   ├── encoding_rs v0.8.35
+│   │   └── cfg-if v1.0.3
+│   ├── futures-core v0.3.31
+│   ├── futures-util v0.3.31
+│   │   ├── futures-core v0.3.31
+│   │   ├── futures-io v0.3.31
+│   │   ├── futures-task v0.3.31
+│   │   ├── memchr v2.7.5
+│   │   ├── pin-project-lite v0.2.16
+│   │   ├── pin-utils v0.1.0
+│   │   └── slab v0.4.11
+│   ├── h2 v0.3.27
+│   │   ├── bytes v1.10.1
+│   │   ├── fnv v1.0.7
+│   │   ├── futures-core v0.3.31
+│   │   ├── futures-sink v0.3.31
+│   │   ├── futures-util v0.3.31 (*)
+│   │   ├── http v0.2.12
+│   │   │   ├── bytes v1.10.1
+│   │   │   ├── fnv v1.0.7
+│   │   │   └── itoa v1.0.15
+│   │   ├── indexmap v2.11.0 (*)
+│   │   ├── slab v0.4.11
+│   │   ├── tokio v1.47.1
+│   │   │   ├── bytes v1.10.1
+│   │   │   ├── libc v0.2.174
+│   │   │   ├── mio v1.0.4
+│   │   │   │   └── libc v0.2.174
+│   │   │   ├── pin-project-lite v0.2.16
+│   │   │   └── socket2 v0.6.0 (*)
+│   │   ├── tokio-util v0.7.16
+│   │   │   ├── bytes v1.10.1
+│   │   │   ├── futures-core v0.3.31
+│   │   │   ├── futures-sink v0.3.31
+│   │   │   ├── pin-project-lite v0.2.16
+│   │   │   └── tokio v1.47.1 (*)
+│   │   └── tracing v0.1.37 (*)
+│   ├── http v0.2.12 (*)
+│   ├── http-body v0.4.6
+│   │   ├── bytes v1.10.1
+│   │   ├── http v0.2.12 (*)
+│   │   └── pin-project-lite v0.2.16
+│   ├── hyper v0.14.32
+│   │   ├── bytes v1.10.1
+│   │   ├── futures-channel v0.3.31
+│   │   │   └── futures-core v0.3.31
+│   │   ├── futures-core v0.3.31
+│   │   ├── futures-util v0.3.31 (*)
+│   │   ├── h2 v0.3.27 (*)
+│   │   ├── http v0.2.12 (*)
+│   │   ├── http-body v0.4.6 (*)
+│   │   ├── httparse v1.10.1
+│   │   ├── httpdate v1.0.3
+│   │   ├── itoa v1.0.15
+│   │   ├── pin-project-lite v0.2.16
+│   │   ├── socket2 v0.5.10
+│   │   │   └── libc v0.2.174
+│   │   ├── tokio v1.47.1 (*)
+│   │   ├── tower-service v0.3.3
+│   │   ├── tracing v0.1.37 (*)
+│   │   └── want v0.3.1
+│   │       └── try-lock v0.2.5
+│   ├── hyper-tls v0.5.0
+│   │   ├── bytes v1.10.1
+│   │   ├── hyper v0.14.32 (*)
+│   │   ├── native-tls v0.2.14
+│   │   │   ├── log v0.4.27
+│   │   │   ├── openssl v0.10.73
+│   │   │   │   ├── bitflags v2.9.3
+│   │   │   │   ├── cfg-if v1.0.3
+│   │   │   │   ├── foreign-types v0.3.2
+│   │   │   │   │   └── foreign-types-shared v0.1.1
+│   │   │   │   ├── libc v0.2.174
+│   │   │   │   ├── once_cell v1.21.3
+│   │   │   │   ├── openssl-macros v0.1.1 (proc-macro)
+│   │   │   │   │   ├── proc-macro2 v1.0.101 (*)
+│   │   │   │   │   ├── quote v1.0.40 (*)
+│   │   │   │   │   └── syn v2.0.106 (*)
+│   │   │   │   └── openssl-sys v0.9.109 (*)
+│   │   │   ├── openssl-probe v0.1.6
+│   │   │   └── openssl-sys v0.9.109 (*)
+│   │   ├── tokio v1.47.1 (*)
+│   │   └── tokio-native-tls v0.3.1
+│   │       ├── native-tls v0.2.14 (*)
+│   │       └── tokio v1.47.1 (*)
+│   ├── ipnet v2.11.0
+│   ├── log v0.4.27
+│   ├── mime v0.3.17
+│   ├── native-tls v0.2.14 (*)
+│   ├── once_cell v1.21.3
+│   ├── percent-encoding v2.3.2
+│   ├── pin-project-lite v0.2.16
+│   ├── rustls-pemfile v1.0.4
+│   │   └── base64 v0.21.7
+│   ├── serde v1.0.219 (*)
+│   ├── serde_json v1.0.143 (*)
+│   ├── serde_urlencoded v0.7.1
+│   │   ├── form_urlencoded v1.2.2 (*)
+│   │   ├── itoa v1.0.15
+│   │   ├── ryu v1.0.20
+│   │   └── serde v1.0.219 (*)
+│   ├── sync_wrapper v0.1.2
+│   ├── tokio v1.47.1 (*)
+│   ├── tokio-native-tls v0.3.1 (*)
+│   ├── tower-service v0.3.3
+│   └── url v2.5.7 (*)
+├── serde v1.0.219 (*)
+├── tar v0.4.44 (*)
+├── toml v0.8.23 (*)
+└── xz2 v0.1.7 (*)
+
+rustc-main v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc)
+├── rustc_codegen_ssa v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_codegen_ssa)
+│   ├── ar_archive_writer v0.4.2
+│   │   └── object v0.36.7 (*)
+│   ├── bitflags v2.9.3
+│   ├── bstr v1.12.0 (*)
+│   ├── cc v1.2.16
+│   │   └── shlex v1.3.0
+│   ├── itertools v0.12.1 (*)
+│   ├── libc v0.2.174
+│   ├── object v0.37.3 (*)
+│   ├── pathdiff v0.2.3
+│   ├── regex v1.11.2 (*)
+│   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi)
+│   │   ├── bitflags v2.9.3
+│   │   ├── rand v0.9.2 (*)
+│   │   ├── rand_xoshiro v0.7.0
+│   │   │   └── rand_core v0.9.3 (*)
+│   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures)
+│   │   │   ├── arrayvec v0.7.6
+│   │   │   ├── bitflags v2.9.3
+│   │   │   ├── either v1.15.0
+│   │   │   ├── elsa v1.11.2
+│   │   │   │   └── stable_deref_trait v1.2.0
+│   │   │   ├── ena v0.14.3
+│   │   │   │   └── log v0.4.27
+│   │   │   ├── hashbrown v0.15.5 (*)
+│   │   │   ├── indexmap v2.11.0 (*)
+│   │   │   ├── jobserver v0.1.34 (*)
+│   │   │   ├── libc v0.2.174
+│   │   │   ├── measureme v12.0.3 (*)
+│   │   │   ├── memmap2 v0.2.3
+│   │   │   │   └── libc v0.2.174
+│   │   │   ├── parking_lot v0.12.4 (*)
+│   │   │   ├── rustc-hash v2.1.1
+│   │   │   ├── rustc-stable-hash v0.1.2
+│   │   │   ├── rustc_arena v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_arena)
+│   │   │   │   └── smallvec v1.15.1
+│   │   │   ├── rustc_graphviz v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_graphviz)
+│   │   │   ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes)
+│   │   │   │   └── rustc-stable-hash v0.1.2
+│   │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index)
+│   │   │   │   ├── rustc_index_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index_macros)
+│   │   │   │   │   ├── proc-macro2 v1.0.101 (*)
+│   │   │   │   │   ├── quote v1.0.40 (*)
+│   │   │   │   │   └── syn v2.0.106 (*)
+│   │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros)
+│   │   │   │   │   ├── proc-macro2 v1.0.101 (*)
+│   │   │   │   │   ├── quote v1.0.40 (*)
+│   │   │   │   │   ├── syn v2.0.106 (*)
+│   │   │   │   │   └── synstructure v0.13.2 (*)
+│   │   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize)
+│   │   │   │   │   ├── indexmap v2.11.0 (*)
+│   │   │   │   │   ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+│   │   │   │   │   ├── smallvec v1.15.1
+│   │   │   │   │   └── thin-vec v0.2.14
+│   │   │   │   │   [dev-dependencies]
+│   │   │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   │   │   └── tempfile v3.21.0 (*)
+│   │   │   │   └── smallvec v1.15.1
+│   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   ├── rustc_thread_pool v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_thread_pool)
+│   │   │   │   ├── crossbeam-deque v0.8.6 (*)
+│   │   │   │   ├── crossbeam-utils v0.8.21
+│   │   │   │   └── smallvec v1.15.1
+│   │   │   │   [dev-dependencies]
+│   │   │   │   ├── libc v0.2.174
+│   │   │   │   ├── rand v0.9.2 (*)
+│   │   │   │   ├── rand_xorshift v0.4.0
+│   │   │   │   │   └── rand_core v0.9.3 (*)
+│   │   │   │   └── scoped-tls v1.0.1
+│   │   │   ├── smallvec v1.15.1
+│   │   │   ├── stacker v0.1.21
+│   │   │   │   ├── cfg-if v1.0.3
+│   │   │   │   ├── libc v0.2.174
+│   │   │   │   └── psm v0.1.26
+│   │   │   │       [build-dependencies]
+│   │   │   │       └── cc v1.2.16 (*)
+│   │   │   │   [build-dependencies]
+│   │   │   │   └── cc v1.2.16 (*)
+│   │   │   ├── tempfile v3.21.0 (*)
+│   │   │   ├── thin-vec v0.2.14
+│   │   │   └── tracing v0.1.37 (*)
+│   │   ├── rustc_error_messages v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_error_messages)
+│   │   │   ├── fluent-bundle v0.16.0
+│   │   │   │   ├── fluent-langneg v0.13.0
+│   │   │   │   │   └── unic-langid v0.9.6
+│   │   │   │   │       ├── unic-langid-impl v0.9.6
+│   │   │   │   │       │   └── tinystr v0.8.1 (*)
+│   │   │   │   │       └── unic-langid-macros v0.9.6
+│   │   │   │   │           ├── proc-macro-hack v0.5.20+deprecated (proc-macro)
+│   │   │   │   │           ├── tinystr v0.8.1 (*)
+│   │   │   │   │           ├── unic-langid-impl v0.9.6 (*)
+│   │   │   │   │           └── unic-langid-macros-impl v0.9.6 (proc-macro)
+│   │   │   │   │               ├── proc-macro-hack v0.5.20+deprecated (proc-macro)
+│   │   │   │   │               ├── quote v1.0.40 (*)
+│   │   │   │   │               ├── syn v2.0.106 (*)
+│   │   │   │   │               └── unic-langid-impl v0.9.6 (*)
+│   │   │   │   ├── fluent-syntax v0.12.0 (*)
+│   │   │   │   ├── intl-memoizer v0.5.3
+│   │   │   │   │   ├── type-map v0.5.1
+│   │   │   │   │   │   └── rustc-hash v2.1.1
+│   │   │   │   │   └── unic-langid v0.9.6 (*)
+│   │   │   │   ├── intl_pluralrules v7.0.2
+│   │   │   │   │   └── unic-langid v0.9.6 (*)
+│   │   │   │   ├── rustc-hash v2.1.1
+│   │   │   │   ├── self_cell v1.2.0
+│   │   │   │   ├── smallvec v1.15.1
+│   │   │   │   └── unic-langid v0.9.6 (*)
+│   │   │   ├── fluent-syntax v0.12.0 (*)
+│   │   │   ├── icu_list v2.0.0
+│   │   │   │   ├── displaydoc v0.2.5 (proc-macro) (*)
+│   │   │   │   ├── icu_provider v2.0.0 (*)
+│   │   │   │   ├── regex-automata v0.4.10 (*)
+│   │   │   │   ├── writeable v0.6.1
+│   │   │   │   └── zerovec v0.11.4 (*)
+│   │   │   ├── icu_locale v2.0.0
+│   │   │   │   ├── displaydoc v0.2.5 (proc-macro) (*)
+│   │   │   │   ├── icu_collections v2.0.0 (*)
+│   │   │   │   ├── icu_locale_core v2.0.0 (*)
+│   │   │   │   ├── icu_locale_data v2.0.0
+│   │   │   │   ├── icu_provider v2.0.0 (*)
+│   │   │   │   ├── potential_utf v0.1.3 (*)
+│   │   │   │   ├── tinystr v0.8.1 (*)
+│   │   │   │   └── zerovec v0.11.4 (*)
+│   │   │   ├── intl-memoizer v0.5.3 (*)
+│   │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast)
+│   │   │   │   ├── bitflags v2.9.3
+│   │   │   │   ├── memchr v2.7.5
+│   │   │   │   ├── rustc-literal-escaper v0.0.5
+│   │   │   │   ├── rustc_ast_ir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_ir)
+│   │   │   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   │   │   └── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span)
+│   │   │   │   │       ├── blake3 v1.8.2
+│   │   │   │   │       │   ├── arrayref v0.3.9
+│   │   │   │   │       │   ├── arrayvec v0.7.6
+│   │   │   │   │       │   ├── cfg-if v1.0.3
+│   │   │   │   │       │   └── constant_time_eq v0.3.1
+│   │   │   │   │       │   [build-dependencies]
+│   │   │   │   │       │   └── cc v1.2.16 (*)
+│   │   │   │   │       ├── derive-where v1.6.0 (proc-macro)
+│   │   │   │   │       │   ├── proc-macro2 v1.0.101 (*)
+│   │   │   │   │       │   ├── quote v1.0.40 (*)
+│   │   │   │   │       │   └── syn v2.0.106 (*)
+│   │   │   │   │       ├── indexmap v2.11.0 (*)
+│   │   │   │   │       ├── itoa v1.0.15
+│   │   │   │   │       ├── md-5 v0.10.6 (*)
+│   │   │   │   │       ├── rustc_arena v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_arena) (*)
+│   │   │   │   │       ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   │   │       ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+│   │   │   │   │       ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   │   │   │       ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   │   │       ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   │   │       ├── scoped-tls v1.0.1
+│   │   │   │   │       ├── sha1 v0.10.6
+│   │   │   │   │       │   ├── cfg-if v1.0.3
+│   │   │   │   │       │   ├── cpufeatures v0.2.17 (*)
+│   │   │   │   │       │   └── digest v0.10.7 (*)
+│   │   │   │   │       ├── sha2 v0.10.9 (*)
+│   │   │   │   │       ├── tracing v0.1.37 (*)
+│   │   │   │   │       └── unicode-width v0.2.1
+│   │   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   │   ├── smallvec v1.15.1
+│   │   │   │   ├── thin-vec v0.2.14
+│   │   │   │   └── tracing v0.1.37 (*)
+│   │   │   ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty)
+│   │   │   │   ├── itertools v0.12.1 (*)
+│   │   │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   │   │   ├── rustc_lexer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lexer)
+│   │   │   │   │   ├── memchr v2.7.5
+│   │   │   │   │   ├── unicode-properties v0.1.3
+│   │   │   │   │   └── unicode-xid v0.2.6
+│   │   │   │   │   [dev-dependencies]
+│   │   │   │   │   └── expect-test v1.5.1
+│   │   │   │   │       ├── dissimilar v1.0.10
+│   │   │   │   │       └── once_cell v1.21.3
+│   │   │   │   └── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   │   [dev-dependencies]
+│   │   │   │   └── thin-vec v0.2.14
+│   │   │   ├── rustc_baked_icu_data v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_baked_icu_data)
+│   │   │   │   ├── icu_list v2.0.0 (*)
+│   │   │   │   ├── icu_locale v2.0.0 (*)
+│   │   │   │   ├── icu_provider v2.0.0 (*)
+│   │   │   │   └── zerovec v0.11.4 (*)
+│   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   ├── tracing v0.1.37 (*)
+│   │   │   └── unic-langid v0.9.6 (*)
+│   │   ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+│   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   └── tracing v0.1.37 (*)
+│   ├── rustc_arena v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_arena) (*)
+│   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   ├── rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing)
+│   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+│   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors)
+│   │   │   ├── annotate-snippets v0.11.5 (*)
+│   │   │   ├── derive_setters v0.1.8 (proc-macro)
+│   │   │   │   ├── darling v0.20.11 (*)
+│   │   │   │   ├── proc-macro2 v1.0.101 (*)
+│   │   │   │   ├── quote v1.0.40 (*)
+│   │   │   │   └── syn v2.0.106 (*)
+│   │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   ├── rustc_error_codes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_error_codes)
+│   │   │   ├── rustc_error_messages v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_error_messages) (*)
+│   │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro)
+│   │   │   │   ├── annotate-snippets v0.11.5 (*)
+│   │   │   │   ├── fluent-bundle v0.16.0 (*)
+│   │   │   │   ├── fluent-syntax v0.12.0 (*)
+│   │   │   │   ├── proc-macro2 v1.0.101 (*)
+│   │   │   │   ├── quote v1.0.40 (*)
+│   │   │   │   ├── syn v2.0.106 (*)
+│   │   │   │   └── unic-langid v0.9.6 (*)
+│   │   │   ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+│   │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   │   ├── rustc_lexer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lexer) (*)
+│   │   │   ├── rustc_lint_defs v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lint_defs)
+│   │   │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   │   ├── rustc_error_messages v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_error_messages) (*)
+│   │   │   │   ├── rustc_hir_id v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_id)
+│   │   │   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   │   │   └── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   │   └── serde v1.0.219 (*)
+│   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   ├── serde v1.0.219 (*)
+│   │   │   ├── serde_json v1.0.143 (*)
+│   │   │   ├── termcolor v1.4.1
+│   │   │   ├── termize v0.2.0 (*)
+│   │   │   └── tracing v0.1.37 (*)
+│   │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature)
+│   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir)
+│   │   │   │   ├── bitflags v2.9.3
+│   │   │   │   ├── odht v0.3.1
+│   │   │   │   │   └── cfg-if v1.0.3
+│   │   │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   │   │   │   ├── rustc_arena v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_arena) (*)
+│   │   │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   │   │   ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+│   │   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   │   ├── rustc_error_messages v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_error_messages) (*)
+│   │   │   │   ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+│   │   │   │   ├── rustc_hir_id v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_id) (*)
+│   │   │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target)
+│   │   │   │   │   ├── bitflags v2.9.3
+│   │   │   │   │   ├── object v0.37.3 (*)
+│   │   │   │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   │   │   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   │   │   ├── rustc_error_messages v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_error_messages) (*)
+│   │   │   │   │   ├── rustc_fs_util v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fs_util)
+│   │   │   │   │   │   └── tempfile v3.21.0 (*)
+│   │   │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   │   │   ├── serde v1.0.219 (*)
+│   │   │   │   │   ├── serde_derive v1.0.219 (proc-macro) (*)
+│   │   │   │   │   ├── serde_json v1.0.143 (*)
+│   │   │   │   │   ├── serde_path_to_error v0.1.17
+│   │   │   │   │   │   ├── itoa v1.0.15
+│   │   │   │   │   │   └── serde v1.0.219 (*)
+│   │   │   │   │   └── tracing v0.1.37 (*)
+│   │   │   │   ├── smallvec v1.15.1
+│   │   │   │   ├── thin-vec v0.2.14
+│   │   │   │   └── tracing v0.1.37 (*)
+│   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   ├── serde v1.0.219 (*)
+│   │   │   └── serde_json v1.0.143 (*)
+│   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   │   ├── rustc_lexer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lexer) (*)
+│   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   ├── rustc_parse v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_parse)
+│   │   │   ├── bitflags v2.9.3
+│   │   │   ├── rustc-literal-escaper v0.0.5
+│   │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   │   ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+│   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│   │   │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│   │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│   │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   │   ├── rustc_lexer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lexer) (*)
+│   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session)
+│   │   │   │   ├── bitflags v2.9.3
+│   │   │   │   ├── getopts v0.2.24 (*)
+│   │   │   │   ├── libc v0.2.174
+│   │   │   │   ├── rand v0.9.2 (*)
+│   │   │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   │   │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│   │   │   │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│   │   │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│   │   │   │   ├── rustc_fs_util v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fs_util) (*)
+│   │   │   │   ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+│   │   │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   │   │   │   ├── rustc_lint_defs v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lint_defs) (*)
+│   │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│   │   │   │   ├── termize v0.2.0 (*)
+│   │   │   │   └── tracing v0.1.37 (*)
+│   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   ├── thin-vec v0.2.14
+│   │   │   ├── tracing v0.1.37 (*)
+│   │   │   ├── unicode-normalization v0.1.24 (*)
+│   │   │   └── unicode-width v0.2.1
+│   │   │   [dev-dependencies]
+│   │   │   └── termcolor v1.4.1
+│   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│   │   └── thin-vec v0.2.14
+│   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│   ├── rustc_fs_util v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fs_util) (*)
+│   ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+│   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   ├── rustc_incremental v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_incremental)
+│   │   ├── rand v0.9.2 (*)
+│   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│   │   ├── rustc_fs_util v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fs_util) (*)
+│   │   ├── rustc_graphviz v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_graphviz)
+│   │   ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+│   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle)
+│   │   │   ├── bitflags v2.9.3
+│   │   │   ├── either v1.15.0
+│   │   │   ├── gsgdt v0.1.2
+│   │   │   │   └── serde v1.0.219 (*)
+│   │   │   ├── polonius-engine v0.13.0
+│   │   │   │   ├── datafrog v2.0.1
+│   │   │   │   ├── log v0.4.27
+│   │   │   │   └── rustc-hash v1.1.0
+│   │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   │   │   ├── rustc_apfloat v0.2.3+llvm-462a31f5a5ab (*)
+│   │   │   ├── rustc_arena v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_arena) (*)
+│   │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   │   ├── rustc_ast_ir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_ir) (*)
+│   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   ├── rustc_error_messages v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_error_messages) (*)
+│   │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│   │   │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│   │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│   │   │   ├── rustc_graphviz v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_graphviz)
+│   │   │   ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+│   │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   │   │   ├── rustc_hir_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_pretty)
+│   │   │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   │   │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   │   │   ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+│   │   │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   │   │   │   └── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   │   ├── rustc_lint_defs v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lint_defs) (*)
+│   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   ├── rustc_query_system v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_query_system)
+│   │   │   │   ├── hashbrown v0.15.5 (*)
+│   │   │   │   ├── parking_lot v0.12.4 (*)
+│   │   │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   │   │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│   │   │   │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│   │   │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│   │   │   │   ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+│   │   │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   │   │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│   │   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   │   ├── rustc_thread_pool v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_thread_pool) (*)
+│   │   │   │   ├── smallvec v1.15.1
+│   │   │   │   └── tracing v0.1.37 (*)
+│   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│   │   │   ├── rustc_thread_pool v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_thread_pool) (*)
+│   │   │   ├── rustc_type_ir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_type_ir)
+│   │   │   │   ├── bitflags v2.9.3
+│   │   │   │   ├── derive-where v1.6.0 (proc-macro) (*)
+│   │   │   │   ├── ena v0.14.3 (*)
+│   │   │   │   ├── indexmap v2.11.0 (*)
+│   │   │   │   ├── rustc-hash v2.1.1
+│   │   │   │   ├── rustc_ast_ir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_ir) (*)
+│   │   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   │   ├── rustc_error_messages v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_error_messages) (*)
+│   │   │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   │   ├── rustc_type_ir_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_type_ir_macros)
+│   │   │   │   │   ├── proc-macro2 v1.0.101 (*)
+│   │   │   │   │   ├── quote v1.0.40 (*)
+│   │   │   │   │   ├── syn v2.0.106 (*)
+│   │   │   │   │   └── synstructure v0.13.2 (*)
+│   │   │   │   ├── smallvec v1.15.1
+│   │   │   │   ├── thin-vec v0.2.14
+│   │   │   │   └── tracing v0.1.37 (*)
+│   │   │   ├── smallvec v1.15.1
+│   │   │   ├── thin-vec v0.2.14
+│   │   │   └── tracing v0.1.37 (*)
+│   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   ├── thin-vec v0.2.14
+│   │   └── tracing v0.1.37 (*)
+│   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   ├── rustc_lint_defs v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lint_defs) (*)
+│   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   ├── rustc_metadata v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_metadata)
+│   │   ├── bitflags v2.9.3
+│   │   ├── libloading v0.8.8 (*)
+│   │   ├── odht v0.3.1 (*)
+│   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   ├── rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing) (*)
+│   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│   │   ├── rustc_expand v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_expand)
+│   │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   │   ├── rustc_ast_passes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_passes)
+│   │   │   │   ├── itertools v0.12.1 (*)
+│   │   │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   │   │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   │   │   ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+│   │   │   │   ├── rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing) (*)
+│   │   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│   │   │   │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│   │   │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│   │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│   │   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│   │   │   │   └── thin-vec v0.2.14
+│   │   │   ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+│   │   │   ├── rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing) (*)
+│   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│   │   │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│   │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│   │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   │   │   ├── rustc_lexer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lexer) (*)
+│   │   │   ├── rustc_lint_defs v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lint_defs) (*)
+│   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   ├── rustc_parse v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_parse) (*)
+│   │   │   ├── rustc_proc_macro v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_proc_macro)
+│   │   │   │   └── rustc-literal-escaper v0.0.5
+│   │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   ├── smallvec v1.15.1
+│   │   │   ├── thin-vec v0.2.14
+│   │   │   └── tracing v0.1.37 (*)
+│   │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│   │   ├── rustc_fs_util v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fs_util) (*)
+│   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   │   ├── rustc_hir_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_pretty) (*)
+│   │   ├── rustc_incremental v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_incremental) (*)
+│   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│   │   ├── rustc_proc_macro v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_proc_macro) (*)
+│   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│   │   ├── tempfile v3.21.0 (*)
+│   │   └── tracing v0.1.37 (*)
+│   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│   ├── rustc_query_system v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_query_system) (*)
+│   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   ├── rustc_symbol_mangling v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_symbol_mangling)
+│   │   ├── punycode v0.4.1
+│   │   ├── rustc-demangle v0.1.26
+│   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│   │   ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+│   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   └── tracing v0.1.37 (*)
+│   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│   ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection)
+│   │   ├── itertools v0.12.1 (*)
+│   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   │   ├── rustc_infer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_infer)
+│   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│   │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│   │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   ├── rustc_type_ir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_type_ir) (*)
+│   │   │   ├── smallvec v1.15.1
+│   │   │   ├── thin-vec v0.2.14
+│   │   │   └── tracing v0.1.37 (*)
+│   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│   │   ├── rustc_next_trait_solver v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_next_trait_solver)
+│   │   │   ├── derive-where v1.6.0 (proc-macro) (*)
+│   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│   │   │   ├── rustc_type_ir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_type_ir) (*)
+│   │   │   ├── rustc_type_ir_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_type_ir_macros) (*)
+│   │   │   └── tracing v0.1.37 (*)
+│   │   ├── rustc_parse_format v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_parse_format)
+│   │   │   ├── rustc-literal-escaper v0.0.5
+│   │   │   └── rustc_lexer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lexer) (*)
+│   │   │   [dev-dependencies]
+│   │   │   └── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   ├── rustc_transmute v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_transmute)
+│   │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   │   │   ├── smallvec v1.15.1
+│   │   │   └── tracing v0.1.37 (*)
+│   │   │   [dev-dependencies]
+│   │   │   └── itertools v0.12.1 (*)
+│   │   ├── smallvec v1.15.1
+│   │   ├── thin-vec v0.2.14
+│   │   └── tracing v0.1.37 (*)
+│   ├── serde_json v1.0.143 (*)
+│   ├── smallvec v1.15.1
+│   ├── tempfile v3.21.0 (*)
+│   ├── thin-vec v0.2.14
+│   ├── thorin-dwp v0.9.0
+│   │   ├── gimli v0.31.1 (*)
+│   │   ├── hashbrown v0.15.5 (*)
+│   │   ├── object v0.36.7 (*)
+│   │   └── tracing v0.1.37 (*)
+│   ├── tracing v0.1.37 (*)
+│   └── wasm-encoder v0.219.2
+│       └── leb128 v0.2.5
+├── rustc_driver v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_driver)
+│   └── rustc_driver_impl v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_driver_impl)
+│       ├── ctrlc v3.4.7
+│       │   └── nix v0.30.1
+│       │       ├── bitflags v2.9.3
+│       │       ├── cfg-if v1.0.3
+│       │       └── libc v0.2.174
+│       │       [build-dependencies]
+│       │       └── cfg_aliases v0.2.1
+│       ├── jiff v0.2.15
+│       ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       ├── rustc_ast_lowering v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_lowering)
+│       │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       │   ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+│       │   ├── rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing) (*)
+│       │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│       │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       │   ├── smallvec v1.15.1
+│       │   ├── thin-vec v0.2.14
+│       │   └── tracing v0.1.37 (*)
+│       ├── rustc_ast_passes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_passes) (*)
+│       ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+│       ├── rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing) (*)
+│       ├── rustc_borrowck v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_borrowck)
+│       │   ├── either v1.15.0
+│       │   ├── itertools v0.12.1 (*)
+│       │   ├── polonius-engine v0.13.0 (*)
+│       │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   ├── rustc_graphviz v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_graphviz)
+│       │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   ├── rustc_infer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_infer) (*)
+│       │   ├── rustc_lexer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lexer) (*)
+│       │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   ├── rustc_mir_dataflow v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_mir_dataflow)
+│       │   │   ├── polonius-engine v0.13.0 (*)
+│       │   │   ├── regex v1.11.2 (*)
+│       │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   │   ├── rustc_graphviz v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_graphviz)
+│       │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   │   ├── smallvec v1.15.1
+│       │   │   └── tracing v0.1.37 (*)
+│       │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+│       │   ├── rustc_traits v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_traits)
+│       │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   │   ├── rustc_infer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_infer) (*)
+│       │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   │   ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+│       │   │   └── tracing v0.1.37 (*)
+│       │   ├── smallvec v1.15.1
+│       │   └── tracing v0.1.37 (*)
+│       ├── rustc_builtin_macros v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_builtin_macros)
+│       │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       │   ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+│       │   ├── rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing) (*)
+│       │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   ├── rustc_expand v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_expand) (*)
+│       │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│       │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   ├── rustc_lexer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lexer) (*)
+│       │   ├── rustc_lint_defs v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lint_defs) (*)
+│       │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   ├── rustc_parse v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_parse) (*)
+│       │   ├── rustc_parse_format v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_parse_format) (*)
+│       │   ├── rustc_proc_macro v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_proc_macro) (*)
+│       │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       │   ├── smallvec v1.15.1
+│       │   ├── thin-vec v0.2.14
+│       │   └── tracing v0.1.37 (*)
+│       ├── rustc_codegen_ssa v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_codegen_ssa) (*)
+│       ├── rustc_const_eval v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_const_eval)
+│       │   ├── either v1.15.0
+│       │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   ├── rustc_apfloat v0.2.3+llvm-462a31f5a5ab (*)
+│       │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   ├── rustc_infer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_infer) (*)
+│       │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   ├── rustc_mir_dataflow v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_mir_dataflow) (*)
+│       │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       │   ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+│       │   └── tracing v0.1.37 (*)
+│       ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       ├── rustc_expand v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_expand) (*)
+│       ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│       ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       ├── rustc_hir_analysis v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_analysis)
+│       │   ├── itertools v0.12.1 (*)
+│       │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   ├── rustc_arena v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_arena) (*)
+│       │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       │   ├── rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing) (*)
+│       │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│       │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   ├── rustc_infer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_infer) (*)
+│       │   ├── rustc_lint_defs v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lint_defs) (*)
+│       │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       │   ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+│       │   ├── smallvec v1.15.1
+│       │   └── tracing v0.1.37 (*)
+│       ├── rustc_hir_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_pretty) (*)
+│       ├── rustc_hir_typeck v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_typeck)
+│       │   ├── itertools v0.12.1 (*)
+│       │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       │   ├── rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing) (*)
+│       │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   ├── rustc_hir_analysis v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_analysis) (*)
+│       │   ├── rustc_hir_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_pretty) (*)
+│       │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   ├── rustc_infer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_infer) (*)
+│       │   ├── rustc_lint v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lint)
+│       │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       │   │   ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+│       │   │   ├── rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing) (*)
+│       │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│       │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   │   ├── rustc_infer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_infer) (*)
+│       │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   │   ├── rustc_parse_format v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_parse_format) (*)
+│       │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       │   │   ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+│       │   │   ├── smallvec v1.15.1
+│       │   │   ├── tracing v0.1.37 (*)
+│       │   │   └── unicode-security v0.1.2
+│       │   │       ├── unicode-normalization v0.1.24 (*)
+│       │   │       └── unicode-script v0.5.7
+│       │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       │   ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+│       │   ├── smallvec v1.15.1
+│       │   └── tracing v0.1.37 (*)
+│       ├── rustc_incremental v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_incremental) (*)
+│       ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       ├── rustc_infer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_infer) (*)
+│       ├── rustc_interface v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_interface)
+│       │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       │   ├── rustc_ast_lowering v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_lowering) (*)
+│       │   ├── rustc_ast_passes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_passes) (*)
+│       │   ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+│       │   ├── rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing) (*)
+│       │   ├── rustc_borrowck v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_borrowck) (*)
+│       │   ├── rustc_builtin_macros v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_builtin_macros) (*)
+│       │   ├── rustc_codegen_ssa v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_codegen_ssa) (*)
+│       │   ├── rustc_const_eval v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_const_eval) (*)
+│       │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   ├── rustc_expand v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_expand) (*)
+│       │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│       │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   ├── rustc_fs_util v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fs_util) (*)
+│       │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   ├── rustc_hir_analysis v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_analysis) (*)
+│       │   ├── rustc_hir_typeck v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_typeck) (*)
+│       │   ├── rustc_incremental v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_incremental) (*)
+│       │   ├── rustc_lint v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lint) (*)
+│       │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   ├── rustc_metadata v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_metadata) (*)
+│       │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   ├── rustc_mir_build v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_mir_build)
+│       │   │   ├── itertools v0.12.1 (*)
+│       │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   │   ├── rustc_apfloat v0.2.3+llvm-462a31f5a5ab (*)
+│       │   │   ├── rustc_arena v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_arena) (*)
+│       │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   │   ├── rustc_infer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_infer) (*)
+│       │   │   ├── rustc_lint v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lint) (*)
+│       │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   │   ├── rustc_pattern_analysis v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_pattern_analysis)
+│       │   │   │   ├── rustc-hash v2.1.1
+│       │   │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   │   │   ├── rustc_apfloat v0.2.3+llvm-462a31f5a5ab (*)
+│       │   │   │   ├── rustc_arena v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_arena) (*)
+│       │   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   │   │   ├── smallvec v1.15.1
+│       │   │   │   └── tracing v0.1.37 (*)
+│       │   │   │   [dev-dependencies]
+│       │   │   │   ├── tracing-subscriber v0.3.18 (*)
+│       │   │   │   └── tracing-tree v0.3.1
+│       │   │   │       ├── nu-ansi-term v0.50.1
+│       │   │   │       ├── tracing-core v0.1.30 (*)
+│       │   │   │       ├── tracing-log v0.2.0 (*)
+│       │   │   │       └── tracing-subscriber v0.3.18 (*)
+│       │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   │   ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+│       │   │   └── tracing v0.1.37 (*)
+│       │   ├── rustc_mir_transform v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_mir_transform)
+│       │   │   ├── either v1.15.0
+│       │   │   ├── itertools v0.12.1 (*)
+│       │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   │   ├── rustc_arena v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_arena) (*)
+│       │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       │   │   ├── rustc_const_eval v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_const_eval) (*)
+│       │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   │   ├── rustc_infer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_infer) (*)
+│       │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   │   ├── rustc_mir_build v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_mir_build) (*)
+│       │   │   ├── rustc_mir_dataflow v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_mir_dataflow) (*)
+│       │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       │   │   ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+│       │   │   ├── smallvec v1.15.1
+│       │   │   └── tracing v0.1.37 (*)
+│       │   ├── rustc_monomorphize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_monomorphize)
+│       │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       │   │   ├── serde v1.0.219 (*)
+│       │   │   ├── serde_json v1.0.143 (*)
+│       │   │   └── tracing v0.1.37 (*)
+│       │   ├── rustc_parse v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_parse) (*)
+│       │   ├── rustc_passes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_passes)
+│       │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       │   │   ├── rustc_ast_lowering v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_lowering) (*)
+│       │   │   ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+│       │   │   ├── rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing) (*)
+│       │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   │   ├── rustc_expand v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_expand) (*)
+│       │   │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│       │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   │   ├── rustc_privacy v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_privacy)
+│       │   │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       │   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   │   │   ├── rustc_ty_utils v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ty_utils)
+│       │   │   │   │   ├── itertools v0.12.1 (*)
+│       │   │   │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   │   │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   │   │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   │   │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   │   │   │   ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+│       │   │   │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   │   │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   │   │   │   ├── rustc_infer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_infer) (*)
+│       │   │   │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   │   │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   │   │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   │   │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   │   │   │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       │   │   │   │   ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+│       │   │   │   │   └── tracing v0.1.37 (*)
+│       │   │   │   └── tracing v0.1.37 (*)
+│       │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       │   │   ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+│       │   │   └── tracing v0.1.37 (*)
+│       │   ├── rustc_privacy v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_privacy) (*)
+│       │   ├── rustc_query_impl v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_query_impl)
+│       │   │   ├── measureme v12.0.3 (*)
+│       │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   │   ├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+│       │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   │   ├── rustc_query_system v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_query_system) (*)
+│       │   │   ├── rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+│       │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   │   └── tracing v0.1.37 (*)
+│       │   ├── rustc_query_system v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_query_system) (*)
+│       │   ├── rustc_resolve v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_resolve)
+│       │   │   ├── bitflags v2.9.3
+│       │   │   ├── indexmap v2.11.0 (*)
+│       │   │   ├── itertools v0.12.1 (*)
+│       │   │   ├── pulldown-cmark v0.11.3 (*)
+│       │   │   ├── rustc_arena v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_arena) (*)
+│       │   │   ├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+│       │   │   ├── rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+│       │   │   ├── rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing) (*)
+│       │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   │   ├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+│       │   │   ├── rustc_expand v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_expand) (*)
+│       │   │   ├── rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+│       │   │   ├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+│       │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   │   ├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+│       │   │   ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       │   │   ├── rustc_metadata v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_metadata) (*)
+│       │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   │   ├── rustc_query_system v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_query_system) (*)
+│       │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   │   ├── smallvec v1.15.1
+│       │   │   ├── thin-vec v0.2.14
+│       │   │   └── tracing v0.1.37 (*)
+│       │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   ├── rustc_symbol_mangling v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_symbol_mangling) (*)
+│       │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       │   ├── rustc_thread_pool v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_thread_pool) (*)
+│       │   ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+│       │   ├── rustc_traits v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_traits) (*)
+│       │   ├── rustc_ty_utils v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ty_utils) (*)
+│       │   └── tracing v0.1.37 (*)
+│       │   [dev-dependencies]
+│       │   └── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       ├── rustc_lint v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lint) (*)
+│       ├── rustc_log v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_log)
+│       │   ├── tracing v0.1.37 (*)
+│       │   ├── tracing-core v0.1.30 (*)
+│       │   ├── tracing-subscriber v0.3.18 (*)
+│       │   └── tracing-tree v0.3.1 (*)
+│       ├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+│       ├── rustc_metadata v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_metadata) (*)
+│       ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       ├── rustc_mir_build v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_mir_build) (*)
+│       ├── rustc_mir_dataflow v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_mir_dataflow) (*)
+│       ├── rustc_mir_transform v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_mir_transform) (*)
+│       ├── rustc_monomorphize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_monomorphize) (*)
+│       ├── rustc_parse v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_parse) (*)
+│       ├── rustc_passes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_passes) (*)
+│       ├── rustc_pattern_analysis v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_pattern_analysis) (*)
+│       ├── rustc_privacy v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_privacy) (*)
+│       ├── rustc_public v0.1.0-preview (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_public)
+│       │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   ├── rustc_public_bridge v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_public_bridge)
+│       │   │   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│       │   │   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│       │   │   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│       │   │   ├── rustc_hir_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_pretty) (*)
+│       │   │   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│       │   │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   │   └── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       │   ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       │   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       │   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       │   ├── scoped-tls v1.0.1
+│       │   ├── serde v1.0.219 (*)
+│       │   └── tracing v0.1.37 (*)
+│       ├── rustc_query_system v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_query_system) (*)
+│       ├── rustc_resolve v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_resolve) (*)
+│       ├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+│       ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│       ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│       ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+│       ├── rustc_ty_utils v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ty_utils) (*)
+│       ├── serde_json v1.0.143 (*)
+│       ├── shlex v1.3.0
+│       └── tracing v0.1.37 (*)
+├── rustc_driver_impl v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_driver_impl) (*)
+├── rustc_public v0.1.0-preview (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_public) (*)
+└── rustc_public_bridge v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_public_bridge) (*)
+
+rustc-std-workspace-alloc v1.0.1 (/data/data/com.termux/files/home/storage/github/rust/src/rustc-std-workspace/rustc-std-workspace-alloc)
+
+rustc-std-workspace-core v1.0.1 (/data/data/com.termux/files/home/storage/github/rust/src/rustc-std-workspace/rustc-std-workspace-core)
+
+rustc-std-workspace-std v1.0.1 (/data/data/com.termux/files/home/storage/github/rust/src/rustc-std-workspace/rustc-std-workspace-std)
+
+rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+
+rustc_arena v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_arena) (*)
+
+rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+
+rustc_ast_ir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_ir) (*)
+
+rustc_ast_lowering v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_lowering) (*)
+
+rustc_ast_passes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_passes) (*)
+
+rustc_ast_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast_pretty) (*)
+
+rustc_attr_parsing v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_attr_parsing) (*)
+
+rustc_baked_icu_data v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_baked_icu_data) (*)
+
+rustc_borrowck v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_borrowck) (*)
+
+rustc_builtin_macros v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_builtin_macros) (*)
+
+rustc_codegen_llvm v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_codegen_llvm)
+├── bitflags v2.9.3
+├── gimli v0.31.1 (*)
+├── itertools v0.12.1 (*)
+├── libc v0.2.174
+├── measureme v12.0.3 (*)
+├── object v0.37.3 (*)
+├── rustc-demangle v0.1.26
+├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+├── rustc_ast v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ast) (*)
+├── rustc_codegen_ssa v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_codegen_ssa) (*)
+├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+├── rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+├── rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+├── rustc_fs_util v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fs_util) (*)
+├── rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+├── rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+├── rustc_llvm v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_llvm)
+│   └── libc v0.2.174
+│   [build-dependencies]
+│   └── cc v1.2.16 (*)
+├── rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+├── rustc_metadata v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_metadata) (*)
+├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+├── rustc_query_system v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_query_system) (*)
+├── rustc_sanitizers v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_sanitizers)
+│   ├── bitflags v2.9.3
+│   ├── rustc_abi v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_abi) (*)
+│   ├── rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+│   ├── rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+│   ├── rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+│   ├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+│   ├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+│   ├── rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+│   ├── tracing v0.1.37 (*)
+│   └── twox-hash v1.6.3 (*)
+├── rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+├── rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+├── rustc_symbol_mangling v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_symbol_mangling) (*)
+├── rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+├── serde v1.0.219 (*)
+├── serde_json v1.0.143 (*)
+├── smallvec v1.15.1
+└── tracing v0.1.37 (*)
+
+rustc_codegen_ssa v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_codegen_ssa) (*)
+
+rustc_const_eval v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_const_eval) (*)
+
+rustc_data_structures v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_data_structures) (*)
+
+rustc_driver v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_driver) (*)
+
+rustc_driver_impl v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_driver_impl) (*)
+
+rustc_error_codes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_error_codes)
+
+rustc_error_messages v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_error_messages) (*)
+
+rustc_errors v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_errors) (*)
+
+rustc_expand v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_expand) (*)
+
+rustc_feature v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_feature) (*)
+
+rustc_fluent_macro v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fluent_macro) (*)
+
+rustc_fs_util v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_fs_util) (*)
+
+rustc_graphviz v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_graphviz)
+
+rustc_hashes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hashes) (*)
+
+rustc_hir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir) (*)
+
+rustc_hir_analysis v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_analysis) (*)
+
+rustc_hir_id v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_id) (*)
+
+rustc_hir_pretty v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_pretty) (*)
+
+rustc_hir_typeck v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_hir_typeck) (*)
+
+rustc_incremental v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_incremental) (*)
+
+rustc_index v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index) (*)
+
+rustc_index_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_index_macros) (*)
+
+rustc_infer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_infer) (*)
+
+rustc_interface v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_interface) (*)
+
+rustc_lexer v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lexer) (*)
+
+rustc_lint v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lint) (*)
+
+rustc_lint_defs v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_lint_defs) (*)
+
+rustc_llvm v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_llvm) (*)
+
+rustc_log v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_log) (*)
+
+rustc_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_macros) (*)
+
+rustc_metadata v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_metadata) (*)
+
+rustc_middle v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_middle) (*)
+
+rustc_mir_build v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_mir_build) (*)
+
+rustc_mir_dataflow v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_mir_dataflow) (*)
+
+rustc_mir_transform v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_mir_transform) (*)
+
+rustc_monomorphize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_monomorphize) (*)
+
+rustc_next_trait_solver v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_next_trait_solver) (*)
+
+rustc_parse v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_parse) (*)
+
+rustc_parse_format v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_parse_format) (*)
+
+rustc_passes v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_passes) (*)
+
+rustc_pattern_analysis v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_pattern_analysis) (*)
+
+rustc_privacy v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_privacy) (*)
+
+rustc_proc_macro v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_proc_macro) (*)
+
+rustc_public v0.1.0-preview (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_public) (*)
+
+rustc_public_bridge v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_public_bridge) (*)
+
+rustc_query_impl v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_query_impl) (*)
+
+rustc_query_system v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_query_system) (*)
+
+rustc_resolve v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_resolve) (*)
+
+rustc_sanitizers v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_sanitizers) (*)
+
+rustc_serialize v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_serialize) (*)
+
+rustc_session v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_session) (*)
+
+rustc_span v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_span) (*)
+
+rustc_symbol_mangling v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_symbol_mangling) (*)
+
+rustc_target v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_target) (*)
+
+rustc_thread_pool v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_thread_pool) (*)
+
+rustc_tools_util v0.4.2 (/data/data/com.termux/files/home/storage/github/rust/src/tools/clippy/rustc_tools_util)
+
+rustc_trait_selection v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_trait_selection) (*)
+
+rustc_traits v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_traits) (*)
+
+rustc_transmute v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_transmute) (*)
+
+rustc_ty_utils v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_ty_utils) (*)
+
+rustc_type_ir v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_type_ir) (*)
+
+rustc_type_ir_macros v0.0.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/compiler/rustc_type_ir_macros) (*)
+
+rustdoc v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/src/librustdoc)
+├── arrayvec v0.7.6
+├── askama v0.14.0 (*)
+├── base64 v0.21.7
+├── indexmap v2.11.0 (*)
+├── itertools v0.12.1 (*)
+├── minifier v0.3.6
+├── pulldown-cmark-escape v0.11.0
+├── regex v1.11.2 (*)
+├── rustdoc-json-types v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/rustdoc-json-types) (*)
+├── serde v1.0.219 (*)
+├── serde_json v1.0.143 (*)
+├── smallvec v1.15.1
+├── stringdex v0.0.1-alpha8
+│   └── stacker v0.1.21 (*)
+├── tempfile v3.21.0 (*)
+├── threadpool v1.8.1
+│   └── num_cpus v1.17.0
+│       └── libc v0.2.174
+├── tracing v0.1.37 (*)
+├── tracing-subscriber v0.3.18 (*)
+├── tracing-tree v0.3.1 (*)
+└── unicode-segmentation v1.12.0
+[build-dependencies]
+├── minifier v0.3.6
+└── sha2 v0.10.9 (*)
+[dev-dependencies]
+└── expect-test v1.5.1 (*)
+
+rustdoc-gui-test v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/rustdoc-gui-test)
+├── build_helper v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/build_helper) (*)
+├── camino v1.1.12 (*)
+├── compiletest v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/compiletest) (*)
+├── getopts v0.2.24 (*)
+└── walkdir v2.5.0 (*)
+
+rustdoc-json-types v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/rustdoc-json-types) (*)
+
+rustdoc-themes v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/rustdoc-themes)
+
+rustdoc-tool v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/rustdoc)
+└── rustdoc v0.0.0 (/data/data/com.termux/files/home/storage/github/rust/src/librustdoc) (*)
+
+rustfmt-config_proc_macro v0.3.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/src/tools/rustfmt/config_proc_macro)
+├── proc-macro2 v1.0.101 (*)
+├── quote v1.0.40 (*)
+└── syn v2.0.106 (*)
+[dev-dependencies]
+└── serde v1.0.219 (*)
+
+rustfmt-nightly v1.8.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/rustfmt)
+├── annotate-snippets v0.9.2
+│   ├── unicode-width v0.1.14
+│   └── yansi-term v0.1.2
+├── anyhow v1.0.99
+├── bytecount v0.6.9
+├── cargo_metadata v0.18.1 (*)
+├── clap v4.5.46 (*)
+├── clap-cargo v0.12.0
+│   ├── anstyle v1.0.11
+│   └── clap v4.5.46 (*)
+├── diff v0.1.13
+├── dirs v6.0.0
+│   └── dirs-sys v0.5.0 (*)
+├── getopts v0.2.24 (*)
+├── ignore v0.4.23 (*)
+├── itertools v0.12.1 (*)
+├── regex v1.11.2 (*)
+├── rustfmt-config_proc_macro v0.3.0 (proc-macro) (/data/data/com.termux/files/home/storage/github/rust/src/tools/rustfmt/config_proc_macro) (*)
+├── serde v1.0.219 (*)
+├── serde_json v1.0.143 (*)
+├── term v0.7.0
+│   └── dirs-next v2.0.0
+│       ├── cfg-if v1.0.3
+│       └── dirs-sys-next v0.1.2
+│           └── libc v0.2.174
+├── thiserror v1.0.69 (*)
+├── toml v0.7.8 (*)
+├── tracing v0.1.37 (*)
+├── tracing-subscriber v0.3.18 (*)
+├── unicode-properties v0.1.3
+├── unicode-segmentation v1.12.0
+└── unicode-width v0.1.14
+
+test-float-parse v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/test-float-parse)
+├── indicatif v0.17.11 (*)
+├── num v0.4.3 (*)
+├── rand v0.9.2 (*)
+├── rand_chacha v0.9.0 (*)
+└── rayon v1.11.0 (*)
+
+tidy v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/tidy) (*)
+
+tier-check v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/tier-check)
+
+unicode-table-generator v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/unicode-table-generator)
+└── ucd-parse v0.1.13
+    └── regex-lite v0.1.7
+
+unstable-book-gen v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/unstable-book-gen)
+├── num-traits v0.2.19 (*)
+└── tidy v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/tidy) (*)
+
+wasm-component-ld-wrapper v0.1.0 (/data/data/com.termux/files/home/storage/github/rust/src/tools/wasm-component-ld)
+└── wasm-component-ld v0.5.16
+    ├── anyhow v1.0.99
+    ├── clap v4.5.46 (*)
+    ├── lexopt v0.3.1
+    ├── libc v0.2.174
+    ├── tempfile v3.21.0 (*)
+    ├── wasi-preview1-component-adapter-provider v36.0.2
+    ├── wasmparser v0.237.0
+    │   ├── bitflags v2.9.3
+    │   ├── hashbrown v0.15.5 (*)
+    │   ├── indexmap v2.11.0 (*)
+    │   ├── semver v1.0.26 (*)
+    │   └── serde v1.0.219 (*)
+    ├── wat v1.238.0
+    │   └── wast v238.0.0
+    │       ├── bumpalo v3.19.0
+    │       ├── leb128fmt v0.1.0
+    │       ├── memchr v2.7.5
+    │       ├── unicode-width v0.2.1
+    │       └── wasm-encoder v0.238.0
+    │           └── leb128fmt v0.1.0
+    ├── wit-component v0.237.0
+    │   ├── anyhow v1.0.99
+    │   ├── bitflags v2.9.3
+    │   ├── indexmap v2.11.0 (*)
+    │   ├── log v0.4.27
+    │   ├── serde v1.0.219 (*)
+    │   ├── serde_derive v1.0.219 (proc-macro) (*)
+    │   ├── serde_json v1.0.143 (*)
+    │   ├── wasm-encoder v0.237.0
+    │   │   ├── leb128fmt v0.1.0
+    │   │   └── wasmparser v0.237.0 (*)
+    │   ├── wasm-metadata v0.237.0
+    │   │   ├── anyhow v1.0.99
+    │   │   ├── indexmap v2.11.0 (*)
+    │   │   ├── wasm-encoder v0.237.0 (*)
+    │   │   └── wasmparser v0.237.0 (*)
+    │   ├── wasmparser v0.237.0 (*)
+    │   └── wit-parser v0.237.0
+    │       ├── anyhow v1.0.99
+    │       ├── id-arena v2.2.1
+    │       ├── indexmap v2.11.0 (*)
+    │       ├── log v0.4.27
+    │       ├── semver v1.0.26 (*)
+    │       ├── serde v1.0.219 (*)
+    │       ├── serde_derive v1.0.219 (proc-macro) (*)
+    │       ├── serde_json v1.0.143 (*)
+    │       ├── unicode-xid v0.2.6
+    │       └── wasmparser v0.237.0 (*)
+    └── wit-parser v0.237.0 (*)
+
+x v0.1.1 (/data/data/com.termux/files/home/storage/github/rust/src/tools/x)

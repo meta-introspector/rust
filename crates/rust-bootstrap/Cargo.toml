@@ -6,10 +6,12 @@ edition = "2021"
 [dependencies]
 clap = { version = "4", features = ["derive"] }
 serde = { version = "1", features = ["derive"] }
+serde_json = "1.0"
 toml = "0.8"
 arrow = { path = "../../../mcp/monomcp/vendor/arrow-rs/arrow" }
 arrow-array = { path = "../../../mcp/monomcp/vendor/arrow-rs/arrow-array" }
 arrow-schema = { path = "../../../mcp/monomcp/vendor/arrow-rs/arrow-schema" }
+arrow-data = { path = "../../../mcp/monomcp/vendor/arrow-rs/arrow-data" } # Added this line
 parquet = { path = "../../../mcp/monomcp/vendor/arrow-rs/parquet", features = ["arrow"] }
 git2 = "0.20.2"
 lazy_static = "1.4.0"
@@ -17,3 +19,4 @@ reqwest = { version = "0.11", features = ["blocking", "json"] }
 tar = "0.4"
 flate2 = "1.0"
 xz2 = "0.1"
+tempfile = "3.20.0"

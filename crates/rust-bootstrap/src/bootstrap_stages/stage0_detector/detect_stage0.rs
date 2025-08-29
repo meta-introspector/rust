@@ -1,4 +1,4 @@
-use std::path::{PathBuf, Path};
+use std::path::Path;
 use super::Stage0;
 use super::detect_rustc_path;
 use super::detect_cargo_path;

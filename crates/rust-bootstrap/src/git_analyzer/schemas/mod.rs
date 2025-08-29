@@ -10,7 +10,7 @@ pub fn git_commits_schema() -> Arc<Schema> {
         Field::new("committer_email", DataType::Utf8, false),
         Field::new("commit_time", DataType::Timestamp(TimeUnit::Nanosecond, Some("UTC".into())), false),
         Field::new("message", DataType::Utf8, false),
-        Field::new("parent_hashes", DataType::new_list(DataType::Utf8.into(), false), false),
+        Field::new("parent_hashes", DataType::List(Arc::new(Field::new("item", DataType::Utf8, true))), false),
     ]))
 }
 
@@ -50,5 +50,33 @@ pub fn git_refs_schema() -> Arc<Schema> {
         Field::new("ref_name", DataType::Utf8, false),
         Field::new("target_id", DataType::Utf8, false),
         Field::new("ref_type", DataType::Utf8, false),
+    ]))
+}
+
+pub fn git_analysis_summary_schema() -> Arc<Schema> {
+    Arc::new(Schema::new(vec![
+        Field::new("commits_count", DataType::UInt64, false),
+        Field::new("blobs_count", DataType::UInt64, false),
+        Field::new("trees_count", DataType::UInt64, false),
+        Field::new("tags_count", DataType::UInt64, false),
+        Field::new("refs_count", DataType::UInt64, false),
+        Field::new("commits_parquet_path", DataType::Utf8, false),
+        Field::new("blobs_parquet_path", DataType::Utf8, false),
+        Field::new("trees_parquet_path", DataType::Utf8, false),
+        Field::new("tags_parquet_path", DataType::Utf8, false),
+        Field::new("refs_parquet_path", DataType::Utf8, false),
+    ]))
+}
+
+pub fn build_config_schema() -> Arc<Schema> {
+    Arc::new(Schema::new(vec![
+        Field::new("download_ci_rustc", DataType::Boolean, false),
+        Field::new("download_ci_llvm", DataType::Boolean, false),
+        Field::new("patch_binaries_for_nix", DataType::Boolean, false),
+        Field::new("rustc_path", DataType::Utf8, false),
+        Field::new("cargo_path", DataType::Utf8, false),
+        Field::new("compiler_date", DataType::Utf8, false),
+        Field::new("compiler_version", DataType::Utf8, false),
+        Field::new("dist_server", DataType::Utf8, false),
     ]))
 }

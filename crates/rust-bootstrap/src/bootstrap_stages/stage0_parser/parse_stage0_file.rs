@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 use std::fs::File;
-use std::io::{self, BufReader, BufRead};
+use std::io::{BufReader, BufRead};
 
 pub fn parse_stage0_file(path: &str) -> Result<HashMap<String, String>, Box<dyn std::error::Error>> {
     let file = File::open(path)?;

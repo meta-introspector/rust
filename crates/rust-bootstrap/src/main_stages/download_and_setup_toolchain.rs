@@ -3,7 +3,6 @@ use crate::build_state::BuildState;
 use crate::bootstrap_stages::toolchain_downloader::{bin_root, rustc_stamp, program_out_of_date, download_component, unpack_component};
 use crate::bootstrap_stages::nix_patcher::{should_fix_bins_and_dylibs, fix_bin_or_dylib}; // Import nix_patcher functions
 use std::fs;
-use std::path::PathBuf;
 
 pub fn download_and_setup_toolchain(build_state: &BuildState) -> Result<(), Box<dyn Error>> {
     let bin_root_path = bin_root::bin_root(&build_state.build_dir, &build_state.build_triple);

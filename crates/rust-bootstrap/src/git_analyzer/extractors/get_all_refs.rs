@@ -3,7 +3,7 @@ use arrow_array::{RecordBatch, StringArray};
 use std::sync::Arc;
 use crate::git_analyzer::schemas::git_refs_schema;
 
-pub fn get_all_refs(repo: &Repository) -> Result<RecordBatch, Box<dyn std::error.Error>> {
+pub fn get_all_refs(repo: &Repository) -> Result<RecordBatch, Box<dyn std::error::Error>> {
     let mut ref_names = Vec::new();
     let mut target_ids = Vec::new();
     let mut ref_types = Vec::new();

@@ -1259,9 +1259,9 @@ dependencies = [
 
 [[package]]
 name = "cxx"
-version = "1.0.171"
+version = "1.0.173"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2722cab56883f16c0c24bbb4e5e1ba12a84da2cc0c35a0fd71c68e10c191885c"
+checksum = "6c64ed3da1c337cbaae7223cdcff8b4dddf698d188cd3eaddd1116f6b0295950"
 dependencies = [
  "cc",
  "cxxbridge-cmd",
@@ -1273,9 +1273,9 @@ dependencies = [
 
 [[package]]
 name = "cxx-build"
-version = "1.0.171"
+version = "1.0.173"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f86a2c65409086e3aa87dceefa608dee59e8b5091edfe25a12e7a0ca0b639b36"
+checksum = "ae0a26a75a05551f5ae3d75b3557543d06682284eaa7419113162d602cb45766"
 dependencies = [
  "cc",
  "codespan-reporting",
@@ -1288,9 +1288,9 @@ dependencies = [
 
 [[package]]
 name = "cxxbridge-cmd"
-version = "1.0.171"
+version = "1.0.173"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f00fcff13f8198c499f21412ce5a2fb2171905ddc9340f745c7e795cbc5b18f9"
+checksum = "952d408b6002b7db4b36da07c682a9cbb34f2db0efa03e976ae50a388414e16c"
 dependencies = [
  "clap",
  "codespan-reporting",
@@ -1302,15 +1302,15 @@ dependencies = [
 
 [[package]]
 name = "cxxbridge-flags"
-version = "1.0.171"
+version = "1.0.173"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1e4efe5cd204b7fef69b824821276b21523a354e4362fec04efc6614cb2eba23"
+checksum = "ccbd201b471c75c6abb6321cace706d1982d270e308b891c11a3262d320f5265"
 
 [[package]]
 name = "cxxbridge-macro"
-version = "1.0.171"
+version = "1.0.173"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7e3dc1caaebce3df14e8527f08db145814b02b6d27b8cc1972c012a843adc3a7"
+checksum = "2bea8b915bbc4cb4288f242aa7ca18b23ecc6965e4d6e7c1b07905e3fe2e0c41"
 dependencies = [
  "indexmap",
  "proc-macro2",
@@ -1869,9 +1869,9 @@ dependencies = [
 
 [[package]]
 name = "getopts"
-version = "0.2.23"
+version = "0.2.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cba6ae63eb948698e300f645f87c70f76630d505f23b8907cf1e193ee85048c1"
+checksum = "cfe4fbac503b8d1f88e6676011885f34b7174f46e59956bba534ba83abded4df"
 dependencies = [
  "unicode-width 0.2.1",
 ]
@@ -3973,6 +3973,7 @@ version = "0.1.0"
 dependencies = [
  "arrow",
  "arrow-array",
+ "arrow-data",
  "arrow-schema",
  "clap",
  "flate2",
@@ -3981,7 +3982,9 @@ dependencies = [
  "parquet",
  "reqwest",
  "serde",
+ "serde_json",
  "tar",
+ "tempfile",
  "toml 0.8.23",
  "xz2",
 ]

@@ -1,5 +1,6 @@
 use crate::bootstrap_stages::cli_parser;
 use crate::bootstrap_stages::config_loader;
+use crate::bootstrap_stages::operational_logger::logger;
 use std::error::Error;
 
 pub fn load_and_print_config(args: &cli_parser::Args) -> Result<config_loader::Config, Box<dyn Error>> {
@@ -9,5 +10,26 @@ pub fn load_and_print_config(args: &cli_parser::Args) -> Result<config_loader::C
     let config = config_loader::load_config(&config_path_str)?;
 
     println!("Config: {:?}\n", config);
+
+    logger::log_event(
+        "config_read",
+        "main_stages::load_and_print_config",
+        "load_and_print_config",
+        &format!("download_ci_rustc: {}", config.build.download_ci_rustc),
+        None,
+        None,
+        "INFO",
+    );
+    logger::log_event(
+        "config_read",
+        "main_stages::load_and_print_config",
+        "load_and_print_config",
+        &format!("download_ci_llvm: {}", config.build.download_ci_llvm),
+        None,
+        None,
+        "INFO",
+    );
+
     Ok(config)
 }
+
