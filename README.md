@@ -44,6 +44,14 @@ Read ["Installation"] from [The Book].
 If you really want to install from source (though this is not recommended), see
 [INSTALL.md](INSTALL.md).
 
+## Rust Bootstrap Project
+
+This repository also contains the `rust-bootstrap` project, an initiative to replace the existing Python-based bootstrap with a Rust-native solution. This project aims for a robust, formally verifiable, and deeply bootstrapped Rust compiler, specifically targeting environments like ARM64 Termux.
+
+For detailed development documentation, including project goals, architecture, development principles, and guidance for contributors, please refer to the [Development Documentation](docs/development_documentation.md).
+
+All major development phases and features for `rust-bootstrap` are managed through Change Request (CRQ) documents, located in the `docs/crqs/` directory.
+
 ## Getting Help
 
 See https://www.rust-lang.org/community for a list of chat platforms and forums.
