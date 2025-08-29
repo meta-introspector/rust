@@ -17,7 +17,8 @@ pub fn run_bootstrap() -> Result<(), Box<dyn Error>> {
     let build_state = BuildState::new(args, rust_root, build_dir, stage0, config, String::from("x86_64-unknown-linux-gnu"));
 
     download_and_setup_toolchain(&build_state)?;
-    build_bootstrap::build_bootstrap(&build_state)?; // Call build_bootstrap
+    build_bootstrap::build_bootstrap(&build_state)?;
+    build::build(&build_state)?; // Call build_bootstrap
 
     let command_result = main_stages::execute_and_report_command::execute_and_report_command(&build_state.stage0)?;
 
