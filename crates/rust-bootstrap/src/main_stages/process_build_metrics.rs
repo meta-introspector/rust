@@ -3,7 +3,7 @@ use crate::bootstrap_stages::command_executor;
 use std::error::Error;
 
 pub fn process_build_metrics(
-    command_result: command_executor::command_execution_types::CommandExecutionResult,
+    command_result: command_executor::CommandExecutionResult,
 ) -> Result<(), Box<dyn Error>> {
     let file_path = "build_metrics.parquet";
     parquet_reporter::write_build_metrics_to_parquet(&command_result.output, command_result.duration, file_path)?;

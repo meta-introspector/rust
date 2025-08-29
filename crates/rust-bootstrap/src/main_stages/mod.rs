@@ -8,4 +8,3 @@ pub mod download_and_setup_toolchain;
 pub mod build_bootstrap;
 pub mod run_bootstrap;
 pub mod print_final_message;
-use crate::git_analyzer;

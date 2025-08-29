@@ -48,7 +48,7 @@ pub fn get_all_trees(repo: &Repository) -> Result<RecordBatch, Box<dyn std::erro
                         entry_names.push(entry_name.clone());
                         entry_types.push("tree".to_string());
                         entry_ids.push(entry_id.clone());
-                        entry_modes.push(entry_mode);
+                        entry_modes.push(entry_mode.try_into().unwrap());
                         traverse_tree(
                             repo,
                             object.id(),
@@ -65,14 +65,14 @@ pub fn get_all_trees(repo: &Repository) -> Result<RecordBatch, Box<dyn std::erro
                         entry_names.push(entry_name.clone());
                         entry_types.push("blob".to_string());
                         entry_ids.push(entry_id.clone());
-                        entry_modes.push(entry_mode);
+                        entry_modes.push(entry_mode.try_into().unwrap());
                     }
                     Some(ObjectType::Commit) => {
                         tree_hashes.push(tree_oid.to_string());
                         entry_names.push(entry_name.clone());
                         entry_types.push("commit".to_string());
                         entry_ids.push(entry_id.clone());
-                        entry_modes.push(entry_mode);
+                        entry_modes.push(entry_mode.try_into().unwrap());
                     }
                     _ => {
                         // Handle other object types if necessary, or ignore

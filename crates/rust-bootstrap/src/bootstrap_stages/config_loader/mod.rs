@@ -7,6 +7,8 @@ pub struct BuildConfig {
     pub download_ci_rustc: bool,
     #[serde(default = "default_false")]
     pub download_ci_llvm: bool,
+    #[serde(default = "default_false", rename = "patch-binaries-for-nix")]
+    pub patch_binaries_for_nix: bool,
 }
 
 fn default_false() -> bool {

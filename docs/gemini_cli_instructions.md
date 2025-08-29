@@ -1,5 +1,30 @@
 ## Instructions for Gemini CLI: Git Layer Data Extraction and Arrow Conversion
 
+### Current Status Update (August 29, 2025)
+
+This document outlines the initial task for Git Layer Data Extraction and Arrow Conversion. As of this update, significant progress has been made, and many of the detailed steps originally outlined below have been completed or superseded by a more robust, Parquet-native reporting mechanism.
+
+**Key Achievements and Current State:**
+
+*   **Git Data Extraction Implemented:** All extractor functions (`get_all_blobs`, `get_all_trees`, `get_all_tags`, `get_all_refs`) have been implemented and integrated.
+*   **Arrow Conversion & Parquet Writing:** Git data is successfully converted to Arrow `RecordBatch`es and written to individual Parquet files (`git_commits.parquet`, `git_blobs.parquet`, etc.).
+*   **Refactored `analyze_git_repository`:** The `analyze_git_repository` function now orchestrates the full extraction and writing process, and returns a `GitAnalysisSummary` struct.
+*   **Parquet-Native Reporting:** A new, robust reporting mechanism has been implemented:
+    *   `GitAnalysisSummary` struct and its corresponding Arrow schema (`git_analysis_summary_schema()`) have been defined.
+    *   `write_git_analysis_summary_to_parquet` function writes the `GitAnalysisSummary` to a dedicated Parquet file (`git_analysis_summary.parquet`).
+    *   `read_and_summarize_git_analysis_metrics` function reads and prints the summary from the Parquet file.
+    *   The `run_bootstrap` main orchestration function now calls these new reporting utilities.
+*   **Compilation Errors Resolved:** Several compilation errors related to module paths, type mismatches, and `Box<dyn Error>` syntax have been systematically identified and resolved, adhering to the project's extreme modularity principles.
+
+**Next Steps for Verification:**
+
+1.  **Build Verification:** Ensure the `rust-bootstrap` crate compiles successfully after all recent changes.
+2.  **Functionality Verification:** Run the `rust-bootstrap` binary with a test repository and confirm:
+    *   The Git analysis summary is printed to the console.
+    *   All expected Git data Parquet files (`git_commits.parquet`, `git_blobs.parquet`, etc.) and the `git_analysis_summary.parquet` file are created in the project root.
+
+---
+
 **Project Context:**
 
 The `rust-bootstrap` crate is undergoing an extreme modularity refactoring, aiming for a "one function per file per basic block" structure. The long-term vision is to represent the Rust compiler's internal data flow and intermediate representations as Arrow/Parquet datasets, enabling advanced analysis and formal verification.

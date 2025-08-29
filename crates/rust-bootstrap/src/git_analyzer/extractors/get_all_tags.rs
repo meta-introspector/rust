@@ -2,8 +2,9 @@ use git2::{Repository, ObjectType};
 use arrow_array::{RecordBatch, StringArray, TimestampNanosecondArray};
 use std::sync::Arc;
 use crate::git_analyzer::schemas::git_tags_schema;
+use crate::git_analyzer::extractors::tag_target_id_to_string;
 
-pub fn get_all_tags(repo: &Repository) -> Result<RecordBatch, Box<dyn std::error.Error>> {
+pub fn get_all_tags(repo: &Repository) -> Result<RecordBatch, Box<dyn std::error::Error>> {
     let mut tag_hashes = Vec::new();
     let mut tag_names = Vec::new();
     let mut target_ids = Vec::new();
@@ -20,7 +21,7 @@ pub fn get_all_tags(repo: &Repository) -> Result<RecordBatch, Box<dyn std::error
                 let tag_obj = peeled.as_tag().unwrap();
                 tag_hashes.push(tag_obj.id().to_string());
                 tag_names.push(name.to_string());
-                target_ids.push(tag_obj.target_id().unwrap().to_string());
+                target_ids.push(tag_target_id_to_string::tag_target_id_to_string(&tag_obj));
                 target_types.push(tag_obj.target_type().unwrap().to_string());
                 if let Some(tagger) = tag_obj.tagger() {
                     tagger_names.push(tagger.name().unwrap_or("").to_string());
