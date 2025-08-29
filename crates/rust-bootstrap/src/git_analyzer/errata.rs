@@ -1,7 +1,7 @@
 use serde::{Serialize, Deserialize};
 use chrono::{Utc, DateTime};
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct GitErrata {
     pub oid: String,
     pub error_message: String,

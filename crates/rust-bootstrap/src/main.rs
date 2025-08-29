@@ -1,9 +1,6 @@
-use rust_bootstrap::Args; // Assuming Args is public in lib.rs
-use rust_bootstrap::BuildState; // Assuming BuildState is public in lib.rs
-use rust_bootstrap::bootstrap_stages::config_loader as loader; // Assuming config_loader is public
-use rust_bootstrap::bootstrap_stages::stage0_detector::Stage0; // Assuming Stage0 is public
-use rust_bootstrap::parquet_reporter; // Assuming parquet_reporter is public
-use rust_bootstrap::bootstrap_stages::operational_logger::logger; // Assuming operational_logger is public
+use rust_bootstrap::{Args, BuildState, loader, parquet_reporter, bootstrap_stages};
+use rust_bootstrap::bootstrap_stages::stage0_detector::Stage0;
+use rust_bootstrap::bootstrap_stages::operational_logger::logger;
 
 use clap::Parser;
 use std::error::Error;
