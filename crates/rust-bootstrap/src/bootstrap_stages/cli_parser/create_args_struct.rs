@@ -11,4 +11,7 @@ pub struct Args {
     pub config: Option<String>,
     /// Path to the Git repository to analyze
     pub repo_path: String,
+    /// Clean the build directory
+    #[arg(long)]
+    pub clean: bool,
 }
