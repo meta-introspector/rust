@@ -9,7 +9,7 @@ pub fn execute_and_report_command(
     println!("Before running cargo --version (via sh -c)..."); // Trace 1
 
     let command_str = format!("{} --version", stage0.cargo.to_string_lossy());
-    let command_result = command_executor::execute_shell_command::execute_shell_command(&command_str)?;
+    let command_result = shell::shell(&command_str, true)?;
 
     println!("Status: {}", command_result.output.status);
     println!("Stdout: {}", String::from_utf8_lossy(&command_result.output.stdout));
