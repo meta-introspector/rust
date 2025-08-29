@@ -9,4 +9,6 @@ pub struct Args {
     /// Path to the build configuration file
     #[arg(short, long)]
     pub config: Option<String>,
+    /// Path to the Git repository to analyze
+    pub repo_path: String,
 }

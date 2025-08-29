@@ -12,6 +12,7 @@ pub mod print_total_records;
 pub mod get_record_batch_reader;
 pub mod process_record_batches;
 pub mod print_summary_footer;
+use arrow_array::RecordBatch;
 
 pub fn write_build_metrics_to_parquet(
     output: &std::process::Output,
@@ -31,6 +32,18 @@ pub fn write_build_metrics_to_parquet(
     Ok(())
 }
 
+
+
+pub fn write_record_batch_to_parquet(
+    record_batch: RecordBatch,
+    file_path: &str,
+) -> Result<(), Box<dyn std::error::Error>> {
+    let schema = record_batch.schema();
+    let writer = write_to_parquet_file::write_to_parquet_file(file_path, schema, record_batch)?;
+    close_parquet_writer::close_parquet_writer(writer)?;
+    println!("RecordBatch written to {}", file_path);
+    Ok(())
+}
 
 
 pub fn read_and_summarize_parquet_metrics(file_path: &str) -> Result<(), Box<dyn std::error::Error>> {

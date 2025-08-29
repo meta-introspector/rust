@@ -15,6 +15,12 @@
 
 **4. Scope:**
    *   Creation of the `crates/rust-bootstrap` directory and its initial Rust source code.
+   *   **4.1. Git Layer Data Extraction and Arrow Conversion:**
+       *   Implementation of extractor functions (`get_all_blobs`, `get_all_trees`, `get_all_tags`, `get_all_refs`) to traverse Git repository objects and extract relevant metadata and content.
+       *   Conversion of extracted Git data into Apache Arrow `RecordBatch`es, adhering to predefined schemas.
+       *   Integration of a generic Parquet writing utility within the `parquet_reporter` module to persist `RecordBatch`es to `.parquet` files.
+       *   Enhancement of the `analyze_git_repository` function to orchestrate the data extraction, Arrow conversion, and Parquet writing for all supported Git object types.
+       *   Refinement of CLI argument parsing to accept a dynamic repository path for analysis.
    *   Implementation of core utilities: argument parsing, `config.toml` parsing, environment variable handling, and external command execution.
    *   Implementation of `stage0` compiler detection logic.
    *   Git integration: committing `rust-bootstrap` changes, adding `upstream` remote, and rebasing/merging with `upstream/master`.
