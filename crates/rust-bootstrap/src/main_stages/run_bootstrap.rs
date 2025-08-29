@@ -29,7 +29,9 @@ pub fn run_bootstrap() -> Result<(), Box<dyn Error>> {
     crate::parquet_reporter::read_and_summarize_build_config_metrics("build_config.parquet")?;
 
     // Initiate Git analysis
-    let git_analysis_summary = crate::git_analyzer::analysis::analyze_git_repository::analyze_git_repository(&build_state.args.repo_path)?;
+        let git_analysis_summary = crate::git_analyzer::analysis::analyze_git_repository::analyze_git_repository(
+        &build_state.args.repo_path.unwrap_or_else(|| "/data/data/com.termux/files/home/storage/github/rust".to_string())
+    )?;
     crate::parquet_reporter::write_git_analysis_summary_to_parquet(git_analysis_summary, "git_analysis_summary.parquet")?;
     crate::parquet_reporter::read_and_summarize_git_analysis_metrics("git_analysis_summary.parquet")?;
 

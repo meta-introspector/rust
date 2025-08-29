@@ -10,7 +10,9 @@ pub struct Args {
     #[arg(short, long)]
     pub config: Option<String>,
     /// Path to the Git repository to analyze
-    pub repo_path: String,
+    /// Path to the Git repository to analyze
+    #[arg(long)]
+    pub repo_path: Option<String>,
     /// Clean the build directory
     #[arg(long)]
     pub clean: bool,
