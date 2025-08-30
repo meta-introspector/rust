@@ -3,8 +3,8 @@ use std::path::PathBuf;
 
 use cargo::core::Workspace;
 use cargo::GlobalContext;
-use cargo::ops::CleanOptions; // Added CleanOptions
-use cargo::util::command_prelude::ArgMatchesExt; // Keep this for global_matches.subcommand_name()
+ // Added CleanOptions
+ // Keep this for global_matches.subcommand_name()
 
 // Import the handle functions from the new subcommand modules
 use crate::cargo_integration::subcommands::build::handle_build_command;
