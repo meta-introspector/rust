@@ -1,11 +1,10 @@
-use rust_bootstrap::{Args, BuildState, loader, parquet_reporter, bootstrap_stages, builder::Builder};
+use rust_bootstrap::{Args, BuildState, loader, parquet_reporter, builder::Builder};
 use rust_bootstrap::bootstrap_stages::stage0_detector::Stage0;
 use rust_bootstrap::bootstrap_stages::operational_logger::logger;
 use syscall_instrumentation_macro::instrument_syscall;
 
 use clap::Parser;
 use std::error::Error;
-use std::path::{Path, PathBuf};
 
 fn main() -> Result<(), Box<dyn Error>> {
     let args = Args::parse();

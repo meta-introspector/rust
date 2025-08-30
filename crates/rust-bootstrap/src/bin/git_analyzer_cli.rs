@@ -1,7 +1,7 @@
 use clap::Parser;
 use std::error::Error;
 use std::path::PathBuf;
-use rust_bootstrap::git_analyzer::extractors::get_all_commits::{get_all_commits, GitAnalysisResult};
+use rust_bootstrap::git_analyzer::extractors::get_all_commits::get_all_commits;
 use rust_bootstrap::parquet_reporter::errata_reporter::write_errata_to_parquet;
 use rust_bootstrap::config::args::Args; // Assuming Args is defined in config/args.rs and can be reused
 

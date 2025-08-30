@@ -2,11 +2,8 @@
 
 use rust_bootstrap::cargo_integration::init_global_context;
 use rust_bootstrap::cargo_integration::init_workspace;
-use rust_bootstrap::cargo_integration::parse_cargo_args;
-use rust_bootstrap::cargo_integration::run_cargo_command;
 
 use std::path::PathBuf;
-use std::fs;
 
 #[test]
 fn test_init_global_context() {
