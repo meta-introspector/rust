@@ -27,7 +27,7 @@ pub fn write_errata_to_parquet(
 
     let oids: Vec<String> = errata.iter().map(|e| e.oid.clone()).collect();
     let error_messages: Vec<String> = errata.iter().map(|e| e.error_message.clone()).collect();
-    let timestamps: Vec<i64> = errata.iter().map(|e| e.timestamp.timestamp_nanos()).collect();
+    let timestamps: Vec<i64> = errata.iter().map(|e| e.timestamp.timestamp_nanos_opt().unwrap_or_default()).collect();
 
     let oids_array = StringArray::from(oids);
     let error_messages_array = StringArray::from(error_messages);

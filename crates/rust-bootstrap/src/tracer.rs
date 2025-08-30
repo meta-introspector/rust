@@ -12,7 +12,7 @@ pub struct TraceEvent {
 static TRACE_EVENTS: Lazy<Mutex<Vec<TraceEvent>>> = Lazy::new(|| Mutex::new(Vec::new()));
 
 pub fn record_trace_event(event_type: &str, message: &str, details: Option<&str>) {
-    let timestamp = Utc::now().timestamp_nanos();
+    let timestamp = Utc::now().timestamp_nanos_opt().unwrap_or_default();
     let event = TraceEvent {
         timestamp,
         event_type: event_type.to_string(),

@@ -1,6 +1,7 @@
 use cargo::util::CargoResult;
 use clap::{Command, ArgMatches, ArgAction, Arg};
 use cargo::util::command_prelude::{flag, opt, multi_opt};
+use tracing;
 
 pub fn parse_global_args(raw_args: &[&str]) -> CargoResult<(ArgMatches, Vec<String>)> {
     let command = Command::new("cargo")
@@ -57,6 +58,9 @@ pub fn parse_global_args(raw_args: &[&str]) -> CargoResult<(ArgMatches, Vec<Stri
     let matches = command.try_get_matches_from(raw_args)?;
 
     let subcommand_name = matches.subcommand_name();
+    if let Some(name) = subcommand_name {
+        tracing::debug!("Parsed subcommand name: {}", name);
+    }
     let subcommand_args = matches.subcommand().map(|(_, args)| args.clone());
 
     let remaining_args: Vec<String> = if let Some(sub_args) = subcommand_args {
