@@ -1,6 +1,7 @@
 use rust_bootstrap::{Args, BuildState, loader, parquet_reporter, bootstrap_stages, builder::Builder};
 use rust_bootstrap::bootstrap_stages::stage0_detector::Stage0;
 use rust_bootstrap::bootstrap_stages::operational_logger::logger;
+use syscall_instrumentation_macro::instrument_syscall;
 
 use clap::Parser;
 use std::error::Error;
@@ -51,5 +52,13 @@ fn main() -> Result<(), Box<dyn Error>> {
     let operational_log_batch = logger::get_logged_events_as_record_batch()?;
     parquet_reporter::write_record_batch_to_parquet(operational_log_batch, "operational_log.parquet")?;
 
+    // Test the syscall instrumentation macro
+    my_dummy_function(10, 20);
+
     Ok(())
+}
+
+#[instrument_syscall]
+fn my_dummy_function(a: i32, b: i32) -> i32 {
+    a + b
 }

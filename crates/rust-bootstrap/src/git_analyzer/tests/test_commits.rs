@@ -38,8 +38,8 @@ mod tests {
 
         // Assert that the record batch was created successfully and matches the schema
         let expected_schema = git_commits_schema();
-        assert_eq!(commits_batch.schema(), expected_schema);
-        assert!(commits_batch.num_rows() > 0); // Ensure some commits were extracted
+        assert_eq!(commits_batch.record_batch.schema(), expected_schema);
+        assert!(commits_batch.record_batch.num_rows() > 0); // Ensure some commits were extracted
 
         Ok(())
     }
