@@ -1,4 +1,4 @@
-pub mod build_subcommand;
-pub mod check_subcommand;
-pub mod run_subcommand;
-pub mod test_subcommand;
+pub mod build;
+pub mod check;
+pub mod run;
+pub mod clean;

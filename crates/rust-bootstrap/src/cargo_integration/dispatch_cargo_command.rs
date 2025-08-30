@@ -1,12 +1,17 @@
 use std::error::Error;
 use std::path::PathBuf;
 
-use cargo::ops::compile;
-use cargo::util::command_prelude::ArgMatchesExt;
 use cargo::core::Workspace;
 use cargo::GlobalContext;
+use cargo::ops::CleanOptions; // Added CleanOptions
+use cargo::util::command_prelude::ArgMatchesExt; // Keep this for global_matches.subcommand_name()
 
-use crate::cargo_integration::parse_cargo_args;
+// Import the handle functions from the new subcommand modules
+use crate::cargo_integration::subcommands::build::handle_build_command;
+use crate::cargo_integration::subcommands::check::handle_check_command;
+use crate::cargo_integration::subcommands::run::handle_run_command;
+use crate::cargo_integration::subcommands::clean::handle_clean_command;
+
 
 pub fn dispatch_cargo_command(
     global_matches: &cargo::util::command_prelude::ArgMatches,
@@ -22,12 +27,10 @@ pub fn dispatch_cargo_command(
     tracing::debug!("dispatch_cargo_command: subcommand_args: {:?}", subcommand_args);
 
     match subcommand_name {
-        Some("build") | Some("check") => {
-            let compile_options = parse_cargo_args::parse_cargo_args(&gctx, &subcommand_args_str, rust_root)?;
-            compile(&ws, &compile_options)?;
-        },
-        // TODO: Add placeholders for other common Cargo subcommands (e.g., test, run, clean)
-        // They will require their own `cargo::ops` functions and potentially different option structs.
+        Some("build") => handle_build_command(gctx, ws, &subcommand_args_str, rust_root)?,
+        Some("check") => handle_check_command(gctx, ws, &subcommand_args_str, rust_root)?,
+        Some("run") => handle_run_command(gctx, ws, &subcommand_args_str, rust_root)?,
+        Some("clean") => handle_clean_command(gctx, ws, &subcommand_args_str, rust_root)?,
         _ => {
             println!("Unsupported Cargo subcommand: {:?}", subcommand_name);
             return Err(Box::from(format!("Unsupported Cargo subcommand: {:?}", subcommand_name)));

@@ -1,55 +1,36 @@
-# Change Request (CRQ): Vendorize Miri for Monolithic Mini Rust
+# Change Request (CRQ): Integrate Miri as a Rustc Source Tree Component
 
 ## 1. Objective
-To integrate `miri` (Rust's Mid-level Intermediate Representation interpreter) as a vendored dependency within the `rust-bootstrap` project, enabling in-memory execution of Rust MIR for the "monolithic mini Rust" initiative.
+To ensure `rust-bootstrap` correctly interacts with `miri` as a component already present within the `rustc` source tree, rather than attempting to vendor it as an external dependency. This aligns with `miri`'s nature as an internal tool of the Rust compiler.
 
 ## 2. Scope
 This CRQ covers:
-*   Vendorizing the `miri` source code from the `rust-lang/rust` repository (specifically `src/tools/miri`).
-*   Configuring `miri` as a dependency within the `rust-bootstrap` crate.
-*   Resolving any compilation or dependency conflicts arising from `miri`'s integration.
-*   Exposing a minimal API from the vendored `miri` that `rust-bootstrap` can use to execute MIR.
+*   Clarifying that `miri` is not to be vendored into `rust-bootstrap`'s `vendor` directory.
+*   Ensuring `rust-bootstrap`'s build process correctly identifies and utilizes `miri` from its location within the `rustc` source tree (`src/tools/miri`).
+*   Removing any `Cargo.toml` entries related to vendoring `miri`.
+*   Addressing any compilation issues arising from `miri`'s dependencies on internal `rustc_*` crates by relying on the standard `rustc` build environment.
 
 ## 3. Prerequisites
-*   Successful compilation of the `rust-bootstrap` crate with its existing `cargo` integration.
-*   Familiarity with `miri`'s internal architecture and its API for MIR interpretation.
-*   Understanding of Rust's vendoring process and dependency management for complex crates.
+*   `rust-bootstrap` is configured to build within the `rustc` source tree context.
+*   Understanding of how `rustc`'s internal components (`rustc_*` crates) are made available during the `rustc` build process.
 
 ## 4. Procedure (High-Level)
-### Step 4.1: Add `miri` as a Vendored Dependency
-*   **Action**: Copy the `miri` source code (typically `src/tools/miri` from the `rust-lang/rust` repository) into a `vendor` directory within the `rust-bootstrap` workspace (e.g., `crates/rust-bootstrap/vendor/miri`).
-*   **Tool**: `run_shell_command` (for `cp -r`)
+### Step 4.1: Remove `miri` vendoring entries
+*   **Action**: Remove `miri` as a dependency from `crates/rust-bootstrap/Cargo.toml`.
+*   **Action**: Remove any `[patch.crates-io]` entries related to `miri` or its `rustc_*` dependencies from the top-level `Cargo.toml`.
 
-### Step 4.2: Configure `miri` in `Cargo.toml`
-*   **Action**: Add `miri` as a path dependency in `crates/rust-bootstrap/Cargo.toml`, pointing to the vendored source.
-*   **Tool**: `replace`
-
-### Step 4.3: Resolve Dependencies and Compilation Issues
-*   **Action**: Address any new compilation errors or dependency conflicts introduced by `miri`. This may involve adjusting feature flags, patching `Cargo.toml` files within the vendored `miri`, or resolving version mismatches.
-*   **Tool**: `read_file`, `replace`, `run_shell_command` (`cargo check`)
-
-### Step 4.4: Expose Minimal `miri` API
-*   **Action**: Identify and expose the necessary functions or structs from `miri` that `rust-bootstrap` will use to interpret and execute MIR. This may involve creating a small wrapper module.
-*   **Tool**: `write_file`, `replace`
+### Step 4.2: Ensure `rust-bootstrap` can build `miri` as a `rustc` tool
+*   **Action**: Verify that `rust-bootstrap`'s overall build process (once implemented) correctly includes and builds `miri` as part of the `rustc` toolchain, leveraging the implicit availability of `rustc_*` crates.
 
 ## 5. Verification
-*   **Step 5.1**: Run `cargo check -p rust-bootstrap` to ensure that `rust-bootstrap` compiles successfully with `miri` as a dependency.
-*   **Step 5.2**: Develop a basic unit test within `rust-bootstrap` that calls the exposed `miri` API to execute a simple MIR snippet and verifies its output.
-*   **Step 5.3**: Monitor binary size to assess the impact of `miri` integration.
+*   `rust-bootstrap` compiles without errors related to `miri` or its `rustc_*` dependencies.
+*   `miri` is successfully built as a tool when `rust-bootstrap` completes a full `rustc` build.
 
 ## 6. Tools Used
-*   `run_shell_command`: For copying files and running `cargo check`.
-*   `read_file`: To inspect `Cargo.toml` and source files.
-*   `replace`: To modify `Cargo.toml` and source files.
-*   `write_file`: To create new wrapper modules or test files.
+*   `cargo` (for build, test)
+*   `write_file`, `read_file`, `replace` (for file manipulation)
+*   `run_shell_command` (for `cargo check`)
 
 ## 7. Challenges & Considerations
-*   **Binary Size**: Significant challenge due to embedding `rustc`, `cargo`, and LLVM. Requires aggressive stripping and minimal LLVM subset.
-*   **Complexity of `miri`**: `miri` is a large and complex tool; integrating it may expose deep dependencies or require specific toolchain configurations.
-*   **API Stability**: `miri`'s internal API might not be stable, requiring ongoing maintenance as `miri` evolves.
-*   **Performance**: In-memory MIR execution performance needs to be evaluated against the project's goals.
-
-## 8. Potential Use Cases
-*   Enabling the "interpreter-like behavior" for the monolithic mini Rust.
-*   Providing a robust and formally verified execution environment for Rust code snippets.
-*   Facilitating advanced static analysis and code understanding within `rust-bootstrap`.
+*   Ensuring `rust-bootstrap` correctly replicates the `rustc` build environment for `miri` and other tools.
+*   Managing the complex interdependencies within the `rustc` source tree.

@@ -1,19 +1,28 @@
-feat: Enhance rust-bootstrap with Git analysis and Parquet reporting
+feat: Implement monadic refactoring and direct Cargo integration in rust-bootstrap
 
-This commit introduces significant enhancements to the `rust-bootstrap` tool, focusing on Git repository analysis and structured data reporting using Apache Arrow and Parquet.
+This commit introduces a significant architectural overhaul to the `rust-bootstrap` crate, moving towards a highly modular, formally verifiable, and self-contained system. Key changes include:
 
-Key changes include:
+- **Monadic Refactoring & Extreme Modularity:**
+    - Implemented `build.rs` for automated generation of `clap` argument and subcommand providers, enforcing modularity in CLI parsing.
+    - Refactored `command_executor` to break down command execution into smaller, composable units, aligning with the "one declaration per file" principle.
+    - Introduced `exec_panic` mechanism to disallow direct shell command execution, enforcing the use of integrated library calls.
+    - Utilized `tracing` for enhanced logging and observability.
+    - (Related CRQs: CRQ-005-MonadicRefactoringAndCargoIntegration.md, CRQ-006-EnforceMonadicExecution.md)
 
-- **Git Data Extraction:** Implemented and integrated extractor functions (`get_all_blobs`, `get_all_trees`, `get_all_tags`, `get_all_refs`) to gather comprehensive Git repository data.
-- **Arrow Conversion & Parquet Writing:** Git data is now converted into Arrow `RecordBatch`es and persisted into individual Parquet files (e.g., `git_commits.parquet`, `git_blobs.parquet`).
-- **Refactored `analyze_git_repository`:** The `analyze_git_repository` function has been refactored to orchestrate the entire extraction and writing process. It now returns a `GitAnalysisSummary` struct, providing a high-level overview of the analyzed repository.
-- **Parquet-Native Reporting:** A new, robust reporting mechanism has been introduced:
-    - Defined `GitAnalysisSummary` struct and its corresponding Arrow schema (`git_analysis_summary_schema()`).
-    - Added `write_git_analysis_summary_to_parquet` to store the summary in a dedicated Parquet file (`git_analysis_summary.parquet`).
-    - Implemented `read_and_summarize_git_analysis_metrics` to read and display the summary from the Parquet file.
-    - The `run_bootstrap` main orchestration function now integrates these new reporting utilities.
-- **Command Execution Metrics:** Enhanced `execute_shell_command` to capture and report command execution start time, end time, and duration, improving build process observability.
-- **Dependency Updates:** Updated `cxx` and `getopts` related dependencies in `Cargo.lock` and `Cargo.toml` to their latest compatible versions.
-- **Documentation Update:** Updated `docs/gemini_cli_instructions.md` to reflect the current status and capabilities of the Git analysis and reporting features.
+- **Direct Cargo Integration:**
+    - Integrated `cargo` library functions directly into `rust-bootstrap` for operations like `build` and `check`, replacing external `cargo` process calls.
+    - Developed a modular `cargo_integration` module with sub-modules for `GlobalContext` initialization, `Workspace` management, and argument parsing.
+    - (Related CRQ: CRQ-005-MonadicRefactoringAndCargoIntegration.md)
 
-These changes lay the groundwork for advanced analysis and formal verification of the Rust compiler's internal data flow by representing it as structured, queryable datasets.
+- **Git Analyzer CLI Separation:**
+    - Separated the Git repository analysis functionality into a new, dedicated binary `git-analyzer-cli`, enhancing modularity and reusability.
+
+- **Initial Setup Test:**
+    - Added a property-based test for `rust-bootstrap`'s argument parsing, ensuring robustness of the initial CLI setup.
+    - (Related CRQ: CRQ-001-InitialSetup.md)
+
+- **Miri Vendorization Plan:**
+    - Documented the plan to vendor `miri` for in-memory MIR execution, a future step towards the "monolithic mini Rust" initiative.
+    - (Related CRQ: CRQ-004-VendorizeMiri.md)
+
+This commit lays the groundwork for a more robust, auditable, and formally verifiable Rust bootstrap process.

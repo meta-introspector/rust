@@ -22,6 +22,7 @@ arrow-data = { path = "../../../mcp/monomcp/vendor/arrow-rs/arrow-data" } # Adde
 parquet = { path = "../../../mcp/monomcp/vendor/arrow-rs/parquet", features = ["arrow"] }
 git2 = "0.20.2"
 lazy_static = "1.4.0"
+either = "1.15.0"
 reqwest = { version = "0.11", features = ["blocking", "json"] }
 tar = "0.4"
 flate2 = "1.0"
@@ -33,6 +34,7 @@ cargo = { path = "../../../mcp/monomcp/vendor/cargo-rust-lang" }
 tracing-core = { path = "../../../mcp/monomcp/vendor/tracing-vendor/tracing/tracing-core" }
 tracing = { path = "../../../mcp/monomcp/vendor/tracing-vendor/tracing-0.1.41/tracing" }
 syscall_instrumentation_macro = { path = "../syscall_instrumentation_macro" }
+
 
 [dev-dependencies]
 quickcheck = "1.0"
