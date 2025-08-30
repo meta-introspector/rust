@@ -13,6 +13,8 @@ impl SubcommandProvider for CleanProvider {
     }
 }
 
+use cargo::util::interning::InternedString;
+
 // This function will be called by the main dispatch logic
 pub fn handle_clean_command(
     gctx: &cargo::GlobalContext,
@@ -21,8 +23,15 @@ pub fn handle_clean_command(
     rust_root: &std::path::PathBuf,
 ) -> Result<(), Box<dyn std::error::Error>> {
     // For clean, we need to create CleanOptions
-    let clean_options = cargo::ops::CleanOptions::default(); // Default options for now
+    let clean_options = cargo::ops::CleanOptions {
+        gctx,
+        spec: Vec::new(),
+        targets: Vec::new(),
+        profile_specified: false,
+        requested_profile: InternedString::new(""),
+        doc: false,
+        dry_run: false,
+    };
     cargo::ops::clean(&ws, &clean_options)?;
     Ok(())
-}
 }

@@ -25,6 +25,6 @@ pub fn handle_run_command(
     // For run, the subcommand_args_str are the args to pass to the binary
     // cargo::ops::run expects a CompileOptions and then the args for the binary
     let run_options = crate::cargo_integration::parse_cargo_args::parse_cargo_args(&gctx, &subcommand_args_str, rust_root)?;
-    cargo::ops::run(&ws, &run_options, &subcommand_args_str.iter().map(|s| s.to_os_string()).collect::<Vec<_>>())?;
+    cargo::ops::run(&ws, &run_options, &subcommand_args_str.iter().map(|s| s.to_string().into()).collect::<Vec<_>>())?;
     Ok(())
 }
