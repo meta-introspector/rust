@@ -7,6 +7,8 @@ pub mod create_compile_options;
 pub mod parse_cargo_args;
 pub mod parse_global_args;
 
+use cargo::util::command_prelude::ArgMatchesExt;
+
 pub mod dispatch_cargo_command;
 
 pub fn run_cargo_command(args: &[&str], rust_root: &PathBuf) -> Result<(), Box<dyn Error>> {

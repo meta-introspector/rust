@@ -3,7 +3,8 @@ use std::path::PathBuf;
 
 use cargo::ops::compile;
 use cargo::util::command_prelude::ArgMatchesExt;
-use cargo::core::{GlobalContext, Workspace};
+use cargo::core::Workspace;
+use cargo::GlobalContext;
 
 use crate::cargo_integration::parse_cargo_args;
 
