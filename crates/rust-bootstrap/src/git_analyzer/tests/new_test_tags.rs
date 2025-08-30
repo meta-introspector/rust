@@ -38,13 +38,14 @@ mod tests {
 
         // Create a tag
         let tag_signature = Signature::new("Tag Author", "tag.author@example.com", &Time::new(123456789, 0))?;
-        repo.tag(
+        let tag_oid = repo.tag(
             "v1.0.0",
             commit.as_object(),
             &tag_signature,
             "My first tag",
             true,
         )?;
+        println!("Created tag with OID: {}", tag_oid); // Debug print
 
         let tags_batch = get_all_tags_fn::get_all_tags(&repo)?;
 

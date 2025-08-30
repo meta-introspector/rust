@@ -20,9 +20,9 @@ pub fn get_all_tags(repo: &Repository) -> Result<RecordBatch, Box<dyn std::error
         match repo.find_reference(&name) {
             Ok(tag) => {
                 println!("  Found reference for tag: {}", name); // Debug print
-                match tag.peel_to_tag() {
-                    Ok(tag_obj) => {
-                        println!("    Peeled to tag object for tag: {}", name); // Debug print
+                if let Some(tag_oid) = tag.target_id() {
+                    if let Ok(tag_obj) = repo.find_tag(tag_oid) {
+                        println!("    Found tag object by OID for tag: {}", name); // Debug print
                         tag_hashes.push(tag_obj.id().to_string());
                         tag_names.push(name.to_string());
                         target_ids.push(tag_target_id_to_string::tag_target_id_to_string(&tag_obj));
@@ -37,10 +37,11 @@ pub fn get_all_tags(repo: &Repository) -> Result<RecordBatch, Box<dyn std::error
                             tag_times.push(0); // Default or error value
                         }
                         messages.push(tag_obj.message().unwrap_or("").to_string());
-                    },
-                    Err(e) => {
-                        println!("    Failed to peel to tag object for tag {}: {:?}", name, e); // Debug print
+                    } else {
+                        println!("    Failed to find tag object by OID for tag: {}", name); // Debug print
                     }
+                } else {
+                    println!("    Tag reference has no target OID for tag: {}", name); // Debug print
                 }
             },
             Err(e) => {

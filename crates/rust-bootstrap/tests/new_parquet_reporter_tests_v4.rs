@@ -20,7 +20,7 @@ mod tests {
         }
         fs::create_dir_all(&temp_dir).unwrap();
 
-        let build_state = crate::tests::helpers::setup_test_build_state();
+        let build_state = super::helpers::setup_test_build_state();
 
         let output_path = temp_dir.join("build_config.parquet");
         let result = parquet_reporter::write_build_config_to_parquet(&build_state, output_path.to_str().unwrap());
@@ -88,7 +88,7 @@ mod tests {
         }
         fs::create_dir_all(&temp_dir).unwrap();
 
-        let build_state = crate::tests::helpers::setup_test_build_state();
+        let build_state = super::helpers::setup_test_build_state();
 
         let output_path = temp_dir.join("build_config_to_summarize.parquet");
         parquet_reporter::write_build_config_to_parquet(&build_state, output_path.to_str().unwrap()).unwrap();
