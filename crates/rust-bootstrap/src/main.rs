@@ -12,6 +12,8 @@ fn main() -> Result<(), Box<dyn Error>> {
     let cargo_args_for_command = args.cargo_args.clone();
     let exec_panic_for_command = args.exec_panic;
 
+    tracing::info!("Tracing initialized. exec_panic_for_command: {}", exec_panic_for_command);
+
     println!("Parsed arguments: {:?}", args);
 
     let config = loader::load_config(

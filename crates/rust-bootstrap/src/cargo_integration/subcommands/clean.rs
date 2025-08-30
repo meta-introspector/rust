@@ -22,6 +22,8 @@ pub fn handle_clean_command(
     subcommand_args_str: &[&str],
     rust_root: &std::path::PathBuf,
 ) -> Result<(), Box<dyn std::error::Error>> {
+    println!("DEBUG: subcommand_args_str: {:?}", subcommand_args_str);
+    println!("DEBUG: rust_root: {:?}", rust_root);
     // For clean, we need to create CleanOptions
     let clean_options = cargo::ops::CleanOptions {
         gctx,
