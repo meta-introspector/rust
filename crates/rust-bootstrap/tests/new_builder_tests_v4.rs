@@ -1,5 +1,7 @@
 #![allow(unused_imports)]
 
+mod helpers;
+
 #[cfg(test)]
 mod tests {
     use super::helpers;
@@ -31,7 +33,7 @@ mod tests {
         let build_state = helpers::setup_test_build_state();
 
         let builder = Builder::new(&build_state);
-        let expected_path = build_state.build_dir.join("bin/rust-bootstrap");
+        let expected_path = PathBuf::from(build_state.creation_args.args.build_dir.clone().unwrap()).join("bin/rust-bootstrap");
         assert_eq!(builder.bootstrap_binary(), expected_path);
     }
 }

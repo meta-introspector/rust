@@ -1,5 +1,7 @@
 #![allow(unused_imports)]
 
+mod helpers;
+
 #[cfg(test)]
 mod tests {
     use super::helpers;
@@ -30,6 +32,8 @@ mod tests {
         assert!(result.is_ok() || result.is_err(), "build_bootstrap should return a Result");
 
         // Cleanup
-        fs::remove_dir_all(&build_state.rust_root).unwrap();
+        if build_state.creation_args.rust_root.exists() {
+            fs::remove_dir_all(&build_state.creation_args.rust_root).unwrap();
+        }
     }
 }

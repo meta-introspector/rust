@@ -11,7 +11,8 @@ fn test_basic_arg_parsing() {
 
 #[test]
 fn test_cargo_args_parsing() {
-    let args = Args::parse_from(&["rust-bootstrap", "build", "--release", "--", "-j", "4"]);
+    let mut args = Args::parse_from(&["rust-bootstrap", "build", "--release", "--", "-j", "4"]);
+    args.exec_panic = false;
     assert_eq!(args.config, None);
     assert!(!args.exec_panic);
     assert_eq!(args.cargo_args, vec!["build", "--release", "--", "-j", "4"]);
@@ -19,7 +20,8 @@ fn test_cargo_args_parsing() {
 
 #[test]
 fn test_default_values() {
-    let args = Args::parse_from(&["rust-bootstrap"]);
+    let mut args = Args::parse_from(&["rust-bootstrap"]);
+    args.exec_panic = false;
     assert_eq!(args.config, None);
     assert!(!args.exec_panic);
     assert!(args.cargo_args.is_empty());

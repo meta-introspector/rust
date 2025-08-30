@@ -7,10 +7,10 @@ use std::fs;
 use clap::Parser;
 
 pub fn setup_test_build_state() -> BuildState {
-    let args = Args::parse_from(vec!["rust-bootstrap", "--config", "/path/to/your/bootstrap.toml"]);
     let rust_root = PathBuf::from("target/test_build_state");
     let build_dir = rust_root.join("build");
     fs::create_dir_all(&build_dir).unwrap();
+    let args = Args::parse_from(vec!["rust-bootstrap", "--config", "/path/to/your/bootstrap.toml", "--build-dir", build_dir.to_str().unwrap()]);
     let stage0 = Stage0 {
         rustc: PathBuf::from("/path/to/rustc"),
         cargo: PathBuf::from("/path/to/cargo"),

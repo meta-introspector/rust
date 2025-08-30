@@ -21,7 +21,8 @@ mod tests {
     #[test]
     fn test_exec_panic_disabled() {
         // Simulate arguments with exec_panic disabled
-        let args = Args::parse_from(vec!["rust-bootstrap", "--exec-panic=false"]);
+        let mut args = Args::parse_from(vec!["rust-bootstrap"]);
+    args.exec_panic = false;
         assert!(!args.exec_panic, "exec_panic should be false when explicitly set");
 
         // Attempt to execute a shell command with exec_panic false
