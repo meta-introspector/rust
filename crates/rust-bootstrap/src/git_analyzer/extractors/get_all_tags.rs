@@ -1,4 +1,4 @@
-use git2::{Repository};
+use git2::{Repository, ObjectType};
 use arrow_array::{RecordBatch, StringArray, TimestampNanosecondArray};
 use std::sync::Arc;
 use crate::git_analyzer::schemas::git_tags_schema;
@@ -16,22 +16,35 @@ pub fn get_all_tags(repo: &Repository) -> Result<RecordBatch, Box<dyn std::error
 
     repo.tag_foreach(|_id, name_bytes| {
         let name = String::from_utf8_lossy(name_bytes);
-        if let Ok(tag) = repo.find_reference(&name) {
-            if let Ok(tag_obj) = tag.peel_to_tag() {
-                tag_hashes.push(tag_obj.id().to_string());
-                tag_names.push(name.to_string());
-                target_ids.push(tag_target_id_to_string::tag_target_id_to_string(&tag_obj));
-                target_types.push(tag_obj.target_type().map_or("".to_string(), |t| t.to_string()));
-                if let Some(tagger) = tag_obj.tagger() {
-                    tagger_names.push(tagger.name().unwrap_or("").to_string());
-                    tagger_emails.push(tagger.email().unwrap_or("").to_string());
-                    tag_times.push(tagger.when().seconds() * 1_000_000_000); // Convert to nanoseconds
-                } else {
-                    tagger_names.push("".to_string());
-                    tagger_emails.push("".to_string());
-                    tag_times.push(0); // Default or error value
+        println!("Processing tag: {}", name); // Debug print
+        match repo.find_reference(&name) {
+            Ok(tag) => {
+                println!("  Found reference for tag: {}", name); // Debug print
+                match tag.peel_to_tag() {
+                    Ok(tag_obj) => {
+                        println!("    Peeled to tag object for tag: {}", name); // Debug print
+                        tag_hashes.push(tag_obj.id().to_string());
+                        tag_names.push(name.to_string());
+                        target_ids.push(tag_target_id_to_string::tag_target_id_to_string(&tag_obj));
+                        target_types.push(tag_obj.target_type().map_or("".to_string(), |t| t.to_string()));
+                        if let Some(tagger) = tag_obj.tagger() {
+                            tagger_names.push(tagger.name().unwrap_or("").to_string());
+                            tagger_emails.push(tagger.email().unwrap_or("").to_string());
+                            tag_times.push(tagger.when().seconds() * 1_000_000_000); // Convert to nanoseconds
+                        } else {
+                            tagger_names.push("".to_string());
+                            tagger_emails.push("".to_string());
+                            tag_times.push(0); // Default or error value
+                        }
+                        messages.push(tag_obj.message().unwrap_or("").to_string());
+                    },
+                    Err(e) => {
+                        println!("    Failed to peel to tag object for tag {}: {:?}", name, e); // Debug print
+                    }
                 }
-                messages.push(tag_obj.message().unwrap_or("").to_string());
+            },
+            Err(e) => {
+                println!("  Failed to find reference for tag {}: {:?}", name, e); // Debug print
             }
         }
         true

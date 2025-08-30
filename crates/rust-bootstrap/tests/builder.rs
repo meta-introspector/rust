@@ -13,7 +13,7 @@ mod tests {
 
     #[test]
     fn test_builder_initialization() {
-        let build_state = crate::helpers::setup_test_build_state();
+        let build_state = super::helpers::setup_test_build_state();
 
         let builder = Builder::new(&build_state);
 
@@ -27,10 +27,10 @@ mod tests {
 
     #[test]
     fn test_builder_bootstrap_binary_path() {
-        let build_state = crate::helpers::setup_test_build_state();
+        let build_state = super::helpers::setup_test_build_state();
 
         let builder = Builder::new(&build_state);
-        let expected_path = build_dir.join("bin/rust-bootstrap");
+        let expected_path = build_state.build_dir.join("bin/rust-bootstrap");
         assert_eq!(builder.bootstrap_binary(), expected_path);
     }
 }

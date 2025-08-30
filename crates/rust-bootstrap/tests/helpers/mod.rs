@@ -14,6 +14,7 @@ pub fn setup_test_build_state() -> BuildState {
     let stage0 = Stage0 {
         rustc: PathBuf::from("/path/to/rustc"),
         cargo: PathBuf::from("/path/to/cargo"),
+        compiler_date: "2025-08-30".to_string(), // Added this line
         compiler_version: "1.70.0".to_string(),
         dist_server: "https://dummy.dist.rust-lang.org".to_string(),
     };

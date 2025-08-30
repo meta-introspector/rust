@@ -19,7 +19,7 @@ mod tests {
         // verifying calls to various sub-stages (like toolchain download, cargo builds),
         // and checking for the existence of final built artifacts.
 
-        let build_state = crate::helpers::setup_test_build_state();
+        let build_state = crate::tests::helpers::setup_test_build_state();
 
         // Call the function under test
         let result = build_bootstrap::build_bootstrap(&build_state);

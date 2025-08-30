@@ -19,7 +19,7 @@ mod tests {
         // 3. Ensuring correct toolchain is set up for the build.
 
         // Create a dummy BuildState
-        let build_state = crate::helpers::setup_test_build_state();
+        let build_state = super::helpers::setup_test_build_state();
 
         // Call the function under test
         // let result = toolchain_downloader::download_and_setup_toolchain(&build_state);
