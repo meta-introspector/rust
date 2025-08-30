@@ -5,7 +5,8 @@ mod tests {
     use rust_bootstrap::parquet_reporter;
     use crate::BuildState;
     use rust_bootstrap::Args;
-    use rust_bootstrap::loader::Config; // Corrected import for Config
+    use rust_bootstrap::BuildState;
+    use rust_bootstrap::config::loader::Config; // Corrected import for Config
     use rust_bootstrap::bootstrap_stages::stage0_detector::Stage0;
     use std::path::{PathBuf, Path};
     use std::fs;
@@ -29,7 +30,15 @@ mod tests {
             compiler_version: "1.70.0".to_string(),
             dist_server: "https://dummy.dist.rust-lang.org".to_string(),
         }; // Dummy Stage0
-        let config = Config::default(); // Assuming Config::default() works
+        let config = Config {
+            build_triple: String::from("aarch64-unknown-linux-gnu"),
+            host_triple: String::from("aarch64-unknown-linux-gnu"),
+            target_triple: String::from("aarch64-unknown-linux-gnu"),
+            dist_server: String::from("https://static.rust-lang.org"),
+            channel: String::from("stable"),
+            dry_run: false,
+            exec_panic: false,
+        };
 
         let build_state = BuildState::new(
             args,
@@ -116,7 +125,15 @@ mod tests {
             compiler_version: "1.70.0".to_string(),
             dist_server: "https://dummy.dist.rust-lang.org".to_string(),
         }; // Dummy Stage0
-        let config = Config::default(); // Assuming Config::default() works
+        let config = Config {
+            build_triple: String::from("aarch64-unknown-linux-gnu"),
+            host_triple: String::from("aarch64-unknown-linux-gnu"),
+            target_triple: String::from("aarch64-unknown-linux-gnu"),
+            dist_server: String::from("https://static.rust-lang.org"),
+            channel: String::from("stable"),
+            dry_run: false,
+            exec_panic: false,
+        };
 
         let build_state = BuildState::new(
             args,
