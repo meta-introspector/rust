@@ -7,7 +7,7 @@ mod tests {
     use tempfile::tempdir;
     use std::fs::File;
     use std::io::Write;
-    use git2::{Signature, ReferenceFormat};
+    
 
     #[test]
     fn test_get_all_refs_with_schema() -> Result<(), Box<dyn Error>> {

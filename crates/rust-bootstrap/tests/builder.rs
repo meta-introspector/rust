@@ -2,6 +2,7 @@
 
 #[cfg(test)]
 mod tests {
+    use super::helpers;
     use rust_bootstrap::builder::Builder;
     use rust_bootstrap::BuildState;
     use rust_bootstrap::Args;
@@ -13,7 +14,7 @@ mod tests {
 
     #[test]
     fn test_builder_initialization() {
-        let build_state = super::helpers::setup_test_build_state();
+        let build_state = helpers::setup_test_build_state();
 
         let builder = Builder::new(&build_state);
 
@@ -27,7 +28,7 @@ mod tests {
 
     #[test]
     fn test_builder_bootstrap_binary_path() {
-        let build_state = super::helpers::setup_test_build_state();
+        let build_state = helpers::setup_test_build_state();
 
         let builder = Builder::new(&build_state);
         let expected_path = build_state.build_dir.join("bin/rust-bootstrap");

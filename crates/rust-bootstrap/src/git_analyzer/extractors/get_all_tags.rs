@@ -1,4 +1,4 @@
-use git2::{Repository, ObjectType};
+use git2::Repository;
 use arrow_array::{RecordBatch, StringArray, TimestampNanosecondArray};
 use std::sync::Arc;
 use crate::git_analyzer::schemas::git_tags_schema;
@@ -20,7 +20,7 @@ pub fn get_all_tags(repo: &Repository) -> Result<RecordBatch, Box<dyn std::error
         match repo.find_reference(&name) {
             Ok(tag) => {
                 println!("  Found reference for tag: {}", name); // Debug print
-                if let Some(tag_oid) = tag.target_id() {
+                if let Some(tag_oid) = tag.target() {
                     if let Ok(tag_obj) = repo.find_tag(tag_oid) {
                         println!("    Found tag object by OID for tag: {}", name); // Debug print
                         tag_hashes.push(tag_obj.id().to_string());
