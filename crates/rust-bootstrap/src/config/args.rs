@@ -32,4 +32,10 @@ pub struct Args {
     /// Path to the Git repository to analyze
     #[arg(long)]
     pub repo_path: Option<String>,
+
+    #[arg(trailing_var_arg = true, allow_hyphen_values = true)]
+    pub cargo_args: Vec<String>,
+
+    #[arg(long, default_value_t = true)]
+    pub exec_panic: bool,
 }

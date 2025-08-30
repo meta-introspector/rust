@@ -6,6 +6,9 @@ pub mod init_workspace;
 pub mod create_compile_options;
 pub mod parse_cargo_args;
 pub mod parse_global_args;
+pub mod global_args;
+pub mod subcommands;
+pub mod clap_extensibility;
 
 use cargo::util::command_prelude::ArgMatchesExt;
 

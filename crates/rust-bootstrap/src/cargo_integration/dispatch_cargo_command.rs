@@ -18,6 +18,8 @@ pub fn dispatch_cargo_command(
     let subcommand_args_str: Vec<&str> = subcommand_args.iter().map(|s| s.as_str()).collect();
 
     let subcommand_name = global_matches.subcommand_name();
+    tracing::debug!("dispatch_cargo_command: subcommand_name: {:?}", subcommand_name);
+    tracing::debug!("dispatch_cargo_command: subcommand_args: {:?}", subcommand_args);
 
     match subcommand_name {
         Some("build") | Some("check") => {

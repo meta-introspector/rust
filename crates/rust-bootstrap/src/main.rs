@@ -9,6 +9,8 @@ use std::error::Error;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let args = Args::parse();
+    let cargo_args_for_command = args.cargo_args.clone();
+    let exec_panic_for_command = args.exec_panic;
 
     println!("Parsed arguments: {:?}", args);
 
@@ -38,12 +40,11 @@ fn main() -> Result<(), Box<dyn Error>> {
     // Placeholder for build_bootstrap
     rust_bootstrap::bootstrap_stages::build_bootstrap::build_bootstrap(&build_state)?;
 
-    // Placeholder for execute_and_report_command
-    let command_result = rust_bootstrap::bootstrap_stages::command_executor::execute_and_report_command(
-        builder.bootstrap_binary().to_str().unwrap(),
-        &std::env::args().skip(1).collect::<Vec<String>>().iter().map(|s| s.as_str()).collect::<Vec<&str>>()
+    // Execute Cargo command via integration
+    rust_bootstrap::cargo_integration::run_cargo_command(
+        &cargo_args_for_command.iter().map(|s| s.as_str()).collect::<Vec<&str>>(),
+        &builder.bootstrap_binary(), // Pass rust_root
     )?;
-    tracing::debug!("Command execution result: {:?}", command_result);
     // rust_bootstrap::bootstrap_stages::process_build_metrics::process_build_metrics(command_result)?;
 
     // Write build config to parquet

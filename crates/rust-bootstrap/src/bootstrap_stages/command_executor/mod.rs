@@ -12,9 +12,9 @@ pub struct CommandExecutionResult {
     pub duration: i64, // Duration in nanoseconds
 }
 
-pub fn execute_and_report_command(command: &str, args: &[&str]) -> Result<CommandExecutionResult, Box<dyn Error>> {
+pub fn execute_and_report_command(command: &str, args: &[&str], exec_panic: bool) -> Result<CommandExecutionResult, Box<dyn Error>> {
     let start_time = capture_start_time::capture_start_time();
-    let output = execute_shell_command::execute_shell_command(command, args)?;
+    let output = execute_shell_command::execute_shell_command(command, args, exec_panic)?;
     let duration = capture_end_time_and_duration::capture_end_time_and_duration(start_time);
     let result = create_command_execution_result::create_command_execution_result(output, duration);
     Ok(result)

@@ -1,63 +1,31 @@
 use cargo::util::CargoResult;
-use clap::{Command, ArgMatches, ArgAction, Arg};
-use cargo::util::command_prelude::{flag, opt, multi_opt};
+use clap::ArgMatches;
 use tracing;
 
-pub fn parse_global_args(raw_args: &[&str]) -> CargoResult<(ArgMatches, Vec<String>)> {
-    let command = Command::new("cargo")
-        .arg(flag("version", "Print version info and exit").short('V'))
-        .arg(flag("list", "List installed commands"))
-        .arg(
-            opt(
-                "explain",
-                "Provide a detailed explanation of a rustc error message",
-            )
-            .value_name("CODE"),
-        )
-        .arg(
-            opt(
-                "verbose",
-                "Use verbose output (-vv very verbose/build.rs output)",
-            )
-            .short('v')
-            .action(ArgAction::Count)
-            .global(true),
-        )
-        .arg(flag("quiet", "Do not print cargo log messages").short('q').global(true))
-        .arg(
-            opt("color", "Coloring")
-                .value_name("WHEN")
-                .global(true)
-                .value_parser(["auto", "always", "never"])
-                .ignore_case(true),
-        )
-        .arg(
-            flag("locked", "Assert that `Cargo.lock` will remain unchanged")
-                .help_heading("Manifest Options")
-                .global(true),
-        )
-        .arg(
-            flag("offline", "Run without accessing the network")
-                .help_heading("Manifest Options")
-                .global(true),
-        )
-        .arg(
-            flag("frozen", "Equivalent to specifying both --locked and --offline")
-                .help_heading("Manifest Options")
-                .global(true),
-        )
-        .arg(multi_opt("config", "KEY=VALUE|PATH", "Override a configuration value").global(true))
-        .arg(Arg::new("unstable-features")
-            .help("Unstable (nightly-only) flags to Cargo, see 'cargo -Z help' for details")
-            .short('Z')
-            .value_name("FLAG")
-            .action(ArgAction::Append)
-            .global(true)
-        );
+// Include the generated file that contains get_argument_providers and get_subcommand_providers
+include!(concat!(env!("OUT_DIR"), "/generated_clap_providers.rs"));
 
-    let matches = command.try_get_matches_from(raw_args)?;
+pub fn parse_global_args(raw_args: &[&str]) -> CargoResult<(ArgMatches, Vec<String>)> {
+    tracing::debug!("parse_global_args: raw_args: {:?}", raw_args);
+    let mut command = Command::new("cargo");
+
+    // Add global arguments
+    for provider in get_argument_providers() {
+        command = provider.add_to_command(command);
+    }
+
+    // Add subcommands
+    for provider in get_subcommand_providers() {
+        command = provider.add_to_command(command);
+    }
+
+    let mut full_args = vec!["cargo"]; // Prepend "cargo"
+    full_args.extend_from_slice(raw_args);
+    tracing::debug!("parse_global_args: full_args: {:?}", full_args);
+    let matches = command.try_get_matches_from(full_args)?;
 
     let subcommand_name = matches.subcommand_name();
+    tracing::debug!("parse_global_args: matches.subcommand_name(): {:?}", subcommand_name);
     if let Some(name) = subcommand_name {
         tracing::debug!("Parsed subcommand name: {}", name);
     }
