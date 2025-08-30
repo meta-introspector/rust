@@ -1,23 +1,14 @@
 #![allow(unused_imports)]
 
-pub mod new_test_parse_cargo_args;
-pub mod new_test_handle_build_command;
-pub mod new_test_handle_check_command;
-pub mod new_test_handle_run_command;
-pub mod new_test_handle_clean_command;
-
 #[cfg(test)]
 mod tests {
     use std::path::{Path, PathBuf};
     use std::fs;
     use cargo::GlobalContext;
     use cargo::core::Workspace;
-    use crate::cargo_integration::subcommands::build::handle_build_command;
     use crate::cargo_integration::subcommands::check::handle_check_command;
-    use crate::cargo_integration::subcommands::run::handle_run_command;
-    use crate::cargo_integration::subcommands::clean::handle_clean_command;
 
-    // Helper function to create a temporary Cargo project
+    // Helper function to create a temporary Cargo project (duplicated for self-containment)
     fn setup_temp_cargo_project(test_name: &str) -> (PathBuf, GlobalContext, Workspace) {
         let temp_dir = PathBuf::from(format!("target/test_cargo_projects/{}", test_name));
         if temp_dir.exists() {
@@ -63,5 +54,24 @@ fn main() {
         let ws = Workspace::new(&temp_dir.join("Cargo.toml"), &gctx).unwrap();
 
         (temp_dir, gctx, ws)
+    }
+
+    #[test]
+    fn test_handle_check_command() {
+        let (temp_dir, gctx, ws) = setup_temp_cargo_project("check_test");
+        let subcommand_args_str: Vec<&str> = vec![];
+        let rust_root = PathBuf::from(".");
+
+        let original_cwd = std::env::current_dir().unwrap();
+        std::env::set_current_dir(&temp_dir).unwrap();
+
+        let result = handle_check_command(&gctx, &ws, &subcommand_args_str, &rust_root);
+        assert!(result.is_ok(), "handle_check_command failed: {:?}", result.err());
+
+        // Check does not produce binaries, but should create target directory
+        assert!(temp_dir.join("target/.fingerprint").exists());
+
+        std::env::set_current_dir(&original_cwd).unwrap();
+        fs::remove_dir_all(&temp_dir).unwrap();
     }
 }

@@ -3,7 +3,7 @@
 #[cfg(test)]
 mod tests {
     use rust_bootstrap::parquet_reporter;
-    use rust_bootstrap::BuildState;
+    use crate::BuildState;
     use rust_bootstrap::Args;
     use rust_bootstrap::loader::Config; // Corrected import for Config
     use rust_bootstrap::bootstrap_stages::stage0_detector::Stage0;

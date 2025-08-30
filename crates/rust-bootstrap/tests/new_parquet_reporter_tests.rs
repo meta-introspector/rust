@@ -5,7 +5,7 @@ mod tests {
     use rust_bootstrap::parquet_reporter;
     use rust_bootstrap::BuildState;
     use rust_bootstrap::Args;
-    use rust_bootstrap::config::loader::Config;
+    use crate::config::loader::Config;
     use rust_bootstrap::bootstrap_stages::stage0_detector::Stage0;
     use std::path::{PathBuf, Path};
     use std::fs;
