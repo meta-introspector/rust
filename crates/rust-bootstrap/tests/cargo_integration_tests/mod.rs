@@ -54,7 +54,7 @@ fn main() {
         fs::write(temp_dir.join("src/main.rs"), main_rs_content).unwrap();
 
         let gctx = GlobalContext::new().unwrap();
-        let ws = Workspace::new(&temp_dir, &gctx).unwrap();
+        let ws = Workspace::new(&temp_dir.join("Cargo.toml"), &gctx).unwrap();
 
         (temp_dir, gctx, ws)
     }

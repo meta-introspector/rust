@@ -47,7 +47,7 @@ pub fn parse_cargo_args<'gctx>(gctx: &'gctx GlobalContext, raw_args: &[&str], ru
 
     let matches = command.try_get_matches_from(raw_args)?;
 
-    let ws = Workspace::new(rust_root, gctx)?;
+    let ws = Workspace::new(&rust_root.join("Cargo.toml"), gctx)?;
 
     let compile_options = matches.compile_options(gctx, UserIntent::Build, Some(&ws), ProfileChecking::Custom)?;
 
