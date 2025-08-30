@@ -5,7 +5,6 @@ use cargo::core::compiler::UserIntent;
 use cargo::core::Workspace;
 use cargo::util::command_prelude::{CommandExt, ArgMatchesExt, ProfileChecking, subcommand};
 use std::path::PathBuf;
-use clap::{Command, ArgMatches};
 
 pub fn parse_cargo_args<'gctx>(gctx: &'gctx GlobalContext, raw_args: &[&str], rust_root: &PathBuf) -> CargoResult<CompileOptions> {
     let command = subcommand("build")

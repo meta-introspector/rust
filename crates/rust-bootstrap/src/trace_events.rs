@@ -1,4 +1,3 @@
-use arrow_array::{RecordBatch, StringArray, TimestampNanosecondArray};
 use arrow_schema::{DataType, Field, Schema, TimeUnit};
 use std::sync::Arc;
 

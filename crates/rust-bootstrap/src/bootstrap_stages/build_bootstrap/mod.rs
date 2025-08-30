@@ -1,7 +1,6 @@
 use std::error::Error;
 use std::env;
 use crate::BuildState;
-use crate::bootstrap_stages::command_executor;
 
 pub fn build_bootstrap(build_state: &BuildState) -> Result<(), Box<dyn Error>> {
     println!("Building bootstrap");
