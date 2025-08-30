@@ -22,6 +22,7 @@ This CRQ covers:
 
 ### Step 3.2: Orchestrate `cargo` Commands for Build Stages.
 *   **Action:** Implement the core build orchestration logic in `rust-bootstrap`. This involves programmatically executing `cargo` commands (e.g., `cargo build`, `cargo install`) for different stages of the Rust compiler build process (e.g., `stage1`, `stage2`). Ensure proper management of build artifacts, output directories, and intermediate compilation results. (Refer to `rust_bootstrap_development_sop.md` section 4.4.b, 4.4.c).
+    *   **Sub-task:** Implement Cargo Command Execution (Refer to `CRQ-003-1-ImplementCargoCommandExecution.md`).
 *   **Tool:** `write_file`, `replace`, `run_shell_command`
 
 ### Step 3.3: Implement Cross-Compilation Support.

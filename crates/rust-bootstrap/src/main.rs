@@ -2,6 +2,7 @@ use rust_bootstrap::{Args, BuildState, loader, parquet_reporter, builder::Builde
 use rust_bootstrap::bootstrap_stages::stage0_detector::Stage0;
 use rust_bootstrap::bootstrap_stages::operational_logger::logger;
 use syscall_instrumentation_macro::instrument_syscall;
+use tracing;
 
 use clap::Parser;
 use std::error::Error;
@@ -42,6 +43,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         builder.bootstrap_binary().to_str().unwrap(),
         &std::env::args().skip(1).collect::<Vec<String>>().iter().map(|s| s.as_str()).collect::<Vec<&str>>()
     )?;
+    tracing::debug!("Command execution result: {:?}", command_result);
     // rust_bootstrap::bootstrap_stages::process_build_metrics::process_build_metrics(command_result)?;
 
     // Write build config to parquet
