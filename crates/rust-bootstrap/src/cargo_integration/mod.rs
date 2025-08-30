@@ -7,8 +7,7 @@ pub mod create_compile_options;
 pub mod parse_cargo_args;
 pub mod parse_global_args;
 
-use cargo::ops::compile;
-use cargo::util::command_prelude::ArgMatchesExt;
+pub mod dispatch_cargo_command;
 
 pub fn run_cargo_command(args: &[&str], rust_root: &PathBuf) -> Result<(), Box<dyn Error>> {
     println!("Running cargo command via integration: {:?}", args);
@@ -39,11 +38,13 @@ pub fn run_cargo_command(args: &[&str], rust_root: &PathBuf) -> Result<(), Box<d
     let ws = init_workspace::init_workspace(&gctx, rust_root)?;
     println!("ws.root(): {:?}", ws.root());
 
-    // Convert Vec<String> to Vec<&str> for parse_cargo_args
-    let subcommand_args_str: Vec<&str> = subcommand_args.iter().map(|s| s.as_str()).collect();
-    let compile_options = parse_cargo_args::parse_cargo_args(&gctx, &subcommand_args_str, rust_root)?;
-
-    compile(&ws, &compile_options)?;
+    dispatch_cargo_command::dispatch_cargo_command(
+        &global_matches,
+        &subcommand_args,
+        &gctx,
+        &ws,
+        rust_root,
+    )?;
 
     // Restore original current directory
     std::env::set_current_dir(original_cwd)?;
