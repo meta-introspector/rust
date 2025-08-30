@@ -5,15 +5,15 @@ use crate::BuildState;
 pub fn build_bootstrap(build_state: &BuildState) -> Result<(), Box<dyn Error>> {
     println!("Building bootstrap");
 
-    let bootstrap_dir = build_state.build_dir.join("bootstrap");
-    if build_state.args.clean && bootstrap_dir.exists() {
+    let bootstrap_dir = build_state.creation_args.build_dir.join("bootstrap");
+    if build_state.creation_args.args.clean && bootstrap_dir.exists() {
         std::fs::remove_dir_all(&bootstrap_dir)?;
     }
 
     env::set_var("CARGO_TARGET_DIR", &bootstrap_dir);
-    env::set_var("RUSTC", build_state.stage0.rustc.to_str().unwrap());
+    env::set_var("RUSTC", build_state.creation_args.stage0.rustc.to_str().unwrap());
 
-    let bin_root = build_state.build_dir.join(&build_state.build_triple).join("stage0");
+    let bin_root = build_state.creation_args.build_dir.join(&build_state.creation_args.build_triple).join("stage0");
     let lib_path = format!("{}/lib", bin_root.to_str().unwrap());
 
     // Set library paths
@@ -49,10 +49,10 @@ pub fn build_bootstrap(build_state: &BuildState) -> Result<(), Box<dyn Error>> {
     rustflags.push_str(" -Wrust_2018_idioms -Wunused_lifetimes");
 
     // TODO: Implement deny-warnings logic from config.toml
-    let deny_warnings = if build_state.args.warnings == "default" {
-        build_state.config.build.deny_warnings.unwrap_or(true)
+    let deny_warnings = if build_state.creation_args.args.warnings == "default" {
+        build_state.creation_args.config.rust.deny_warnings
     } else {
-        build_state.args.warnings == "deny"
+        build_state.creation_args.args.warnings == "deny"
     };
 
     if deny_warnings {
@@ -61,8 +61,8 @@ pub fn build_bootstrap(build_state: &BuildState) -> Result<(), Box<dyn Error>> {
 
     env::set_var("RUSTFLAGS", rustflags);
 
-    let bootstrap_cargo_toml = build_state.rust_root.join("src/bootstrap/Cargo.toml");
-    let root_dir_arg = format!("-Zroot-dir={}", build_state.rust_root.to_str().unwrap());
+    let bootstrap_cargo_toml = build_state.creation_args.rust_root.join("src/bootstrap/Cargo.toml");
+    let root_dir_arg = format!("-Zroot-dir={}", build_state.creation_args.rust_root.to_str().unwrap());
     let mut args = vec![
         "build",
         "--manifest-path",
@@ -70,26 +70,26 @@ pub fn build_bootstrap(build_state: &BuildState) -> Result<(), Box<dyn Error>> {
         &root_dir_arg,
     ];
 
-    if build_state.args.verbose > 0 {
-        for _ in 0..build_state.args.verbose {
+    if build_state.creation_args.args.verbose > 0 {
+        for _ in 0..build_state.creation_args.args.verbose {
             args.push("--verbose");
         }
     }
 
-    if build_state.config.build.use_locked_deps {
+    if build_state.creation_args.config.build.locked_deps {
         args.push("--locked");
     }
-    if build_state.config.build.use_vendored_sources {
+    if build_state.creation_args.config.build.vendor {
         args.push("--frozen");
     }
-    if build_state.config.build.metrics {
+    if build_state.creation_args.config.build.metrics {
         args.push("--features");
         args.push("build-metrics");
     }
-    if build_state.args.json_output {
+    if build_state.creation_args.args.json_output {
         args.push("--message-format=json");
     }
-    match build_state.args.color.as_str() {
+    match build_state.creation_args.args.color.as_str() {
         "always" => args.push("--color=always"),
         "never" => args.push("--color=never"),
         _ => { /* auto, do nothing */ }
@@ -109,7 +109,7 @@ pub fn build_bootstrap(build_state: &BuildState) -> Result<(), Box<dyn Error>> {
     let additional_cargo_flags_str: Vec<&str> = additional_cargo_flags.iter().map(|s| s.as_str()).collect();
     args.extend_from_slice(&additional_cargo_flags_str);
 
-    crate::cargo_integration::run_cargo_command(&["version"], &build_state.rust_root)?;
+    crate::cargo_integration::run_cargo_command(&["version"], &build_state.creation_args.rust_root)?;
 
     Ok(())
 }

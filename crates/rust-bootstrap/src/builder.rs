@@ -1,6 +1,6 @@
 use std::error::Error;
 use std::path::PathBuf;
-use crate::build_state::BuildState;
+use crate::BuildState;
 
 pub struct Builder<'a> {
     build: &'a BuildState,
@@ -20,6 +20,6 @@ impl<'a> Builder<'a> {
     }
 
     pub fn bootstrap_binary(&self) -> PathBuf {
-        self.build.build_dir.join("bootstrap").join("debug").join("bootstrap")
+        self.build.creation_args.build_dir.join("bootstrap").join("debug").join("bootstrap")
     }
 }

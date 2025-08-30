@@ -12,4 +12,5 @@ pub mod cargo_integration;
 
 pub use config::args::Args;
 pub use bootstrap_stages::config_loader as loader;
-pub use build_state::BuildState;
+pub use build_state::build_state_struct::BuildState;
+pub use build_state::creation_args::BuildStateCreationArgs;

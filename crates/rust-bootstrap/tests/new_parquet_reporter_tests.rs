@@ -5,8 +5,9 @@ mod tests {
     use rust_bootstrap::parquet_reporter;
     use rust_bootstrap::BuildState;
     use rust_bootstrap::Args;
-    use crate::config::loader::Config;
+    use rust_bootstrap::config::loader::Config;
     use rust_bootstrap::bootstrap_stages::stage0_detector::Stage0;
+    use rust_bootstrap::BuildStateCreationArgs;
     use std::path::{PathBuf, Path};
     use std::fs;
     use clap::Parser; // Added for Args::parse_from
@@ -19,26 +20,7 @@ mod tests {
         }
         fs::create_dir_all(&temp_dir).unwrap();
 
-        let args = Args::parse_from(vec!["rust-bootstrap"]);
-        let rust_root = PathBuf::from("/"); // Dummy path
-        let build_dir = PathBuf::from("/"); // Dummy path
-        let stage0 = Stage0 {
-            rustc: PathBuf::from("/dummy/rustc"),
-            cargo: PathBuf::from("/dummy/cargo"),
-            compiler_date: "2025-08-30".to_string(),
-            compiler_version: "1.70.0".to_string(),
-            dist_server: "https://dummy.dist.rust-lang.org".to_string(),
-        }; // Dummy Stage0
-        let config = Config::default(); // Assuming Config::default() works
-
-        let build_state = BuildState::new(
-            args,
-            rust_root,
-            build_dir,
-            stage0,
-            config,
-            String::from("x86_64-unknown-linux-gnu"),
-        );
+        let build_state = crate::helpers::setup_test_build_state();
 
         let output_path = temp_dir.join("build_config.parquet");
         let result = parquet_reporter::write_build_config_to_parquet(&build_state, output_path.to_str().unwrap());
@@ -106,26 +88,7 @@ mod tests {
         }
         fs::create_dir_all(&temp_dir).unwrap();
 
-        let args = Args::parse_from(vec!["rust-bootstrap"]);
-        let rust_root = PathBuf::from("/"); // Dummy path
-        let build_dir = PathBuf::from("/"); // Dummy path
-        let stage0 = Stage0 {
-            rustc: PathBuf::from("/dummy/rustc"),
-            cargo: PathBuf::from("/dummy/cargo"),
-            compiler_date: "2025-08-30".to_string(),
-            compiler_version: "1.70.0".to_string(),
-            dist_server: "https://dummy.dist.rust-lang.org".to_string(),
-        }; // Dummy Stage0
-        let config = Config::default(); // Assuming Config::default() works
-
-        let build_state = BuildState::new(
-            args,
-            rust_root,
-            build_dir,
-            stage0,
-            config,
-            String::from("x86_64-unknown-linux-gnu"),
-        );
+        let build_state = crate::helpers::setup_test_build_state();
 
         let output_path = temp_dir.join("build_config_to_summarize.parquet");
         parquet_reporter::write_build_config_to_parquet(&build_state, output_path.to_str().unwrap()).unwrap();

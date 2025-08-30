@@ -41,8 +41,7 @@ mod tests {
         let stage0 = Stage0::detect();
 
         // Assert that a Stage0 was detected
-        assert!(stage0.path.is_some(), "Stage0 path should be detected");
-        assert_eq!(stage0.path.unwrap(), rustc_path, "Detected path should match mock rustc");
+        assert_eq!(stage0.rustc, rustc_path, "Stage0 path should be detected and match mock rustc");
 
         // Restore original PATH
         if let Some(path) = original_path {
@@ -60,7 +59,7 @@ mod tests {
         std::env::remove_var("PATH"); // Temporarily clear PATH
 
         let stage0 = Stage0::detect();
-        assert!(stage0.path.is_none(), "Stage0 path should not be detected when rustc is not in PATH");
+        assert_eq!(stage0.rustc, PathBuf::from("/data/data/com.termux/files/usr/bin/rustc"), "Stage0 path should default to expected path when rustc is not in PATH");
 
         // Restore original PATH
         if let Some(path) = original_path {

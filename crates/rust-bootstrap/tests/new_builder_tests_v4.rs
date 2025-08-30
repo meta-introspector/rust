@@ -9,29 +9,11 @@ mod tests {
     use rust_bootstrap::bootstrap_stages::stage0_detector::Stage0;
     use std::path::PathBuf;
     use clap::Parser; // Added for Args::parse_from
+    use rust_bootstrap::BuildStateCreationArgs;
 
     #[test]
     fn test_builder_initialization_v4() {
-        let args = Args::parse_from(vec!["rust-bootstrap"]);
-        let rust_root = PathBuf::from("/"); // Dummy path
-        let build_dir = PathBuf::from("/"); // Dummy path
-        let stage0 = Stage0 {
-            rustc: PathBuf::from("/dummy/rustc"),
-            cargo: PathBuf::from("/dummy/cargo"),
-            compiler_date: "2025-08-30".to_string(),
-            compiler_version: "1.70.0".to_string(),
-            dist_server: "https://dummy.dist.rust-lang.org".to_string(),
-        }; // Dummy Stage0
-        let config = Config::default(); // Assuming Config::default() works
-
-        let build_state = BuildState::new(
-            args,
-            rust_root,
-            build_dir,
-            stage0,
-            config,
-            String::from("x86_64-unknown-linux-gnu"),
-        );
+        let build_state = super::helpers::setup_test_build_state();
 
         let builder = Builder::new(&build_state);
 
@@ -45,29 +27,10 @@ mod tests {
 
     #[test]
     fn test_builder_bootstrap_binary_path_v4() {
-        let args = Args::parse_from(vec!["rust-bootstrap"]);
-        let rust_root = PathBuf::from("target/new_test_builder_v4/rust_root");
-        let build_dir = PathBuf::from("target/new_test_builder_v4/build_dir");
-        let stage0 = Stage0 {
-            rustc: PathBuf::from("/dummy/rustc"),
-            cargo: PathBuf::from("/dummy/cargo"),
-            compiler_date: "2025-08-30".to_string(),
-            compiler_version: "1.70.0".to_string(),
-            dist_server: "https://dummy.dist.rust-lang.org".to_string(),
-        };
-        let config = Config::default();
-
-        let build_state = BuildState::new(
-            args,
-            rust_root.clone(),
-            build_dir.clone(),
-            stage0,
-            config,
-            String::from("x86_64-unknown-linux-gnu"),
-        );
+        let build_state = super::helpers::setup_test_build_state();
 
         let builder = Builder::new(&build_state);
-        let expected_path = build_dir.join("bin/rust-bootstrap");
+        let expected_path = build_state.build_dir.join("bin/rust-bootstrap");
         assert_eq!(builder.bootstrap_binary(), expected_path);
     }
 }

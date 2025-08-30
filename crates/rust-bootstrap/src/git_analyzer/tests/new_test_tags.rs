@@ -43,7 +43,7 @@ mod tests {
             commit.as_object(),
             &tag_signature,
             "My first tag",
-            false,
+            true,
         )?;
 
         let tags_batch = get_all_tags_fn::get_all_tags(&repo)?;

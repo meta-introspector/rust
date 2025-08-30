@@ -1,4 +1,4 @@
-use git2::{Repository, ObjectType};
+use git2::{Repository};
 use arrow_array::{RecordBatch, StringArray, TimestampNanosecondArray};
 use std::sync::Arc;
 use crate::git_analyzer::schemas::git_tags_schema;
@@ -17,12 +17,11 @@ pub fn get_all_tags(repo: &Repository) -> Result<RecordBatch, Box<dyn std::error
     repo.tag_foreach(|_id, name_bytes| {
         let name = String::from_utf8_lossy(name_bytes);
         if let Ok(tag) = repo.find_reference(&name) {
-            if let Some(peeled) = tag.peel(ObjectType::Any).ok() {
-                let tag_obj = peeled.as_tag().unwrap();
+            if let Ok(tag_obj) = tag.peel_to_tag() {
                 tag_hashes.push(tag_obj.id().to_string());
                 tag_names.push(name.to_string());
                 target_ids.push(tag_target_id_to_string::tag_target_id_to_string(&tag_obj));
-                target_types.push(tag_obj.target_type().unwrap().to_string());
+                target_types.push(tag_obj.target_type().map_or("".to_string(), |t| t.to_string()));
                 if let Some(tagger) = tag_obj.tagger() {
                     tagger_names.push(tagger.name().unwrap_or("").to_string());
                     tagger_emails.push(tagger.email().unwrap_or("").to_string());

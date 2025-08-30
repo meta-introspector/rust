@@ -13,7 +13,7 @@ pub mod print_summary_footer;
 pub mod errata_reporter;
 use arrow_array::{RecordBatch, UInt64Array, StringArray, BooleanArray};
 use std::sync::Arc;
-use crate::build_state::BuildState;
+use crate::BuildState;
 use crate::git_analyzer::analysis::git_analysis_summary::GitAnalysisSummary;
 use crate::git_analyzer::schemas::{git_analysis_summary_schema, build_config_schema};
 use parquet::arrow::arrow_reader::ParquetRecordBatchReaderBuilder;
@@ -55,20 +55,16 @@ pub fn write_build_config_to_parquet(
     file_path: &str,
 ) -> Result<(), Box<dyn std::error::Error>> {
     let schema = build_config_schema();
-    let download_ci_rustc_array = BooleanArray::from(vec![build_state.config.build.download_ci_rustc]);
-    let download_ci_llvm_array = BooleanArray::from(vec![build_state.config.build.download_ci_llvm]);
-    let patch_binaries_for_nix_array = BooleanArray::from(vec![build_state.config.build.patch_binaries_for_nix]);
-    let rustc_path_array = StringArray::from(vec![build_state.stage0.rustc.to_str().unwrap_or_default()]);
-    let cargo_path_array = StringArray::from(vec![build_state.stage0.cargo.to_str().unwrap_or_default()]);
-    let compiler_date_array = StringArray::from(vec![build_state.stage0.compiler_date.clone()]);
-    let compiler_version_array = StringArray::from(vec![build_state.stage0.compiler_version.clone()]);
-    let dist_server_array = StringArray::from(vec![build_state.stage0.dist_server.clone()]);
+    let patch_binaries_for_nix_array = BooleanArray::from(vec![build_state.creation_args.config.build.patch_binaries_for_nix]);
+    let rustc_path_array = StringArray::from(vec![build_state.creation_args.stage0.rustc.to_str().unwrap_or_default()]);
+    let cargo_path_array = StringArray::from(vec![build_state.creation_args.stage0.cargo.to_str().unwrap_or_default()]);
+    let compiler_date_array = StringArray::from(vec![build_state.creation_args.stage0.compiler_date.clone()]);
+    let compiler_version_array = StringArray::from(vec![build_state.creation_args.stage0.compiler_version.clone()]);
+    let dist_server_array = StringArray::from(vec![build_state.creation_args.stage0.dist_server.clone()]);
 
     let batch = RecordBatch::try_new(
         schema.clone(),
         vec![
-            Arc::new(download_ci_rustc_array),
-            Arc::new(download_ci_llvm_array),
             Arc::new(patch_binaries_for_nix_array),
             Arc::new(rustc_path_array),
             Arc::new(cargo_path_array),
@@ -148,17 +144,14 @@ pub fn read_and_summarize_build_config_metrics(file_path: &str) -> Result<(), Bo
     if let Some(record_batch) = reader.next() {
         let record_batch = record_batch?;
 
-        let download_ci_rustc_array = record_batch.column(0).as_any().downcast_ref::<BooleanArray>().ok_or("Failed to downcast download_ci_rustc_array")?;
-        let download_ci_llvm_array = record_batch.column(1).as_any().downcast_ref::<BooleanArray>().ok_or("Failed to downcast download_ci_llvm_array")?;
-        let patch_binaries_for_nix_array = record_batch.column(2).as_any().downcast_ref::<BooleanArray>().ok_or("Failed to downcast patch_binaries_for_nix_array")?;
-        let rustc_path_array = record_batch.column(3).as_any().downcast_ref::<StringArray>().ok_or("Failed to downcast rustc_path_array")?;
-        let cargo_path_array = record_batch.column(4).as_any().downcast_ref::<StringArray>().ok_or("Failed to downcast cargo_path_array")?;
-        let compiler_date_array = record_batch.column(5).as_any().downcast_ref::<StringArray>().ok_or("Failed to downcast compiler_date_array")?;
-        let compiler_version_array = record_batch.column(6).as_any().downcast_ref::<StringArray>().ok_or("Failed to downcast compiler_version_array")?;
-        let dist_server_array = record_batch.column(7).as_any().downcast_ref::<StringArray>().ok_or("Failed to downcast dist_server_array")?;
+        let patch_binaries_for_nix_array = record_batch.column(0).as_any().downcast_ref::<BooleanArray>().ok_or("Failed to downcast patch_binaries_for_nix_array")?;
+        let rustc_path_array = record_batch.column(1).as_any().downcast_ref::<StringArray>().ok_or("Failed to downcast rustc_path_array")?;
+        let cargo_path_array = record_batch.column(2).as_any().downcast_ref::<StringArray>().ok_or("Failed to downcast cargo_path_array")?;
+        let compiler_date_array = record_batch.column(3).as_any().downcast_ref::<StringArray>().ok_or("Failed to downcast compiler_date_array")?;
+        let compiler_version_array = record_batch.column(4).as_any().downcast_ref::<StringArray>().ok_or("Failed to downcast compiler_version_array")?;
+        let dist_server_array = record_batch.column(5).as_any().downcast_ref::<StringArray>().ok_or("Failed to downcast dist_server_array")?;
 
-        println!("Download CI Rustc: {}", download_ci_rustc_array.value(0));
-        println!("Download CI LLVM: {}", download_ci_llvm_array.value(0));
+        
         println!("Patch Binaries for Nix: {}", patch_binaries_for_nix_array.value(0));
         println!("Rustc Path: {}", rustc_path_array.value(0));
         println!("Cargo Path: {}", cargo_path_array.value(0));

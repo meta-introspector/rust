@@ -1,4 +1,4 @@
-use rust_bootstrap::{Args, BuildState, loader, parquet_reporter, builder::Builder};
+use rust_bootstrap::{Args, BuildState, parquet_reporter, builder::Builder, BuildStateCreationArgs};
 use rust_bootstrap::bootstrap_stages::stage0_detector::Stage0;
 use rust_bootstrap::bootstrap_stages::operational_logger::logger;
 use syscall_instrumentation_macro::instrument_syscall;
@@ -6,6 +6,7 @@ use tracing;
 
 use clap::Parser;
 use std::error::Error;
+use std::path::Path;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let args = Args::parse();
@@ -16,8 +17,8 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     println!("Parsed arguments: {:?}", args);
 
-    let config = loader::load_config(
-        args.config.as_deref().unwrap_or("bootstrap.toml")
+    let config = rust_bootstrap::config::loader::load_config(
+        Path::new(args.config.as_deref().unwrap_or("bootstrap.toml"))
     )?;
 
     let stage0 = Stage0::detect();
@@ -25,14 +26,17 @@ fn main() -> Result<(), Box<dyn Error>> {
     let rust_root = std::env::current_dir()?;
     let build_dir = rust_root.join("build"); // Placeholder for now
 
-    let build_state = BuildState::new(
-        args,
+    let build_state_creation_args = BuildStateCreationArgs {
+        args: args.clone(),
         rust_root,
         build_dir,
         stage0,
         config,
-        String::from("x86_64-unknown-linux-gnu"), // Default build triple
-    );
+        build_triple: String::from("aarch64-unknown-linux-gnu"),
+        clean: args.clean,
+    };
+
+    let build_state = BuildState::new(build_state_creation_args);
 
     let builder = Builder::new(&build_state);
 

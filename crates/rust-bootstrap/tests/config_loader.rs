@@ -25,7 +25,7 @@ deny-warnings = true
         let config_path = temp_dir.join("bootstrap.toml");
         fs::write(&config_path, config_content).unwrap();
 
-        let result = config_loader::load_config(config_path.to_str().unwrap());
+        let result = rust_bootstrap::config::loader::load_config(config_path.as_path());
         assert!(result.is_ok(), "Failed to load config: {:?}", result.err());
         let config = result.unwrap();
 
@@ -38,7 +38,7 @@ deny-warnings = true
     #[test]
     fn test_load_config_file_not_found() {
         let non_existent_path = "target/test_config_loader/non_existent/bootstrap.toml";
-        let result = config_loader::load_config(non_existent_path);
+        let result = rust_bootstrap::config::loader::load_config(Path::new(non_existent_path));
         assert!(result.is_err(), "Expected error for non-existent config file");
         // Optionally, check the error type or message
     }
@@ -58,7 +58,7 @@ deny-warnings = true
         let config_path = temp_dir.join("bootstrap.toml");
         fs::write(&config_path, config_content).unwrap();
 
-        let result = config_loader::load_config(config_path.to_str().unwrap());
+        let result = rust_bootstrap::config::loader::load_config(config_path.as_path());
         assert!(result.is_err(), "Expected error for invalid config format");
 
         fs::remove_dir_all(&temp_dir).unwrap();

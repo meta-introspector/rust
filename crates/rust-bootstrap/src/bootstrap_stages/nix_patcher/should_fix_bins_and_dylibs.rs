@@ -2,8 +2,8 @@ use std::error::Error;
 use std::fs;
 use std::path::Path;
 
-pub fn should_fix_bins_and_dylibs(build_state: &crate::build_state::BuildState) -> Result<bool, Box<dyn Error>> {
-    if build_state.config.build.patch_binaries_for_nix {
+pub fn should_fix_bins_and_dylibs(build_state: &crate::BuildState) -> Result<bool, Box<dyn Error>> {
+    if build_state.creation_args.config.build.patch_binaries_for_nix {
         return Ok(true);
     }
     // Check if on Linux

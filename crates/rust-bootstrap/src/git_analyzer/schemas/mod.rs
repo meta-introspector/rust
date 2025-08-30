@@ -40,7 +40,7 @@ pub fn git_tags_schema() -> Arc<Schema> {
         Field::new("target_type", DataType::Utf8, false),
         Field::new("tagger_name", DataType::Utf8, false),
         Field::new("tagger_email", DataType::Utf8, false),
-        Field::new("tag_time", DataType::Timestamp(TimeUnit::Nanosecond, Some("UTC".into())), false),
+        Field::new("tag_time", DataType::Timestamp(TimeUnit::Nanosecond, None), false),
         Field::new("message", DataType::Utf8, false),
     ]))
 }

@@ -1,2 +1,3 @@
-pub mod cargo_integration_tests;
+pub mod cargo_integration;
 pub mod stage1;
+pub mod helpers;
