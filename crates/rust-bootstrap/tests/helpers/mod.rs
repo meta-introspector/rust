@@ -11,8 +11,10 @@ pub fn setup_test_build_state() -> BuildState {
     let build_dir = rust_root.join("build");
 
     // Ensure rust_root exists and is clean
+    println!("DEBUG: rust_root path: {:?}", &rust_root);
+    println!("DEBUG: rust_root exists before removal attempt: {}", rust_root.exists());
     if rust_root.exists() {
-        fs::remove_dir_all(&rust_root).unwrap();
+        fs::remove_dir_all(&rust_root).ok(); // Use .ok() to prevent panic on NotFound
     }
     // Commented out duplicate block as per user instruction "comment out dont delete"
     // if rust_root.exists() {

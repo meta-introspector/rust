@@ -7,6 +7,7 @@ use cargo::util::command_prelude::{CommandExt, ArgMatchesExt, ProfileChecking, s
 use std::path::PathBuf;
 
 pub fn parse_cargo_args<'gctx>(gctx: &'gctx GlobalContext, raw_args: &[&str], rust_root: &PathBuf) -> CargoResult<CompileOptions> {
+    println!("DEBUG: parse_cargo_args: raw_args = {:?}", raw_args);
     let command = subcommand("build")
         .about("Compile a local package and all of its dependencies")
         .arg_future_incompat_report()
@@ -47,7 +48,14 @@ pub fn parse_cargo_args<'gctx>(gctx: &'gctx GlobalContext, raw_args: &[&str], ru
 
     let matches = command.try_get_matches_from(raw_args)?;
 
-    let ws = Workspace::new(&rust_root.join("Cargo.toml"), gctx)?;
+    let manifest_path_str = matches.get_one::<String>("manifest-path").map(String::as_str);
+    let manifest_path = if let Some(path_str) = manifest_path_str {
+        PathBuf::from(path_str)
+    } else {
+        rust_root.join("Cargo.toml")
+    };
+
+    let ws = Workspace::new(&manifest_path, gctx)?;
 
     let compile_options = matches.compile_options(gctx, UserIntent::Build, Some(&ws), ProfileChecking::Custom)?;
 

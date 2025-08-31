@@ -110,7 +110,9 @@ pub fn build_bootstrap(build_state: &BuildState) -> Result<(), Box<dyn Error>> {
     let additional_cargo_flags_str: Vec<&str> = additional_cargo_flags.iter().map(|s| s.as_str()).collect();
     args.extend_from_slice(&additional_cargo_flags_str);
 
-    crate::cargo_integration::run_cargo_command(&["version"], &build_state.creation_args.rust_root)?;
+    // crate::cargo_integration::run_cargo_command(&["version"], &build_state.creation_args.rust_root)?;
+
+    crate::cargo_integration::run_cargo_command(&args, &build_state.creation_args.rust_root)?;
 
     Ok(())
 }

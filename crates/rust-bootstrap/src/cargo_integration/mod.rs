@@ -21,11 +21,11 @@ use cargo::util::command_prelude::ArgMatchesExt;
 pub mod dispatch_cargo_command;
 
 pub fn run_cargo_command(args: &[&str], rust_root: &PathBuf) -> Result<(), Box<dyn Error>> {
-    #[cfg(test)]
-    {
-        println!("DEBUG: Mocking run_cargo_command for tests.");
-        return Ok(());
-    }
+    // #[cfg(test)]
+    // {
+    //     println!("DEBUG: Mocking run_cargo_command for tests.");
+    //     return Ok(());
+    // }
 
     println!("Running cargo command via integration: {:?}", args);
     println!("rust_root: {:?}", rust_root);
