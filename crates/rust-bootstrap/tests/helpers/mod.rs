@@ -14,9 +14,10 @@ pub fn setup_test_build_state() -> BuildState {
     if rust_root.exists() {
         fs::remove_dir_all(&rust_root).unwrap();
     }
-    if rust_root.exists() {
-        fs::remove_dir_all(&rust_root).unwrap();
-    }
+    // Commented out duplicate block as per user instruction "comment out dont delete"
+    // if rust_root.exists() {
+    //     fs::remove_dir_all(&rust_root).unwrap();
+    // }
     fs::create_dir_all(&rust_root).unwrap(); // Create rust_root
     fs::create_dir_all(&build_dir).unwrap();
 

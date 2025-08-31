@@ -5,7 +5,7 @@ mod tests {
     use super::helpers;
     use rust_bootstrap::bootstrap_stages::build_bootstrap;
     use rust_bootstrap::builder::Builder;
-    use rust_bootstrap::BuildState;
+    
     use std::fs;
 
     #[test]
