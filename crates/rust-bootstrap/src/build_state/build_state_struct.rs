@@ -1,4 +1,5 @@
 use crate::build_state::creation_args::BuildStateCreationArgs;
+#[derive(Clone)]
 pub struct BuildState {
     pub creation_args: BuildStateCreationArgs,
     // Add other fields as needed from RustBuild in bootstrap.py

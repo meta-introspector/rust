@@ -1,7 +1,7 @@
 
 
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Stage0 {
     pub rustc: PathBuf,
     pub cargo: PathBuf,

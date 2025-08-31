@@ -3,6 +3,7 @@ use crate::config::args::Args;
 use crate::bootstrap_stages::stage0_detector::Stage0;
 use crate::config::loader::Config;
 
+#[derive(Clone)]
 pub struct BuildStateCreationArgs {
     pub args: Args,
     pub rust_root: PathBuf,

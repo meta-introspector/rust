@@ -3,7 +3,7 @@ use std::collections::BTreeMap;
 use std::fs;
 use std::path::Path;
 
-#[derive(Deserialize, Debug, Default)]
+#[derive(Deserialize, Debug, Default, Clone)]
 pub struct Config {
     #[serde(default)]
     pub build: Build,
@@ -13,7 +13,7 @@ pub struct Config {
     pub target: BTreeMap<String, Target>,
 }
 
-#[derive(Deserialize, Debug, Default)]
+#[derive(Deserialize, Debug, Default, Clone)]
 pub struct Build {
     #[serde(default)]
     pub verbose: u8,
@@ -33,13 +33,13 @@ pub struct Build {
     pub build: String,
 }
 
-#[derive(Deserialize, Debug, Default)]
+#[derive(Deserialize, Debug, Default, Clone)]
 pub struct Rust {
     #[serde(default, rename = "deny-warnings")]
     pub deny_warnings: bool,
 }
 
-#[derive(Deserialize, Debug, Default)]
+#[derive(Deserialize, Debug, Default, Clone)]
 pub struct Target {
     #[serde(default)]
     pub cc: String,
