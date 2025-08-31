@@ -5,7 +5,7 @@ edition = "2024"
 
 [dependencies]
 # tidy-alphabetical-start
-ar_archive_writer = "0.4.2"
+ar_archive_writer = { path = "../../../mcp/monomcp/vendor/ar_archive_writer" }
 bitflags.workspace = true
 bstr = "1.11.3"
 # `cc` updates often break things, so we pin it here. Cargo enforces "max 1 semver-compat version
@@ -38,7 +38,7 @@ rustc_symbol_mangling = { path = "../rustc_symbol_mangling" }
 rustc_target = { path = "../rustc_target" }
 rustc_trait_selection = { path = "../rustc_trait_selection" }
 serde_json.workspace = true
-smallvec = { version = "1.8.1", features = ["union", "may_dangle"] }
+smallvec = { path = "../../../mcp/monomcp/vendor/smallvec", features = ["union", "may_dangle"] }
 tempfile.workspace = true
 thin-vec.workspace = true
 thorin-dwp = "0.9"

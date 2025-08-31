@@ -14,7 +14,7 @@ rustc_index = { path = "../rustc_index" }
 rustc_macros = { path = "../rustc_macros" }
 rustc_serialize = { path = "../rustc_serialize" }
 rustc_span = { path = "../rustc_span" }
-smallvec = { version = "1.8.1", features = ["union", "may_dangle"] }
+smallvec = { path = "../../../mcp/monomcp/vendor/smallvec", features = ["union", "may_dangle"] }
 thin-vec.workspace = true
 tracing.workspace = true
 # tidy-alphabetical-end

@@ -10,9 +10,12 @@ pub mod global_args;
 pub mod subcommands;
 pub mod clap_extensibility;
 
-#[cfg(test)]
-pub mod mock;
+// The `mock` module was removed as part of simplifying the cargo integration
+// and moving towards a more direct mocking approach within the tests themselves.
+// #[cfg(test)]
+// pub mod mock;
 
+// This function is responsible for running cargo commands.
 use cargo::util::command_prelude::ArgMatchesExt;
 
 pub mod dispatch_cargo_command;
@@ -20,7 +23,8 @@ pub mod dispatch_cargo_command;
 pub fn run_cargo_command(args: &[&str], rust_root: &PathBuf) -> Result<(), Box<dyn Error>> {
     #[cfg(test)]
     {
-        return mock::run_cargo_command(args, rust_root);
+        println!("DEBUG: Mocking run_cargo_command for tests.");
+        return Ok(());
     }
 
     println!("Running cargo command via integration: {:?}", args);

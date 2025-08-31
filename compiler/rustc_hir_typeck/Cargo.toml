@@ -24,6 +24,6 @@ rustc_session = { path = "../rustc_session" }
 rustc_span = { path = "../rustc_span" }
 rustc_target = { path = "../rustc_target" }
 rustc_trait_selection = { path = "../rustc_trait_selection" }
-smallvec = { version = "1.8.1", features = ["union", "may_dangle"] }
+smallvec = { path = "../../../mcp/monomcp/vendor/smallvec", features = ["union", "may_dangle"] }
 tracing.workspace = true
 # tidy-alphabetical-end

@@ -20,7 +20,7 @@ object = { version = "0.36", default-features = false, features = ["std", "read_
 
 indexmap = "2.0.0"
 libloading = { version = "0.8.0", optional = true }
-smallvec = "1.8.1"
+smallvec = { path = "../../../mcp/monomcp/vendor/smallvec" }
 
 [patch.crates-io]
 # Uncomment to use an unreleased version of cranelift

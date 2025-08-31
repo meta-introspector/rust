@@ -33,7 +33,7 @@ rustc_span = { path = "../rustc_span" }
 rustc_target = { path = "../rustc_target" }
 rustc_thread_pool = { path = "../rustc_thread_pool" }
 rustc_type_ir = { path = "../rustc_type_ir" }
-smallvec = { version = "1.8.1", features = ["union", "may_dangle"] }
+smallvec = { path = "../../../mcp/monomcp/vendor/smallvec", features = ["union", "may_dangle"] }
 thin-vec.workspace = true
 tracing.workspace = true
 # tidy-alphabetical-end
