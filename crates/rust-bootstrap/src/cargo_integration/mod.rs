@@ -10,11 +10,19 @@ pub mod global_args;
 pub mod subcommands;
 pub mod clap_extensibility;
 
+#[cfg(test)]
+pub mod mock;
+
 use cargo::util::command_prelude::ArgMatchesExt;
 
 pub mod dispatch_cargo_command;
 
 pub fn run_cargo_command(args: &[&str], rust_root: &PathBuf) -> Result<(), Box<dyn Error>> {
+    #[cfg(test)]
+    {
+        return mock::run_cargo_command(args, rust_root);
+    }
+
     println!("Running cargo command via integration: {:?}", args);
     println!("rust_root: {:?}", rust_root);
 

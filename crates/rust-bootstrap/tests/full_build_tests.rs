@@ -13,16 +13,7 @@ mod tests {
         let build_state = helpers::setup_test_build_state();
 
         // Call the main build function
-        let build_state_for_closure = build_state.clone();
-        let result = build_bootstrap::build_bootstrap(&build_state, move |args, rust_root| {
-            println!("Mocking cargo command for test environment.");
-            // Simulate the creation of the bootstrap binary for testing
-            let builder = Builder::new(&build_state_for_closure); // Use the cloned build_state
-            let bootstrap_binary_path = builder.bootstrap_binary();
-            std::fs::create_dir_all(bootstrap_binary_path.parent().unwrap())?;
-            std::fs::File::create(&bootstrap_binary_path)?;
-            Ok(())
-        });
+        let result = build_bootstrap::build_bootstrap(&build_state);
 
         // Assert that the build was successful
         assert!(result.is_ok(), "Full bootstrap build should succeed");

@@ -9,7 +9,17 @@ use clap::Parser;
 pub fn setup_test_build_state() -> BuildState {
     let rust_root = PathBuf::from("target/test_build_state");
     let build_dir = rust_root.join("build");
+
+    // Ensure rust_root exists and is clean
+    if rust_root.exists() {
+        fs::remove_dir_all(&rust_root).unwrap();
+    }
     fs::create_dir_all(&build_dir).unwrap();
+
+    // Create a dummy Cargo.toml to make rust_root a valid Cargo workspace
+    let cargo_toml_path = rust_root.join("Cargo.toml");
+    fs::write(&cargo_toml_path, "[workspace]\n").unwrap(); // Minimal Cargo.toml
+
     let args = Args::parse_from(vec!["rust-bootstrap", "--config", "/path/to/your/bootstrap.toml", "--build-dir", build_dir.to_str().unwrap()]);
     let stage0 = Stage0 {
         rustc: PathBuf::from("/path/to/rustc"),
