@@ -34,7 +34,13 @@ pub fn run_cargo_command(args: &[&str], rust_root: &PathBuf) -> Result<(), Box<d
     let original_cwd = std::env::current_dir()?;
     std::env::set_current_dir(rust_root)?;
 
-    let (global_matches, subcommand_args) = parse_global_args::parse_global_args(args)?;
+    let (global_matches, subcommand_args) = match parse_global_args::parse_global_args(args) {
+        Ok(result) => result,
+        Err(e) => {
+            println!("DEBUG: Error parsing global args: {:?}", e);
+            return Err(e.into());
+        }
+    };
 
     let mut gctx = init_global_context::init_global_context()?;
     println!("gctx.cwd(): {:?}", gctx.cwd());

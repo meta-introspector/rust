@@ -25,6 +25,8 @@ pub fn dispatch_cargo_command(
     let subcommand_name = global_matches.subcommand_name();
     tracing::debug!("dispatch_cargo_command: subcommand_name: {:?}", subcommand_name);
     tracing::debug!("dispatch_cargo_command: subcommand_args: {:?}", subcommand_args);
+    println!("DEBUG: dispatch_cargo_command: subcommand_name: {:?}", subcommand_name);
+    println!("DEBUG: dispatch_cargo_command: subcommand_args: {:?}", subcommand_args);
 
     match subcommand_name {
         Some("build") => handle_build_command(gctx, ws, &subcommand_args_str, rust_root)?,

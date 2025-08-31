@@ -6,4 +6,5 @@ pub trait ArgumentProvider {
 
 pub trait SubcommandProvider {
     fn add_to_command(self: Box<Self>, command: Command) -> Command;
+    fn name(&self) -> &'static str;
 }
