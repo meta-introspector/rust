@@ -49,10 +49,13 @@ pub fn parse_cargo_args<'gctx>(gctx: &'gctx GlobalContext, raw_args: &[&str], ru
     let matches = command.try_get_matches_from(raw_args)?;
 
     let manifest_path_str = matches.get_one::<String>("manifest-path").map(String::as_str);
+    println!("DEBUG: parse_cargo_args: manifest_path_str: {:?}", manifest_path_str);
     let manifest_path = if let Some(path_str) = manifest_path_str {
         PathBuf::from(path_str)
     } else {
-        rust_root.join("Cargo.toml")
+        let default_path = rust_root.join("Cargo.toml");
+        println!("DEBUG: parse_cargo_args: Using default manifest_path: {:?}", default_path);
+        default_path
     };
 
     let ws = Workspace::new(&manifest_path, gctx)?;

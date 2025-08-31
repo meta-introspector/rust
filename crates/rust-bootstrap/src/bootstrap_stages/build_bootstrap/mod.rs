@@ -62,13 +62,10 @@ pub fn build_bootstrap(build_state: &BuildState) -> Result<(), Box<dyn Error>> {
 
     env::set_var("RUSTFLAGS", rustflags);
 
-    let bootstrap_cargo_toml = build_state.creation_args.rust_root.join("src/bootstrap/Cargo.toml");
-    let root_dir_arg = format!("-Zroot-dir={}", build_state.creation_args.rust_root.to_str().unwrap());
     let mut args = vec![
         "build",
         "--manifest-path",
         bootstrap_cargo_toml.to_str().unwrap(),
-        &root_dir_arg,
     ];
 
     if build_state.creation_args.args.verbose > 0 {
@@ -112,7 +109,7 @@ pub fn build_bootstrap(build_state: &BuildState) -> Result<(), Box<dyn Error>> {
 
     // crate::cargo_integration::run_cargo_command(&["version"], &build_state.creation_args.rust_root)?;
 
-    crate::cargo_integration::run_cargo_command(&["build"], &build_state.creation_args.rust_root)?;
+    crate::cargo_integration::run_cargo_command(&args, &build_state.creation_args.rust_root)?;
 
     Ok(())
 }

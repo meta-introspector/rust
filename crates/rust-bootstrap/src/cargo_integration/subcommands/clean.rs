@@ -1,5 +1,6 @@
 use clap::Command;
 use crate::cargo_integration::clap_extensibility::SubcommandProvider;
+use cargo::util::command_prelude::CommandExt;
 
 pub struct CleanProvider;
 
@@ -8,8 +9,33 @@ impl SubcommandProvider for CleanProvider {
         command.subcommand(
             Command::new("clean")
                 .about("Remove build artifacts")
-                // Add specific arguments for 'clean' if needed
+                .arg_manifest_path()
+                .arg_target_dir()
+                .arg_release("Remove artifacts in release mode")
+                .arg_profile("Remove artifacts with the specified profile")
+                .arg_target_triple("Remove for the target triple")
+                .arg_package_spec(
+                    "Package to clean (see `cargo help pkgid`)",
+                    "Clean all packages in the workspace",
+                    "Exclude packages from the clean",
+                )
+                .arg_targets_all(
+                    "Clean only this package's library",
+                    "Clean only the specified binary",
+                    "Clean all binaries",
+                    "Clean only the specified example",
+                    "Clean all examples",
+                    "Clean only the specified test target",
+                    "Clean all targets that have `test = true` set",
+                    "Clean only the specified bench target",
+                    "Clean all targets that have `bench = true` set",
+                    "Clean all targets",
+                )
         )
+    }
+
+    fn name(&self) -> &'static str {
+        "clean"
     }
 }
 

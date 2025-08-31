@@ -43,6 +43,10 @@ impl SubcommandProvider for BuildProvider {
                 .arg_parallel()
         )
     }
+
+    fn name(&self) -> &'static str {
+        "build"
+    }
 }
 
 // This function will be called by the main dispatch logic
@@ -52,6 +56,7 @@ pub fn handle_build_command(
     subcommand_args_str: &[&str],
     rust_root: &std::path::PathBuf,
 ) -> Result<(), Box<dyn std::error::Error>> {
+    println!("DEBUG: handle_build_command: subcommand_args_str: {:?}", subcommand_args_str);
     let compile_options = crate::cargo_integration::parse_cargo_args::parse_cargo_args(&gctx, &subcommand_args_str, rust_root)?;
     cargo::ops::compile(&ws, &compile_options)?;
     Ok(())

@@ -7,7 +7,8 @@ use std::fs;
 use clap::Parser;
 
 pub fn setup_test_build_state() -> BuildState {
-    let rust_root = PathBuf::from("target/test_build_state");
+    let current_dir = std::env::current_dir().unwrap();
+    let rust_root = current_dir.join("target/test_build_state");
     let build_dir = rust_root.join("build");
 
     // Ensure rust_root exists and is clean
