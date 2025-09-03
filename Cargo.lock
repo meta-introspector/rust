@@ -1232,6 +1232,36 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7c74b8349d32d297c9134b8c88677813a227df8f779daa29bfc29c183fe3dca6"
 
 [[package]]
+name = "construction"
+version = "0.1.0"
+dependencies = [
+ "chrono",
+ "construction-build-utils",
+ "lattice-introspector",
+ "lattice-macros",
+ "lattice-types",
+ "once_cell",
+ "quote",
+ "serde",
+ "syn 2.0.106",
+ "walkdir",
+]
+
+[[package]]
+name = "construction-build-utils"
+version = "0.1.0"
+dependencies = [
+ "chrono",
+ "lattice-introspector",
+ "lattice-types",
+ "once_cell",
+ "proc-macro2",
+ "quote",
+ "serde_json",
+ "syn 2.0.106",
+]
+
+[[package]]
 name = "core-foundation"
 version = "0.9.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3742,6 +3772,63 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "558bf9508a558512042d3095138b1f7b8fe90c5467d94f9f1da28b3731c5dbd1"
 dependencies = [
  "static_assertions",
+]
+
+[[package]]
+name = "lattice-analyzer"
+version = "0.1.0"
+dependencies = [
+ "chrono",
+ "lattice-types",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "lattice-introspector"
+version = "0.1.0"
+dependencies = [
+ "lattice-types",
+ "proc-macro2",
+ "quote",
+ "sha2",
+ "syn 2.0.106",
+]
+
+[[package]]
+name = "lattice-macros"
+version = "0.1.0"
+dependencies = [
+ "lattice-introspector",
+ "lattice-types",
+ "once_cell",
+ "proc-macro2",
+ "quote",
+ "syn 2.0.106",
+]
+
+[[package]]
+name = "lattice-macros-test"
+version = "0.1.0"
+dependencies = [
+ "chrono",
+ "construction",
+ "lattice-macros",
+ "lattice-types",
+ "log",
+ "once_cell",
+ "serde",
+ "serde_json",
+ "tracing 0.1.41 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tracing-subscriber",
+ "uuid",
+]
+
+[[package]]
+name = "lattice-types"
+version = "0.1.0"
+dependencies = [
+ "serde",
 ]
 
 [[package]]
@@ -8399,6 +8486,7 @@ checksum = "f33196643e165781c20a5ead5582283a7dacbb87855d867fbc2df3f81eddc1be"
 dependencies = [
  "getrandom 0.3.3",
  "js-sys",
+ "serde",
  "wasm-bindgen",
 ]
 

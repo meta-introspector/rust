@@ -1,12 +1,13 @@
 use std::error::Error;
 use std::env;
-//use std::path::PathBuf;
+use std::path::PathBuf;
 use crate::BuildState;
 
 pub fn build_bootstrap(build_state: &BuildState) -> Result<(), Box<dyn Error>> {
     println!("Building bootstrap");
 
     let bootstrap_dir = build_state.creation_args.build_dir.join("bootstrap");
+    let bootstrap_cargo_toml = bootstrap_dir.join("Cargo.toml");
     if build_state.creation_args.args.clean && bootstrap_dir.exists() {
         std::fs::remove_dir_all(&bootstrap_dir)?;
     }

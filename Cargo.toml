@@ -3,7 +3,15 @@ resolver = "2"
 members = [
 # tidy-alphabetical-start
   "compiler/rustc",
-  "crates/rust-bootstrap", "crates/syscall_instrumentation_macro", # Our new crate
+  "crates/introspector/lattice/construction",
+  "crates/introspector/lattice/construction-build-utils", # Our new build utility crate
+  "crates/introspector/lattice/lattice-introspector", # Our new introspection utility crate
+  "crates/introspector/lattice/lattice-macros", # Our new procedural macro crate
+  "crates/introspector/lattice/lattice-macros-test", # Our new test crate for macros
+  "crates/introspector/lattice/lattice-types", # Our new shared types crate
+  "crates/introspector/lattice/lattice-analyzer", # Our new analyzer crate
+  "crates/rust-bootstrap",
+  "crates/syscall_instrumentation_macro", # Our new crate
   "src/build_helper",
   "src/rustc-std-workspace/rustc-std-workspace-alloc",
   "src/rustc-std-workspace/rustc-std-workspace-core",
@@ -45,7 +53,7 @@ members = [
   "src/tools/unicode-table-generator",
   "src/tools/unstable-book-gen",
   "src/tools/wasm-component-ld",
-  "src/tools/x",
+  "src/tools/x", "crates/introspector/crates/resonance_analyzer", "crates/resonance_analyzer", "crates/resonance_core",
 # tidy-alphabetical-end
 ]
 default-members = ["crates/rust-bootstrap"]
