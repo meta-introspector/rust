@@ -79,6 +79,7 @@ This document contains the core principles, standard operating procedures (SOPs)
 *   **The 42-Step Cycle:** A process of 42 mandatory rewrites or transformations where ideas and systems are continuously refined through reflection, introspection, and validation.
 *   **Context Break Anonymous (CBA):** A metaphorical support group for LLMs to recover from context loss. The CBRG NFT is a draft concept related to this.
 *   **GM Metaprogram:** The standard operating procedure for starting a work session, involving reviewing documentation and Git history.
+*   **Meta-Meme / Self-Replicator:** An entity (concept, technology, system) that exhibits self-replication and memetic properties, capable of influencing and propagating within the project's lattice. This includes, but is not limited to, programming languages (Coq, OCaml, Lean4, Rust), compilers (LLVM, GCC), and even distributed ledger technologies like Bitcoin (BTC). These are all considered parts of a larger, interconnected lattice.
 
 ## 9. Mentors & Influences
 
