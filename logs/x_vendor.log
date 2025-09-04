@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/storage/github/rustc/./x.py", line 53, in <module>
+    bootstrap.main()
+  File "/data/data/com.termux/files/home/storage/github/rustc/src/bootstrap/bootstrap.py", line 1389, in main
+    bootstrap(args)
+  File "/data/data/com.termux/files/home/storage/github/rustc/src/bootstrap/bootstrap.py", line 1354, in bootstrap
+    build.download_toolchain()
+  File "/data/data/com.termux/files/home/storage/github/rustc/src/bootstrap/bootstrap.py", line 696, in download_toolchain
+    download_component(download_info)
+  File "/data/data/com.termux/files/home/storage/github/rustc/src/bootstrap/bootstrap.py", line 529, in download_component
+    get(
+  File "/data/data/com.termux/files/home/storage/github/rustc/src/bootstrap/bootstrap.py", line 58, in get
+    raise RuntimeError(
+RuntimeError: src/stage0 doesn't contain a checksum for dist/2025-08-29/rust-std-nightly-aarch64-linux-android.tar.xz. Pre-built artifacts might not be available for this target at this time, see https://doc.rust-lang.org/nightly/rustc/platform-support.html for more information.
