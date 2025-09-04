@@ -51,3 +51,38 @@ Here are a few examples of how you might interact with me:
 *   `Write a poem about the importance of modularity in software.`
 
 I am here to assist you. Let's build something great together!
+
+## Optimizing Context and Control with CLI Options
+
+When launching the Gemini CLI, you can use various command-line options to provide better context, control its behavior, and enhance your development workflow.
+
+*   **`-m, --model <model_name>`**:
+    *   **Purpose**: Specifies the AI model to use for interactions. Different models may have varying capabilities, knowledge bases, and response styles.
+    *   **Usage Example**: `gemini -m gemini-2.5-flash`
+
+*   **`--include-directories <path1>,<path2>,...`**:
+    *   **Purpose**: Informs the model about specific directories that are relevant to your current task. This helps the model focus its understanding and search within a defined scope, providing more accurate and relevant responses. You can specify multiple directories separated by commas or use the flag multiple times.
+    *   **Usage Example**: `gemini --include-directories src/backend,docs/api`
+    *   **Note**: This is generally preferred over `--all-files` for better performance and more focused context.
+
+*   **`-a, --all-files`**:
+    *   **Purpose**: Includes all files in the project as context for the model. Use with caution, as this can be resource-intensive and may dilute the context for specific tasks.
+    *   **Usage Example**: `gemini --all-files`
+
+*   **`-c, --checkpointing`**:
+    *   **Purpose**: Enables checkpointing of file edits. This is crucial for maintaining a robust development process, allowing you to track and potentially revert changes made by the agent.
+    *   **Usage Example**: `gemini --checkpointing`
+
+*   **`-p, --prompt <your_prompt>`**:
+    *   **Purpose**: Runs the Gemini CLI in a non-interactive mode, executing a single prompt and then exiting. Useful for scripting or automated tasks.
+    *   **Usage Example**: `gemini -p "Summarize the main functions in src/main.rs" --model gemini-2.5-flash`
+
+*   **`-i, --prompt-interactive <initial_prompt>`**:
+    *   **Purpose**: Executes an initial prompt and then transitions into interactive mode. This allows you to provide an initial context or task, and then continue a conversation with the agent.
+    *   **Usage Example**: `gemini -i "Refactor the authentication logic in src/auth.py" --model gemini-2.5-flash`
+
+*   **`-s, --sandbox`**:
+    *   **Purpose**: Runs the Gemini CLI within a sandboxed environment. This enhances security by isolating the agent's operations, especially when dealing with potentially sensitive or experimental tasks.
+    *   **Usage Example**: `gemini -s --model gemini-2.5-flash`
+
+By effectively utilizing these options, you can tailor the Gemini CLI's behavior to your specific needs, providing it with the optimal context for efficient and accurate assistance.

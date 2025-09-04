@@ -5,7 +5,7 @@
 *   `cargo_manager` Rust project exists, intended to regenerate `Cargo.toml`.
 *   `submodule_analyzer` Rust project exists, intended to generate `cargo tree` outputs.
 *   New lattice submodules (`lattirust`, `latticefold-rs`, `Lazarus`, `qfall-crypto`) are added.
-*   Formal methods submodules (`mathlib4`, `groupoid_model_in_lean4`, `Coq-HoTT`, `HoTT-Agda`, `HoTTEST-Summer-School`, `hottbox`, `HoTT-Intro`, `hott3`, `ground_zero`, `HoTT-Model`, `HoTT-StudyGroup`, `hott-book-in-lean`, `HoTT-Case-Study`, `cHoTT4`, `HoTT_Lean4`, `UniMath`, `SymmetryBook`) are added.
+*   Formal methods submodules (`mathlib4`, `groupoid_model_in_lean4`, `Coq-HoTT`, `HoTT-Agda`, `HoTTEST-Summer-School`, `hottbox`, `HoTT-Intro`, `hott3`, `ground_zero`, `HoTT-Model`, `HoTT-StudyGroup`, `hott-book-in-lean`, `HoTT_Lean4`, `UniMath`, `SymmetryBook`) are added.
 *   Bootstrapping submodules (`mes`, `guixie`, `guix`) are added.
 *   Lean Toolchain Submodules (`lean4`) are added.
 *   Termux Submodules (`termux-app`, `termux-packages`) are added.
@@ -30,6 +30,20 @@
         *   **Analyze LibUV Build Process**: Examine Termux's LibUV build recipe and documentation.
         *   **Analyze LLVM Build Process**: Examine Termux's LLVM build recipe and documentation.
         *   **Re-implement `cargo_manager` in Lean 4 with HoTT-inspired topological modeling**: Develop a new `cargo_manager` in Lean 4, leveraging HoTT concepts to model Git repositories as points in a topological space and their dependencies as a lattice structure, rooted in the Guix GNU Mes bootstrap.
+
+4.  **Post-Reboot Development Setup**:
+    *   **Action**: After rebooting, navigate to the project root directory (`/data/data/com.termux/files/home/storage/github/rustc/`).
+    *   **Action**: To start an `asciinema` recording of your session, run:
+        ```bash
+        ./scripts/start_recording.sh
+        ```
+        This will create a new recording file in `docs/` with a datestamp in its name.
+    *   **Action**: To set up your development environment within `tmux` with a Gemini CLI pane and an Emacs pane, run:
+        ```bash
+        ./scripts/start_dev_session.sh
+        ```
+        This will create a new `tmux` session named `dev_session_YYYYMMDD_HHMMSS` (with the current datestamp) and attach you to it.
+    *   **Reason**: These scripts streamline the process of documenting development sessions and setting up the interactive environment consistently after a system reboot or crash.
 
 ## Project File Index
 
@@ -114,3 +128,17 @@ Files within the `vendor/lean4/src/lake/` directory are considered "Lake files".
 ### All Project Files
 
 A comprehensive list of all project files is available in `/data/data/com.termux/files/home/storage/github/rustc/files.txt`.
+
+4.  **Post-Reboot Development Setup**:
+    *   **Action**: After rebooting, navigate to the project root directory (`/data/data/com.termux/files/home/storage/github/rustc/`).
+    *   **Action**: To start an `asciinema` recording of your session, run:
+        ```bash
+        ./scripts/start_recording.sh
+        ```
+        This will create a new recording file in `docs/` with a datestamp in its name.
+    *   **Action**: To set up your development environment within `tmux` with a Gemini CLI pane and an Emacs pane, run:
+        ```bash
+        ./scripts/start_dev_session.sh
+        ```
+        This will create a new `tmux` session named `dev_session_YYYYMMDD_HHMMSS` (with the current datestamp) and attach you to it.
+    *   **Reason**: These scripts streamline the process of documenting development sessions and setting up the interactive environment consistently after a system reboot or crash.
