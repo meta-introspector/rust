@@ -4,11 +4,12 @@ members = [
 # tidy-alphabetical-start
   "compiler/rustc",
   "crates/introspector/lattice/construction",
-  "crates/introspector/lattice/construction-build-utils", # Our new build utility crate
   "crates/introspector/lattice/lattice-introspector", # Our new introspection utility crate
   "crates/introspector/lattice/lattice-macros", # Our new procedural macro crate
   "crates/introspector/lattice/lattice-macros-test", # Our new test crate for macros
   "crates/introspector/lattice/lattice-types", # Our new shared types crate
+  "crates/introspector/fixed_point_experiments", # Our new fixed point experiments crate
+  "crates/vendored/solfunmeme-banner", # Vendored solfunmeme-banner crate
   "crates/introspector/lattice/lattice-analyzer", # Our new analyzer crate
   "crates/rust-bootstrap",
   "crates/syscall_instrumentation_macro", # Our new crate
@@ -36,7 +37,6 @@ members = [
   "src/tools/lld-wrapper",
   "src/tools/llvm-bitcode-linker",
   "src/tools/miri/cargo-miri",
-  "src/tools/miropt-test-tools",
   "src/tools/opt-dist",
   "src/tools/remote-test-client",
   "src/tools/remote-test-server",
@@ -53,7 +53,7 @@ members = [
   "src/tools/unicode-table-generator",
   "src/tools/unstable-book-gen",
   "src/tools/wasm-component-ld",
-  "src/tools/x", "crates/introspector/crates/resonance_analyzer", "crates/resonance_analyzer", "crates/resonance_core",
+  "src/tools/x", "crates/introspector/crates/resonance_analyzer", "crates/introspector/crates/resonance_core", "crates/introspector/crates/ultimate_blinkenlights_simulation", "crates/introspector/crates/introspector_profiler_macros",
 # tidy-alphabetical-end
 ]
 default-members = ["crates/rust-bootstrap"]
@@ -64,34 +64,45 @@ exclude = [
   "compiler/rustc_codegen_gcc",
   "src/bootstrap",
   "tests/rustdoc-gui",
-  # HACK(eddyb) This hardcodes the fact that our CI uses `/checkout/obj`.
   "obj",
 ]
 
 [workspace.dependencies]
 # tidy-alphabetical-start
+approx = "0.5.1"
+blas-src = { version = "0.9" }
 bitflags = "2.9.3"
+cranelift-frontend = "0.109.0"
+criterion = "0.5.1"
 derive-where = "1.6.0"
 either = "1.15.0"
 indexmap = "2.10.0"
+intel-mkl-src = "0.8.1"
 itertools = "0.12.1"
 # FIXME: Remove this pin once this rustix issue is resolved
 # https://github.com/bytecodealliance/rustix/issues/1496
 libc = "=0.2.174"
 measureme = "12.0.3"
+metal = "0.28.0"
 memchr = "2.7.5"
+ndarray-rand = "0.1.4"
 odht = { version = "0.3.1", features = ["nightly"] }
+openblas-src = "0.10.0"
 polonius-engine = "0.13.0"
 proc-macro2 = "1.0.101"
 quote = "1.0.40"
+rand = "0.8.5"
+reqwest = "0.11.27"
 rustc-demangle = "0.1.26"
 rustc-hash = "2.1.1"
 rustc-literal-escaper = "0.0.5"
 rustc_apfloat = "0.2.3"
 scoped-tls = "1.0.1"
+sha2 = "0.10.9"
 serde_json = "1.0.142"
 tempfile = "3.20.0"
 thin-vec = "0.2.14"
+tokio = "1.47.1"
 tracing = "0.1.37"
 # tidy-alphabetical-end
 
@@ -127,4 +138,3 @@ codegen-units = 1
 
 # If you want to use a crate with local modifications, you can set a path or git dependency here.
 # For git dependencies, also add your source to ALLOWED_SOURCES in src/tools/tidy/src/extdeps.rs.
-
