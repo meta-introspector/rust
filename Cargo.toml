@@ -15,7 +15,11 @@ members = [
     "crates/introspector/lattice/lattice-types",
     "crates/rust-bootstrap",
     "crates/syscall_instrumentation_macro",
-    "crates/vendored/solfunmeme-banner",
+    "crates/rustc-literal-escaper",
+    "crates/introspector/vendor/libminizinc/crates/tmux_controller",
+    "crates/introspector/vendor/libminizinc/crates/dump_tmux_status",
+    "crates/introspector/vendor/libminizinc/crates/launchpad",
+    
     "src/build_helper",
     "src/rustc-std-workspace/rustc-std-workspace-alloc",
     "src/rustc-std-workspace/rustc-std-workspace-core",
@@ -58,9 +62,6 @@ members = [
     "src/tools/wasm-component-ld",
     "src/tools/x",
     "submodule_analyzer",
-    "vendor/Lazarus",
-    "vendor/latticefold-rs",
-    "vendor/lattirust",
     "vendor/qfall-crypto",
 ]
 exclude = [
@@ -70,5 +71,34 @@ exclude = [
     "src/bootstrap",
     "tests/rustdoc-gui",
     "obj",
+    "vendor/Lazarus",
+    "vendor/latticefold-rs",
+    "vendor/lattirust",
 ]
 resolver = "2"
+
+[workspace.dependencies]
+bitflags = "2.x"
+itertools = "0.12.0"
+serde_json = "1.0"
+tempfile = "3.x"
+thin-vec = "0.2.12"
+tracing = "0.1"
+libc = "0.2"
+either = "1.x"
+indexmap = "1.x"
+measureme = "0.8"
+rustc-hash = "1.1.0"
+proc-macro2 = "1.0"
+quote = "1.0"
+scoped-tls = "1.0"
+memchr = "2.x"
+rustc-literal-escaper = "0.1.0"
+derive-where = "1.0"
+odht = "0.1.0"
+polonius-engine = "0.14.0"
+rustc_apfloat = "0.1.0"
+rustc-demangle = "0.1"
+rand = "0.8"
+blas-src = "0.8"
+openblas-src = "0.8"

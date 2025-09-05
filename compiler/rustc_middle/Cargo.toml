@@ -8,7 +8,7 @@ edition = "2024"
 bitflags.workspace = true
 either.workspace = true
 gsgdt = "0.1.2"
-polonius-engine.workspace = true
+polonius-engine = { path = "../../vendor/gcc/gcc/rust/checks/errors/borrowck/ffi-polonius/vendor/polonius-engine" }
 rustc_abi = { path = "../rustc_abi" }
 rustc_apfloat.workspace = true
 rustc_arena = { path = "../rustc_arena" }

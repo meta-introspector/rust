@@ -1,4 +1,14 @@
+# context
+ 
+HOME : /data/data/com.termux/files/home
+GITHUB ROOT : /data/data/com.termux/files/home/storage/github/
+all files in here are allowed to be read.
+PWD : /data/data/com.termux/files/home/storage/github/rustc/sessions/tmux
+origin :https://github.com/meta-introspector/rust
+ 
 # Plan for Unifying Tmux-Related Files
+
+pwd:
 
 2.  **Read File List:** Read the content of to get all relative to ~/storage/github/rustc/ file paths.
 
@@ -67,16 +77,18 @@ crates/introspector/vendor/libminizinc/vendor/tmux_interface
 ./vendor/termux/termux-packages/packages/tmux/tmux.h.patch
 
 
-3.  **Initialize Unified Content:** Create an empty string variable `unified_content` to accumulate the content of the processed files.
-4.  **Define Exclusions:** Establish a list of file extensions and path patterns to explicitly exclude from processing. This includes common binary formats and Git internal files to prevent errors and irrelevant content.
-    *   Extensions: `.pack`, `.idx`, `.rev`, `.bin`, `.o`, `.so`, `.a`, `.zip`, `.gz`, `.jpg`, `.png`, `.pdf`, `.sample`, `.cmd`, `.orig`, `.pyc`, `.elc`, `.scm`
-    *   Path patterns: Files within any `.git/` directory.
-5.  **Iterate and Process Files:** For each relative file path obtained from `tmux.txt`:
+5.  **Iterate and Process Files:** For each relative file above
     *   **Construct Absolute Path:** Convert the relative path to an absolute path by prepending `/data/data/com.termux/files/home/storage/github/rustc/`.
-    *   **Check Exclusions:** Determine if the current file's absolute path or extension matches any of the defined exclusion criteria.
-    *   **Handle Excluded Files:** If the file is excluded, append a markdown comment to `unified_content` indicating that the file was skipped and why (e.g., `<!-- Skipped binary file: <file_path> -->`).
     *   **Read and Append Content (Non-Excluded Files):** If the file is not excluded:
         *   Attempt to read its content using the `read_file` tool.
-        *   If `read_file` is successful, append a markdown header (e.g., `## Content from: <file_path>`) followed by the file's content to `unified_content`.
-        *   If `read_file` encounters an error (e.g., file not found, permission issues, or unreadable binary content), append a markdown comment to `unified_content` indicating the failure (e.g., `<!-- Failed to read: <file_path> - Error details -->`).
-6.  **Write Final Document:** Once all files have been processed, write the complete `unified_content` string to the new file `/data/data/com.termux/files/home/storage/github/rustc/docs/tmux.md`.
+        *   If `read_file` is successful, study it.
+
+for each chunk in the input data
+1. extract an emoji vector
+1.1. for each key vibe:
+1.1.1. assign a unique prime number
+1.1.2. assign a unique emoji string
+1.1.3. create an model in rust using enum, function, structure
+1.1.4. create a clifford multivector with relationships to the other objects.
+1.1.4. create a point on a 8d manfold
+1.1.4. create a point on the lattice

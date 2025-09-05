@@ -5,7 +5,7 @@ edition = "2024"
 
 [dependencies]
 # tidy-alphabetical-start
-polonius-engine.workspace = true
+polonius-engine = { path = "../../vendor/gcc/gcc/rust/checks/errors/borrowck/ffi-polonius/vendor/polonius-engine" }
 regex = "1"
 rustc_abi = { path = "../rustc_abi" }
 rustc_ast = { path = "../rustc_ast" }

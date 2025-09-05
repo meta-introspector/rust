@@ -7,7 +7,7 @@ edition = "2024"
 # tidy-alphabetical-start
 either.workspace = true
 itertools.workspace = true
-polonius-engine.workspace = true
+polonius-engine = { path = "../../vendor/gcc/gcc/rust/checks/errors/borrowck/ffi-polonius/vendor/polonius-engine" }
 rustc_abi = { path = "../rustc_abi" }
 rustc_data_structures = { path = "../rustc_data_structures" }
 rustc_errors = { path = "../rustc_errors" }
