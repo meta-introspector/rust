@@ -6708,6 +6708,10 @@ checksum = "357703d41365b4b27c590e3ed91eabb1b663f07c4c084095e60cbed4362dff0d"
 [[package]]
 name = "rustc-literal-escaper"
 version = "0.0.5"
+dependencies = [
+ "rustc-std-workspace-core 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustc-std-workspace-std 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
 
 [[package]]
 name = "rustc-literal-escaper"
@@ -6751,8 +6755,20 @@ name = "rustc-std-workspace-core"
 version = "1.0.1"
 
 [[package]]
+name = "rustc-std-workspace-core"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "aa9c45b374136f52f2d6311062c7146bff20fec063c3f5d46a410bd937746955"
+
+[[package]]
 name = "rustc-std-workspace-std"
 version = "1.0.1"
+
+[[package]]
+name = "rustc-std-workspace-std"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "aba676a20abe46e5b0f1b0deae474aaaf31407e6c71147159890574599da04ef"
 
 [[package]]
 name = "rustc_abi"
