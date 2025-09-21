@@ -1,7 +1,7 @@
 {
   description = "rustc dev shell";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  inputs.nixpkgs.url = "github:meta-introspector/nixpkgs?ref=feature/CRQ-016-nixify";
 
   outputs =
     {
