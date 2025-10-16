@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 LOG_FILE="nix_build_verbose.log"
-FLAKE_DIR="/data/data/com.termux.nix/files/home/pick-up-nix2/vendor/rust/platform-tools-agave-rust-solana/vendor/rust-src/test-rust"
+FLAKE_DIR="/data/data/com.termux.nix/files/home/pick-up-nix2/vendor/rust/platform-tools-agave-rust-solana/vendor/rust-src"
 
 echo "Running nix build -vvv for ${FLAKE_DIR} and logging to ${LOG_FILE}"
 

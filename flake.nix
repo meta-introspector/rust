@@ -20,6 +20,7 @@
           packages = [
             rustToolchain # This should include rustc, cargo, and rust-std for the target
             pkgs.python3
+            pkgs.python3Packages.pip
           ];
           # Add other nativeBuildInputs and buildInputs if needed for development
           nativeBuildInputs = [
@@ -27,9 +28,6 @@
             cmake
             ninja
             pkg-config
-            pkgs.python3
-            pkgs.python3Packages.pip
-            pkgs.python3Packages.venv
             git
             curl
             cacert
