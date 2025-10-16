@@ -1,15 +1,12 @@
 evaluating derivation 'git+file:///data/data/com.termux.nix/files/home/pick-up-nix2/vendor/rust/platform-tools-agave-rust-solana/vendor/rust-src#packages.aarch64-linux.default'...
-[K[Kresolved HEAD ref 'refs/heads/feature/CRQ-016-nixify' for repo '/data/data/com.termux.nix/files/home/pick-up-nix2/vendor/rust/platform-tools-agave-rust-solana/vendor/rust-src'
-using revision 9fc6fc364221cb0e231c56ac07777182ca619d55 of repo '/data/data/com.termux.nix/files/home/pick-up-nix2/vendor/rust/platform-tools-agave-rust-solana/vendor/rust-src'
-did not find cache entry for '{"name":"source","rev":"9fc6fc364221cb0e231c56ac07777182ca619d55","type":"git"}'
-killing process 22067
-acquiring write lock on '/nix/var/nix/temproots/21950'
-locking path '/nix/store/qsvyqbnbwb40wd35jv90mknbdcf6lhia-source'
-lock acquired on '/nix/store/qsvyqbnbwb40wd35jv90mknbdcf6lhia-source.lock'
-lock released on '/nix/store/qsvyqbnbwb40wd35jv90mknbdcf6lhia-source.lock'
-got tree '/nix/store/qsvyqbnbwb40wd35jv90mknbdcf6lhia-source' from 'git+file:///data/data/com.termux.nix/files/home/pick-up-nix2/vendor/rust/platform-tools-agave-rust-solana/vendor/rust-src?ref=refs/heads/feature/CRQ-016-nixify&rev=9fc6fc364221cb0e231c56ac07777182ca619d55'
-checking access to '/nix/store/qsvyqbnbwb40wd35jv90mknbdcf6lhia-source/flake.nix'
-evaluating file '/nix/store/qsvyqbnbwb40wd35jv90mknbdcf6lhia-source/flake.nix'
+warning: Git tree '/data/data/com.termux.nix/files/home/pick-up-nix2/vendor/rust/platform-tools-agave-rust-solana/vendor/rust-src' is dirty
+acquiring write lock on '/nix/var/nix/temproots/6998'
+locking path '/nix/store/sxr8862rm350aw7lnl8xljv1ybrhdlnz-source'
+lock acquired on '/nix/store/sxr8862rm350aw7lnl8xljv1ybrhdlnz-source.lock'
+lock released on '/nix/store/sxr8862rm350aw7lnl8xljv1ybrhdlnz-source.lock'
+got tree '/nix/store/sxr8862rm350aw7lnl8xljv1ybrhdlnz-source' from 'git+file:///data/data/com.termux.nix/files/home/pick-up-nix2/vendor/rust/platform-tools-agave-rust-solana/vendor/rust-src'
+checking access to '/nix/store/sxr8862rm350aw7lnl8xljv1ybrhdlnz-source/flake.nix'
+evaluating file '/nix/store/sxr8862rm350aw7lnl8xljv1ybrhdlnz-source/flake.nix'
 old lock file: {
   "nodes": {
     "flake-utils": {
@@ -1381,8 +1378,8 @@ checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/deve
 checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/text/gnugrep'
 evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/text/gnugrep/default.nix'
 checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/text/gnugrep/default.nix'
-checking access to '/nix/store/qsvyqbnbwb40wd35jv90mknbdcf6lhia-source/default.nix'
-evaluating file '/nix/store/qsvyqbnbwb40wd35jv90mknbdcf6lhia-source/default.nix'
+checking access to '/nix/store/sxr8862rm350aw7lnl8xljv1ybrhdlnz-source/default.nix'
+evaluating file '/nix/store/sxr8862rm350aw7lnl8xljv1ybrhdlnz-source/default.nix'
 evaluating uncached attribute 'packages.aarch64-linux.default.type'
 evaluating uncached attribute 'packages.aarch64-linux.default'
 evaluating uncached attribute 'packages.aarch64-linux.default.drvPath'
@@ -1442,22 +1439,37 @@ instantiated 'bash53-002' -> '/nix/store/ii3jsqp9rrwv0g21lwbvb94ddg8c5m7n-bash53
 instantiated 'bash53-003' -> '/nix/store/5m6vm7vkilsgas517yf8f321k5r3g1m3-bash53-003.drv'
 instantiated 'bash-5.3.tar.gz' -> '/nix/store/y84saga4qsmk7xrprd0qv8rgdqjk67g1-bash-5.3.tar.gz.drv'
 instantiated 'bash-5.3p3' -> '/nix/store/kq4gk51b57mnl4jnpr4xya440hmb7fd3-bash-5.3p3.drv'
-locking path '/nix/store/aiff1m1j33f3yz030psy6dig0j55yimn-qsvyqbnbwb40wd35jv90mknbdcf6lhia-source'
-lock acquired on '/nix/store/aiff1m1j33f3yz030psy6dig0j55yimn-qsvyqbnbwb40wd35jv90mknbdcf6lhia-source.lock'
-lock released on '/nix/store/aiff1m1j33f3yz030psy6dig0j55yimn-qsvyqbnbwb40wd35jv90mknbdcf6lhia-source.lock'
-copied source '/nix/store/qsvyqbnbwb40wd35jv90mknbdcf6lhia-source' -> '/nix/store/aiff1m1j33f3yz030psy6dig0j55yimn-qsvyqbnbwb40wd35jv90mknbdcf6lhia-source'
-checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/compression/gzip'
-evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/compression/gzip/default.nix'
-checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/compression/gzip/default.nix'
-copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/setup-hooks/make-wrapper.sh' -> '/nix/store/4x1l3vi4j5045bmmdww4ra1g6v6mmwkl-make-wrapper.sh'
-copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/setup-hooks/die.sh' -> '/nix/store/819fzxfwzp7zhhi4wy5nkapimkb1bsx5-die.sh'
-instantiated 'die-hook' -> '/nix/store/9hwjqabmkj3qz9dfjp13q6sdfv0km3zf-die-hook.drv'
-instantiated 'make-shell-wrapper-hook' -> '/nix/store/i1b5f9kkilp0170c0xwfaw7sdmzd8y0q-make-shell-wrapper-hook.drv'
-instantiated 'gzip-1.14.tar.xz' -> '/nix/store/mbfqb9y6ryn2axyvg797s3lw1w49liz5-gzip-1.14.tar.xz.drv'
-instantiated 'gzip-1.14' -> '/nix/store/chyxyqwfvll9vf81i29bxz5l88gi8kks-gzip-1.14.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/tz/tzdata/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/tz/tzdata/package.nix'
 checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/compression/bzip2'
 evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/compression/bzip2/default.nix'
 checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/compression/bzip2/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/libffi'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/libffi/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/libffi/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ut/util-linux/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ut/util-linux/package.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/li/linux-pam/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/li/linux-pam/package.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/ncurses'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/ncurses/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/ncurses/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/openssl'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/openssl/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/openssl/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/sqlite'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/sqlite/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/sqlite/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/mp/mpdecimal/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/mp/mpdecimal/package.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ex/expat/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ex/expat/package.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/bl/bluez-headers/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/bl/bluez-headers/package.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/gd/gdbm/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/gd/gdbm/package.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/readline/8.3.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/readline/8.3.nix'
 copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/setup-hooks/autoreconf.sh' -> '/nix/store/ppm26x60zvaqzapqjnp540rislz3ml48-autoreconf.sh'
 checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tools/misc/autoconf'
 evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tools/misc/autoconf/default.nix'
@@ -1483,6 +1495,52 @@ instantiated 'autoreconf-hook' -> '/nix/store/9fm9lw1dvrc3dai6s8cpfq7anh6zjkj6-a
 copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/compression/bzip2/patches/bzip2-1.0.6.2-autoconfiscated.patch' -> '/nix/store/lpw1q2ska8qrwyc4fnwfb0iliklcygrv-bzip2-1.0.6.2-autoconfiscated.patch'
 instantiated 'bzip2-1.0.8.tar.gz' -> '/nix/store/mhrxc5w6drwi4m5ykbdrayz7869i9mx9-bzip2-1.0.8.tar.gz.drv'
 instantiated 'bzip2-1.0.8' -> '/nix/store/virv38zw9yzbbmwqji3blqi2lcs2x985-bzip2-1.0.8.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/de/dejagnu/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/de/dejagnu/package.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/top-level/tcl-packages.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/top-level/tcl-packages.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/bw'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/ex'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/in'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/it'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/le'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/mu'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/pd'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/rl'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/tc'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/td'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/ti'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/tk'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/wa'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/ze'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/ex/expect/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/ex/expect/package.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/interpreters/tcl/8.6.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/interpreters/tcl/8.6.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/interpreters/tcl/generic.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/interpreters/tcl/generic.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/interpreters/tcl/mk-tcl-derivation.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/interpreters/tcl/mk-tcl-derivation.nix'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/tz/tzdata/tzdata-setup-hook.sh' -> '/nix/store/3q9vpdf0bqlbqr3s867nisz8phx4c9kb-tzdata-setup-hook.sh'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchurl'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchurl/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchurl/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/lib/deprecated/misc.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/lib/deprecated/misc.nix'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchurl/builder.sh' -> '/nix/store/mkmplw6zphafsxz2hpsvjv3fyd5qn0ad-builder.sh'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/lib/fetchers.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/lib/fetchers.nix'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchurl/write-mirror-list.sh' -> '/nix/store/sx3mhm7h4dhqa4p3avrckcda69yg0fid-write-mirror-list.sh'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/compression/gzip'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/compression/gzip/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/compression/gzip/default.nix'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/setup-hooks/make-wrapper.sh' -> '/nix/store/4x1l3vi4j5045bmmdww4ra1g6v6mmwkl-make-wrapper.sh'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/setup-hooks/die.sh' -> '/nix/store/819fzxfwzp7zhhi4wy5nkapimkb1bsx5-die.sh'
+instantiated 'die-hook' -> '/nix/store/9hwjqabmkj3qz9dfjp13q6sdfv0km3zf-die-hook.drv'
+instantiated 'make-shell-wrapper-hook' -> '/nix/store/i1b5f9kkilp0170c0xwfaw7sdmzd8y0q-make-shell-wrapper-hook.drv'
+instantiated 'gzip-1.14.tar.xz' -> '/nix/store/mbfqb9y6ryn2axyvg797s3lw1w49liz5-gzip-1.14.tar.xz.drv'
+instantiated 'gzip-1.14' -> '/nix/store/chyxyqwfvll9vf81i29bxz5l88gi8kks-gzip-1.14.drv'
 instantiated 'xz-5.8.1.tar.xz' -> '/nix/store/qsxr00amrjgxry1hirafhlrzhl9ban5b-xz-5.8.1.tar.xz.drv'
 instantiated 'xz-5.8.1' -> '/nix/store/mrr8ldrsn9i33bg3cp1xdmj4fivv49q6-xz-5.8.1.drv'
 instantiated 'binutils-with-gold-2.44.tar.bz2' -> '/nix/store/44sw3grr08hzn0jjg6vcdlxwpakf9jbq-binutils-with-gold-2.44.tar.bz2.drv'
@@ -1591,11 +1649,230 @@ instantiated 'isl-0.20.tar.xz' -> '/nix/store/qxz8v1gxrrw9j138k2ajl36vcajra8mb-i
 instantiated 'isl-0.20' -> '/nix/store/zzj02a7ywmcpyl7il6h4sa3xh8s935qy-isl-0.20.drv'
 checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/stdenv/generic/common-path.nix'
 evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/stdenv/generic/common-path.nix'
+instantiated 'stdenv-linux' -> '/nix/store/npc83zgjanri8cb9mssraw5jpzwn9h00-stdenv-linux.drv'
+instantiated 'mirrors-list' -> '/nix/store/sqs96rmihnmxxvs0vhz3gvln01lrcyy0-mirrors-list.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/cu/curlMinimal/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/cu/curlMinimal/package.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ma/makeBinaryWrapper/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ma/makeBinaryWrapper/package.nix'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ma/makeBinaryWrapper/make-binary-wrapper.sh' -> '/nix/store/5xqy1vspa5ddr9m2sk9yz4fpg2c17fwx-make-binary-wrapper.sh'
+instantiated 'die-hook' -> '/nix/store/wfz980117mrdsllq659fj1w9p2wpkcbb-die-hook.drv'
+instantiated 'make-binary-wrapper-hook' -> '/nix/store/p56dlwprl58jj5dqn858694zzggh02sv-make-binary-wrapper-hook.drv'
+instantiated 'zlib-1.3.1.tar.gz' -> '/nix/store/gyks6vvl7x0gq214ldjhi3w4rg37nh8i-zlib-1.3.1.tar.gz.drv'
+instantiated 'zlib-1.3.1' -> '/nix/store/jj2my0hn206990qxsarfy9nmahq2bq9h-zlib-1.3.1.drv'
+instantiated 'perl-5.40.0.tar.gz' -> '/nix/store/z2rvjzfm2crd6hs6qfdwwq4bhk27zw9r-perl-5.40.0.tar.gz.drv'
 instantiated 'stdenv-linux' -> '/nix/store/74qvk0yp9n1pya3kb98l2lbwsdymkikp-stdenv-linux.drv'
-locking path '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv'
-lock acquired on '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv.lock'
-lock released on '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv.lock'
-instantiated 'rust-solana-tools-v1.51' -> '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv'
+instantiated 'perl-5.40.0' -> '/nix/store/69svnbrv5vqh5zvm4852az842d4llq2k-perl-5.40.0.drv'
+instantiated 'libxcrypt-4.4.38.tar.xz' -> '/nix/store/rc3vnisrzmh0ydp6c1sifcaad232w1fj-libxcrypt-4.4.38.tar.xz.drv'
+instantiated 'libxcrypt-4.4.38' -> '/nix/store/w8xp9cmbwdmib6dbsjdlhrw0mh092zlh-libxcrypt-4.4.38.drv'
+instantiated 'perl-5.40.0.tar.gz' -> '/nix/store/z2rvjzfm2crd6hs6qfdwwq4bhk27zw9r-perl-5.40.0.tar.gz.drv'
+instantiated 'perl-5.40.0' -> '/nix/store/hgdk28141gw004w6cdgwdr08h81z963n-perl-5.40.0.drv'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/openssl/3.0/nix-ssl-cert-file.patch' -> '/nix/store/sq4h6bqjx12v9whvm65pjss25hg1538q-nix-ssl-cert-file.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/openssl/3.0/openssl-disable-kernel-detection.patch' -> '/nix/store/cklrwbwi889pp2fdsswdjvn12sdy5i5j-openssl-disable-kernel-detection.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/openssl/3.5/use-etc-ssl-certs.patch' -> '/nix/store/yk1sqyhb757qc8s0kp0i9wy10v2vq8y7-use-etc-ssl-certs.patch'
+instantiated 'xz-5.8.1.tar.xz' -> '/nix/store/qsxr00amrjgxry1hirafhlrzhl9ban5b-xz-5.8.1.tar.xz.drv'
+instantiated 'xz-5.8.1' -> '/nix/store/mrr8ldrsn9i33bg3cp1xdmj4fivv49q6-xz-5.8.1.drv'
+instantiated 'coreutils-9.7.tar.xz' -> '/nix/store/bqbcymfqpw5y44fj5r2x5wws2nsjcfrd-coreutils-9.7.tar.xz.drv'
+instantiated 'coreutils-9.7' -> '/nix/store/p8h7i9r450kydrzhk3kh5ngwg4qh1g7h-coreutils-9.7.drv'
+instantiated 'openssl-3.5.1.tar.gz' -> '/nix/store/lpbbw0pa5lmwhg707alpnrwf7n7600jk-openssl-3.5.1.tar.gz.drv'
+instantiated 'openssl-3.5.1' -> '/nix/store/5gjqw5sswcny54mj2ld9fg8rg15yfvay-openssl-3.5.1.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/li/libssh2/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/li/libssh2/package.nix'
+instantiated 'libssh2-1.11.1.tar.gz' -> '/nix/store/l4q7jsk9n0ys3qb31zafgzwakpwq0360-libssh2-1.11.1.tar.gz.drv'
+instantiated 'libssh2-1.11.1' -> '/nix/store/x92xi2k679zgjifn3hhra3374a862bx6-libssh2-1.11.1.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/kerberos/krb5.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/kerberos/krb5.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ke/keyutils/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ke/keyutils/package.nix'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ke/keyutils/conf-symlink.patch' -> '/nix/store/88a62ypvi5xpa3m8znhrl6l7jc307i8r-conf-symlink.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ke/keyutils/0001-Remove-unused-function-after_eq.patch' -> '/nix/store/z0sjg5c7g1iqb4x5vyiqcm5n68mb5x5p-0001-Remove-unused-function-after_eq.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ke/keyutils/pkg-config-static.patch' -> '/nix/store/p3prlmdjdwlry48i4nmwkxp6qxdi28lm-pkg-config-static.patch'
+instantiated 'raw' -> '/nix/store/dhjhlihqj08f3fs1cvsja0fims0dqnlw-raw.drv'
+instantiated 'keyutils-1.6.3.tar.gz' -> '/nix/store/lkkzb8ybhp5jjgvb04b13n68i51lxwd9-keyutils-1.6.3.tar.gz.drv'
+instantiated 'keyutils-1.6.3' -> '/nix/store/rdm800syhbnrbsci68iz0m1xfya02djc-keyutils-1.6.3.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/by/byacc/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/by/byacc/package.nix'
+instantiated 'byacc-20241231.tgz' -> '/nix/store/b6yxpjizcj55gzmm8vpjzdxgl15246qv-byacc-20241231.tgz.drv'
+instantiated 'byacc-20241231' -> '/nix/store/bnkqganmyiiwiwdkfxdwcxhd8n0g15lq-byacc-20241231.drv'
+instantiated 'glibc-iconv-2.40' -> '/nix/store/pjqpm1rzl2753vbp23bwpac0n02rbrky-glibc-iconv-2.40.drv'
+instantiated 'pkg-config-0.29.2.tar.gz' -> '/nix/store/6b29gjz7rj4mw0ch0vy2m6qrqipz2bbb-pkg-config-0.29.2.tar.gz.drv'
+instantiated 'pkg-config-0.29.2' -> '/nix/store/cy9n7fbf92l7jcl88p60668mn512bx04-pkg-config-0.29.2.drv'
+instantiated 'pkg-config-wrapper-0.29.2' -> '/nix/store/nimcvi42jsnn1hfp9vmalhdv8avjbbi6-pkg-config-wrapper-0.29.2.drv'
+instantiated 'krb5-1.22.1.tar.gz' -> '/nix/store/zgklqdh9majhk3nyivpl33ciflvsq5lc-krb5-1.22.1.tar.gz.drv'
+instantiated 'krb5-1.22.1' -> '/nix/store/fqy4wsgblsl8ymqjq9qspmq5xfmyp0dn-krb5-1.22.1.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ng/nghttp2/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ng/nghttp2/package.nix'
+instantiated 'nghttp2-1.66.0.tar.bz2' -> '/nix/store/b56c653q83jbvf559s131vy6yv0k32nk-nghttp2-1.66.0.tar.bz2.drv'
+instantiated 'nghttp2-1.66.0' -> '/nix/store/0j8zb7im9a6f4ci7dc1k044cnh0aw5za-nghttp2-1.66.0.drv'
+instantiated 'curl-8.14.1.tar.xz' -> '/nix/store/lcchln9b7jr52vbyiyq1db9p5nz7jh2x-curl-8.14.1.tar.xz.drv'
+instantiated 'curl-8.14.1' -> '/nix/store/3kv6bm2ldlk4mmwpaprvj2gk84h48gd6-curl-8.14.1.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/lib/.version'
+instantiated 'tzdata2025b.tar.gz' -> '/nix/store/8nvygf61pq1gx1bi4mf834qqkvnfaxlf-tzdata2025b.tar.gz.drv'
+instantiated 'tzcode2025b.tar.gz' -> '/nix/store/9sl16x6bvr4mhpgfyiwgv6qrcyqn7137-tzcode2025b.tar.gz.drv'
+instantiated 'tzdata-2025b' -> '/nix/store/qa7i76wjf13gvmb2mqjn5gprg3xsgmbn-tzdata-2025b.drv'
+instantiated 'tcl8.6.16-src.tar.gz' -> '/nix/store/4pv714iq9kq0f653g515khlqbpw2h6zk-tcl8.6.16-src.tar.gz.drv'
+instantiated 'tcl-8.6.16' -> '/nix/store/39gld1bc70ddxrg8bqqhcyjvi58ixxpm-tcl-8.6.16.drv'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/interpreters/tcl/tcl-package-hook.sh' -> '/nix/store/gpiqd8j4plvirdi3gdq5mpdzb8bw4s0c-tcl-package-hook.sh'
+instantiated 'tcl-package-hook' -> '/nix/store/lkqidsiv16z1r9kyh4i46pc1vjwd82sl-tcl-package-hook.drv'
+instantiated 'm4-1.4.20.tar.bz2' -> '/nix/store/fir93qmbjqiffadpd8phv4gz62xa7vpr-m4-1.4.20.tar.bz2.drv'
+instantiated 'gnum4-1.4.20' -> '/nix/store/5zv274y3k5vz9jp9kgr1g3gyyvyi5jfz-gnum4-1.4.20.drv'
+instantiated 'perl-5.40.0.tar.gz' -> '/nix/store/1j0rq6p34hh1iwwcvgajx3yv1fc0hxq5-perl-5.40.0.tar.gz.drv'
+instantiated 'perl-5.40.0' -> '/nix/store/d738gcw0plf5sf02r9pfc5c7n5kzx7q8-perl-5.40.0.drv'
+instantiated 'config.guess-948ae97' -> '/nix/store/1ir37qnmvndyf39p86y75fqi7dij27x8-config.guess-948ae97.drv'
+instantiated 'config.sub-948ae97' -> '/nix/store/chgwz3h59girv1s2sn0ciyn1ldgwd7hb-config.sub-948ae97.drv'
+instantiated 'gnu-config-2024-01-01' -> '/nix/store/zmj0n9h263bs60xky57vx1rydvaqxdan-gnu-config-2024-01-01.drv'
+instantiated 'update-autotools-gnu-config-scripts-hook' -> '/nix/store/1wjyl85w5jy0ri3q01ahdjbdimv10gwp-update-autotools-gnu-config-scripts-hook.drv'
+instantiated 'texinfo-7.2.tar.xz' -> '/nix/store/jzk63bwhmi711xfp507zkyz4aqxp6if5-texinfo-7.2.tar.xz.drv'
+instantiated 'texinfo-7.2' -> '/nix/store/ffn2yxh81m0348rjkgxmj93v0vy4f6jf-texinfo-7.2.drv'
+instantiated 'autoconf-2.72.tar.xz' -> '/nix/store/akln0xmh2s929kqyihb6bn76h78zp0ij-autoconf-2.72.tar.xz.drv'
+instantiated 'autoconf-2.72' -> '/nix/store/2dw74xm5sfzjlc4hrnb87l2cc7w1pf3m-autoconf-2.72.drv'
+instantiated 'automake-1.18.1.tar.xz' -> '/nix/store/rxiy1yfy13rms0x15jdaldfaq5dif3cs-automake-1.18.1.tar.xz.drv'
+instantiated 'automake-1.18.1' -> '/nix/store/3k253ncyh4v8gbi2cxw4mmd9qcf6ydyl-automake-1.18.1.drv'
+instantiated 'gettext-0.25.1.tar.gz' -> '/nix/store/91rn3x8qkajhfsd3v43ck40kf98qqybv-gettext-0.25.1.tar.gz.drv'
+instantiated 'gettext-0.25.1' -> '/nix/store/c9wasi9wm3fy523ad98jakx5zg18sqy3-gettext-0.25.1.drv'
+instantiated 'file-5.45.tar.gz' -> '/nix/store/l6f2l4r9x8v1n1kb636k6p2a6gmsjxy4-file-5.45.tar.gz.drv'
+instantiated 'file-5.45' -> '/nix/store/v1vmf7id0l6yyjm12h2d0kyf2k12cwjx-file-5.45.drv'
+instantiated 'libtool-2.5.4.tar.gz' -> '/nix/store/2lbmcd2jqnq3vxv2h9jfb6g3fwbs9pkq-libtool-2.5.4.tar.gz.drv'
+instantiated 'libtool-2.5.4' -> '/nix/store/s7kkbdgc3499vg7wv97g8hpzn15czi8y-libtool-2.5.4.drv'
+instantiated 'autoreconf-hook' -> '/nix/store/gjgd4qml9rjhhi8cn1k6yyphl4mn94q4-autoreconf-hook.drv'
+instantiated 'make-shell-wrapper-hook' -> '/nix/store/8w54pc9m5jcnq8brbc2gijs959yk83wm-make-shell-wrapper-hook.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/replace-vars/replace-vars.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/replace-vars/replace-vars.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/replace-vars/replace-vars-with.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/replace-vars/replace-vars-with.nix'
+instantiated 'tcl-8.6.16' -> '/nix/store/39gld1bc70ddxrg8bqqhcyjvi58ixxpm-tcl-8.6.16.drv'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/ex/expect/fix-build-time-run-tcl.patch' -> '/nix/store/29ai0rjkdznw4g0yvqdh58fls3p9fxyv-fix-build-time-run-tcl.patch'
+instantiated 'fix-build-time-run-tcl.patch' -> '/nix/store/mc5613hr0xdabygbvcz7nsfmn5nvabds-fix-build-time-run-tcl.patch.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchpatch'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchpatch/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchpatch/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/text/patchutils/0.3.3.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/text/patchutils/0.3.3.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/text/patchutils/generic.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/text/patchutils/generic.nix'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/tools/text/patchutils/drop-comments.patch' -> '/nix/store/8djp1rizc1dblv8svnb0mpa0c3lwvc17-drop-comments.patch'
+instantiated 'patchutils-0.3.3.tar.xz' -> '/nix/store/q2gc1rg42gba9jcjaz8vdj7c60y9w1pi-patchutils-0.3.3.tar.xz.drv'
+instantiated 'patchutils-0.3.3' -> '/nix/store/1nmjpy4xdhcxm6va6jn6qd34rn23r2nk-patchutils-0.3.3.drv'
+instantiated '0001-Add-prototype-to-function-definitions.patch' -> '/nix/store/k4xhxmikpxqip6s2517crz85xs6ssdn6-0001-Add-prototype-to-function-definitions.patch.drv'
+instantiated 'expect-configure-c99.patch' -> '/nix/store/8i2zmsk9am89cm3n0v3bmjxipz5yzwvb-expect-configure-c99.patch.drv'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/ex/expect/0004-enable-cross-compilation.patch' -> '/nix/store/5sq339xgg1yq8risiy1b6kq4wlrf8va3-0004-enable-cross-compilation.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/ex/expect/fix-darwin-bsd-clang16.patch' -> '/nix/store/4qxxm3fk8i15xvdi71zcir1ivnmdrc8z-fix-darwin-bsd-clang16.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tcl-modules/by-name/ex/expect/freebsd-unversioned.patch' -> '/nix/store/z7pds9wjplxms9cim0zr8igyc9f55h63-freebsd-unversioned.patch'
+instantiated 'expect5.45.4.tar.gz' -> '/nix/store/0ivm1alpf10rwd4iq48qnamn32wa7pxj-expect5.45.4.tar.gz.drv'
+instantiated 'stdenv-linux' -> '/nix/store/74qvk0yp9n1pya3kb98l2lbwsdymkikp-stdenv-linux.drv'
+instantiated 'expect-5.45.4' -> '/nix/store/0a9xl2jd6vg8aia8pqxc5pn11lnngfr2-expect-5.45.4.drv'
+instantiated 'dejagnu-1.6.3.tar.gz' -> '/nix/store/qdnp1298g2phads5nwng27y1lf7smnxk-dejagnu-1.6.3.tar.gz.drv'
+instantiated 'dejagnu-1.6.3' -> '/nix/store/d4hc7r3hm4fiya9ql54p7fs603n0r5fv-dejagnu-1.6.3.drv'
+instantiated 'libffi-3.5.1.tar.gz' -> '/nix/store/ikfy4jicw85nm0lvj1qj1zgx58z6wiv2-libffi-3.5.1.tar.gz.drv'
+instantiated 'libffi-3.5.1' -> '/nix/store/yap8kvhx1g3fim2i8srd88805cg0qk0p-libffi-3.5.1.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/sqlite/archive-version.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/sqlite/archive-version.nix'
+instantiated 'sqlite-doc-3500200.zip' -> '/nix/store/b8qfyqrpgg6cm4ck0yqn4jmdb9fgrwhg-sqlite-doc-3500200.zip.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/package.nix'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/CVE-2014-8139.diff' -> '/nix/store/rdkdki1f24q8mqgnbsyk7gmh28c027ks-CVE-2014-8139.diff'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/CVE-2014-8140.diff' -> '/nix/store/d9b2qrrq32jzdsdx4y33inzrra5n5z5n-CVE-2014-8140.diff'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/CVE-2014-8141.diff' -> '/nix/store/6np2acjv1nxcg0xzsv9a76wyrpxznkna-CVE-2014-8141.diff'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/CVE-2014-9636.diff' -> '/nix/store/pdcj2chp5c2gvm2jc3shbajfc62kbx1i-CVE-2014-9636.diff'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/CVE-2015-7696.diff' -> '/nix/store/6zqn6w9rwkgfa6z1hpagnh5xhz2dag6m-CVE-2015-7696.diff'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/CVE-2015-7697.diff' -> '/nix/store/2cq4hsc1v8ylccspw8351r72s56w1fia-CVE-2015-7697.diff'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/CVE-2014-9913.patch' -> '/nix/store/1k1wn8807yizgz3ghnbd4k6zsc0dzfkr-CVE-2014-9913.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/CVE-2016-9844.patch' -> '/nix/store/97d26l91h0db8h0qkmhxwi5d8shrilv6-CVE-2016-9844.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/CVE-2018-18384.patch' -> '/nix/store/p55a764pi2f4kkx3adb43bxb2dnb4z6r-CVE-2018-18384.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/dont-hardcode-cc.patch' -> '/nix/store/p46prhgmv7ibjh9igfkbc6zfxbbi6sk5-dont-hardcode-cc.patch'
+instantiated 'CVE-2019-13232-1.patch' -> '/nix/store/27lrlrlfjikzlimnsbbpgc935z7y6kcq-CVE-2019-13232-1.patch.drv'
+instantiated 'CVE-2019-13232-2.patch' -> '/nix/store/rp8670rbbv79cahl7dyr7aydr2khmhj0-CVE-2019-13232-2.patch.drv'
+instantiated 'CVE-2019-13232-3.patch' -> '/nix/store/44il74aix8r29w4g25kh4kbm9vpnnas0-CVE-2019-13232-3.patch.drv'
+instantiated '06-initialize-the-symlink-flag.patch' -> '/nix/store/a9zc3m36vr13dk2m8ly020js39f9fd05-06-initialize-the-symlink-flag.patch.drv'
+instantiated '28-cve-2022-0529-and-cve-2022-0530.patch' -> '/nix/store/drbmnq0p8qpvf77ilp7cg51fvxbgc8wd-28-cve-2022-0529-and-cve-2022-0530.patch.drv'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/implicit-declarations-fix.patch' -> '/nix/store/705g035ind4dzrnxwjaw5gp6wy32bkar-implicit-declarations-fix.patch'
+instantiated 'CVE-2021-4217.patch' -> '/nix/store/pf55bh8w5lrqdlsd74blxv49fxz8anj2-CVE-2021-4217.patch.drv'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/un/unzip/setup-hook.sh' -> '/nix/store/cciw7lgkldvx25d77cxpjhh1iw4xghd9-setup-hook.sh'
+instantiated 'unzip60.tar.gz' -> '/nix/store/4w7kylr5s3yiiq99l6s3rlz6bkf409h3-unzip60.tar.gz.drv'
+instantiated 'unzip-6.0' -> '/nix/store/k5wsb6rfslpdy4sxm7npf46faz0l9knh-unzip-6.0.drv'
+instantiated 'sqlite-autoconf-3500200.tar.gz' -> '/nix/store/rkph7im0p7isi646nn8svbrk7adxs6nn-sqlite-autoconf-3500200.tar.gz.drv'
+instantiated 'sqlite-3.50.2' -> '/nix/store/gv1jcp0swa1m0cyj0hr27q0vlkzjpxdv-sqlite-3.50.2.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/li/libcap_ng/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/li/libcap_ng/package.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/sw/swig/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/sw/swig/package.nix'
+instantiated 'bison-3.8.2.tar.gz' -> '/nix/store/z8gygrjaf8j7imq4vnhacmd2wpif7640-bison-3.8.2.tar.gz.drv'
+instantiated 'bison-3.8.2' -> '/nix/store/09f8lsxq28srv28gwpic6yf555sypim8-bison-3.8.2.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchgithub'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchgithub/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchgithub/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchzip'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchzip/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/build-support/fetchzip/default.nix'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/lib/sources.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/lib/sources.nix'
+instantiated 'source' -> '/nix/store/r2w3j00h9fqbdyp6928xxvkyd1583wpi-source.drv'
+instantiated 'swig-4.3.1' -> '/nix/store/8bx23qk6a710322rig63lfgssw2mm8aj-swig-4.3.1.drv'
+instantiated 'source' -> '/nix/store/rxwcj8wx179db56cfwwiqjjha0kzcxj1-source.drv'
+instantiated 'libcap-ng-0.8.5' -> '/nix/store/1m0sar2kw8j36fhmkchwhkqhh4rfrbp3-libcap-ng-0.8.5.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tools/misc/automake/automake-1.16.x.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/tools/misc/automake/automake-1.16.x.nix'
+instantiated 'automake-1.16.5.tar.xz' -> '/nix/store/4kx9hmhf20jqjasrm5jqlhc8jyqakvdw-automake-1.16.5.tar.xz.drv'
+instantiated 'automake-1.16.5' -> '/nix/store/l3v4wawlpwcw9c223ycg165yfvk96miq-automake-1.16.5.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/in/installShellFiles/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/in/installShellFiles/package.nix'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/in/installShellFiles/setup-hook.sh' -> '/nix/store/0yanklhkvs3ygb149mxayfvd8vwjqfra-setup-hook.sh'
+instantiated 'install-shell-files' -> '/nix/store/1z35fgaprfn4rg5hqrzlwj4qa2f7f4p7-install-shell-files.drv'
+instantiated 'pkg-config-0.29.2.tar.gz' -> '/nix/store/drvbwdy3sjf43gkgji9ga13hc805vkzg-pkg-config-0.29.2.tar.gz.drv'
+instantiated 'pkg-config-0.29.2' -> '/nix/store/njbmgdz131kqsqm4j1ngbvgqny244w3c-pkg-config-0.29.2.drv'
+instantiated 'pkg-config-wrapper-0.29.2' -> '/nix/store/gs0pi2k1py127vz63hx1wg9j3i6x4yl1-pkg-config-wrapper-0.29.2.drv'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ut/util-linux/rtcwake-search-PATH-for-shutdown.patch' -> '/nix/store/1j9sp0yd6jbcbkwsc5a826rxqy3lk6vh-rtcwake-search-PATH-for-shutdown.patch'
+instantiated 'bits-only-build-when-cpu_set_t-is-available.patch' -> '/nix/store/0pbb02jyyjrf6fgin878c47pfwg2wxis-bits-only-build-when-cpu_set_t-is-available.patch.drv'
+instantiated 'util-linux-2.41.1.tar.xz' -> '/nix/store/nv6mqidipm8qwv8n37x0sywbjspf9fcz-util-linux-2.41.1.tar.xz.drv'
+instantiated 'util-linux-minimal-2.41.1' -> '/nix/store/04i5y1f21rhf2j4pp6h0xi86yyx25b3c-util-linux-minimal-2.41.1.drv'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/ncurses/1001-ncurses-Support-gnuabielfv1-2.patch' -> '/nix/store/wxgpyw9pj7dw8f5876ai4j964frnhiiy-1001-ncurses-Support-gnuabielfv1-2.patch'
+instantiated 'ncurses-6.5.tar.gz' -> '/nix/store/bi2ka7xzkp176yn8c46zz0d6x5b02big-ncurses-6.5.tar.gz.drv'
+instantiated 'ncurses-6.5' -> '/nix/store/if4apf51pw3fvr0p7i1pq5879i19zs28-ncurses-6.5.drv'
+instantiated 'openssl-3.5.1.tar.gz' -> '/nix/store/kdxfk9c3jkmvfgfjl1ilq9snz5ywnqzw-openssl-3.5.1.tar.gz.drv'
+instantiated 'openssl-3.5.1' -> '/nix/store/ka1rgg9jrhim4p54h6cb4jih6g51qcww-openssl-3.5.1.drv'
+instantiated 'mpdecimal-4.0.1.tar.gz' -> '/nix/store/d7faaz2w2q9ybnb0vdwr84airvhvn1j0-mpdecimal-4.0.1.tar.gz.drv'
+instantiated 'mpdecimal-4.0.1' -> '/nix/store/3s9m6x5jqy3rvri90zmca8fs0y1pvaax-mpdecimal-4.0.1.drv'
+instantiated 'expat-2.7.1.tar.xz' -> '/nix/store/c4w28v773z7iys8g7p2g3j9h99q9w9p9-expat-2.7.1.tar.xz.drv'
+instantiated 'expat-2.7.1' -> '/nix/store/z6yzhinzmmzxffw1gw01x8zlzfygwr69-expat-2.7.1.drv'
+instantiated 'bluez-5.83.tar.xz' -> '/nix/store/vrb1y8sg644gi8rivj4yaadinxnzs02b-bluez-5.83.tar.xz.drv'
+instantiated 'bluez-headers-5.83' -> '/nix/store/9d1j45q4gmbbkxhlanl8qr1k7bkd0z86-bluez-headers-5.83.drv'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/gd/gdbm/upstream-darwin-clock-nanosleep-fix.patch' -> '/nix/store/jw14p81ngrmmm1189rgkx28i030svjmw-upstream-darwin-clock-nanosleep-fix.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/gd/gdbm/upstream-lockwait-test-fixes.patch' -> '/nix/store/k3azmfbl1rjkflj90ahbr383vgcfs28a-upstream-lockwait-test-fixes.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/gd/gdbm/upstream-musl-ssize_t-fix.patch' -> '/nix/store/vjxyg7cyqq0s25dmma01xg57kp6ri4wg-upstream-musl-ssize_t-fix.patch'
+instantiated 'gdbm-1.25.tar.gz' -> '/nix/store/qcmhqm2apw06h674lvcdpar1dibz301g-gdbm-1.25.tar.gz.drv'
+instantiated 'gdbm-1.25' -> '/nix/store/bljn24ssmf3m8zlhws37vqndjzcvamfm-gdbm-1.25.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/readline/readline-8.3-patches.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/readline/readline-8.3-patches.nix'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/readline/link-against-ncurses.patch' -> '/nix/store/bw6aa38615ww5karcn8kslsf5hxgz412-link-against-ncurses.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/libraries/readline/no-arch_only-8.2.patch' -> '/nix/store/0v7w62jca8nw6w31zs4y2805jj670f6p-no-arch_only-8.2.patch'
+instantiated 'readline83-001' -> '/nix/store/p50d8vnxkrw6nw3wsg5lnzfn4hqcks16-readline83-001.drv'
+instantiated 'readline-8.3.tar.gz' -> '/nix/store/10ikjxkpgipnpisdmni6f1ryi4n3dvri-readline-8.3.tar.gz.drv'
+instantiated 'readline-8.3p1' -> '/nix/store/pnpqvdqpjfqv1lj84hjwbdwm4qrvbxya-readline-8.3p1.drv'
+instantiated 'nuke-references' -> '/nix/store/7nnwfbiibsgaia3ri7s1qswipqi8sjrk-nuke-references.drv'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/au/autoconf-archive/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/au/autoconf-archive/package.nix'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/au/autoconf-archive/0001-ax_check_gl.m4-properly-quote-m4_fatal.patch' -> '/nix/store/iiqz3jwhkshha7g3md65nxfc92m3w7my-0001-ax_check_gl.m4-properly-quote-m4_fatal.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/au/autoconf-archive/0002-ax_check_glx.m4-properly-quote-m4_fatal.patch' -> '/nix/store/g33khik5vs4hh0wpj0zdxp4mjxf9l8z0-0002-ax_check_glx.m4-properly-quote-m4_fatal.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/au/autoconf-archive/0003-ax_switch_flags.m4-properly-quote-m4_fatal.patch' -> '/nix/store/p1pv3xh6x64mlmnjc3lyhw7baapljajg-0003-ax_switch_flags.m4-properly-quote-m4_fatal.patch'
+instantiated 'autoconf-archive-2024.10.16.tar.xz' -> '/nix/store/qnqkspppb0zyrfbkljp6cgpk43903r2q-autoconf-archive-2024.10.16.tar.xz.drv'
+instantiated 'autoconf-archive-2024.10.16' -> '/nix/store/hrp25fq4m1bbwnihypb0pl6d5cr33g4z-autoconf-archive-2024.10.16.drv'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/interpreters/python/cpython/mimetypes.patch' -> '/nix/store/lpfs02z2i2hamz9f50p4bz6v0fs0600j-mimetypes.patch'
+copied source '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/development/interpreters/python/sitecustomize.py' -> '/nix/store/gx4pa1m75g8rrrggj7gi3bg38m4lg3q5-sitecustomize.py'
+checking access to '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ma/mailcap/package.nix'
+evaluating file '/nix/store/j3sna6r5nrrqj5b3pslyc520cycfa43m-source/pkgs/by-name/ma/mailcap/package.nix'
+instantiated 'mailcap-2.1.54.tar.xz' -> '/nix/store/jl2vvqhn53isybnw901fykwchk386vz4-mailcap-2.1.54.tar.xz.drv'
+instantiated 'mailcap-2.1.54' -> '/nix/store/qc5zy7v5mzh7w07r4ds92qyrfsnwmi33-mailcap-2.1.54.drv'
+instantiated 'python-setup-hook.sh' -> '/nix/store/wp9cf1lvmswkd1h88rr12qjdcvzp7rxm-python-setup-hook.sh.drv'
+instantiated 'Python-3.13.7.tar.xz' -> '/nix/store/vdqnk11hgf1ybqmc5gqnxnmdbmjhl1ar-Python-3.13.7.tar.xz.drv'
+instantiated 'python3-3.13.7' -> '/nix/store/5di2g881hiam4gz0swd50cx210bkrvmk-python3-3.13.7.drv'
+locking path '/nix/store/yixic3s63snc8n497jn8zz5ql95qcb2d-sxr8862rm350aw7lnl8xljv1ybrhdlnz-source'
+lock acquired on '/nix/store/yixic3s63snc8n497jn8zz5ql95qcb2d-sxr8862rm350aw7lnl8xljv1ybrhdlnz-source.lock'
+lock released on '/nix/store/yixic3s63snc8n497jn8zz5ql95qcb2d-sxr8862rm350aw7lnl8xljv1ybrhdlnz-source.lock'
+copied source '/nix/store/sxr8862rm350aw7lnl8xljv1ybrhdlnz-source' -> '/nix/store/yixic3s63snc8n497jn8zz5ql95qcb2d-sxr8862rm350aw7lnl8xljv1ybrhdlnz-source'
+locking path '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv'
+lock acquired on '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv.lock'
+lock released on '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv.lock'
+instantiated 'rust-solana-tools-v1.51' -> '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv'
 evaluating uncached attribute 'packages.aarch64-linux.default'
 evaluating uncached attribute 'packages.aarch64-linux.default'
 evaluating uncached attribute 'packages.aarch64-linux.default.meta'
@@ -1603,42 +1880,44 @@ evaluating uncached attribute 'packages.aarch64-linux.default.meta'
 evaluating uncached attribute 'packages.aarch64-linux.default.meta.outputsToInstall'
 querying info about missing paths...
 starting pool of 24 threads
-checking substituter 'https://cache.nixos.org' for path '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51'
-querying info about '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51' on 'https://cache.nixos.org'...
-downloading 'https://cache.nixos.org/6877k4y372dm47q8j7i0asmdbxqjzccv.narinfo'...
-starting download of https://cache.nixos.org/6877k4y372dm47q8j7i0asmdbxqjzccv.narinfo
-finished download of 'https://cache.nixos.org/6877k4y372dm47q8j7i0asmdbxqjzccv.narinfo'; curl status = 0, HTTP status = 404, body = 3 bytes
-checking substituter 'https://nix-on-droid.cachix.org' for path '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51'
-querying info about '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51' on 'https://nix-on-droid.cachix.org'...
-downloading 'https://nix-on-droid.cachix.org/6877k4y372dm47q8j7i0asmdbxqjzccv.narinfo'...
-starting download of https://nix-on-droid.cachix.org/6877k4y372dm47q8j7i0asmdbxqjzccv.narinfo
-finished download of 'https://nix-on-droid.cachix.org/6877k4y372dm47q8j7i0asmdbxqjzccv.narinfo'; curl status = 0, HTTP status = 404, body = 15 bytes
-reaping 1 worker threads
+checking substituter 'https://cache.nixos.org' for path '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51'
+querying info about '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51' on 'https://cache.nixos.org'...
+downloading 'https://cache.nixos.org/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg.narinfo'...
+starting download of https://cache.nixos.org/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg.narinfo
+finished download of 'https://cache.nixos.org/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg.narinfo'; curl status = 0, HTTP status = 404, body = 3 bytes
+checking substituter 'https://nix-on-droid.cachix.org' for path '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51'
+querying info about '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51' on 'https://nix-on-droid.cachix.org'...
+downloading 'https://nix-on-droid.cachix.org/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg.narinfo'...
+starting download of https://nix-on-droid.cachix.org/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg.narinfo
+finished download of 'https://nix-on-droid.cachix.org/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg.narinfo'; curl status = 0, HTTP status = 404, body = 15 bytes
+reaping 2 worker threads
 this derivation will be built:
-  /nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: created
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: woken up
+  /nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: created
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: woken up
 querying info about missing paths...
 starting pool of 24 threads
-checking substituter 'https://cache.nixos.org' for path '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51'
-checking substituter 'https://nix-on-droid.cachix.org' for path '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51'
-reaping 1 worker threads
+checking substituter 'https://cache.nixos.org' for path '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51'
+checking substituter 'https://nix-on-droid.cachix.org' for path '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51'
+reaping 2 worker threads
 entered goal loop
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: init
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: loading derivation
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: have derivation
-substitution of '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51': created
-substitution of '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51': woken up
-substitution of '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51': init
-substitution of '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51': trying next substituter
-substitution of '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51': trying next substituter
-substitution of '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51': trying next substituter
-path '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51' is required, but there is no substituter that can build it
-substitution of '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51': done
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: waitee 'substitution of '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51'' done; 0 left
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: woken up
-substitution of '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51': goal destroyed
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: all outputs substituted (maybe)
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: init
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: loading derivation
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: have derivation
+substitution of '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51': created
+substitution of '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51': woken up
+substitution of '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51': init
+substitution of '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51': trying next substituter
+substitution of '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51': trying next substituter
+substitution of '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51': trying next substituter
+path '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51' is required, but there is no substituter that can build it
+substitution of '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51': done
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: waitee 'substitution of '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51'' done; 0 left
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: woken up
+substitution of '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51': goal destroyed
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: all outputs substituted (maybe)
+building of '/nix/store/5di2g881hiam4gz0swd50cx210bkrvmk-python3-3.13.7.drv^out' from .drv file: created
+building of '/nix/store/5di2g881hiam4gz0swd50cx210bkrvmk-python3-3.13.7.drv^out' from .drv file: woken up
 building of '/nix/store/74qvk0yp9n1pya3kb98l2lbwsdymkikp-stdenv-linux.drv^out' from .drv file: created
 building of '/nix/store/74qvk0yp9n1pya3kb98l2lbwsdymkikp-stdenv-linux.drv^out' from .drv file: woken up
 building of '/nix/store/kq4gk51b57mnl4jnpr4xya440hmb7fd3-bash-5.3p3.drv^out' from .drv file: created
@@ -1647,28 +1926,34 @@ building of '/nix/store/kq4gk51b57mnl4jnpr4xya440hmb7fd3-bash-5.3p3.drv^out' fro
 building of '/nix/store/kq4gk51b57mnl4jnpr4xya440hmb7fd3-bash-5.3p3.drv^out' from .drv file: loading derivation
 building of '/nix/store/kq4gk51b57mnl4jnpr4xya440hmb7fd3-bash-5.3p3.drv^out' from .drv file: have derivation
 building of '/nix/store/kq4gk51b57mnl4jnpr4xya440hmb7fd3-bash-5.3p3.drv^out' from .drv file: done
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: waitee 'building of '/nix/store/kq4gk51b57mnl4jnpr4xya440hmb7fd3-bash-5.3p3.drv^out' from .drv file' done; 1 left
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: waitee 'building of '/nix/store/kq4gk51b57mnl4jnpr4xya440hmb7fd3-bash-5.3p3.drv^out' from .drv file' done; 2 left
+building of '/nix/store/5di2g881hiam4gz0swd50cx210bkrvmk-python3-3.13.7.drv^out' from .drv file: init
+building of '/nix/store/5di2g881hiam4gz0swd50cx210bkrvmk-python3-3.13.7.drv^out' from .drv file: loading derivation
+building of '/nix/store/5di2g881hiam4gz0swd50cx210bkrvmk-python3-3.13.7.drv^out' from .drv file: have derivation
+building of '/nix/store/5di2g881hiam4gz0swd50cx210bkrvmk-python3-3.13.7.drv^out' from .drv file: done
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: waitee 'building of '/nix/store/5di2g881hiam4gz0swd50cx210bkrvmk-python3-3.13.7.drv^out' from .drv file' done; 1 left
 building of '/nix/store/74qvk0yp9n1pya3kb98l2lbwsdymkikp-stdenv-linux.drv^out' from .drv file: init
 building of '/nix/store/74qvk0yp9n1pya3kb98l2lbwsdymkikp-stdenv-linux.drv^out' from .drv file: loading derivation
 building of '/nix/store/74qvk0yp9n1pya3kb98l2lbwsdymkikp-stdenv-linux.drv^out' from .drv file: have derivation
 building of '/nix/store/74qvk0yp9n1pya3kb98l2lbwsdymkikp-stdenv-linux.drv^out' from .drv file: done
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: waitee 'building of '/nix/store/74qvk0yp9n1pya3kb98l2lbwsdymkikp-stdenv-linux.drv^out' from .drv file' done; 0 left
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: woken up
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: waitee 'building of '/nix/store/74qvk0yp9n1pya3kb98l2lbwsdymkikp-stdenv-linux.drv^out' from .drv file' done; 0 left
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: woken up
 building of '/nix/store/74qvk0yp9n1pya3kb98l2lbwsdymkikp-stdenv-linux.drv^out' from .drv file: goal destroyed
+building of '/nix/store/5di2g881hiam4gz0swd50cx210bkrvmk-python3-3.13.7.drv^out' from .drv file: goal destroyed
 building of '/nix/store/kq4gk51b57mnl4jnpr4xya440hmb7fd3-bash-5.3p3.drv^out' from .drv file: goal destroyed
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: all inputs realised
-added input paths '/nix/store/0y5xmdb7qfvimjwbq7ibg1xdgkgjwqng-no-broken-symlinks.sh', '/nix/store/1r3nd7g6p0zbyyzmabypbxy7082llv64-gnused-4.9', '/nix/store/21hfs53hjb8spgp3558dn7cr0phs38kf-glibc-2.40-66-dev', '/nix/store/2pbchay2d31av00jpi35pwxd420paap3-expand-response-params', '/nix/store/3161xhazkr55b1vi5h0a43zk377kf4sq-gcc-14.3.0-libgcc', '/nix/store/35chcfybpjnialk5qwnzls3kggsf7aa5-patch-2.8', '/nix/store/49spybp2k23p892159fi937x1axk9gvz-gcc-14.3.0', '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh', '/nix/store/7432dh2mawhlg0wxx59jihwcjhydl7ha-zlib-1.3.1', '/nix/store/7f0vb35apsmpbakqy7y1mwkbnmflkmzi-binutils-wrapper-2.44', '/nix/store/85clx3b0xkdf58jn161iy80y5223ilbi-compress-man-pages.sh', '/nix/store/8lks4k080ax4hxkagf8ffkhqi4xnwx87-file-5.45', '/nix/store/a3azv3g02kik35w65rhrzsz778pvd84m-ed-1.21.1', '/nix/store/aiff1m1j33f3yz030psy6dig0j55yimn-qsvyqbnbwb40wd35jv90mknbdcf6lhia-source', '/nix/store/amn1xrjfnhn43qrfxsirdcdh5kyqs58z-findutils-4.10.0', '/nix/store/b6xhz878hhfhhlvs8jqlbra89asbycay-xgcc-14.3.0-libgcc', '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh', '/nix/store/cmzya9irvxzlkh7lfy6i82gbp0saxqj3-multiple-outputs.sh', '/nix/store/cv1d7p48379km6a85h4zp6kr86brh32q-audit-tmpdir.sh', '/nix/store/fp4bszjavnlf2v14j5asdyv2b8igc5cf-stdenv-linux', '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh', '/nix/store/gmqsd3n2017kwgzxbwgchjp1cswh5y0r-gnu-config-2024-01-01', '/nix/store/gv96kra90sf50bp2k67f649nw3qqlwx9-libidn2-2.3.8', '/nix/store/h891bg49kczhak7fdjzdx447cqglqhk9-bzip2-1.0.8', '/nix/store/hbzqihddwjfnqhjhlpvqczwgjh8ijy37-isl-0.20', '/nix/store/hf8w753nxqwkc5y5kjx33fx8fxw2dczp-gcc-wrapper-14.3.0', '/nix/store/hxmi7d6vbdgbzklm4icfk2y83ncw8la9-bash-5.3p3', '/nix/store/ics2w6dwhh4lvmv74d7axf4xc8b153wa-coreutils-9.7', '/nix/store/ix9i2xpaiflfdf42kb8ffsw21dar1a6i-update-autotools-gnu-config-scripts-hook', '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh', '/nix/store/kmpf1kc4y9kpgs5b144rwip0ag10hcsh-attr-2.5.2', '/nix/store/kvg0iy4pn4dfpifbn6gfhwjyb0h9wcib-gmp-with-cxx-6.3.0', '/nix/store/l622p70vy8k5sh7y5wizi5f2mic6ynpg-source-stdenv.sh', '/nix/store/llc05p798waq7pnfnhmqsiz4b1l079rx-pcre2-10.44', '/nix/store/lmpnr58n2diy0hhdkzjn8ndlskrhyrx2-glibc-2.40-66-bin', '/nix/store/n4lmiw2n02pryilnv7902x3w21x9iz14-patchelf-0.15.2', '/nix/store/ncl3yfqazbldp4gsh0dz0qq8jyxxc73z-gzip-1.14', '/nix/store/ncnksaxi8fp9ipddny5pv763kgan2sm4-xz-5.8.1-bin', '/nix/store/nl55hbsk5fjq2kyz3rkry1flndqfr3ry-glibc-2.40-66', '/nix/store/nnail079mbwdc0zq7ajs2byvvpxildhq-libunistring-1.3', '/nix/store/p8rdzqgxjr0l2d5afr67b3b258x5pfs8-linux-headers-6.16', '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh', '/nix/store/pilsssjjdxvdphlg2h19p0bfx5q0jzkn-strip.sh', '/nix/store/q4g8q49zsdy8n57l9iqxvh3ragf0h4h7-gnutar-1.35', '/nix/store/q91lr03jid1p1imznifypp0y0w80gwq9-gcc-14.3.0-lib', '/nix/store/rbiv5lk989aiz4px6ynlbhgmv80683w1-binutils-2.44', '/nix/store/scs2d579yv21cir0m8mwjqprrnfklrr4-gmp-6.3.0', '/nix/store/sfnb951mnk07iprjwpjv08xlrs1m4jyc-mpfr-4.2.2', '/nix/store/shkw4qm9qcw5sc5n1k5jznc83ny02r39-default-builder.sh', '/nix/store/svbiz451cll2n27qr236x6vl25x14dkr-xz-5.8.1', '/nix/store/v19p6pcxds7wp7a2489yjvbnqn42lrlj-gawk-5.3.2', '/nix/store/v2i6say53v0al0s4gv7kpq178wp73qyl-gnugrep-3.12', '/nix/store/vik0p5cz9k5bz2qjzgd1vqvdpab20kcw-diffutils-3.12', '/nix/store/w2lnn2194wq210qkf3f54wygbymicivz-bzip2-1.0.8-bin', '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh', '/nix/store/wgzm8q1jx09y8rgi1sxwx8adigfz5aj3-binutils-2.44-lib', '/nix/store/x8c40nfigps493a07sdr2pm5s9j1cdc0-patch-shebangs.sh', '/nix/store/x9wly19xwdfcbw0vbvj4k7yvzlab5as0-acl-2.3.2', '/nix/store/xf7sqlkig138jbfrwd9qk0livv3gncqy-gnumake-4.4.1', '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh', '/nix/store/z7k98578dfzi6l3hsvbivzm7hfqlk0zc-set-source-date-epoch-to-latest.sh', '/nix/store/zpj9jsfgfl03v9racmafysl6zkb66zcs-libmpc-1.3.1'
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: woken up
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: trying to build
-locking path '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51'
-lock acquired on '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51.lock'
-removing invalid path '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51'
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: all inputs realised
+added input paths '/nix/store/0lmhp8dzgg4afxwrs19jz4y1wn3ch8jl-util-linux-minimal-2.41.1-lib', '/nix/store/0y5xmdb7qfvimjwbq7ibg1xdgkgjwqng-no-broken-symlinks.sh', '/nix/store/1r3nd7g6p0zbyyzmabypbxy7082llv64-gnused-4.9', '/nix/store/21hfs53hjb8spgp3558dn7cr0phs38kf-glibc-2.40-66-dev', '/nix/store/2pbchay2d31av00jpi35pwxd420paap3-expand-response-params', '/nix/store/2q5ipx9jd596qi21ib3x87qj4ln0yhp5-readline-8.3p1', '/nix/store/3161xhazkr55b1vi5h0a43zk377kf4sq-gcc-14.3.0-libgcc', '/nix/store/35chcfybpjnialk5qwnzls3kggsf7aa5-patch-2.8', '/nix/store/3qgmprg13s9sf9l9q5av2l8axrclmwjj-mailcap-2.1.54', '/nix/store/49spybp2k23p892159fi937x1axk9gvz-gcc-14.3.0', '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh', '/nix/store/6kf7bh8xv5hd7lpg8g68nxywff5ndyps-ncurses-6.5', '/nix/store/7432dh2mawhlg0wxx59jihwcjhydl7ha-zlib-1.3.1', '/nix/store/7f0vb35apsmpbakqy7y1mwkbnmflkmzi-binutils-wrapper-2.44', '/nix/store/85clx3b0xkdf58jn161iy80y5223ilbi-compress-man-pages.sh', '/nix/store/8lks4k080ax4hxkagf8ffkhqi4xnwx87-file-5.45', '/nix/store/a25czk460v7wh2ag6rq5m3yalj14a79a-libffi-3.5.1', '/nix/store/a3azv3g02kik35w65rhrzsz778pvd84m-ed-1.21.1', '/nix/store/a65r9k46dxhyx2gn60bpx7j62anjdjr7-python3-3.13.7', '/nix/store/amn1xrjfnhn43qrfxsirdcdh5kyqs58z-findutils-4.10.0', '/nix/store/b6xhz878hhfhhlvs8jqlbra89asbycay-xgcc-14.3.0-libgcc', '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh', '/nix/store/cmzya9irvxzlkh7lfy6i82gbp0saxqj3-multiple-outputs.sh', '/nix/store/cv1d7p48379km6a85h4zp6kr86brh32q-audit-tmpdir.sh', '/nix/store/fp4bszjavnlf2v14j5asdyv2b8igc5cf-stdenv-linux', '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh', '/nix/store/gmqsd3n2017kwgzxbwgchjp1cswh5y0r-gnu-config-2024-01-01', '/nix/store/gr5lxis42cps2zs2scizd713k06g65lf-gdbm-1.25-lib', '/nix/store/gv96kra90sf50bp2k67f649nw3qqlwx9-libidn2-2.3.8', '/nix/store/h891bg49kczhak7fdjzdx447cqglqhk9-bzip2-1.0.8', '/nix/store/hbzqihddwjfnqhjhlpvqczwgjh8ijy37-isl-0.20', '/nix/store/hf8w753nxqwkc5y5kjx33fx8fxw2dczp-gcc-wrapper-14.3.0', '/nix/store/hxmi7d6vbdgbzklm4icfk2y83ncw8la9-bash-5.3p3', '/nix/store/ics2w6dwhh4lvmv74d7axf4xc8b153wa-coreutils-9.7', '/nix/store/ix9i2xpaiflfdf42kb8ffsw21dar1a6i-update-autotools-gnu-config-scripts-hook', '/nix/store/jfwxk186hyci41lsdqf8al9yan74fhbf-sqlite-3.50.2', '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh', '/nix/store/kmpf1kc4y9kpgs5b144rwip0ag10hcsh-attr-2.5.2', '/nix/store/kvg0iy4pn4dfpifbn6gfhwjyb0h9wcib-gmp-with-cxx-6.3.0', '/nix/store/l622p70vy8k5sh7y5wizi5f2mic6ynpg-source-stdenv.sh', '/nix/store/llc05p798waq7pnfnhmqsiz4b1l079rx-pcre2-10.44', '/nix/store/lmpnr58n2diy0hhdkzjn8ndlskrhyrx2-glibc-2.40-66-bin', '/nix/store/lwh15mvhglb07cmz0bqhk3scjgzk88h3-mpdecimal-4.0.1', '/nix/store/n4lmiw2n02pryilnv7902x3w21x9iz14-patchelf-0.15.2', '/nix/store/ncl3yfqazbldp4gsh0dz0qq8jyxxc73z-gzip-1.14', '/nix/store/ncnksaxi8fp9ipddny5pv763kgan2sm4-xz-5.8.1-bin', '/nix/store/nl55hbsk5fjq2kyz3rkry1flndqfr3ry-glibc-2.40-66', '/nix/store/nnail079mbwdc0zq7ajs2byvvpxildhq-libunistring-1.3', '/nix/store/p8rdzqgxjr0l2d5afr67b3b258x5pfs8-linux-headers-6.16', '/nix/store/p9p8g4z4rm57fgdpp3rnyv3zc0flldvr-tzdata-2025b', '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh', '/nix/store/pilsssjjdxvdphlg2h19p0bfx5q0jzkn-strip.sh', '/nix/store/q222gcn9izb0c9z8bg3w0l96xmjcf8s1-expat-2.7.1', '/nix/store/q4g8q49zsdy8n57l9iqxvh3ragf0h4h7-gnutar-1.35', '/nix/store/q91lr03jid1p1imznifypp0y0w80gwq9-gcc-14.3.0-lib', '/nix/store/rbiv5lk989aiz4px6ynlbhgmv80683w1-binutils-2.44', '/nix/store/rzlvprd99wlbiv2wsqgp23kmxhkm1yfr-openssl-3.5.1', '/nix/store/scs2d579yv21cir0m8mwjqprrnfklrr4-gmp-6.3.0', '/nix/store/sfnb951mnk07iprjwpjv08xlrs1m4jyc-mpfr-4.2.2', '/nix/store/shkw4qm9qcw5sc5n1k5jznc83ny02r39-default-builder.sh', '/nix/store/svbiz451cll2n27qr236x6vl25x14dkr-xz-5.8.1', '/nix/store/v19p6pcxds7wp7a2489yjvbnqn42lrlj-gawk-5.3.2', '/nix/store/v2i6say53v0al0s4gv7kpq178wp73qyl-gnugrep-3.12', '/nix/store/vik0p5cz9k5bz2qjzgd1vqvdpab20kcw-diffutils-3.12', '/nix/store/w2lnn2194wq210qkf3f54wygbymicivz-bzip2-1.0.8-bin', '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh', '/nix/store/wgzm8q1jx09y8rgi1sxwx8adigfz5aj3-binutils-2.44-lib', '/nix/store/x8c40nfigps493a07sdr2pm5s9j1cdc0-patch-shebangs.sh', '/nix/store/x9wly19xwdfcbw0vbvj4k7yvzlab5as0-acl-2.3.2', '/nix/store/xf7sqlkig138jbfrwd9qk0livv3gncqy-gnumake-4.4.1', '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh', '/nix/store/yixic3s63snc8n497jn8zz5ql95qcb2d-sxr8862rm350aw7lnl8xljv1ybrhdlnz-source', '/nix/store/z7k98578dfzi6l3hsvbivzm7hfqlk0zc-set-source-date-epoch-to-latest.sh', '/nix/store/zpj9jsfgfl03v9racmafysl6zkb66zcs-libmpc-1.3.1'
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: woken up
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: trying to build
+locking path '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51'
+lock acquired on '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51.lock'
+removing invalid path '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51'
 starting build hook '/nix/store/wqlkf6dzgd6x8kk1jb2vh1pcabg68x9s-nix-2.18.8/bin/nix __build-remote'
 cannot find machines file '/etc/nix/machines'
 got 0 remote builders
 hook reply is 'decline-permanently'
-killing process 22888
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: woken up
+killing process 8301
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: woken up
 executing builder '/nix/store/hxmi7d6vbdgbzklm4icfk2y83ncw8la9-bash-5.3p3/bin/bash'
 using builder args '-e /nix/store/l622p70vy8k5sh7y5wizi5f2mic6ynpg-source-stdenv.sh /nix/store/shkw4qm9qcw5sc5n1k5jznc83ny02r39-default-builder.sh'
 sandbox setup: closing leaked FD 3
@@ -1692,27 +1977,26 @@ sandbox setup: closing leaked FD 20
 sandbox setup: closing leaked FD 21
 sandbox setup: closing leaked FD 22
 sandbox setup: closing leaked FD 23
-sandbox setup: closing leaked FD 24
-building '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv'...
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: got EOF
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: woken up
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: build done
-killing process 22893
-builder process for '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv' finished
-lock released on '/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51.lock'
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: done
-building of '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv^out' from .drv file: goal destroyed
-error: builder for '/nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv' failed with exit code 127;
+building '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv'...
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: got EOF
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: woken up
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: build done
+killing process 8304
+builder process for '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv' finished
+lock released on '/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51.lock'
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: done
+building of '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv^out' from .drv file: goal destroyed
+error: builder for '/nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv' failed with exit code 1;
        last 10 log lines:
-       > unpacking source archive /nix/store/aiff1m1j33f3yz030psy6dig0j55yimn-qsvyqbnbwb40wd35jv90mknbdcf6lhia-source
-       > source root is qsvyqbnbwb40wd35jv90mknbdcf6lhia-source
-       > unpackPhase completed in 1 minutes 34 seconds
+       > unpackPhase completed in 1 minutes 11 seconds
        > Running phase: patchPhase
        > Running phase: updateAutotoolsGnuConfigScriptsPhase
        > Running phase: configurePhase
        > patching script interpreter paths in ./configure
        > ./configure: interpreter directive changed from "#!/bin/sh" to "/nix/store/hxmi7d6vbdgbzklm4icfk2y83ncw8la9-bash-5.3p3/bin/sh"
-       > configure flags: --prefix=/nix/store/6877k4y372dm47q8j7i0asmdbxqjzccv-rust-solana-tools-v1.51
-       > ./configure: line 18: exec: python: not found
-       For full logs, run 'nix log /nix/store/v6sqrz19l5adwvkpysb5qdkcfqlnhsan-rust-solana-tools-v1.51.drv'.
+       > configure flags: --prefix=/nix/store/vgzm88q4pwqjqr62jpnm8yfph0x2m3vg-rust-solana-tools-v1.51
+       >
+       > configure: ERROR: Existing 'config.toml' detected. Exiting
+       >
+       For full logs, run 'nix log /nix/store/rjdm33mr4fp2x5y3pal5fkcnisnrmg4j-rust-solana-tools-v1.51.drv'.
 download thread shutting down
