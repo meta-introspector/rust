@@ -9,6 +9,7 @@ pkgs.stdenv.mkDerivation {
 
   nativeBuildInputs = [
     pkgs.python3 # Add python3 to the build environment
+    pkgs.curl # Add curl to the build environment
   ];
 
   buildPhase = ''

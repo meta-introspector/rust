@@ -3,46 +3,53 @@
 
   inputs = {
     nixpkgs.url = "github:meta-introspector/nixpkgs?ref=feature/CRQ-016-nixify";
-    flake-utils.url = "github:meta-introspector/flake-utils?ref=feature/CRQ-016-nixify";
     rust-overlay.url = "github:meta-introspector/rust-overlay?ref=feature/CRQ-016-nixify";
+    flake-utils.url = "github:meta-introspector/flake-utils?ref=feature/CRQ-016-nixify";
   };
 
-  outputs = { self, nixpkgs, flake-utils, rust-overlay }:
+  outputs = { self, nixpkgs, rust-overlay, flake-utils, ... }:
     flake-utils.lib.eachSystem [ "x86_64-linux" "aarch64-linux" ] (system:
       let
-        pkgs = import nixpkgs { inherit system; overlays = [ rust-overlay.overlays.default ]; };
-        rustToolchain = pkgs.rustChannels.nightly.rust.override { targets = [ "aarch64-unknown-linux-gnu" ]; };
+        overlays = [ (import rust-overlay) ];
+        pkgs = import nixpkgs {
+          inherit system overlays;
+        };
       in
-      rec {
+      with pkgs;
+      {
         packages.default = pkgs.callPackage ./default.nix { }; # Provides the source
-        devShells.default = with pkgs; mkShell {
+        devShells.default = mkShell {
           name = "rust-src-dev-shell";
-          packages = [
-            rustToolchain # This should include rustc, cargo, and rust-std for the target
-            pkgs.python3
-            pkgs.python3Packages.pip
-          ];
-          # Add other nativeBuildInputs and buildInputs if needed for development
-          nativeBuildInputs = [
-            binutils
-            cmake
-            ninja
+          buildInputs = [
+            openssl
+            glibc.out
+            glibc.static
             pkg-config
+            python3
+            python3Packages.pip
             git
             curl
             cacert
             patchelf
             nix
+            # Tools from the example
+            eza
+            fd
+            rust-bin.beta.latest.default # Using rust-bin from rust-overlay
           ];
-          buildInputs = [
-            openssl
-            glibc.out
-            glibc.static
-          ];
+
+          # Keep existing environment variables
           RUSTC_ICE = "0";
           LD_LIBRARY_PATH = "${lib.makeLibraryPath [
             stdenv.cc.cc.lib
           ]}";
+
+          # Add shell hooks from the example
+          shellHook = ''
+            alias ls=eza
+            alias find=fd
+          '';
         };
-      });
+      }
+    );
 }
