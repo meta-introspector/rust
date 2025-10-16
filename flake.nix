@@ -2,6 +2,7 @@
   description = "Rust (meta-introspector fork)";
 
   inputs = {
+    # self.url = "github:meta-introspector/rust?ref=feature/CRQ-016-nixify";
     nixpkgs.url = "github:meta-introspector/nixpkgs?ref=feature/CRQ-016-nixify";
     flake-utils.url = "github:meta-introspector/flake-utils?ref=feature/CRQ-016-nixify";
   };
