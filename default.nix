@@ -1,5 +1,4 @@
-{
-  pkgs ? import <nixpkgs> {}
+{ pkgs ? import <nixpkgs> { }
 }:
 
 pkgs.stdenv.mkDerivation {
@@ -9,7 +8,8 @@ pkgs.stdenv.mkDerivation {
   src = ./.; # Source is the current directory
 
   buildPhase = ''
-    echo "Rust build placeholder"
+    echo "Starting Rust build using x.py..."
+    python x.py build
   '';
 
   installPhase = ''
