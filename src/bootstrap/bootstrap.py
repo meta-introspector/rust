@@ -1,4 +1,6 @@
 from __future__ import absolute_import, division, print_function
+import json
+import os
 import argparse
 import contextlib
 import datetime
@@ -185,6 +187,33 @@ def unpack(tarball, tarball_suffix, dst, verbose=False, match=None):
 
 def run(args, verbose=False, exception=False, is_bootstrap=False, **kwargs):
     """Run a child program in a new process"""
+    dry_run_nix_json = os.environ.get("NIX_JSON_OUTPUT") == "1"
+    nix_output_dir = os.environ.get("NIX_OUTPUT_DIR")
+
+    if dry_run_nix_json:
+        eprint("DEBUG: NIX_JSON_OUTPUT is set. Emitting JSON without executing compiler.")
+        command_info = {
+            "command": args[0],
+            "args": args[1:],
+            "env": kwargs.get('env', os.environ.copy()),
+            "cwd": kwargs.get('cwd', os.getcwd()),
+            "type": "rust_compiler_invocation"
+        }
+        json_output = json.dumps(command_info)
+
+        if nix_output_dir:
+            # Generate a unique filename for the JSON output
+            output_filename = f"xpy_json_output_{int(time())}_{hashlib.sha256(json_output.encode()).hexdigest()[:8]}.json"
+            output_file_path = os.path.join(nix_output_dir, output_filename)
+            with open(output_file_path, 'w') as f:
+                f.write(json_output)
+            eprint(f"DEBUG: JSON output written to {output_file_path}")
+        else:
+            eprint("DEBUG: NIX_OUTPUT_DIR not specified, JSON not written to file.")
+        return 0 # Indicate success without actual execution
+
+    # Original execution logic if not in dry_run_nix_json mode
+    eprint("DEBUG: Entering run function, about to execute command.")
     if verbose:
         eprint("running: " + ' '.join(args))
     sys.stdout.flush()
@@ -545,6 +574,22 @@ class RustBuild(object):
         Each downloaded tarball is extracted, after that, the script
         will move all the content to the right place.
         """
+        # Check if Nix-provided rustc and cargo exist
+        nix_rustc_exists = os.path.exists(self.rustc())
+        nix_cargo_exists = os.path.exists(self.cargo())
+
+        # If Nix-provided tools exist, we don't need to download
+        need_rustc = not nix_rustc_exists
+        need_cargo = not nix_cargo_exists
+
+        if need_rustc or need_cargo:
+            eprint("INFO: Nix-provided rustc or cargo not found. Proceeding with downloads.")
+            # For now, we will raise an exception if downloads are attempted
+            raise Exception("Downloads are disabled in Nix environment. Ensure rustc and cargo are provided via config.toml.")
+        else:
+            eprint("INFO: Nix-provided rustc and cargo found. Skipping downloads.")
+            return # Skip the rest of the download_toolchain method
+
         rustc_channel = self.stage0_compiler.version
         bin_root = self.bin_root()
 
@@ -1105,10 +1150,18 @@ def parse_args(args):
     parser.add_argument('--json-output', action='store_true')
     parser.add_argument('--warnings', choices=['deny', 'warn', 'default'], default='default')
     parser.add_argument('-v', '--verbose', action='count', default=0)
+    parser.add_argument('--nix-json-output', action='store_true', help="Enable JSON output for Nix integration.")
+    parser.add_argument('--nix-output-dir', help="Directory to write Nix JSON output.")
 
     return parser.parse_known_args(args)[0]
 
 def parse_stage0_file(path):
+    # Check for RUST_SRC_STAGE0_PATH environment variable
+    stage0_path_from_env = os.environ.get("RUST_SRC_STAGE0_PATH")
+    if stage0_path_from_env:
+        path = stage0_path_from_env
+        eprint(f"INFO: Using stage0 file from RUST_SRC_STAGE0_PATH: {path}")
+
     result = {}
     with open(path, 'r') as file:
         for line in file:
@@ -1210,6 +1263,12 @@ def main():
         eprint(
             "INFO: Downloading and building bootstrap before processing --help command.\n"
             "      See src/bootstrap/README.md for help with common commands.")
+
+    # Set NIX_JSON_OUTPUT and NIX_OUTPUT_DIR environment variables
+    if args.nix_json_output:
+        os.environ["NIX_JSON_OUTPUT"] = "1"
+    if args.nix_output_dir:
+        os.environ["NIX_OUTPUT_DIR"] = args.nix_output_dir
 
     exit_code = 0
     success_word = "successfully"
