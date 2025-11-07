@@ -10,7 +10,8 @@ edition = "2021"
 
 [dependencies]
 core = { path = "../core" }
-compiler_builtins = { git = "https://github.com/anza-xyz/compiler-builtins", tag = "solana-tools-v1.51", features = ['rustc-dep-of-std'] }
+compiler_builtins = { path = "../../../vendor/rust/compiler-builtins", features = ['rustc-dep-of-std'], optional = true, default-features = false }
+
 
 [dev-dependencies]
 rand = { version = "0.8.5", default-features = false, features = ["alloc"] }
