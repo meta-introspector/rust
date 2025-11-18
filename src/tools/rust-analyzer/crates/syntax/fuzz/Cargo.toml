@@ -3,7 +3,7 @@ name = "syntax-fuzz"
 version = "0.0.1"
 publish = false
 edition = "2024"
-rust-version = "1.85"
+# rust-version = "1.85"
 
 [package.metadata]
 cargo-fuzz = true
@@ -14,7 +14,7 @@ text-edit = { path = "../../text-edit", version = "0.0.0" }
 libfuzzer-sys = "0.4.5"
 
 # Prevent this from interfering with workspaces
-[workspace]
+#[workspace]
 members = ["."]
 
 [[bin]]
