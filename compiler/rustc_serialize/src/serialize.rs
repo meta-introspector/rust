@@ -11,7 +11,7 @@ use std::rc::Rc;
 use std::sync::Arc;
 
 use rustc_hashes::{Hash64, Hash128};
-use smallvec::SmallVec;
+use smallvec::{Array, SmallVec};
 use thin_vec::ThinVec;
 
 /// A byte that [cannot occur in UTF8 sequences][utf8]. Used to mark the end of a string.
@@ -521,20 +521,14 @@ impl<D: Decoder, T: Decodable<D>> Decodable<D> for Box<T> {
     }
 }
 
-impl<S: Encoder, T, const N: usize> Encodable<S> for SmallVec<T, N>
-where
-    T: Encodable<S>,
-{
+impl<S: Encoder, A: Array<Item: Encodable<S>>> Encodable<S> for SmallVec<A> {
     fn encode(&self, s: &mut S) {
         self.as_slice().encode(s);
     }
 }
 
-impl<D: Decoder, T, const N: usize> Decodable<D> for SmallVec<T, N>
-where
-    T: Decodable<D>,
-{
-    fn decode(d: &mut D) -> SmallVec<T, N> {
+impl<D: Decoder, A: Array<Item: Decodable<D>>> Decodable<D> for SmallVec<A> {
+    fn decode(d: &mut D) -> SmallVec<A> {
         let len = d.read_usize();
         (0..len).map(|_| Decodable::decode(d)).collect()
     }
