@@ -810,8 +810,8 @@ impl WorkerThread {
         mut is_job: impl FnMut(&JobRef) -> bool,
         mut execute_job: impl FnMut(JobRef) -> (),
     ) {
-        let mut jobs = SmallVec::<JobRef, 8>::new();
-        let mut broadcast_jobs = SmallVec::<JobRef, 8>::new();
+        let mut jobs = SmallVec::<[JobRef; 8]>::new();
+        let mut broadcast_jobs = SmallVec::<[JobRef; 8]>::new();
 
         while !all_jobs_started() {
             if let Some(job) = self.worker.pop() {
