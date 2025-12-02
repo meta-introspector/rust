@@ -88,7 +88,7 @@ impl_dyn_send!(
     [indexmap::IndexSet<V, S> where V: DynSend, S: DynSend]
     [indexmap::IndexMap<K, V, S> where K: DynSend, V: DynSend, S: DynSend]
     [thin_vec::ThinVec<T> where T: DynSend]
-    // [smallvec::SmallVec<A> where A: smallvec::Array + DynSend]
+    // // [smallvec::SmallVec<A> where A: smallvec::Array + DynSend]
 );
 
 macro_rules! impls_dyn_sync_neg {
@@ -172,7 +172,7 @@ impl_dyn_sync!(
     [hashbrown::HashTable<T> where T: DynSync]
     [indexmap::IndexSet<V, S> where V: DynSync, S: DynSync]
     [indexmap::IndexMap<K, V, S> where K: DynSync, V: DynSync, S: DynSync]
-    // [smallvec::SmallVec<A> where A: smallvec::Array + DynSync]
+    // // [smallvec::SmallVec<A> where A: smallvec::Array + DynSync]
     [thin_vec::ThinVec<T> where T: DynSync]
 );
 

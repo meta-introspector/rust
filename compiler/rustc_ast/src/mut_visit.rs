@@ -310,14 +310,14 @@ generate_flat_map_visitor_fns! {
 pub fn walk_flat_map_pat_field<T: MutVisitor>(
     vis: &mut T,
     mut fp: PatField,
-) -> SmallVec<[PatField; 1]> {
+) -> SmallVec<PatField, 1> {
     vis.visit_pat_field(&mut fp);
     smallvec![fp]
 }
 
 macro_rules! generate_walk_flat_map_fns {
     ($($fn_name:ident($Ty:ty$(,$extra_name:ident: $ExtraTy:ty)*) => $visit_fn_name:ident;)+) => {$(
-        pub fn $fn_name<V: MutVisitor>(vis: &mut V, mut value: $Ty$(,$extra_name: $ExtraTy)*) -> SmallVec<[$Ty; 1]> {
+        pub fn $fn_name<V: MutVisitor>(vis: &mut V, mut value: $Ty$(,$extra_name: $ExtraTy)*) -> SmallVec<$Ty, 1> {
             vis.$visit_fn_name(&mut value$(,$extra_name)*);
             smallvec![value]
         }
@@ -345,9 +345,9 @@ pub fn walk_filter_map_expr<T: MutVisitor>(vis: &mut T, mut e: Box<Expr>) -> Opt
 pub fn walk_flat_map_stmt<T: MutVisitor>(
     vis: &mut T,
     Stmt { kind, span, mut id }: Stmt,
-) -> SmallVec<[Stmt; 1]> {
+) -> SmallVec<Stmt, 1> {
     vis.visit_id(&mut id);
-    let mut stmts: SmallVec<[Stmt; 1]> = walk_flat_map_stmt_kind(vis, kind)
+    let mut stmts: SmallVec<Stmt, 1> = walk_flat_map_stmt_kind(vis, kind)
         .into_iter()
         .map(|kind| Stmt { id, kind, span })
         .collect();
@@ -362,7 +362,7 @@ pub fn walk_flat_map_stmt<T: MutVisitor>(
     stmts
 }
 
-fn walk_flat_map_stmt_kind<T: MutVisitor>(vis: &mut T, kind: StmtKind) -> SmallVec<[StmtKind; 1]> {
+fn walk_flat_map_stmt_kind<T: MutVisitor>(vis: &mut T, kind: StmtKind) -> SmallVec<StmtKind, 1> {
     match kind {
         StmtKind::Let(mut local) => smallvec![StmtKind::Let({
             vis.visit_local(&mut local);
