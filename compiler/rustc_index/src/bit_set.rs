@@ -118,7 +118,7 @@ macro_rules! bit_relations_inherent_impls {
 #[derive(Eq, PartialEq, Hash)]
 pub struct DenseBitSet<T> {
     domain_size: usize,
-    words: SmallVec<[Word; 2]>,
+    words: SmallVec<Word, 2>,
     marker: PhantomData<T>,
 }
 
@@ -1442,7 +1442,7 @@ impl<T: Idx> From<DenseBitSet<T>> for GrowableBitSet<T> {
 pub struct BitMatrix<R: Idx, C: Idx> {
     num_rows: usize,
     num_columns: usize,
-    words: SmallVec<[Word; 2]>,
+    words: SmallVec<Word, 2>,
     marker: PhantomData<(R, C)>,
 }
 

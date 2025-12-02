@@ -1,6 +1,6 @@
 use std::{mem, ptr};
 
-use smallvec::{Array, SmallVec};
+use smallvec::SmallVec;
 use thin_vec::ThinVec;
 
 pub trait FlatMapInPlace<T>: Sized {
@@ -72,9 +72,9 @@ impl<T> FlatMapInPlace<T> for Vec<T> {
     flat_map_in_place!(Vec);
 }
 
-impl<T, A: Array<Item = T>> FlatMapInPlace<T> for SmallVec<A> {
-    flat_map_in_place!(SmallVec where T: Array);
-}
+// impl<T, A: Array<Item = T>> FlatMapInPlace<T> for SmallVec<A> {
+//     flat_map_in_place!(SmallVec where T: Array);
+// }
 
 impl<T> FlatMapInPlace<T> for ThinVec<T> {
     flat_map_in_place!(ThinVec);

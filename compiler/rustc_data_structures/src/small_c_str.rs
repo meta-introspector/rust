@@ -11,7 +11,7 @@ const SIZE: usize = 36;
 /// Like SmallVec but for C strings.
 #[derive(Clone)]
 pub struct SmallCStr {
-    data: SmallVec<[u8; SIZE]>,
+    data: SmallVec<u8, SIZE>,
 }
 
 impl SmallCStr {
@@ -41,7 +41,7 @@ impl SmallCStr {
         if let Err(e) = ffi::CStr::from_bytes_with_nul(b) {
             panic!("The string \"{s}\" cannot be converted into a CStr: {e}");
         }
-        SmallCStr { data: SmallVec::from_slice(s.as_bytes()) }
+        SmallCStr { data: SmallVec::from_slice_copy(s.as_bytes()) }
     }
 
     #[inline]
@@ -71,7 +71,7 @@ impl Deref for SmallCStr {
 impl<'a> FromIterator<&'a str> for SmallCStr {
     fn from_iter<T: IntoIterator<Item = &'a str>>(iter: T) -> Self {
         let mut data =
-            iter.into_iter().flat_map(|s| s.as_bytes()).copied().collect::<SmallVec<_>>();
+            iter.into_iter().flat_map(|s| s.as_bytes()).copied().collect::<SmallVec<u8, SIZE>>();
         data.push(0);
         if let Err(e) = ffi::CStr::from_bytes_with_nul(&data) {
             panic!("The iterator {data:?} cannot be converted into a CStr: {e}");
@@ -82,6 +82,6 @@ impl<'a> FromIterator<&'a str> for SmallCStr {
 
 impl From<&ffi::CStr> for SmallCStr {
     fn from(s: &ffi::CStr) -> Self {
-        Self { data: SmallVec::from_slice(s.to_bytes_with_nul()) }
+        Self { data: SmallVec::from_slice_copy(s.to_bytes_with_nul()) }
     }
 }

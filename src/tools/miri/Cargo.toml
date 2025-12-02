@@ -20,9 +20,9 @@ doctest = false # and no doc tests
 [dependencies]
 getrandom = { version = "0.3", features = ["std"] }
 rand = "0.9"
-smallvec = { version = "1.7", features = ["drain_filter"] }
+smallvec = { workspace = true }
 aes = { version = "0.8.3", features = ["hazmat"] }
-measureme = "12"
+measureme.workspace = true
 chrono = { version = "0.4.38", default-features = false }
 chrono-tz = "0.10"
 directories = "6"

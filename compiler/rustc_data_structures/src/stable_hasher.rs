@@ -363,7 +363,7 @@ where
     }
 }
 
-impl<A, const N: usize, CTX> HashStable<CTX> for SmallVec<[A; N]>
+impl<A, const N: usize, CTX> HashStable<CTX> for SmallVec<A, N>
 where
     A: HashStable<CTX>,
 {
