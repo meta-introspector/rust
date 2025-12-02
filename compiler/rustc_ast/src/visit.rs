@@ -676,15 +676,15 @@ macro_rules! common_visitor_and_walkers {
                     // Do nothing.
                 }
 
-                fn flat_map_foreign_item(&mut self, ni: Box<ForeignItem>) -> SmallVec<[Box<ForeignItem>; 1]> {
+                fn flat_map_foreign_item(&mut self, ni: Box<ForeignItem>) -> SmallVec<Box<ForeignItem>, 1> {
                     walk_flat_map_foreign_item(self, ni)
                 }
 
-                fn flat_map_item(&mut self, i: Box<Item>) -> SmallVec<[Box<Item>; 1]> {
+                fn flat_map_item(&mut self, i: Box<Item>) -> SmallVec<Box<Item>, 1> {
                     walk_flat_map_item(self, i)
                 }
 
-                fn flat_map_field_def(&mut self, fd: FieldDef) -> SmallVec<[FieldDef; 1]> {
+                fn flat_map_field_def(&mut self, fd: FieldDef) -> SmallVec<FieldDef, 1> {
                     walk_flat_map_field_def(self, fd)
                 }
 

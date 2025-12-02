@@ -793,14 +793,14 @@ pub trait AttributeExt: Debug {
 
     fn is_word(&self) -> bool;
 
-    fn path(&self) -> SmallVec<[Symbol; 1]> {
+    fn path(&self) -> SmallVec<Symbol, 1> {
         self.ident_path()
             .map(|i| i.into_iter().map(|i| i.name).collect())
             .unwrap_or(smallvec![sym::doc])
     }
 
     /// Returns None for doc comments
-    fn ident_path(&self) -> Option<SmallVec<[Ident; 1]>>;
+    fn ident_path(&self) -> Option<SmallVec<Ident, 1>>;
 
     /// Returns the documentation if this is a doc comment or a sugared doc comment.
     /// * `///doc` returns `Some("doc")`.
@@ -886,11 +886,11 @@ impl Attribute {
         AttributeExt::is_word(self)
     }
 
-    pub fn path(&self) -> SmallVec<[Symbol; 1]> {
+    pub fn path(&self) -> SmallVec<Symbol, 1> {
         AttributeExt::path(self)
     }
 
-    pub fn ident_path(&self) -> Option<SmallVec<[Ident; 1]>> {
+    pub fn ident_path(&self) -> Option<SmallVec<Ident, 1>> {
         AttributeExt::ident_path(self)
     }
 
