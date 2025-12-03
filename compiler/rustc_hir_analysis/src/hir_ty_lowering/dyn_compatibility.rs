@@ -396,7 +396,7 @@ impl<'tcx> dyn HirTyLowerer<'tcx> + '_ {
             .into_iter()
             .chain(existential_projections)
             .chain(auto_trait_predicates)
-            .collect::<SmallVec<[_; 8]>>();
+            .collect::<SmallVec<_, 8>>();
         v.sort_by(|a, b| a.skip_binder().stable_cmp(tcx, &b.skip_binder()));
         let existential_predicates = tcx.mk_poly_existential_predicates(&v);
 

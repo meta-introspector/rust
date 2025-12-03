@@ -232,7 +232,7 @@ fn push_debuginfo_type_name<'tcx>(
             }
         }
         ty::Dynamic(trait_data, ..) => {
-            let auto_traits: SmallVec<[DefId; 4]> = trait_data.auto_traits().collect();
+            let auto_traits: SmallVec<DefId, 4> = trait_data.auto_traits().collect();
 
             let has_enclosing_parens = if cpp_like_debuginfo {
                 output.push_str("dyn$<");
@@ -255,7 +255,7 @@ fn push_debuginfo_type_name<'tcx>(
                 let principal_has_generic_params =
                     push_generic_params_internal(tcx, principal.args, output, visited);
 
-                let projection_bounds: SmallVec<[_; 4]> = trait_data
+                let projection_bounds: SmallVec<_, 4> = trait_data
                     .projection_bounds()
                     .map(|bound| {
                         let ExistentialProjection { def_id: item_def_id, term, .. } =
@@ -304,7 +304,7 @@ fn push_debuginfo_type_name<'tcx>(
             }
 
             if auto_traits.len() != 0 {
-                let mut auto_traits: SmallVec<[String; 4]> = auto_traits
+                let mut auto_traits: SmallVec<String, 4> = auto_traits
                     .into_iter()
                     .map(|def_id| {
                         let mut name = String::with_capacity(20);

@@ -309,7 +309,7 @@ pub fn check_tied_features(
 pub fn flag_to_backend_features<'a, const N: usize>(
     sess: &'a Session,
     diagnostics: bool,
-    to_backend_features: impl Fn(&'a str) -> SmallVec<[&'a str; N]>,
+    to_backend_features: impl Fn(&'a str) -> SmallVec<&'a str, N>,
     mut extend_backend_features: impl FnMut(&'a str, /* enable */ bool),
 ) {
     let known_features = sess.target.rust_target_features();

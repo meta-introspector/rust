@@ -40,7 +40,7 @@ struct TranscrCtx<'psess, 'itp> {
     /// We descend into the RHS (`src`), expanding things as we go. This stack contains the things
     /// we have yet to expand/are still expanding. We start the stack off with the whole RHS. The
     /// choice of spacing values doesn't matter.
-    stack: SmallVec<[Frame<'itp>; 1]>,
+    stack: SmallVec<Frame<'itp>, 1>,
 
     /// A stack of where we are in the repeat expansion.
     ///

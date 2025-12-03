@@ -107,7 +107,7 @@ impl AttributeExt for Attribute {
         }
     }
 
-    fn ident_path(&self) -> Option<SmallVec<[Ident; 1]>> {
+    fn ident_path(&self) -> Option<SmallVec<Ident, 1>> {
         match &self.kind {
             AttrKind::Normal(p) => Some(p.item.path.segments.iter().map(|i| i.ident).collect()),
             AttrKind::DocComment(_, _) => None,

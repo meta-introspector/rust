@@ -136,7 +136,7 @@ struct ExpressionOnlySourceMap {
     label_map_back: ArenaMap<LabelId, LabelSource>,
 
     binding_definitions:
-        ArenaMap<BindingId, SmallVec<[PatId; 2 * size_of::<usize>() / size_of::<PatId>()]>>,
+        ArenaMap<BindingId, SmallVec<PatId, 2 * size_of::<usize>() / size_of::<PatId>()>>,
 
     /// We don't create explicit nodes for record fields (`S { record_field: 92 }`).
     /// Instead, we use id of expression (`92`) to identify the field.
@@ -245,7 +245,7 @@ pub struct ExpressionStoreBuilder {
     lifetime_map: FxHashMap<LifetimeSource, LifetimeRefId>,
 
     binding_definitions:
-        ArenaMap<BindingId, SmallVec<[PatId; 2 * size_of::<usize>() / size_of::<PatId>()]>>,
+        ArenaMap<BindingId, SmallVec<PatId, 2 * size_of::<usize>() / size_of::<PatId>()>>,
 
     /// We don't create explicit nodes for record fields (`S { record_field: 92 }`).
     /// Instead, we use id of expression (`92`) to identify the field.

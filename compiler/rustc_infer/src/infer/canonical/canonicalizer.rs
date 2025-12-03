@@ -289,7 +289,7 @@ struct Canonicalizer<'cx, 'tcx> {
     /// Set to `None` to disable the resolution of inference variables.
     infcx: Option<&'cx InferCtxt<'tcx>>,
     tcx: TyCtxt<'tcx>,
-    variables: SmallVec<[CanonicalVarKind<'tcx>; 8]>,
+    variables: SmallVec<CanonicalVarKind<'tcx>, 8>,
     query_state: &'cx mut OriginalQueryValues<'tcx>,
     // Note that indices is only used once `var_values` is big enough to be
     // heap-allocated.
@@ -677,7 +677,7 @@ impl<'cx, 'tcx> Canonicalizer<'cx, 'tcx> {
     /// Replaces the universe indexes used in `var_values` with their index in
     /// `query_state.universe_map`. This minimizes the maximum universe used in
     /// the canonicalized value.
-    fn universe_canonicalized_variables(self) -> SmallVec<[CanonicalVarKind<'tcx>; 8]> {
+    fn universe_canonicalized_variables(self) -> SmallVec<CanonicalVarKind<'tcx>, 8> {
         if self.query_state.universe_map.len() == 1 {
             return self.variables;
         }

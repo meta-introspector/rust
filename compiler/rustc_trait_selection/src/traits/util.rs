@@ -36,7 +36,7 @@ pub fn expand_trait_aliases<'tcx>(
     tcx: TyCtxt<'tcx>,
     clauses: impl IntoIterator<Item = (ty::Clause<'tcx>, Span)>,
 ) -> (
-    Vec<(ty::PolyTraitPredicate<'tcx>, SmallVec<[Span; 1]>)>,
+    Vec<(ty::PolyTraitPredicate<'tcx>, SmallVec<Span, 1>)>,
     Vec<(ty::PolyProjectionPredicate<'tcx>, Span)>,
 ) {
     let mut trait_preds = vec![];

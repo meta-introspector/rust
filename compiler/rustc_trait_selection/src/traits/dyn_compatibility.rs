@@ -132,7 +132,7 @@ fn sized_trait_bound_spans<'tcx>(
     })
 }
 
-fn get_sized_bounds(tcx: TyCtxt<'_>, trait_def_id: DefId) -> SmallVec<[Span; 1]> {
+fn get_sized_bounds(tcx: TyCtxt<'_>, trait_def_id: DefId) -> SmallVec<Span, 1> {
     tcx.hir_get_if_local(trait_def_id)
         .and_then(|node| match node {
             hir::Node::Item(hir::Item {
@@ -157,7 +157,7 @@ fn get_sized_bounds(tcx: TyCtxt<'_>, trait_def_id: DefId) -> SmallVec<[Span; 1]>
                     .flatten()
                     // Fetch spans for supertraits that are `Sized`: `trait T: Super`.
                     .chain(sized_trait_bound_spans(tcx, bounds))
-                    .collect::<SmallVec<[Span; 1]>>(),
+                    .collect::<SmallVec<Span, 1>>(),
             ),
             _ => None,
         })
@@ -168,7 +168,7 @@ fn predicates_reference_self(
     tcx: TyCtxt<'_>,
     trait_def_id: DefId,
     supertraits_only: bool,
-) -> SmallVec<[Span; 1]> {
+) -> SmallVec<Span, 1> {
     let trait_ref = ty::Binder::dummy(ty::TraitRef::identity(tcx, trait_def_id));
     let predicates = if supertraits_only {
         tcx.explicit_super_predicates_of(trait_def_id).skip_binder()
@@ -188,7 +188,7 @@ fn predicates_reference_self(
         .collect()
 }
 
-fn bounds_reference_self(tcx: TyCtxt<'_>, trait_def_id: DefId) -> SmallVec<[Span; 1]> {
+fn bounds_reference_self(tcx: TyCtxt<'_>, trait_def_id: DefId) -> SmallVec<Span, 1> {
     tcx.associated_items(trait_def_id)
         .in_definition_order()
         // We're only looking at associated type bounds
@@ -250,7 +250,7 @@ fn predicate_references_self<'tcx>(
 fn super_predicates_have_non_lifetime_binders(
     tcx: TyCtxt<'_>,
     trait_def_id: DefId,
-) -> SmallVec<[Span; 1]> {
+) -> SmallVec<Span, 1> {
     tcx.explicit_super_predicates_of(trait_def_id)
         .iter_identity_copied()
         .filter_map(|(pred, span)| pred.has_non_region_bound_vars().then_some(span))
@@ -263,7 +263,7 @@ fn super_predicates_have_non_lifetime_binders(
 fn super_predicates_are_unconditionally_const(
     tcx: TyCtxt<'_>,
     trait_def_id: DefId,
-) -> SmallVec<[Span; 1]> {
+) -> SmallVec<Span, 1> {
     tcx.explicit_super_predicates_of(trait_def_id)
         .iter_identity_copied()
         .filter_map(|(pred, span)| {

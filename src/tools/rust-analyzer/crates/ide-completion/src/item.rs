@@ -82,7 +82,7 @@ pub struct CompletionItem {
     pub ref_match: Option<(CompletionItemRefMode, TextSize)>,
 
     /// The import data to add to completion's edits.
-    pub import_to_add: SmallVec<[String; 1]>,
+    pub import_to_add: SmallVec<String, 1>,
 }
 
 #[derive(Clone, PartialEq, Eq, PartialOrd, Ord)]
@@ -481,7 +481,7 @@ impl CompletionItem {
 #[derive(Clone)]
 pub(crate) struct Builder {
     source_range: TextRange,
-    imports_to_add: SmallVec<[LocatedImport; 1]>,
+    imports_to_add: SmallVec<LocatedImport, 1>,
     trait_name: Option<SmolStr>,
     doc_aliases: Vec<SmolStr>,
     label: SmolStr,

@@ -21,9 +21,9 @@ fn err_sb_ub<'tcx>(
 pub struct AllocHistory {
     id: AllocId,
     root: (Item, Span),
-    creations: smallvec::SmallVec<[Creation; 1]>,
-    invalidations: smallvec::SmallVec<[Invalidation; 1]>,
-    protectors: smallvec::SmallVec<[Protection; 1]>,
+    creations: smallvec::SmallVec<Creation, 1>,
+    invalidations: smallvec::SmallVec<Invalidation, 1>,
+    protectors: smallvec::SmallVec<Protection, 1>,
 }
 
 #[derive(Clone, Debug)]

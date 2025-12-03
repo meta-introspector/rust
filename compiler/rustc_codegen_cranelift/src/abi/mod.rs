@@ -593,7 +593,7 @@ pub(crate) fn codegen_terminator_call<'tcx>(
             with_no_trimmed_paths!(fx.add_comment(call_inst, format!("abi: {:?}", fn_abi)));
         }
 
-        fx.bcx.func.dfg.inst_results(call_inst).iter().copied().collect::<SmallVec<[Value; 2]>>()
+        fx.bcx.func.dfg.inst_results(call_inst).iter().copied().collect::<SmallVec<Value, 2>>()
     });
 
     if let Some(dest) = target {

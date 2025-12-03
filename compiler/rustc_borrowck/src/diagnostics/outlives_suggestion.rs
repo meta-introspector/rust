@@ -18,7 +18,7 @@ use crate::MirBorrowckCtxt;
 /// The different things we could suggest.
 enum SuggestedConstraint {
     /// Outlives(a, [b, c, d, ...]) => 'a: 'b + 'c + 'd + ...
-    Outlives(RegionName, SmallVec<[RegionName; 2]>),
+    Outlives(RegionName, SmallVec<RegionName, 2>),
 
     /// 'a = 'b
     Equal(RegionName, RegionName),
@@ -86,7 +86,7 @@ impl OutlivesSuggestionBuilder {
     fn compile_all_suggestions(
         &self,
         mbcx: &MirBorrowckCtxt<'_, '_, '_>,
-    ) -> SmallVec<[SuggestedConstraint; 2]> {
+    ) -> SmallVec<SuggestedConstraint, 2> {
         let mut suggested = SmallVec::new();
 
         // Keep track of variables that we have already suggested unifying so that we don't print
@@ -210,7 +210,7 @@ impl OutlivesSuggestionBuilder {
         let mut diag = if let [constraint] = suggested.as_slice() {
             mbcx.dcx().struct_help(match constraint {
                 SuggestedConstraint::Outlives(a, bs) => {
-                    let bs: SmallVec<[String; 2]> = bs.iter().map(|r| r.to_string()).collect();
+                    let bs: SmallVec<String, 2> = bs.iter().map(|r| r.to_string()).collect();
                     format!("add bound `{a}: {}`", bs.join(" + "))
                 }
 
@@ -231,7 +231,7 @@ impl OutlivesSuggestionBuilder {
             for constraint in suggested {
                 match constraint {
                     SuggestedConstraint::Outlives(a, bs) => {
-                        let bs: SmallVec<[String; 2]> = bs.iter().map(|r| r.to_string()).collect();
+                        let bs: SmallVec<String, 2> = bs.iter().map(|r| r.to_string()).collect();
                         diag.help(format!("add bound `{a}: {}`", bs.join(" + ")));
                     }
                     SuggestedConstraint::Equal(a, b) => {

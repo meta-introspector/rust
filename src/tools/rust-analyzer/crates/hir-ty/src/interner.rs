@@ -37,7 +37,7 @@ impl<T> std::ops::Deref for InternedWrapper<T> {
 
 impl_internable!(
     InternedWrapper<Vec<VariableKind>>,
-    InternedWrapper<SmallVec<[GenericArg; 2]>>,
+    InternedWrapper<SmallVec<GenericArg, 2>>,
     InternedWrapper<TyData>,
     InternedWrapper<LifetimeData>,
     InternedWrapper<ConstData>,
@@ -45,7 +45,7 @@ impl_internable!(
     InternedWrapper<Vec<CanonicalVarKind>>,
     InternedWrapper<Box<[ProgramClause]>>,
     InternedWrapper<Vec<QuantifiedWhereClause>>,
-    InternedWrapper<SmallVec<[Variance; 16]>>,
+    InternedWrapper<SmallVec<Variance, 16>>,
 );
 
 impl chalk_ir::interner::Interner for Interner {
@@ -59,14 +59,14 @@ impl chalk_ir::interner::Interner for Interner {
     // type InternedGoal = Interned<InternedWrapper<GoalData>>;
     type InternedGoal = Arc<GoalData>;
     type InternedGoals = Vec<Goal>;
-    type InternedSubstitution = Interned<InternedWrapper<SmallVec<[GenericArg; 2]>>>;
+    type InternedSubstitution = Interned<InternedWrapper<SmallVec<GenericArg, 2>>>;
     type InternedProgramClauses = Interned<InternedWrapper<Box<[ProgramClause]>>>;
     type InternedProgramClause = ProgramClauseData;
     type InternedQuantifiedWhereClauses = Interned<InternedWrapper<Vec<QuantifiedWhereClause>>>;
     type InternedVariableKinds = Interned<InternedWrapper<Vec<VariableKind>>>;
     type InternedCanonicalVarKinds = Interned<InternedWrapper<Vec<CanonicalVarKind>>>;
     type InternedConstraints = Vec<InEnvironment<Constraint>>;
-    type InternedVariances = SmallVec<[Variance; 16]>;
+    type InternedVariances = SmallVec<Variance, 16>;
     type DefId = salsa::Id;
     type InternedAdtId = hir_def::AdtId;
     type Identifier = TypeAliasId;

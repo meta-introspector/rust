@@ -136,7 +136,7 @@ pub(crate) struct FullCx<'ll, 'tcx> {
     pub rust_try_fn: Cell<Option<(&'ll Type, &'ll Value)>>,
 
     intrinsics:
-        RefCell<FxHashMap<(Cow<'static, str>, SmallVec<[&'ll Type; 2]>), (&'ll Type, &'ll Value)>>,
+        RefCell<FxHashMap<(Cow<'static, str>, SmallVec<&'ll Type, 2>), (&'ll Type, &'ll Value)>>,
 
     /// A counter that is used for generating local symbol names
     local_gen_sym_counter: Cell<usize>,

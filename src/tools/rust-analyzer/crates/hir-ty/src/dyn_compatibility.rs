@@ -258,7 +258,7 @@ fn contains_illegal_self_type_reference<T: TypeVisitable<Interner>>(
     struct IllegalSelfTypeVisitor<'a> {
         db: &'a dyn HirDatabase,
         trait_: TraitId,
-        super_traits: Option<SmallVec<[TraitId; 4]>>,
+        super_traits: Option<SmallVec<TraitId, 4>>,
         trait_self_param_idx: usize,
         allow_self_projection: AllowSelfProjection,
     }

@@ -323,10 +323,10 @@ impl FromInternal<(TokenStream, &mut Rustc<'_, '_>)> for Vec<TokenTree<TokenStre
 }
 
 // We use a `SmallVec` because the output size is always one or two `TokenTree`s.
-impl ToInternal<SmallVec<[tokenstream::TokenTree; 2]>>
+impl ToInternal<SmallVec<tokenstream::TokenTree, 2>>
     for (TokenTree<TokenStream, Span, Symbol>, &mut Rustc<'_, '_>)
 {
-    fn to_internal(self) -> SmallVec<[tokenstream::TokenTree; 2]> {
+    fn to_internal(self) -> SmallVec<tokenstream::TokenTree, 2> {
         use rustc_ast::token::*;
 
         // The code below is conservative, using `token_alone`/`Spacing::Alone`

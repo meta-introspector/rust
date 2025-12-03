@@ -56,14 +56,14 @@ pub enum Component<I: Interner> {
 pub fn push_outlives_components<I: Interner>(
     cx: I,
     ty: I::Ty,
-    out: &mut SmallVec<[Component<I>; 4]>,
+    out: &mut SmallVec<Component<I>, 4>,
 ) {
     ty.visit_with(&mut OutlivesCollector { cx, out, visited: Default::default() });
 }
 
 struct OutlivesCollector<'a, I: Interner> {
     cx: I,
-    out: &'a mut SmallVec<[Component<I>; 4]>,
+    out: &'a mut SmallVec<Component<I>, 4>,
     visited: SsoHashSet<I::Ty>,
 }
 
@@ -225,7 +225,7 @@ pub fn compute_alias_components_recursive<I: Interner>(
     cx: I,
     kind: ty::AliasTyKind,
     alias_ty: ty::AliasTy<I>,
-    out: &mut SmallVec<[Component<I>; 4]>,
+    out: &mut SmallVec<Component<I>, 4>,
 ) {
     let opt_variances = cx.opt_alias_variances(kind, alias_ty.def_id);
 

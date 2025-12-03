@@ -198,7 +198,7 @@ impl<T> TypedArena<T> {
 
     /// Allocates the elements of this iterator into a contiguous slice in the `TypedArena`.
     ///
-    /// Note: for reasons of reentrancy and panic safety we collect into a `SmallVec<[_; 8]>` before
+    /// Note: for reasons of reentrancy and panic safety we collect into a `SmallVec<_, 8>` before
     /// storing the elements in the arena.
     #[inline]
     pub fn alloc_from_iter<I: IntoIterator<Item = T>>(&self, iter: I) -> &mut [T] {
@@ -207,7 +207,7 @@ impl<T> TypedArena<T> {
 
     /// Allocates the elements of this iterator into a contiguous slice in the `TypedArena`.
     ///
-    /// Note: for reasons of reentrancy and panic safety we collect into a `SmallVec<[_; 8]>` before
+    /// Note: for reasons of reentrancy and panic safety we collect into a `SmallVec<_, 8>` before
     /// storing the elements in the arena.
     #[inline]
     pub fn try_alloc_from_iter<E>(

@@ -1958,7 +1958,7 @@ impl<'ra, 'tcx> Resolver<'ra, 'tcx> {
         &mut self,
         mut kind: &NameBindingKind<'_>,
         trait_name: Ident,
-    ) -> SmallVec<[LocalDefId; 1]> {
+    ) -> SmallVec<LocalDefId, 1> {
         let mut import_ids = smallvec![];
         while let NameBindingKind::Import { import, binding, .. } = kind {
             if let Some(node_id) = import.id() {

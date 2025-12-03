@@ -20,7 +20,7 @@ use syntax::{AstNode, ast};
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub struct ModPath {
     pub kind: PathKind,
-    segments: SmallVec<[Name; 1]>,
+    segments: SmallVec<Name, 1>,
 }
 
 #[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]

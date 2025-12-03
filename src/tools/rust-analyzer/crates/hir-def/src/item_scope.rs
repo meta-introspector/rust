@@ -183,14 +183,14 @@ pub struct ItemScope {
     /// Module scoped macros will be inserted into `items` instead of here.
     // FIXME: Macro shadowing in one module is not properly handled. Non-item place macros will
     // be all resolved to the last one defined if shadowing happens.
-    legacy_macros: FxHashMap<Name, SmallVec<[MacroId; 2]>>,
+    legacy_macros: FxHashMap<Name, SmallVec<MacroId, 2>>,
     /// The attribute macro invocations in this scope.
     attr_macros: FxHashMap<AstId<ast::Item>, MacroCallId>,
     /// The macro invocations in this scope.
     macro_invocations: FxHashMap<AstId<ast::MacroCall>, MacroCallId>,
     /// The derive macro invocations in this scope, keyed by the owner item over the actual derive attributes
     /// paired with the derive macro invocations for the specific attribute.
-    derive_macros: FxHashMap<AstId<ast::Adt>, SmallVec<[DeriveMacroInvocation; 1]>>,
+    derive_macros: FxHashMap<AstId<ast::Adt>, SmallVec<DeriveMacroInvocation, 1>>,
 }
 
 #[derive(Debug, PartialEq, Eq)]
@@ -198,7 +198,7 @@ struct DeriveMacroInvocation {
     attr_id: AttrId,
     /// The `#[derive]` call
     attr_call_id: MacroCallId,
-    derive_call_ids: SmallVec<[Option<MacroCallId>; 4]>,
+    derive_call_ids: SmallVec<Option<MacroCallId>, 4>,
 }
 
 pub(crate) static BUILTIN_SCOPE: LazyLock<FxIndexMap<Name, PerNs>> = LazyLock::new(|| {

@@ -224,7 +224,7 @@ pub trait HirDatabase: DefDatabase + std::fmt::Debug {
         &self,
         krate: Crate,
         fp: TyFingerprint,
-    ) -> SmallVec<[Crate; 2]>;
+    ) -> SmallVec<Crate, 2>;
 
     #[salsa::invoke(TraitImpls::trait_impls_in_crate_query)]
     fn trait_impls_in_crate(&self, krate: Crate) -> Arc<TraitImpls>;

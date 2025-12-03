@@ -1006,7 +1006,7 @@ pub enum BackwardIncompatibleDropReason {
 pub struct SwitchTargets {
     /// Possible values. For each value, the location to branch to is found in
     /// the corresponding element in the `targets` vector.
-    pub(super) values: SmallVec<[Pu128; 1]>,
+    pub(super) values: SmallVec<Pu128, 1>,
 
     /// Possible branch targets. The last element of this vector is used for
     /// the "otherwise" branch, so `targets.len() == values.len() + 1` always
@@ -1015,7 +1015,7 @@ pub struct SwitchTargets {
     // Note: This invariant is non-obvious and easy to violate. This would be a
     // more rigorous representation:
     //
-    //   normal: SmallVec<[(Pu128, BasicBlock); 1]>,
+    //   normal: SmallVec<(Pu128, BasicBlock), 1>,
     //   otherwise: BasicBlock,
     //
     // But it's important to have the targets in a sliceable type, because
@@ -1028,7 +1028,7 @@ pub struct SwitchTargets {
     // causes problems because multiple different concrete iterator types would
     // be involved and we would need a boxed trait object, which requires an
     // allocation, which is expensive if done frequently.
-    pub(super) targets: SmallVec<[BasicBlock; 2]>,
+    pub(super) targets: SmallVec<BasicBlock, 2>,
 }
 
 /// Action to be taken when a stack unwind happens.

@@ -1478,7 +1478,7 @@ impl<'tcx> Ty<'tcx> {
 pub fn needs_drop_components<'tcx>(
     tcx: TyCtxt<'tcx>,
     ty: Ty<'tcx>,
-) -> Result<SmallVec<[Ty<'tcx>; 2]>, AlwaysRequiresDrop> {
+) -> Result<SmallVec<Ty<'tcx>, 2>, AlwaysRequiresDrop> {
     needs_drop_components_with_async(tcx, ty, Asyncness::No)
 }
 
@@ -1489,7 +1489,7 @@ pub fn needs_drop_components_with_async<'tcx>(
     tcx: TyCtxt<'tcx>,
     ty: Ty<'tcx>,
     asyncness: Asyncness,
-) -> Result<SmallVec<[Ty<'tcx>; 2]>, AlwaysRequiresDrop> {
+) -> Result<SmallVec<Ty<'tcx>, 2>, AlwaysRequiresDrop> {
     match *ty.kind() {
         ty::Infer(ty::FreshIntTy(_))
         | ty::Infer(ty::FreshFloatTy(_))
@@ -1556,7 +1556,7 @@ pub fn needs_drop_components_with_async<'tcx>(
 
 /// Does the equivalent of
 /// ```ignore (illustrative)
-/// let v = self.iter().map(|p| p.fold_with(folder)).collect::<SmallVec<[_; 8]>>();
+/// let v = self.iter().map(|p| p.fold_with(folder)).collect::<SmallVec<_, 8>>();
 /// folder.tcx().intern_*(&v)
 /// ```
 pub fn fold_list<'tcx, F, L, T>(
@@ -1578,7 +1578,7 @@ where
     }) {
         Some((i, new_t)) => {
             // An element changed, prepare to intern the resulting list
-            let mut new_list = SmallVec::<[_; 8]>::with_capacity(slice.len());
+            let mut new_list = SmallVec::<T, 8>::with_capacity(slice.len());
             new_list.extend_from_slice(&slice[..i]);
             new_list.push(new_t);
             for t in iter {
@@ -1592,7 +1592,7 @@ where
 
 /// Does the equivalent of
 /// ```ignore (illustrative)
-/// let v = self.iter().map(|p| p.try_fold_with(folder)).collect::<SmallVec<[_; 8]>>();
+/// let v = self.iter().map(|p| p.try_fold_with(folder)).collect::<SmallVec<_, 8>>();
 /// folder.tcx().intern_*(&v)
 /// ```
 pub fn try_fold_list<'tcx, F, L, T>(
@@ -1614,7 +1614,7 @@ where
     }) {
         Some((i, Ok(new_t))) => {
             // An element changed, prepare to intern the resulting list
-            let mut new_list = SmallVec::<[_; 8]>::with_capacity(slice.len());
+            let mut new_list = SmallVec::<T, 8>::with_capacity(slice.len());
             new_list.extend_from_slice(&slice[..i]);
             new_list.push(new_t);
             for t in iter {

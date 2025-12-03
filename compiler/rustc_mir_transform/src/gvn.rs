@@ -222,7 +222,7 @@ struct VnState<'body, 'tcx> {
     locals: IndexVec<Local, Option<VnIndex>>,
     /// Locals that are assigned that value.
     // This vector does not hold all the values of `VnIndex` that we create.
-    rev_locals: IndexVec<VnIndex, SmallVec<[Local; 1]>>,
+    rev_locals: IndexVec<VnIndex, SmallVec<Local, 1>>,
     values: FxIndexSet<(Value<'tcx>, Ty<'tcx>)>,
     /// Values evaluated as constants if possible.
     evaluated: IndexVec<VnIndex, Option<OpTy<'tcx>>>,

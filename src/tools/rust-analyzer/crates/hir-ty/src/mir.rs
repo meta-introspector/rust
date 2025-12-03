@@ -365,7 +365,7 @@ pub enum AggregateKind {
 pub struct SwitchTargets {
     /// Possible values. The locations to branch to in each case
     /// are found in the corresponding indices from the `targets` vector.
-    values: SmallVec<[u128; 1]>,
+    values: SmallVec<u128, 1>,
 
     /// Possible branch sites. The last element of this vector is used
     /// for the otherwise branch, so targets.len() == values.len() + 1
@@ -379,7 +379,7 @@ pub struct SwitchTargets {
     //
     // However we’ve decided to keep this as-is until we figure a case
     // where some other approach seems to be strictly better than other.
-    targets: SmallVec<[BasicBlockId; 2]>,
+    targets: SmallVec<BasicBlockId, 2>,
 }
 
 impl SwitchTargets {

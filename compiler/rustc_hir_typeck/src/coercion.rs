@@ -651,7 +651,7 @@ impl<'f, 'tcx> Coerce<'f, 'tcx> {
         // and almost never more than 3. By using a SmallVec we avoid an
         // allocation, at the (very small) cost of (occasionally) having to
         // shift subsequent elements down when removing the front element.
-        let mut queue: SmallVec<[PredicateObligation<'tcx>; 4]> = smallvec![Obligation::new(
+        let mut queue: SmallVec<PredicateObligation<'tcx>, 4> = smallvec![Obligation::new(
             self.tcx,
             cause,
             self.fcx.param_env,

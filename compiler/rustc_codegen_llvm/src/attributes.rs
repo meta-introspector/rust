@@ -65,7 +65,7 @@ pub(crate) fn inline_attr<'ll, 'tcx>(
 fn patchable_function_entry_attrs<'ll>(
     cx: &CodegenCx<'ll, '_>,
     attr: Option<PatchableFunctionEntry>,
-) -> SmallVec<[&'ll Attribute; 2]> {
+) -> SmallVec<&'ll Attribute, 2> {
     let mut attrs = SmallVec::new();
     let patchable_spec = attr.unwrap_or_else(|| {
         PatchableFunctionEntry::from_config(cx.tcx.sess.opts.unstable_opts.patchable_function_entry)
@@ -94,7 +94,7 @@ fn patchable_function_entry_attrs<'ll>(
 pub(crate) fn sanitize_attrs<'ll>(
     cx: &CodegenCx<'ll, '_>,
     no_sanitize: SanitizerSet,
-) -> SmallVec<[&'ll Attribute; 4]> {
+) -> SmallVec<&'ll Attribute, 4> {
     let mut attrs = SmallVec::new();
     let enabled = cx.tcx.sess.opts.unstable_opts.sanitizer - no_sanitize;
     if enabled.contains(SanitizerSet::ADDRESS) || enabled.contains(SanitizerSet::KERNELADDRESS) {
@@ -167,7 +167,7 @@ fn function_return_attr<'ll>(cx: &CodegenCx<'ll, '_>) -> Option<&'ll Attribute> 
 
 /// Tell LLVM what instrument function to insert.
 #[inline]
-fn instrument_function_attr<'ll>(cx: &CodegenCx<'ll, '_>) -> SmallVec<[&'ll Attribute; 4]> {
+fn instrument_function_attr<'ll>(cx: &CodegenCx<'ll, '_>) -> SmallVec<&'ll Attribute, 4> {
     let mut attrs = SmallVec::new();
     if cx.sess().opts.unstable_opts.instrument_mcount {
         // Similar to `clang -pg` behavior. Handled by the
@@ -324,7 +324,7 @@ pub(crate) fn non_lazy_bind_attr<'ll>(cx: &CodegenCx<'ll, '_>) -> Option<&'ll At
 #[inline]
 pub(crate) fn default_optimisation_attrs<'ll>(
     cx: &CodegenCx<'ll, '_>,
-) -> SmallVec<[&'ll Attribute; 2]> {
+) -> SmallVec<&'ll Attribute, 2> {
     let mut attrs = SmallVec::new();
     match cx.sess().opts.optimize {
         OptLevel::Size => {

@@ -32,8 +32,8 @@ pub struct TyBuilder<D> {
     /// The `data` field is used to keep track of what we're building (e.g. an
     /// ADT, a `TraitRef`, ...).
     data: D,
-    vec: SmallVec<[GenericArg; 2]>,
-    param_kinds: SmallVec<[ParamKind; 2]>,
+    vec: SmallVec<GenericArg, 2>,
+    param_kinds: SmallVec<ParamKind, 2>,
     parent_subst: Substitution,
 }
 
@@ -51,7 +51,7 @@ impl<A> TyBuilder<A> {
 impl<D> TyBuilder<D> {
     fn new(
         data: D,
-        param_kinds: SmallVec<[ParamKind; 2]>,
+        param_kinds: SmallVec<ParamKind, 2>,
         parent_subst: Option<Substitution>,
     ) -> Self {
         let parent_subst = parent_subst.unwrap_or_else(|| Substitution::empty(Interner));

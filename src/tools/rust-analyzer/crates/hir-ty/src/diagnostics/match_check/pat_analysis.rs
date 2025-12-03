@@ -345,7 +345,7 @@ impl PatCx for MatchCheckCtx<'_> {
         ty: &Self::Ty,
     ) -> impl ExactSizeIterator<Item = (Self::Ty, PrivateUninhabitedField)> {
         let single = |ty| smallvec![(ty, PrivateUninhabitedField(false))];
-        let tys: SmallVec<[_; 2]> = match ctor {
+        let tys: SmallVec<_, 2> = match ctor {
             Struct | Variant(_) | UnionField => match ty.kind(Interner) {
                 TyKind::Tuple(_, substs) => {
                     let tys = substs.iter(Interner).map(|ty| ty.assert_ty_ref(Interner));

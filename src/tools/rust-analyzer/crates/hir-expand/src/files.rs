@@ -382,7 +382,7 @@ impl InMacroFile<SyntaxToken> {
     pub fn upmap_once(
         self,
         db: &dyn db::ExpandDatabase,
-    ) -> InFile<smallvec::SmallVec<[TextRange; 1]>> {
+    ) -> InFile<smallvec::SmallVec<TextRange, 1>> {
         self.file_id.expansion_info(db).map_range_up_once(db, self.value.text_range())
     }
 }

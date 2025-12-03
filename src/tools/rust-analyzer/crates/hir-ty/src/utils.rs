@@ -40,7 +40,7 @@ pub(crate) fn fn_traits(db: &dyn DefDatabase, krate: Crate) -> impl Iterator<Ite
 }
 
 /// Returns an iterator over the direct super traits (including the trait itself).
-pub fn direct_super_traits(db: &dyn DefDatabase, trait_: TraitId) -> SmallVec<[TraitId; 4]> {
+pub fn direct_super_traits(db: &dyn DefDatabase, trait_: TraitId) -> SmallVec<TraitId, 4> {
     let mut result = smallvec![trait_];
     direct_super_traits_cb(db, trait_, |tt| {
         if !result.contains(&tt) {
@@ -52,7 +52,7 @@ pub fn direct_super_traits(db: &dyn DefDatabase, trait_: TraitId) -> SmallVec<[T
 
 /// Returns an iterator over the whole super trait hierarchy (including the
 /// trait itself).
-pub fn all_super_traits(db: &dyn DefDatabase, trait_: TraitId) -> SmallVec<[TraitId; 4]> {
+pub fn all_super_traits(db: &dyn DefDatabase, trait_: TraitId) -> SmallVec<TraitId, 4> {
     // we need to take care a bit here to avoid infinite loops in case of cycles
     // (i.e. if we have `trait A: B; trait B: A;`)
 

@@ -581,7 +581,7 @@ impl<'db> Resolver<'db> {
     pub fn names_in_scope(
         &self,
         db: &dyn DefDatabase,
-    ) -> FxIndexMap<Name, SmallVec<[ScopeDef; 1]>> {
+    ) -> FxIndexMap<Name, SmallVec<ScopeDef, 1>> {
         let mut res = ScopeNames::default();
         for scope in self.scopes() {
             scope.process_names(&mut res, db);
@@ -1228,7 +1228,7 @@ fn to_type_ns(per_ns: PerNs) -> Option<(TypeNs, Option<ImportOrExternCrate>)> {
 
 #[derive(Default)]
 struct ScopeNames {
-    map: FxIndexMap<Name, SmallVec<[ScopeDef; 1]>>,
+    map: FxIndexMap<Name, SmallVec<ScopeDef, 1>>,
 }
 
 impl ScopeNames {
@@ -1284,7 +1284,7 @@ impl HasResolver for ModuleId {
             };
         }
 
-        let mut modules: SmallVec<[_; 1]> = smallvec![];
+        let mut modules: SmallVec<_, 1> = smallvec![];
         while let Some(parent) = def_map.parent() {
             let block_def_map = mem::replace(&mut def_map, parent.def_map(db));
             modules.push(block_def_map);

@@ -892,7 +892,7 @@ impl<'a, 'b> PathLoweringContext<'a, 'b> {
                     associated_ty_id: to_assoc_type_id(associated_ty),
                     substitution,
                 };
-                let mut predicates: SmallVec<[_; 1]> = SmallVec::with_capacity(
+                let mut predicates: SmallVec<_, 1> = SmallVec::with_capacity(
                     binding.type_ref.as_ref().map_or(0, |_| 1) + binding.bounds.len(),
                 );
 

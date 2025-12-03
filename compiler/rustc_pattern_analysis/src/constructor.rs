@@ -1024,7 +1024,7 @@ pub enum ConstructorSet<Cx: PatCx> {
 /// ignoring any row with `Opaque`s in the algorithm. Hence the importance of point 4.
 #[derive(Debug)]
 pub struct SplitConstructorSet<Cx: PatCx> {
-    pub present: SmallVec<[Constructor<Cx>; 1]>,
+    pub present: SmallVec<Constructor<Cx>, 1>,
     pub missing: Vec<Constructor<Cx>>,
     pub missing_empty: Vec<Constructor<Cx>>,
 }
@@ -1041,7 +1041,7 @@ impl<Cx: PatCx> ConstructorSet<Cx> {
     where
         Cx: 'a,
     {
-        let mut present: SmallVec<[_; 1]> = SmallVec::new();
+        let mut present: SmallVec<_, 1> = SmallVec::new();
         // Empty constructors found missing.
         let mut missing_empty = Vec::new();
         // Nonempty constructors found missing.

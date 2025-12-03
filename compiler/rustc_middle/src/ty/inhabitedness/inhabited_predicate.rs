@@ -83,7 +83,7 @@ impl<'tcx> InhabitedPredicate<'tcx> {
         self,
         tcx: TyCtxt<'tcx>,
         typing_env: TypingEnv<'tcx>,
-        eval_stack: &mut SmallVec<[Ty<'tcx>; 1]>, // for cycle detection
+        eval_stack: &mut SmallVec<Ty<'tcx>, 1>, // for cycle detection
         in_module: &impl Fn(DefId) -> Result<bool, E>,
         reveal_opaque: &impl Fn(OpaqueTypeKey<'tcx>) -> Option<Ty<'tcx>>,
     ) -> Result<bool, E> {

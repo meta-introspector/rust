@@ -68,7 +68,7 @@ pub fn layout_of_adt_query(
     let variants = variants
         .iter()
         .map(|it| it.iter().map(|it| &**it).collect::<Vec<_>>())
-        .collect::<SmallVec<[_; 1]>>();
+        .collect::<SmallVec<_, 1>>();
     let variants = variants.iter().map(|it| it.iter().collect()).collect::<IndexVec<_, _>>();
     let result = if matches!(def, AdtId::UnionId(..)) {
         cx.calc.layout_of_union(&repr, &variants)?

@@ -130,12 +130,12 @@ where
 // * Expr(Box<ast::Expr>)                     -> token_tree_to_expr
 // * Pat(Box<ast::Pat>)                       -> token_tree_to_pat
 // * Ty(Box<ast::Ty>)                         -> token_tree_to_ty
-// * Stmts(SmallVec<[ast::Stmt; 1]>)        -> token_tree_to_stmts
-// * Items(SmallVec<[Box<ast::Item>; 1]>)     -> token_tree_to_items
+// * Stmts(SmallVec<ast::Stmt, 1>)        -> token_tree_to_stmts
+// * Items(SmallVec<Box<ast::Item>, 1>)     -> token_tree_to_items
 //
-// * TraitItems(SmallVec<[ast::TraitItem; 1]>)
-// * AssocItems(SmallVec<[ast::AssocItem; 1]>)
-// * ForeignItems(SmallVec<[ast::ForeignItem; 1]>
+// * TraitItems(SmallVec<ast::TraitItem, 1>)
+// * AssocItems(SmallVec<ast::AssocItem, 1>)
+// * ForeignItems(SmallVec<ast::ForeignItem, 1>
 
 /// Converts a [`tt::Subtree`] back to a [`SyntaxNode`].
 /// The produced `SpanMap` contains a mapping from the syntax nodes offsets to the subtree's spans.

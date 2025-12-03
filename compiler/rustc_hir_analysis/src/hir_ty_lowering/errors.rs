@@ -38,7 +38,7 @@ impl<'tcx> dyn HirTyLowerer<'tcx> + '_ {
     /// Check for duplicate relaxed bounds and relaxed bounds of non-default traits.
     pub(crate) fn check_and_report_invalid_relaxed_bounds(
         &self,
-        relaxed_bounds: SmallVec<[&PolyTraitRef<'_>; 1]>,
+        relaxed_bounds: SmallVec<&PolyTraitRef<'_>, 1>,
     ) {
         let tcx = self.tcx();
 
@@ -961,7 +961,7 @@ impl<'tcx> dyn HirTyLowerer<'tcx> + '_ {
     /// emit a generic note suggesting using a `where` clause to constraint instead.
     pub(crate) fn check_for_required_assoc_tys(
         &self,
-        spans: SmallVec<[Span; 1]>,
+        spans: SmallVec<Span, 1>,
         missing_assoc_types: FxIndexSet<(DefId, ty::PolyTraitRef<'tcx>)>,
         potential_assoc_types: Vec<usize>,
         trait_bounds: &[hir::PolyTraitRef<'_>],
@@ -1350,7 +1350,7 @@ impl<'tcx> dyn HirTyLowerer<'tcx> + '_ {
 
     pub fn report_trait_object_addition_traits(
         &self,
-        regular_traits: &Vec<(ty::PolyTraitPredicate<'tcx>, SmallVec<[Span; 1]>)>,
+        regular_traits: &Vec<(ty::PolyTraitPredicate<'tcx>, SmallVec<Span, 1>)>,
     ) -> ErrorGuaranteed {
         // we use the last span to point at the traits themselves,
         // and all other preceding spans are trait alias expansions.

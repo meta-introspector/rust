@@ -160,7 +160,7 @@ fn extract_default_variant<'a>(
     trait_span: Span,
     item_span: Span,
 ) -> Result<&'a rustc_ast::Variant, ErrorGuaranteed> {
-    let default_variants: SmallVec<[_; 1]> = enum_def
+    let default_variants: SmallVec<_, 1> = enum_def
         .variants
         .iter()
         .filter(|variant| attr::contains_name(&variant.attrs, kw::Default))
@@ -242,7 +242,7 @@ fn validate_default_attribute(
     cx: &ExtCtxt<'_>,
     default_variant: &rustc_ast::Variant,
 ) -> Result<(), ErrorGuaranteed> {
-    let attrs: SmallVec<[_; 1]> =
+    let attrs: SmallVec<_, 1> =
         attr::filter_by_name(&default_variant.attrs, kw::Default).collect();
 
     let attr = match attrs.as_slice() {

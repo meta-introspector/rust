@@ -64,7 +64,7 @@ pub(crate) fn global_gcc_features(sess: &Session, diagnostics: bool) -> Vec<Stri
 }
 
 // To find a list of GCC's names, check https://gcc.gnu.org/onlinedocs/gcc/Function-Attributes.html
-pub fn to_gcc_features<'a>(sess: &Session, s: &'a str) -> SmallVec<[&'a str; 2]> {
+pub fn to_gcc_features<'a>(sess: &Session, s: &'a str) -> SmallVec<&'a str, 2> {
     let arch = if sess.target.arch == "x86_64" { "x86" } else { &*sess.target.arch };
     // cSpell:disable
     match (arch, s) {

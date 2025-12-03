@@ -174,7 +174,7 @@ impl<'a> TargetFeatureFoldStrength<'a> {
 
 pub(crate) struct LLVMFeature<'a> {
     llvm_feature_name: &'a str,
-    dependencies: SmallVec<[TargetFeatureFoldStrength<'a>; 1]>,
+    dependencies: SmallVec<TargetFeatureFoldStrength<'a>, 1>,
 }
 
 impl<'a> LLVMFeature<'a> {
@@ -184,7 +184,7 @@ impl<'a> LLVMFeature<'a> {
 
     fn with_dependencies(
         llvm_feature_name: &'a str,
-        dependencies: SmallVec<[TargetFeatureFoldStrength<'a>; 1]>,
+        dependencies: SmallVec<TargetFeatureFoldStrength<'a>, 1>,
     ) -> Self {
         Self { llvm_feature_name, dependencies }
     }

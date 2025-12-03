@@ -42,5 +42,5 @@ pub struct ModChild {
     pub vis: ty::Visibility<DefId>,
     /// Reexport chain linking this module child to its original reexported item.
     /// Empty if the module child is a proper item.
-    pub reexport_chain: SmallVec<[Reexport; 2]>,
+    pub reexport_chain: SmallVec<Reexport, 2>,
 }

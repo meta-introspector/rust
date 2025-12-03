@@ -2463,7 +2463,7 @@ fn param_env_with_gat_bounds<'tcx>(
             }
         };
 
-        let mut bound_vars: smallvec::SmallVec<[ty::BoundVariableKind; 8]> =
+        let mut bound_vars: smallvec::SmallVec<ty::BoundVariableKind, 8> =
             smallvec::SmallVec::with_capacity(tcx.generics_of(impl_ty.def_id).own_params.len());
         // Extend the impl's identity args with late-bound GAT vars
         let normalize_impl_ty_args = ty::GenericArgs::identity_for_item(tcx, container_id)

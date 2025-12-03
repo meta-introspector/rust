@@ -512,7 +512,7 @@ macro_rules! common_visitor_and_walkers {
             // only occurring on `MutVisitor`:
             //
             //   fn visit_t(&mut self, t: &mut T);                      // common
-            //   fn flat_map_t(&mut self, t: T) -> SmallVec<[T; 1]>;    // rare
+            //   fn flat_map_t(&mut self, t: T) -> SmallVec<T, 1>;    // rare
             //   fn filter_map_t(&mut self, t: T) -> Option<T>;         // rarest
             //
             // When writing these methods, it is better to use destructuring like this:
@@ -691,15 +691,15 @@ macro_rules! common_visitor_and_walkers {
                     &mut self,
                     i: Box<AssocItem>,
                     ctxt: AssocCtxt,
-                ) -> SmallVec<[Box<AssocItem>; 1]> {
+                ) -> SmallVec<Box<AssocItem>, 1> {
                     walk_flat_map_assoc_item(self, i, ctxt)
                 }
 
-                fn flat_map_stmt(&mut self, s: Stmt) -> SmallVec<[Stmt; 1]> {
+                fn flat_map_stmt(&mut self, s: Stmt) -> SmallVec<Stmt, 1> {
                     walk_flat_map_stmt(self, s)
                 }
 
-                fn flat_map_arm(&mut self, arm: Arm) -> SmallVec<[Arm; 1]> {
+                fn flat_map_arm(&mut self, arm: Arm) -> SmallVec<Arm, 1> {
                     walk_flat_map_arm(self, arm)
                 }
 
@@ -707,30 +707,30 @@ macro_rules! common_visitor_and_walkers {
                     walk_filter_map_expr(self, e)
                 }
 
-                fn flat_map_variant(&mut self, v: Variant) -> SmallVec<[Variant; 1]> {
+                fn flat_map_variant(&mut self, v: Variant) -> SmallVec<Variant, 1> {
                     walk_flat_map_variant(self, v)
                 }
 
-                fn flat_map_param(&mut self, param: Param) -> SmallVec<[Param; 1]> {
+                fn flat_map_param(&mut self, param: Param) -> SmallVec<Param, 1> {
                     walk_flat_map_param(self, param)
                 }
 
-                fn flat_map_generic_param(&mut self, param: GenericParam) -> SmallVec<[GenericParam; 1]> {
+                fn flat_map_generic_param(&mut self, param: GenericParam) -> SmallVec<GenericParam, 1> {
                     walk_flat_map_generic_param(self, param)
                 }
 
-                fn flat_map_expr_field(&mut self, f: ExprField) -> SmallVec<[ExprField; 1]> {
+                fn flat_map_expr_field(&mut self, f: ExprField) -> SmallVec<ExprField, 1> {
                     walk_flat_map_expr_field(self, f)
                 }
 
                 fn flat_map_where_predicate(
                     &mut self,
                     where_predicate: WherePredicate,
-                ) -> SmallVec<[WherePredicate; 1]> {
+                ) -> SmallVec<WherePredicate, 1> {
                     walk_flat_map_where_predicate(self, where_predicate)
                 }
 
-                fn flat_map_pat_field(&mut self, fp: PatField) -> SmallVec<[PatField; 1]> {
+                fn flat_map_pat_field(&mut self, fp: PatField) -> SmallVec<PatField, 1> {
                     walk_flat_map_pat_field(self, fp)
                 }
             )?

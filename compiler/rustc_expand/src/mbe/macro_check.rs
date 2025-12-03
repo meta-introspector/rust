@@ -159,9 +159,9 @@ impl<'a, T> Iterator for &'a Stack<'a, T> {
     }
 }
 
-impl From<&Stack<'_, KleeneToken>> for SmallVec<[KleeneToken; 1]> {
-    fn from(ops: &Stack<'_, KleeneToken>) -> SmallVec<[KleeneToken; 1]> {
-        let mut ops: SmallVec<[KleeneToken; 1]> = ops.cloned().collect();
+impl From<&Stack<'_, KleeneToken>> for SmallVec<KleeneToken, 1> {
+    fn from(ops: &Stack<'_, KleeneToken>) -> SmallVec<KleeneToken, 1> {
+        let mut ops: SmallVec<KleeneToken, 1> = ops.cloned().collect();
         // The stack is innermost on top. We want outermost first.
         ops.reverse();
         ops
@@ -173,7 +173,7 @@ struct BinderInfo {
     /// The span of the meta-variable in LHS.
     span: Span,
     /// The stack of Kleene operators (outermost first).
-    ops: SmallVec<[KleeneToken; 1]>,
+    ops: SmallVec<KleeneToken, 1>,
 }
 
 /// An environment of meta-variables to their binder information.
@@ -184,7 +184,7 @@ struct MacroState<'a> {
     /// The binders of the branch where we entered the macro definition.
     binders: &'a Binders,
     /// The stack of Kleene operators (outermost first) where we entered the macro definition.
-    ops: SmallVec<[KleeneToken; 1]>,
+    ops: SmallVec<KleeneToken, 1>,
 }
 
 /// Checks that meta-variables are used correctly in one rule of a macro definition.
@@ -565,14 +565,14 @@ fn check_ops_is_prefix(
     let macros = macros.push(MacroState { binders, ops: ops.into() });
     // Accumulates the stacks the operators of each state until (and including when) the
     // meta-variable is found. The innermost stack is first.
-    let mut acc: SmallVec<[&SmallVec<[KleeneToken; 1]>; 1]> = SmallVec::new();
+    let mut acc: SmallVec<&SmallVec<KleeneToken, 1>, 1> = SmallVec::new();
     for state in &macros {
         acc.push(&state.ops);
         if let Some(binder) = state.binders.get(&name) {
             // This variable concatenates the stack of operators from the RHS of the LHS where the
             // meta-variable was defined to where it is used (in possibly nested macros). The
             // outermost operator is first.
-            let mut occurrence_ops: SmallVec<[KleeneToken; 2]> = SmallVec::new();
+            let mut occurrence_ops: SmallVec<KleeneToken, 2> = SmallVec::new();
             // We need to iterate from the end to start with outermost stack.
             for ops in acc.iter().rev() {
                 occurrence_ops.extend_from_slice(ops);

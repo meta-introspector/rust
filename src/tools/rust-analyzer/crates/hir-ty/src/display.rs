@@ -1532,9 +1532,9 @@ impl HirDisplay for Ty {
                 // Reorder bounds to satisfy `write_bounds_like_dyn_trait()`'s expectation.
                 // FIXME: `Iterator::partition_in_place()` or `Vec::extract_if()` may make it
                 // more efficient when either of them hits stable.
-                let mut bounds: SmallVec<[_; 4]> =
+                let mut bounds: SmallVec<_, 4> =
                     dyn_ty.bounds.skip_binders().iter(Interner).cloned().collect();
-                let (auto_traits, others): (SmallVec<[_; 4]>, _) =
+                let (auto_traits, others): (SmallVec<_, 4>, _) =
                     bounds.drain(1..).partition(|b| b.skip_binders().trait_id().is_some());
                 bounds.extend(others);
                 bounds.extend(auto_traits);
@@ -1617,7 +1617,7 @@ impl HirDisplay for Ty {
                     ));
                 }
                 let subst = subst.as_slice(Interner);
-                let a: Option<SmallVec<[&Ty; 3]>> = subst
+                let a: Option<SmallVec<&Ty, 3>> = subst
                     .get(subst.len() - 3..)
                     .and_then(|args| args.iter().map(|arg| arg.ty(Interner)).collect());
 

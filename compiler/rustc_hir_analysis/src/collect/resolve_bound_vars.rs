@@ -1893,7 +1893,7 @@ impl<'a, 'tcx> BoundVarContext<'a, 'tcx> {
         };
 
         use smallvec::{SmallVec, smallvec};
-        let mut stack: SmallVec<[(DefId, SmallVec<[ty::BoundVariableKind; 8]>); 8]> =
+        let mut stack: SmallVec<(DefId, SmallVec<ty::BoundVariableKind, 8>), 8> =
             smallvec![(def_id, smallvec![])];
         let mut visited: FxHashSet<DefId> = FxHashSet::default();
         loop {

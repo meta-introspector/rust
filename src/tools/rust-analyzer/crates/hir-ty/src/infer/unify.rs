@@ -37,7 +37,7 @@ impl InferenceContext<'_> {
     pub(super) fn clauses_for_self_ty(
         &mut self,
         self_ty: InferenceVar,
-    ) -> SmallVec<[WhereClause; 4]> {
+    ) -> SmallVec<WhereClause, 4> {
         self.table.resolve_obligations_as_possible();
 
         let root = self.table.var_unification_table.inference_var_root(self_ty);
@@ -227,7 +227,7 @@ pub(crate) struct InferenceTable<'a> {
     pub(crate) trait_env: Arc<TraitEnvironment>,
     pub(crate) tait_coercion_table: Option<FxHashMap<OpaqueTyId, Ty>>,
     var_unification_table: ChalkInferenceTable,
-    type_variable_table: SmallVec<[TypeVariableFlags; 16]>,
+    type_variable_table: SmallVec<TypeVariableFlags, 16>,
     pending_obligations: Vec<Canonicalized<InEnvironment<Goal>>>,
     /// Double buffer used in [`Self::resolve_obligations_as_possible`] to cut down on
     /// temporary allocations.
@@ -236,7 +236,7 @@ pub(crate) struct InferenceTable<'a> {
 
 pub(crate) struct InferenceTableSnapshot {
     var_table_snapshot: chalk_solve::infer::InferenceSnapshot<Interner>,
-    type_variable_table: SmallVec<[TypeVariableFlags; 16]>,
+    type_variable_table: SmallVec<TypeVariableFlags, 16>,
     pending_obligations: Vec<Canonicalized<InEnvironment<Goal>>>,
 }
 
@@ -373,7 +373,7 @@ impl<'a> InferenceTable<'a> {
         fn eagerly_resolve_ty<const N: usize>(
             table: &mut InferenceTable<'_>,
             ty: Ty,
-            mut tys: SmallVec<[Ty; N]>,
+            mut tys: SmallVec<Ty, N>,
         ) -> Ty {
             if tys.contains(&ty) {
                 return ty;

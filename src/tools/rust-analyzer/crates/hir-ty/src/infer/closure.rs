@@ -320,7 +320,7 @@ impl InferenceContext<'_> {
     fn deduce_sig_from_dyn_ty(&self, dyn_ty: &DynTy) -> Option<FnPointer> {
         // Search for a predicate like `<$self as FnX<Args>>::Output == Ret`
 
-        let fn_traits: SmallVec<[ChalkTraitId; 3]> =
+        let fn_traits: SmallVec<ChalkTraitId, 3> =
             utils::fn_traits(self.db, self.owner.module(self.db).krate())
                 .map(to_chalk_trait_id)
                 .collect();
@@ -630,7 +630,7 @@ pub struct CapturedItem {
     /// we need to keep them all, since when a closure occurs inside a closure, we
     /// copy all captures of the inner closure to the outer closure, and then we may
     /// truncate them, and we want the correct span to be reported.
-    span_stacks: SmallVec<[SmallVec<[MirSpan; 3]>; 3]>,
+    span_stacks: SmallVec<SmallVec<MirSpan, 3>, 3>,
     pub(crate) ty: Binders<Ty>,
 }
 
@@ -652,7 +652,7 @@ impl CapturedItem {
         self.kind
     }
 
-    pub fn spans(&self) -> SmallVec<[MirSpan; 3]> {
+    pub fn spans(&self) -> SmallVec<MirSpan, 3> {
         self.span_stacks.iter().map(|stack| *stack.last().expect("empty span stack")).collect()
     }
 
@@ -818,7 +818,7 @@ pub(crate) struct CapturedItemWithoutTy {
     pub(crate) place: HirPlace,
     pub(crate) kind: CaptureKind,
     /// The inner vec is the stacks; the outer vec is for each capture reference.
-    pub(crate) span_stacks: SmallVec<[SmallVec<[MirSpan; 3]>; 3]>,
+    pub(crate) span_stacks: SmallVec<SmallVec<MirSpan, 3>, 3>,
 }
 
 impl CapturedItemWithoutTy {

@@ -455,7 +455,7 @@ impl<'tcx> GenericArgs<'tcx> {
     }
 
     pub fn fill_item<F>(
-        args: &mut SmallVec<[GenericArg<'tcx>; 8]>,
+        args: &mut SmallVec<GenericArg<'tcx>, 8>,
         tcx: TyCtxt<'tcx>,
         defs: &ty::Generics,
         mk_kind: &mut F,
@@ -470,7 +470,7 @@ impl<'tcx> GenericArgs<'tcx> {
     }
 
     pub fn fill_single<F>(
-        args: &mut SmallVec<[GenericArg<'tcx>; 8]>,
+        args: &mut SmallVec<GenericArg<'tcx>, 8>,
         defs: &ty::Generics,
         mk_kind: &mut F,
     ) where

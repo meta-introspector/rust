@@ -26,7 +26,7 @@ pub(super) fn check(cx: &LateContext<'_>, expr: &Expr<'_>, func: &Expr<'_>, args
                     None
                 }
             })
-            .collect::<Option<SmallVec<[u8; 8]>>>()
+            .collect::<Option<SmallVec<u8, 8>>>()
     {
         let constant_name = match args.as_slice() {
             [0, 0, 0, 0] | [0, 0, 0, 0, 0, 0, 0, 0] => "UNSPECIFIED",

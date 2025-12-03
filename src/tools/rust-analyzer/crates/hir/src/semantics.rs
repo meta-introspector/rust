@@ -889,7 +889,7 @@ impl<'db> SemanticsImpl<'db> {
     }
 
     /// Maps a node down by mapping its first and last token down.
-    pub fn descend_node_into_attributes<N: AstNode>(&self, node: N) -> SmallVec<[N; 1]> {
+    pub fn descend_node_into_attributes<N: AstNode>(&self, node: N) -> SmallVec<N, 1> {
         // This might not be the correct way to do this, but it works for now
         let mut res = smallvec![];
         let tokens = (|| {
@@ -921,7 +921,7 @@ impl<'db> SemanticsImpl<'db> {
             );
         } else {
             // Descend first and last token, then zip them to look for the node they belong to
-            let mut scratch: SmallVec<[_; 1]> = smallvec![];
+            let mut scratch: SmallVec<_, 1> = smallvec![];
             self.descend_into_macros_all(
                 InFile::new(file.file_id, first),
                 false,
@@ -991,7 +991,7 @@ impl<'db> SemanticsImpl<'db> {
         });
     }
 
-    pub fn descend_into_macros(&self, token: SyntaxToken) -> SmallVec<[SyntaxToken; 1]> {
+    pub fn descend_into_macros(&self, token: SyntaxToken) -> SmallVec<SyntaxToken, 1> {
         let mut res = smallvec![];
         self.descend_into_macros_all(
             self.wrap_token_infile(token.clone()),
@@ -1008,7 +1008,7 @@ impl<'db> SemanticsImpl<'db> {
         &self,
         token: SyntaxToken,
         always_descend_into_derives: bool,
-    ) -> SmallVec<[InFile<SyntaxToken>; 1]> {
+    ) -> SmallVec<InFile<SyntaxToken>, 1> {
         let mut res = smallvec![];
         let token = self.wrap_token_infile(token);
         self.descend_into_macros_all(token.clone(), always_descend_into_derives, &mut |t, ctx| {
@@ -1033,7 +1033,7 @@ impl<'db> SemanticsImpl<'db> {
 
     /// Descends the token into expansions, returning the tokens that matches the input
     /// token's [`SyntaxKind`] and text.
-    pub fn descend_into_macros_exact(&self, token: SyntaxToken) -> SmallVec<[SyntaxToken; 1]> {
+    pub fn descend_into_macros_exact(&self, token: SyntaxToken) -> SmallVec<SyntaxToken, 1> {
         let mut r = smallvec![];
         let text = token.text();
         let kind = token.kind();
@@ -1059,7 +1059,7 @@ impl<'db> SemanticsImpl<'db> {
     pub fn descend_into_macros_exact_with_file(
         &self,
         token: SyntaxToken,
-    ) -> SmallVec<[InFile<SyntaxToken>; 1]> {
+    ) -> SmallVec<InFile<SyntaxToken>, 1> {
         let mut r = smallvec![];
         let text = token.text();
         let kind = token.kind();
@@ -1140,7 +1140,7 @@ impl<'db> SemanticsImpl<'db> {
         // These are tracked to know which macro calls we still have to look into
         // the tokens themselves aren't that interesting as the span that is being used to map
         // things down never changes.
-        let mut stack: Vec<(_, SmallVec<[_; 2]>)> = vec![];
+        let mut stack: Vec<(_, SmallVec<_, 2>)> = vec![];
         let include = file_id
             .file_id()
             .and_then(|file_id| self.s2d_cache.borrow_mut().get_or_insert_include_for(db, file_id));
@@ -1237,7 +1237,7 @@ impl<'db> SemanticsImpl<'db> {
                                     Some((
                                         ctx.derive_macro_calls(InFile::new(expansion, &adt))?
                                             .map(|(a, b, c)| (a, b, c.to_owned()))
-                                            .collect::<SmallVec<[_; 2]>>(),
+                                            .collect::<SmallVec<_, 2>>(),
                                         adt,
                                     ))
                                 })?;
@@ -1617,7 +1617,7 @@ impl<'db> SemanticsImpl<'db> {
         self.analyze(param.syntax())?.type_of_self(self.db, param)
     }
 
-    pub fn pattern_adjustments(&self, pat: &ast::Pat) -> SmallVec<[Type<'db>; 1]> {
+    pub fn pattern_adjustments(&self, pat: &ast::Pat) -> SmallVec<Type<'db>, 1> {
         self.analyze(pat.syntax())
             .and_then(|it| it.pattern_adjustments(self.db, pat))
             .unwrap_or_default()

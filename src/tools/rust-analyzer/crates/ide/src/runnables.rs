@@ -717,7 +717,7 @@ impl UpdateTest {
     }
 
     pub fn label(&self) -> Option<SmolStr> {
-        let mut builder: SmallVec<[_; 3]> = SmallVec::new();
+        let mut builder: SmallVec<_, 3> = SmallVec::new();
         if self.expect_test {
             builder.push("Expect");
         }

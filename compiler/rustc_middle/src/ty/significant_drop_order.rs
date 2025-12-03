@@ -14,7 +14,7 @@ use crate::ty::{self, Ty, TyCtxt};
 fn true_significant_drop_ty<'tcx>(
     tcx: TyCtxt<'tcx>,
     ty: Ty<'tcx>,
-) -> Option<SmallVec<[Ty<'tcx>; 2]>> {
+) -> Option<SmallVec<Ty<'tcx>, 2>> {
     if let ty::Adt(def, args) = ty.kind() {
         let mut did = def.did();
         let mut name_rev = vec![];
@@ -78,7 +78,7 @@ pub fn extract_component_raw<'tcx>(
     typing_env: ty::TypingEnv<'tcx>,
     ty: Ty<'tcx>,
     ty_seen: &mut UnordSet<Ty<'tcx>>,
-) -> SmallVec<[Ty<'tcx>; 4]> {
+) -> SmallVec<Ty<'tcx>, 4> {
     // Droppiness does not depend on regions, so let us erase them.
     let ty = tcx.try_normalize_erasing_regions(typing_env, ty).unwrap_or(ty);
 
@@ -107,7 +107,7 @@ pub fn extract_component_with_significant_dtor<'tcx>(
     tcx: TyCtxt<'tcx>,
     typing_env: ty::TypingEnv<'tcx>,
     ty: Ty<'tcx>,
-) -> SmallVec<[Ty<'tcx>; 4]> {
+) -> SmallVec<Ty<'tcx>, 4> {
     let mut tys = extract_component_raw(tcx, typing_env, ty, &mut Default::default());
     let mut deduplicate = FxHashSet::default();
     tys.retain(|oty| deduplicate.insert(*oty));

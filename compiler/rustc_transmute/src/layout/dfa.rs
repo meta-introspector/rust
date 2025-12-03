@@ -338,7 +338,7 @@ mod edge_set {
         // destination is stored as a single run.
         //
         // Runs are non-empty, non-overlapping, and stored in ascending order.
-        runs: SmallVec<[(Byte, S); 1]>,
+        runs: SmallVec<(Byte, S), 1>,
     }
 
     impl<S> EdgeSet<S> {
@@ -408,7 +408,7 @@ mod edge_set {
         where
             S: Copy + Eq,
         {
-            let mut runs: SmallVec<[(Byte, S); 1]> = SmallVec::new();
+            let mut runs: SmallVec<(Byte, S), 1> = SmallVec::new();
             let xs = self.runs.iter().copied();
             let ys = other.runs.iter().copied();
             for (range, (x, y)) in union(xs, ys) {

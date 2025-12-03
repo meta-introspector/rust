@@ -363,7 +363,7 @@ pub(crate) fn incoherent_inherent_impl_crates(
     db: &dyn HirDatabase,
     krate: Crate,
     fp: TyFingerprint,
-) -> SmallVec<[Crate; 2]> {
+) -> SmallVec<Crate, 2> {
     let _p = tracing::info_span!("incoherent_inherent_impl_crates").entered();
     let mut res = SmallVec::new();
 
@@ -379,7 +379,7 @@ pub(crate) fn incoherent_inherent_impl_crates(
     res
 }
 
-pub fn def_crates(db: &dyn HirDatabase, ty: &Ty, cur_crate: Crate) -> Option<SmallVec<[Crate; 2]>> {
+pub fn def_crates(db: &dyn HirDatabase, ty: &Ty, cur_crate: Crate) -> Option<SmallVec<Crate, 2>> {
     match ty.kind(Interner) {
         &TyKind::Adt(AdtId(def_id), _) => {
             let rustc_has_incoherent_inherent_impls = match def_id {
