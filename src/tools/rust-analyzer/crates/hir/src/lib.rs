@@ -4709,7 +4709,7 @@ pub enum CaptureKind {
 #[derive(Debug, Clone)]
 pub struct CaptureUsages {
     parent: DefWithBodyId,
-    spans: SmallVec<[mir::MirSpan; 3]>,
+    spans: SmallVec<mir::MirSpan, 3>,
 }
 
 impl CaptureUsages {

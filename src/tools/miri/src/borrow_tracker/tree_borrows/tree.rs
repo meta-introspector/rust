@@ -308,7 +308,7 @@ pub(super) struct Node {
     pub parent: Option<UniIndex>,
     /// If the pointer was reborrowed, it has children.
     // FIXME: bench to compare this to FxHashSet and to other SmallVec sizes
-    pub children: SmallVec<[UniIndex; 4]>,
+    pub children: SmallVec<UniIndex, 4>,
     /// Either `Reserved`,  `Frozen`, or `Disabled`, it is the permission this tag will
     /// lazily be initialized to on the first access.
     /// It is only ever `Disabled` for a tree root, since the root is initialized to `Unique` by

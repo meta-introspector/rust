@@ -86,14 +86,14 @@ impl<Cx: PatCx> DeconstructedPat<Cx> {
         &'a self,
         other_ctor: &Constructor<Cx>,
         other_ctor_arity: usize,
-    ) -> SmallVec<[PatOrWild<'a, Cx>; 2]> {
+    ) -> SmallVec<PatOrWild<'a, Cx>, 2> {
         if matches!(other_ctor, PrivateUninhabited) {
             // Skip this column.
             return smallvec![];
         }
 
         // Start with a slice of wildcards of the appropriate length.
-        let mut fields: SmallVec<[_; 2]> = (0..other_ctor_arity).map(|_| PatOrWild::Wild).collect();
+        let mut fields: SmallVec<_, 2> = (0..other_ctor_arity).map(|_| PatOrWild::Wild).collect();
         // Fill `fields` with our fields. The arities are known to be compatible.
         match self.ctor {
             // The only non-trivial case: two slices of different arity. `other_ctor` is guaranteed
@@ -206,7 +206,7 @@ impl<'p, Cx: PatCx> PatOrWild<'p, Cx> {
 
     /// Expand this or-pattern into its alternatives. This only expands one or-pattern; use
     /// `flatten_or_pat` to recursively expand nested or-patterns.
-    pub(crate) fn expand_or_pat(self) -> SmallVec<[Self; 1]> {
+    pub(crate) fn expand_or_pat(self) -> SmallVec<Self, 1> {
         match self {
             PatOrWild::Pat(pat) if pat.is_or_pat() => {
                 pat.iter_fields().map(|ipat| PatOrWild::Pat(&ipat.pat)).collect()
@@ -216,7 +216,7 @@ impl<'p, Cx: PatCx> PatOrWild<'p, Cx> {
     }
 
     /// Recursively expand this (possibly-nested) or-pattern into its alternatives.
-    pub(crate) fn flatten_or_pat(self) -> SmallVec<[Self; 1]> {
+    pub(crate) fn flatten_or_pat(self) -> SmallVec<Self, 1> {
         match self {
             PatOrWild::Pat(pat) if pat.is_or_pat() => pat
                 .iter_fields()
@@ -232,7 +232,7 @@ impl<'p, Cx: PatCx> PatOrWild<'p, Cx> {
         &self,
         other_ctor: &Constructor<Cx>,
         ctor_arity: usize,
-    ) -> SmallVec<[PatOrWild<'p, Cx>; 2]> {
+    ) -> SmallVec<PatOrWild<'p, Cx>, 2> {
         match self {
             PatOrWild::Wild => (0..ctor_arity).map(|_| PatOrWild::Wild).collect(),
             PatOrWild::Pat(pat) => pat.specialize(other_ctor, ctor_arity),

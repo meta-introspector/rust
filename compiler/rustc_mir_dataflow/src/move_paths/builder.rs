@@ -72,8 +72,8 @@ impl<'a, 'tcx, F: Fn(Ty<'tcx>) -> bool> MoveDataBuilder<'a, 'tcx, F> {
 
 fn new_move_path<'tcx>(
     move_paths: &mut IndexVec<MovePathIndex, MovePath<'tcx>>,
-    path_map: &mut IndexVec<MovePathIndex, SmallVec<[MoveOutIndex; 4]>>,
-    init_path_map: &mut IndexVec<MovePathIndex, SmallVec<[InitIndex; 4]>>,
+    path_map: &mut IndexVec<MovePathIndex, SmallVec<MoveOutIndex, 4>>,
+    init_path_map: &mut IndexVec<MovePathIndex, SmallVec<InitIndex, 4>>,
     parent: Option<MovePathIndex>,
     place: Place<'tcx>,
 ) -> MovePathIndex {

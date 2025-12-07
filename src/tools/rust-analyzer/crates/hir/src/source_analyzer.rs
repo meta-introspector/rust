@@ -363,7 +363,7 @@ impl<'db> SourceAnalyzer<'db> {
         &self,
         db: &'db dyn HirDatabase,
         pat: &ast::Pat,
-    ) -> Option<SmallVec<[Type<'db>; 1]>> {
+    ) -> Option<SmallVec<Type<'db>, 1>> {
         let pat_id = self.pat_id(pat)?;
         let infer = self.infer()?;
         Some(

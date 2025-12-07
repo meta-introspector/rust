@@ -46,7 +46,7 @@ const OPTIMIZATION_ATTRIBUTES: [(ArgAttribute, llvm::AttributeKind); 4] = [
     (ArgAttribute::NoUndef, llvm::AttributeKind::NoUndef),
 ];
 
-fn get_attrs<'ll>(this: &ArgAttributes, cx: &CodegenCx<'ll, '_>) -> SmallVec<[&'ll Attribute; 8]> {
+fn get_attrs<'ll>(this: &ArgAttributes, cx: &CodegenCx<'ll, '_>) -> SmallVec<&'ll Attribute, 8> {
     let mut regular = this.regular;
 
     let mut attrs = SmallVec::new();

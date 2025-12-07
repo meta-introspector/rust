@@ -1449,7 +1449,7 @@ impl<'a, 'tcx> FnCtxt<'a, 'tcx> {
                     idx: ExpectedIdx,
                     generic: GenericIdx,
                     param: &'a FnParam<'a>,
-                    deps: SmallVec<[ExpectedIdx; 4]>,
+                    deps: SmallVec<ExpectedIdx, 4>,
                 }
 
                 debug_assert_eq!(params_with_generics.len(), matched_inputs.len());

@@ -21,7 +21,7 @@ pub struct MacroStat {
     pub bytes: usize,
 }
 
-pub(crate) fn elems_to_string<T>(elems: &SmallVec<[T; 1]>, f: impl Fn(&T) -> String) -> String {
+pub(crate) fn elems_to_string<T>(elems: &SmallVec<T, 1>, f: impl Fn(&T) -> String) -> String {
     let mut s = String::new();
     for (i, elem) in elems.iter().enumerate() {
         if i > 0 {

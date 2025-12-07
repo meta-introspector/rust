@@ -54,7 +54,7 @@ tar = { version = "0.4.44", default-features = false }
 termcolor = "1.4"
 toml = "0.5"
 walkdir = "2.4"
-xz2 = "0.1"
+xz2 = { workspace = true }
 
 # Dependencies needed by the build-metrics feature
 sysinfo = { version = "0.37.0", default-features = false, optional = true, features = ["system"] }

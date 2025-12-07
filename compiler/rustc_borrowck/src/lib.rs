@@ -142,7 +142,7 @@ fn mir_borrowck(
 #[derive(Debug)]
 struct PropagatedBorrowCheckResults<'tcx> {
     closure_requirements: Option<ClosureRegionRequirements<'tcx>>,
-    used_mut_upvars: SmallVec<[FieldIdx; 8]>,
+    used_mut_upvars: SmallVec<FieldIdx, 8>,
 }
 
 type DeferredClosureRequirements<'tcx> = Vec<(LocalDefId, ty::GenericArgsRef<'tcx>, Locations)>;
@@ -748,7 +748,7 @@ struct MirBorrowckCtxt<'a, 'infcx, 'tcx> {
     used_mut: FxIndexSet<Local>,
     /// If the function we're checking is a closure, then we'll need to report back the list of
     /// mutable upvars that have been used. This field keeps track of them.
-    used_mut_upvars: SmallVec<[FieldIdx; 8]>,
+    used_mut_upvars: SmallVec<FieldIdx, 8>,
     /// Region inference context. This contains the results from region inference and lets us e.g.
     /// find out which CFG points are contained in each borrow region.
     regioncx: &'a RegionInferenceContext<'tcx>,

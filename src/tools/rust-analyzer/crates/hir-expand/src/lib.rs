@@ -868,7 +868,7 @@ impl ExpansionInfo {
         &self,
         db: &dyn ExpandDatabase,
         token: TextRange,
-    ) -> InFile<smallvec::SmallVec<[TextRange; 1]>> {
+    ) -> InFile<smallvec::SmallVec<TextRange, 1>> {
         debug_assert!(self.expanded.value.text_range().contains_range(token));
         let span = self.exp_map.span_at(token.start());
         match &self.arg_map {

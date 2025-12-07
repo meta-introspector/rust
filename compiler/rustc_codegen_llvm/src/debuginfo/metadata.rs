@@ -73,7 +73,7 @@ const NO_GENERICS: for<'ll> fn(&CodegenCx<'ll, '_>) -> SmallVec<Option<&'ll DITy
 
 // SmallVec is used quite a bit in this module, so create a shorthand.
 // The actual number of elements is not so important.
-type SmallVec<T> = smallvec::SmallVec<[T; 16]>;
+type SmallVec<T> = smallvec::SmallVec<T, 16>;
 
 mod enums;
 mod type_map;

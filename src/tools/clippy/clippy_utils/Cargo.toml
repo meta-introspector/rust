@@ -13,7 +13,7 @@ categories = ["development-tools"]
 arrayvec = { version = "0.7", default-features = false }
 itertools = "0.12"
 # FIXME(f16_f128): remove when no longer needed for parsing
-rustc_apfloat = "0.2.0"
+rustc_apfloat.workspace = true
 serde = { version = "1.0", features = ["derive"] }
 
 [package.metadata.rust-analyzer]

@@ -10,7 +10,7 @@ use crate::{self as ty, Interner};
 
 // The TypeWalker's stack is hot enough that it's worth going to some effort to
 // avoid heap allocations.
-type TypeWalkerStack<I> = SmallVec<[<I as Interner>::GenericArg; 8]>;
+type TypeWalkerStack<I> = SmallVec<<I as Interner>::GenericArg, 8>;
 
 /// An iterator for walking the type tree.
 ///
@@ -139,10 +139,10 @@ fn push_inner<I: Interner>(stack: &mut TypeWalkerStack<I>, parent: I::GenericArg
             | ty::FnDef(_, args) => {
                 stack.extend(args.iter().rev());
             }
-            ty::Tuple(ts) => stack.extend(ts.iter().rev().map(|ty| ty.into())),
+            ty::Tuple(ts) => stack.extend(ts.iter().rev().map(|ty| <<I as Interner>::Ty as Into<I::GenericArg>>::into(ty))),
             ty::FnPtr(sig_tys, _hdr) => {
                 stack.extend(
-                    sig_tys.skip_binder().inputs_and_output.iter().rev().map(|ty| ty.into()),
+                    sig_tys.skip_binder().inputs_and_output.iter().rev().map(|ty| <<I as Interner>::Ty as Into<I::GenericArg>>::into(ty)),
                 );
             }
             ty::UnsafeBinder(bound_ty) => {

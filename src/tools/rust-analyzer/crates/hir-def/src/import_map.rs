@@ -60,7 +60,7 @@ enum IsTraitAssocItem {
     No,
 }
 
-type ImportMapIndex = FxIndexMap<ItemInNs, (SmallVec<[ImportInfo; 1]>, IsTraitAssocItem)>;
+type ImportMapIndex = FxIndexMap<ItemInNs, (SmallVec<ImportInfo, 1>, IsTraitAssocItem)>;
 
 impl ImportMap {
     pub fn dump(&self, db: &dyn DefDatabase) -> String {

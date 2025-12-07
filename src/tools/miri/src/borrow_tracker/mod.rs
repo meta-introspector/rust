@@ -81,7 +81,7 @@ pub struct FrameState {
     ///
     /// This will contain one tag per reference passed to the function, so
     /// a size of 2 is enough for the vast majority of functions.
-    protected_tags: SmallVec<[(AllocId, BorTag); 2]>,
+    protected_tags: SmallVec<(AllocId, BorTag), 2>,
 }
 
 impl VisitProvenance for FrameState {

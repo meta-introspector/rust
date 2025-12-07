@@ -1360,7 +1360,7 @@ impl AttributeExt for Attribute {
     }
 
     #[inline]
-    fn ident_path(&self) -> Option<SmallVec<[Ident; 1]>> {
+    fn ident_path(&self) -> Option<SmallVec<Ident, 1>> {
         match &self {
             Attribute::Unparsed(n) => Some(n.path.segments.iter().copied().collect()),
             _ => None,
@@ -1478,12 +1478,12 @@ impl Attribute {
     }
 
     #[inline]
-    pub fn path(&self) -> SmallVec<[Symbol; 1]> {
+    pub fn path(&self) -> SmallVec<Symbol, 1> {
         AttributeExt::path(self)
     }
 
     #[inline]
-    pub fn ident_path(&self) -> Option<SmallVec<[Ident; 1]>> {
+    pub fn ident_path(&self) -> Option<SmallVec<Ident, 1>> {
         AttributeExt::ident_path(self)
     }
 
@@ -4495,7 +4495,7 @@ pub struct Upvar {
 #[derive(Debug, Clone, HashStable_Generic)]
 pub struct TraitCandidate {
     pub def_id: DefId,
-    pub import_ids: SmallVec<[LocalDefId; 1]>,
+    pub import_ids: SmallVec<LocalDefId, 1>,
 }
 
 #[derive(Copy, Clone, Debug, HashStable_Generic)]

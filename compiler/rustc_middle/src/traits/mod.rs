@@ -755,17 +755,17 @@ pub struct ImplSourceUserDefinedData<'tcx, N> {
 #[derive(Clone, Debug, PartialEq, Eq, Hash, HashStable, PartialOrd, Ord)]
 pub enum DynCompatibilityViolation {
     /// `Self: Sized` declared on the trait.
-    SizedSelf(SmallVec<[Span; 1]>),
+    SizedSelf(SmallVec<Span, 1>),
 
     /// Supertrait reference references `Self` an in illegal location
     /// (e.g., `trait Foo : Bar<Self>`).
-    SupertraitSelf(SmallVec<[Span; 1]>),
+    SupertraitSelf(SmallVec<Span, 1>),
 
     // Supertrait has a non-lifetime `for<T>` binder.
-    SupertraitNonLifetimeBinder(SmallVec<[Span; 1]>),
+    SupertraitNonLifetimeBinder(SmallVec<Span, 1>),
 
     // Trait has a `const Trait` supertrait.
-    SupertraitConst(SmallVec<[Span; 1]>),
+    SupertraitConst(SmallVec<Span, 1>),
 
     /// Method has something illegal.
     Method(Symbol, MethodViolationCode, Span),
@@ -881,7 +881,7 @@ impl DynCompatibilityViolation {
         }
     }
 
-    pub fn spans(&self) -> SmallVec<[Span; 1]> {
+    pub fn spans(&self) -> SmallVec<Span, 1> {
         // When `span` comes from a separate crate, it'll be `DUMMY_SP`. Treat it as `None` so
         // diagnostics use a `note` instead of a `span_label`.
         match self {

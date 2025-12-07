@@ -147,8 +147,12 @@ macro_rules! ast_fragments {
                     }
                     AstFragment::MethodReceiverExpr(expr) => vis.visit_method_receiver_expr(expr),
                     $($(AstFragment::$Kind(ast) => vis.$mut_visit_ast(ast),)?)*
-                    $($(AstFragment::$Kind(ast) =>
-                        ast.flat_map_in_place(|ast| vis.$flat_map_ast_elt(ast, $($args)*)),)?)*
+                    $($(AstFragment::$Kind(ast) => {
+                        let new_elements: SmallVec<_> = ast.drain(..)
+                                                           .flat_map(|elt| vis.$flat_map_ast_elt(elt, $($args)*))
+                                                           .collect();
+                        *ast = new_elements;
+                    }),)?)*
                 }
             }
 
@@ -204,74 +208,74 @@ ast_fragments! {
         one fn visit_ty; fn visit_ty; fn pprust::ty_to_string;
         fn make_ty;
     }
-    Stmts(SmallVec<[ast::Stmt; 1]>) {
+    Stmts(SmallVec<ast::Stmt, 1>) {
         "statement";
         many fn flat_map_stmt; fn visit_stmt(); fn pprust::stmt_to_string;
         fn make_stmts;
     }
-    Items(SmallVec<[Box<ast::Item>; 1]>) {
+    Items(SmallVec<Box<ast::Item>, 1>) {
         "item";
         many fn flat_map_item; fn visit_item(); fn pprust::item_to_string;
         fn make_items;
     }
-    TraitItems(SmallVec<[Box<ast::AssocItem>; 1]>) {
+    TraitItems(SmallVec<Box<ast::AssocItem>, 1>) {
         "trait item";
         many fn flat_map_assoc_item; fn visit_assoc_item(AssocCtxt::Trait);
             fn pprust::assoc_item_to_string;
         fn make_trait_items;
     }
-    ImplItems(SmallVec<[Box<ast::AssocItem>; 1]>) {
+    ImplItems(SmallVec<Box<ast::AssocItem>, 1>) {
         "impl item";
         many fn flat_map_assoc_item; fn visit_assoc_item(AssocCtxt::Impl { of_trait: false });
             fn pprust::assoc_item_to_string;
         fn make_impl_items;
     }
-    TraitImplItems(SmallVec<[Box<ast::AssocItem>; 1]>) {
+    TraitImplItems(SmallVec<Box<ast::AssocItem>, 1>) {
         "impl item";
         many fn flat_map_assoc_item; fn visit_assoc_item(AssocCtxt::Impl { of_trait: true });
             fn pprust::assoc_item_to_string;
         fn make_trait_impl_items;
     }
-    ForeignItems(SmallVec<[Box<ast::ForeignItem>; 1]>) {
+    ForeignItems(SmallVec<Box<ast::ForeignItem>, 1>) {
         "foreign item";
         many fn flat_map_foreign_item; fn visit_foreign_item(); fn pprust::foreign_item_to_string;
         fn make_foreign_items;
     }
-    Arms(SmallVec<[ast::Arm; 1]>) {
+    Arms(SmallVec<ast::Arm, 1>) {
         "match arm";
         many fn flat_map_arm; fn visit_arm(); fn unreachable_to_string;
         fn make_arms;
     }
-    ExprFields(SmallVec<[ast::ExprField; 1]>) {
+    ExprFields(SmallVec<ast::ExprField, 1>) {
         "field expression";
         many fn flat_map_expr_field; fn visit_expr_field(); fn unreachable_to_string;
         fn make_expr_fields;
     }
-    PatFields(SmallVec<[ast::PatField; 1]>) {
+    PatFields(SmallVec<ast::PatField, 1>) {
         "field pattern";
         many fn flat_map_pat_field; fn visit_pat_field(); fn unreachable_to_string;
         fn make_pat_fields;
     }
-    GenericParams(SmallVec<[ast::GenericParam; 1]>) {
+    GenericParams(SmallVec<ast::GenericParam, 1>) {
         "generic parameter";
         many fn flat_map_generic_param; fn visit_generic_param(); fn unreachable_to_string;
         fn make_generic_params;
     }
-    Params(SmallVec<[ast::Param; 1]>) {
+    Params(SmallVec<ast::Param, 1>) {
         "function parameter";
         many fn flat_map_param; fn visit_param(); fn unreachable_to_string;
         fn make_params;
     }
-    FieldDefs(SmallVec<[ast::FieldDef; 1]>) {
+    FieldDefs(SmallVec<ast::FieldDef, 1>) {
         "field";
         many fn flat_map_field_def; fn visit_field_def(); fn unreachable_to_string;
         fn make_field_defs;
     }
-    Variants(SmallVec<[ast::Variant; 1]>) {
+    Variants(SmallVec<ast::Variant, 1>) {
         "variant"; many fn flat_map_variant; fn visit_variant(); fn unreachable_to_string;
         fn make_variants;
     }
-    WherePredicates(SmallVec<[ast::WherePredicate; 1]>) {
+    WherePredicates(SmallVec<ast::WherePredicate, 1>) {
         "where predicate";
         many fn flat_map_where_predicate; fn visit_where_predicate(); fn unreachable_to_string;
         fn make_where_predicates;
@@ -1245,7 +1249,7 @@ enum AddSemicolon {
 /// A trait implemented for all `AstFragment` nodes and providing all pieces
 /// of functionality used by `InvocationCollector`.
 trait InvocationCollectorNode: HasAttrs + HasNodeId + Sized {
-    type OutputTy = SmallVec<[Self; 1]>;
+    type OutputTy = SmallVec<Self, 1>;
     type ItemKind = ItemKind;
     const KIND: AstFragmentKind;
     fn to_annotatable(self) -> Annotatable;
@@ -1456,7 +1460,7 @@ impl InvocationCollectorNode for Box<ast::Item> {
 
 struct TraitItemTag;
 impl InvocationCollectorNode for AstNodeWrapper<Box<ast::AssocItem>, TraitItemTag> {
-    type OutputTy = SmallVec<[Box<ast::AssocItem>; 1]>;
+    type OutputTy = SmallVec<Box<ast::AssocItem>, 1>;
     type ItemKind = AssocItemKind;
     const KIND: AstFragmentKind = AstFragmentKind::TraitItems;
     fn to_annotatable(self) -> Annotatable {
@@ -1497,7 +1501,7 @@ impl InvocationCollectorNode for AstNodeWrapper<Box<ast::AssocItem>, TraitItemTa
 
 struct ImplItemTag;
 impl InvocationCollectorNode for AstNodeWrapper<Box<ast::AssocItem>, ImplItemTag> {
-    type OutputTy = SmallVec<[Box<ast::AssocItem>; 1]>;
+    type OutputTy = SmallVec<Box<ast::AssocItem>, 1>;
     type ItemKind = AssocItemKind;
     const KIND: AstFragmentKind = AstFragmentKind::ImplItems;
     fn to_annotatable(self) -> Annotatable {
@@ -1538,7 +1542,7 @@ impl InvocationCollectorNode for AstNodeWrapper<Box<ast::AssocItem>, ImplItemTag
 
 struct TraitImplItemTag;
 impl InvocationCollectorNode for AstNodeWrapper<Box<ast::AssocItem>, TraitImplItemTag> {
-    type OutputTy = SmallVec<[Box<ast::AssocItem>; 1]>;
+    type OutputTy = SmallVec<Box<ast::AssocItem>, 1>;
     type ItemKind = AssocItemKind;
     const KIND: AstFragmentKind = AstFragmentKind::TraitImplItems;
     fn to_annotatable(self) -> Annotatable {
@@ -2375,7 +2379,7 @@ impl<'a, 'b> InvocationCollector<'a, 'b> {
 }
 
 impl<'a, 'b> MutVisitor for InvocationCollector<'a, 'b> {
-    fn flat_map_item(&mut self, node: Box<ast::Item>) -> SmallVec<[Box<ast::Item>; 1]> {
+    fn flat_map_item(&mut self, node: Box<ast::Item>) -> SmallVec<Box<ast::Item>, 1> {
         self.flat_map_node(node)
     }
 
@@ -2383,7 +2387,7 @@ impl<'a, 'b> MutVisitor for InvocationCollector<'a, 'b> {
         &mut self,
         node: Box<ast::AssocItem>,
         ctxt: AssocCtxt,
-    ) -> SmallVec<[Box<ast::AssocItem>; 1]> {
+    ) -> SmallVec<Box<ast::AssocItem>, 1> {
         match ctxt {
             AssocCtxt::Trait => self.flat_map_node(AstNodeWrapper::new(node, TraitItemTag)),
             AssocCtxt::Impl { of_trait: false, .. } => {
@@ -2398,49 +2402,49 @@ impl<'a, 'b> MutVisitor for InvocationCollector<'a, 'b> {
     fn flat_map_foreign_item(
         &mut self,
         node: Box<ast::ForeignItem>,
-    ) -> SmallVec<[Box<ast::ForeignItem>; 1]> {
+    ) -> SmallVec<Box<ast::ForeignItem>, 1> {
         self.flat_map_node(node)
     }
 
-    fn flat_map_variant(&mut self, node: ast::Variant) -> SmallVec<[ast::Variant; 1]> {
+    fn flat_map_variant(&mut self, node: ast::Variant) -> SmallVec<ast::Variant, 1> {
         self.flat_map_node(node)
     }
 
     fn flat_map_where_predicate(
         &mut self,
         node: ast::WherePredicate,
-    ) -> SmallVec<[ast::WherePredicate; 1]> {
+    ) -> SmallVec<ast::WherePredicate, 1> {
         self.flat_map_node(node)
     }
 
-    fn flat_map_field_def(&mut self, node: ast::FieldDef) -> SmallVec<[ast::FieldDef; 1]> {
+    fn flat_map_field_def(&mut self, node: ast::FieldDef) -> SmallVec<ast::FieldDef, 1> {
         self.flat_map_node(node)
     }
 
-    fn flat_map_pat_field(&mut self, node: ast::PatField) -> SmallVec<[ast::PatField; 1]> {
+    fn flat_map_pat_field(&mut self, node: ast::PatField) -> SmallVec<ast::PatField, 1> {
         self.flat_map_node(node)
     }
 
-    fn flat_map_expr_field(&mut self, node: ast::ExprField) -> SmallVec<[ast::ExprField; 1]> {
+    fn flat_map_expr_field(&mut self, node: ast::ExprField) -> SmallVec<ast::ExprField, 1> {
         self.flat_map_node(node)
     }
 
-    fn flat_map_param(&mut self, node: ast::Param) -> SmallVec<[ast::Param; 1]> {
+    fn flat_map_param(&mut self, node: ast::Param) -> SmallVec<ast::Param, 1> {
         self.flat_map_node(node)
     }
 
     fn flat_map_generic_param(
         &mut self,
         node: ast::GenericParam,
-    ) -> SmallVec<[ast::GenericParam; 1]> {
+    ) -> SmallVec<ast::GenericParam, 1> {
         self.flat_map_node(node)
     }
 
-    fn flat_map_arm(&mut self, node: ast::Arm) -> SmallVec<[ast::Arm; 1]> {
+    fn flat_map_arm(&mut self, node: ast::Arm) -> SmallVec<ast::Arm, 1> {
         self.flat_map_node(node)
     }
 
-    fn flat_map_stmt(&mut self, node: ast::Stmt) -> SmallVec<[ast::Stmt; 1]> {
+    fn flat_map_stmt(&mut self, node: ast::Stmt) -> SmallVec<ast::Stmt, 1> {
         // FIXME: invocations in semicolon-less expressions positions are expanded as expressions,
         // changing that requires some compatibility measures.
         if node.is_expr() {

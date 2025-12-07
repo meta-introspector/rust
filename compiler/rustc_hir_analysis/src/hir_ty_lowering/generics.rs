@@ -194,7 +194,7 @@ pub fn lower_generic_args<'tcx: 'a, 'a>(
     // We manually build up the generic arguments, rather than using convenience
     // methods in `rustc_middle/src/ty/generic_args.rs`, so that we can iterate over the arguments and
     // parameters in lock-step linearly, instead of trying to match each pair.
-    let mut args: SmallVec<[ty::GenericArg<'tcx>; 8]> = SmallVec::with_capacity(count);
+    let mut args: SmallVec<ty::GenericArg<'tcx>, 8> = SmallVec::with_capacity(count);
     // Iterate over each segment of the path.
     while let Some((def_id, defs)) = stack.pop() {
         let mut params = defs.own_params.iter().peekable();

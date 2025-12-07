@@ -113,7 +113,7 @@ impl<'hir> LoweringContext<'_, 'hir> {
         })
     }
 
-    pub(super) fn lower_item_ref(&mut self, i: &Item) -> SmallVec<[hir::ItemId; 1]> {
+    pub(super) fn lower_item_ref(&mut self, i: &Item) -> SmallVec<hir::ItemId, 1> {
         let mut node_ids = smallvec![hir::ItemId { owner_id: self.owner_id(i.id) }];
         if let ItemKind::Use(use_tree) = &i.kind {
             self.lower_item_id_use_tree(use_tree, &mut node_ids);
@@ -121,7 +121,7 @@ impl<'hir> LoweringContext<'_, 'hir> {
         node_ids
     }
 
-    fn lower_item_id_use_tree(&mut self, tree: &UseTree, vec: &mut SmallVec<[hir::ItemId; 1]>) {
+    fn lower_item_id_use_tree(&mut self, tree: &UseTree, vec: &mut SmallVec<hir::ItemId, 1>) {
         match &tree.kind {
             UseTreeKind::Nested { items, .. } => {
                 for &(ref nested, id) in items {
@@ -1630,7 +1630,7 @@ impl<'hir> LoweringContext<'_, 'hir> {
         assert!(self.impl_trait_defs.is_empty());
         assert!(self.impl_trait_bounds.is_empty());
 
-        let mut predicates: SmallVec<[hir::WherePredicate<'hir>; 4]> = SmallVec::new();
+        let mut predicates: SmallVec<hir::WherePredicate<'hir>, 4> = SmallVec::new();
         predicates.extend(generics.params.iter().filter_map(|param| {
             self.lower_generic_bound_predicate(
                 param.ident,
@@ -1652,7 +1652,7 @@ impl<'hir> LoweringContext<'_, 'hir> {
                 .map(|predicate| self.lower_where_predicate(predicate, &generics.params)),
         );
 
-        let mut params: SmallVec<[hir::GenericParam<'hir>; 4]> = self
+        let mut params: SmallVec<hir::GenericParam<'hir>, 4> = self
             .lower_generic_params_mut(&generics.params, hir::GenericParamSource::Generics)
             .collect();
 

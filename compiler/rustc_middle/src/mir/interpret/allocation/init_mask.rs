@@ -650,7 +650,7 @@ pub struct InitCopy {
     initial: bool,
     /// The lengths of ranges that are run-length encoded.
     /// The initialization state of the ranges alternate starting with `initial`.
-    ranges: smallvec::SmallVec<[u64; 1]>,
+    ranges: smallvec::SmallVec<u64, 1>,
 }
 
 impl InitCopy {
@@ -680,7 +680,7 @@ impl InitMask {
         // `[5, 1, 2, 1, 3, 3, 1]`,
         // where each element toggles the state.
 
-        let mut ranges = smallvec::SmallVec::<[u64; 1]>::new();
+        let mut ranges = smallvec::SmallVec::<u64, 1>::new();
 
         let mut chunks = self.range_as_init_chunks(range).peekable();
 

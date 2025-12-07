@@ -12,7 +12,7 @@ use std::{fmt, fs, io};
 use fluent_bundle::FluentResource;
 pub use fluent_bundle::types::FluentType;
 pub use fluent_bundle::{self, FluentArgs, FluentError, FluentValue};
-use fluent_syntax::parser::ParserError;
+use fluent_syntax::parser::errors::ParserError;
 use intl_memoizer::concurrent::IntlLangMemoizer;
 use rustc_data_structures::sync::{DynSend, IntoDynSyncSend};
 use rustc_macros::{Decodable, Encodable};

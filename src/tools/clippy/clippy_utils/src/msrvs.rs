@@ -155,7 +155,7 @@ impl Msrv {
 /// lint passes, use [`Msrv`] for late passes
 #[derive(Debug, Clone)]
 pub struct MsrvStack {
-    stack: SmallVec<[RustcVersion; 2]>,
+    stack: SmallVec<RustcVersion, 2>,
 }
 
 impl MsrvStack {

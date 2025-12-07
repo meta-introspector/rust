@@ -88,7 +88,7 @@ fn prepare_vtable_segments_inner<'tcx, T>(
     let mut emit_vptr_on_new_entry = false;
     let mut visited = PredicateSet::new(tcx);
     let predicate = trait_ref.upcast(tcx);
-    let mut stack: SmallVec<[(ty::TraitRef<'tcx>, _, _); 5]> =
+    let mut stack: SmallVec<(ty::TraitRef<'tcx>, _, _), 5> =
         smallvec![(trait_ref, emit_vptr_on_new_entry, maybe_iter(None))];
     visited.insert(predicate);
 

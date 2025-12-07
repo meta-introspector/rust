@@ -69,7 +69,7 @@ impl<'a, 'll> SBuilder<'a, 'll> {
 
         let args = self.check_call("call", llty, llfn, args);
         let funclet_bundle = funclet.map(|funclet| funclet.bundle());
-        let mut bundles: SmallVec<[_; 2]> = SmallVec::new();
+        let mut bundles: SmallVec<_, 2> = SmallVec::new();
         if let Some(funclet_bundle) = funclet_bundle {
             bundles.push(funclet_bundle);
         }
@@ -382,7 +382,7 @@ impl<'a, 'll, 'tcx> BuilderMethods<'a, 'tcx> for Builder<'a, 'll, 'tcx> {
         let weight =
             |is_cold: bool| -> &Metadata { if is_cold { cold_weight } else { hot_weight } };
 
-        let mut md: SmallVec<[&Metadata; 16]> = SmallVec::with_capacity(cases.len() + 2);
+        let mut md: SmallVec<&Metadata, 16> = SmallVec::with_capacity(cases.len() + 2);
         md.push(id);
         md.push(weight(else_is_cold));
 
@@ -413,7 +413,7 @@ impl<'a, 'll, 'tcx> BuilderMethods<'a, 'tcx> for Builder<'a, 'll, 'tcx> {
 
         let args = self.check_call("invoke", llty, llfn, args);
         let funclet_bundle = funclet.map(|funclet| funclet.bundle());
-        let mut bundles: SmallVec<[_; 2]> = SmallVec::new();
+        let mut bundles: SmallVec<_, 2> = SmallVec::new();
         if let Some(funclet_bundle) = funclet_bundle {
             bundles.push(funclet_bundle);
         }
@@ -1374,7 +1374,7 @@ impl<'a, 'll, 'tcx> BuilderMethods<'a, 'tcx> for Builder<'a, 'll, 'tcx> {
 
         let args = self.check_call("call", llty, llfn, args);
         let funclet_bundle = funclet.map(|funclet| funclet.bundle());
-        let mut bundles: SmallVec<[_; 2]> = SmallVec::new();
+        let mut bundles: SmallVec<_, 2> = SmallVec::new();
         if let Some(funclet_bundle) = funclet_bundle {
             bundles.push(funclet_bundle);
         }
@@ -1809,7 +1809,7 @@ impl<'a, 'll, 'tcx> Builder<'a, 'll, 'tcx> {
 
         let args = self.check_call("callbr", llty, llfn, args);
         let funclet_bundle = funclet.map(|funclet| funclet.bundle());
-        let mut bundles: SmallVec<[_; 2]> = SmallVec::new();
+        let mut bundles: SmallVec<_, 2> = SmallVec::new();
         if let Some(funclet_bundle) = funclet_bundle {
             bundles.push(funclet_bundle);
         }

@@ -134,7 +134,7 @@ impl Ord for VTimestamp {
 /// This means we cannot represent a clock where the last entry is a timestamp-0 read that occurs
 /// because of a retag. That's fine, all it does is risk wrong diagnostics in a extreme corner case.
 #[derive(PartialEq, Eq, Default, Debug)]
-pub struct VClock(SmallVec<[VTimestamp; SMALL_VECTOR]>);
+pub struct VClock(SmallVec<VTimestamp, SMALL_VECTOR>);
 
 impl VClock {
     /// Create a new vector clock containing all zeros except

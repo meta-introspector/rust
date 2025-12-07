@@ -320,7 +320,7 @@ struct MatchState<'t> {
     /// When matching against matchers with nested delimited submatchers (e.g., `pat ( pat ( .. )
     /// pat ) pat`), we need to keep track of the matchers we are descending into. This stack does
     /// that where the bottom of the stack is the outermost matcher.
-    stack: SmallVec<[OpDelimitedIter<'t>; 4]>,
+    stack: SmallVec<OpDelimitedIter<'t>, 4>,
 
     /// The "parent" matcher position if we are in a repetition. That is, the matcher position just
     /// before we enter the repetition.
@@ -369,11 +369,11 @@ fn match_loop_inner<'t>(
     stack: &[TtIter<'t, Span>],
     res: &mut Match<'t>,
     bindings_builder: &mut BindingsBuilder<'t>,
-    cur_items: &mut SmallVec<[MatchState<'t>; 1]>,
-    bb_items: &mut SmallVec<[MatchState<'t>; 1]>,
+    cur_items: &mut SmallVec<MatchState<'t>, 1>,
+    bb_items: &mut SmallVec<MatchState<'t>, 1>,
     next_items: &mut Vec<MatchState<'t>>,
-    eof_items: &mut SmallVec<[MatchState<'t>; 1]>,
-    error_items: &mut SmallVec<[MatchState<'t>; 1]>,
+    eof_items: &mut SmallVec<MatchState<'t>, 1>,
+    error_items: &mut SmallVec<MatchState<'t>, 1>,
     delim_span: tt::DelimSpan<Span>,
     edition: Edition,
 ) {
@@ -627,7 +627,7 @@ fn match_loop<'t>(
 ) -> Match<'t> {
     let span = src.top_subtree().delimiter.delim_span();
     let mut src = src.iter();
-    let mut stack: SmallVec<[TtIter<'_, Span>; 1]> = SmallVec::new();
+    let mut stack: SmallVec<TtIter<'_, Span>, 1> = SmallVec::new();
     let mut res = Match::default();
     let mut error_recover_item = None;
 

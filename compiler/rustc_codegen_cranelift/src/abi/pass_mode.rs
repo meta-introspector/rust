@@ -11,7 +11,7 @@ use crate::prelude::*;
 use crate::value_and_place::assert_assignable;
 
 pub(super) trait ArgAbiExt<'tcx> {
-    fn get_abi_param(&self, tcx: TyCtxt<'tcx>) -> SmallVec<[AbiParam; 2]>;
+    fn get_abi_param(&self, tcx: TyCtxt<'tcx>) -> SmallVec<AbiParam, 2>;
     fn get_abi_return(&self, tcx: TyCtxt<'tcx>) -> (Option<AbiParam>, Vec<AbiParam>);
 }
 
@@ -40,7 +40,7 @@ fn apply_attrs_to_abi_param(param: AbiParam, arg_attrs: ArgAttributes) -> AbiPar
     }
 }
 
-fn cast_target_to_abi_params(cast: &CastTarget) -> SmallVec<[(Size, AbiParam); 2]> {
+fn cast_target_to_abi_params(cast: &CastTarget) -> SmallVec<(Size, AbiParam), 2> {
     if let Some(offset_from_start) = cast.rest_offset {
         assert!(cast.prefix[1..].iter().all(|p| p.is_none()));
         assert_eq!(cast.rest.unit.size, cast.rest.total);
@@ -95,7 +95,7 @@ fn cast_target_to_abi_params(cast: &CastTarget) -> SmallVec<[(Size, AbiParam); 2
 }
 
 impl<'tcx> ArgAbiExt<'tcx> for ArgAbi<'tcx, Ty<'tcx>> {
-    fn get_abi_param(&self, tcx: TyCtxt<'tcx>) -> SmallVec<[AbiParam; 2]> {
+    fn get_abi_param(&self, tcx: TyCtxt<'tcx>) -> SmallVec<AbiParam, 2> {
         match self.mode {
             PassMode::Ignore => smallvec![],
             PassMode::Direct(attrs) => match self.layout.backend_repr {
@@ -203,7 +203,7 @@ pub(super) fn to_casted_value<'tcx>(
     fx: &mut FunctionCx<'_, '_, 'tcx>,
     arg: CValue<'tcx>,
     cast: &CastTarget,
-) -> SmallVec<[Value; 2]> {
+) -> SmallVec<Value, 2> {
     let (ptr, meta) = arg.force_stack(fx);
     assert!(meta.is_none());
     cast_target_to_abi_params(cast)
@@ -248,7 +248,7 @@ pub(super) fn adjust_arg_for_abi<'tcx>(
     arg: CValue<'tcx>,
     arg_abi: &ArgAbi<'tcx, Ty<'tcx>>,
     is_owned: bool,
-) -> SmallVec<[Value; 2]> {
+) -> SmallVec<Value, 2> {
     assert_assignable(fx, arg.layout().ty, arg_abi.layout.ty, 16);
     match arg_abi.mode {
         PassMode::Ignore => smallvec![],
@@ -293,7 +293,7 @@ pub(super) fn cvalue_for_param<'tcx>(
             assert_eq!(fx.bcx.func.dfg.value_type(block_param), abi_param.value_type);
             block_param
         })
-        .collect::<SmallVec<[_; 2]>>();
+        .collect::<SmallVec<_, 2>>();
 
     crate::abi::comments::add_arg_comment(
         fx,

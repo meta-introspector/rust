@@ -2672,7 +2672,7 @@ impl<'a, 'hir> LoweringContext<'a, 'hir> {
 
 /// Helper struct for the delayed construction of [`hir::GenericArgs`].
 struct GenericArgsCtor<'hir> {
-    args: SmallVec<[hir::GenericArg<'hir>; 4]>,
+    args: SmallVec<hir::GenericArg<'hir>, 4>,
     constraints: &'hir [hir::AssocItemConstraint<'hir>],
     parenthesized: hir::GenericArgsParentheses,
     span: Span,

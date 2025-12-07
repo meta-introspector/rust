@@ -56,7 +56,7 @@ declare_clippy_lint! {
     ///
     /// In addition, when writing documentation comments, including `[]` brackets
     /// inside a link text would trip the parser. Therefore, documenting link with
-    /// `[`SmallVec<[T; INLINE_CAPACITY]>`]` and then [`SmallVec<[T; INLINE_CAPACITY]>`]: SmallVec
+    /// `[`SmallVec<T, INLINE_CAPACITY>`]` and then [`SmallVec<T, INLINE_CAPACITY>`]: SmallVec
     /// would fail.
     ///
     /// ### Examples
@@ -70,7 +70,7 @@ declare_clippy_lint! {
     /// ```no_run
     /// // Link text with `[]` brackets should be written as following:
     /// /// Consume the array and return the inner
-    /// /// [`SmallVec<[T; INLINE_CAPACITY]>`][SmallVec].
+    /// /// [`SmallVec<T, INLINE_CAPACITY>`][SmallVec].
     /// /// [SmallVec]: SmallVec
     /// fn main() {}
     /// ```

@@ -122,7 +122,7 @@ enum PatBoundCtx {
 ///   subpattern to construct the scope for the guard.
 ///
 /// Each identifier must map to at most one distinct [`Res`].
-type PatternBindings = SmallVec<[(PatBoundCtx, FxIndexMap<Ident, Res>); 1]>;
+type PatternBindings = SmallVec<(PatBoundCtx, FxIndexMap<Ident, Res>), 1>;
 
 /// Does this the item (from the item rib scope) allow generic parameters?
 #[derive(Copy, Clone, Debug)]

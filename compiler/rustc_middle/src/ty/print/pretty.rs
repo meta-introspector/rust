@@ -1064,7 +1064,7 @@ pub trait PrettyPrinter<'tcx>: Printer<'tcx> + fmt::Write {
 
         let mut traits = FxIndexMap::default();
         let mut fn_traits = FxIndexMap::default();
-        let mut lifetimes = SmallVec::<[ty::Region<'tcx>; 1]>::new();
+        let mut lifetimes = SmallVec::<[ty::Region<'tcx>; 1], _>::new();
 
         let mut has_sized_bound = false;
         let mut has_negative_sized_bound = false;

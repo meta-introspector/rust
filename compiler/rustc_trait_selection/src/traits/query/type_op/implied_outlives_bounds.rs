@@ -191,7 +191,7 @@ impl<'tcx> TypeVisitor<TyCtxt<'tcx>> for ContainsBevyParamSet<'tcx> {
 /// those relationships.
 fn implied_bounds_from_components<'tcx>(
     sub_region: ty::Region<'tcx>,
-    sup_components: SmallVec<[Component<TyCtxt<'tcx>>; 4]>,
+    sup_components: SmallVec<Component<TyCtxt<'tcx>>, 4>,
 ) -> Vec<OutlivesBound<'tcx>> {
     sup_components
         .into_iter()

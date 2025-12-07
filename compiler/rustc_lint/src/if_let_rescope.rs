@@ -402,7 +402,7 @@ impl<'tcx> FindSignificantDropper<'_, 'tcx> {
     fn check_if_let_scrutinee(
         &mut self,
         init: &'tcx hir::Expr<'tcx>,
-    ) -> ControlFlow<(Span, SmallVec<[Ty<'tcx>; 4]>)> {
+    ) -> ControlFlow<(Span, SmallVec<Ty<'tcx>, 4>)> {
         self.check_promoted_temp_with_drop(init)?;
         self.visit_expr(init)
     }
@@ -416,7 +416,7 @@ impl<'tcx> FindSignificantDropper<'_, 'tcx> {
     fn check_promoted_temp_with_drop(
         &self,
         expr: &'tcx hir::Expr<'tcx>,
-    ) -> ControlFlow<(Span, SmallVec<[Ty<'tcx>; 4]>)> {
+    ) -> ControlFlow<(Span, SmallVec<Ty<'tcx>, 4>)> {
         if expr.is_place_expr(|base| {
             self.cx
                 .typeck_results()
@@ -441,7 +441,7 @@ impl<'tcx> FindSignificantDropper<'_, 'tcx> {
 }
 
 impl<'tcx> Visitor<'tcx> for FindSignificantDropper<'_, 'tcx> {
-    type Result = ControlFlow<(Span, SmallVec<[Ty<'tcx>; 4]>)>;
+    type Result = ControlFlow<(Span, SmallVec<Ty<'tcx>, 4>)>;
 
     fn visit_block(&mut self, b: &'tcx hir::Block<'tcx>) -> Self::Result {
         // Blocks introduce temporary terminating scope for all of its

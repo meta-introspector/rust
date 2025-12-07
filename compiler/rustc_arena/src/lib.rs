@@ -193,7 +193,7 @@ impl<T> TypedArena<T> {
 
     /// Allocates the elements of this iterator into a contiguous slice in the `TypedArena`.
     ///
-    /// Note: for reasons of reentrancy and panic safety we collect into a `SmallVec<[_; 8]>` before
+    /// Note: for reasons of reentrancy and panic safety we collect into a `SmallVec<_, 8>` before
     /// storing the elements in the arena.
     #[inline]
     pub fn alloc_from_iter<I: IntoIterator<Item = T>>(&self, iter: I) -> &mut [T] {
@@ -202,7 +202,7 @@ impl<T> TypedArena<T> {
 
     /// Allocates the elements of this iterator into a contiguous slice in the `TypedArena`.
     ///
-    /// Note: for reasons of reentrancy and panic safety we collect into a `SmallVec<[_; 8]>` before
+    /// Note: for reasons of reentrancy and panic safety we collect into a `SmallVec<_, 8>` before
     /// storing the elements in the arena.
     #[inline]
     pub fn try_alloc_from_iter<E>(
@@ -220,10 +220,7 @@ impl<T> TypedArena<T> {
         //
         // So we collect all the elements beforehand, which takes care of reentrancy and panic
         // safety. This function is much less hot than `DroplessArena::alloc_from_iter`, so it
-        // doesn't need to be hyper-optimized.
-        assert!(size_of::<T>() != 0);
-
-        let vec: Result<SmallVec<[T; 8]>, E> = iter.into_iter().collect();
+        let vec: Result<SmallVec<T, 8>, E> = iter.into_iter().collect();
         let mut vec = vec?;
         if vec.is_empty() {
             return Ok(&mut []);
@@ -590,7 +587,7 @@ impl DroplessArena {
         assert!(size_of::<T>() != 0);
 
         // Takes care of reentrancy.
-        let vec: Result<SmallVec<[T; 8]>, E> = iter.into_iter().collect();
+        let vec: Result<SmallVec<T, 8>, E> = iter.into_iter().collect();
         let mut vec = vec?;
         if vec.is_empty() {
             return Ok(&mut []);

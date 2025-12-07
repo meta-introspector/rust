@@ -931,7 +931,7 @@ impl<Cx: PatCx> PlaceInfo<Cx> {
         &self,
         cx: &Cx,
         ctors: impl Iterator<Item = &'a Constructor<Cx>> + Clone,
-    ) -> Result<(SmallVec<[Constructor<Cx>; 1]>, Vec<Constructor<Cx>>), Cx::Error>
+    ) -> Result<(SmallVec<Constructor<Cx>, 1>, Vec<Constructor<Cx>>), Cx::Error>
     where
         Cx: 'a,
     {
@@ -1023,7 +1023,7 @@ impl<Cx: PatCx> Clone for PlaceInfo<Cx> {
 // - Cx global compilation context
 struct PatStack<'p, Cx: PatCx> {
     // Rows of len 1 are very common, which is why `SmallVec[_; 2]` works well.
-    pats: SmallVec<[PatOrWild<'p, Cx>; 2]>,
+    pats: SmallVec<PatOrWild<'p, Cx>, 2>,
     /// Sometimes we know that as far as this row is concerned, the current case is already handled
     /// by a different, more general, case. When the case is irrelevant for all rows this allows us
     /// to skip a case entirely. This is purely an optimization. See at the top for details.
@@ -1222,7 +1222,7 @@ struct Matrix<'p, Cx: PatCx> {
     rows: Vec<MatrixRow<'p, Cx>>,
     /// Track info about each place. Each place corresponds to a column in `rows`, and their types
     /// must match.
-    place_info: SmallVec<[PlaceInfo<Cx>; 2]>,
+    place_info: SmallVec<PlaceInfo<Cx>, 2>,
     /// Track whether the virtual wildcard row used to compute exhaustiveness is relevant. See top
     /// of the file for details on relevancy.
     wildcard_row_is_relevant: bool,
@@ -1479,7 +1479,7 @@ impl<Cx: PatCx> WitnessStack<Cx> {
         mut self,
         pcx: &PlaceCtxt<'_, Cx>,
         ctor: &Constructor<Cx>,
-    ) -> SmallVec<[Self; 1]> {
+    ) -> SmallVec<Self, 1> {
         let len = self.0.len();
         let arity = pcx.ctor_arity(ctor);
         let fields: Vec<_> = self.0.drain((len - arity)..).rev().collect();
@@ -1609,9 +1609,9 @@ fn collect_overlapping_range_endpoints<'p, Cx: PatCx>(
 ) {
     let overlap = overlap_range.lo;
     // Ranges that look like `lo..=overlap`.
-    let mut prefixes: SmallVec<[_; 1]> = Default::default();
+    let mut prefixes: SmallVec<_, 1> = Default::default();
     // Ranges that look like `overlap..=hi`.
-    let mut suffixes: SmallVec<[_; 1]> = Default::default();
+    let mut suffixes: SmallVec<_, 1> = Default::default();
     // Iterate on patterns that contained `overlap`. We iterate on `specialized_matrix` which
     // contains only rows that matched the current `ctor` as well as accurate intersection
     // information. It doesn't contain the column that contains the range; that can be found in
@@ -1667,9 +1667,9 @@ fn collect_non_contiguous_range_endpoints<'p, Cx: PatCx>(
 ) {
     let gap = gap_range.lo;
     // Ranges that look like `lo..gap`.
-    let mut onebefore: SmallVec<[_; 1]> = Default::default();
+    let mut onebefore: SmallVec<_, 1> = Default::default();
     // Ranges that start on `gap+1` or singletons `gap+1`.
-    let mut oneafter: SmallVec<[_; 1]> = Default::default();
+    let mut oneafter: SmallVec<_, 1> = Default::default();
     // Look through the column for ranges near the gap.
     for pat in matrix.heads() {
         let PatOrWild::Pat(pat) = pat else { continue };

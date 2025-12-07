@@ -337,7 +337,7 @@ impl Attr {
         } else {
             cov_mark::hit!(cfg_attr_active);
 
-            attrs.collect::<SmallVec<[_; 1]>>()
+            attrs.collect::<SmallVec<_, 1>>()
         }
     }
 }

@@ -48,11 +48,11 @@ pub struct OriginalQueryValues<'tcx> {
     /// caller context. For all queries except `evaluate_goal` (used by Chalk),
     /// we only ever put ROOT values into the query, so this map is very
     /// simple.
-    pub universe_map: SmallVec<[ty::UniverseIndex; 4]>,
+    pub universe_map: SmallVec<ty::UniverseIndex, 4>,
 
     /// This is equivalent to `CanonicalVarValues`, but using a
     /// `SmallVec` yields a significant performance win.
-    pub var_values: SmallVec<[GenericArg<'tcx>; 8]>,
+    pub var_values: SmallVec<GenericArg<'tcx>, 8>,
 }
 
 impl<'tcx> Default for OriginalQueryValues<'tcx> {

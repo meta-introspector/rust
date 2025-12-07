@@ -19,7 +19,7 @@ impl<'a> HashStable<StableHashingContext<'a>> for [hir::Attribute] {
         }
 
         // Some attributes are always ignored during hashing.
-        let filtered: SmallVec<[&hir::Attribute; 8]> = self
+        let filtered: SmallVec<&hir::Attribute, 8> = self
             .iter()
             .filter(|attr| {
                 attr.is_doc_comment().is_none()

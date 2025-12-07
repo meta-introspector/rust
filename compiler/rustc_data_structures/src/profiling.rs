@@ -568,7 +568,7 @@ pub struct EventArgRecorder<'p> {
     ///
     /// The most common case, when actually recording event arguments, is to have one argument. Then
     /// followed by recording two, in a couple places.
-    args: SmallVec<[StringId; 2]>,
+    args: SmallVec<StringId, 2>,
 }
 
 impl EventArgRecorder<'_> {

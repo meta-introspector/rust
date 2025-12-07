@@ -28,7 +28,7 @@ pub struct MaybePlacesSwitchIntData<'tcx> {
 
 impl<'tcx> MaybePlacesSwitchIntData<'tcx> {
     /// Creates a `SmallVec` mapping each target in `targets` to its `VariantIdx`.
-    fn variants(&mut self, targets: &mir::SwitchTargets) -> SmallVec<[VariantIdx; 4]> {
+    fn variants(&mut self, targets: &mir::SwitchTargets) -> SmallVec<VariantIdx, 4> {
         self.index = 0;
         targets.all_values().iter().map(|value| self.next_discr(value.get())).collect()
     }

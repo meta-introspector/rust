@@ -7,7 +7,7 @@ edition = "2024"
 # tidy-alphabetical-start
 rustc-hash = "2.0.0"
 rustc_abi = { path = "../rustc_abi", optional = true }
-rustc_apfloat = "0.2.0"
+rustc_apfloat.workspace = true
 rustc_arena = { path = "../rustc_arena", optional = true }
 rustc_data_structures = { path = "../rustc_data_structures", optional = true }
 rustc_errors = { path = "../rustc_errors", optional = true }
@@ -18,14 +18,14 @@ rustc_macros = { path = "../rustc_macros", optional = true }
 rustc_middle = { path = "../rustc_middle", optional = true }
 rustc_session = { path = "../rustc_session", optional = true }
 rustc_span = { path = "../rustc_span", optional = true }
-smallvec = { version = "1.8.1", features = ["union"] }
+smallvec = { workspace=true }
 tracing = "0.1"
 # tidy-alphabetical-end
 
 [dev-dependencies]
 # tidy-alphabetical-start
 tracing-subscriber = { version = "0.3.3", default-features = false, features = ["fmt", "env-filter", "ansi"] }
-tracing-tree = "0.3.0"
+tracing-tree = { workspace = true }
 # tidy-alphabetical-end
 
 [features]

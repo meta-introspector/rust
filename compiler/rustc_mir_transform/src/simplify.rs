@@ -227,7 +227,7 @@ impl<'a, 'tcx> CfgSimplifier<'a, 'tcx> {
     fn collapse_goto_chain(&mut self, start: &mut BasicBlock, changed: &mut bool) {
         // Using `SmallVec` here, because in some logs on libcore oli-obk saw many single-element
         // goto chains. We should probably benchmark different sizes.
-        let mut terminators: SmallVec<[_; 1]> = Default::default();
+        let mut terminators: SmallVec<_, 1> = Default::default();
         let mut current = *start;
         // If each successor has only one predecessor, it's a trivial goto chain.
         // We can move all debuginfos to the last basic block.

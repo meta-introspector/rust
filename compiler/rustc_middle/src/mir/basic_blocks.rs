@@ -19,7 +19,7 @@ pub struct BasicBlocks<'tcx> {
 }
 
 // Typically 95%+ of basic blocks have 4 or fewer predecessors.
-type Predecessors = IndexVec<BasicBlock, SmallVec<[BasicBlock; 4]>>;
+type Predecessors = IndexVec<BasicBlock, SmallVec<BasicBlock, 4>>;
 
 #[derive(Debug, Clone, Copy)]
 pub enum SwitchTargetValue {

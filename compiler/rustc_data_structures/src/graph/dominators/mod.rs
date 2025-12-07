@@ -320,7 +320,7 @@ fn compress(
     //
     // We use a heap stack here to avoid recursing too deeply, exhausting the
     // stack space.
-    let mut stack: smallvec::SmallVec<[_; 8]> = smallvec::smallvec![v];
+    let mut stack: smallvec::SmallVec<PreorderIndex, 8> = smallvec::smallvec![v];
     let mut u = ancestor[v];
     while is_processed(u, lastlinked) {
         stack.push(u);

@@ -1907,7 +1907,7 @@ fn resolution_failure(
     diag_info: DiagnosticInfo<'_>,
     path_str: &str,
     disambiguator: Option<Disambiguator>,
-    kinds: SmallVec<[ResolutionFailure<'_>; 3]>,
+    kinds: SmallVec<ResolutionFailure<'_>, 3>,
 ) {
     let tcx = collector.cx.tcx;
     report_diagnostic(

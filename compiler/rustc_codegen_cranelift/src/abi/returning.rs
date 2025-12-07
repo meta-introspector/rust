@@ -12,7 +12,7 @@ pub(super) fn codegen_return_param<'tcx>(
     ssa_analyzed: &rustc_index::IndexSlice<Local, crate::analyze::SsaKind>,
     block_params_iter: &mut impl Iterator<Item = Value>,
 ) -> CPlace<'tcx> {
-    let (ret_place, ret_param): (_, SmallVec<[_; 2]>) = match fx.fn_abi.ret.mode {
+    let (ret_place, ret_param): (_, SmallVec<_, 2>) = match fx.fn_abi.ret.mode {
         PassMode::Ignore | PassMode::Direct(_) | PassMode::Pair(_, _) | PassMode::Cast { .. } => {
             let is_ssa = ssa_analyzed[RETURN_PLACE].is_ssa(fx, fx.fn_abi.ret.layout.ty);
             (super::make_local_place(fx, RETURN_PLACE, fx.fn_abi.ret.layout, is_ssa), smallvec![])
@@ -46,7 +46,7 @@ pub(super) fn codegen_with_call_return_arg<'tcx>(
     fx: &mut FunctionCx<'_, '_, 'tcx>,
     ret_arg_abi: &ArgAbi<'tcx, Ty<'tcx>>,
     ret_place: CPlace<'tcx>,
-    f: impl FnOnce(&mut FunctionCx<'_, '_, 'tcx>, Option<Value>) -> SmallVec<[Value; 2]>,
+    f: impl FnOnce(&mut FunctionCx<'_, '_, 'tcx>, Option<Value>) -> SmallVec<Value, 2>,
 ) {
     let (ret_temp_place, return_ptr) = match ret_arg_abi.mode {
         PassMode::Ignore => (None, None),

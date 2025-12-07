@@ -99,7 +99,7 @@ impl<'a, 'tcx> Deref for ProbeContext<'a, 'tcx> {
 pub(crate) struct Candidate<'tcx> {
     pub(crate) item: ty::AssocItem,
     pub(crate) kind: CandidateKind<'tcx>,
-    pub(crate) import_ids: SmallVec<[LocalDefId; 1]>,
+    pub(crate) import_ids: SmallVec<LocalDefId, 1>,
 }
 
 #[derive(Debug, Clone)]
@@ -206,7 +206,7 @@ impl PickConstraintsForShadowed {
 pub(crate) struct Pick<'tcx> {
     pub item: ty::AssocItem,
     pub kind: PickKind<'tcx>,
-    pub import_ids: SmallVec<[LocalDefId; 1]>,
+    pub import_ids: SmallVec<LocalDefId, 1>,
 
     /// Indicates that the source expression should be autoderef'd N times
     /// ```ignore (not-rust)
@@ -1053,7 +1053,7 @@ impl<'a, 'tcx> ProbeContext<'a, 'tcx> {
     #[instrument(level = "debug", skip(self))]
     fn assemble_extension_candidates_for_trait(
         &mut self,
-        import_ids: &SmallVec<[LocalDefId; 1]>,
+        import_ids: &SmallVec<LocalDefId, 1>,
         trait_def_id: DefId,
     ) {
         let trait_args = self.fresh_args_for_item(self.span, trait_def_id);
@@ -2561,7 +2561,7 @@ impl<'a, 'tcx> ProbeContext<'a, 'tcx> {
     /// `allow_similar_names` is set, find methods with close-matching names.
     // The length of the returned iterator is nearly always 0 or 1 and this
     // method is fairly hot.
-    fn impl_or_trait_item(&self, def_id: DefId) -> SmallVec<[ty::AssocItem; 1]> {
+    fn impl_or_trait_item(&self, def_id: DefId) -> SmallVec<ty::AssocItem, 1> {
         if let Some(name) = self.method_name {
             if self.allow_similar_names {
                 let max_dist = max(name.as_str().len(), 3) / 3;
