@@ -12,7 +12,7 @@ use std::{fmt, fs, io};
 use fluent_bundle::FluentResource;
 pub use fluent_bundle::types::FluentType;
 pub use fluent_bundle::{self, FluentArgs, FluentError, FluentValue};
-use fluent_syntax::parser::errors::ParserError;
+use fluent_syntax::parser::ParserError;
 use intl_memoizer::concurrent::IntlLangMemoizer;
 use rustc_data_structures::sync::{DynSend, IntoDynSyncSend};
 use rustc_macros::{Decodable, Encodable};
@@ -85,8 +85,8 @@ impl Error for TranslationBundleError {
 }
 
 impl From<(FluentResource, Vec<ParserError>)> for TranslationBundleError {
-    fn from((_, mut errs): (FluentResource, Vec<ParserError>)) -> Self {
-        TranslationBundleError::ParseFtl(errs.pop().expect("failed ftl parse with no errors"))
+    fn from((_, errs): (FluentResource, Vec<ParserError>)) -> Self {
+        TranslationBundleError::ParseFtl(errs.into_iter().next().expect("failed ftl parse with no errors"))
     }
 }
 

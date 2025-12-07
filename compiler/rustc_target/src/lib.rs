@@ -1,17 +1,7 @@
-//! Some stuff used by rustc that doesn't have many dependencies
-//!
-//! Originally extracted from rustc::back, which was nominally the
-//! compiler 'backend', though LLVM is rustc's backend, so rustc_target
-//! is really just odds-and-ends relating to code gen and linking.
-//! This crate mostly exists to make rustc smaller, so we might put
-//! more 'stuff' here in the future. It does not have a dependency on
-//! LLVM.
-
 // tidy-alphabetical-start
-#![cfg_attr(bootstrap, feature(debug_closure_helpers))]
-#![expect(internal_features)]
-#![feature(iter_intersperse)]
-#![feature(rustc_attrs)]
+#![expect(internal_features)] // Restore expect
+#![feature(iter_intersperse)] // Ensure it's present
+#![feature(rustc_attrs)] // Ensure it's present
 // tidy-alphabetical-end
 
 use std::path::{Path, PathBuf};
@@ -116,7 +106,14 @@ macro_rules! target_spec_enum {
             }
         }
 
-        crate::target_spec_enum!(@common_impls $Name);
+        crate::json::serde_deserialize_from_str!($Name);
+
+
+        impl std::fmt::Display for $Name {
+            fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+                f.write_str(self.desc())
+            }
+        }
     };
 
     (
@@ -181,7 +178,14 @@ macro_rules! target_spec_enum {
             }
         }
 
-        crate::target_spec_enum!(@common_impls $Name);
+        crate::json::serde_deserialize_from_str!($Name);
+
+
+        impl std::fmt::Display for $Name {
+            fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+                f.write_str(self.desc())
+            }
+        }
     };
 
     (@common_impls $Name:ident) => {
