@@ -71,7 +71,7 @@ impl SanitizerSet {
             SanitizerSet::SAFESTACK => "safestack",
             SanitizerSet::SHADOWCALLSTACK => "shadow-call-stack",
             SanitizerSet::THREAD => "thread",
-            "hwaddress" => "hwaddress",
+            SanitizerSet::HWADDRESS => "hwaddress",
             SanitizerSet::REALTIME => "realtime",
             _ => return None,
         })
@@ -147,4 +147,3 @@ impl ToJson for SanitizerSet {
             .to_json()
     }
 }
-```

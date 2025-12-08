@@ -24,6 +24,7 @@ crate::target_spec_enum! {
         V5 = "v5",
         Unspecified = "",
     }
+    parse_error_type = "environment";
 }
 
 impl crate::json::ToJson for Env {

@@ -14,6 +14,8 @@ use rustc_abi::AddressSpace;
 use rustc_span::Symbol;
 use rustc_target::abi::Align;
 
+pub type LinkArgs = BTreeMap<LinkerFlavor, Vec<StaticCow<str>>>;
+pub type LinkArgsCli = BTreeMap<LinkerFlavorCli, Vec<StaticCow<str>>>;
 
 /// `TargetOptions` as a separate structure is mostly an implementation detail of `Target`
 /// construction, all its fields logically belong to `Target` and available from `Target`
@@ -282,3 +284,351 @@ pub struct TargetOptions {
     pub trap_unreachable: bool,
 
     /// This target requires everything to be compiled with LTO to emit a final
+/// Optional aspects of a target specification.
+///
+/// This has an implementation of `Default`, see each field for what the default is. In general,
+/// these try to take "minimal defaults" that don't assume anything about the runtime they run in.
+///
+    /// executable, aka there is no native linker for this target.
+    pub requires_lto: bool,
+
+    /// This target has no support for threads.
+    pub singlethread: bool,
+
+    /// Whether library functions call lowering/optimization is disabled in LLVM
+    /// for this target unconditionally.
+    pub no_builtins: bool,
+
+    /// The default visibility for symbols in this target.
+    ///
+    /// This value typically shouldn't be accessed directly, but through the
+    /// `rustc_session::Session::default_visibility` method, which allows `rustc` users to override
+    /// this setting using cmdline flags.
+    pub default_visibility: Option<SymbolVisibility>,
+
+    /// Whether a .debug_gdb_scripts section will be added to the output object file
+    pub emit_debug_gdb_scripts: bool,
+
+    /// Whether or not to unconditionally `uwtable` attributes on functions,
+    /// typically because the platform needs to unwind for things like stack
+    /// unwinders.
+    pub requires_uwtable: bool,
+
+    /// Whether or not to emit `uwtable` attributes on functions if `-C force-unwind-tables`
+    /// is not specified and `uwtable` is not required on this target.
+    pub default_uwtable: bool,
+
+    /// Whether or not SIMD types are passed by reference in the Rust ABI,
+    /// typically required if a target can be compiled with a mixed set of
+    /// target features. This is `true` by default, and `false` for targets like
+    /// wasm32 where the whole program either has simd or not.
+    pub simd_types_indirect: bool,
+
+    /// Pass a list of symbol which should be exported in the dylib to the linker.
+    pub limit_rdylib_exports: bool,
+
+    /// If set, have the linker export exactly these symbols, instead of using
+    /// the usual logic to figure this out from the crate itself.
+    pub override_export_symbols: Option<StaticCow<[StaticCow<str>]>>,
+
+    /// Determines how or whether the MergeFunctions LLVM pass should run for
+    /// this target. Either "disabled", "trampolines", or "aliases".
+    /// The MergeFunctions pass is generally useful, but some targets may need
+    /// to opt out. The default is "aliases".
+    ///
+    /// Workaround for: <https://github.com/rust-lang/rust/issues/57356>
+    pub merge_functions: MergeFunctions,
+
+    /// Use platform dependent mcount function
+    pub mcount: StaticCow<str>,
+
+    /// Use LLVM intrinsic for mcount function name
+    pub llvm_mcount_intrinsic: Option<StaticCow<str>>,
+
+    /// LLVM ABI name, corresponds to the '-mabi' parameter available in multilib C compilers
+    /// and the `-target-abi` flag in llc. In the LLVM API this is `MCOptions.ABIName`.
+    pub llvm_abiname: StaticCow<str>,
+
+    /// Control the float ABI to use, for architectures that support it. The only architecture we
+    /// currently use this for is ARM. Corresponds to the `-float-abi` flag in llc. In the LLVM API
+    /// this is `FloatABIType`. (clang's `-mfloat-abi` is similar but more complicated since it
+    /// can also affect the `soft-float` target feature.)
+    ///
+    /// If not provided, LLVM will infer the float ABI from the target triple (`llvm_target`).
+    pub llvm_floatabi: Option<FloatAbi>,
+
+    /// Picks a specific ABI for this target. This is *not* just for "Rust" ABI functions,
+    /// it can also affect "C" ABI functions; the point is that this flag is interpreted by
+    /// rustc and not forwarded to LLVM.
+    /// So far, this is only used on x86.
+    pub rustc_abi: Option<RustcAbi>,
+
+    /// Whether or not RelaxElfRelocation flag will be passed to the linker
+    pub relax_elf_relocations: bool,
+
+    /// Additional arguments to pass to LLVM, similar to the `-C llvm-args` codegen option.
+    pub llvm_args: StaticCow<[StaticCow<str>]>,
+
+    /// Whether to use legacy .ctors initialization hooks rather than .init_array. Defaults
+    /// to false (uses .init_array).
+    pub use_ctors_section: bool,
+
+    /// Whether the linker is instructed to add a `GNU_EH_FRAME` ELF header
+    /// used to locate unwinding information is passed
+    /// (only has effect if the linker is `ld`-like).
+    pub eh_frame_header: bool,
+
+    /// Is true if the target is an ARM architecture using thumb v1 which allows for
+    /// thumb and arm interworking.
+    pub has_thumb_interworking: bool,
+
+    /// Which kind of debuginfo is used by this target?
+    pub debuginfo_kind: DebuginfoKind,
+    /// How to handle split debug information, if at all. Specifying `None` has
+    /// target-specific meaning.
+    pub split_debuginfo: SplitDebuginfo,
+    /// Which kinds of split debuginfo are supported by the target?
+    pub supported_split_debuginfo: StaticCow<[SplitDebuginfo]>,
+
+    /// The sanitizers supported by this target
+    ///
+    /// Note that the support here is at a codegen level. If the machine code with sanitizer
+    /// enabled can generated on this target, but the necessary supporting libraries are not
+    /// distributed with the target, the sanitizer should still appear in this list for the target.
+    pub supported_sanitizers: SanitizerSet,
+
+    /// The sanitizers that are enabled by default on this target.
+    ///
+    /// Note that the support here is at a codegen level. If the machine code with sanitizer
+    /// enabled can generated on this target, but the necessary supporting libraries are not
+    /// distributed with the target, the sanitizer should still appear in this list for the target.
+    pub default_sanitizers: SanitizerSet,
+
+    /// Minimum number of bits in #[repr(C)] enum. Defaults to the size of c_int
+    pub c_enum_min_bits: Option<u64>,
+
+    /// Whether or not the DWARF `.debug_aranges` section should be generated.
+    pub generate_arange_section: bool,
+
+    /// Whether the target supports stack canary checks. `true` by default,
+    /// since this is most common among tier 1 and tier 2 targets.
+    pub supports_stack_protector: bool,
+
+    /// The name of entry function.
+    /// Default value is "main"
+    pub entry_name: StaticCow<str>,
+
+    /// The ABI of the entry function.
+    /// Default value is `CanonAbi::C`
+    pub entry_abi: CanonAbi,
+
+    /// Whether the target supports XRay instrumentation.
+    pub supports_xray: bool,
+
+    /// The default address space for this target. When using LLVM as a backend, most targets simply
+    /// use LLVM's default address space (0). Some other targets, such as CHERI targets, use a
+    /// custom default address space (in this specific case, `200`).
+    pub default_address_space: rustc_abi::AddressSpace,
+
+    /// Whether the targets supports -Z small-data-threshold
+    small_data_threshold_support: SmallDataThresholdSupport,
+}
+
+
+impl Default for TargetOptions {
+    /// Creates a set of "sane defaults" for any target. This is still
+    /// incomplete, and if used for compilation, will certainly not work.
+    fn default() -> TargetOptions {
+        TargetOptions {
+            endian: Endian::Little,
+            c_int_width: 32,
+            os: Os::None,
+            env: Env::Unspecified,
+            abi: Abi::Unspecified,
+            vendor: "unknown".into(),
+            linker: option_env!("CFG_DEFAULT_LINKER").map(|s| s.into()),
+            linker_flavor: LinkerFlavor::Gnu(Cc::Yes, Lld::No),
+            linker_flavor_json: LinkerFlavorCli::Gcc,
+            lld_flavor_json: LldFlavor::Ld,
+            linker_is_gnu_json: true,
+            link_script: None,
+            asm_args: cvs![],
+            cpu: "generic".into(),
+            need_explicit_cpu: false,
+            features: "".into(),
+            direct_access_external_data: None,
+            dynamic_linking: false,
+            dll_tls_export: true,
+            only_cdylib: false,
+            executables: true,
+            relocation_model: RelocModel::Pic,
+            code_model: None,
+            tls_model: TlsModel::GeneralDynamic,
+            disable_redzone: false,
+            frame_pointer: FramePointer::MayOmit,
+            function_sections: true,
+            dll_prefix: "lib".into(),
+            dll_suffix: ".so".into(),
+            exe_suffix: "".into(),
+            staticlib_prefix: "lib".into(),
+            staticlib_suffix: ".a".into(),
+            families: cvs![],
+            abi_return_struct_as_int: false,
+            is_like_aix: false,
+            is_like_darwin: false,
+            is_like_gpu: false,
+            is_like_solaris: false,
+            is_like_windows: false,
+            is_like_msvc: false,
+            is_like_wasm: false,
+            is_like_android: false,
+            is_like_vexos: false,
+            binary_format: BinaryFormat::Elf,
+            default_dwarf_version: 4,
+            allows_weak_linkage: true,
+            has_rpath: false,
+            no_default_libraries: true,
+            position_independent_executables: false,
+            static_position_independent_executables: false,
+            plt_by_default: true,
+            relro_level: RelroLevel::None,
+            pre_link_objects: Default::default(),
+            post_link_objects: Default::default(),
+            pre_link_objects_self_contained: Default::default(),
+            post_link_objects_self_contained: Default::default(),
+            link_self_contained: LinkSelfContainedDefault::False,
+            pre_link_args: LinkArgs::new(),
+            pre_link_args_json: LinkArgsCli::new(),
+            late_link_args: LinkArgs::new(),
+            late_link_args_json: LinkArgsCli::new(),
+            late_link_args_dynamic: LinkArgs::new(),
+            late_link_args_dynamic_json: LinkArgsCli::new(),
+            late_link_args_static: LinkArgs::new(),
+            late_link_args_static_json: LinkArgsCli::new(),
+            post_link_args: LinkArgs::new(),
+            post_link_args_json: LinkArgsCli::new(),
+            link_env: cvs![],
+            link_env_remove: cvs![],
+            archive_format: "gnu".into(),
+            main_needs_argc_argv: true,
+            allow_asm: true,
+            has_thread_local: false,
+            obj_is_bitcode: false,
+            min_atomic_width: None,
+            max_atomic_width: None,
+            atomic_cas: true,
+            panic_strategy: PanicStrategy::Unwind,
+            crt_static_allows_dylibs: false,
+            crt_static_default: false,
+            crt_static_respected: false,
+            stack_probes: StackProbeType::None,
+            min_global_align: None,
+            default_codegen_units: None,
+            default_codegen_backend: None,
+            trap_unreachable: true,
+            requires_lto: false,
+            singlethread: false,
+            no_builtins: false,
+            default_visibility: None,
+            emit_debug_gdb_scripts: true,
+            requires_uwtable: false,
+            default_uwtable: false,
+            simd_types_indirect: true,
+            limit_rdylib_exports: true,
+            override_export_symbols: None,
+            merge_functions: MergeFunctions::Aliases,
+            mcount: "mcount".into(),
+            llvm_mcount_intrinsic: None,
+            llvm_abiname: "".into(),
+            llvm_floatabi: None,
+            rustc_abi: None,
+            relax_elf_relocations: false,
+            llvm_args: cvs![],
+            use_ctors_section: false,
+            eh_frame_header: true,
+            has_thumb_interworking: false,
+            debuginfo_kind: Default::default(),
+            split_debuginfo: Default::default(),
+            // `Off` is supported by default, but targets can remove this manually, e.g. Windows.
+            supported_split_debuginfo: Cow::Borrowed(&[SplitDebuginfo::Off]),
+            supported_sanitizers: SanitizerSet::empty(),
+            default_sanitizers: SanitizerSet::empty(),
+            c_enum_min_bits: None,
+            generate_arange_section: true,
+            supports_stack_protector: true,
+            entry_name: "main".into(),
+            entry_abi: CanonAbi::C,
+            supports_xray: false,
+            default_address_space: rustc_abi::AddressSpace::ZERO,
+            small_data_threshold_support: SmallDataThresholdSupport::DefaultForArch,
+        }
+    }
+}
+
+impl TargetOptions {
+    pub fn supports_comdat(&self) -> bool {
+        // XCOFF and MachO don't support COMDAT.
+        !self.is_like_aix && !self.is_like_darwin
+    }
+}
+
+impl TargetOptions {
+    fn link_args(flavor: LinkerFlavor, args: &[&'static str]) -> LinkArgs {
+        let mut link_args = LinkArgs::new();
+        add_link_args(&mut link_args, flavor, args);
+        link_args
+    }
+
+    fn add_pre_link_args(&mut self, flavor: LinkerFlavor, args: &[&'static str]) {
+        add_link_args(&mut self.pre_link_args, flavor, args);
+    }
+
+    fn update_from_cli(&mut self) {
+        self.linker_flavor = LinkerFlavor::from_cli_json(
+            self.linker_flavor_json,
+            self.lld_flavor_json,
+            self.linker_is_gnu_json,
+        );
+        for (args, args_json) in [
+            (&mut self.pre_link_args, &self.pre_link_args_json),
+            (&mut self.late_link_args, &self.late_link_args_json),
+            (&mut self.late_link_args_dynamic, &self.late_link_args_dynamic_json),
+            (&mut self.late_link_args_static, &self.late_link_args_static_json),
+            (&mut self.post_link_args, &self.post_link_args_json),
+        ] {
+            args.clear();
+            for (flavor, args_json) in args_json {
+                let linker_flavor = self.linker_flavor.with_cli_hints(*flavor);
+                // Normalize to no lld to avoid asserts.
+                let linker_flavor = match linker_flavor {
+                    LinkerFlavor::Gnu(cc, _) => LinkerFlavor::Gnu(cc, Lld::No),
+                    LinkerFlavor::Darwin(cc, _) => LinkerFlavor::Darwin(cc, Lld::No),
+                    LinkerFlavor::Msvc(_) => LinkerFlavor::Msvc(Lld::No),
+                    _ => linker_flavor,
+                };
+                if !args.contains_key(&linker_flavor) {
+                    add_link_args_iter(args, linker_flavor, args_json.iter().cloned());
+                }
+            }
+        }
+    }
+
+    fn update_to_cli(&mut self) {
+        self.linker_flavor_json = self.linker_flavor.to_cli_counterpart();
+        self.lld_flavor_json = self.linker_flavor.lld_flavor();
+        self.linker_is_gnu_json = self.linker_flavor.is_gnu();
+        for (args, args_json) in [
+            (&self.pre_link_args, &mut self.pre_link_args_json),
+            (&self.late_link_args, &mut self.late_link_args_json),
+            (&self.late_link_args_dynamic, &mut self.late_link_args_dynamic_json),
+            (&self.late_link_args_static, &mut self.late_link_args_static_json),
+            (&self.post_link_args, &mut self.post_link_args_json),
+        ] {
+            *args_json = args
+                .iter()
+                .map(|(flavor, args)| (flavor.to_cli_counterpart(), args.clone()))
+                .collect();
+        }
+    }
+}
+

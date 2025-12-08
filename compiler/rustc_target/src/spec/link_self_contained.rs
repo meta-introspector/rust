@@ -42,8 +42,7 @@ impl FromStr for LinkSelfContainedDefault {
             "mingw" => LinkSelfContainedDefault::InferredForMingw,
             _ => {
                 return Err(format!(
-                    "'{s}' is not a valid `-Clink-self-contained` default. \ 
-                        Use 'false', 'true', 'wasm', 'musl' or 'mingw'",
+                    r"'{s}' is not a valid `-Clink-self-contained` default. Use 'false', 'true', 'wasm', 'musl' or 'mingw'",
                 ));
             }
         })
