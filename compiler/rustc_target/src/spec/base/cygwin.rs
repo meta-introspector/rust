@@ -1,9 +1,14 @@
 use std::borrow::Cow;
 
-use crate::spec::{
-    BinaryFormat, Cc, DebuginfoKind, LinkerFlavor, Lld, Os, SplitDebuginfo, TargetOptions,
-    TlsModel, cvs,
-};
+use crate::spec::binary_format::BinaryFormat;
+use crate::spec::linker_flavor::{Cc, LinkerFlavor, Lld};
+use crate::spec::DebuginfoKind;
+use crate::spec::os::Os;
+use crate::spec::split_debuginfo::SplitDebuginfo;
+use crate::spec::target_options::TargetOptions;
+use crate::spec::tls_model::TlsModel;
+use crate::spec::cvs;
+use rustc_abi::CanonAbi;
 
 pub(crate) fn opts() -> TargetOptions {
     let mut pre_link_args = TargetOptions::link_args(

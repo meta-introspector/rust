@@ -1,5 +1,6 @@
 use crate::json::ToJson;
 use rustc_macros::{Decodable, Encodable, HashStable_Generic};
+use std::str::FromStr;
 
 crate::target_spec_enum! {
     pub enum BinaryFormat {

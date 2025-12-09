@@ -977,7 +977,8 @@ impl Target {
             | Arch::PowerPC64LE
             | Arch::SpirV
             | Arch::Xtensa
-            | Arch::Other(_) => &[],
+            | Arch::Other(_)
+            | Arch::Unknown => &[],
         }
     }
 
@@ -1006,7 +1007,8 @@ impl Target {
             | Arch::PowerPC64LE
             | Arch::SpirV
             | Arch::Xtensa
-            | Arch::Other(_) => &[],
+            | Arch::Other(_)
+            | Arch::Unknown => &[],
         }
     }
 

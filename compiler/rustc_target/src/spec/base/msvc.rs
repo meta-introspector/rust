@@ -1,6 +1,11 @@
 use std::borrow::Cow;
 
-use crate::spec::{BinaryFormat, DebuginfoKind, LinkerFlavor, Lld, SplitDebuginfo, TargetOptions};
+use crate::spec::binary_format::BinaryFormat;
+use crate::spec::DebuginfoKind;
+use crate::spec::linker_flavor::{LinkerFlavor, Lld};
+use crate::spec::split_debuginfo::SplitDebuginfo;
+use crate::spec::target_options::TargetOptions;
+use rustc_abi::CanonAbi;
 
 pub(crate) fn opts() -> TargetOptions {
     // Suppress the verbose logo and authorship debugging output, which would needlessly

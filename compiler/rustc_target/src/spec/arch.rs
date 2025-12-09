@@ -1,6 +1,5 @@
-use crate::json::ToJson;
-use rustc_macros::{Decodable, Encodable, HashStable_Generic};
-use rustc_span::{Symbol, kw, sym};
+use std::str::FromStr;
+use rustc_span::{Symbol, sym};
 
 crate::target_spec_enum! {
     pub enum Arch {
@@ -35,6 +34,7 @@ crate::target_spec_enum! {
         X86 = "x86",
         X86_64 = "x86_64",
         Xtensa = "xtensa",
+        Unknown = "unknown",
     }
     other_variant = Other;
 }
@@ -73,6 +73,7 @@ impl Arch {
             Self::X86 => sym::x86,
             Self::X86_64 => sym::x86_64,
             Self::Xtensa => sym::xtensa,
+            Self::Unknown => rustc_span::Symbol::intern("unknown"), // Added
             Self::Other(name) => rustc_span::Symbol::intern(name),
         }
     }

@@ -94,7 +94,7 @@ impl LinkSelfContainedDefault {
     /// Returns the key to use when serializing the setting to json:
     /// - individual components in a `link-self-contained` object value
     /// - the other variants as a backwards-compatible `crt-objects-fallback` string
-    fn json_key(self) -> &'static str {
+    pub fn json_key(self) -> &'static str {
         match self {
             LinkSelfContainedDefault::WithComponents(_) => "link-self-contained",
             _ => "crt-objects-fallback",

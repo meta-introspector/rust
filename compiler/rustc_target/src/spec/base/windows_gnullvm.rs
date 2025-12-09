@@ -1,10 +1,18 @@
 use std::borrow::Cow;
 
 use crate::spec::crt_objects::pre_mingw_self_contained;
-use crate::spec::{
-    Abi, BinaryFormat, Cc, DebuginfoKind, Env, LinkSelfContainedDefault, LinkerFlavor, Lld, Os,
-    SplitDebuginfo, TargetOptions, add_link_args, cvs,
-};
+use crate::spec::target::Abi;
+use crate::spec::binary_format::BinaryFormat;
+use crate::spec::linker_flavor::{Cc, LinkerFlavor, Lld};
+use crate::spec::DebuginfoKind;
+use crate::spec::env::Env;
+use crate::spec::link_self_contained::LinkSelfContainedDefault;
+use crate::spec::os::Os;
+use crate::spec::split_debuginfo::SplitDebuginfo;
+use crate::spec::target_options::TargetOptions;
+use crate::spec::linker_flavor::add_link_args;
+use crate::spec::cvs;
+use rustc_abi::CanonAbi;
 
 pub(crate) fn opts() -> TargetOptions {
     // We cannot use `-nodefaultlibs` because compiler-rt has to be passed

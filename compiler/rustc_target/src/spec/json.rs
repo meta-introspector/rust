@@ -3,16 +3,37 @@ use std::str::FromStr;
 
 use rustc_abi::{Align, AlignFromBytesError};
 
-use super::crt_objects::CrtObjects;
-use super::{
-    Abi, Arch, BinaryFormat, CodeModel, DebuginfoKind, Env, FloatAbi, FramePointer, LinkArgsCli,
-    LinkSelfContainedComponents, LinkSelfContainedDefault, LinkerFlavorCli, LldFlavor,
-    MergeFunctions, Os, PanicStrategy, RelocModel, RelroLevel, RustcAbi, SanitizerSet,
-    SmallDataThresholdSupport, SplitDebuginfo, StackProbeType, StaticCow, SymbolVisibility, Target,
-    TargetKind, TargetOptions, TargetWarnings, TlsModel,
+use crate::spec::{
+    crt_objects::CrtObjects,
+    target::{Abi, Target},
+    arch::Arch,
+    binary_format::BinaryFormat,
+    code_model::CodeModel,
+    debuginfo_kind::DebuginfoKind,
+    env::Env,
+    float_abi::FloatAbi,
+    frame_pointer::FramePointer,
+    linker_flavor::{LinkArgsCli, LinkerFlavorCli, LldFlavor, StaticCow},
+    link_self_contained::{LinkSelfContainedComponents, LinkSelfContainedDefault},
+    merge_functions::MergeFunctions,
+    os::Os,
+    panic_strategy::PanicStrategy,
+    reloc_model::RelocModel,
+    relro_level::RelroLevel,
+    rustc_abi::RustcAbi,
+    sanitizer_set::SanitizerSet,
+    small_data_threshold_support::SmallDataThresholdSupport,
+    split_debuginfo::SplitDebuginfo,
+    stack_probe_type::StackProbeType,
+    symbol_visibility::SymbolVisibility,
+    targets::TargetKind,
+    target_options::TargetOptions,
+    target_warnings::TargetWarnings,
+    tls_model::TlsModel,
 };
 use crate::json::{Json, ToJson};
 use crate::spec::AbiMap;
+use serde_json::Number;
 
 impl Target {
     /// Loads a target descriptor from a JSON object.
@@ -236,7 +257,7 @@ impl Target {
         base.update_from_cli();
         base.check_consistency(TargetKind::Json)?;
 
-        Ok((base, TargetWarnings { unused_fields: vec![] }))
+        Ok((base, TargetWarnings::empty()))
     }
 }
 
@@ -633,4 +654,10 @@ struct TargetSpecJson {
 
 pub fn json_schema() -> schemars::Schema {
     schemars::schema_for!(TargetSpecJson)
+}
+
+impl ToJson for Align {
+    fn to_json(&self) -> Json {
+        Json::Number(Number::from(self.bytes()))
+    }
 }

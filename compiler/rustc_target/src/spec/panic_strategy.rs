@@ -1,3 +1,4 @@
+use std::str::FromStr;
 use rustc_macros::{Decodable, Encodable, HashStable_Generic};
 use rustc_span::{Symbol, sym};
 use crate::json::ToJson;

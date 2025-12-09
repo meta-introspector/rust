@@ -1,12 +1,24 @@
 use std::borrow::Cow;
-use std::fmt::Display; // Remove from_fn
+
+use std::fmt::Display; // Added
 use std::num::ParseIntError;
 use std::str::FromStr;
 
-use crate::spec::{
-    Abi, BinaryFormat, Cc, DebuginfoKind, Env, FloatAbi, FramePointer, LinkerFlavor, Lld, Os,
-    RustcAbi, SplitDebuginfo, StackProbeType, StaticCow, Target, TargetOptions, cvs,
-};
+use crate::spec::target::Abi;
+use rustc_abi::CanonAbi;
+use crate::spec::binary_format::BinaryFormat;
+use crate::spec::linker_flavor::{Cc, LinkerFlavor, Lld, StaticCow};
+use crate::spec::DebuginfoKind;
+use crate::spec::env::Env;
+use crate::spec::float_abi::FloatAbi;
+use crate::spec::frame_pointer::FramePointer;
+use crate::spec::os::Os;
+use crate::spec::rustc_abi::RustcAbi;
+use crate::spec::split_debuginfo::SplitDebuginfo;
+use crate::spec::stack_probe_type::StackProbeType;
+use crate::spec::target::Target;
+use crate::spec::target_options::TargetOptions;
+use crate::spec::cvs;
 
 #[cfg(test)]
 mod tests;

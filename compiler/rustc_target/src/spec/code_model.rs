@@ -1,3 +1,4 @@
+use std::str::FromStr;
 use crate::json::ToJson;
 use rustc_macros::{Decodable, Encodable, HashStable_Generic};
 use rustc_span::Symbol; // Assuming Symbol is needed for `desc_symbol` if it existed.

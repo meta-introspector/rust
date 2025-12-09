@@ -273,7 +273,7 @@ impl InlineAsmArch {
             Arch::Msp430 => Some(Self::Msp430),
             Arch::M68k => Some(Self::M68k),
             Arch::CSky => Some(Self::CSKY),
-            Arch::AmdGpu | Arch::Xtensa | Arch::Other(_) => None,
+            Arch::AmdGpu | Arch::Xtensa | Arch::Other(_) | Arch::Unknown => None,
         }
     }
 }
@@ -412,7 +412,7 @@ impl InlineAsmReg {
             Self::Msp430(r) => r.validate(arch, reloc_model, target_features, target, is_clobber),
             Self::M68k(r) => r.validate(arch, reloc_model, target_features, target, is_clobber),
             Self::CSKY(r) => r.validate(arch, reloc_model, target_features, target, is_clobber),
-            Self::Err => unreachable!(),
+            _ => Err("unsupported architecture"),
         }
     }
 
@@ -440,7 +440,7 @@ impl InlineAsmReg {
             Self::Msp430(r) => r.emit(out, arch, modifier),
             Self::M68k(r) => r.emit(out, arch, modifier),
             Self::CSKY(r) => r.emit(out, arch, modifier),
-            Self::Err => unreachable!("Use of InlineAsmReg::Err"),
+            _ => Err(fmt::Error),
         }
     }
 
@@ -918,6 +918,7 @@ pub fn allocatable_registers(
             csky::fill_reg_map(arch, reloc_model, target_features, target, &mut map);
             map
         }
+        _ => FxHashMap::default(), // Handle other/unknown architectures
     }
 }
 

@@ -1,3 +1,4 @@
+use std::str::FromStr;
 use crate::json::ToJson;
 use rustc_macros::{Decodable, Encodable, HashStable_Generic};
 

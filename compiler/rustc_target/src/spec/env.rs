@@ -1,5 +1,5 @@
-use crate::json::ToJson;
-use rustc_macros::{Decodable, Encodable, HashStable_Generic};
+use std::str::FromStr;
+use rustc_span::{Symbol, sym};
 
 crate::target_spec_enum! {
     pub enum Env {
@@ -11,18 +11,15 @@ crate::target_spec_enum! {
         Newlib = "newlib",
         Nto70 = "nto70",
         Nto71 = "nto71",
-        Nto71IoSock = "nto71_iosock",
+        Nto71Iosock = "nto710-iosock",
         Nto80 = "nto80",
-        Ohos = "ohos",
-        Relibc = "relibc",
-        Sgx = "sgx",
-        Sim = "sim",
-        P1 = "p1",
-        P2 = "p2",
-        P3 = "p3",
+        Uwp = "uwp",
         Uclibc = "uclibc",
-        V5 = "v5",
+        Sim = "sim",
+        Relibc = "relibc",
+        Ohos = "ohos",
         Unspecified = "",
+        other_variant = "Other",
     }
     parse_error_type = "environment";
 }

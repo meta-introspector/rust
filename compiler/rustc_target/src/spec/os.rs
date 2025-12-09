@@ -1,6 +1,5 @@
-use crate::json::ToJson;
-use rustc_macros::{Decodable, Encodable, HashStable_Generic};
-use rustc_span::{Symbol, kw, sym};
+use std::str::FromStr;
+use rustc_span::{Symbol, sym};
 
 crate::target_spec_enum! {
     pub enum Os {

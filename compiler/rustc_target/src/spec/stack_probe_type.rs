@@ -1,4 +1,4 @@
-use crate::json::ToJson;
+use crate::json::{Json, ToJson};
 use rustc_macros::{Decodable, Encodable, HashStable_Generic};
 use serde_derive;
 use serde_json::Value;

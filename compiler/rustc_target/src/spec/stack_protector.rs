@@ -2,6 +2,7 @@ use crate::json::ToJson;
 use rustc_macros::{Decodable, Encodable, HashStable_Generic};
 use rustc_error_messages::{DiagArgValue, IntoDiagArg, into_diag_arg_using_display};
 use std::borrow::Cow;
+use std::str::FromStr;
 
 crate::target_spec_enum! {
     /// Controls use of stack canaries.

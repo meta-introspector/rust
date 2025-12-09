@@ -1,3 +1,4 @@
+use std::str::FromStr;
 use crate::json::ToJson;
 use rustc_macros::{Decodable, Encodable, HashStable_Generic};
 use rustc_error_messages::{DiagArgValue, IntoDiagArg, into_diag_arg_using_display};

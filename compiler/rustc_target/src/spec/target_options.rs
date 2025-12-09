@@ -2,20 +2,43 @@ use std::borrow::Cow;
 use std::collections::BTreeMap;
 use std::ops::{Deref, DerefMut};
 
-use super::{
-    Abi, BinaryFormat, CanonAbi, Cc, CodeModel, CrtObjects, DebuginfoKind,
-    Env, Endian, FloatAbi, FramePointer, LinkerFlavor, LinkerFlavorCli, LinkSelfContainedDefault,
-    Lld, LldFlavor, MergeFunctions, Os, PanicStrategy, RelocModel, RelroLevel, RustcAbi,
-    SanitizerSet, SmallDataThresholdSupport, SplitDebuginfo, StackProbeType, SymbolVisibility,
-    TlsModel, Target
-};
+use crate::spec::Abi;
+use crate::spec::BinaryFormat;
+use crate::spec::crt_objects::CrtObjects;
+use crate::spec::linker_flavor::{LinkArgs, LinkArgsCli};
 
 use rustc_abi::AddressSpace;
 use rustc_span::Symbol;
-use rustc_target::abi::Align;
+use rustc_abi::Align;
 
-pub type LinkArgs = BTreeMap<LinkerFlavor, Vec<StaticCow<str>>>;
-pub type LinkArgsCli = BTreeMap<LinkerFlavorCli, Vec<StaticCow<str>>>;
+use crate::spec::linker_flavor::{StaticCow, add_link_args, add_link_args_iter};
+
+use rustc_abi::Endian;
+use rustc_abi::CanonAbi;
+use crate::spec::Os;
+use crate::spec::Env;
+use crate::spec::LinkerFlavor;
+use crate::spec::Cc;
+use crate::spec::Lld;
+use crate::spec::LinkerFlavorCli;
+use crate::spec::LldFlavor;
+use crate::spec::RelocModel;
+use crate::spec::CodeModel;
+use crate::spec::TlsModel;
+use crate::spec::FramePointer;
+use crate::spec::RelroLevel;
+use crate::spec::LinkSelfContainedDefault;
+use crate::spec::PanicStrategy;
+use crate::spec::StackProbeType;
+use crate::spec::MergeFunctions;
+use crate::spec::SmallDataThresholdSupport;
+use crate::spec::FloatAbi;
+use crate::spec::RustcAbi;
+
+use crate::spec::DebuginfoKind;
+use crate::spec::SplitDebuginfo;
+use crate::spec::SanitizerSet;
+use crate::spec::SymbolVisibility;
 
 /// `TargetOptions` as a separate structure is mostly an implementation detail of `Target`
 /// construction, all its fields logically belong to `Target` and available from `Target`
@@ -40,16 +63,16 @@ pub struct TargetOptions {
     /// However, parts of the backend do check this field for specific values to enable special behavior.
     pub abi: Abi,
 
-    vendor: StaticCow<str>,
+    pub vendor: StaticCow<str>,
 
     /// Linker to invoke
     pub linker: Option<StaticCow<str>>,
     /// Default linker flavor used if `-C linker-flavor` or `-C linker` are not passed
     /// on the command line. Defaults to `LinkerFlavor::Gnu(Cc::Yes, Lld::No)`.
     pub linker_flavor: LinkerFlavor,
-    linker_flavor_json: LinkerFlavorCli,
-    lld_flavor_json: LldFlavor,
-    linker_is_gnu_json: bool,
+    pub linker_flavor_json: LinkerFlavorCli,
+    pub lld_flavor_json: LldFlavor,
+    pub linker_is_gnu_json: bool,
 
     /// Objects to link before and after all other object code.
     pub pre_link_objects: CrtObjects,
@@ -63,24 +86,24 @@ pub struct TargetOptions {
 
     /// Linker arguments that are passed *before* any user-defined libraries.
     pub pre_link_args: LinkArgs,
-    pre_link_args_json: LinkArgsCli,
+    pub pre_link_args_json: LinkArgsCli,
     /// Linker arguments that are unconditionally passed after any
     /// user-defined but before post-link objects. Standard platform
     /// libraries that should be always be linked to, usually go here.
     pub late_link_args: LinkArgs,
-    late_link_args_json: LinkArgsCli,
+    pub late_link_args_json: LinkArgsCli,
     /// Linker arguments used in addition to `late_link_args` if at least one
     /// Rust dependency is dynamically linked.
     pub late_link_args_dynamic: LinkArgs,
-    late_link_args_dynamic_json: LinkArgsCli,
+    pub late_link_args_dynamic_json: LinkArgsCli,
     /// Linker arguments used in addition to `late_link_args` if all Rust
     /// dependencies are statically linked.
     pub late_link_args_static: LinkArgs,
-    late_link_args_static_json: LinkArgsCli,
+    pub late_link_args_static_json: LinkArgsCli,
     /// Linker arguments that are unconditionally passed *after* any
     /// user-defined libraries.
     pub post_link_args: LinkArgs,
-    post_link_args_json: LinkArgsCli,
+    pub post_link_args_json: LinkArgsCli,
 
     /// Optional link script applied to `dylib` and `executable` crate types.
     /// This is a string containing the script, not a path. Can only be applied
@@ -431,7 +454,7 @@ pub struct TargetOptions {
     pub default_address_space: rustc_abi::AddressSpace,
 
     /// Whether the targets supports -Z small-data-threshold
-    small_data_threshold_support: SmallDataThresholdSupport,
+    pub small_data_threshold_support: SmallDataThresholdSupport,
 }
 
 
@@ -573,17 +596,17 @@ impl TargetOptions {
 }
 
 impl TargetOptions {
-    fn link_args(flavor: LinkerFlavor, args: &[&'static str]) -> LinkArgs {
+    pub fn link_args(flavor: LinkerFlavor, args: &[&'static str]) -> LinkArgs {
         let mut link_args = LinkArgs::new();
         add_link_args(&mut link_args, flavor, args);
         link_args
     }
 
-    fn add_pre_link_args(&mut self, flavor: LinkerFlavor, args: &[&'static str]) {
+    pub fn add_pre_link_args(&mut self, flavor: LinkerFlavor, args: &[&'static str]) {
         add_link_args(&mut self.pre_link_args, flavor, args);
     }
 
-    fn update_from_cli(&mut self) {
+    pub fn update_from_cli(&mut self) {
         self.linker_flavor = LinkerFlavor::from_cli_json(
             self.linker_flavor_json,
             self.lld_flavor_json,
@@ -613,7 +636,7 @@ impl TargetOptions {
         }
     }
 
-    fn update_to_cli(&mut self) {
+    pub fn update_to_cli(&mut self) {
         self.linker_flavor_json = self.linker_flavor.to_cli_counterpart();
         self.lld_flavor_json = self.linker_flavor.lld_flavor();
         self.linker_is_gnu_json = self.linker_flavor.is_gnu();
