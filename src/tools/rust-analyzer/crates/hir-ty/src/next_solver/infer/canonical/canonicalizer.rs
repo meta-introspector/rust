@@ -32,11 +32,11 @@ pub struct OriginalQueryValues<'db> {
     /// caller context. For all queries except `evaluate_goal` (used by Chalk),
     /// we only ever put ROOT values into the query, so this map is very
     /// simple.
-    pub universe_map: SmallVec<[UniverseIndex; 4]>,
+    pub universe_map: SmallVec<UniverseIndex, 4>,
 
     /// This is equivalent to `CanonicalVarValues`, but using a
     /// `SmallVec` yields a significant performance win.
-    pub var_values: SmallVec<[GenericArg<'db>; 8]>,
+    pub var_values: SmallVec<GenericArg<'db>, 8>,
 }
 
 impl<'db> Default for OriginalQueryValues<'db> {
@@ -309,7 +309,7 @@ struct Canonicalizer<'cx, 'db> {
     /// Set to `None` to disable the resolution of inference variables.
     infcx: &'cx InferCtxt<'db>,
     tcx: DbInterner<'db>,
-    variables: SmallVec<[CanonicalVarKind<'db>; 8]>,
+    variables: SmallVec<CanonicalVarKind<'db>, 8>,
     query_state: &'cx mut OriginalQueryValues<'db>,
     // Note that indices is only used once `var_values` is big enough to be
     // heap-allocated.
@@ -681,7 +681,7 @@ impl<'cx, 'db> Canonicalizer<'cx, 'db> {
     /// Replaces the universe indexes used in `var_values` with their index in
     /// `query_state.universe_map`. This minimizes the maximum universe used in
     /// the canonicalized value.
-    fn universe_canonicalized_variables(self) -> SmallVec<[CanonicalVarKind<'db>; 8]> {
+    fn universe_canonicalized_variables(self) -> SmallVec<CanonicalVarKind<'db>, 8> {
         if self.query_state.universe_map.len() == 1 {
             return self.variables;
         }

@@ -185,7 +185,7 @@ fn map_rust_child_diagnostic(
     rd: &crate::flycheck::Diagnostic,
     snap: &GlobalStateSnapshot,
 ) -> MappedRustChildDiagnostic {
-    let spans: SmallVec<[&DiagnosticSpan; 1]> = rd.spans.iter().filter(|s| s.is_primary).collect();
+    let spans: SmallVec<&DiagnosticSpan, 1> = rd.spans.iter().filter(|s| s.is_primary).collect();
     if spans.is_empty() {
         // `rustc` uses these spanless children as a way to print multi-line
         // messages
@@ -292,9 +292,8 @@ pub(crate) fn map_rust_diagnostic_to_lsp(
     workspace_root: &AbsPath,
     snap: &GlobalStateSnapshot,
 ) -> Vec<MappedRustDiagnostic> {
-    let (primary_spans, secondary_spans): (
-        SmallVec<[DiagnosticSpan; 1]>,
-        SmallVec<[DiagnosticSpan; 1]>,
+        SmallVec<DiagnosticSpan, 1>,
+        SmallVec<DiagnosticSpan, 1>,
     ) = spans.into_iter().partition(|s| s.is_primary);
     if primary_spans.is_empty() {
         return Vec::new();

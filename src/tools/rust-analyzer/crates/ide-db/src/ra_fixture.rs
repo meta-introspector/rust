@@ -284,7 +284,7 @@ impl<T> IsEmpty for Vec<T> {
     }
 }
 
-impl<T, const N: usize> IsEmpty for SmallVec<[T; N]> {
+impl<T, const N: usize> IsEmpty for SmallVec<T, N> {
     fn is_empty(&self) -> bool {
         self.is_empty()
     }
@@ -348,7 +348,7 @@ impl<T: UpmapFromRaFixture> UpmapFromRaFixture for Vec<T> {
     }
 }
 
-impl<T: UpmapFromRaFixture, const N: usize> UpmapFromRaFixture for SmallVec<[T; N]> {
+impl<T: UpmapFromRaFixture, const N: usize> UpmapFromRaFixture for SmallVec<T, N> {
     fn upmap_from_ra_fixture(
         self,
         analysis: &RaFixtureAnalysis,

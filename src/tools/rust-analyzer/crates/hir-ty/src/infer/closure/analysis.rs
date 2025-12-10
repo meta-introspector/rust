@@ -89,7 +89,7 @@ pub struct CapturedItem<'db> {
     /// we need to keep them all, since when a closure occurs inside a closure, we
     /// copy all captures of the inner closure to the outer closure, and then we may
     /// truncate them, and we want the correct span to be reported.
-    span_stacks: SmallVec<[SmallVec<[MirSpan; 3]>; 3]>,
+    span_stacks: SmallVec<SmallVec<MirSpan, 3>, 3>,
     pub(crate) ty: EarlyBinder<'db, Ty<'db>>,
 }
 
@@ -112,7 +112,7 @@ impl<'db> CapturedItem<'db> {
         self.kind
     }
 
-    pub fn spans(&self) -> SmallVec<[MirSpan; 3]> {
+    pub fn spans(&self) -> SmallVec<MirSpan, 3> {
         self.span_stacks.iter().map(|stack| *stack.last().expect("empty span stack")).collect()
     }
 
@@ -278,7 +278,7 @@ pub(crate) struct CapturedItemWithoutTy<'db> {
     pub(crate) place: HirPlace<'db>,
     pub(crate) kind: CaptureKind,
     /// The inner vec is the stacks; the outer vec is for each capture reference.
-    pub(crate) span_stacks: SmallVec<[SmallVec<[MirSpan; 3]>; 3]>,
+    pub(crate) span_stacks: SmallVec<SmallVec<MirSpan, 3>, 3>,
 }
 
 impl<'db> CapturedItemWithoutTy<'db> {

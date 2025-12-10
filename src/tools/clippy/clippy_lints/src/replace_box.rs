@@ -43,7 +43,7 @@ declare_clippy_lint! {
 #[derive(Default)]
 pub struct ReplaceBox {
     consumed_locals: FxHashSet<HirId>,
-    loaded_bodies: SmallVec<[BodyId; 2]>,
+    loaded_bodies: SmallVec<BodyId, 2>,
 }
 
 impl ReplaceBox {

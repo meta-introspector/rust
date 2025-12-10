@@ -447,7 +447,7 @@ fn validate_resolvable(
     resolved_qualifier: ItemInNs,
     unresolved_qualifier: &[Name],
     complete_in_flyimport: CompleteInFlyimport,
-) -> SmallVec<[LocatedImport; 1]> {
+) -> SmallVec<LocatedImport, 1> {
     let _p = tracing::info_span!("ImportAssets::import_for_item").entered();
 
     let qualifier = (|| {

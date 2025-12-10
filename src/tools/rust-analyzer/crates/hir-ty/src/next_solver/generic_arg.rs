@@ -258,7 +258,7 @@ impl<'db> GenericArgs<'db> {
     }
 
     fn fill_item<F>(
-        args: &mut SmallVec<[GenericArg<'db>; 8]>,
+        args: &mut SmallVec<GenericArg<'db>, 8>,
         interner: DbInterner<'_>,
         defs: Generics,
         mk_kind: &mut F,
@@ -272,7 +272,7 @@ impl<'db> GenericArgs<'db> {
         Self::fill_single(args, &defs, mk_kind);
     }
 
-    fn fill_single<F>(args: &mut SmallVec<[GenericArg<'db>; 8]>, defs: &Generics, mk_kind: &mut F)
+    fn fill_single<F>(args: &mut SmallVec<GenericArg<'db>, 8>, defs: &Generics, mk_kind: &mut F)
     where
         F: FnMut(u32, GenericParamId, &[GenericArg<'db>]) -> GenericArg<'db>,
     {

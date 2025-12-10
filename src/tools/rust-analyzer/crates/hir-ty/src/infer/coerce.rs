@@ -674,7 +674,7 @@ impl<'a, 'b, 'db> Coerce<'a, 'b, 'db> {
         // and almost never more than 3. By using a SmallVec we avoid an
         // allocation, at the (very small) cost of (occasionally) having to
         // shift subsequent elements down when removing the front element.
-        let mut queue: SmallVec<[PredicateObligation<'db>; 4]> = smallvec![Obligation::new(
+        let mut queue: SmallVec<PredicateObligation<'db>, 4> = smallvec![Obligation::new(
             self.interner(),
             cause,
             self.table.trait_env.env,
@@ -1276,7 +1276,7 @@ pub(crate) type DynamicCoerceMany<'db> = CoerceMany<'db, 'db>;
 
 #[derive(Debug, Clone)]
 enum Expressions<'exprs> {
-    Dynamic(SmallVec<[ExprId; 4]>),
+    Dynamic(SmallVec<ExprId, 4>),
     UpFront(&'exprs [ExprId]),
 }
 

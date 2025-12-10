@@ -92,6 +92,7 @@ impl_dyn_send!(
 );
 
 unsafe impl<T: ?Sized + PointeeSized + Send> DynSend for std::ptr::NonNull<T> {}
+unsafe impl<T: ?Sized + PointeeSized + Sync> DynSync for std::ptr::NonNull<T> {}
 
 macro_rules! impls_dyn_sync_neg {
     ($([$t1: ty $(where $($generics1: tt)*)?])*) => {

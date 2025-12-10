@@ -2096,7 +2096,7 @@ fn named_associated_type_shorthand_candidates<'db, R>(
             }
             None
         };
-        let mut stack: SmallVec<[_; 4]> = smallvec![t];
+        let mut stack: SmallVec<_, 4> = smallvec![t];
         while let Some(trait_ref) = stack.pop() {
             if let Some(alias) = check_trait(trait_ref) {
                 return Some(alias);

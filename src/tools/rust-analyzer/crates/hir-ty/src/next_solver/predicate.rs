@@ -261,7 +261,7 @@ impl<'db> Predicate<'db> {
 // FIXME: should make a "header" in interned_vec
 
 #[derive(Debug, Clone)]
-pub struct InternedClausesWrapper<'db>(SmallVec<[Clause<'db>; 2]>, TypeFlags, DebruijnIndex);
+pub struct InternedClausesWrapper<'db>(SmallVec<Clause<'db>, 2>, TypeFlags, DebruijnIndex);
 
 impl<'db> PartialEq for InternedClausesWrapper<'db> {
     fn eq(&self, other: &Self) -> bool {
@@ -315,7 +315,7 @@ impl<'db> rustc_type_ir::inherent::Clauses<DbInterner<'db>> for Clauses<'db> {}
 impl<'db> rustc_type_ir::inherent::SliceLike for Clauses<'db> {
     type Item = Clause<'db>;
 
-    type IntoIter = <smallvec::SmallVec<[Clause<'db>; 2]> as IntoIterator>::IntoIter;
+    type IntoIter = <smallvec::SmallVec<Clause<'db>, 2> as IntoIterator>::IntoIter;
 
     fn iter(self) -> Self::IntoIter {
         self.inner().0.clone().into_iter()
@@ -342,11 +342,7 @@ impl<'db> Default for Clauses<'db> {
 }
 
 impl<'db> rustc_type_ir::TypeSuperFoldable<DbInterner<'db>> for Clauses<'db> {
-    fn try_super_fold_with<F: rustc_type_ir::FallibleTypeFolder<DbInterner<'db>>>(
-        self,
-        folder: &mut F,
-    ) -> Result<Self, F::Error> {
-        let mut clauses: SmallVec<[_; 2]> = SmallVec::with_capacity(self.inner().0.len());
+            let mut clauses: SmallVec<_, 2> = SmallVec::with_capacity(self.inner().0.len());
         for c in self {
             clauses.push(c.try_fold_with(folder)?);
         }
@@ -357,7 +353,7 @@ impl<'db> rustc_type_ir::TypeSuperFoldable<DbInterner<'db>> for Clauses<'db> {
         self,
         folder: &mut F,
     ) -> Self {
-        let mut clauses: SmallVec<[_; 2]> = SmallVec::with_capacity(self.inner().0.len());
+        let mut clauses: SmallVec<_, 2> = SmallVec::with_capacity(self.inner().0.len());
         for c in self {
             clauses.push(c.fold_with(folder));
         }
@@ -371,13 +367,13 @@ impl<'db> rustc_type_ir::TypeFoldable<DbInterner<'db>> for Clauses<'db> {
         folder: &mut F,
     ) -> Result<Self, F::Error> {
         use rustc_type_ir::inherent::SliceLike as _;
-        let inner: smallvec::SmallVec<[_; 2]> =
+        let inner: smallvec::SmallVec<_, 2> =
             self.iter().map(|v| v.try_fold_with(folder)).collect::<Result<_, _>>()?;
         Ok(Clauses::new_from_iter(folder.cx(), inner))
     }
     fn fold_with<F: rustc_type_ir::TypeFolder<DbInterner<'db>>>(self, folder: &mut F) -> Self {
         use rustc_type_ir::inherent::SliceLike as _;
-        let inner: smallvec::SmallVec<[_; 2]> = self.iter().map(|v| v.fold_with(folder)).collect();
+        let inner: smallvec::SmallVec<_, 2> = self.iter().map(|v| v.fold_with(folder)).collect();
         Clauses::new_from_iter(folder.cx(), inner)
     }
 }

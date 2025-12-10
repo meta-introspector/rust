@@ -68,7 +68,7 @@ macro_rules! _interned_vec_nolifetime_salsa {
                 folder: &mut F,
             ) -> Result<Self, F::Error> {
                 use rustc_type_ir::inherent::SliceLike as _;
-                let inner: smallvec::SmallVec<[_; 2]> =
+                let inner: smallvec::SmallVec<_, 2> =
                     self.iter().map(|v| v.try_fold_with(folder)).collect::<Result<_, _>>()?;
                 Ok($name::new_(folder.cx().db(), inner))
             }
@@ -77,7 +77,7 @@ macro_rules! _interned_vec_nolifetime_salsa {
                 folder: &mut F,
             ) -> Self {
                 use rustc_type_ir::inherent::SliceLike as _;
-                let inner: smallvec::SmallVec<[_; 2]> =
+                let inner: smallvec::SmallVec<_, 2> =
                     self.iter().map(|v| v.fold_with(folder)).collect();
                 $name::new_(folder.cx().db(), inner)
             }
@@ -99,7 +99,7 @@ macro_rules! _interned_vec_nolifetime_salsa {
         #[salsa::interned(constructor = new_)]
         pub struct $name {
             #[returns(ref)]
-            inner_: smallvec::SmallVec<[$ty; 2]>,
+            inner_: smallvec::SmallVec<$ty, 2>,
         }
 
         impl<'db> $name<'db> {
@@ -107,10 +107,10 @@ macro_rules! _interned_vec_nolifetime_salsa {
                 interner: DbInterner<'db>,
                 data: impl IntoIterator<Item = $ty>,
             ) -> Self {
-                $name::new_(interner.db(), data.into_iter().collect::<smallvec::SmallVec<[_; 2]>>())
+                $name::new_(interner.db(), data.into_iter().collect::<smallvec::SmallVec<_, 2>>())
             }
 
-            pub fn inner(&self) -> &smallvec::SmallVec<[$ty; 2]> {
+            pub fn inner(&self) -> &smallvec::SmallVec<$ty, 2> {
                 // SAFETY: ¯\_(ツ)_/¯
                 $crate::with_attached_db(|db| {
                     let inner = self.inner_(db);
@@ -128,7 +128,7 @@ macro_rules! _interned_vec_nolifetime_salsa {
         impl<'db> rustc_type_ir::inherent::SliceLike for $name<'db> {
             type Item = $ty;
 
-            type IntoIter = <smallvec::SmallVec<[$ty; 2]> as IntoIterator>::IntoIter;
+            type IntoIter = <smallvec::SmallVec<$ty, 2> as IntoIterator>::IntoIter;
 
             fn iter(self) -> Self::IntoIter {
                 self.inner().clone().into_iter()
@@ -170,7 +170,7 @@ macro_rules! _interned_vec_db {
                 folder: &mut F,
             ) -> Result<Self, F::Error> {
                 use rustc_type_ir::inherent::SliceLike as _;
-                let inner: smallvec::SmallVec<[_; 2]> =
+                let inner: smallvec::SmallVec<_, 2> =
                     self.iter().map(|v| v.try_fold_with(folder)).collect::<Result<_, _>>()?;
                 Ok($name::new_(folder.cx().db(), inner))
             }
@@ -179,7 +179,7 @@ macro_rules! _interned_vec_db {
                 folder: &mut F,
             ) -> Self {
                 use rustc_type_ir::inherent::SliceLike as _;
-                let inner: smallvec::SmallVec<[_; 2]> =
+                let inner: smallvec::SmallVec<_, 2> =
                     self.iter().map(|v| v.fold_with(folder)).collect();
                 $name::new_(folder.cx().db(), inner)
             }
@@ -201,7 +201,7 @@ macro_rules! _interned_vec_db {
         #[salsa::interned(constructor = new_)]
         pub struct $name<'db> {
             #[returns(ref)]
-            inner_: smallvec::SmallVec<[$ty<'db>; 2]>,
+            inner_: smallvec::SmallVec<$ty<'db>, 2>,
         }
 
         impl<'db> std::fmt::Debug for $name<'db> {
@@ -215,10 +215,10 @@ macro_rules! _interned_vec_db {
                 interner: DbInterner<'db>,
                 data: impl IntoIterator<Item = $ty<'db>>,
             ) -> Self {
-                $name::new_(interner.db(), data.into_iter().collect::<smallvec::SmallVec<[_; 2]>>())
+                $name::new_(interner.db(), data.into_iter().collect::<smallvec::SmallVec<_, 2>>())
             }
 
-            pub fn inner(&self) -> &smallvec::SmallVec<[$ty<'db>; 2]> {
+            pub fn inner(&self) -> &smallvec::SmallVec<$ty<'db>, 2> {
                 // SAFETY: ¯\_(ツ)_/¯
                 $crate::with_attached_db(|db| {
                     let inner = self.inner_(db);
@@ -230,7 +230,7 @@ macro_rules! _interned_vec_db {
         impl<'db> rustc_type_ir::inherent::SliceLike for $name<'db> {
             type Item = $ty<'db>;
 
-            type IntoIter = <smallvec::SmallVec<[$ty<'db>; 2]> as IntoIterator>::IntoIter;
+            type IntoIter = <smallvec::SmallVec<$ty<'db>, 2> as IntoIterator>::IntoIter;
 
             fn iter(self) -> Self::IntoIter {
                 self.inner().clone().into_iter()

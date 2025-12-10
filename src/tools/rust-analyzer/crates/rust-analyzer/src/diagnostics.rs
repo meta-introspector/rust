@@ -58,7 +58,7 @@ pub(crate) struct DiagnosticCollection {
 #[derive(Debug, Clone)]
 pub(crate) struct Fix {
     // Fixes may be triggerable from multiple ranges.
-    pub(crate) ranges: SmallVec<[lsp_types::Range; 1]>,
+    pub(crate) ranges: SmallVec<lsp_types::Range, 1>,
     pub(crate) action: lsp_ext::CodeAction,
 }
 
