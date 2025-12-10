@@ -1,7 +1,7 @@
 use rustc_abi::Endian;
 
 use crate::spec::base::xtensa;
-use crate::spec::{Arch, Env, Os, Target, TargetMetadata, TargetOptions, cvs};
+use crate::spec::{Arch, Env, Os, Target, TargetMetadata, TargetOptions};
 
 pub(crate) fn target() -> Target {
     Target {

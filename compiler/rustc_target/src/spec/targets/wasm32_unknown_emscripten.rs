@@ -1,6 +1,6 @@
 use crate::spec::{
     Arch, LinkArgs, LinkerFlavor, Os, PanicStrategy, RelocModel, Target, TargetMetadata,
-    TargetOptions, base, cvs,
+    TargetOptions, base,
 };
 
 pub(crate) fn target() -> Target {

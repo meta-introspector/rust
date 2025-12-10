@@ -2,7 +2,7 @@ use rustc_abi::Endian;
 
 use crate::spec::{
     Abi, Arch, Cc, Env, FloatAbi, LinkerFlavor, Lld, Os, RelocModel, Target, TargetMetadata,
-    TargetOptions, cvs,
+    TargetOptions,
 };
 
 /// A base target for PlayStation Vita devices using the VITASDK toolchain (using newlib).

@@ -11,7 +11,7 @@
 
 use crate::spec::{
     Abi, Arch, FloatAbi, FramePointer, PanicStrategy, RelocModel, Target, TargetMetadata,
-    TargetOptions, base, cvs,
+    TargetOptions, base,
 };
 
 pub(crate) fn target() -> Target {

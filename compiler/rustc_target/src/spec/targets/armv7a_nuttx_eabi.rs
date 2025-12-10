@@ -6,7 +6,7 @@
 
 use crate::spec::{
     Abi, Arch, Cc, FloatAbi, LinkerFlavor, Lld, Os, PanicStrategy, RelocModel, Target,
-    TargetMetadata, TargetOptions, cvs,
+    TargetMetadata, TargetOptions,
 };
 
 pub(crate) fn target() -> Target {

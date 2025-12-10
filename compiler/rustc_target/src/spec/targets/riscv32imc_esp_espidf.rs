@@ -1,5 +1,5 @@
 use crate::spec::{
-    Arch, Env, Os, PanicStrategy, RelocModel, Target, TargetMetadata, TargetOptions, cvs,
+    Arch, Env, Os, PanicStrategy, RelocModel, Target, TargetMetadata, TargetOptions,
 };
 
 pub(crate) fn target() -> Target {
