@@ -2,6 +2,7 @@
 #![expect(internal_features)] // Restore expect
 #![feature(iter_intersperse)] // Ensure it's present
 #![feature(rustc_attrs)] // Ensure it's present
+#[macro_use] extern crate cvs_macro_lib;
 // tidy-alphabetical-end
 
 use std::path::{Path, PathBuf};

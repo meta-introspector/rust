@@ -19,9 +19,11 @@ macro_rules! supported_targets {
     ({
         $( ($triple:tt, $arch:expr, $os:expr) => $target:expr ),* $(,)*
     }) => {
-        $(
-            ($triple, $arch, $os, $target),
-        )*
+        pub const ALL_TARGETS: &[(&str, &str, &str, &Target)] = &[
+            $(
+                ($triple, $arch, $os, $target),
+            )*
+        ];
     };
 }
 
