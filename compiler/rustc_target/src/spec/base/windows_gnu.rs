@@ -10,7 +10,7 @@ use crate::spec::split_debuginfo::SplitDebuginfo;
 use crate::spec::target_options::TargetOptions;
 use crate::spec::linker_flavor::add_link_args;
 use crate::spec::crt_objects;
-use crate::spec::cvs;
+
 use rustc_abi::CanonAbi;
 
 pub(crate) fn opts() -> TargetOptions {

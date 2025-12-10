@@ -18,7 +18,7 @@ use crate::spec::split_debuginfo::SplitDebuginfo;
 use crate::spec::stack_probe_type::StackProbeType;
 use crate::spec::target::Target;
 use crate::spec::target_options::TargetOptions;
-use crate::spec::cvs;
+
 
 #[cfg(test)]
 mod tests;

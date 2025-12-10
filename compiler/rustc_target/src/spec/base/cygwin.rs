@@ -7,7 +7,7 @@ use crate::spec::os::Os;
 use crate::spec::split_debuginfo::SplitDebuginfo;
 use crate::spec::target_options::TargetOptions;
 use crate::spec::tls_model::TlsModel;
-use crate::spec::cvs;
+
 use rustc_abi::CanonAbi;
 
 pub(crate) fn opts() -> TargetOptions {
