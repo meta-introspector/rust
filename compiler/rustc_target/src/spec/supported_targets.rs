@@ -15,6 +15,8 @@
 // Once the `supported_targets!` macro is no longer needed, this file can be removed.
 // We are moving towards a system where targets are loaded dynamically from `target.json` files.
 
+use super::{base, apple};
+
 macro_rules! supported_targets {
     ({
         $( ($triple:tt, $arch:expr, $os:expr) => $target:expr ),* $(,)*
