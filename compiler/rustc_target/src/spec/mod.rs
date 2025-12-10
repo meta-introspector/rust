@@ -33,7 +33,7 @@
 //! Confronted with programmers who prefer a compiler with a good UX instead of a lethal weapon,
 //! we have almost-entirely recanted that notion, though we hope "target modifiers" will offer
 //! a way to have a decent UX yet still extend the necessary compiler controls, without
-//! requiring a new target spec for each and every single possible target micro-variant.
+//! requiring a new target spec for each and every single target micro-variant.
 //!
 //! [JSON]: https://json.org
 
@@ -88,8 +88,6 @@ pub mod supported_targets; // Declare the new module
 pub use abi_map::{AbiMap, AbiMapping};
 pub use base::apple;
 pub use base::avr::ef_avr_arch;
-pub use base::*;
-pub use apple::*;
 pub use json::json_schema;
 pub use target::{Target, TargetMetadata, X86Abi, HasTargetSpec, HasX86AbiOpt, Abi};
 pub use linker_flavor::*; // Re-export everything from linker_flavor
@@ -122,3 +120,5 @@ pub use os::*;
 pub use env::*;
 pub use targets::*; // Re-export everything from targets
 pub use supported_targets::*; // Re-export everything from supported_targets
+#[macro_export]
+pub use crate::cvs_macro_lib::cvs;
