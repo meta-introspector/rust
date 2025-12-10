@@ -30,7 +30,7 @@ use rustc_span::{
 };
 use rustc_target::spec::{
     FramePointer, LinkSelfContainedComponents, LinkerFeatures, PanicStrategy, SplitDebuginfo,
-    Target, TargetTuple,
+    Target, TargetTuple, targets, TargetWarnings,
 };
 use tracing::debug;
 
@@ -1606,8 +1606,9 @@ pub fn build_target_config(
     target: &TargetTuple,
     sysroot: &Path,
 ) -> Target {
-    match Target::search(target, sysroot) {
-        Ok((target, warnings)) => {
+    match targets::load_builtin(target.to_string().as_str()) {
+        Some(target) => {
+            let warnings = TargetWarnings::empty(); // warnings will come from TargetWarnings::empty(), so no need to iterate.
             for warning in warnings.warning_messages() {
                 early_dcx.early_warn(warning)
             }
@@ -1620,7 +1621,8 @@ pub fn build_target_config(
             }
             target
         }
-        Err(e) => {
+        None => {
+            let e = format!("Error loading target specification for: {target}");
             let mut err =
                 early_dcx.early_struct_fatal(format!("error loading target specification: {e}"));
             err.help("run `rustc --print target-list` for a list of built-in targets");

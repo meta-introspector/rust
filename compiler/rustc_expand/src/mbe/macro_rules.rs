@@ -37,94 +37,18 @@ use crate::base::{
     MacroExpanderResult, SyntaxExtension, SyntaxExtensionKind, TTMacroExpander,
 };
 use crate::errors;
-use crate::expand::{AstFragment, AstFragmentKind, ensure_complete_parse, parse_ast_fragment};
+use crate::expand::{ensure_complete_parse, parse_ast_fragment};
+use crate::ast_fragments_defs::{AstFragment, AstFragmentKind, ParserAnyMacro};
+
 use crate::mbe::macro_check::check_meta_variables;
 use crate::mbe::macro_parser::{Error, ErrorReported, Failure, MatcherLoc, Success, TtParser};
 use crate::mbe::quoted::{RulePart, parse_one_tt};
 use crate::mbe::transcribe::transcribe;
 use crate::mbe::{self, KleeneOp};
 
-pub(crate) struct ParserAnyMacro<'a> {
-    parser: Parser<'a>,
 
-    /// Span of the expansion site of the macro this parser is for
-    site_span: Span,
-    /// The ident of the macro we're parsing
-    macro_ident: Ident,
-    lint_node_id: NodeId,
-    is_trailing_mac: bool,
-    arm_span: Span,
-    /// Whether or not this macro is defined in the current crate
-    is_local: bool,
-}
 
-impl<'a> ParserAnyMacro<'a> {
-    pub(crate) fn make(mut self: Box<ParserAnyMacro<'a>>, kind: AstFragmentKind) -> AstFragment {
-        let ParserAnyMacro {
-            site_span,
-            macro_ident,
-            ref mut parser,
-            lint_node_id,
-            arm_span,
-            is_trailing_mac,
-            is_local,
-        } = *self;
-        let snapshot = &mut parser.create_snapshot_for_diagnostic();
-        let fragment = match parse_ast_fragment(parser, kind) {
-            Ok(f) => f,
-            Err(err) => {
-                let guar = diagnostics::emit_frag_parse_err(
-                    err, parser, snapshot, site_span, arm_span, kind,
-                );
-                return kind.dummy(site_span, guar);
-            }
-        };
 
-        // We allow semicolons at the end of expressions -- e.g., the semicolon in
-        // `macro_rules! m { () => { panic!(); } }` isn't parsed by `.parse_expr()`,
-        // but `m!()` is allowed in expression positions (cf. issue #34706).
-        if kind == AstFragmentKind::Expr && parser.token == token::Semi {
-            if is_local {
-                parser.psess.buffer_lint(
-                    SEMICOLON_IN_EXPRESSIONS_FROM_MACROS,
-                    parser.token.span,
-                    lint_node_id,
-                    errors::TrailingMacro { is_trailing: is_trailing_mac, name: macro_ident },
-                );
-            }
-            parser.bump();
-        }
-
-        // Make sure we don't have any tokens left to parse so we don't silently drop anything.
-        let path = ast::Path::from_ident(macro_ident.with_span_pos(site_span));
-        ensure_complete_parse(parser, &path, kind.name(), site_span);
-        fragment
-    }
-
-    #[instrument(skip(cx, tts))]
-    pub(crate) fn from_tts<'cx>(
-        cx: &'cx mut ExtCtxt<'a>,
-        tts: TokenStream,
-        site_span: Span,
-        arm_span: Span,
-        is_local: bool,
-        macro_ident: Ident,
-    ) -> Self {
-        Self {
-            parser: Parser::new(&cx.sess.psess, tts, None),
-
-            // Pass along the original expansion site and the name of the macro
-            // so we can print a useful error message if the parse of the expanded
-            // macro leaves unparsed tokens.
-            site_span,
-            macro_ident,
-            lint_node_id: cx.current_expansion.lint_node_id,
-            is_trailing_mac: cx.current_expansion.is_trailing_mac,
-            arm_span,
-            is_local,
-        }
-    }
-}
 
 pub(super) enum MacroRule {
     /// A function-style rule, for use with `m!()`

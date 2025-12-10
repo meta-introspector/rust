@@ -29,8 +29,8 @@ impls_dyn_send_neg!(
     [std::env::Args]
     [std::env::ArgsOs]
     [*const T where T: ?Sized + PointeeSized]
-    [*mut T where T: ?Sized + PointeeSized]
-    [std::ptr::NonNull<T> where T: ?Sized + PointeeSized]
+//    [*mut T where T: ?Sized + PointeeSized]
+//    [std::ptr::NonNull<T> where T: ?Sized + PointeeSized]
     [std::rc::Rc<T, A> where T: ?Sized, A: Allocator]
     [std::rc::Weak<T, A> where T: ?Sized, A: Allocator]
     [std::sync::MutexGuard<'_, T> where T: ?Sized]
@@ -90,6 +90,8 @@ impl_dyn_send!(
     [thin_vec::ThinVec<T> where T: DynSend]
     // // [smallvec::SmallVec<A> where A: smallvec::Array + DynSend]
 );
+
+unsafe impl<T: ?Sized + PointeeSized + Send> DynSend for std::ptr::NonNull<T> {}
 
 macro_rules! impls_dyn_sync_neg {
     ($([$t1: ty $(where $($generics1: tt)*)?])*) => {

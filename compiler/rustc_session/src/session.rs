@@ -34,7 +34,7 @@ use rustc_target::asm::InlineAsmArch;
 use rustc_target::spec::{
     Arch, CodeModel, DebuginfoKind, Os, PanicStrategy, RelocModel, RelroLevel, SanitizerSet,
     SmallDataThresholdSupport, SplitDebuginfo, StackProtector, SymbolVisibility, Target,
-    TargetTuple, TlsModel, apple,
+    TargetTuple, TlsModel, apple, TargetWarnings, targets,
 };
 
 use crate::code_stats::CodeStats;
@@ -1045,8 +1045,10 @@ pub fn build_session(
     }
 
     let host_triple = TargetTuple::from_tuple(config::host_tuple());
-    let (host, target_warnings) = Target::search(&host_triple, sopts.sysroot.path())
-        .unwrap_or_else(|e| dcx.handle().fatal(format!("Error loading host specification: {e}")));
+    let (host, target_warnings) = match targets::load_builtin(&host_triple.to_string()) {
+        Some(target) => (target, TargetWarnings::empty()),
+        None => dcx.handle().fatal(format!("Error loading host specification: {}", &host_triple)),
+    };
     for warning in target_warnings.warning_messages() {
         dcx.handle().warn(warning)
     }
@@ -1293,7 +1295,7 @@ fn validate_commandline_args_with_session_available(sess: &Session) {
     }
 
     if sess.opts.unstable_opts.small_data_threshold.is_some() {
-        if sess.target.small_data_threshold_support() == SmallDataThresholdSupport::None {
+        if sess.target.small_data_threshold_support == SmallDataThresholdSupport::None {
             sess.dcx().emit_warn(errors::SmallDataThresholdNotSupportedForTarget {
                 target_triple: &sess.opts.target_triple,
             })

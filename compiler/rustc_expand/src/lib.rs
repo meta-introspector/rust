@@ -13,6 +13,7 @@
 
 mod build;
 mod errors;
+mod ast_fragments_defs;
 // FIXME(Nilstrieb) Translate macro_rules diagnostics
 #[allow(rustc::untranslatable_diagnostic)]
 mod mbe;

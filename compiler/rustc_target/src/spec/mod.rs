@@ -48,23 +48,6 @@ use ::rustc_abi::Align; // For ToJson for Align
 use tracing::debug; // For the debug! macro in supported_targets!
 use crate::json::{Json, ToJson}; // For ToJson for Align
 
-// Cow-Vec-Str: Cow<'static, [Cow<'static, str>]>
-macro_rules! cvs {
-    () => {
-        ::std::borrow::Cow::Borrowed(&[])
-    };
-    ($($x:expr),+ $(,)?) => {
-        ::std::borrow::Cow::Borrowed(&[
-            $(
-                ::std::borrow::Cow::Borrowed($x),
-            )*
-        ])
-    };
-}
-
-pub(crate) use cvs;
-
-// Module declarations
 pub mod crt_objects;
 pub mod target;
 pub mod abi_map;
@@ -99,6 +82,8 @@ pub mod arch;
 pub mod os;
 pub mod env;
 pub mod targets; // The new targets module
+pub mod supported_targets; // Declare the new module
+pub mod cvs; // Declare the new module
 
 // Public re-exports
 pub use abi_map::{AbiMap, AbiMapping};
@@ -135,3 +120,5 @@ pub use arch::*;
 pub use os::*;
 pub use env::*;
 pub use targets::*; // Re-export everything from targets
+pub use supported_targets::*; // Re-export everything from supported_targets
+pub use cvs::*; // Re-export everything from cvs

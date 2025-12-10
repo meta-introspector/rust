@@ -4,6 +4,7 @@
 #![feature(iter_intersperse)]
 #![feature(macro_derive)]
 #![feature(rustc_attrs)]
+#![feature(str_as_str)]
 // To generate CodegenOptionsTargetModifiers and UnstableOptionsTargetModifiers enums
 // with macro_rules, it is necessary to use recursive mechanic ("Incremental TT Munchers").
 #![recursion_limit = "256"]

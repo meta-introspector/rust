@@ -10,7 +10,7 @@ macro_rules! supported_targets {
         /// List of supported targets
         pub static TARGETS: &[&str] = &[$($tuple),+];
 
-        fn load_builtin(target: &str) -> Option<Target> {
+        pub fn load_builtin(target: &str) -> Option<Target> {
             let t = match target {
                 $( $tuple => targets::$module::target(), )+
                 _ => return None,
@@ -19,7 +19,7 @@ macro_rules! supported_targets {
             Some(t)
         }
 
-        fn load_all_builtins() -> impl Iterator<Item = Target> {
+        pub fn load_all_builtins() -> impl Iterator<Item = Target> {
             [
                 $( targets::$module::target, )+
             ]
