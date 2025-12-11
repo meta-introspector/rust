@@ -279,7 +279,7 @@ macro_rules! ast_fragments {
                                                            .flat_map(|elt| vis.$flat_map_ast_elt(elt, $($args)*))
                                                            .collect();
                         *ast = new_elements;
-                    }),)*
+                    }))*
                 }
             }
 
