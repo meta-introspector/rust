@@ -146,7 +146,6 @@ impls_dyn_sync_neg!(
     [std::cell::Cell<T> where T: ?Sized]
     [std::cell::RefCell<T> where T: ?Sized]
     [std::cell::UnsafeCell<T> where T: ?Sized]
-//    [std::ptr::NonNull<T> where T: ?Sized + PointeeSized]
     [std::rc::Rc<T, A> where T: ?Sized, A: Allocator]
     [std::rc::Weak<T, A> where T: ?Sized, A: Allocator]
     [std::cell::OnceCell<T> where T]
