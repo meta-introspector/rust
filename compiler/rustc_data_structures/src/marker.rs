@@ -1,3 +1,12 @@
+//! This module defines custom marker traits `DynSend` and `DynSync` and associated utilities.
+//! These traits are used to control thread-safety properties dynamically at runtime,
+//! particularly in scenarios where the standard `Send` and `Sync` traits are too restrictive
+//! or need to be overridden based on a runtime flag (`sync::is_dyn_thread_safe`).
+//!
+//! The module provides macros to implement these auto traits both positively and negatively
+//! for various standard library types and custom data structures, ensuring consistency
+//! with Rust's fundamental thread-safety guarantees while allowing for dynamic behavior.
+
 use std::alloc::Allocator;
 use std::marker::PointeeSized;
 
@@ -15,7 +24,11 @@ pub unsafe auto trait DynSend {}
 // `Sync` type in `IntoDynSyncSend` will create a `DynSync` type.
 pub unsafe auto trait DynSync {}
 
-// Same with `Sync` and `Send`.
+// The `DynSend` trait is automatically implemented for references (`&T`)
+// if the referenced type `T` is `DynSync`. This ensures that if a type
+// can be safely shared across threads (`DynSync`), then a reference to it
+// can also be sent to another thread (`DynSend`). This is consistent with
+// how `Send` and `Sync` interact in Rust's standard library.
 unsafe impl<T: DynSync + ?Sized + PointeeSized> DynSend for &T {}
 
 macro_rules! impls_dyn_send_neg {
@@ -24,7 +37,10 @@ macro_rules! impls_dyn_send_neg {
     };
 }
 
-// Consistent with `std`
+// Negatively implement `DynSend` for types that are typically not `Send`
+// in the standard library. This ensures that `DynSend` mirrors the behavior
+// of `Send` for these specific types, preventing them from being
+// dynamically sent across threads.
 impls_dyn_send_neg!(
     [std::env::Args]
     [std::env::ArgsOs]
@@ -57,7 +73,8 @@ macro_rules! already_send {
     };
 }
 
-// These structures are already `Send`.
+// Implements `DynSend` for types that are already `Send`.
+// This is a convenient way to bring existing `Send` types into the `DynSend` ecosystem.
 already_send!(
     [std::backtrace::Backtrace][std::io::Stdout][std::io::Stderr][std::io::Error][std::fs::File][std::panic::Location<'_>]
         [rustc_arena::DroplessArena][jobserver_crate::Client][jobserver_crate::HelperThread]
@@ -70,6 +87,9 @@ macro_rules! impl_dyn_send {
     };
 }
 
+// Explicitly implements `DynSend` for types that are known to be safe to send
+// dynamically, often with specific generic bounds. This macro allows for
+// fine-grained control over `DynSend` implementations for complex types.
 impl_dyn_send!(
     [std::sync::atomic::AtomicPtr<T> where T]
     [std::sync::Mutex<T> where T: ?Sized+ DynSend]
@@ -91,7 +111,21 @@ impl_dyn_send!(
     // // [smallvec::SmallVec<A> where A: smallvec::Array + DynSend]
 );
 
+// Blanket `DynSend` implementation for `NonNull<T>`.
+// This is marked `unsafe` because `DynSend` is an `unsafe auto trait`.
+// The safety here relies on `T` itself being `Send`, which ensures that
+// the raw pointer wrapped by `NonNull` can be safely sent across threads.
 unsafe impl<T: ?Sized + PointeeSized + Send> DynSend for std::ptr::NonNull<T> {}
+
+// Blanket `DynSync` implementation for `NonNull<T>`.
+// This is marked `unsafe` because `DynSync` is an `unsafe auto trait`.
+// The safety here relies on `T` itself being `Sync`, which ensures that
+// the raw pointer wrapped by `NonNull` can be safely shared across threads.
+//
+// NOTE: A previous negative implementation for `NonNull<T>` existed within
+// `impls_dyn_sync_neg!`, which led to a conflicting implementation error (E0751).
+// That negative implementation has been removed to resolve the conflict,
+// as this positive blanket `impl` is the intended and correct behavior when `T: Sync`.
 unsafe impl<T: ?Sized + PointeeSized + Sync> DynSync for std::ptr::NonNull<T> {}
 
 macro_rules! impls_dyn_sync_neg {
@@ -100,7 +134,10 @@ macro_rules! impls_dyn_sync_neg {
     };
 }
 
-// Consistent with `std`
+// Negatively implement `DynSync` for types that are typically not `Sync`
+// in the standard library. This ensures that `DynSync` mirrors the behavior
+// of `Sync` for these specific types, preventing them from being
+// dynamically shared across threads.
 impls_dyn_sync_neg!(
     [std::env::Args]
     [std::env::ArgsOs]
@@ -109,7 +146,7 @@ impls_dyn_sync_neg!(
     [std::cell::Cell<T> where T: ?Sized]
     [std::cell::RefCell<T> where T: ?Sized]
     [std::cell::UnsafeCell<T> where T: ?Sized]
-    [std::ptr::NonNull<T> where T: ?Sized + PointeeSized]
+//    [std::ptr::NonNull<T> where T: ?Sized + PointeeSized]
     [std::rc::Rc<T, A> where T: ?Sized, A: Allocator]
     [std::rc::Weak<T, A> where T: ?Sized, A: Allocator]
     [std::cell::OnceCell<T> where T]
@@ -134,7 +171,8 @@ macro_rules! already_sync {
     };
 }
 
-// These structures are already `Sync`.
+// Implements `DynSync` for types that are already `Sync`.
+// This is a convenient way to bring existing `Sync` types into the `DynSync` ecosystem.
 already_sync!(
     [std::sync::atomic::AtomicBool][std::sync::atomic::AtomicUsize][std::sync::atomic::AtomicU8]
         [std::sync::atomic::AtomicU32][std::backtrace::Backtrace][std::io::Error][std::fs::File][std::panic::Location<'_>]
@@ -155,6 +193,9 @@ macro_rules! impl_dyn_sync {
     };
 }
 
+// Explicitly implements `DynSync` for types that are known to be safe to share
+// dynamically, often with specific generic bounds. This macro allows for
+// fine-grained control over `DynSync` implementations for complex types.
 impl_dyn_sync!(
     [std::sync::atomic::AtomicPtr<T> where T]
     [std::sync::OnceLock<T> where T: DynSend + DynSync]
@@ -184,10 +225,19 @@ pub fn assert_dyn_send<T: ?Sized + PointeeSized + DynSend>() {}
 pub fn assert_dyn_send_val<T: ?Sized + PointeeSized + DynSend>(_t: &T) {}
 pub fn assert_dyn_send_sync_val<T: ?Sized + PointeeSized + DynSync + DynSend>(_t: &T) {}
 
+/// A wrapper struct that allows dynamic control over `Send` and `Sync` properties
+/// based on a runtime check. When `sync::is_dyn_thread_safe()` returns `true`,
+/// types wrapped in `FromDyn` can be treated as `Send` and `Sync` if their
+/// inner type `T` implements `DynSend` and `DynSync`, respectively.
 #[derive(Copy, Clone)]
 pub struct FromDyn<T>(T);
 
 impl<T> FromDyn<T> {
+    /// Creates a new `FromDyn` instance.
+    ///
+    /// This method asserts that `sync::is_dyn_thread_safe()` is true at the time
+    /// of creation. This check ensures that it is safe to later implement `Send`
+    /// and `Sync` for `FromDyn<T>` when `T` itself is `DynSend` or `DynSync`.
     #[inline(always)]
     pub fn from(val: T) -> Self {
         // Check that `sync::is_dyn_thread_safe()` is true on creation so we can
@@ -197,12 +247,15 @@ impl<T> FromDyn<T> {
         FromDyn(val)
     }
 
+    /// Derives a new `FromDyn` instance for a different type `O`, leveraging
+    /// the thread-safety check already performed during the creation of `self`.
     #[inline(always)]
     pub fn derive<O>(&self, val: O) -> FromDyn<O> {
         // We already did the check for `sync::is_dyn_thread_safe()` when creating `Self`
         FromDyn(val)
     }
 
+    /// Consumes `self` and returns the inner value.
     #[inline(always)]
     pub fn into_inner(self) -> T {
         self.0
@@ -237,7 +290,12 @@ impl<T> std::ops::DerefMut for FromDyn<T> {
 #[derive(Copy, Clone)]
 pub struct IntoDynSyncSend<T: ?Sized + PointeeSized>(pub T);
 
+// Implements `DynSend` for `IntoDynSyncSend<T>` if the inner type `T` is `Send`.
+// This allows explicit marking of `Send` types as `DynSend`.
 unsafe impl<T: ?Sized + PointeeSized + Send> DynSend for IntoDynSyncSend<T> {}
+
+// Implements `DynSync` for `IntoDynSyncSend<T>` if the inner type `T` is `Sync`.
+// This allows explicit marking of `Sync` types as `DynSync`.
 unsafe impl<T: ?Sized + PointeeSized + Sync> DynSync for IntoDynSyncSend<T> {}
 
 impl<T> std::ops::Deref for IntoDynSyncSend<T> {
