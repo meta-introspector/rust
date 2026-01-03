@@ -1,0 +1,22 @@
+{
+  "crate": "clippy_lints",
+  "module": "methods::uninit_assumed_init",
+  "usages": [
+    {
+      "usage": "crate::clippy_lints::methods::uninit_assumed_init::check USES crate::rustc_middle::rustc_middle::ty::TypeckResults::<'tcx>::expr_ty_adjusted (AssocFn) [DefId: DefId(165:9058 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty_adjusted)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13785 ~ clippy_lints[d854]::methods::uninit_assumed_init::check)",
+      "used_def_id": "DefId(165:9058 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty_adjusted)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::uninit_assumed_init::check USES crate::rustc_lint::rustc_lint::LateContext::<'tcx>::typeck_results (AssocFn) [DefId: DefId(228:574 ~ rustc_lint[ad2f]::context::{impl#5}::typeck_results)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13785 ~ clippy_lints[d854]::methods::uninit_assumed_init::check)",
+      "used_def_id": "DefId(228:574 ~ rustc_lint[ad2f]::context::{impl#5}::typeck_results)"
+    }
+  ]
+}

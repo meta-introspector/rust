@@ -1,0 +1,166 @@
+{
+  "crate": "clippy_lints",
+  "module": "methods::read_line_without_trim",
+  "usages": [
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::expr_is_string_literal_without_trailing_newline USES crate::core::core::str::<impl str>::ends_with (AssocFn) [DefId: DefId(2:15190 ~ core[4720]::str::{impl#0}::ends_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13292 ~ clippy_lints[d854]::methods::read_line_without_trim::expr_is_string_literal_without_trailing_newline)",
+      "used_def_id": "DefId(2:15190 ~ core[4720]::str::{impl#0}::ends_with)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::expr_is_string_literal_without_trailing_newline USES crate::rustc_span::rustc_span::Symbol::as_str (AssocFn) [DefId: DefId(75:811 ~ rustc_span[771e]::symbol::{impl#14}::as_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13292 ~ clippy_lints[d854]::methods::read_line_without_trim::expr_is_string_literal_without_trailing_newline)",
+      "used_def_id": "DefId(75:811 ~ rustc_span[771e]::symbol::{impl#14}::as_str)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::parse_fails_on_trailing_newline USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13293 ~ clippy_lints[d854]::methods::read_line_without_trim::parse_fails_on_trailing_newline)",
+      "used_def_id": "DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::rustc_middle::rustc_middle::ty::TypeckResults::<'tcx>::expr_ty (AssocFn) [DefId: DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::rustc_lint::rustc_lint::LateContext::<'tcx>::typeck_results (AssocFn) [DefId: DefId(228:574 ~ rustc_lint[ad2f]::context::{impl#5}::typeck_results)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(228:574 ~ rustc_lint[ad2f]::context::{impl#5}::typeck_results)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::rustc_hir::rustc_hir::Expr::<'_>::peel_borrows (AssocFn) [DefId: DefId(146:685 ~ rustc_hir[8fc3]::hir::{impl#45}::peel_borrows)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(146:685 ~ rustc_hir[8fc3]::hir::{impl#45}::peel_borrows)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::core::core::slice::<impl [T]>::is_empty (AssocFn) [DefId: DefId(2:14035 ~ core[4720]::slice::{impl#0}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(2:14035 ~ core[4720]::slice::{impl#0}::is_empty)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::rustc_middle::rustc_middle::ty::TypeckResults::<'tcx>::expr_ty (AssocFn) [DefId: DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::rustc_lint::rustc_lint::LateContext::<'tcx>::typeck_results (AssocFn) [DefId: DefId(228:574 ~ rustc_lint[ad2f]::context::{impl#5}::typeck_results)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(228:574 ~ rustc_lint[ad2f]::context::{impl#5}::typeck_results)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::rustc_middle::rustc_middle::ty::GenericArg::<'tcx>::as_type (AssocFn) [DefId: DefId(165:7490 ~ rustc_middle[ac2e]::ty::generic_args::{impl#12}::as_type)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(165:7490 ~ rustc_middle[ac2e]::ty::generic_args::{impl#12}::as_type)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::rustc_errors::rustc_errors::Diag::<'a, G>::span_note (AssocFn) [DefId: DefId(166:2078 ~ rustc_errors[cf14]::diagnostic::{impl#18}::span_note)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(166:2078 ~ rustc_errors[cf14]::diagnostic::{impl#18}::span_note)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::rustc_errors::rustc_errors::Diag::<'a, G>::span_suggestion (AssocFn) [DefId: DefId(166:2104 ~ rustc_errors[cf14]::diagnostic::{impl#18}::span_suggestion)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(166:2104 ~ rustc_errors[cf14]::diagnostic::{impl#18}::span_suggestion)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::clippy_lints::methods::read_line_without_trim::check USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:13294 ~ clippy_lints[d854]::methods::read_line_without_trim::check)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    }
+  ]
+}

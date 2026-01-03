@@ -1,0 +1,726 @@
+{
+  "crate": "clippy_lints",
+  "module": "dereference",
+  "usages": [
+    {
+      "usage": "crate::clippy_lints::dereference::EXPLICIT_DEREF_METHODS USES crate::rustc_lint_defs::rustc_lint::Lint::default_fields_for_macro (AssocFn) [DefId: DefId(167:76 ~ rustc_lint_defs[5d42]::{impl#7}::default_fields_for_macro)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:24529 ~ clippy_lints[d854]::dereference::EXPLICIT_DEREF_METHODS)",
+      "used_def_id": "DefId(167:76 ~ rustc_lint_defs[5d42]::{impl#7}::default_fields_for_macro)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::NEEDLESS_BORROW USES crate::rustc_lint_defs::rustc_lint::Lint::default_fields_for_macro (AssocFn) [DefId: DefId(167:76 ~ rustc_lint_defs[5d42]::{impl#7}::default_fields_for_macro)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:24531 ~ clippy_lints[d854]::dereference::NEEDLESS_BORROW)",
+      "used_def_id": "DefId(167:76 ~ rustc_lint_defs[5d42]::{impl#7}::default_fields_for_macro)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::REF_BINDING_TO_REFERENCE USES crate::rustc_lint_defs::rustc_lint::Lint::default_fields_for_macro (AssocFn) [DefId: DefId(167:76 ~ rustc_lint_defs[5d42]::{impl#7}::default_fields_for_macro)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:24533 ~ clippy_lints[d854]::dereference::REF_BINDING_TO_REFERENCE)",
+      "used_def_id": "DefId(167:76 ~ rustc_lint_defs[5d42]::{impl#7}::default_fields_for_macro)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::EXPLICIT_AUTO_DEREF USES crate::rustc_lint_defs::rustc_lint::Lint::default_fields_for_macro (AssocFn) [DefId: DefId(167:76 ~ rustc_lint_defs[5d42]::{impl#7}::default_fields_for_macro)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:24535 ~ clippy_lints[d854]::dereference::EXPLICIT_AUTO_DEREF)",
+      "used_def_id": "DefId(167:76 ~ rustc_lint_defs[5d42]::{impl#7}::default_fields_for_macro)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::rustc_middle::rustc_middle::ty::TypeckResults::<'tcx>::type_dependent_def_id (AssocFn) [DefId: DefId(165:9033 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::type_dependent_def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(165:9033 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::type_dependent_def_id)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::rustc_hir::rustc_hir::def::Res::<Id>::opt_def_id (AssocFn) [DefId: DefId(146:209 ~ rustc_hir[8fc3]::def::{impl#14}::opt_def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(146:209 ~ rustc_hir[8fc3]::def::{impl#14}::opt_def_id)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::is_raw_ptr (AssocFn) [DefId: DefId(165:8891 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_raw_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(165:8891 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_raw_ptr)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::rustc_middle::rustc_middle::ty::TypeckResults::<'tcx>::expr_ty (AssocFn) [DefId: DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::get_diagnostic_name (AssocFn) [DefId: DefId(165:6794 ~ rustc_middle[ac2e]::ty::context::{impl#25}::get_diagnostic_name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(165:6794 ~ rustc_middle[ac2e]::ty::context::{impl#25}::get_diagnostic_name)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::try_parse_ref_op USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2963 ~ clippy_lints[d854]::dereference::try_parse_ref_op)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::deref_method_same_type USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2965 ~ clippy_lints[d854]::dereference::deref_method_same_type)",
+      "used_def_id": "DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::deref_method_same_type USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2965 ~ clippy_lints[d854]::dereference::deref_method_same_type)",
+      "used_def_id": "DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::deref_method_same_type USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2965 ~ clippy_lints[d854]::dereference::deref_method_same_type)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::is_in_method_chain USES crate::rustc_span::rustc_span::Span::eq_ctxt (AssocFn) [DefId: DefId(75:711 ~ rustc_span[771e]::span_encoding::{impl#4}::eq_ctxt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2967 ~ clippy_lints[d854]::dereference::is_in_method_chain)",
+      "used_def_id": "DefId(75:711 ~ rustc_span[771e]::span_encoding::{impl#4}::eq_ctxt)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::is_in_method_chain USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2967 ~ clippy_lints[d854]::dereference::is_in_method_chain)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::ty_contains_infer USES crate::rustc_hir::rustc_hir::intravisit::VisitorExt::visit_ty_unambig (AssocFn) [DefId: DefId(146:1010 ~ rustc_hir[8fc3]::intravisit::VisitorExt::visit_ty_unambig)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2979 ~ clippy_lints[d854]::dereference::ty_contains_infer)",
+      "used_def_id": "DefId(146:1010 ~ rustc_hir[8fc3]::intravisit::VisitorExt::visit_ty_unambig)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::ty_contains_field USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2986 ~ clippy_lints[d854]::dereference::ty_contains_field)",
+      "used_def_id": "DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::ty_contains_field USES crate::rustc_middle::rustc_middle::ty::AdtDef::<'tcx>::is_struct (AssocFn) [DefId: DefId(165:5609 ~ rustc_middle[ac2e]::ty::adt::{impl#8}::is_struct)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2986 ~ clippy_lints[d854]::dereference::ty_contains_field)",
+      "used_def_id": "DefId(165:5609 ~ rustc_middle[ac2e]::ty::adt::{impl#8}::is_struct)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::ty_contains_field USES crate::core::std::iter::Iterator::any (AssocFn) [DefId: DefId(2:9563 ~ core[4720]::iter::traits::iterator::Iterator::any)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2986 ~ clippy_lints[d854]::dereference::ty_contains_field)",
+      "used_def_id": "DefId(2:9563 ~ core[4720]::iter::traits::iterator::Iterator::any)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::ty_contains_field USES crate::rustc_middle::rustc_middle::ty::AdtDef::<'tcx>::all_fields (AssocFn) [DefId: DefId(165:5627 ~ rustc_middle[ac2e]::ty::adt::{impl#8}::all_fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2986 ~ clippy_lints[d854]::dereference::ty_contains_field)",
+      "used_def_id": "DefId(165:5627 ~ rustc_middle[ac2e]::ty::adt::{impl#8}::all_fields)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::ty_contains_field USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2986 ~ clippy_lints[d854]::dereference::ty_contains_field)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_span::rustc_span::Span::ctxt (AssocFn) [DefId: DefId(75:708 ~ rustc_span[771e]::span_encoding::{impl#4}::ctxt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(75:708 ~ rustc_span[771e]::span_encoding::{impl#4}::ctxt)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::TypeckResults::<'tcx>::expr_ty (AssocFn) [DefId: DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::alloc::std::str::<impl str>::repeat (AssocFn) [DefId: DefId(3:6369 ~ alloc[27b0]::str::{impl#5}::repeat)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(3:6369 ~ alloc[27b0]::str::{impl#5}::repeat)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::alloc::std::str::<impl str>::repeat (AssocFn) [DefId: DefId(3:6369 ~ alloc[27b0]::str::{impl#5}::repeat)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(3:6369 ~ alloc[27b0]::str::{impl#5}::repeat)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::std::cmp::PartialOrd::lt (AssocFn) [DefId: DefId(2:3259 ~ core[4720]::cmp::PartialOrd::lt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:3259 ~ core[4720]::cmp::PartialOrd::lt)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_lint::rustc_lint::LateContext::<'tcx>::precedence (AssocFn) [DefId: DefId(228:603 ~ rustc_lint[ad2f]::context::{impl#5}::precedence)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(228:603 ~ rustc_lint[ad2f]::context::{impl#5}::precedence)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::is_raw_ptr (AssocFn) [DefId: DefId(165:8891 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_raw_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:8891 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_raw_ptr)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::TypeckResults::<'tcx>::expr_ty_adjusted (AssocFn) [DefId: DefId(165:9058 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty_adjusted)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:9058 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty_adjusted)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_lint::rustc_lint::LateContext::<'tcx>::typeck_results (AssocFn) [DefId: DefId(228:574 ~ rustc_lint[ad2f]::context::{impl#5}::typeck_results)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(228:574 ~ rustc_lint[ad2f]::context::{impl#5}::typeck_results)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_span::rustc_span::Span::ctxt (AssocFn) [DefId: DefId(75:708 ~ rustc_span[771e]::span_encoding::{impl#4}::ctxt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(75:708 ~ rustc_span[771e]::span_encoding::{impl#4}::ctxt)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::parent_hir_node (AssocFn) [DefId: DefId(165:123 ~ rustc_middle[ac2e]::hir::map::{impl#3}::parent_hir_node)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:123 ~ rustc_middle[ac2e]::hir::map::{impl#3}::parent_hir_node)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::std::cmp::PartialOrd::lt (AssocFn) [DefId: DefId(2:3259 ~ core[4720]::cmp::PartialOrd::lt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:3259 ~ core[4720]::cmp::PartialOrd::lt)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_lint::rustc_lint::LateContext::<'tcx>::precedence (AssocFn) [DefId: DefId(228:603 ~ rustc_lint[ad2f]::context::{impl#5}::precedence)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(228:603 ~ rustc_lint[ad2f]::context::{impl#5}::precedence)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::std::cmp::PartialOrd::lt (AssocFn) [DefId: DefId(2:3259 ~ core[4720]::cmp::PartialOrd::lt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:3259 ~ core[4720]::cmp::PartialOrd::lt)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_lint::rustc_lint::LateContext::<'tcx>::precedence (AssocFn) [DefId: DefId(228:603 ~ rustc_lint[ad2f]::context::{impl#5}::precedence)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(228:603 ~ rustc_lint[ad2f]::context::{impl#5}::precedence)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_lint::rustc_lint::LateContext::<'tcx>::precedence (AssocFn) [DefId: DefId(228:603 ~ rustc_lint[ad2f]::context::{impl#5}::precedence)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(228:603 ~ rustc_lint[ad2f]::context::{impl#5}::precedence)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_errors::rustc_errors::Diag::<'a, G>::span_suggestion (AssocFn) [DefId: DefId(166:2104 ~ rustc_errors[cf14]::diagnostic::{impl#18}::span_suggestion)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(166:2104 ~ rustc_errors[cf14]::diagnostic::{impl#18}::span_suggestion)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::util::<impl rustc_middle::ty::Ty<'tcx>>::is_sized (AssocFn) [DefId: DefId(165:5431 ~ rustc_middle[ac2e]::ty::util::{impl#6}::is_sized)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:5431 ~ rustc_middle[ac2e]::ty::util::{impl#6}::is_sized)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_lint::rustc_lint::LateContext::<'tcx>::typing_env (AssocFn) [DefId: DefId(228:568 ~ rustc_lint[ad2f]::context::{impl#5}::typing_env)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(228:568 ~ rustc_lint[ad2f]::context::{impl#5}::typing_env)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::TypeckResults::<'tcx>::expr_ty (AssocFn) [DefId: DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:8867 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::is_slice (AssocFn) [DefId: DefId(165:8883 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:8883 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_slice)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::is_array (AssocFn) [DefId: DefId(165:8885 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_array)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:8885 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_array)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::is_ref (AssocFn) [DefId: DefId(165:8875 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:8875 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_ref)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::std::cmp::PartialOrd::lt (AssocFn) [DefId: DefId(2:3259 ~ core[4720]::cmp::PartialOrd::lt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:3259 ~ core[4720]::cmp::PartialOrd::lt)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_lint::rustc_lint::LateContext::<'tcx>::precedence (AssocFn) [DefId: DefId(228:603 ~ rustc_lint[ad2f]::context::{impl#5}::precedence)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(228:603 ~ rustc_lint[ad2f]::context::{impl#5}::precedence)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::is_ref (AssocFn) [DefId: DefId(165:8875 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:8875 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_ref)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::is_ref (AssocFn) [DefId: DefId(165:8875 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:8875 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_ref)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_span::rustc_span::Span::ctxt (AssocFn) [DefId: DefId(75:708 ~ rustc_span[771e]::span_encoding::{impl#4}::ctxt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(75:708 ~ rustc_span[771e]::span_encoding::{impl#4}::ctxt)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_errors::rustc_errors::Diag::<'a, G>::span_suggestion (AssocFn) [DefId: DefId(166:2104 ~ rustc_errors[cf14]::diagnostic::{impl#18}::span_suggestion)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(166:2104 ~ rustc_errors[cf14]::diagnostic::{impl#18}::span_suggestion)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::TypeckResults::<'tcx>::expr_adjustments (AssocFn) [DefId: DefId(165:9056 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_adjustments)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:9056 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_adjustments)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::ty::TypeckResults::<'tcx>::expr_ty (AssocFn) [DefId: DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::parent_hir_id (AssocFn) [DefId: DefId(165:122 ~ rustc_middle[ac2e]::hir::map::{impl#3}::parent_hir_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:122 ~ rustc_middle[ac2e]::hir::map::{impl#3}::parent_hir_id)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_hir::rustc_hir::Node::<'hir>::expect_expr (AssocFn) [DefId: DefId(146:6567 ~ rustc_hir[8fc3]::hir::{impl#91}::expect_expr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(146:6567 ~ rustc_hir[8fc3]::hir::{impl#91}::expect_expr)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_node (AssocFn) [DefId: DefId(165:120 ~ rustc_middle[ac2e]::hir::map::{impl#3}::hir_node)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(165:120 ~ rustc_middle[ac2e]::hir::map::{impl#3}::hir_node)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_span::rustc_span::Span::ctxt (AssocFn) [DefId: DefId(75:708 ~ rustc_span[771e]::span_encoding::{impl#4}::ctxt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(75:708 ~ rustc_span[771e]::span_encoding::{impl#4}::ctxt)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::alloc::std::borrow::Cow::<'_, B>::into_owned (AssocFn) [DefId: DefId(3:204 ~ alloc[27b0]::borrow::{impl#3}::into_owned)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(3:204 ~ alloc[27b0]::borrow::{impl#3}::into_owned)"
+    },
+    {
+      "usage": "crate::clippy_lints::dereference::report USES crate::rustc_errors::rustc_errors::Diag::<'a, G>::span_suggestion (AssocFn) [DefId: DefId(166:2104 ~ rustc_errors[cf14]::diagnostic::{impl#18}::span_suggestion)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2988 ~ clippy_lints[d854]::dereference::report)",
+      "used_def_id": "DefId(166:2104 ~ rustc_errors[cf14]::diagnostic::{impl#18}::span_suggestion)"
+    }
+  ]
+}
