@@ -1,0 +1,524 @@
+Starting bootstrap build with custom scanner...
+RUSTC=/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner
+       Fresh unicode-ident v1.0.18
+       Fresh memchr v2.7.5
+       Fresh cfg-if v1.0.1
+       Fresh shlex v1.3.0
+       Fresh autocfg v1.5.0
+       Fresh equivalent v1.0.2
+       Fresh foldhash v0.1.5
+       Fresh allocator-api2 v0.2.21
+       Fresh itoa v1.0.15
+       Fresh once_cell v1.21.3
+       Fresh regex-syntax v0.8.5
+       Fresh ryu v1.0.20
+       Fresh either v1.15.0
+       Fresh litemap v0.8.0
+       Fresh proc-macro2 v1.0.101
+       Fresh aho-corasick v1.1.3
+       Fresh writeable v0.6.1
+       Fresh stable_deref_trait v1.2.0
+       Fresh scopeguard v1.2.0
+       Fresh tracing-core v0.1.34
+       Fresh pin-project-lite v0.2.16
+       Fresh linux-raw-sys v0.9.4
+       Fresh version_check v0.9.5
+       Fresh rustc-hash v2.1.1
+       Fresh unicode-width v0.2.1
+       Fresh anstyle v1.0.11
+       Fresh fastrand v2.3.0
+       Fresh quote v1.0.40
+       Fresh libc v0.2.174
+   Compiling regex-automata v0.4.9
+       Fresh crossbeam-utils v0.8.21
+       Fresh itertools v0.12.1
+       Fresh strsim v0.11.1
+       Fresh unicode-xid v0.2.6
+       Fresh cpufeatures v0.2.17
+       Fresh arrayvec v0.7.6
+       Fresh rustc-hash v1.1.0
+       Fresh rustc-stable-hash v0.1.2
+       Fresh unicode-properties v0.1.3
+       Fresh thin-vec v0.2.14
+   Compiling syn v2.0.106
+       Fresh crossbeam-epoch v0.9.18
+       Fresh getrandom v0.3.3
+       Fresh parking_lot_core v0.9.11
+       Fresh lock_api v0.4.13
+       Fresh rustix v1.0.8
+       Fresh typenum v1.18.0
+       Fresh perf-event-open-sys v3.0.0
+       Fresh memmap2 v0.2.3
+       Fresh rustc_hashes v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_hashes)
+       Fresh jobserver v0.1.33
+       Fresh elsa v1.11.2
+       Fresh rustc_arena v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_arena)
+       Fresh ena v0.14.3
+       Fresh rustc_graphviz v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_graphviz)
+       Fresh constant_time_eq v0.3.1
+       Fresh arrayref v0.3.9
+       Fresh rustc-literal-escaper v0.0.5
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name regex_automata --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.4.9/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="alloc"' --cfg 'feature="dfa-onepass"' --cfg 'feature="dfa-search"' --cfg 'feature="hybrid"' --cfg 'feature="meta"' --cfg 'feature="nfa"' --cfg 'feature="nfa-backtrack"' --cfg 'feature="nfa-pikevm"' --cfg 'feature="nfa-thompson"' --cfg 'feature="perf"' --cfg 'feature="perf-inline"' --cfg 'feature="perf-literal"' --cfg 'feature="perf-literal-multisubstring"' --cfg 'feature="perf-literal-substring"' --cfg 'feature="std"' --cfg 'feature="syntax"' --cfg 'feature="unicode"' --cfg 'feature="unicode-age"' --cfg 'feature="unicode-bool"' --cfg 'feature="unicode-case"' --cfg 'feature="unicode-gencat"' --cfg 'feature="unicode-perl"' --cfg 'feature="unicode-script"' --cfg 'feature="unicode-segment"' --cfg 'feature="unicode-word-boundary"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("alloc", "default", "dfa", "dfa-build", "dfa-onepass", "dfa-search", "hybrid", "internal-instrument", "internal-instrument-pikevm", "logging", "meta", "nfa", "nfa-backtrack", "nfa-pikevm", "nfa-thompson", "perf", "perf-inline", "perf-literal", "perf-literal-multisubstring", "perf-literal-substring", "std", "syntax", "unicode", "unicode-age", "unicode-bool", "unicode-case", "unicode-gencat", "unicode-perl", "unicode-script", "unicode-segment", "unicode-word-boundary"))' -C metadata=270bf5578994273a -C extra-filename=-1086d98e26bb955c --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern aho_corasick=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libaho_corasick-22c58f580618bb46.rmeta --extern memchr=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libmemchr-31b9c6cef7758eb1.rmeta --extern regex_syntax=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libregex_syntax-cad04a484b3f3b99.rmeta --cap-lints allow`
+       Fresh crossbeam-deque v0.8.6
+       Fresh parking_lot v0.12.4
+       Fresh generic-array v0.14.7
+       Fresh tempfile v3.20.0
+       Fresh proc-macro-hack v0.5.20+deprecated
+       Fresh zerocopy v0.8.26
+       Fresh type-map v0.5.1
+       Fresh adler2 v2.0.1
+       Fresh scoped-tls v1.0.1
+       Fresh fnv v1.0.7
+       Fresh rand_core v0.9.3
+       Fresh self_cell v1.2.0
+       Fresh rustc_lexer v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_lexer)
+       Fresh smallvec v1.15.1
+       Fresh termcolor v1.4.1
+       Fresh getopts v0.2.24
+       Fresh ident_case v1.0.1
+       Fresh twox-hash v2.1.1
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name syn --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.106/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no --cfg 'feature="clone-impls"' --cfg 'feature="default"' --cfg 'feature="derive"' --cfg 'feature="extra-traits"' --cfg 'feature="fold"' --cfg 'feature="full"' --cfg 'feature="parsing"' --cfg 'feature="printing"' --cfg 'feature="proc-macro"' --cfg 'feature="visit"' --cfg 'feature="visit-mut"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("clone-impls", "default", "derive", "extra-traits", "fold", "full", "parsing", "printing", "proc-macro", "test", "visit", "visit-mut"))' -C metadata=4a76dd3f4398c48e -C extra-filename=-8a30a9d5b6c06652 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern proc_macro2=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libproc_macro2-a22d745afa92dadf.rmeta --extern quote=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libquote-cc45a71580a33fbb.rmeta --extern unicode_ident=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libunicode_ident-8285b95b08f858a0.rmeta --cap-lints allow`
+       Fresh crypto-common v0.1.6
+       Fresh block-buffer v0.10.4
+       Fresh ppv-lite86 v0.2.21
+       Fresh measureme v12.0.3
+       Fresh rustc_thread_pool v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_thread_pool)
+       Fresh miniz_oxide v0.8.9
+       Fresh ruzstd v0.8.1
+       Fresh rand_xoshiro v0.7.0
+       Fresh dyn-clone v1.0.19
+       Fresh rustc_fs_util v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_fs_util)
+       Fresh termize v0.2.0
+       Fresh odht v0.3.1
+       Fresh annotate-snippets v0.11.5
+       Fresh digest v0.10.7
+       Fresh crc32fast v1.5.0
+       Fresh icu_locale_data v2.0.0
+       Fresh rand_chacha v0.9.0
+   Compiling wasmparser v0.236.1
+       Fresh rustc_error_codes v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_error_codes)
+       Fresh datafrog v2.0.1
+       Fresh pkg-config v0.3.32
+       Fresh utf8parse v0.2.2
+       Fresh tinyvec_macros v0.1.1
+       Fresh same-file v1.0.6
+       Fresh sha2 v0.10.9
+       Fresh psm v0.1.26
+       Fresh md-5 v0.10.6
+       Fresh sha1 v0.10.6
+       Fresh blake3 v1.8.2
+       Fresh flate2 v1.1.2
+       Fresh rand v0.9.2
+       Fresh rustc_apfloat v0.2.3+llvm-462a31f5a5ab
+       Fresh polonius-engine v0.13.0
+       Fresh anstyle-parse v0.2.7
+       Fresh tinyvec v1.9.0
+       Fresh walkdir v2.5.0
+       Fresh anstyle-query v1.1.4
+       Fresh colorchoice v1.0.4
+       Fresh is_terminal_polyfill v1.70.1
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name wasmparser --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wasmparser-0.236.1/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 '--allow=clippy::all' --warn=unused_import_braces --warn=unused_extern_crates --warn=unused-macro-rules --warn=unused-lifetimes --warn=unstable_features --deny=unsafe_code --warn=unsafe-op-in-unsafe-fn --warn=unsafe-attr-outside-unsafe '--warn=clippy::unnecessary_to_owned' '--warn=clippy::unnecessary_mut_passed' '--warn=clippy::unnecessary_fallible_conversions' '--warn=clippy::unnecessary_cast' '--warn=clippy::uninlined_format_args' --warn=unexpected_cfgs --warn=rust-2024-prelude-collisions --warn=rust-2024-incompatible-pat --warn=rust-2024-guarded-string-incompatible-syntax --warn=missing-unsafe-on-extern '--warn=clippy::map_clone' '--warn=clippy::manual_strip' --warn=keyword_idents_2024 --warn=deprecated-safe-2024 '--warn=clippy::clone_on_copy' '--warn=clippy::allow_attributes_without_reason' --check-cfg 'cfg(fuzzing)' --cfg 'feature="features"' --cfg 'feature="std"' --cfg 'feature="validate"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("component-model", "default", "features", "hash-collections", "prefer-btree-collections", "serde", "simd", "std", "validate"))' -C metadata=0ca2f918c9e8531b -C extra-filename=-4a9ae8e5f4485bf4 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern bitflags=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libbitflags-94e1844d12d7ed7e.rmeta --cap-lints allow --cfg core_error --check-cfg 'cfg(core_error)'`
+       Fresh stacker v0.1.21
+       Fresh num-traits v0.2.19
+       Fresh icu_normalizer_data v2.0.0
+       Fresh anyhow v1.0.99
+       Fresh icu_properties_data v2.0.1
+       Fresh unicode-normalization v0.1.24
+       Fresh anstream v0.6.20
+       Fresh percent-encoding v2.3.1
+       Fresh rustc_parse_format v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_parse_format)
+       Fresh lazy_static v1.5.0
+       Fresh utf8_iter v1.0.4
+       Fresh regex-syntax v0.6.29
+       Fresh clap_lex v0.7.5
+       Fresh vcpkg v0.2.15
+       Fresh heck v0.5.0
+       Fresh overload v0.1.1
+       Fresh tracing-log v0.2.0
+       Fresh thread_local v1.1.9
+       Fresh winnow v0.5.40
+       Fresh regex-automata v0.1.10
+       Fresh nu-ansi-term v0.46.0
+       Fresh form_urlencoded v1.2.1
+   Compiling clap_builder v4.5.44
+       Fresh sharded-slab v0.1.7
+       Fresh winnow v0.7.12
+       Fresh siphasher v1.0.1
+       Fresh getrandom v0.2.16
+       Fresh unicode-width v0.1.14
+       Fresh toml_write v0.1.2
+       Fresh unicode-script v0.5.7
+       Fresh rustc_proc_macro v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_proc_macro)
+       Fresh static_assertions v1.1.0
+       Fresh option-ext v0.2.0
+       Fresh ordered-float v2.10.1
+       Fresh libloading v0.8.8
+       Fresh matchers v0.1.0
+       Fresh phf_shared v0.11.3
+       Fresh dirs-sys v0.5.0
+       Fresh fallible-iterator v0.3.0
+       Fresh diff v0.1.13
+       Fresh rand_core v0.6.4
+       Fresh cfg_aliases v0.2.1
+       Fresh unicode-security v0.1.2
+       Fresh leb128 v0.2.5
+       Fresh iana-time-zone v0.1.63
+       Fresh minimal-lexical v0.2.1
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name clap_builder --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clap_builder-4.5.44/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --warn=rust_2018_idioms '--warn=clippy::zero_sized_map_values' '--warn=clippy::verbose_file_reads' --warn=unused_qualifications --warn=unused_macro_rules --warn=unused_lifetimes --warn=unsafe_op_in_unsafe_fn --warn=unreachable_pub --allow=unnameable_types '--warn=clippy::uninlined_format_args' '--warn=clippy::trait_duplication_in_bounds' '--warn=clippy::todo' '--warn=clippy::string_lit_as_bytes' '--warn=clippy::string_add_assign' '--warn=clippy::semicolon_if_nothing_returned' '--warn=clippy::self_named_module_files' '--warn=clippy::same_functions_in_if_condition' '--allow=clippy::result_large_err' '--warn=clippy::rest_pat_in_fully_bound_structs' '--warn=clippy::ref_option_ref' '--warn=clippy::redundant_feature_names' '--warn=clippy::rc_mutex' '--warn=clippy::ptr_as_ptr' '--warn=clippy::path_buf_push_overwrite' '--warn=clippy::negative_feature_names' '--warn=clippy::needless_for_each' '--allow=clippy::needless_continue' '--warn=clippy::mutex_integer' '--allow=clippy::multiple_bound_locations' '--warn=clippy::mem_forget' '--warn=clippy::macro_use_imports' '--warn=clippy::lossy_float_literal' '--warn=clippy::linkedlist' '--allow=clippy::let_and_return' '--warn=clippy::large_types_passed_by_value' '--warn=clippy::large_stack_arrays' '--warn=clippy::large_digit_groups' '--warn=clippy::invalid_upcast_comparisons' '--warn=clippy::infinite_loop' '--warn=clippy::inefficient_to_string' '--warn=clippy::inconsistent_struct_constructor' '--warn=clippy::imprecise_flops' '--warn=clippy::implicit_clone' '--allow=clippy::if_same_then_else' '--warn=clippy::from_iter_instead_of_collect' '--warn=clippy::fn_params_excessive_bools' '--warn=clippy::float_cmp_const' '--warn=clippy::flat_map_option' '--warn=clippy::filter_map_next' '--warn=clippy::fallible_impl_from' '--warn=clippy::explicit_into_iter_loop' '--warn=clippy::explicit_deref_methods' '--warn=clippy::expl_impl_clone_on_copy' '--warn=clippy::enum_glob_use' '--warn=clippy::empty_enum' '--warn=clippy::doc_markdown' '--warn=clippy::debug_assert_with_mut_call' '--warn=clippy::dbg_macro' '--warn=clippy::create_dir' '--allow=clippy::collapsible_else_if' '--warn=clippy::checked_conversions' '--allow=clippy::branches_sharing_code' '--allow=clippy::bool_assert_comparison' '--allow=clippy::blocks_in_conditions' '--allow=clippy::assigning_clones' --cfg 'feature="color"' --cfg 'feature="error-context"' --cfg 'feature="help"' --cfg 'feature="std"' --cfg 'feature="suggestions"' --cfg 'feature="usage"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("cargo", "color", "debug", "default", "deprecated", "env", "error-context", "help", "std", "string", "suggestions", "unicode", "unstable-doc", "unstable-ext", "unstable-styles", "unstable-v5", "usage", "wrap_help"))' -C metadata=abdf6314fe923532 -C extra-filename=-516ddda363a0a370 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern anstream=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libanstream-1396a4f29ff86b3e.rmeta --extern anstyle=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libanstyle-34da1d8f10e661b4.rmeta --extern clap_lex=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libclap_lex-7cb3534221f75b45.rmeta --extern strsim=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libstrsim-3ccadeaa3ce6c207.rmeta --cap-lints allow`
+       Fresh rand_chacha v0.3.1
+       Fresh typeid v1.0.3
+       Fresh rayon-core v1.13.0
+       Fresh bytecount v0.6.9
+       Fresh miropt-test-tools v0.1.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/src/tools/miropt-test-tools)
+       Fresh rustc-demangle v0.1.26
+       Fresh pulldown-cmark-escape v0.11.0
+       Fresh nom v7.1.3
+       Fresh dirs-sys-next v0.1.2
+       Fresh nu-ansi-term v0.50.1
+       Fresh leb128fmt v0.1.0
+       Fresh rand v0.8.5
+       Fresh rayon v1.11.0
+       Fresh phf_generator v0.11.3
+       Fresh unicode-segmentation v1.12.0
+       Fresh punycode v0.4.1
+   Compiling lzma-sys v0.1.20
+       Fresh dirs-next v2.0.0
+       Fresh wasm-encoder v0.219.2
+       Fresh num-integer v0.1.46
+       Fresh cc v1.2.16
+       Fresh unicase v2.8.1
+       Fresh yansi-term v0.1.2
+       Fresh twox-hash v1.6.3
+       Fresh nix v0.30.1
+       Fresh rustversion v1.0.22
+       Fresh openssl-probe v0.1.6
+       Fresh ucd-trie v0.1.7
+       Fresh similar v2.7.0
+       Fresh new_debug_unreachable v1.0.6
+       Fresh pathdiff v0.2.3
+   Compiling basic-toml v0.1.10
+       Fresh annotate-snippets v0.9.2
+       Fresh phf_codegen v0.11.3
+       Fresh term v0.7.0
+       Fresh string_cache_codegen v0.5.4
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/lzma-sys-a63c213828c90ebb/build-script-build`
+       Fresh ruzstd v0.7.3
+       Fresh pulldown-cmark v0.11.3
+       Fresh dirs v6.0.0
+       Fresh xattr v1.5.1
+       Fresh uuid v1.18.0
+       Fresh filetime v0.2.25
+       Fresh mac v0.1.1
+   Compiling jiff v0.2.15
+       Fresh cxxbridge-flags v1.0.168
+       Fresh utf8-width v0.1.7
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name basic_toml --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/basic-toml-0.1.10/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=396915307463f71b -C extra-filename=-c56e8d66e57766aa --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern serde=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libserde-208eae26fdee7869.rmeta --cap-lints allow`
+       Fresh tar v0.4.44
+       Fresh futf v0.1.5
+       Fresh libgit2-sys v0.18.2+1.9.1
+   Compiling libffi-sys v3.3.2
+   Compiling capstone-sys v0.17.0
+       Fresh html-escape v0.2.13
+       Fresh scratch v1.0.9
+   Compiling num-bigint v0.4.6
+       Fresh codespan-reporting v0.12.0
+       Fresh phf_shared v0.12.1
+       Fresh inout v0.1.4
+       Fresh anstyle-lossy v1.1.4
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name jiff --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jiff-0.2.15/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="alloc"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("alloc", "default", "js", "logging", "perf-inline", "serde", "static", "static-tz", "std", "tz-fat", "tz-system", "tzdb-bundle-always", "tzdb-bundle-platform", "tzdb-concatenated", "tzdb-zoneinfo"))' -C metadata=36b7cb673d88e525 -C extra-filename=-a26b1e66239f6615 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --cap-lints allow`
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/libffi-sys-2965e72e176f07c0/build-script-build`
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/capstone-sys-b13ce66955d464f6/build-script-build`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name num_bigint --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num-bigint-0.4.6/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("arbitrary", "default", "quickcheck", "rand", "serde", "std"))' -C metadata=1b3dc5c058e8102e -C extra-filename=-2e94d6e1da539f30 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern num_integer=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libnum_integer-2c772279569235ed.rmeta --extern num_traits=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libnum_traits-e6d0bd78a2aa48f9.rmeta --cap-lints allow`
+   Compiling rustc_tools_util v0.4.2 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/src/tools/clippy/rustc_tools_util)
+       Fresh bitflags v2.9.3
+   Compiling minifier v0.3.6
+       Fresh log v0.4.27
+       Fresh precomputed-hash v0.1.1
+       Fresh bumpalo v3.19.0
+       Fresh glob v0.3.3
+       Fresh id-arena v2.2.1
+       Fresh utf-8 v0.7.6
+       Fresh phf v0.12.1
+   Compiling cxx v1.0.168
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name rustc_tools_util --edition=2021 src/tools/clippy/rustc_tools_util/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=9d9bee200b46a917 -C extra-filename=-0a5651eeb9a9a327 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -C incremental=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/incremental -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name minifier --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/minifier-0.3.6/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("clap", "default", "html", "regex"))' -C metadata=080fb3121086f49b -C extra-filename=-dc7264993bd17c69 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --cap-lints allow`
+       Fresh tendril v0.4.3
+       Fresh cipher v0.4.4
+   Compiling portable-atomic v1.11.1
+   Compiling anstyle-svg v0.1.10
+   Compiling syn v1.0.109
+   Compiling tikv-jemalloc-sys v0.6.0+5.3.0-1-ge13ca993e8ccb9ba9847cc330696e02839f328f7
+   Compiling ctrlc v3.4.7
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/cxx-41216de7c80ad97f/build-script-build`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name anstyle_svg --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-svg-0.1.10/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --warn=rust_2018_idioms '--warn=clippy::zero_sized_map_values' '--warn=clippy::wildcard_imports' '--warn=clippy::verbose_file_reads' --warn=unused_qualifications --warn=unused_macro_rules --warn=unused_lifetimes --warn=unsafe_op_in_unsafe_fn --warn=unreachable_pub --warn=unnameable_types '--warn=clippy::uninlined_format_args' '--warn=clippy::trait_duplication_in_bounds' '--warn=clippy::todo' '--warn=clippy::string_to_string' '--warn=clippy::string_lit_as_bytes' '--warn=clippy::string_add_assign' '--warn=clippy::string_add' '--warn=clippy::str_to_string' '--warn=clippy::semicolon_if_nothing_returned' '--warn=clippy::self_named_module_files' '--warn=clippy::same_functions_in_if_condition' '--allow=clippy::result_large_err' '--warn=clippy::rest_pat_in_fully_bound_structs' '--warn=clippy::ref_option_ref' '--warn=clippy::redundant_feature_names' '--warn=clippy::rc_mutex' '--warn=clippy::ptr_as_ptr' '--warn=clippy::path_buf_push_overwrite' '--warn=clippy::negative_feature_names' '--warn=clippy::needless_for_each' '--allow=clippy::needless_continue' '--warn=clippy::mutex_integer' '--warn=clippy::mem_forget' '--warn=clippy::macro_use_imports' '--warn=clippy::lossy_float_literal' '--warn=clippy::linkedlist' '--allow=clippy::let_and_return' '--warn=clippy::large_types_passed_by_value' '--warn=clippy::large_stack_arrays' '--warn=clippy::large_digit_groups' '--warn=clippy::invalid_upcast_comparisons' '--warn=clippy::infinite_loop' '--warn=clippy::inefficient_to_string' '--warn=clippy::inconsistent_struct_constructor' '--warn=clippy::imprecise_flops' '--warn=clippy::implicit_clone' '--allow=clippy::if_same_then_else' '--warn=clippy::from_iter_instead_of_collect' '--warn=clippy::fn_params_excessive_bools' '--warn=clippy::float_cmp_const' '--warn=clippy::flat_map_option' '--warn=clippy::filter_map_next' '--warn=clippy::fallible_impl_from' '--warn=clippy::explicit_into_iter_loop' '--warn=clippy::explicit_deref_methods' '--warn=clippy::expl_impl_clone_on_copy' '--warn=clippy::enum_glob_use' '--warn=clippy::empty_enum' '--warn=clippy::doc_markdown' '--warn=clippy::debug_assert_with_mut_call' '--warn=clippy::dbg_macro' '--warn=clippy::create_dir' '--allow=clippy::collapsible_else_if' '--warn=clippy::checked_conversions' '--allow=clippy::branches_sharing_code' '--allow=clippy::bool_assert_comparison' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=cc3b64343b733f63 -C extra-filename=-ce2bc4d9f09a7f14 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern anstyle=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libanstyle-34da1d8f10e661b4.rmeta --extern anstyle_lossy=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libanstyle_lossy-6df6503cff03d310.rmeta --extern anstyle_parse=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libanstyle_parse-2b7909e9ebd9bcaf.rmeta --extern html_escape=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libhtml_escape-2ac8bba86496aa2d.rmeta --extern unicode_width=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libunicode_width-b8c4d1f473e679c0.rmeta --cap-lints allow`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name portable_atomic --edition=2018 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/portable-atomic-1.11.1/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 '--warn=clippy::unused_trait_names' --warn=unreachable_pub --warn=unnameable_types --warn=unexpected_cfgs '--warn=clippy::undocumented_unsafe_blocks' '--warn=clippy::transmute_undefined_repr' '--warn=clippy::trailing_empty_array' --warn=single_use_lifetimes --warn=rust_2018_idioms '--warn=clippy::pedantic' --warn=non_ascii_idents '--warn=clippy::inline_asm_x86_att_syntax' --warn=improper_ctypes_definitions --warn=improper_ctypes --warn=deprecated_safe '--warn=clippy::default_union_representation' '--warn=clippy::as_underscore' '--warn=clippy::as_ptr_cast_mut' '--warn=clippy::all' '--allow=clippy::unreadable_literal' '--allow=clippy::type_complexity' '--allow=clippy::too_many_lines' '--allow=clippy::too_many_arguments' '--allow=clippy::struct_field_names' '--allow=clippy::struct_excessive_bools' '--allow=clippy::single_match_else' '--allow=clippy::single_match' '--allow=clippy::similar_names' '--allow=clippy::range_plus_one' '--allow=clippy::nonminimal_bool' '--allow=clippy::naive_bytecount' '--allow=clippy::module_name_repetitions' '--allow=clippy::missing_errors_doc' '--allow=clippy::manual_range_contains' '--allow=clippy::manual_assert' '--allow=clippy::lint_groups_priority' '--allow=clippy::incompatible_msrv' '--allow=clippy::float_cmp' '--allow=clippy::doc_markdown' '--allow=clippy::declare_interior_mutable_const' '--allow=clippy::cast_lossless' '--allow=clippy::borrow_as_ptr' '--allow=clippy::bool_assert_comparison' --check-cfg 'cfg(target_arch,values("xtensa"))' --check-cfg 'cfg(target_arch,values("amdgpu"))' --check-cfg 'cfg(target_arch,values("loongarch32"))' --check-cfg 'cfg(target_os,values("psx"))' --check-cfg 'cfg(target_env,values("psx"))' --check-cfg 'cfg(target_feature,values("lse2","lse128","rcpc3"))' --check-cfg 'cfg(target_feature,values("quadword-atomics"))' --check-cfg 'cfg(target_feature,values("zaamo","zabha"))' --check-cfg 'cfg(target_feature,values("zacas"))' --check-cfg 'cfg(target_pointer_width,values("128"))' --check-cfg 'cfg(portable_atomic_no_outline_atomics,portable_atomic_outline_atomics,portable_atomic_unstable_f16,portable_atomic_unstable_f128)' --check-cfg 'cfg(portable_atomic_unstable_coerce_unsized)' --check-cfg 'cfg(portable_atomic_test_detect_false,portable_atomic_test_no_std_static_assert_ffi,qemu,valgrind)' --cfg 'feature="default"' --cfg 'feature="fallback"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("critical-section", "default", "disable-fiq", "fallback", "float", "force-amo", "require-cas", "s-mode", "serde", "std", "unsafe-assume-single-core"))' -C metadata=31342bc70a4900e6 -C extra-filename=-f69938c1664759c8 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --cap-lints allow --check-cfg 'cfg(target_feature,values("lsfe","fast-serialization","load-store-on-cond","distinct-ops","miscellaneous-extensions-3"))' --check-cfg 'cfg(portable_atomic_disable_fiq,portable_atomic_force_amo,portable_atomic_ll_sc_rmw,portable_atomic_atomic_intrinsics,portable_atomic_no_asm,portable_atomic_no_asm_maybe_uninit,portable_atomic_no_atomic_64,portable_atomic_no_atomic_cas,portable_atomic_no_atomic_load_store,portable_atomic_no_atomic_min_max,portable_atomic_no_cfg_target_has_atomic,portable_atomic_no_cmpxchg16b_intrinsic,portable_atomic_no_cmpxchg16b_target_feature,portable_atomic_no_const_mut_refs,portable_atomic_no_const_raw_ptr_deref,portable_atomic_no_const_transmute,portable_atomic_no_core_unwind_safe,portable_atomic_no_diagnostic_namespace,portable_atomic_no_offset_of,portable_atomic_no_strict_provenance,portable_atomic_no_stronger_failure_ordering,portable_atomic_no_track_caller,portable_atomic_no_unsafe_op_in_unsafe_fn,portable_atomic_pre_llvm_15,portable_atomic_pre_llvm_16,portable_atomic_pre_llvm_18,portable_atomic_pre_llvm_20,portable_atomic_s_mode,portable_atomic_sanitize_thread,portable_atomic_target_feature,portable_atomic_unsafe_assume_single_core,portable_atomic_unstable_asm,portable_atomic_unstable_asm_experimental_arch,portable_atomic_unstable_cfg_target_has_atomic,portable_atomic_unstable_isa_attribute)' --check-cfg 'cfg(portable_atomic_target_feature,values("cmpxchg16b","distinct-ops","fast-serialization","load-store-on-cond","lse","lse128","lse2","lsfe","mclass","miscellaneous-extensions-3","quadword-atomics","rcpc3","v6","zaamo","zabha","zacas"))'`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name syn --edition=2018 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-1.0.109/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no --cfg 'feature="clone-impls"' --cfg 'feature="default"' --cfg 'feature="derive"' --cfg 'feature="extra-traits"' --cfg 'feature="parsing"' --cfg 'feature="printing"' --cfg 'feature="proc-macro"' --cfg 'feature="quote"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("clone-impls", "default", "derive", "extra-traits", "fold", "full", "parsing", "printing", "proc-macro", "quote", "test", "visit", "visit-mut"))' -C metadata=71c79310bccd744b -C extra-filename=-c2d6e2fa159a308d --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern proc_macro2=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libproc_macro2-a22d745afa92dadf.rmeta --extern quote=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libquote-cc45a71580a33fbb.rmeta --extern unicode_ident=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libunicode_ident-8285b95b08f858a0.rmeta --cap-lints allow --cfg syn_disable_nightly_tests`
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/tikv-jemalloc-sys-7df5ac9ffbab88e6/build-script-build`
+   Compiling num-iter v0.1.45
+   Compiling phf v0.11.3
+   Compiling directories v6.0.0
+   Compiling openssl-sys v0.9.109
+   Compiling libz-sys v1.1.22
+   Compiling unified-diff v0.2.1
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name ctrlc --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.4.7/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("termination"))' -C metadata=d3e7b1cb9e118680 -C extra-filename=-84d73f0ac533f478 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern nix=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libnix-858b6f44b82ae526.rmeta --cap-lints allow`
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 12 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/regex-automata.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SAVED: 79 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/syn.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name phf --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/phf-0.11.3/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "macros", "phf_macros", "serde", "std", "uncased", "unicase"))' -C metadata=895789704a5f4c01 -C extra-filename=-d1ce9a5d5183c246 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern phf_shared=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libphf_shared-b99c3778e6d26b58.rmeta --cap-lints allow`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name directories --edition=2015 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/directories-6.0.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=dc1d3ff33818edbe -C extra-filename=-ad8a1b84db8ca42b --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern dirs_sys=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libdirs_sys-7b37c54862ce5c58.rmeta --cap-lints allow`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name num_iter --edition=2018 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num-iter-0.1.45/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="i128"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "i128", "std"))' -C metadata=4cee1918e7eb2dae -C extra-filename=-c8d0e0b121b1d2a8 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern num_integer=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libnum_integer-2c772279569235ed.rmeta --extern num_traits=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libnum_traits-e6d0bd78a2aa48f9.rmeta --cap-lints allow`
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 7 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/basic-toml.json
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SAVED: 20 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/clap_builder.json
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name openssl_sys --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/openssl-sys-0.9.109/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("aws-lc", "bindgen", "bssl-sys", "openssl-src", "unstable_boringssl", "vendored"))' -C metadata=f31f2dfa91ed84aa -C extra-filename=-ad265fb11af2e0a2 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern libc=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/liblibc-ea591502e5075e1d.rmeta --cap-lints allow -L native=/nix/store/61i74yjkj9p1qphfl7018ja4sdwkipx0-openssl-3.6.0/lib -l ssl -l crypto --cfg 'osslconf="OPENSSL_NO_SSL3_METHOD"' --cfg openssl --cfg ossl340 --cfg ossl330 --cfg ossl320 --cfg ossl300 --cfg ossl101 --cfg ossl102 --cfg ossl102f --cfg ossl102h --cfg ossl110 --cfg ossl110f --cfg ossl110g --cfg ossl110h --cfg ossl111 --cfg ossl111b --cfg ossl111c --cfg ossl111d --check-cfg 'cfg(osslconf, values("OPENSSL_NO_OCB", "OPENSSL_NO_SM4", "OPENSSL_NO_SEED", "OPENSSL_NO_CHACHA", "OPENSSL_NO_CAST", "OPENSSL_NO_IDEA", "OPENSSL_NO_CAMELLIA", "OPENSSL_NO_RC4", "OPENSSL_NO_BF", "OPENSSL_NO_PSK", "OPENSSL_NO_DEPRECATED_3_0", "OPENSSL_NO_SCRYPT", "OPENSSL_NO_SM3", "OPENSSL_NO_RMD160", "OPENSSL_NO_EC2M", "OPENSSL_NO_OCSP", "OPENSSL_NO_CMS", "OPENSSL_NO_COMP", "OPENSSL_NO_SOCK", "OPENSSL_NO_STDIO", "OPENSSL_NO_EC", "OPENSSL_NO_SSL3_METHOD", "OPENSSL_NO_KRB5", "OPENSSL_NO_TLSEXT", "OPENSSL_NO_SRP", "OPENSSL_NO_RFC3779", "OPENSSL_NO_SHA", "OPENSSL_NO_NEXTPROTONEG", "OPENSSL_NO_ENGINE", "OPENSSL_NO_BUF_FREELISTS", "OPENSSL_NO_RC2"))' --check-cfg 'cfg(openssl)' --check-cfg 'cfg(libressl)' --check-cfg 'cfg(boringssl)' --check-cfg 'cfg(awslc)' --check-cfg 'cfg(libressl250)' --check-cfg 'cfg(libressl251)' --check-cfg 'cfg(libressl252)' --check-cfg 'cfg(libressl261)' --check-cfg 'cfg(libressl270)' --check-cfg 'cfg(libressl271)' --check-cfg 'cfg(libressl273)' --check-cfg 'cfg(libressl280)' --check-cfg 'cfg(libressl281)' --check-cfg 'cfg(libressl291)' --check-cfg 'cfg(libressl310)' --check-cfg 'cfg(libressl321)' --check-cfg 'cfg(libressl332)' --check-cfg 'cfg(libressl340)' --check-cfg 'cfg(libressl350)' --check-cfg 'cfg(libressl360)' --check-cfg 'cfg(libressl361)' --check-cfg 'cfg(libressl370)' --check-cfg 'cfg(libressl380)' --check-cfg 'cfg(libressl381)' --check-cfg 'cfg(libressl382)' --check-cfg 'cfg(libressl390)' --check-cfg 'cfg(libressl400)' --check-cfg 'cfg(libressl410)' --check-cfg 'cfg(ossl101)' --check-cfg 'cfg(ossl102)' --check-cfg 'cfg(ossl102f)' --check-cfg 'cfg(ossl102h)' --check-cfg 'cfg(ossl110)' --check-cfg 'cfg(ossl110f)' --check-cfg 'cfg(ossl110g)' --check-cfg 'cfg(ossl110h)' --check-cfg 'cfg(ossl111)' --check-cfg 'cfg(ossl111b)' --check-cfg 'cfg(ossl111c)' --check-cfg 'cfg(ossl111d)' --check-cfg 'cfg(ossl300)' --check-cfg 'cfg(ossl310)' --check-cfg 'cfg(ossl320)' --check-cfg 'cfg(ossl330)' --check-cfg 'cfg(ossl340)'`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name libz_sys --edition=2018 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libz-sys-1.1.22/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --warn=unexpected_cfgs --check-cfg 'cfg(zng)' --cfg 'feature="libc"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("asm", "cmake", "default", "libc", "static", "stock-zlib", "zlib-ng", "zlib-ng-no-cmake-experimental-community-maintained"))' -C metadata=11ffd96e2c01b576 -C extra-filename=-11b6249a92f74ffd --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern libc=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/liblibc-ea591502e5075e1d.rmeta --cap-lints allow -L native=/nix/store/l7xwm1f6f3zj2x8jwdbi8gdyfbx07sh7-zlib-1.3.1/lib -l z -l z`
+SAVED: 19 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/jiff.json
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name unified_diff --edition=2018 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unified-diff-0.2.1/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=e9a36fcd352e854d -C extra-filename=-3e4eda60a4b9d215 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern diff=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libdiff-5ee0b9fe878b5fe5.rmeta --cap-lints allow`
+SAVED: 29 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/num-bigint.json
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 5 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/minifier.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SAVED: 15 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/rustc_tools_util.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 32 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/wasmparser.json
+SAVED: 27 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/anstyle-svg.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 14 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/phf.json
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 15 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/ctrlc.json
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 17 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/directories.json
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 10 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/openssl-sys.json
+SAVED: 69 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/libz-sys.json
+SAVED: 39 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/portable-atomic.json
+SAVED: 12 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/unified-diff.json
+SAVED: 29 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/num-iter.json
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 69 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/libz-sys_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+   Compiling num-complex v0.4.6
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name num_complex --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num-complex-0.4.6/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("bytecheck", "bytemuck", "default", "libm", "rand", "rkyv", "serde", "std"))' -C metadata=a6a7bb4978d8e68f -C extra-filename=-f7ff0768def8ea9e --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern num_traits=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libnum_traits-e6d0bd78a2aa48f9.rmeta --cap-lints allow`
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 15 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/rustc_tools_util_summary.json
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 15 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/ctrlc_summary.json
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 17 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/directories_summary.json
+SUMMARY: 29 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/num-iter_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 12 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/unified-diff_summary.json
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 14 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/phf_summary.json
+SAVED: 69 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/syn.json
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 27 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/anstyle-svg_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+   Compiling colored v2.2.0
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name colored --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colored-2.2.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("no-color"))' -C metadata=fb1e123a2a736af6 -C extra-filename=-88f2bcc1d9083a01 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern lazy_static=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/liblazy_static-d149c9d00b525cb0.rmeta --cap-lints allow`
+   Compiling cmake v0.1.54
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name cmake --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cmake-0.1.54/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=df4e3374d09e945a -C extra-filename=-f16f996c35e2d126 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern cc=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libcc-436b02cffdc96910.rmeta --cap-lints allow`
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+   Compiling rustc_llvm v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_llvm)
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name build_script_build --edition=2024 compiler/rustc_llvm/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("check_only"))' -C metadata=1ab5a5ac4b7237d8 -C extra-filename=-539a5d52c06f5819 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/rustc_llvm-539a5d52c06f5819 -C incremental=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/incremental -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern cc=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libcc-436b02cffdc96910.rlib`
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SAVED: 91 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/num-complex.json
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 21 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/cmake.json
+SAVED: 23 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/colored.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+   Compiling mio v1.0.4
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name mio --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mio-1.0.4/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --warn=unexpected_cfgs --check-cfg 'cfg(mio_unsupported_force_poll_poll)' --check-cfg 'cfg(mio_unsupported_force_waker_pipe)' --cfg 'feature="os-ext"' --cfg 'feature="os-poll"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "log", "net", "os-ext", "os-poll"))' -C metadata=6ac5076fab8695fa -C extra-filename=-6428311615d216cd --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern libc=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/liblibc-ea591502e5075e1d.rmeta --cap-lints allow`
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 20 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/mio.json
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 21 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/cmake_summary.json
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 5 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/minifier_summary.json
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 23 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/colored_summary.json
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 13 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/rustc_llvm.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+   Compiling num_cpus v1.17.0
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name num_cpus --edition=2015 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num_cpus-1.17.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=a294ef3d3f6cc1fb -C extra-filename=-6d35cc2af27aea5d --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern libc=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/liblibc-ea591502e5075e1d.rmeta --cap-lints allow`
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 13 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/rustc_llvm_summary.json
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 21 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/num_cpus.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 20 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/mio_summary.json
+   Compiling crossbeam-channel v0.5.15
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name crossbeam_channel --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crossbeam-channel-0.5.15/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --warn=unexpected_cfgs '--allow=clippy::lint_groups_priority' '--allow=clippy::declare_interior_mutable_const' --check-cfg 'cfg(crossbeam_loom)' --check-cfg 'cfg(crossbeam_sanitize)' --cfg 'feature="default"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "std"))' -C metadata=b63b9c2a1038ef34 -C extra-filename=-5961eb245408eeee --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern crossbeam_utils=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libcrossbeam_utils-9adac586b3e8d315.rmeta --cap-lints allow`
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 21 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/num_cpus_summary.json
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 12 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/crossbeam-channel.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+   Compiling clippy v0.1.91 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/src/tools/clippy)
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name build_script_build --edition=2024 src/tools/clippy/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no --warn=unexpected_cfgs --check-cfg 'cfg(bootstrap)' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("integration", "internal", "jemalloc"))' -C metadata=f7c0ffda3135a609 -C extra-filename=-8388ecb3bae9c7a5 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/clippy-8388ecb3bae9c7a5 -C incremental=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/incremental -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern rustc_tools_util=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/librustc_tools_util-0a5651eeb9a9a327.rlib`
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+   Compiling console v0.15.11
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name console --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/console-0.15.11/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="ansi-parsing"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("ansi-parsing", "default", "unicode-width", "windows-console-colors"))' -C metadata=39cf47edacdb8655 -C extra-filename=-b1c2fcaa61c31315 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern libc=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/liblibc-ea591502e5075e1d.rmeta --extern once_cell=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libonce_cell-803291aaf70272e8.rmeta --cap-lints allow`
+SUMMARY: 91 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/num-complex_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+   Compiling rustc_tools_util v0.4.2
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name rustc_tools_util --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustc_tools_util-0.4.2/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=5535da9019cdacc0 -C extra-filename=-b327930254913f0a --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --cap-lints allow`
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+warning: cxx@1.0.168: In file included from /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/bits/stl_algo.h:71,
+warning: cxx@1.0.168:                  from /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/algorithm:61,
+warning: cxx@1.0.168:                  from /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cxx-1.0.168/src/../include/cxx.h:2,
+warning: cxx@1.0.168:                  from /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cxx-1.0.168/src/cxx.cc:1:
+warning: cxx@1.0.168: /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/cstdlib:79:15: fatal error: stdlib.h: No such file or directory
+warning: cxx@1.0.168:    79 | #include_next <stdlib.h>
+warning: cxx@1.0.168:       |               ^~~~~~~~~~
+warning: cxx@1.0.168: compilation terminated.
+error: failed to run custom build command for `cxx v1.0.168`
+
+Caused by:
+  process didn't exit successfully: `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/cxx-41216de7c80ad97f/build-script-build` (exit status: 1)
+  --- stdout
+  OUT_DIR = Some(/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/cxx-ec854a71b8456f4f/out)
+  OPT_LEVEL = Some(0)
+  TARGET = Some(x86_64-unknown-linux-gnu)
+  HOST = Some(x86_64-unknown-linux-gnu)
+  cargo:rerun-if-env-changed=CXX_x86_64-unknown-linux-gnu
+  CXX_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CXX_x86_64_unknown_linux_gnu
+  CXX_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CXX
+  HOST_CXX = None
+  cargo:rerun-if-env-changed=CXX
+  CXX = Some(g++)
+  cargo:rerun-if-env-changed=CC_KNOWN_WRAPPER_CUSTOM
+  CC_KNOWN_WRAPPER_CUSTOM = None
+  RUSTC_WRAPPER = Some()
+  cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  DEBUG = Some(true)
+  CARGO_CFG_TARGET_FEATURE = Some(fxsr,sse,sse2,x87)
+  cargo:rerun-if-env-changed=CXXFLAGS
+  CXXFLAGS = Some(-O2 -g -isystem /nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include)
+  cargo:rerun-if-env-changed=CC_SHELL_ESCAPED_FLAGS
+  CC_SHELL_ESCAPED_FLAGS = None
+  cargo:rerun-if-env-changed=HOST_CXXFLAGS
+  HOST_CXXFLAGS = None
+  cargo:rerun-if-env-changed=CXXFLAGS_x86_64_unknown_linux_gnu
+  CXXFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CXXFLAGS_x86_64-unknown-linux-gnu
+  CXXFLAGS_x86_64-unknown-linux-gnu = None
+  CARGO_ENCODED_RUSTFLAGS = Some()
+  cargo:warning=In file included from /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/bits/stl_algo.h:71,
+  cargo:warning=                 from /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/algorithm:61,
+  cargo:warning=                 from /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cxx-1.0.168/src/../include/cxx.h:2,
+  cargo:warning=                 from /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cxx-1.0.168/src/cxx.cc:1:
+  cargo:warning=/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/cstdlib:79:15: fatal error: stdlib.h: No such file or directory
+  cargo:warning=   79 | #include_next <stdlib.h>
+  cargo:warning=      |               ^~~~~~~~~~
+  cargo:warning=compilation terminated.
+
+  --- stderr
+
+
+  error occurred in cc-rs: command did not execute successfully (status code exit status: 1): LC_ALL="C" "g++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-std=c++20" "-O2" "-g" "-isystem" "/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include" "-o" "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/cxx-ec854a71b8456f4f/out/c16f17691ff6f04b-cxx.o" "-c" "/home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cxx-1.0.168/src/cxx.cc"
+
+
+warning: build failed, waiting for other jobs to finish...
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 1 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/clippy.json
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 7 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/basic-toml_summary.json
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 12 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/console.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":120}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 1 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/clippy_summary.json
+SCAN_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SAVED: 15 items to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/rustc_tools_util.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 15 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/rustc_tools_util_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 39 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/portable-atomic_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 12 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/crossbeam-channel_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 12 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/console_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 29 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/num-bigint_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 10 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/openssl-sys_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 20 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/clap_builder_summary.json
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 69 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/syn_summary.json
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 12 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/regex-automata_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 32 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/wasmparser_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 19 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/jiff_summary.json
+SUMMARY_DIR: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results
+SUMMARY: 79 item types saved to /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/scan_results/syn_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":126}
+Bootstrap scan complete. Results in bootstrap_scan.log

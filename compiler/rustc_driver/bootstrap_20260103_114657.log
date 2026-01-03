@@ -1,0 +1,198 @@
+Starting bootstrap build with custom scanner...
+RUSTC=/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner
+       Fresh unicode-ident v1.0.18
+       Fresh memchr v2.7.5
+       Fresh cfg-if v1.0.1
+       Fresh shlex v1.3.0
+       Fresh autocfg v1.5.0
+       Fresh equivalent v1.0.2
+       Fresh foldhash v0.1.5
+       Fresh allocator-api2 v0.2.21
+       Fresh itoa v1.0.15
+       Fresh once_cell v1.21.3
+       Fresh regex-syntax v0.8.5
+       Fresh ryu v1.0.20
+       Fresh writeable v0.6.1
+       Fresh litemap v0.8.0
+   Compiling proc-macro2 v1.0.101
+   Compiling libc v0.2.174
+   Compiling aho-corasick v1.1.3
+       Fresh either v1.15.0
+       Fresh stable_deref_trait v1.2.0
+   Compiling lock_api v0.4.13
+       Fresh scopeguard v1.2.0
+       Fresh tracing-core v0.1.34
+       Fresh pin-project-lite v0.2.16
+       Fresh linux-raw-sys v0.9.4
+       Fresh version_check v0.9.5
+       Fresh rustc-hash v2.1.1
+       Fresh unicode-width v0.2.1
+       Fresh anstyle v1.0.11
+       Fresh fastrand v2.3.0
+       Fresh crossbeam-utils v0.8.21
+   Compiling getrandom v0.3.3
+   Compiling rustix v1.0.8
+   Compiling generic-array v0.14.7
+   Compiling typenum v1.18.0
+   Compiling thiserror v2.0.15
+       Fresh itertools v0.12.1
+       Fresh strsim v0.11.1
+       Fresh unicode-xid v0.2.6
+   Compiling cpufeatures v0.2.17
+       Fresh arrayvec v0.7.6
+   Compiling zerocopy v0.8.26
+   Compiling rustc-hash v1.1.0
+   Compiling rustc-stable-hash v0.1.2
+   Compiling rustc_macros v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_macros)
+   Compiling unicode-properties v0.1.3
+   Compiling thin-vec v0.2.14
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/libc-a3da2c638d7d34e5/build-script-build`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name proc_macro2 --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.101/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no --cfg 'feature="default"' --cfg 'feature="proc-macro"' --cfg 'feature="span-locations"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "nightly", "proc-macro", "span-locations"))' -C metadata=a47f682ae522105c -C extra-filename=-a67a2c96e18fbabd --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern unicode_ident=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libunicode_ident-23ce6c93be118c38.rmeta --cap-lints allow --cfg span_locations --cfg wrap_proc_macro --cfg proc_macro_span --cfg proc_macro_span_location --cfg proc_macro_span_file --check-cfg 'cfg(fuzzing)' --check-cfg 'cfg(no_is_available)' --check-cfg 'cfg(no_literal_byte_character)' --check-cfg 'cfg(no_literal_c_string)' --check-cfg 'cfg(no_source_text)' --check-cfg 'cfg(proc_macro_span)' --check-cfg 'cfg(proc_macro_span_file)' --check-cfg 'cfg(proc_macro_span_location)' --check-cfg 'cfg(procmacro2_backtrace)' --check-cfg 'cfg(procmacro2_build_probe)' --check-cfg 'cfg(procmacro2_nightly_testing)' --check-cfg 'cfg(procmacro2_semver_exempt)' --check-cfg 'cfg(randomize_layout)' --check-cfg 'cfg(span_locations)' --check-cfg 'cfg(super_unstable)' --check-cfg 'cfg(wrap_proc_macro)'`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name build_script_build --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no --cfg 'feature="atomic_usize"' --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("arc_lock", "atomic_usize", "default", "nightly", "owning_ref", "serde"))' -C metadata=8e8467fb0d0b29de -C extra-filename=-88f9c6da65fe72e2 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/lock_api-88f9c6da65fe72e2 -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern autocfg=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libautocfg-fb877888ad62600d.rlib --cap-lints allow`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name aho_corasick --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aho-corasick-1.1.3/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="perf-literal"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "logging", "perf-literal", "std"))' -C metadata=483a5f92ef37eb96 -C extra-filename=-939cf2d3d9993f26 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern memchr=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libmemchr-2b01a9a50f40115c.rmeta --cap-lints allow`
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/libc-a16a7ac78c600032/build-script-build`
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/getrandom-51b7f88db06c1661/build-script-build`
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/rustix-f0cbc8f389e5e159/build-script-build`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name cpufeatures --edition=2018 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cpufeatures-0.2.17/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=d8a59ea2ee9dadf9 -C extra-filename=-80ef357ee7f58515 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --cap-lints allow`
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/typenum-42887081bb3797cf/build-script-build`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name build_script_build --edition=2015 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/generic-array-0.14.7/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no --cfg 'feature="more_lengths"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("more_lengths", "serde", "zeroize"))' -C metadata=34e03cba962171f9 -C extra-filename=-b47f39a9dc5fbc67 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/generic-array-b47f39a9dc5fbc67 -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern version_check=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libversion_check-3efacbcaca1002cc.rlib --cap-lints allow`
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/thiserror-8e2408637b2b800e/build-script-build`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name rustc_hash --edition=2015 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustc-hash-1.1.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="default"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "std"))' -C metadata=b2ee3c03fdc2cfda -C extra-filename=-7b72d36ced4ff803 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --cap-lints allow`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name build_script_build --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.8.26/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no --cfg 'feature="simd"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("__internal_use_only_features_that_work_on_stable", "alloc", "derive", "float-nightly", "simd", "simd-nightly", "std", "zerocopy-derive"))' -C metadata=7848c07cdeba4538 -C extra-filename=-94b981a88b89f3a8 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/zerocopy-94b981a88b89f3a8 -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --cap-lints allow`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name rustc_stable_hash --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustc-stable-hash-0.1.2/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="nightly"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("nightly"))' -C metadata=cb4a28a1be8f3004 -C extra-filename=-6c8f2eb05a7c9b50 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --cap-lints allow`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name build_script_build --edition=2024 compiler/rustc_macros/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=2f15e1a0d63c20da -C extra-filename=-8ee5b6311e5b6e67 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/rustc_macros-8ee5b6311e5b6e67 -C incremental=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/incremental -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name unicode_properties --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-properties-0.1.3/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="emoji"' --cfg 'feature="general-category"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "emoji", "general-category"))' -C metadata=5675653af7812cfa -C extra-filename=-52161d470df5356e --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --cap-lints allow`
+   Compiling crossbeam-epoch v0.9.18
+   Compiling proc-macro-hack v0.5.20+deprecated
+   Compiling elsa v1.11.2
+   Compiling ena v0.14.3
+   Compiling rustc_arena v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_arena)
+   Compiling rustc_graphviz v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_graphviz)
+   Compiling rustc-literal-escaper v0.0.5
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name thin_vec --edition=2018 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thin-vec-0.2.14/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --warn=unexpected_cfgs --check-cfg 'cfg(no_global_oom_handling)' --cfg 'feature="default"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "gecko-ffi", "malloc_size_of", "serde", "std", "unstable"))' -C metadata=bc2feb7bd64bcd89 -C extra-filename=-88f0a87d7194bc10 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --cap-lints allow`
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name crossbeam_epoch --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crossbeam-epoch-0.9.18/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="alloc"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("alloc", "default", "loom", "loom-crate", "nightly", "std"))' -C metadata=d7a702228e13a796 -C extra-filename=-8dbbb68b00417329 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern crossbeam_utils=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libcrossbeam_utils-646109b9b3c27d54.rmeta --cap-lints allow`
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/proc-macro-hack-69145fbc8ce8bfef/build-script-build`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name elsa --edition=2018 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "indexmap"))' -C metadata=dacd70f0cb970e96 -C extra-filename=-c7bfcb8251d59ba7 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern stable_deref_trait=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libstable_deref_trait-e744049152050081.rmeta --cap-lints allow`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name ena --edition=2015 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ena-0.14.3/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("bench", "dogged", "persistent"))' -C metadata=910a8a6af08f2107 -C extra-filename=-d1ef5f6c6c0dc50e --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern log=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/liblog-d7cb77fc23f3e81e.rmeta --cap-lints allow`
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+SAVED: 1 items to scan_results/lock_api.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name rustc_arena --edition=2024 compiler/rustc_arena/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=3be2e0c0067a5ad8 -C extra-filename=-51b1c5bcdef70c09 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -C incremental=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/incremental -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern smallvec=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libsmallvec-48b6fa2406629fd7.rmeta`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name rustc_graphviz --edition=2024 compiler/rustc_graphviz/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=0290689687b386e0 -C extra-filename=-a572907b47ddf148 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -C incremental=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/incremental -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps`
+SAVED: 14 items to scan_results/aho-corasick.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+SAVED: 1 items to scan_results/generic-array.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+   Compiling constant_time_eq v0.3.1
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name rustc_literal_escaper --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustc-literal-escaper-0.0.5/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("rustc-dep-of-std"))' -C metadata=8c47afa87eb8f889 -C extra-filename=-f46a81e803ab8afd --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --cap-lints allow`
+SAVED: 83 items to scan_results/proc-macro2.json
+SAVED: 16 items to scan_results/rustc-hash.json
+SAVED: 7 items to scan_results/zerocopy.json
+SAVED: 6 items to scan_results/cpufeatures.json
+SUMMARY: 1 item types saved to scan_results/lock_api_summary.json
+SAVED: 9 items to scan_results/unicode-properties.json
+SAVED: 8 items to scan_results/rustc-stable-hash.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+SUMMARY: 1 item types saved to scan_results/generic-array_summary.json
+SUMMARY: 6 item types saved to scan_results/cpufeatures_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name typenum --edition=2018 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typenum-1.18.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("const-generics", "force_unix_path_separator", "i128", "no_std", "scale-info", "scale_info", "strict"))' -C metadata=ae0b8bd607d19715 -C extra-filename=-c64ac3fca4907f79 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --cap-lints allow`
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name constant_time_eq --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/constant_time_eq-0.3.1/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("count_instructions_test"))' -C metadata=f8944ba121735fbd -C extra-filename=-d98868ce6a091b01 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --cap-lints allow`
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name rustix --edition=2021 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-1.0.8/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --warn=unexpected_cfgs --check-cfg 'cfg(alloc_c_string)' --check-cfg 'cfg(alloc_ffi)' --check-cfg 'cfg(apple)' --check-cfg 'cfg(asm_experimental_arch)' --check-cfg 'cfg(bsd)' --check-cfg 'cfg(core_c_str)' --check-cfg 'cfg(core_ffi_c)' --check-cfg 'cfg(core_intrinsics)' --check-cfg 'cfg(criterion)' --check-cfg 'cfg(document_experimental_runtime_api)' --check-cfg 'cfg(error_in_core)' --check-cfg 'cfg(fix_y2038)' --check-cfg 'cfg(freebsdlike)' --check-cfg 'cfg(libc)' --check-cfg 'cfg(linux_kernel)' --check-cfg 'cfg(linux_like)' --check-cfg 'cfg(linux_raw)' --check-cfg 'cfg(netbsdlike)' --check-cfg 'cfg(rustc_attrs)' --check-cfg 'cfg(solarish)' --check-cfg 'cfg(staged_api)' --check-cfg 'cfg(static_assertions)' --check-cfg 'cfg(thumb_mode)' --check-cfg 'cfg(wasi)' --check-cfg 'cfg(wasi_ext)' --check-cfg 'cfg(wasip2)' --check-cfg 'cfg(target_arch, values("xtensa"))' --check-cfg 'cfg(target_os, values("cygwin"))' --cfg 'feature="alloc"' --cfg 'feature="default"' --cfg 'feature="fs"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("all-apis", "alloc", "core", "default", "event", "fs", "io_uring", "libc", "libc_errno", "linux_4_11", "linux_5_1", "linux_5_11", "linux_latest", "mm", "mount", "net", "param", "pipe", "process", "pty", "rand", "runtime", "rustc-dep-of-std", "rustc-std-workspace-alloc", "shm", "std", "stdio", "system", "termios", "thread", "time", "try_close", "use-explicitly-provided-auxv", "use-libc", "use-libc-auxv"))' -C metadata=afc382882f35c85b -C extra-filename=-c151bca9512a7df8 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern bitflags=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/libbitflags-5a79f34eeafe2301.rmeta --extern linux_raw_sys=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps/liblinux_raw_sys-117f2208b81f377c.rmeta --cap-lints allow --cfg static_assertions --cfg linux_raw --cfg linux_like --cfg linux_kernel`
+SUMMARY: 16 item types saved to scan_results/rustc-hash_summary.json
+     Running `/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/simple_scanner --crate-name proc_macro_hack --edition=2018 /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-hack-0.5.20+deprecated/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type proc-macro --emit=dep-info,link -C prefer-dynamic -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=27f343d6ec1dc344 -C extra-filename=-cdb2e03b0e949a93 --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/deps --extern proc_macro --cap-lints allow`
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+error: failed to run custom build command for `libc v0.2.174`
+
+Caused by:
+  process didn't exit successfully: `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/libc-a3da2c638d7d34e5/build-script-build` (exit status: 101)
+  --- stdout
+  cargo:rerun-if-changed=build.rs
+
+  --- stderr
+
+  thread 'main' (373355) panicked at /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.174/build.rs:225:5:
+  assertion `left == right` failed: Failed to get rustc version
+    left: Some("WITNESS_SYMBOL: {\"symbol\":\"simple_scanner_start\",\"from\":\"main\",\"file\":\"simple_scanner")
+   right: Some("rustc 1")
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+warning: build failed, waiting for other jobs to finish...
+error: failed to run custom build command for `libc v0.2.174`
+
+Caused by:
+  process didn't exit successfully: `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/build/libc-a16a7ac78c600032/build-script-build` (exit status: 101)
+  --- stdout
+  cargo:rerun-if-changed=build.rs
+
+  --- stderr
+
+  thread 'main' (373353) panicked at /home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.174/build.rs:225:5:
+  assertion `left == right` failed: Failed to get rustc version
+    left: Some("WITNESS_SYMBOL: {\"symbol\":\"simple_scanner_start\",\"from\":\"main\",\"file\":\"simple_scanner")
+   right: Some("rustc 1")
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_start","from":"main","file":"simple_scanner.rs","line":105}
+SUMMARY: 7 item types saved to scan_results/zerocopy_summary.json
+SAVED: 1 items to scan_results/rustc_macros.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+SAVED: 5 items to scan_results/ena.json
+SAVED: 9 items to scan_results/elsa.json
+SAVED: 45 items to scan_results/rustix.json
+SAVED: 15 items to scan_results/crossbeam-epoch.json
+SAVED: 23 items to scan_results/typenum.json
+SAVED: 11 items to scan_results/constant_time_eq.json
+SUMMARY: 1 item types saved to scan_results/rustc_macros_summary.json
+SAVED: 32 items to scan_results/proc-macro-hack.json
+SAVED: 36 items to scan_results/rustc-literal-escaper.json
+SUMMARY: 11 item types saved to scan_results/constant_time_eq_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+SAVED: 29 items to scan_results/rustc_arena.json
+SAVED: 19 items to scan_results/rustc_graphviz.json
+SAVED: 104 items to scan_results/thin-vec.json
+SUMMARY: 36 item types saved to scan_results/rustc-literal-escaper_summary.json
+SUMMARY: 8 item types saved to scan_results/rustc-stable-hash_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+SUMMARY: 29 item types saved to scan_results/rustc_arena_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+SUMMARY: 9 item types saved to scan_results/unicode-properties_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+SUMMARY: 15 item types saved to scan_results/crossbeam-epoch_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+SUMMARY: 5 item types saved to scan_results/ena_summary.json
+SUMMARY: 9 item types saved to scan_results/elsa_summary.json
+SUMMARY: 19 item types saved to scan_results/rustc_graphviz_summary.json
+SUMMARY: 104 item types saved to scan_results/thin-vec_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+SUMMARY: 32 item types saved to scan_results/proc-macro-hack_summary.json
+SUMMARY: 83 item types saved to scan_results/proc-macro2_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+SUMMARY: 23 item types saved to scan_results/typenum_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+SUMMARY: 14 item types saved to scan_results/aho-corasick_summary.json
+SUMMARY: 43 item types saved to scan_results/rustix_summary.json
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+WITNESS_SYMBOL: {"symbol":"simple_scanner_end","from":"main","file":"simple_scanner.rs","line":111}
+Bootstrap scan complete. Results in bootstrap_scan.log
