@@ -1,0 +1,2278 @@
+{
+  "crate": "rustc_query_system",
+  "module": "query::plumbing",
+  "usages": [
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::equivalent_key USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:799 ~ rustc_query_system[67df]::query::plumbing::equivalent_key)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::mk_cycle USES crate::rustc_query_system::dep_graph::DepContext::sess (AssocFn) [DefId: DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:835 ~ rustc_query_system[67df]::query::plumbing::mk_cycle)",
+      "used_def_id": "DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::mk_cycle USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:835 ~ rustc_query_system[67df]::query::plumbing::mk_cycle)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_query_system::query::config::QueryConfig::handle_cycle_error (AssocFn) [DefId: DefId(0:1158 ~ rustc_query_system[67df]::query::config::QueryConfig::handle_cycle_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(0:1158 ~ rustc_query_system[67df]::query::config::QueryConfig::handle_cycle_error)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_errors::rustc_errors::Diag::<'a, G>::emit (AssocFn) [DefId: DefId(163:431 ~ rustc_errors[6adb]::diagnostic::{impl#18}::emit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(163:431 ~ rustc_errors[6adb]::diagnostic::{impl#18}::emit)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_query_system::query::config::QueryConfig::value_from_cycle_error (AssocFn) [DefId: DefId(0:1152 ~ rustc_query_system[67df]::query::config::QueryConfig::value_from_cycle_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(0:1152 ~ rustc_query_system[67df]::query::config::QueryConfig::value_from_cycle_error)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_errors::rustc_errors::Diag::<'a, G>::emit (AssocFn) [DefId: DefId(163:431 ~ rustc_errors[6adb]::diagnostic::{impl#18}::emit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(163:431 ~ rustc_errors[6adb]::diagnostic::{impl#18}::emit)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::abort_if_errors (AssocFn) [DefId: DefId(163:1190 ~ rustc_errors[6adb]::{impl#8}::abort_if_errors)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(163:1190 ~ rustc_errors[6adb]::{impl#8}::abort_if_errors)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(172:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(172:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_query_system::dep_graph::DepContext::sess (AssocFn) [DefId: DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_errors::rustc_errors::Diag::<'a, G>::delay_as_bug (AssocFn) [DefId: DefId(163:435 ~ rustc_errors[6adb]::diagnostic::{impl#18}::delay_as_bug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(163:435 ~ rustc_errors[6adb]::diagnostic::{impl#18}::delay_as_bug)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_query_system::query::config::QueryConfig::value_from_cycle_error (AssocFn) [DefId: DefId(0:1152 ~ rustc_query_system[67df]::query::config::QueryConfig::value_from_cycle_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(0:1152 ~ rustc_query_system[67df]::query::config::QueryConfig::value_from_cycle_error)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::core::core::slice::<impl [T]>::first (AssocFn) [DefId: DefId(2:14036 ~ core[4720]::slice::{impl#0}::first)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(2:14036 ~ core[4720]::slice::{impl#0}::first)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_errors::rustc_errors::Diag::<'a, G>::stash (AssocFn) [DefId: DefId(163:434 ~ rustc_errors[6adb]::diagnostic::{impl#18}::stash)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(163:434 ~ rustc_errors[6adb]::diagnostic::{impl#18}::stash)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_errors::rustc_errors::Diag::<'a, G>::emit (AssocFn) [DefId: DefId(163:431 ~ rustc_errors[6adb]::diagnostic::{impl#18}::emit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(163:431 ~ rustc_errors[6adb]::diagnostic::{impl#18}::emit)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_query_system::query::config::QueryConfig::value_from_cycle_error (AssocFn) [DefId: DefId(0:1152 ~ rustc_query_system[67df]::query::config::QueryConfig::value_from_cycle_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(0:1152 ~ rustc_query_system[67df]::query::config::QueryConfig::value_from_cycle_error)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::handle_cycle_error USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:838 ~ rustc_query_system[67df]::query::plumbing::handle_cycle_error)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_get_cached USES crate::rustc_query_system::query::caches::QueryCache::lookup (AssocFn) [DefId: DefId(0:1054 ~ rustc_query_system[67df]::query::caches::QueryCache::lookup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:859 ~ rustc_query_system[67df]::query::plumbing::try_get_cached)",
+      "used_def_id": "DefId(0:1054 ~ rustc_query_system[67df]::query::caches::QueryCache::lookup)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_get_cached USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::query_cache_hit (AssocFn) [DefId: DefId(20:1085 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_cache_hit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:859 ~ rustc_query_system[67df]::query::plumbing::try_get_cached)",
+      "used_def_id": "DefId(20:1085 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_cache_hit)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_get_cached USES crate::rustc_query_system::dep_graph::DepContext::profiler (AssocFn) [DefId: DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:859 ~ rustc_query_system[67df]::query::plumbing::try_get_cached)",
+      "used_def_id": "DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_get_cached USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:859 ~ rustc_query_system[67df]::query::plumbing::try_get_cached)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_get_cached USES crate::rustc_query_system::dep_graph::graph::DepGraph::<D>::read_index (AssocFn) [DefId: DefId(0:290 ~ rustc_query_system[67df]::dep_graph::graph::{impl#5}::read_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:859 ~ rustc_query_system[67df]::query::plumbing::try_get_cached)",
+      "used_def_id": "DefId(0:290 ~ rustc_query_system[67df]::dep_graph::graph::{impl#5}::read_index)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_get_cached USES crate::rustc_query_system::dep_graph::DepContext::dep_graph (AssocFn) [DefId: DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:859 ~ rustc_query_system[67df]::query::plumbing::try_get_cached)",
+      "used_def_id": "DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::cycle_error USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:862 ~ rustc_query_system[67df]::query::plumbing::cycle_error)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::cycle_error USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:862 ~ rustc_query_system[67df]::query::plumbing::cycle_error)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::cycle_error USES crate::rustc_query_system::query::QueryContext::collect_active_jobs (AssocFn) [DefId: DefId(0:1204 ~ rustc_query_system[67df]::query::QueryContext::collect_active_jobs)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:862 ~ rustc_query_system[67df]::query::plumbing::cycle_error)",
+      "used_def_id": "DefId(0:1204 ~ rustc_query_system[67df]::query::QueryContext::collect_active_jobs)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::cycle_error USES crate::rustc_query_system::query::job::QueryJobId::find_cycle_in_stack (AssocFn) [DefId: DefId(0:976 ~ rustc_query_system[67df]::query::job::{impl#4}::find_cycle_in_stack)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:862 ~ rustc_query_system[67df]::query::plumbing::cycle_error)",
+      "used_def_id": "DefId(0:976 ~ rustc_query_system[67df]::query::job::{impl#4}::find_cycle_in_stack)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::cycle_error USES crate::rustc_query_system::query::QueryContext::current_query_job (AssocFn) [DefId: DefId(0:1203 ~ rustc_query_system[67df]::query::QueryContext::current_query_job)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:862 ~ rustc_query_system[67df]::query::plumbing::cycle_error)",
+      "used_def_id": "DefId(0:1203 ~ rustc_query_system[67df]::query::QueryContext::current_query_job)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::cycle_error USES crate::rustc_query_system::query::plumbing::CycleError::<I>::lift (AssocFn) [DefId: DefId(0:855 ~ rustc_query_system[67df]::query::plumbing::{impl#5}::lift)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:862 ~ rustc_query_system[67df]::query::plumbing::cycle_error)",
+      "used_def_id": "DefId(0:855 ~ rustc_query_system[67df]::query::plumbing::{impl#5}::lift)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::query_blocked (AssocFn) [DefId: DefId(20:1088 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_blocked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(20:1088 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_blocked)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_query_system::dep_graph::DepContext::profiler (AssocFn) [DefId: DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_query_system::query::job::QueryLatch::<I>::wait_on (AssocFn) [DefId: DefId(0:987 ~ rustc_query_system[67df]::query::job::{impl#6}::wait_on)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(0:987 ~ rustc_query_system[67df]::query::job::{impl#6}::wait_on)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_query_system::query::caches::QueryCache::lookup (AssocFn) [DefId: DefId(0:1054 ~ rustc_query_system[67df]::query::caches::QueryCache::lookup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(0:1054 ~ rustc_query_system[67df]::query::caches::QueryCache::lookup)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_query_system::query::config::QueryConfig::query_cache (AssocFn) [DefId: DefId(0:1145 ~ rustc_query_system[67df]::query::config::QueryConfig::query_cache)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(0:1145 ~ rustc_query_system[67df]::query::config::QueryConfig::query_cache)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_data_structures::rustc_data_structures::sharded::Sharded::<T>::lock_shard_by_hash (AssocFn) [DefId: DefId(20:1231 ~ rustc_data_structures[bda7]::sharded::{impl#1}::lock_shard_by_hash)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(20:1231 ~ rustc_data_structures[bda7]::sharded::{impl#1}::lock_shard_by_hash)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_query_system::query::config::QueryConfig::query_state (AssocFn) [DefId: DefId(0:1143 ~ rustc_query_system[67df]::query::config::QueryConfig::query_state)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(0:1143 ~ rustc_query_system[67df]::query::config::QueryConfig::query_state)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::hashbrown::hashbrown::HashTable::<T, A>::find (AssocFn) [DefId: DefId(33:2336 ~ hashbrown[bab5]::table::{impl#1}::find)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(33:2336 ~ hashbrown[bab5]::table::{impl#1}::find)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_span::rustc_errors::FatalError::raise (AssocFn) [DefId: DefId(74:916 ~ rustc_span[e3e8]::fatal_error::{impl#1}::raise)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(74:916 ~ rustc_span[e3e8]::fatal_error::{impl#1}::raise)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_query_system::query::config::QueryConfig::name (AssocFn) [DefId: DefId(0:1138 ~ rustc_query_system[67df]::query::config::QueryConfig::name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(0:1138 ~ rustc_query_system[67df]::query::config::QueryConfig::name)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::query_cache_hit (AssocFn) [DefId: DefId(20:1085 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_cache_hit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(20:1085 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_cache_hit)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_query_system::dep_graph::DepContext::profiler (AssocFn) [DefId: DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_data_structures::rustc_data_structures::profiling::TimingGuard::<'a>::finish_with_query_invocation_id (AssocFn) [DefId: DefId(20:1148 ~ rustc_data_structures[bda7]::profiling::{impl#3}::finish_with_query_invocation_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(20:1148 ~ rustc_data_structures[bda7]::profiling::{impl#3}::finish_with_query_invocation_id)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::wait_for_query USES crate::rustc_query_system::query::plumbing::CycleError::<I>::lift (AssocFn) [DefId: DefId(0:855 ~ rustc_query_system[67df]::query::plumbing::{impl#5}::lift)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:865 ~ rustc_query_system[67df]::query::plumbing::wait_for_query)",
+      "used_def_id": "DefId(0:855 ~ rustc_query_system[67df]::query::plumbing::{impl#5}::lift)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_query_system::query::config::QueryConfig::query_state (AssocFn) [DefId: DefId(0:1143 ~ rustc_query_system[67df]::query::config::QueryConfig::query_state)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(0:1143 ~ rustc_query_system[67df]::query::config::QueryConfig::query_state)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_data_structures::rustc_data_structures::sharded::Sharded::<T>::lock_shard_by_hash (AssocFn) [DefId: DefId(20:1231 ~ rustc_data_structures[bda7]::sharded::{impl#1}::lock_shard_by_hash)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(20:1231 ~ rustc_data_structures[bda7]::sharded::{impl#1}::lock_shard_by_hash)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_session::rustc_session::Session::threads (AssocFn) [DefId: DefId(172:1381 ~ rustc_session[612c]::session::{impl#3}::threads)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(172:1381 ~ rustc_session[612c]::session::{impl#3}::threads)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_query_system::dep_graph::DepContext::sess (AssocFn) [DefId: DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_query_system::query::caches::QueryCache::lookup (AssocFn) [DefId: DefId(0:1054 ~ rustc_query_system[67df]::query::caches::QueryCache::lookup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(0:1054 ~ rustc_query_system[67df]::query::caches::QueryCache::lookup)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_query_system::query::config::QueryConfig::query_cache (AssocFn) [DefId: DefId(0:1145 ~ rustc_query_system[67df]::query::config::QueryConfig::query_cache)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(0:1145 ~ rustc_query_system[67df]::query::config::QueryConfig::query_cache)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::query_cache_hit (AssocFn) [DefId: DefId(20:1085 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_cache_hit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(20:1085 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_cache_hit)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_query_system::dep_graph::DepContext::profiler (AssocFn) [DefId: DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_query_system::query::QueryContext::current_query_job (AssocFn) [DefId: DefId(0:1203 ~ rustc_query_system[67df]::query::QueryContext::current_query_job)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(0:1203 ~ rustc_query_system[67df]::query::QueryContext::current_query_job)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::hashbrown::hashbrown::HashTable::<T, A>::entry (AssocFn) [DefId: DefId(33:2342 ~ hashbrown[bab5]::table::{impl#1}::entry)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(33:2342 ~ hashbrown[bab5]::table::{impl#1}::entry)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_query_system::query::QueryContext::next_job_id (AssocFn) [DefId: DefId(0:1202 ~ rustc_query_system[67df]::query::QueryContext::next_job_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(0:1202 ~ rustc_query_system[67df]::query::QueryContext::next_job_id)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_query_system::query::job::QueryJob::<I>::new (AssocFn) [DefId: DefId(0:972 ~ rustc_query_system[67df]::query::job::{impl#3}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(0:972 ~ rustc_query_system[67df]::query::job::{impl#3}::new)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::hashbrown::hashbrown::hash_table::VacantEntry::<'a, T, A>::insert (AssocFn) [DefId: DefId(33:2476 ~ hashbrown[bab5]::table::{impl#15}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(33:2476 ~ hashbrown[bab5]::table::{impl#15}::insert)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::hashbrown::hashbrown::hash_table::OccupiedEntry::<'a, T, A>::get_mut (AssocFn) [DefId: DefId(33:2458 ~ hashbrown[bab5]::table::{impl#13}::get_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(33:2458 ~ hashbrown[bab5]::table::{impl#13}::get_mut)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_query_system::query::job::QueryJob::<I>::latch (AssocFn) [DefId: DefId(0:973 ~ rustc_query_system[67df]::query::job::{impl#3}::latch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(0:973 ~ rustc_query_system[67df]::query::job::{impl#3}::latch)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_execute_query USES crate::rustc_span::rustc_errors::FatalError::raise (AssocFn) [DefId: DefId(74:916 ~ rustc_span[e3e8]::fatal_error::{impl#1}::raise)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:869 ~ rustc_query_system[67df]::query::plumbing::try_execute_query)",
+      "used_def_id": "DefId(74:916 ~ rustc_span[e3e8]::fatal_error::{impl#1}::raise)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::dep_graph::graph::DepGraph::<D>::is_fully_enabled (AssocFn) [DefId: DefId(0:250 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::is_fully_enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:250 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::is_fully_enabled)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::dep_graph::DepContext::dep_graph (AssocFn) [DefId: DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::dep_graph::graph::DepGraph::<D>::data (AssocFn) [DefId: DefId(0:249 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:249 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::data)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::dep_graph::DepContext::dep_graph (AssocFn) [DefId: DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::query::config::QueryConfig::query_cache (AssocFn) [DefId: DefId(0:1145 ~ rustc_query_system[67df]::query::config::QueryConfig::query_cache)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:1145 ~ rustc_query_system[67df]::query::config::QueryConfig::query_cache)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::query::config::QueryConfig::feedable (AssocFn) [DefId: DefId(0:1156 ~ rustc_query_system[67df]::query::config::QueryConfig::feedable)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:1156 ~ rustc_query_system[67df]::query::config::QueryConfig::feedable)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::query::caches::QueryCache::lookup (AssocFn) [DefId: DefId(0:1054 ~ rustc_query_system[67df]::query::caches::QueryCache::lookup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:1054 ~ rustc_query_system[67df]::query::caches::QueryCache::lookup)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::query::config::QueryConfig::hash_result (AssocFn) [DefId: DefId(0:1159 ~ rustc_query_system[67df]::query::config::QueryConfig::hash_result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:1159 ~ rustc_query_system[67df]::query::config::QueryConfig::hash_result)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::query::config::QueryConfig::format_value (AssocFn) [DefId: DefId(0:1142 ~ rustc_query_system[67df]::query::config::QueryConfig::format_value)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:1142 ~ rustc_query_system[67df]::query::config::QueryConfig::format_value)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::dep_graph::DepContext::with_stable_hashing_context (AssocFn) [DefId: DefId(0:614 ~ rustc_query_system[67df]::dep_graph::DepContext::with_stable_hashing_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:614 ~ rustc_query_system[67df]::dep_graph::DepContext::with_stable_hashing_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::query::config::QueryConfig::format_value (AssocFn) [DefId: DefId(0:1142 ~ rustc_query_system[67df]::query::config::QueryConfig::format_value)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:1142 ~ rustc_query_system[67df]::query::config::QueryConfig::format_value)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::has_errors (AssocFn) [DefId: DefId(163:1186 ~ rustc_errors[6adb]::{impl#8}::has_errors)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(163:1186 ~ rustc_errors[6adb]::{impl#8}::has_errors)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(172:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(172:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::dep_graph::DepContext::sess (AssocFn) [DefId: DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Placeholder (Struct) [DefId: DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Placeholder (Struct) [DefId: DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Placeholder (Struct) [DefId: DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Placeholder (Struct) [DefId: DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::query::config::QueryConfig::dep_kind (AssocFn) [DefId: DefId(0:1157 ~ rustc_query_system[67df]::query::config::QueryConfig::dep_kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:1157 ~ rustc_query_system[67df]::query::config::QueryConfig::dep_kind)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1_formatted (AssocFn) [DefId: DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job USES crate::rustc_query_system::query::plumbing::JobOwner::<'tcx, K, I>::complete (AssocFn) [DefId: DefId(0:846 ~ rustc_query_system[67df]::query::plumbing::{impl#3}::complete)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:874 ~ rustc_query_system[67df]::query::plumbing::execute_job)",
+      "used_def_id": "DefId(0:846 ~ rustc_query_system[67df]::query::plumbing::{impl#3}::complete)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::dep_graph::graph::DepGraph::<D>::is_fully_enabled (AssocFn) [DefId: DefId(0:250 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::is_fully_enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:250 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::is_fully_enabled)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::dep_graph::DepContext::dep_graph (AssocFn) [DefId: DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::dep_graph::dep_node::DepNodeParams::to_fingerprint (AssocFn) [DefId: DefId(0:103 ~ rustc_query_system[67df]::dep_graph::dep_node::DepNodeParams::to_fingerprint)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:103 ~ rustc_query_system[67df]::dep_graph::dep_node::DepNodeParams::to_fingerprint)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::query_provider (AssocFn) [DefId: DefId(20:1083 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_provider)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(20:1083 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_provider)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::dep_graph::DepContext::profiler (AssocFn) [DefId: DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::query::QueryContext::start_query (AssocFn) [DefId: DefId(0:1208 ~ rustc_query_system[67df]::query::QueryContext::start_query)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:1208 ~ rustc_query_system[67df]::query::QueryContext::start_query)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::query::config::QueryConfig::depth_limit (AssocFn) [DefId: DefId(0:1155 ~ rustc_query_system[67df]::query::config::QueryConfig::depth_limit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:1155 ~ rustc_query_system[67df]::query::config::QueryConfig::depth_limit)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::query::config::QueryConfig::compute (AssocFn) [DefId: DefId(0:1149 ~ rustc_query_system[67df]::query::config::QueryConfig::compute)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:1149 ~ rustc_query_system[67df]::query::config::QueryConfig::compute)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::dep_graph::graph::DepGraph::<D>::next_virtual_depnode_index (AssocFn) [DefId: DefId(0:351 ~ rustc_query_system[67df]::dep_graph::graph::{impl#9}::next_virtual_depnode_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:351 ~ rustc_query_system[67df]::dep_graph::graph::{impl#9}::next_virtual_depnode_index)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::dep_graph::DepContext::dep_graph (AssocFn) [DefId: DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_data_structures::rustc_data_structures::profiling::TimingGuard::<'a>::finish_with_query_invocation_id (AssocFn) [DefId: DefId(20:1148 ~ rustc_data_structures[bda7]::profiling::{impl#3}::finish_with_query_invocation_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(20:1148 ~ rustc_data_structures[bda7]::profiling::{impl#3}::finish_with_query_invocation_id)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::query::config::QueryConfig::hash_result (AssocFn) [DefId: DefId(0:1159 ~ rustc_query_system[67df]::query::config::QueryConfig::hash_result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:1159 ~ rustc_query_system[67df]::query::config::QueryConfig::hash_result)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::dep_graph::DepContext::with_stable_hashing_context (AssocFn) [DefId: DefId(0:614 ~ rustc_query_system[67df]::dep_graph::DepContext::with_stable_hashing_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:614 ~ rustc_query_system[67df]::dep_graph::DepContext::with_stable_hashing_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_non_incr USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:879 ~ rustc_query_system[67df]::query::plumbing::execute_job_non_incr)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::query::config::QueryConfig::anon (AssocFn) [DefId: DefId(0:1153 ~ rustc_query_system[67df]::query::config::QueryConfig::anon)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:1153 ~ rustc_query_system[67df]::query::config::QueryConfig::anon)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::query::config::QueryConfig::eval_always (AssocFn) [DefId: DefId(0:1154 ~ rustc_query_system[67df]::query::config::QueryConfig::eval_always)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:1154 ~ rustc_query_system[67df]::query::config::QueryConfig::eval_always)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::core::std::option::Option::<T>::get_or_insert_with (AssocFn) [DefId: DefId(2:10273 ~ core[4720]::option::{impl#0}::get_or_insert_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(2:10273 ~ core[4720]::option::{impl#0}::get_or_insert_with)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::query::config::QueryConfig::construct_dep_node (AssocFn) [DefId: DefId(0:1160 ~ rustc_query_system[67df]::query::config::QueryConfig::construct_dep_node)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:1160 ~ rustc_query_system[67df]::query::config::QueryConfig::construct_dep_node)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::query::QueryContext::start_query (AssocFn) [DefId: DefId(0:1208 ~ rustc_query_system[67df]::query::QueryContext::start_query)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:1208 ~ rustc_query_system[67df]::query::QueryContext::start_query)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::query_provider (AssocFn) [DefId: DefId(20:1083 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_provider)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(20:1083 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_provider)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::dep_graph::DepContext::profiler (AssocFn) [DefId: DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::query::QueryContext::start_query (AssocFn) [DefId: DefId(0:1208 ~ rustc_query_system[67df]::query::QueryContext::start_query)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:1208 ~ rustc_query_system[67df]::query::QueryContext::start_query)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::query::config::QueryConfig::depth_limit (AssocFn) [DefId: DefId(0:1155 ~ rustc_query_system[67df]::query::config::QueryConfig::depth_limit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:1155 ~ rustc_query_system[67df]::query::config::QueryConfig::depth_limit)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::query::config::QueryConfig::anon (AssocFn) [DefId: DefId(0:1153 ~ rustc_query_system[67df]::query::config::QueryConfig::anon)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:1153 ~ rustc_query_system[67df]::query::config::QueryConfig::anon)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::dep_graph::graph::DepGraphData::<D>::with_anon_task_inner (AssocFn) [DefId: DefId(0:278 ~ rustc_query_system[67df]::dep_graph::graph::{impl#4}::with_anon_task_inner)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:278 ~ rustc_query_system[67df]::dep_graph::graph::{impl#4}::with_anon_task_inner)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::query::config::QueryConfig::dep_kind (AssocFn) [DefId: DefId(0:1157 ~ rustc_query_system[67df]::query::config::QueryConfig::dep_kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:1157 ~ rustc_query_system[67df]::query::config::QueryConfig::dep_kind)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::query::config::QueryConfig::compute (AssocFn) [DefId: DefId(0:1149 ~ rustc_query_system[67df]::query::config::QueryConfig::compute)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:1149 ~ rustc_query_system[67df]::query::config::QueryConfig::compute)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::core::std::option::Option::<T>::unwrap_or_else (AssocFn) [DefId: DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::query::config::QueryConfig::construct_dep_node (AssocFn) [DefId: DefId(0:1160 ~ rustc_query_system[67df]::query::config::QueryConfig::construct_dep_node)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:1160 ~ rustc_query_system[67df]::query::config::QueryConfig::construct_dep_node)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::dep_graph::graph::DepGraphData::<D>::with_task (AssocFn) [DefId: DefId(0:271 ~ rustc_query_system[67df]::dep_graph::graph::{impl#4}::with_task)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:271 ~ rustc_query_system[67df]::dep_graph::graph::{impl#4}::with_task)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::query::config::QueryConfig::compute (AssocFn) [DefId: DefId(0:1149 ~ rustc_query_system[67df]::query::config::QueryConfig::compute)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:1149 ~ rustc_query_system[67df]::query::config::QueryConfig::compute)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_query_system::query::config::QueryConfig::hash_result (AssocFn) [DefId: DefId(0:1159 ~ rustc_query_system[67df]::query::config::QueryConfig::hash_result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(0:1159 ~ rustc_query_system[67df]::query::config::QueryConfig::hash_result)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::rustc_data_structures::rustc_data_structures::profiling::TimingGuard::<'a>::finish_with_query_invocation_id (AssocFn) [DefId: DefId(20:1148 ~ rustc_data_structures[bda7]::profiling::{impl#3}::finish_with_query_invocation_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(20:1148 ~ rustc_data_structures[bda7]::profiling::{impl#3}::finish_with_query_invocation_id)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::execute_job_incr USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:884 ~ rustc_query_system[67df]::query::plumbing::execute_job_incr)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::graph::DepGraphData::<D>::try_mark_green (AssocFn) [DefId: DefId(0:337 ~ rustc_query_system[67df]::dep_graph::graph::{impl#8}::try_mark_green)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:337 ~ rustc_query_system[67df]::dep_graph::graph::{impl#8}::try_mark_green)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::graph::DepGraphData::<D>::is_index_green (AssocFn) [DefId: DefId(0:310 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::is_index_green)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:310 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::is_index_green)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::query::config::QueryConfig::try_load_from_disk (AssocFn) [DefId: DefId(0:1150 ~ rustc_query_system[67df]::query::config::QueryConfig::try_load_from_disk)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:1150 ~ rustc_query_system[67df]::query::config::QueryConfig::try_load_from_disk)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::DepContext::sess (AssocFn) [DefId: DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::graph::DepGraphData::<D>::mark_debug_loaded_from_disk (AssocFn) [DefId: DefId(0:314 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::mark_debug_loaded_from_disk)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:314 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::mark_debug_loaded_from_disk)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::graph::DepGraphData::<D>::prev_fingerprint_of (AssocFn) [DefId: DefId(0:312 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::prev_fingerprint_of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:312 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::prev_fingerprint_of)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::core::core::num::<impl u64>::is_multiple_of (AssocFn) [DefId: DefId(2:35500 ~ core[4720]::num::{impl#9}::is_multiple_of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(2:35500 ~ core[4720]::num::{impl#9}::is_multiple_of)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_hashes::rustc_hashes::Hash64::as_u64 (AssocFn) [DefId: DefId(27:11 ~ rustc_hashes[225f]::{impl#0}::as_u64)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(27:11 ~ rustc_hashes[225f]::{impl#0}::as_u64)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_data_structures::rustc_data_structures::fingerprint::Fingerprint::split (AssocFn) [DefId: DefId(20:88 ~ rustc_data_structures[bda7]::fingerprint::{impl#2}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(20:88 ~ rustc_data_structures[bda7]::fingerprint::{impl#2}::split)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::DepContext::sess (AssocFn) [DefId: DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::query::config::QueryConfig::hash_result (AssocFn) [DefId: DefId(0:1159 ~ rustc_query_system[67df]::query::config::QueryConfig::hash_result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:1159 ~ rustc_query_system[67df]::query::config::QueryConfig::hash_result)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::query::config::QueryConfig::format_value (AssocFn) [DefId: DefId(0:1142 ~ rustc_query_system[67df]::query::config::QueryConfig::format_value)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:1142 ~ rustc_query_system[67df]::query::config::QueryConfig::format_value)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::query::config::QueryConfig::cache_on_disk (AssocFn) [DefId: DefId(0:1147 ~ rustc_query_system[67df]::query::config::QueryConfig::cache_on_disk)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:1147 ~ rustc_query_system[67df]::query::config::QueryConfig::cache_on_disk)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::FingerprintStyle::reconstructible (AssocFn) [DefId: DefId(0:656 ~ rustc_query_system[67df]::dep_graph::{impl#2}::reconstructible)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:656 ~ rustc_query_system[67df]::dep_graph::{impl#2}::reconstructible)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::DepContext::fingerprint_style (AssocFn) [DefId: DefId(0:621 ~ rustc_query_system[67df]::dep_graph::DepContext::fingerprint_style)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:621 ~ rustc_query_system[67df]::dep_graph::DepContext::fingerprint_style)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::query::config::QueryConfig::loadable_from_disk (AssocFn) [DefId: DefId(0:1151 ~ rustc_query_system[67df]::query::config::QueryConfig::loadable_from_disk)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:1151 ~ rustc_query_system[67df]::query::config::QueryConfig::loadable_from_disk)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::query_provider (AssocFn) [DefId: DefId(20:1083 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_provider)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(20:1083 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_provider)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::DepContext::profiler (AssocFn) [DefId: DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::graph::DepGraph::<D>::with_ignore (AssocFn) [DefId: DefId(0:255 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::with_ignore)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:255 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::with_ignore)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::DepContext::dep_graph (AssocFn) [DefId: DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::query::config::QueryConfig::compute (AssocFn) [DefId: DefId(0:1149 ~ rustc_query_system[67df]::query::config::QueryConfig::compute)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:1149 ~ rustc_query_system[67df]::query::config::QueryConfig::compute)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_data_structures::rustc_data_structures::profiling::TimingGuard::<'a>::finish_with_query_invocation_id (AssocFn) [DefId: DefId(20:1148 ~ rustc_data_structures[bda7]::profiling::{impl#3}::finish_with_query_invocation_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(20:1148 ~ rustc_data_structures[bda7]::profiling::{impl#3}::finish_with_query_invocation_id)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::query::config::QueryConfig::hash_result (AssocFn) [DefId: DefId(0:1159 ~ rustc_query_system[67df]::query::config::QueryConfig::hash_result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:1159 ~ rustc_query_system[67df]::query::config::QueryConfig::hash_result)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::try_load_from_disk_and_cache_in_memory USES crate::rustc_query_system::query::config::QueryConfig::format_value (AssocFn) [DefId: DefId(0:1142 ~ rustc_query_system[67df]::query::config::QueryConfig::format_value)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:893 ~ rustc_query_system[67df]::query::plumbing::try_load_from_disk_and_cache_in_memory)",
+      "used_def_id": "DefId(0:1142 ~ rustc_query_system[67df]::query::config::QueryConfig::format_value)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::subscriber::Interest::never (AssocFn) [DefId: DefId(39:731 ~ tracing_core[77f1]::subscriber::{impl#4}::never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:731 ~ tracing_core[77f1]::subscriber::{impl#4}::never)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing::tracing::Span::new (AssocFn) [DefId: DefId(38:164 ~ tracing[282d]::span::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(38:164 ~ tracing[282d]::span::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::tracing::tracing::Span::enter (AssocFn) [DefId: DefId(38:180 ~ tracing[282d]::span::{impl#0}::enter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(38:180 ~ tracing[282d]::span::{impl#0}::enter)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::rustc_query_system::dep_graph::graph::DepGraphData::<D>::is_index_green (AssocFn) [DefId: DefId(0:310 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::is_index_green)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(0:310 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::is_index_green)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::core::std::option::Option::<T>::map_or (AssocFn) [DefId: DefId(2:10239 ~ core[4720]::option::{impl#0}::map_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(2:10239 ~ core[4720]::option::{impl#0}::map_or)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::rustc_data_structures::rustc_data_structures::fingerprint::Fingerprint::ZERO (AssocConst) [DefId: DefId(20:83 ~ rustc_data_structures[bda7]::fingerprint::{impl#2}::ZERO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(20:83 ~ rustc_data_structures[bda7]::fingerprint::{impl#2}::ZERO)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::rustc_query_system::dep_graph::DepContext::with_stable_hashing_context (AssocFn) [DefId: DefId(0:614 ~ rustc_query_system[67df]::dep_graph::DepContext::with_stable_hashing_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(0:614 ~ rustc_query_system[67df]::dep_graph::DepContext::with_stable_hashing_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::rustc_query_system::dep_graph::graph::DepGraphData::<D>::prev_fingerprint_of (AssocFn) [DefId: DefId(0:312 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::prev_fingerprint_of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(0:312 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::prev_fingerprint_of)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1838 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_not_green USES crate::rustc_query_system::dep_graph::graph::DepGraphData::<D>::prev_node_of (AssocFn) [DefId: DefId(0:313 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::prev_node_of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:897 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_not_green)",
+      "used_def_id": "DefId(0:313 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::prev_node_of)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_not_green USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:897 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_not_green)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_not_green USES crate::rustc_query_system::dep_graph::graph::DepGraph::<D>::data (AssocFn) [DefId: DefId(0:249 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:897 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_not_green)",
+      "used_def_id": "DefId(0:249 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::data)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_not_green USES crate::rustc_query_system::dep_graph::DepContext::dep_graph (AssocFn) [DefId: DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:897 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_not_green)",
+      "used_def_id": "DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_not_green USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:897 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_not_green)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_not_green USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:897 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_not_green)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::std::std::thread::LocalKey::<std::cell::Cell<T>>::replace (AssocFn) [DefId: DefId(1:585 ~ std[93f5]::thread::local::{impl#5}::replace)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(1:585 ~ std[93f5]::thread::local::{impl#5}::replace)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(163:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(163:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(172:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(172:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::rustc_query_system::dep_graph::DepContext::sess (AssocFn) [DefId: DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::rustc_query_system::dep_graph::DepContext::sess (AssocFn) [DefId: DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::rustc_query_system::dep_graph::graph::DepGraphData::<D>::prev_node_of (AssocFn) [DefId: DefId(0:313 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::prev_node_of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(0:313 ~ rustc_query_system[67df]::dep_graph::graph::{impl#6}::prev_node_of)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::rustc_query_system::dep_graph::graph::DepGraph::<D>::data (AssocFn) [DefId: DefId(0:249 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(0:249 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::data)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::rustc_query_system::dep_graph::DepContext::dep_graph (AssocFn) [DefId: DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(163:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(163:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(172:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(172:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::rustc_query_system::dep_graph::DepContext::sess (AssocFn) [DefId: DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(0:619 ~ rustc_query_system[67df]::dep_graph::DepContext::sess)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::incremental_verify_ich_failed USES crate::std::std::thread::LocalKey::<std::cell::Cell<T>>::set (AssocFn) [DefId: DefId(1:581 ~ std[93f5]::thread::local::{impl#5}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:899 ~ rustc_query_system[67df]::query::plumbing::incremental_verify_ich_failed)",
+      "used_def_id": "DefId(1:581 ~ std[93f5]::thread::local::{impl#5}::set)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::ensure_must_run USES crate::rustc_query_system::query::config::QueryConfig::eval_always (AssocFn) [DefId: DefId(0:1154 ~ rustc_query_system[67df]::query::config::QueryConfig::eval_always)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:901 ~ rustc_query_system[67df]::query::plumbing::ensure_must_run)",
+      "used_def_id": "DefId(0:1154 ~ rustc_query_system[67df]::query::config::QueryConfig::eval_always)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::ensure_must_run USES crate::rustc_query_system::query::config::QueryConfig::anon (AssocFn) [DefId: DefId(0:1153 ~ rustc_query_system[67df]::query::config::QueryConfig::anon)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:901 ~ rustc_query_system[67df]::query::plumbing::ensure_must_run)",
+      "used_def_id": "DefId(0:1153 ~ rustc_query_system[67df]::query::config::QueryConfig::anon)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::ensure_must_run USES crate::rustc_query_system::query::config::QueryConfig::construct_dep_node (AssocFn) [DefId: DefId(0:1160 ~ rustc_query_system[67df]::query::config::QueryConfig::construct_dep_node)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:901 ~ rustc_query_system[67df]::query::plumbing::ensure_must_run)",
+      "used_def_id": "DefId(0:1160 ~ rustc_query_system[67df]::query::config::QueryConfig::construct_dep_node)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::ensure_must_run USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:901 ~ rustc_query_system[67df]::query::plumbing::ensure_must_run)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::ensure_must_run USES crate::rustc_query_system::dep_graph::DepContext::dep_graph (AssocFn) [DefId: DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:901 ~ rustc_query_system[67df]::query::plumbing::ensure_must_run)",
+      "used_def_id": "DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::ensure_must_run USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:901 ~ rustc_query_system[67df]::query::plumbing::ensure_must_run)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::ensure_must_run USES crate::rustc_query_system::dep_graph::graph::DepGraph::<D>::try_mark_green (AssocFn) [DefId: DefId(0:332 ~ rustc_query_system[67df]::dep_graph::graph::{impl#7}::try_mark_green)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:901 ~ rustc_query_system[67df]::query::plumbing::ensure_must_run)",
+      "used_def_id": "DefId(0:332 ~ rustc_query_system[67df]::dep_graph::graph::{impl#7}::try_mark_green)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::ensure_must_run USES crate::rustc_query_system::dep_graph::graph::DepGraph::<D>::read_index (AssocFn) [DefId: DefId(0:290 ~ rustc_query_system[67df]::dep_graph::graph::{impl#5}::read_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:901 ~ rustc_query_system[67df]::query::plumbing::ensure_must_run)",
+      "used_def_id": "DefId(0:290 ~ rustc_query_system[67df]::dep_graph::graph::{impl#5}::read_index)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::ensure_must_run USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::query_cache_hit (AssocFn) [DefId: DefId(20:1085 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_cache_hit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:901 ~ rustc_query_system[67df]::query::plumbing::ensure_must_run)",
+      "used_def_id": "DefId(20:1085 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_cache_hit)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::ensure_must_run USES crate::rustc_query_system::dep_graph::DepContext::profiler (AssocFn) [DefId: DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:901 ~ rustc_query_system[67df]::query::plumbing::ensure_must_run)",
+      "used_def_id": "DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::ensure_must_run USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:901 ~ rustc_query_system[67df]::query::plumbing::ensure_must_run)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::ensure_must_run USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:901 ~ rustc_query_system[67df]::query::plumbing::ensure_must_run)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::ensure_must_run USES crate::rustc_query_system::query::config::QueryConfig::loadable_from_disk (AssocFn) [DefId: DefId(0:1151 ~ rustc_query_system[67df]::query::config::QueryConfig::loadable_from_disk)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:901 ~ rustc_query_system[67df]::query::plumbing::ensure_must_run)",
+      "used_def_id": "DefId(0:1151 ~ rustc_query_system[67df]::query::config::QueryConfig::loadable_from_disk)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::get_query_non_incr USES crate::rustc_query_system::dep_graph::graph::DepGraph::<D>::is_fully_enabled (AssocFn) [DefId: DefId(0:250 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::is_fully_enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:904 ~ rustc_query_system[67df]::query::plumbing::get_query_non_incr)",
+      "used_def_id": "DefId(0:250 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::is_fully_enabled)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::get_query_non_incr USES crate::rustc_query_system::dep_graph::DepContext::dep_graph (AssocFn) [DefId: DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:904 ~ rustc_query_system[67df]::query::plumbing::get_query_non_incr)",
+      "used_def_id": "DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::get_query_non_incr USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:904 ~ rustc_query_system[67df]::query::plumbing::get_query_non_incr)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::get_query_incr USES crate::rustc_query_system::dep_graph::graph::DepGraph::<D>::is_fully_enabled (AssocFn) [DefId: DefId(0:250 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::is_fully_enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:909 ~ rustc_query_system[67df]::query::plumbing::get_query_incr)",
+      "used_def_id": "DefId(0:250 ~ rustc_query_system[67df]::dep_graph::graph::{impl#3}::is_fully_enabled)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::get_query_incr USES crate::rustc_query_system::dep_graph::DepContext::dep_graph (AssocFn) [DefId: DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:909 ~ rustc_query_system[67df]::query::plumbing::get_query_incr)",
+      "used_def_id": "DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::get_query_incr USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:909 ~ rustc_query_system[67df]::query::plumbing::get_query_incr)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::get_query_incr USES crate::rustc_query_system::dep_graph::graph::DepGraph::<D>::read_index (AssocFn) [DefId: DefId(0:290 ~ rustc_query_system[67df]::dep_graph::graph::{impl#5}::read_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:909 ~ rustc_query_system[67df]::query::plumbing::get_query_incr)",
+      "used_def_id": "DefId(0:290 ~ rustc_query_system[67df]::dep_graph::graph::{impl#5}::read_index)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::get_query_incr USES crate::rustc_query_system::dep_graph::DepContext::dep_graph (AssocFn) [DefId: DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:909 ~ rustc_query_system[67df]::query::plumbing::get_query_incr)",
+      "used_def_id": "DefId(0:617 ~ rustc_query_system[67df]::dep_graph::DepContext::dep_graph)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::get_query_incr USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:909 ~ rustc_query_system[67df]::query::plumbing::get_query_incr)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::force_query USES crate::rustc_query_system::query::caches::QueryCache::lookup (AssocFn) [DefId: DefId(0:1054 ~ rustc_query_system[67df]::query::caches::QueryCache::lookup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:914 ~ rustc_query_system[67df]::query::plumbing::force_query)",
+      "used_def_id": "DefId(0:1054 ~ rustc_query_system[67df]::query::caches::QueryCache::lookup)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::force_query USES crate::rustc_query_system::query::config::QueryConfig::query_cache (AssocFn) [DefId: DefId(0:1145 ~ rustc_query_system[67df]::query::config::QueryConfig::query_cache)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:914 ~ rustc_query_system[67df]::query::plumbing::force_query)",
+      "used_def_id": "DefId(0:1145 ~ rustc_query_system[67df]::query::config::QueryConfig::query_cache)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::force_query USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::query_cache_hit (AssocFn) [DefId: DefId(20:1085 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_cache_hit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:914 ~ rustc_query_system[67df]::query::plumbing::force_query)",
+      "used_def_id": "DefId(20:1085 ~ rustc_data_structures[bda7]::profiling::{impl#0}::query_cache_hit)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::force_query USES crate::rustc_query_system::dep_graph::DepContext::profiler (AssocFn) [DefId: DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:914 ~ rustc_query_system[67df]::query::plumbing::force_query)",
+      "used_def_id": "DefId(0:618 ~ rustc_query_system[67df]::dep_graph::DepContext::profiler)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::force_query USES crate::rustc_query_system::dep_graph::HasDepContext::dep_context (AssocFn) [DefId: DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:914 ~ rustc_query_system[67df]::query::plumbing::force_query)",
+      "used_def_id": "DefId(0:643 ~ rustc_query_system[67df]::dep_graph::HasDepContext::dep_context)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::force_query USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:914 ~ rustc_query_system[67df]::query::plumbing::force_query)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_query_system::query::plumbing::force_query USES crate::rustc_query_system::query::config::QueryConfig::anon (AssocFn) [DefId: DefId(0:1153 ~ rustc_query_system[67df]::query::config::QueryConfig::anon)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:914 ~ rustc_query_system[67df]::query::plumbing::force_query)",
+      "used_def_id": "DefId(0:1153 ~ rustc_query_system[67df]::query::config::QueryConfig::anon)"
+    }
+  ]
+}

@@ -4,13 +4,19 @@ extern crate rustc_driver;
 extern crate rustc_interface;
 extern crate rustc_middle;
 extern crate rustc_hir;
+extern crate rustc_ast;
 
 use rustc_driver::{Callbacks, Compilation};
 use rustc_interface::interface;
 use rustc_middle::ty::TyCtxt;
 use rustc_hir::def_id::LOCAL_CRATE;
+use rustc_hir::intravisit::{self, Visitor};
+use rustc_hir::{Expr, ExprKind, Lit};
 use std::collections::HashMap;
+use std::sync::OnceLock;
 use serde::{Serialize, Deserialize};
+
+static USAGE_CACHE: OnceLock<HashMap<String, Vec<UsageEntry>>> = OnceLock::new();
 
 #[derive(Serialize, Deserialize, Clone)]
 struct UsageEntry {
@@ -39,6 +45,22 @@ impl UsageCollector {
         Self {
             module_data: HashMap::new(),
         }
+    }
+    
+    fn get_cached_usages(&self) -> &HashMap<String, Vec<UsageEntry>> {
+        USAGE_CACHE.get_or_init(|| {
+            self.load_previous_data().unwrap_or_default()
+        })
+    }
+    
+    fn load_previous_data(&self) -> Result<HashMap<String, Vec<UsageEntry>>, Box<dyn std::error::Error>> {
+        // Load from previous eigenmatrix runs
+        if let Ok(content) = std::fs::read_to_string("usage_eigenmatrix.json") {
+            if let Ok(data) = serde_json::from_str::<serde_json::Value>(&content) {
+                return Ok(HashMap::new()); // Simplified for now
+            }
+        }
+        Ok(HashMap::new())
     }
     
     fn add_usage(&mut self, module: &str, usage: String, usage_type: String, node_type: String, user_def_id: String, used_def_id: String) {
@@ -196,10 +218,47 @@ impl Callbacks for UsageCollector {
             }
         }
         
+        // NEW: Collect constants and literals
+        self.collect_constants(tcx);
+        
         self.save_to_files(&local_crate.to_string());
         eprintln!("✅ COLLECTION COMPLETE");
         
         Compilation::Continue
+    }
+}
+
+impl UsageCollector {
+    fn collect_constants<'tcx>(&mut self, tcx: TyCtxt<'tcx>) {
+        struct ConstantVisitor<'a> {
+            collector: &'a mut UsageCollector,
+        }
+        
+        impl<'tcx> Visitor<'tcx> for ConstantVisitor<'_> {
+            fn visit_expr(&mut self, expr: &'tcx Expr<'tcx>) {
+                match &expr.kind {
+                    ExprKind::Lit(lit) => {
+                        let constant_value = format!("{:?}", lit.node);
+                        self.collector.add_usage("constants", constant_value.clone(), "Literal".to_string(), 
+                                               "Constant".to_string(), 
+                                               format!("{:?}", expr.hir_id),
+                                               constant_value);
+                    }
+                    _ => {}
+                }
+                
+                intravisit::walk_expr(self, expr);
+            }
+        }
+        
+        let mut visitor = ConstantVisitor { collector: self };
+        let all_items = tcx.hir_crate_items(());
+        for item_id in all_items.free_items() {
+            let node = tcx.hir_node_by_def_id(item_id.owner_id.def_id);
+            if let rustc_hir::Node::Item(item) = node {
+                visitor.visit_item(item);
+            }
+        }
     }
 }
 
