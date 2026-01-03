@@ -1,0 +1,1326 @@
+{
+  "crate": "miri",
+  "module": "shims::unix::linux_like::sync",
+  "usages": [
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::operand::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::read_pointer (AssocFn) [DefId: DefId(141:2052 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_pointer)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2052 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_pointer)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::to_i32 (AssocFn) [DefId: DefId(169:2020 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(169:2020 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::operand::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::read_scalar (AssocFn) [DefId: DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::to_u32 (AssocFn) [DefId: DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::operand::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::read_scalar (AssocFn) [DefId: DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::place::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::ptr_to_mplace (AssocFn) [DefId: DefId(141:2263 ~ rustc_const_eval[4233]::interpret::place::{impl#12}::ptr_to_mplace)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2263 ~ rustc_const_eval[4233]::interpret::place::{impl#12}::ptr_to_mplace)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::helpers::EvalContextExt::eval_libc_i32 (AssocFn) [DefId: DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::helpers::EvalContextExt::eval_libc_i32 (AssocFn) [DefId: DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::helpers::EvalContextExt::eval_libc_i32 (AssocFn) [DefId: DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::helpers::EvalContextExt::eval_libc_i32 (AssocFn) [DefId: DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::helpers::EvalContextExt::eval_libc_i32 (AssocFn) [DefId: DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::helpers::EvalContextExt::eval_libc_i32 (AssocFn) [DefId: DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::operand::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::read_pointer (AssocFn) [DefId: DefId(141:2052 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_pointer)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2052 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_pointer)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::operand::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::read_pointer (AssocFn) [DefId: DefId(141:2052 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_pointer)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2052 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_pointer)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::to_u32 (AssocFn) [DefId: DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::operand::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::read_scalar (AssocFn) [DefId: DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::core::num::<impl u32>::MAX (AssocConst) [DefId: DefId(2:35229 ~ core[4720]::num::{impl#8}::MAX)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:35229 ~ core[4720]::num::{impl#8}::MAX)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::shims::io_error::EvalContextExt::set_last_error_and_return (AssocFn) [DefId: DefId(0:4830 ~ miri[02e8]::shims::io_error::EvalContextExt::set_last_error_and_return)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:4830 ~ miri[02e8]::shims::io_error::EvalContextExt::set_last_error_and_return)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::helpers::EvalContextExt::deref_pointer_as (AssocFn) [DefId: DefId(0:2344 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_as)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:2344 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_as)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::helpers::EvalContextExt::libc_ty_layout (AssocFn) [DefId: DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::helpers::EvalContextExt::ptr_is_null (AssocFn) [DefId: DefId(0:2309 ~ miri[02e8]::helpers::EvalContextExt::ptr_is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:2309 ~ miri[02e8]::helpers::EvalContextExt::ptr_is_null)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::MPlaceTy::<'tcx, Prov>::ptr (AssocFn) [DefId: DefId(141:2199 ~ rustc_const_eval[4233]::interpret::place::{impl#3}::ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2199 ~ rustc_const_eval[4233]::interpret::place::{impl#3}::ptr)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::helpers::EvalContextExt::read_timespec (AssocFn) [DefId: DefId(0:2353 ~ miri[02e8]::helpers::EvalContextExt::read_timespec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:2353 ~ miri[02e8]::helpers::EvalContextExt::read_timespec)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::shims::io_error::EvalContextExt::set_last_error_and_return (AssocFn) [DefId: DefId(0:4830 ~ miri[02e8]::shims::io_error::EvalContextExt::set_last_error_and_return)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:4830 ~ miri[02e8]::shims::io_error::EvalContextExt::set_last_error_and_return)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::helpers::EvalContextExt::check_no_isolation (AssocFn) [DefId: DefId(0:2337 ~ miri[02e8]::helpers::EvalContextExt::check_no_isolation)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:2337 ~ miri[02e8]::helpers::EvalContextExt::check_no_isolation)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::concurrency::data_race::EvalContextExt::atomic_fence (AssocFn) [DefId: DefId(0:1264 ~ miri[02e8]::concurrency::data_race::EvalContextExt::atomic_fence)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:1264 ~ miri[02e8]::concurrency::data_race::EvalContextExt::atomic_fence)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::to_u32 (AssocFn) [DefId: DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::concurrency::data_race::EvalContextExt::read_scalar_atomic (AssocFn) [DefId: DefId(0:1241 ~ miri[02e8]::concurrency::data_race::EvalContextExt::read_scalar_atomic)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:1241 ~ miri[02e8]::concurrency::data_race::EvalContextExt::read_scalar_atomic)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::concurrency::sync::EvalContextExt::get_sync_or_init (AssocFn) [DefId: DefId(0:1463 ~ miri[02e8]::concurrency::sync::EvalContextExt::get_sync_or_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:1463 ~ miri[02e8]::concurrency::sync::EvalContextExt::get_sync_or_init)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::MPlaceTy::<'tcx, Prov>::ptr (AssocFn) [DefId: DefId(141:2199 ~ rustc_const_eval[4233]::interpret::place::{impl#3}::ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2199 ~ rustc_const_eval[4233]::interpret::place::{impl#3}::ptr)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::concurrency::sync::EvalContextExt::futex_wait (AssocFn) [DefId: DefId(0:1483 ~ miri[02e8]::concurrency::sync::EvalContextExt::futex_wait)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:1483 ~ miri[02e8]::concurrency::sync::EvalContextExt::futex_wait)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::shims::io_error::EvalContextExt::set_last_error_and_return (AssocFn) [DefId: DefId(0:4830 ~ miri[02e8]::shims::io_error::EvalContextExt::set_last_error_and_return)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:4830 ~ miri[02e8]::shims::io_error::EvalContextExt::set_last_error_and_return)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::concurrency::sync::EvalContextExt::get_sync_or_init (AssocFn) [DefId: DefId(0:1463 ~ miri[02e8]::concurrency::sync::EvalContextExt::get_sync_or_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:1463 ~ miri[02e8]::concurrency::sync::EvalContextExt::get_sync_or_init)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::MPlaceTy::<'tcx, Prov>::ptr (AssocFn) [DefId: DefId(141:2199 ~ rustc_const_eval[4233]::interpret::place::{impl#3}::ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2199 ~ rustc_const_eval[4233]::interpret::place::{impl#3}::ptr)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::shims::io_error::EvalContextExt::set_last_error_and_return (AssocFn) [DefId: DefId(0:4830 ~ miri[02e8]::shims::io_error::EvalContextExt::set_last_error_and_return)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:4830 ~ miri[02e8]::shims::io_error::EvalContextExt::set_last_error_and_return)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::operand::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::read_pointer (AssocFn) [DefId: DefId(141:2052 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_pointer)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2052 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_pointer)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::operand::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::read_pointer (AssocFn) [DefId: DefId(141:2052 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_pointer)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2052 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_pointer)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::to_u32 (AssocFn) [DefId: DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::operand::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::read_scalar (AssocFn) [DefId: DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::core::num::<impl u32>::MAX (AssocConst) [DefId: DefId(2:35229 ~ core[4720]::num::{impl#8}::MAX)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:35229 ~ core[4720]::num::{impl#8}::MAX)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::shims::io_error::EvalContextExt::set_last_error_and_return (AssocFn) [DefId: DefId(0:4830 ~ miri[02e8]::shims::io_error::EvalContextExt::set_last_error_and_return)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:4830 ~ miri[02e8]::shims::io_error::EvalContextExt::set_last_error_and_return)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::concurrency::data_race::EvalContextExt::atomic_fence (AssocFn) [DefId: DefId(0:1264 ~ miri[02e8]::concurrency::data_race::EvalContextExt::atomic_fence)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:1264 ~ miri[02e8]::concurrency::data_race::EvalContextExt::atomic_fence)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::miri::concurrency::sync::EvalContextExt::futex_wake (AssocFn) [DefId: DefId(0:1484 ~ miri[02e8]::concurrency::sync::EvalContextExt::futex_wake)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(0:1484 ~ miri[02e8]::concurrency::sync::EvalContextExt::futex_wake)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::result::Result::<T, E>::unwrap (AssocFn) [DefId: DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::convert::TryInto::try_into (AssocFn) [DefId: DefId(2:3439 ~ core[4720]::convert::TryInto::try_into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:3439 ~ core[4720]::convert::TryInto::try_into)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_const_eval::rustc_const_eval::interpret::place::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::write_scalar (AssocFn) [DefId: DefId(141:2271 ~ rustc_const_eval[4233]::interpret::place::{impl#12}::write_scalar)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(141:2271 ~ rustc_const_eval[4233]::interpret::place::{impl#12}::write_scalar)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::from_target_isize (AssocFn) [DefId: DefId(169:1979 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#8}::from_target_isize)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(169:1979 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#8}::from_target_isize)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::result::Result::<T, E>::unwrap (AssocFn) [DefId: DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::convert::TryInto::try_into (AssocFn) [DefId: DefId(2:3439 ~ core[4720]::convert::TryInto::try_into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:3439 ~ core[4720]::convert::TryInto::try_into)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::linux_like::sync::futex USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3964 ~ miri[02e8]::shims::unix::linux_like::sync::futex)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    }
+  ]
+}

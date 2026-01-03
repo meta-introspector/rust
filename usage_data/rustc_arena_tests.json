@@ -1,0 +1,862 @@
+{
+  "crate": "rustc_arena",
+  "module": "tests",
+  "usages": [
+    {
+      "usage": "crate::rustc_arena::tests::test_unused USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:136 ~ rustc_arena[5775]::tests::test_unused#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_unused USES crate::alloc::std::vec::Vec::<T, A>::is_empty (AssocFn) [DefId: DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:136 ~ rustc_arena[5775]::tests::test_unused#1)",
+      "used_def_id": "DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_unused USES crate::core::std::cell::RefCell::<T>::borrow (AssocFn) [DefId: DefId(2:5604 ~ core[4720]::cell::{impl#20}::borrow)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:136 ~ rustc_arena[5775]::tests::test_unused#1)",
+      "used_def_id": "DefId(2:5604 ~ core[4720]::cell::{impl#20}::borrow)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_arena_alloc_nested USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:140 ~ rustc_arena[5775]::tests::test_arena_alloc_nested#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_arena_alloc_nested USES crate::rustc_arena::tests::test_arena_alloc_nested::Wrap::<'a>::alloc_outer (AssocFn) [DefId: DefId(0:162 ~ rustc_arena[5775]::tests::test_arena_alloc_nested#1::{impl#0}::alloc_outer)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:140 ~ rustc_arena[5775]::tests::test_arena_alloc_nested#1)",
+      "used_def_id": "DefId(0:162 ~ rustc_arena[5775]::tests::test_arena_alloc_nested#1::{impl#0}::alloc_outer)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_arena_alloc_nested USES crate::rustc_arena::tests::test_arena_alloc_nested::Wrap::<'a>::alloc_inner (AssocFn) [DefId: DefId(0:160 ~ rustc_arena[5775]::tests::test_arena_alloc_nested#1::{impl#0}::alloc_inner)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:140 ~ rustc_arena[5775]::tests::test_arena_alloc_nested#1)",
+      "used_def_id": "DefId(0:160 ~ rustc_arena[5775]::tests::test_arena_alloc_nested#1::{impl#0}::alloc_inner)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_copy USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:169 ~ rustc_arena[5775]::tests::test_copy#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_copy USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:169 ~ rustc_arena[5775]::tests::test_copy#1)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_copy USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:169 ~ rustc_arena[5775]::tests::test_copy#1)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_copy USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:169 ~ rustc_arena[5775]::tests::test_copy#1)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_copy USES crate::rustc_arena::TypedArena::<T>::alloc (AssocFn) [DefId: DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:169 ~ rustc_arena[5775]::tests::test_copy#1)",
+      "used_def_id": "DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_copy USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:169 ~ rustc_arena[5775]::tests::test_copy#1)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_copy USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:169 ~ rustc_arena[5775]::tests::test_copy#1)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_copy USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:174 ~ rustc_arena[5775]::tests::bench_copy#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_copy USES crate::test::tests::test::Bencher::iter (AssocFn) [DefId: DefId(20:105 ~ test[2031]::bench::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:174 ~ rustc_arena[5775]::tests::bench_copy#1)",
+      "used_def_id": "DefId(20:105 ~ test[2031]::bench::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_copy USES crate::rustc_arena::TypedArena::<T>::alloc (AssocFn) [DefId: DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:174 ~ rustc_arena[5775]::tests::bench_copy#1)",
+      "used_def_id": "DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_copy_nonarena USES crate::test::tests::test::Bencher::iter (AssocFn) [DefId: DefId(20:105 ~ test[2031]::bench::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:179 ~ rustc_arena[5775]::tests::bench_copy_nonarena#1)",
+      "used_def_id": "DefId(20:105 ~ test[2031]::bench::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_copy_nonarena USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:179 ~ rustc_arena[5775]::tests::bench_copy_nonarena#1)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_noncopy USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:184 ~ rustc_arena[5775]::tests::test_noncopy#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_noncopy USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:184 ~ rustc_arena[5775]::tests::test_noncopy#1)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_noncopy USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:184 ~ rustc_arena[5775]::tests::test_noncopy#1)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_noncopy USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:184 ~ rustc_arena[5775]::tests::test_noncopy#1)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_noncopy USES crate::rustc_arena::TypedArena::<T>::alloc (AssocFn) [DefId: DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:184 ~ rustc_arena[5775]::tests::test_noncopy#1)",
+      "used_def_id": "DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_noncopy USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:184 ~ rustc_arena[5775]::tests::test_noncopy#1)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_noncopy USES crate::alloc::std::slice::<impl [T]>::into_vec (AssocFn) [DefId: DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:184 ~ rustc_arena[5775]::tests::test_noncopy#1)",
+      "used_def_id": "DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_noncopy USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:184 ~ rustc_arena[5775]::tests::test_noncopy#1)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_noncopy USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:184 ~ rustc_arena[5775]::tests::test_noncopy#1)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_zero_sized USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:189 ~ rustc_arena[5775]::tests::test_typed_arena_zero_sized#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_zero_sized USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:189 ~ rustc_arena[5775]::tests::test_typed_arena_zero_sized#1)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_zero_sized USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:189 ~ rustc_arena[5775]::tests::test_typed_arena_zero_sized#1)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_zero_sized USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:189 ~ rustc_arena[5775]::tests::test_typed_arena_zero_sized#1)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_zero_sized USES crate::rustc_arena::TypedArena::<T>::alloc (AssocFn) [DefId: DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:189 ~ rustc_arena[5775]::tests::test_typed_arena_zero_sized#1)",
+      "used_def_id": "DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_zero_sized USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:189 ~ rustc_arena[5775]::tests::test_typed_arena_zero_sized#1)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_zero_sized USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:189 ~ rustc_arena[5775]::tests::test_typed_arena_zero_sized#1)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_clear USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ rustc_arena[5775]::tests::test_typed_arena_clear#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_clear USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ rustc_arena[5775]::tests::test_typed_arena_clear#1)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_clear USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ rustc_arena[5775]::tests::test_typed_arena_clear#1)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_clear USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ rustc_arena[5775]::tests::test_typed_arena_clear#1)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_clear USES crate::rustc_arena::tests::<impl TypedArena<T>>::clear (AssocFn) [DefId: DefId(0:108 ~ rustc_arena[5775]::tests::{impl#0}::clear)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ rustc_arena[5775]::tests::test_typed_arena_clear#1)",
+      "used_def_id": "DefId(0:108 ~ rustc_arena[5775]::tests::{impl#0}::clear)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_clear USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ rustc_arena[5775]::tests::test_typed_arena_clear#1)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_clear USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ rustc_arena[5775]::tests::test_typed_arena_clear#1)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_clear USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ rustc_arena[5775]::tests::test_typed_arena_clear#1)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_clear USES crate::rustc_arena::TypedArena::<T>::alloc (AssocFn) [DefId: DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ rustc_arena[5775]::tests::test_typed_arena_clear#1)",
+      "used_def_id": "DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_clear USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ rustc_arena[5775]::tests::test_typed_arena_clear#1)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_clear USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ rustc_arena[5775]::tests::test_typed_arena_clear#1)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_clear USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ rustc_arena[5775]::tests::test_typed_arena_clear#1)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_clear USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ rustc_arena[5775]::tests::test_typed_arena_clear#1)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_typed_arena_clear USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:199 ~ rustc_arena[5775]::tests::bench_typed_arena_clear#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_typed_arena_clear USES crate::test::tests::test::Bencher::iter (AssocFn) [DefId: DefId(20:105 ~ test[2031]::bench::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:199 ~ rustc_arena[5775]::tests::bench_typed_arena_clear#1)",
+      "used_def_id": "DefId(20:105 ~ test[2031]::bench::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_typed_arena_clear USES crate::rustc_arena::TypedArena::<T>::alloc (AssocFn) [DefId: DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:199 ~ rustc_arena[5775]::tests::bench_typed_arena_clear#1)",
+      "used_def_id": "DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_typed_arena_clear USES crate::rustc_arena::tests::<impl TypedArena<T>>::clear (AssocFn) [DefId: DefId(0:108 ~ rustc_arena[5775]::tests::{impl#0}::clear)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:199 ~ rustc_arena[5775]::tests::bench_typed_arena_clear#1)",
+      "used_def_id": "DefId(0:108 ~ rustc_arena[5775]::tests::{impl#0}::clear)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_typed_arena_clear_100 USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:204 ~ rustc_arena[5775]::tests::bench_typed_arena_clear_100#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_typed_arena_clear_100 USES crate::test::tests::test::Bencher::iter (AssocFn) [DefId: DefId(20:105 ~ test[2031]::bench::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:204 ~ rustc_arena[5775]::tests::bench_typed_arena_clear_100#1)",
+      "used_def_id": "DefId(20:105 ~ test[2031]::bench::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_typed_arena_clear_100 USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:204 ~ rustc_arena[5775]::tests::bench_typed_arena_clear_100#1)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_typed_arena_clear_100 USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:204 ~ rustc_arena[5775]::tests::bench_typed_arena_clear_100#1)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_typed_arena_clear_100 USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:204 ~ rustc_arena[5775]::tests::bench_typed_arena_clear_100#1)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_typed_arena_clear_100 USES crate::rustc_arena::TypedArena::<T>::alloc (AssocFn) [DefId: DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:204 ~ rustc_arena[5775]::tests::bench_typed_arena_clear_100#1)",
+      "used_def_id": "DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_typed_arena_clear_100 USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:204 ~ rustc_arena[5775]::tests::bench_typed_arena_clear_100#1)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_typed_arena_clear_100 USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:204 ~ rustc_arena[5775]::tests::bench_typed_arena_clear_100#1)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_typed_arena_clear_100 USES crate::rustc_arena::tests::<impl TypedArena<T>>::clear (AssocFn) [DefId: DefId(0:108 ~ rustc_arena[5775]::tests::{impl#0}::clear)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:204 ~ rustc_arena[5775]::tests::bench_typed_arena_clear_100#1)",
+      "used_def_id": "DefId(0:108 ~ rustc_arena[5775]::tests::{impl#0}::clear)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_count USES crate::core::std::cell::Cell::<T>::new (AssocFn) [DefId: DefId(2:5543 ~ core[4720]::cell::{impl#9}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:209 ~ rustc_arena[5775]::tests::test_typed_arena_drop_count#1)",
+      "used_def_id": "DefId(2:5543 ~ core[4720]::cell::{impl#9}::new)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_count USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:209 ~ rustc_arena[5775]::tests::test_typed_arena_drop_count#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_count USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:209 ~ rustc_arena[5775]::tests::test_typed_arena_drop_count#1)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_count USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:209 ~ rustc_arena[5775]::tests::test_typed_arena_drop_count#1)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_count USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:209 ~ rustc_arena[5775]::tests::test_typed_arena_drop_count#1)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_count USES crate::rustc_arena::TypedArena::<T>::alloc (AssocFn) [DefId: DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:209 ~ rustc_arena[5775]::tests::test_typed_arena_drop_count#1)",
+      "used_def_id": "DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_count USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:209 ~ rustc_arena[5775]::tests::test_typed_arena_drop_count#1)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_count USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:209 ~ rustc_arena[5775]::tests::test_typed_arena_drop_count#1)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_count USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:209 ~ rustc_arena[5775]::tests::test_typed_arena_drop_count#1)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::core::std::cell::Cell::<T>::new (AssocFn) [DefId: DefId(2:5543 ~ core[4720]::cell::{impl#9}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(2:5543 ~ core[4720]::cell::{impl#9}::new)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::rustc_arena::TypedArena::<T>::alloc (AssocFn) [DefId: DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::rustc_arena::tests::<impl TypedArena<T>>::clear (AssocFn) [DefId: DefId(0:108 ~ rustc_arena[5775]::tests::{impl#0}::clear)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(0:108 ~ rustc_arena[5775]::tests::{impl#0}::clear)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_on_clear USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:213 ~ rustc_arena[5775]::tests::test_typed_arena_drop_on_clear#1)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::DROP_COUNTER USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:214 ~ rustc_arena[5775]::tests::DROP_COUNTER)",
+      "used_def_id": "DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::DROP_COUNTER USES crate::std::std::thread::local_impl::LazyStorage::<T, D>::get_or_init (AssocFn) [DefId: DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:214 ~ rustc_arena[5775]::tests::DROP_COUNTER)",
+      "used_def_id": "DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::DROP_COUNTER USES crate::std::std::thread::local_impl::LazyStorage::<T, D>::get_or_init (AssocFn) [DefId: DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:214 ~ rustc_arena[5775]::tests::DROP_COUNTER)",
+      "used_def_id": "DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_small_count USES crate::std::std::thread::LocalKey::<T>::with (AssocFn) [DefId: DefId(1:570 ~ std[93f5]::thread::local::{impl#4}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:224 ~ rustc_arena[5775]::tests::test_typed_arena_drop_small_count#1)",
+      "used_def_id": "DefId(1:570 ~ std[93f5]::thread::local::{impl#4}::with)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_small_count USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:224 ~ rustc_arena[5775]::tests::test_typed_arena_drop_small_count#1)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_small_count USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:224 ~ rustc_arena[5775]::tests::test_typed_arena_drop_small_count#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_small_count USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:224 ~ rustc_arena[5775]::tests::test_typed_arena_drop_small_count#1)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_small_count USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:224 ~ rustc_arena[5775]::tests::test_typed_arena_drop_small_count#1)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_small_count USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:224 ~ rustc_arena[5775]::tests::test_typed_arena_drop_small_count#1)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_small_count USES crate::rustc_arena::TypedArena::<T>::alloc (AssocFn) [DefId: DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:224 ~ rustc_arena[5775]::tests::test_typed_arena_drop_small_count#1)",
+      "used_def_id": "DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_small_count USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:224 ~ rustc_arena[5775]::tests::test_typed_arena_drop_small_count#1)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_small_count USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:224 ~ rustc_arena[5775]::tests::test_typed_arena_drop_small_count#1)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_small_count USES crate::std::std::thread::LocalKey::<T>::with (AssocFn) [DefId: DefId(1:570 ~ std[93f5]::thread::local::{impl#4}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:224 ~ rustc_arena[5775]::tests::test_typed_arena_drop_small_count#1)",
+      "used_def_id": "DefId(1:570 ~ std[93f5]::thread::local::{impl#4}::with)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::test_typed_arena_drop_small_count USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:224 ~ rustc_arena[5775]::tests::test_typed_arena_drop_small_count#1)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_noncopy USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:230 ~ rustc_arena[5775]::tests::bench_noncopy#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_noncopy USES crate::test::tests::test::Bencher::iter (AssocFn) [DefId: DefId(20:105 ~ test[2031]::bench::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:230 ~ rustc_arena[5775]::tests::bench_noncopy#1)",
+      "used_def_id": "DefId(20:105 ~ test[2031]::bench::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_noncopy USES crate::rustc_arena::TypedArena::<T>::alloc (AssocFn) [DefId: DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:230 ~ rustc_arena[5775]::tests::bench_noncopy#1)",
+      "used_def_id": "DefId(0:48 ~ rustc_arena[5775]::{impl#3}::alloc)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_noncopy USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:230 ~ rustc_arena[5775]::tests::bench_noncopy#1)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_noncopy USES crate::alloc::std::slice::<impl [T]>::into_vec (AssocFn) [DefId: DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:230 ~ rustc_arena[5775]::tests::bench_noncopy#1)",
+      "used_def_id": "DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_noncopy_nonarena USES crate::test::tests::test::Bencher::iter (AssocFn) [DefId: DefId(20:105 ~ test[2031]::bench::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:235 ~ rustc_arena[5775]::tests::bench_noncopy_nonarena#1)",
+      "used_def_id": "DefId(20:105 ~ test[2031]::bench::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_noncopy_nonarena USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:235 ~ rustc_arena[5775]::tests::bench_noncopy_nonarena#1)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_noncopy_nonarena USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:235 ~ rustc_arena[5775]::tests::bench_noncopy_nonarena#1)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_arena::tests::bench_noncopy_nonarena USES crate::alloc::std::slice::<impl [T]>::into_vec (AssocFn) [DefId: DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:235 ~ rustc_arena[5775]::tests::bench_noncopy_nonarena#1)",
+      "used_def_id": "DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)"
+    }
+  ]
+}
