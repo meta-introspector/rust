@@ -34,7 +34,50 @@ impl UsageCollector {
         std::fs::create_dir_all("usage_data").unwrap();
         
         for (module, usages) in &self.module_data {
-            let filename = format!("usage_data/{}_{}.json", crate_name, module.replace("::", "_"));
+            // Clean filename by removing invalid characters
+            let module_clean = module
+                .replace("::", "_")
+                .replace("<", "_")
+                .replace(">", "_")
+                .replace(" ", "_")
+                .replace("/", "_")
+                .replace("\\", "_")
+                .replace("*", "_")
+                .replace("?", "_")
+                .replace("\"", "_")
+                .replace("|", "_")
+                .replace("'", "_")
+                .replace("#", "_")
+                .replace("{", "_")
+                .replace("}", "_")
+                .replace("(", "_")
+                .replace(")", "_")
+                .replace("[", "_")
+                .replace("]", "_")
+                .replace("&", "_")
+                .replace("$", "_")
+                .replace("@", "_")
+                .replace("!", "_")
+                .replace("%", "_")
+                .replace("^", "_")
+                .replace("+", "_")
+                .replace("=", "_")
+                .replace("~", "_")
+                .replace("`", "_")
+                .replace(";", "_")
+                .replace(",", "_")
+                .replace(".", "_");
+            
+            let filename = if module_clean.len() > 100 {
+                let hash = std::collections::hash_map::DefaultHasher::new();
+                use std::hash::{Hash, Hasher};
+                let mut hasher = hash;
+                module.hash(&mut hasher);
+                format!("usage_data/{}_{:x}.json", crate_name, hasher.finish())
+            } else {
+                format!("usage_data/{}_{}.json", crate_name, module_clean)
+            };
+            
             let mut file = File::create(&filename).unwrap();
             
             writeln!(file, "{{").unwrap();
