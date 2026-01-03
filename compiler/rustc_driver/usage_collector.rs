@@ -8,13 +8,22 @@ extern crate rustc_hir;
 use rustc_driver::{Callbacks, Compilation};
 use rustc_interface::interface;
 use rustc_middle::ty::TyCtxt;
-use rustc_hir::def_id::LOCAL_CRATE;
+use rustc_middle::ty::TypeckResults;
+use rustc_hir::{def_id::LOCAL_CRATE, HirId, Node};
 use std::collections::HashMap;
 use std::fs::File;
 use std::io::Write;
 
+#[derive(Debug, Clone)]
+struct UsageEntry {
+    usage: String,
+    node_type: String,
+    expr_type: Option<String>,
+    count: usize,
+}
+
 struct UsageCollector {
-    module_data: HashMap<String, Vec<String>>,
+    module_data: HashMap<String, Vec<UsageEntry>>,
 }
 
 impl UsageCollector {
