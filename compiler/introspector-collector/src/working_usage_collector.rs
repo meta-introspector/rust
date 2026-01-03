@@ -10,11 +10,28 @@ use rustc_interface::interface;
 use rustc_middle::ty::TyCtxt;
 use rustc_hir::def_id::LOCAL_CRATE;
 use std::collections::HashMap;
-use std::fs::File;
-use std::io::Write;
+use serde::{Serialize, Deserialize};
+
+#[derive(Serialize, Deserialize, Clone)]
+struct UsageEntry {
+    usage: String,
+    usage_count: usize,
+    usage_type: String,
+    node_type: String,
+    user_def_id: String,
+    used_def_id: String,
+}
+
+#[derive(Serialize, Deserialize)]
+struct ModuleData {
+    #[serde(rename = "crate")]
+    crate_name: String,
+    module: String,
+    usages: Vec<UsageEntry>,
+}
 
 struct UsageCollector {
-    module_data: HashMap<String, Vec<String>>,
+    module_data: HashMap<String, Vec<UsageEntry>>,
 }
 
 impl UsageCollector {
@@ -25,8 +42,14 @@ impl UsageCollector {
     }
     
     fn add_usage(&mut self, module: &str, usage: String, usage_type: String, node_type: String, user_def_id: String, used_def_id: String) {
-        let entry = format!("{{\"usage\":\"{}\",\"usage_count\":1,\"usage_type\":\"{}\",\"node_type\":\"{}\",\"user_def_id\":\"{}\",\"used_def_id\":\"{}\"}}", 
-            usage.replace("\"", "\\\""), usage_type, node_type, user_def_id, used_def_id);
+        let entry = UsageEntry {
+            usage,
+            usage_count: 1,
+            usage_type,
+            node_type,
+            user_def_id,
+            used_def_id,
+        };
         self.module_data.entry(module.to_string()).or_insert_with(Vec::new).push(entry);
     }
     
@@ -34,6 +57,12 @@ impl UsageCollector {
         std::fs::create_dir_all("usage_data").unwrap();
         
         for (module, usages) in &self.module_data {
+            let module_data = ModuleData {
+                crate_name: crate_name.to_string(),
+                module: module.clone(),
+                usages: usages.clone(),
+            };
+            
             // Clean filename by removing invalid characters
             let module_clean = module
                 .replace("::", "_")
@@ -78,20 +107,8 @@ impl UsageCollector {
                 format!("usage_data/{}_{}.json", crate_name, module_clean)
             };
             
-            let mut file = File::create(&filename).unwrap();
-            
-            writeln!(file, "{{").unwrap();
-            writeln!(file, "  \"crate\": \"{}\",", crate_name).unwrap();
-            writeln!(file, "  \"module\": \"{}\",", module).unwrap();
-            writeln!(file, "  \"usages\": [").unwrap();
-            
-            for (i, usage) in usages.iter().enumerate() {
-                let comma = if i == usages.len() - 1 { "" } else { "," };
-                writeln!(file, "    \"{}\"{}", usage, comma).unwrap();
-            }
-            
-            writeln!(file, "  ]").unwrap();
-            writeln!(file, "}}").unwrap();
+            let json = serde_json::to_string_pretty(&module_data).unwrap();
+            std::fs::write(&filename, json).unwrap();
             
             eprintln!("Saved {} usages to {}", usages.len(), filename);
         }

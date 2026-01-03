@@ -2,55 +2,405 @@
   "crate": "rustc_thread_pool",
   "module": "registry",
   "usages": [
-    "{"usage":"crate::rustc_thread_pool::registry::THE_REGISTRY_SET USES crate::std::std::sync::Once::new (AssocFn) [DefId: DefId(1:7435 ~ std[93f5]::sync::poison::once::{impl#2}::new)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:412 ~ rustc_thread_pool[7b40]::registry::THE_REGISTRY_SET)","used_def_id":"DefId(1:7435 ~ std[93f5]::sync::poison::once::{impl#2}::new)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::global_registry USES crate::core::std::result::Result::<T, E>::expect (AssocFn) [DefId: DefId(2:11107 ~ core[4720]::result::{impl#0}::expect)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:413 ~ rustc_thread_pool[7b40]::registry::global_registry)","used_def_id":"DefId(2:11107 ~ core[4720]::result::{impl#0}::expect)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::global_registry USES crate::core::std::result::Result::<T, E>::or_else (AssocFn) [DefId: DefId(2:11121 ~ core[4720]::result::{impl#0}::or_else)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:413 ~ rustc_thread_pool[7b40]::registry::global_registry)","used_def_id":"DefId(2:11121 ~ core[4720]::result::{impl#0}::or_else)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::global_registry USES crate::std::std::sync::Once::is_completed (AssocFn) [DefId: DefId(1:7442 ~ std[93f5]::sync::poison::once::{impl#2}::is_completed)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:413 ~ rustc_thread_pool[7b40]::registry::global_registry)","used_def_id":"DefId(1:7442 ~ std[93f5]::sync::poison::once::{impl#2}::is_completed)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::global_registry USES crate::core::std::option::Option::<T>::ok_or (AssocFn) [DefId: DefId(2:10249 ~ core[4720]::option::{impl#0}::ok_or)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:413 ~ rustc_thread_pool[7b40]::registry::global_registry)","used_def_id":"DefId(2:10249 ~ core[4720]::option::{impl#0}::ok_or)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::global_registry USES crate::core::std::option::Option::<T>::as_ref (AssocFn) [DefId: DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:413 ~ rustc_thread_pool[7b40]::registry::global_registry)","used_def_id":"DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::init_global_registry USES crate::rustc_thread_pool::registry::Registry::new (AssocFn) [DefId: DefId(0:432 ~ rustc_thread_pool[7b40]::registry::{impl#6}::new)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:415 ~ rustc_thread_pool[7b40]::registry::init_global_registry)","used_def_id":"DefId(0:432 ~ rustc_thread_pool[7b40]::registry::{impl#6}::new)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::set_global_registry USES crate::rustc_thread_pool::ThreadPoolBuildError::new (AssocFn) [DefId: DefId(0:1161 ~ rustc_thread_pool[7b40]::{impl#6}::new)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:418 ~ rustc_thread_pool[7b40]::registry::set_global_registry)","used_def_id":"DefId(0:1161 ~ rustc_thread_pool[7b40]::{impl#6}::new)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::set_global_registry USES crate::std::std::sync::Once::call_once (AssocFn) [DefId: DefId(1:7436 ~ std[93f5]::sync::poison::once::{impl#2}::call_once)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:418 ~ rustc_thread_pool[7b40]::registry::set_global_registry)","used_def_id":"DefId(1:7436 ~ std[93f5]::sync::poison::once::{impl#2}::call_once)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::set_global_registry USES crate::core::std::result::Result::<T, E>::map (AssocFn) [DefId: DefId(2:11083 ~ core[4720]::result::{impl#0}::map)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:418 ~ rustc_thread_pool[7b40]::registry::set_global_registry)","used_def_id":"DefId(2:11083 ~ core[4720]::result::{impl#0}::map)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::set_global_registry USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:418 ~ rustc_thread_pool[7b40]::registry::set_global_registry)","used_def_id":"DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::set_global_registry USES crate::core::std::ptr::mut_ptr::<impl *mut T>::write (AssocFn) [DefId: DefId(2:2911 ~ core[4720]::ptr::mut_ptr::{impl#0}::write)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:418 ~ rustc_thread_pool[7b40]::registry::set_global_registry)","used_def_id":"DefId(2:2911 ~ core[4720]::ptr::mut_ptr::{impl#0}::write)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::set_global_registry USES crate::core::std::option::Option::<T>::unwrap_unchecked (AssocFn) [DefId: DefId(2:10233 ~ core[4720]::option::{impl#0}::unwrap_unchecked)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:418 ~ rustc_thread_pool[7b40]::registry::set_global_registry)","used_def_id":"DefId(2:10233 ~ core[4720]::option::{impl#0}::unwrap_unchecked)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::set_global_registry USES crate::core::std::option::Option::<T>::as_ref (AssocFn) [DefId: DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:418 ~ rustc_thread_pool[7b40]::registry::set_global_registry)","used_def_id":"DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::registry::Registry::new (AssocFn) [DefId: DefId(0:432 ~ rustc_thread_pool[7b40]::registry::{impl#6}::new)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(0:432 ~ rustc_thread_pool[7b40]::registry::{impl#6}::new)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::ThreadPoolBuilder::new (AssocFn) [DefId: DefId(0:1095 ~ rustc_thread_pool[7b40]::{impl#1}::new)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(0:1095 ~ rustc_thread_pool[7b40]::{impl#1}::new)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::ThreadPoolBuildError::is_unsupported (AssocFn) [DefId: DefId(0:1162 ~ rustc_thread_pool[7b40]::{impl#6}::is_unsupported)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(0:1162 ~ rustc_thread_pool[7b40]::{impl#6}::is_unsupported)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::registry::WorkerThread::current (AssocFn) [DefId: DefId(0:490 ~ rustc_thread_pool[7b40]::registry::{impl#10}::current)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(0:490 ~ rustc_thread_pool[7b40]::registry::{impl#10}::current)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::ThreadPoolBuilder::<S>::spawn_handler (AssocFn) [DefId: DefId(0:1111 ~ rustc_thread_pool[7b40]::{impl#4}::spawn_handler)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(0:1111 ~ rustc_thread_pool[7b40]::{impl#4}::spawn_handler)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::ThreadPoolBuilder::<S>::num_threads (AssocFn) [DefId: DefId(0:1122 ~ rustc_thread_pool[7b40]::{impl#4}::num_threads)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(0:1122 ~ rustc_thread_pool[7b40]::{impl#4}::num_threads)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::ThreadPoolBuilder::new (AssocFn) [DefId: DefId(0:1095 ~ rustc_thread_pool[7b40]::{impl#1}::new)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(0:1095 ~ rustc_thread_pool[7b40]::{impl#1}::new)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::alloc::std::boxed::Box::<T, A>::leak (AssocFn) [DefId: DefId(3:743 ~ alloc[27b0]::boxed::{impl#7}::leak)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(3:743 ~ alloc[27b0]::boxed::{impl#7}::leak)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(2:3435 ~ core[4720]::convert::From::from)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::registry::WorkerThread::set_current (AssocFn) [DefId: DefId(0:491 ~ rustc_thread_pool[7b40]::registry::{impl#10}::set_current)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(0:491 ~ rustc_thread_pool[7b40]::registry::{impl#10}::set_current)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(2:45148 ~ core[4720]::ops::index::Index::index)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::registry::Registry::new (AssocFn) [DefId: DefId(0:432 ~ rustc_thread_pool[7b40]::registry::{impl#6}::new)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(0:432 ~ rustc_thread_pool[7b40]::registry::{impl#6}::new)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::default_global_registry USES crate::core::std::result::Result::<T, E>::is_ok (AssocFn) [DefId: DefId(2:11073 ~ core[4720]::result::{impl#0}::is_ok)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:422 ~ rustc_thread_pool[7b40]::registry::default_global_registry)","used_def_id":"DefId(2:11073 ~ core[4720]::result::{impl#0}::is_ok)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::mark_blocked USES crate::rustc_thread_pool::registry::WorkerThread::current (AssocFn) [DefId: DefId(0:490 ~ rustc_thread_pool[7b40]::registry::{impl#10}::current)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:468 ~ rustc_thread_pool[7b40]::registry::mark_blocked)","used_def_id":"DefId(0:490 ~ rustc_thread_pool[7b40]::registry::{impl#10}::current)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::mark_blocked USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:468 ~ rustc_thread_pool[7b40]::registry::mark_blocked)","used_def_id":"DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::mark_blocked USES crate::rustc_thread_pool::sleep::Sleep::mark_blocked (AssocFn) [DefId: DefId(0:806 ~ rustc_thread_pool[7b40]::sleep::{impl#1}::mark_blocked)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:468 ~ rustc_thread_pool[7b40]::registry::mark_blocked)","used_def_id":"DefId(0:806 ~ rustc_thread_pool[7b40]::sleep::{impl#1}::mark_blocked)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::mark_unblocked USES crate::rustc_thread_pool::sleep::Sleep::mark_unblocked (AssocFn) [DefId: DefId(0:807 ~ rustc_thread_pool[7b40]::sleep::{impl#1}::mark_unblocked)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:469 ~ rustc_thread_pool[7b40]::registry::mark_unblocked)","used_def_id":"DefId(0:807 ~ rustc_thread_pool[7b40]::sleep::{impl#1}::mark_unblocked)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::WORKER_THREAD_STATE USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:1424 ~ rustc_thread_pool[7b40]::registry::WORKER_THREAD_STATE)","used_def_id":"DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::WORKER_THREAD_STATE USES crate::std::std::thread::local_impl::EagerStorage::<T>::get (AssocFn) [DefId: DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:1424 ~ rustc_thread_pool[7b40]::registry::WORKER_THREAD_STATE)","used_def_id":"DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::main_loop USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:524 ~ rustc_thread_pool[7b40]::registry::main_loop)","used_def_id":"DefId(2:3435 ~ core[4720]::convert::From::from)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::main_loop USES crate::rustc_thread_pool::registry::WorkerThread::set_current (AssocFn) [DefId: DefId(0:491 ~ rustc_thread_pool[7b40]::registry::{impl#10}::set_current)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:524 ~ rustc_thread_pool[7b40]::registry::main_loop)","used_def_id":"DefId(0:491 ~ rustc_thread_pool[7b40]::registry::{impl#10}::set_current)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::main_loop USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:524 ~ rustc_thread_pool[7b40]::registry::main_loop)","used_def_id":"DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::main_loop USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:524 ~ rustc_thread_pool[7b40]::registry::main_loop)","used_def_id":"DefId(2:45148 ~ core[4720]::ops::index::Index::index)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::main_loop USES crate::rustc_thread_pool::registry::Registry::catch_unwind (AssocFn) [DefId: DefId(0:441 ~ rustc_thread_pool[7b40]::registry::{impl#6}::catch_unwind)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:524 ~ rustc_thread_pool[7b40]::registry::main_loop)","used_def_id":"DefId(0:441 ~ rustc_thread_pool[7b40]::registry::{impl#6}::catch_unwind)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::main_loop USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:524 ~ rustc_thread_pool[7b40]::registry::main_loop)","used_def_id":"DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::main_loop USES crate::rustc_thread_pool::registry::WorkerThread::wait_until_out_of_work (AssocFn) [DefId: DefId(0:514 ~ rustc_thread_pool[7b40]::registry::{impl#10}::wait_until_out_of_work)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:524 ~ rustc_thread_pool[7b40]::registry::main_loop)","used_def_id":"DefId(0:514 ~ rustc_thread_pool[7b40]::registry::{impl#10}::wait_until_out_of_work)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::main_loop USES crate::rustc_thread_pool::registry::Registry::catch_unwind (AssocFn) [DefId: DefId(0:441 ~ rustc_thread_pool[7b40]::registry::{impl#6}::catch_unwind)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:524 ~ rustc_thread_pool[7b40]::registry::main_loop)","used_def_id":"DefId(0:441 ~ rustc_thread_pool[7b40]::registry::{impl#6}::catch_unwind)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::main_loop USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:524 ~ rustc_thread_pool[7b40]::registry::main_loop)","used_def_id":"DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::main_loop USES crate::rustc_thread_pool::registry::Registry::release_thread (AssocFn) [DefId: DefId(0:446 ~ rustc_thread_pool[7b40]::registry::{impl#6}::release_thread)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:524 ~ rustc_thread_pool[7b40]::registry::main_loop)","used_def_id":"DefId(0:446 ~ rustc_thread_pool[7b40]::registry::{impl#6}::release_thread)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::in_worker USES crate::rustc_thread_pool::registry::WorkerThread::current (AssocFn) [DefId: DefId(0:490 ~ rustc_thread_pool[7b40]::registry::{impl#10}::current)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:527 ~ rustc_thread_pool[7b40]::registry::in_worker)","used_def_id":"DefId(0:490 ~ rustc_thread_pool[7b40]::registry::{impl#10}::current)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::in_worker USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:527 ~ rustc_thread_pool[7b40]::registry::in_worker)","used_def_id":"DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::in_worker USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:527 ~ rustc_thread_pool[7b40]::registry::in_worker)","used_def_id":"DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"}",
-    "{"usage":"crate::rustc_thread_pool::registry::in_worker USES crate::rustc_thread_pool::registry::Registry::in_worker (AssocFn) [DefId: DefId(0:453 ~ rustc_thread_pool[7b40]::registry::{impl#6}::in_worker)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:527 ~ rustc_thread_pool[7b40]::registry::in_worker)","used_def_id":"DefId(0:453 ~ rustc_thread_pool[7b40]::registry::{impl#6}::in_worker)"}"
+    {
+      "usage": "crate::rustc_thread_pool::registry::THE_REGISTRY_SET USES crate::std::std::sync::Once::new (AssocFn) [DefId: DefId(1:7435 ~ std[93f5]::sync::poison::once::{impl#2}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:386 ~ rustc_thread_pool[4792]::registry::THE_REGISTRY_SET)",
+      "used_def_id": "DefId(1:7435 ~ std[93f5]::sync::poison::once::{impl#2}::new)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::global_registry USES crate::core::std::result::Result::<T, E>::expect (AssocFn) [DefId: DefId(2:11107 ~ core[4720]::result::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:387 ~ rustc_thread_pool[4792]::registry::global_registry)",
+      "used_def_id": "DefId(2:11107 ~ core[4720]::result::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::global_registry USES crate::core::std::result::Result::<T, E>::or_else (AssocFn) [DefId: DefId(2:11121 ~ core[4720]::result::{impl#0}::or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:387 ~ rustc_thread_pool[4792]::registry::global_registry)",
+      "used_def_id": "DefId(2:11121 ~ core[4720]::result::{impl#0}::or_else)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::global_registry USES crate::std::std::sync::Once::is_completed (AssocFn) [DefId: DefId(1:7442 ~ std[93f5]::sync::poison::once::{impl#2}::is_completed)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:387 ~ rustc_thread_pool[4792]::registry::global_registry)",
+      "used_def_id": "DefId(1:7442 ~ std[93f5]::sync::poison::once::{impl#2}::is_completed)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::global_registry USES crate::core::std::option::Option::<T>::ok_or (AssocFn) [DefId: DefId(2:10249 ~ core[4720]::option::{impl#0}::ok_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:387 ~ rustc_thread_pool[4792]::registry::global_registry)",
+      "used_def_id": "DefId(2:10249 ~ core[4720]::option::{impl#0}::ok_or)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::global_registry USES crate::core::std::option::Option::<T>::as_ref (AssocFn) [DefId: DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:387 ~ rustc_thread_pool[4792]::registry::global_registry)",
+      "used_def_id": "DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::init_global_registry USES crate::rustc_thread_pool::registry::Registry::new (AssocFn) [DefId: DefId(0:406 ~ rustc_thread_pool[4792]::registry::{impl#6}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:389 ~ rustc_thread_pool[4792]::registry::init_global_registry)",
+      "used_def_id": "DefId(0:406 ~ rustc_thread_pool[4792]::registry::{impl#6}::new)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::set_global_registry USES crate::rustc_thread_pool::ThreadPoolBuildError::new (AssocFn) [DefId: DefId(0:1033 ~ rustc_thread_pool[4792]::{impl#6}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ rustc_thread_pool[4792]::registry::set_global_registry)",
+      "used_def_id": "DefId(0:1033 ~ rustc_thread_pool[4792]::{impl#6}::new)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::set_global_registry USES crate::std::std::sync::Once::call_once (AssocFn) [DefId: DefId(1:7436 ~ std[93f5]::sync::poison::once::{impl#2}::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ rustc_thread_pool[4792]::registry::set_global_registry)",
+      "used_def_id": "DefId(1:7436 ~ std[93f5]::sync::poison::once::{impl#2}::call_once)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::set_global_registry USES crate::core::std::result::Result::<T, E>::map (AssocFn) [DefId: DefId(2:11083 ~ core[4720]::result::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ rustc_thread_pool[4792]::registry::set_global_registry)",
+      "used_def_id": "DefId(2:11083 ~ core[4720]::result::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::set_global_registry USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ rustc_thread_pool[4792]::registry::set_global_registry)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::set_global_registry USES crate::core::std::ptr::mut_ptr::<impl *mut T>::write (AssocFn) [DefId: DefId(2:2911 ~ core[4720]::ptr::mut_ptr::{impl#0}::write)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ rustc_thread_pool[4792]::registry::set_global_registry)",
+      "used_def_id": "DefId(2:2911 ~ core[4720]::ptr::mut_ptr::{impl#0}::write)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::set_global_registry USES crate::core::std::option::Option::<T>::unwrap_unchecked (AssocFn) [DefId: DefId(2:10233 ~ core[4720]::option::{impl#0}::unwrap_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ rustc_thread_pool[4792]::registry::set_global_registry)",
+      "used_def_id": "DefId(2:10233 ~ core[4720]::option::{impl#0}::unwrap_unchecked)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::set_global_registry USES crate::core::std::option::Option::<T>::as_ref (AssocFn) [DefId: DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ rustc_thread_pool[4792]::registry::set_global_registry)",
+      "used_def_id": "DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::registry::Registry::new (AssocFn) [DefId: DefId(0:406 ~ rustc_thread_pool[4792]::registry::{impl#6}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(0:406 ~ rustc_thread_pool[4792]::registry::{impl#6}::new)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::ThreadPoolBuilder::new (AssocFn) [DefId: DefId(0:967 ~ rustc_thread_pool[4792]::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(0:967 ~ rustc_thread_pool[4792]::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::ThreadPoolBuildError::is_unsupported (AssocFn) [DefId: DefId(0:1034 ~ rustc_thread_pool[4792]::{impl#6}::is_unsupported)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(0:1034 ~ rustc_thread_pool[4792]::{impl#6}::is_unsupported)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::registry::WorkerThread::current (AssocFn) [DefId: DefId(0:464 ~ rustc_thread_pool[4792]::registry::{impl#10}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(0:464 ~ rustc_thread_pool[4792]::registry::{impl#10}::current)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::ThreadPoolBuilder::<S>::spawn_handler (AssocFn) [DefId: DefId(0:983 ~ rustc_thread_pool[4792]::{impl#4}::spawn_handler)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(0:983 ~ rustc_thread_pool[4792]::{impl#4}::spawn_handler)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::ThreadPoolBuilder::<S>::num_threads (AssocFn) [DefId: DefId(0:994 ~ rustc_thread_pool[4792]::{impl#4}::num_threads)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(0:994 ~ rustc_thread_pool[4792]::{impl#4}::num_threads)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::ThreadPoolBuilder::new (AssocFn) [DefId: DefId(0:967 ~ rustc_thread_pool[4792]::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(0:967 ~ rustc_thread_pool[4792]::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::alloc::std::boxed::Box::<T, A>::leak (AssocFn) [DefId: DefId(3:743 ~ alloc[27b0]::boxed::{impl#7}::leak)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(3:743 ~ alloc[27b0]::boxed::{impl#7}::leak)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::registry::WorkerThread::set_current (AssocFn) [DefId: DefId(0:465 ~ rustc_thread_pool[4792]::registry::{impl#10}::set_current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(0:465 ~ rustc_thread_pool[4792]::registry::{impl#10}::set_current)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::rustc_thread_pool::registry::Registry::new (AssocFn) [DefId: DefId(0:406 ~ rustc_thread_pool[4792]::registry::{impl#6}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(0:406 ~ rustc_thread_pool[4792]::registry::{impl#6}::new)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::default_global_registry USES crate::core::std::result::Result::<T, E>::is_ok (AssocFn) [DefId: DefId(2:11073 ~ core[4720]::result::{impl#0}::is_ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:396 ~ rustc_thread_pool[4792]::registry::default_global_registry)",
+      "used_def_id": "DefId(2:11073 ~ core[4720]::result::{impl#0}::is_ok)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::mark_blocked USES crate::rustc_thread_pool::registry::WorkerThread::current (AssocFn) [DefId: DefId(0:464 ~ rustc_thread_pool[4792]::registry::{impl#10}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:442 ~ rustc_thread_pool[4792]::registry::mark_blocked)",
+      "used_def_id": "DefId(0:464 ~ rustc_thread_pool[4792]::registry::{impl#10}::current)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::mark_blocked USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:442 ~ rustc_thread_pool[4792]::registry::mark_blocked)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::mark_blocked USES crate::rustc_thread_pool::sleep::Sleep::mark_blocked (AssocFn) [DefId: DefId(0:729 ~ rustc_thread_pool[4792]::sleep::{impl#1}::mark_blocked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:442 ~ rustc_thread_pool[4792]::registry::mark_blocked)",
+      "used_def_id": "DefId(0:729 ~ rustc_thread_pool[4792]::sleep::{impl#1}::mark_blocked)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::mark_unblocked USES crate::rustc_thread_pool::sleep::Sleep::mark_unblocked (AssocFn) [DefId: DefId(0:730 ~ rustc_thread_pool[4792]::sleep::{impl#1}::mark_unblocked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:443 ~ rustc_thread_pool[4792]::registry::mark_unblocked)",
+      "used_def_id": "DefId(0:730 ~ rustc_thread_pool[4792]::sleep::{impl#1}::mark_unblocked)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::WORKER_THREAD_STATE USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1132 ~ rustc_thread_pool[4792]::registry::WORKER_THREAD_STATE)",
+      "used_def_id": "DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::WORKER_THREAD_STATE USES crate::std::std::thread::local_impl::EagerStorage::<T>::get (AssocFn) [DefId: DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1132 ~ rustc_thread_pool[4792]::registry::WORKER_THREAD_STATE)",
+      "used_def_id": "DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::main_loop USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:498 ~ rustc_thread_pool[4792]::registry::main_loop)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::main_loop USES crate::rustc_thread_pool::registry::WorkerThread::set_current (AssocFn) [DefId: DefId(0:465 ~ rustc_thread_pool[4792]::registry::{impl#10}::set_current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:498 ~ rustc_thread_pool[4792]::registry::main_loop)",
+      "used_def_id": "DefId(0:465 ~ rustc_thread_pool[4792]::registry::{impl#10}::set_current)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::main_loop USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:498 ~ rustc_thread_pool[4792]::registry::main_loop)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::main_loop USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:498 ~ rustc_thread_pool[4792]::registry::main_loop)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::main_loop USES crate::rustc_thread_pool::registry::Registry::catch_unwind (AssocFn) [DefId: DefId(0:415 ~ rustc_thread_pool[4792]::registry::{impl#6}::catch_unwind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:498 ~ rustc_thread_pool[4792]::registry::main_loop)",
+      "used_def_id": "DefId(0:415 ~ rustc_thread_pool[4792]::registry::{impl#6}::catch_unwind)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::main_loop USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:498 ~ rustc_thread_pool[4792]::registry::main_loop)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::main_loop USES crate::rustc_thread_pool::registry::WorkerThread::wait_until_out_of_work (AssocFn) [DefId: DefId(0:488 ~ rustc_thread_pool[4792]::registry::{impl#10}::wait_until_out_of_work)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:498 ~ rustc_thread_pool[4792]::registry::main_loop)",
+      "used_def_id": "DefId(0:488 ~ rustc_thread_pool[4792]::registry::{impl#10}::wait_until_out_of_work)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::main_loop USES crate::rustc_thread_pool::registry::Registry::catch_unwind (AssocFn) [DefId: DefId(0:415 ~ rustc_thread_pool[4792]::registry::{impl#6}::catch_unwind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:498 ~ rustc_thread_pool[4792]::registry::main_loop)",
+      "used_def_id": "DefId(0:415 ~ rustc_thread_pool[4792]::registry::{impl#6}::catch_unwind)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::main_loop USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:498 ~ rustc_thread_pool[4792]::registry::main_loop)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::main_loop USES crate::rustc_thread_pool::registry::Registry::release_thread (AssocFn) [DefId: DefId(0:420 ~ rustc_thread_pool[4792]::registry::{impl#6}::release_thread)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:498 ~ rustc_thread_pool[4792]::registry::main_loop)",
+      "used_def_id": "DefId(0:420 ~ rustc_thread_pool[4792]::registry::{impl#6}::release_thread)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::in_worker USES crate::rustc_thread_pool::registry::WorkerThread::current (AssocFn) [DefId: DefId(0:464 ~ rustc_thread_pool[4792]::registry::{impl#10}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:501 ~ rustc_thread_pool[4792]::registry::in_worker)",
+      "used_def_id": "DefId(0:464 ~ rustc_thread_pool[4792]::registry::{impl#10}::current)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::in_worker USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:501 ~ rustc_thread_pool[4792]::registry::in_worker)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::in_worker USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:501 ~ rustc_thread_pool[4792]::registry::in_worker)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::rustc_thread_pool::registry::in_worker USES crate::rustc_thread_pool::registry::Registry::in_worker (AssocFn) [DefId: DefId(0:427 ~ rustc_thread_pool[4792]::registry::{impl#6}::in_worker)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:501 ~ rustc_thread_pool[4792]::registry::in_worker)",
+      "used_def_id": "DefId(0:427 ~ rustc_thread_pool[4792]::registry::{impl#6}::in_worker)"
+    }
   ]
 }
