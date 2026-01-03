@@ -121,7 +121,7 @@ impl Callbacks for SimpleConstantCallbacks {
             println!("SUMMARY: {} item types saved to {}", self.item_counts.len(), summary_file);
         }
         
-        rustc_driver::Compilation::Continue
+        rustc_driver::Compilation::Stop  // STOP after analysis - no codegen needed!
     }
 }
 
