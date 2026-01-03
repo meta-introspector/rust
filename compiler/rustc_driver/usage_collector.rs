@@ -51,10 +51,11 @@ impl UsageCollector {
             full_name.hash(&mut hasher);
             let hash = hasher.finish();
             
-            let file_name = if full_name.len() > 100 {
-                format!("{:x}.json", hash)
+            let clean_name = format!("{}_{}", crate_name, module.replace("::", "_").replace("<", "_").replace(">", "_").replace(" ", "_").replace(",", "_").replace("'", "_"));
+            let file_name = if clean_name.len() > 64 {
+                format!("{}_{:x}.json", &clean_name[..40], hash)
             } else {
-                format!("{}_{}.json", crate_name, module.replace("::", "_").replace("<", "_").replace(">", "_").replace(" ", "_").replace(",", "_").replace("'", "_"))
+                format!("{}.json", clean_name)
             };
             
             let filename = format!("{}/{}", output_dir, file_name);
@@ -73,8 +74,7 @@ impl UsageCollector {
             writeln!(file, "  ]").unwrap();
             writeln!(file, "}}").unwrap();
             
-            eprintln!("Saved {} usages to {}", usages.len(), filename);
-            eprintln!("ABS_FILE: {}", std::fs::canonicalize(&filename).unwrap_or_else(|_| filename.into()).display());
+
         }
     }
 }
@@ -131,15 +131,25 @@ impl Callbacks for UsageCollector {
 fn main() {
     let args: Vec<String> = std::env::args().collect();
     
-    if args.iter().any(|arg| arg.starts_with("--print") || arg == "--version" || arg == "-V") {
+    // When used as RUSTC_WRAPPER, cargo calls us like: wrapper rustc [args...]
+    let rustc_args: Vec<String> = if args.len() > 1 && args[1] == "rustc" {
+        args[2..].to_vec()
+    } else {
+        args[1..].to_vec()
+    };
+    
+    // For --print queries and other non-compilation tasks, just pass through to rustc
+    if rustc_args.iter().any(|arg| arg.starts_with("--print") || arg == "--version" || arg == "-V") {
         let mut cmd = std::process::Command::new("rustc");
-        cmd.args(&args[1..]);
+        cmd.args(&rustc_args);
         std::process::exit(cmd.status().unwrap().code().unwrap_or(1));
     }
     
     let mut callbacks = UsageCollector::new();
     let result = rustc_driver::catch_fatal_errors(|| {
-        rustc_driver::run_compiler(&args, &mut callbacks)
+        let mut full_args = vec!["rustc".to_string()];
+        full_args.extend(rustc_args);
+        rustc_driver::run_compiler(&full_args, &mut callbacks)
     });
     
     std::process::exit(match result { Ok(_) => 0, Err(_) => 1 });
