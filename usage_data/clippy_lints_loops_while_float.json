@@ -1,0 +1,30 @@
+{
+  "crate": "clippy_lints",
+  "module": "loops::while_float",
+  "usages": [
+    {
+      "usage": "crate::clippy_lints::loops::while_float::is_float_type USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::is_floating_point (AssocFn) [DefId: DefId(165:8900 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_floating_point)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:8299 ~ clippy_lints[d854]::loops::while_float::is_float_type)",
+      "used_def_id": "DefId(165:8900 ~ rustc_middle[ac2e]::ty::sty::{impl#11}::is_floating_point)"
+    },
+    {
+      "usage": "crate::clippy_lints::loops::while_float::is_float_type USES crate::rustc_middle::rustc_middle::ty::TypeckResults::<'tcx>::expr_ty (AssocFn) [DefId: DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:8299 ~ clippy_lints[d854]::loops::while_float::is_float_type)",
+      "used_def_id": "DefId(165:9052 ~ rustc_middle[ac2e]::ty::typeck_results::{impl#0}::expr_ty)"
+    },
+    {
+      "usage": "crate::clippy_lints::loops::while_float::is_float_type USES crate::rustc_lint::rustc_lint::LateContext::<'tcx>::typeck_results (AssocFn) [DefId: DefId(228:574 ~ rustc_lint[ad2f]::context::{impl#5}::typeck_results)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:8299 ~ clippy_lints[d854]::loops::while_float::is_float_type)",
+      "used_def_id": "DefId(228:574 ~ rustc_lint[ad2f]::context::{impl#5}::typeck_results)"
+    }
+  ]
+}

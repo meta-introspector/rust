@@ -1,0 +1,38 @@
+{
+  "crate": "rustc_data_structures",
+  "module": "sync::worker_local",
+  "usages": [
+    {
+      "usage": "crate::rustc_data_structures::sync::worker_local::REGISTRY USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5089 ~ rustc_data_structures[8616]::sync::worker_local::REGISTRY)",
+      "used_def_id": "DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::rustc_data_structures::sync::worker_local::REGISTRY USES crate::std::std::thread::local_impl::EagerStorage::<T>::get (AssocFn) [DefId: DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5089 ~ rustc_data_structures[8616]::sync::worker_local::REGISTRY)",
+      "used_def_id": "DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)"
+    },
+    {
+      "usage": "crate::rustc_data_structures::sync::worker_local::THREAD_DATA USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5096 ~ rustc_data_structures[8616]::sync::worker_local::THREAD_DATA)",
+      "used_def_id": "DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::rustc_data_structures::sync::worker_local::THREAD_DATA USES crate::std::std::thread::local_impl::EagerStorage::<T>::get (AssocFn) [DefId: DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5096 ~ rustc_data_structures[8616]::sync::worker_local::THREAD_DATA)",
+      "used_def_id": "DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)"
+    }
+  ]
+}

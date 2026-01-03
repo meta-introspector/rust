@@ -1,0 +1,38 @@
+{
+  "crate": "rustc_hir",
+  "module": "tests::def_path_hash_depends_on_crate_id::{closure#0}",
+  "usages": [
+    {
+      "usage": "crate::rustc_hir::tests::def_path_hash_depends_on_crate_id::{closure#0}::mk_test_hash USES crate::rustc_span::rustc_span::def_id::DefPathHash::new (AssocFn) [DefId: DefId(73:552 ~ rustc_span[e3e8]::def_id::{impl#2}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7894 ~ rustc_hir[ab34]::tests::def_path_hash_depends_on_crate_id#1::{closure#0}::mk_test_hash)",
+      "used_def_id": "DefId(73:552 ~ rustc_span[e3e8]::def_id::{impl#2}::new)"
+    },
+    {
+      "usage": "crate::rustc_hir::tests::def_path_hash_depends_on_crate_id::{closure#0}::mk_test_hash USES crate::rustc_hashes::rustc_hashes::Hash64::new (AssocFn) [DefId: DefId(29:10 ~ rustc_hashes[225f]::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7894 ~ rustc_hir[ab34]::tests::def_path_hash_depends_on_crate_id#1::{closure#0}::mk_test_hash)",
+      "used_def_id": "DefId(29:10 ~ rustc_hashes[225f]::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_hir::tests::def_path_hash_depends_on_crate_id::{closure#0}::mk_test_hash USES crate::rustc_span::rustc_span::def_id::StableCrateId::as_u64 (AssocFn) [DefId: DefId(73:560 ~ rustc_span[e3e8]::def_id::{impl#5}::as_u64)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7894 ~ rustc_hir[ab34]::tests::def_path_hash_depends_on_crate_id#1::{closure#0}::mk_test_hash)",
+      "used_def_id": "DefId(73:560 ~ rustc_span[e3e8]::def_id::{impl#5}::as_u64)"
+    },
+    {
+      "usage": "crate::rustc_hir::tests::def_path_hash_depends_on_crate_id::{closure#0}::mk_test_hash USES crate::rustc_hir::definitions::DefKey::compute_stable_hash (AssocFn) [DefId: DefId(0:292 ~ rustc_hir[ab34]::definitions::{impl#2}::compute_stable_hash)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7894 ~ rustc_hir[ab34]::tests::def_path_hash_depends_on_crate_id#1::{closure#0}::mk_test_hash)",
+      "used_def_id": "DefId(0:292 ~ rustc_hir[ab34]::definitions::{impl#2}::compute_stable_hash)"
+    }
+  ]
+}

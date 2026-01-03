@@ -1,0 +1,1942 @@
+{
+  "crate": "miri",
+  "module": "shims::unix::sync",
+  "usages": [
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::core::num::<impl u64>::is_multiple_of (AssocFn) [DefId: DefId(2:35500 ~ core[4720]::num::{impl#9}::is_multiple_of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:35500 ~ core[4720]::num::{impl#9}::is_multiple_of)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::rustc_abi::rustc_abi::Size::bytes (AssocFn) [DefId: DefId(26:582 ~ rustc_abi[d8e9]::{impl#12}::bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(26:582 ~ rustc_abi[d8e9]::{impl#12}::bytes)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::rustc_abi::rustc_abi::Size::bytes (AssocFn) [DefId: DefId(26:582 ~ rustc_abi[d8e9]::{impl#12}::bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(26:582 ~ rustc_abi[d8e9]::{impl#12}::bytes)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::rustc_abi::rustc_abi::Size::from_bytes (AssocFn) [DefId: DefId(26:580 ~ rustc_abi[d8e9]::{impl#12}::from_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(26:580 ~ rustc_abi[d8e9]::{impl#12}::from_bytes)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::core::num::<impl u64>::strict_mul (AssocFn) [DefId: DefId(2:35416 ~ core[4720]::num::{impl#9}::strict_mul)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:35416 ~ core[4720]::num::{impl#9}::strict_mul)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::rustc_const_eval::rustc_const_eval::interpret::Projectable::offset (AssocFn) [DefId: DefId(141:2338 ~ rustc_const_eval[4233]::interpret::projection::Projectable::offset)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(141:2338 ~ rustc_const_eval[4233]::interpret::projection::Projectable::offset)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::to_u32 (AssocFn) [DefId: DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::miri::concurrency::data_race::EvalContextExt::read_scalar_atomic (AssocFn) [DefId: DefId(0:1241 ~ miri[02e8]::concurrency::data_race::EvalContextExt::read_scalar_atomic)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(0:1241 ~ miri[02e8]::concurrency::data_race::EvalContextExt::read_scalar_atomic)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::bytewise_equal_atomic_relaxed USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3613 ~ miri[02e8]::shims::unix::sync::bytewise_equal_atomic_relaxed)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_kind_offset USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3616 ~ miri[02e8]::shims::unix::sync::mutexattr_kind_offset)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_kind_offset USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3616 ~ miri[02e8]::shims::unix::sync::mutexattr_kind_offset)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_kind_offset USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3616 ~ miri[02e8]::shims::unix::sync::mutexattr_kind_offset)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_kind_offset USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3616 ~ miri[02e8]::shims::unix::sync::mutexattr_kind_offset)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_get_kind USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::to_i32 (AssocFn) [DefId: DefId(169:2020 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3618 ~ miri[02e8]::shims::unix::sync::mutexattr_get_kind)",
+      "used_def_id": "DefId(169:2020 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_get_kind USES crate::miri::helpers::EvalContextExt::deref_pointer_and_read (AssocFn) [DefId: DefId(0:2348 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_and_read)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3618 ~ miri[02e8]::shims::unix::sync::mutexattr_get_kind)",
+      "used_def_id": "DefId(0:2348 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_and_read)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_get_kind USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3618 ~ miri[02e8]::shims::unix::sync::mutexattr_get_kind)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_get_kind USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3618 ~ miri[02e8]::shims::unix::sync::mutexattr_get_kind)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_get_kind USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3618 ~ miri[02e8]::shims::unix::sync::mutexattr_get_kind)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_get_kind USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3618 ~ miri[02e8]::shims::unix::sync::mutexattr_get_kind)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_get_kind USES crate::miri::helpers::EvalContextExt::libc_ty_layout (AssocFn) [DefId: DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3618 ~ miri[02e8]::shims::unix::sync::mutexattr_get_kind)",
+      "used_def_id": "DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_get_kind USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3618 ~ miri[02e8]::shims::unix::sync::mutexattr_get_kind)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_get_kind USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3618 ~ miri[02e8]::shims::unix::sync::mutexattr_get_kind)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_get_kind USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3618 ~ miri[02e8]::shims::unix::sync::mutexattr_get_kind)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_get_kind USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3618 ~ miri[02e8]::shims::unix::sync::mutexattr_get_kind)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_set_kind USES crate::miri::helpers::EvalContextExt::deref_pointer_and_write (AssocFn) [DefId: DefId(0:2350 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_and_write)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3620 ~ miri[02e8]::shims::unix::sync::mutexattr_set_kind)",
+      "used_def_id": "DefId(0:2350 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_and_write)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_set_kind USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3620 ~ miri[02e8]::shims::unix::sync::mutexattr_set_kind)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_set_kind USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3620 ~ miri[02e8]::shims::unix::sync::mutexattr_set_kind)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_set_kind USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3620 ~ miri[02e8]::shims::unix::sync::mutexattr_set_kind)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_set_kind USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3620 ~ miri[02e8]::shims::unix::sync::mutexattr_set_kind)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_set_kind USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::from_i32 (AssocFn) [DefId: DefId(169:1976 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#8}::from_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3620 ~ miri[02e8]::shims::unix::sync::mutexattr_set_kind)",
+      "used_def_id": "DefId(169:1976 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#8}::from_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_set_kind USES crate::miri::helpers::EvalContextExt::libc_ty_layout (AssocFn) [DefId: DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3620 ~ miri[02e8]::shims::unix::sync::mutexattr_set_kind)",
+      "used_def_id": "DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_translate_kind USES crate::miri::helpers::EvalContextExt::eval_libc_i32 (AssocFn) [DefId: DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3623 ~ miri[02e8]::shims::unix::sync::mutexattr_translate_kind)",
+      "used_def_id": "DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_translate_kind USES crate::miri::helpers::EvalContextExt::eval_libc_i32 (AssocFn) [DefId: DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3623 ~ miri[02e8]::shims::unix::sync::mutexattr_translate_kind)",
+      "used_def_id": "DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_translate_kind USES crate::miri::helpers::EvalContextExt::eval_libc_i32 (AssocFn) [DefId: DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3623 ~ miri[02e8]::shims::unix::sync::mutexattr_translate_kind)",
+      "used_def_id": "DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_translate_kind USES crate::miri::helpers::EvalContextExt::eval_libc_i32 (AssocFn) [DefId: DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3623 ~ miri[02e8]::shims::unix::sync::mutexattr_translate_kind)",
+      "used_def_id": "DefId(0:2281 ~ miri[02e8]::helpers::EvalContextExt::eval_libc_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_translate_kind USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3623 ~ miri[02e8]::shims::unix::sync::mutexattr_translate_kind)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_translate_kind USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3623 ~ miri[02e8]::shims::unix::sync::mutexattr_translate_kind)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutexattr_translate_kind USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3623 ~ miri[02e8]::shims::unix::sync::mutexattr_translate_kind)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::rustc_abi::rustc_abi::Size::from_bytes (AssocFn) [DefId: DefId(26:580 ~ rustc_abi[d8e9]::{impl#12}::from_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(26:580 ~ rustc_abi[d8e9]::{impl#12}::from_bytes)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::std::cell::Cell::<T>::replace (AssocFn) [DefId: DefId(2:5548 ~ core[4720]::cell::{impl#9}::replace)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:5548 ~ core[4720]::cell::{impl#9}::replace)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::miri::helpers::EvalContextExt::eval_path (AssocFn) [DefId: DefId(0:2276 ~ miri[02e8]::helpers::EvalContextExt::eval_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(0:2276 ~ miri[02e8]::helpers::EvalContextExt::eval_path)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::rustc_middle::rustc_const_eval::interpret::InterpResult::<'tcx, T>::unwrap (AssocFn) [DefId: DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::rustc_const_eval::rustc_const_eval::interpret::Projectable::offset (AssocFn) [DefId: DefId(141:2338 ~ rustc_const_eval[4233]::interpret::projection::Projectable::offset)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(141:2338 ~ rustc_const_eval[4233]::interpret::projection::Projectable::offset)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::rustc_middle::rustc_const_eval::interpret::InterpResult::<'tcx, T>::unwrap (AssocFn) [DefId: DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::to_u32 (AssocFn) [DefId: DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::rustc_middle::rustc_const_eval::interpret::InterpResult::<'tcx, T>::unwrap (AssocFn) [DefId: DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::rustc_const_eval::rustc_const_eval::interpret::operand::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::read_scalar (AssocFn) [DefId: DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_init_offset USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3625 ~ miri[02e8]::shims::unix::sync::mutex_init_offset)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::miri::helpers::EvalContextExt::deref_pointer_as (AssocFn) [DefId: DefId(0:2344 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_as)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(0:2344 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_as)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::miri::helpers::EvalContextExt::libc_ty_layout (AssocFn) [DefId: DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::miri::concurrency::sync::MutexRef::new (AssocFn) [DefId: DefId(0:1417 ~ miri[02e8]::concurrency::sync::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(0:1417 ~ miri[02e8]::concurrency::sync::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::miri::concurrency::sync::EvalContextExt::lazy_sync_init (AssocFn) [DefId: DefId(0:1455 ~ miri[02e8]::concurrency::sync::EvalContextExt::lazy_sync_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(0:1455 ~ miri[02e8]::concurrency::sync::EvalContextExt::lazy_sync_init)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_create USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3628 ~ miri[02e8]::shims::unix::sync::mutex_create)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::miri::helpers::EvalContextExt::deref_pointer_as (AssocFn) [DefId: DefId(0:2344 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_as)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(0:2344 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_as)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::miri::helpers::EvalContextExt::libc_ty_layout (AssocFn) [DefId: DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::miri::concurrency::sync::EvalContextExt::lazy_sync_get_data (AssocFn) [DefId: DefId(0:1458 ~ miri[02e8]::concurrency::sync::EvalContextExt::lazy_sync_get_data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(0:1458 ~ miri[02e8]::concurrency::sync::EvalContextExt::lazy_sync_get_data)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_get_data USES crate::miri::concurrency::sync::MutexRef::new (AssocFn) [DefId: DefId(0:1417 ~ miri[02e8]::concurrency::sync::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3630 ~ miri[02e8]::shims::unix::sync::mutex_get_data)",
+      "used_def_id": "DefId(0:1417 ~ miri[02e8]::concurrency::sync::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::miri::helpers::EvalContextExt::eval_path (AssocFn) [DefId: DefId(0:2276 ~ miri[02e8]::helpers::EvalContextExt::eval_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(0:2276 ~ miri[02e8]::helpers::EvalContextExt::eval_path)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::mutex_kind_from_static_initializer USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3635 ~ miri[02e8]::shims::unix::sync::mutex_kind_from_static_initializer)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::rustc_abi::rustc_abi::Size::from_bytes (AssocFn) [DefId: DefId(26:580 ~ rustc_abi[d8e9]::{impl#12}::from_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(26:580 ~ rustc_abi[d8e9]::{impl#12}::from_bytes)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::core::std::cell::Cell::<T>::replace (AssocFn) [DefId: DefId(2:5548 ~ core[4720]::cell::{impl#9}::replace)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(2:5548 ~ core[4720]::cell::{impl#9}::replace)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::miri::helpers::EvalContextExt::eval_path (AssocFn) [DefId: DefId(0:2276 ~ miri[02e8]::helpers::EvalContextExt::eval_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(0:2276 ~ miri[02e8]::helpers::EvalContextExt::eval_path)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::rustc_middle::rustc_const_eval::interpret::InterpResult::<'tcx, T>::unwrap (AssocFn) [DefId: DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::rustc_const_eval::rustc_const_eval::interpret::Projectable::offset (AssocFn) [DefId: DefId(141:2338 ~ rustc_const_eval[4233]::interpret::projection::Projectable::offset)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(141:2338 ~ rustc_const_eval[4233]::interpret::projection::Projectable::offset)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::rustc_middle::rustc_const_eval::interpret::InterpResult::<'tcx, T>::unwrap (AssocFn) [DefId: DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::to_u32 (AssocFn) [DefId: DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::rustc_middle::rustc_const_eval::interpret::InterpResult::<'tcx, T>::unwrap (AssocFn) [DefId: DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::rustc_const_eval::rustc_const_eval::interpret::operand::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::read_scalar (AssocFn) [DefId: DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_init_offset USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3638 ~ miri[02e8]::shims::unix::sync::rwlock_init_offset)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::miri::helpers::EvalContextExt::deref_pointer_as (AssocFn) [DefId: DefId(0:2344 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_as)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(0:2344 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_as)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::miri::helpers::EvalContextExt::libc_ty_layout (AssocFn) [DefId: DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::miri::concurrency::sync::EvalContextExt::lazy_sync_get_data (AssocFn) [DefId: DefId(0:1458 ~ miri[02e8]::concurrency::sync::EvalContextExt::lazy_sync_get_data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(0:1458 ~ miri[02e8]::concurrency::sync::EvalContextExt::lazy_sync_get_data)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::miri::helpers::EvalContextExt::eval_path (AssocFn) [DefId: DefId(0:2276 ~ miri[02e8]::helpers::EvalContextExt::eval_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(0:2276 ~ miri[02e8]::helpers::EvalContextExt::eval_path)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::rwlock_get_data USES crate::miri::concurrency::sync::RwLockRef::new (AssocFn) [DefId: DefId(0:1425 ~ miri[02e8]::concurrency::sync::{impl#3}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3640 ~ miri[02e8]::shims::unix::sync::rwlock_get_data)",
+      "used_def_id": "DefId(0:1425 ~ miri[02e8]::concurrency::sync::{impl#3}::new)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_clock_offset USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3645 ~ miri[02e8]::shims::unix::sync::condattr_clock_offset)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_clock_offset USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3645 ~ miri[02e8]::shims::unix::sync::condattr_clock_offset)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_clock_offset USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3645 ~ miri[02e8]::shims::unix::sync::condattr_clock_offset)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_clock_offset USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3645 ~ miri[02e8]::shims::unix::sync::condattr_clock_offset)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_get_clock_id USES crate::miri::helpers::EvalContextExt::deref_pointer_and_read (AssocFn) [DefId: DefId(0:2348 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_and_read)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3647 ~ miri[02e8]::shims::unix::sync::condattr_get_clock_id)",
+      "used_def_id": "DefId(0:2348 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_and_read)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_get_clock_id USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3647 ~ miri[02e8]::shims::unix::sync::condattr_get_clock_id)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_get_clock_id USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3647 ~ miri[02e8]::shims::unix::sync::condattr_get_clock_id)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_get_clock_id USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3647 ~ miri[02e8]::shims::unix::sync::condattr_get_clock_id)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_get_clock_id USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3647 ~ miri[02e8]::shims::unix::sync::condattr_get_clock_id)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_get_clock_id USES crate::miri::helpers::EvalContextExt::libc_ty_layout (AssocFn) [DefId: DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3647 ~ miri[02e8]::shims::unix::sync::condattr_get_clock_id)",
+      "used_def_id": "DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_set_clock_id USES crate::miri::helpers::EvalContextExt::deref_pointer_and_write (AssocFn) [DefId: DefId(0:2350 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_and_write)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3649 ~ miri[02e8]::shims::unix::sync::condattr_set_clock_id)",
+      "used_def_id": "DefId(0:2350 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_and_write)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_set_clock_id USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3649 ~ miri[02e8]::shims::unix::sync::condattr_set_clock_id)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_set_clock_id USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3649 ~ miri[02e8]::shims::unix::sync::condattr_set_clock_id)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_set_clock_id USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3649 ~ miri[02e8]::shims::unix::sync::condattr_set_clock_id)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_set_clock_id USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3649 ~ miri[02e8]::shims::unix::sync::condattr_set_clock_id)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_set_clock_id USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::from_i32 (AssocFn) [DefId: DefId(169:1976 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#8}::from_i32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3649 ~ miri[02e8]::shims::unix::sync::condattr_set_clock_id)",
+      "used_def_id": "DefId(169:1976 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#8}::from_i32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::condattr_set_clock_id USES crate::miri::helpers::EvalContextExt::libc_ty_layout (AssocFn) [DefId: DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3649 ~ miri[02e8]::shims::unix::sync::condattr_set_clock_id)",
+      "used_def_id": "DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::rustc_abi::rustc_abi::Size::from_bytes (AssocFn) [DefId: DefId(26:580 ~ rustc_abi[d8e9]::{impl#12}::from_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(26:580 ~ rustc_abi[d8e9]::{impl#12}::from_bytes)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::core::std::cell::Cell::<T>::replace (AssocFn) [DefId: DefId(2:5548 ~ core[4720]::cell::{impl#9}::replace)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(2:5548 ~ core[4720]::cell::{impl#9}::replace)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::miri::helpers::EvalContextExt::eval_path (AssocFn) [DefId: DefId(0:2276 ~ miri[02e8]::helpers::EvalContextExt::eval_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(0:2276 ~ miri[02e8]::helpers::EvalContextExt::eval_path)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::rustc_middle::rustc_const_eval::interpret::InterpResult::<'tcx, T>::unwrap (AssocFn) [DefId: DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::rustc_const_eval::rustc_const_eval::interpret::Projectable::offset (AssocFn) [DefId: DefId(141:2338 ~ rustc_const_eval[4233]::interpret::projection::Projectable::offset)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(141:2338 ~ rustc_const_eval[4233]::interpret::projection::Projectable::offset)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::rustc_middle::rustc_const_eval::interpret::InterpResult::<'tcx, T>::unwrap (AssocFn) [DefId: DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::to_u32 (AssocFn) [DefId: DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(169:2008 ~ rustc_middle[ac2e]::mir::interpret::value::{impl#9}::to_u32)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::rustc_middle::rustc_const_eval::interpret::InterpResult::<'tcx, T>::unwrap (AssocFn) [DefId: DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(169:1413 ~ rustc_middle[ac2e]::mir::interpret::error::{impl#24}::unwrap)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::rustc_const_eval::rustc_const_eval::interpret::operand::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::read_scalar (AssocFn) [DefId: DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(141:2050 ~ rustc_const_eval[4233]::interpret::operand::{impl#12}::read_scalar)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_init_offset USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3651 ~ miri[02e8]::shims::unix::sync::cond_init_offset)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::miri::helpers::EvalContextExt::deref_pointer_as (AssocFn) [DefId: DefId(0:2344 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_as)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(0:2344 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_as)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::miri::helpers::EvalContextExt::libc_ty_layout (AssocFn) [DefId: DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::miri::concurrency::sync::CondvarRef::new (AssocFn) [DefId: DefId(0:1431 ~ miri[02e8]::concurrency::sync::{impl#5}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(0:1431 ~ miri[02e8]::concurrency::sync::{impl#5}::new)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::miri::concurrency::sync::EvalContextExt::lazy_sync_init (AssocFn) [DefId: DefId(0:1455 ~ miri[02e8]::concurrency::sync::EvalContextExt::lazy_sync_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(0:1455 ~ miri[02e8]::concurrency::sync::EvalContextExt::lazy_sync_init)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_create USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ miri[02e8]::shims::unix::sync::cond_create)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::miri::helpers::EvalContextExt::deref_pointer_as (AssocFn) [DefId: DefId(0:2344 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_as)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(0:2344 ~ miri[02e8]::helpers::EvalContextExt::deref_pointer_as)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::miri::helpers::EvalContextExt::libc_ty_layout (AssocFn) [DefId: DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(0:2292 ~ miri[02e8]::helpers::EvalContextExt::libc_ty_layout)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::miri::concurrency::sync::EvalContextExt::lazy_sync_get_data (AssocFn) [DefId: DefId(0:1458 ~ miri[02e8]::concurrency::sync::EvalContextExt::lazy_sync_get_data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(0:1458 ~ miri[02e8]::concurrency::sync::EvalContextExt::lazy_sync_get_data)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::miri::helpers::EvalContextExt::eval_path (AssocFn) [DefId: DefId(0:2276 ~ miri[02e8]::helpers::EvalContextExt::eval_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(0:2276 ~ miri[02e8]::helpers::EvalContextExt::eval_path)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::miri::shims::unix::sync::cond_get_data USES crate::miri::concurrency::sync::CondvarRef::new (AssocFn) [DefId: DefId(0:1431 ~ miri[02e8]::concurrency::sync::{impl#5}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3655 ~ miri[02e8]::shims::unix::sync::cond_get_data)",
+      "used_def_id": "DefId(0:1431 ~ miri[02e8]::concurrency::sync::{impl#5}::new)"
+    }
+  ]
+}
