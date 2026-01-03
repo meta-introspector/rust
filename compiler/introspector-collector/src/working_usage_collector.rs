@@ -273,6 +273,7 @@ impl UsageCollector {
                 rustc_hir::ItemKind::Use(..) => continue,
                 rustc_hir::ItemKind::ExternCrate(..) => continue,
                 rustc_hir::ItemKind::Impl(..) => continue,
+                rustc_hir::ItemKind::ForeignMod { .. } => continue,
                 _ => tcx.item_name(item.owner_id.to_def_id()).to_string(),
             };
             

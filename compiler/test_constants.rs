@@ -1,5 +1,7 @@
 const MAX_SIZE: usize = 1024;
 static THRESHOLD: f64 = 3.14159;
+const MESSAGE: &str = "Hello, World!";
+static ERROR_MSG: &str = "Something went wrong";
 
 struct Point {
     x: f64,
@@ -17,4 +19,5 @@ fn main() {
     let point = Point { x: 10.0, y: 20.0 };
     let status = Status::Active;
     println!("Point: ({}, {}), Status: {:?}", point.x, point.y, status);
+    println!("{}", MESSAGE);
 }
