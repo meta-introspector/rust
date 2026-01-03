@@ -55,8 +55,17 @@ impl Callbacks for SimpleConstantCallbacks {
             let clean_type = item_type.split('(').next().unwrap_or(&item_type);
             
             if i > 0 { writeln!(file, ",").ok(); }
-            writeln!(file, "  {{\"type\":\"{}\",\"span\":\"{:?}\"}}", clean_type, item.span).ok();
             
+            // Extract function names and details
+            let mut item_detail = format!("\"type\":\"{}\",\"span\":\"{:?}\"", clean_type, item.span);
+            if let rustc_ast::ItemKind::Fn(_) = item.kind {
+                let debug_str = format!("{:?}", item.kind);
+                let fn_name = debug_str.split('(').nth(1).unwrap_or("unknown").split(',').next().unwrap_or("unknown");
+                item_detail = format!("\"type\":\"Fn\",\"name\":\"{}\",\"span\":\"{:?}\"", 
+                    fn_name, item.span);
+            }
+            
+            writeln!(file, "  {{{}}}", item_detail).ok();
             self.count_item(&item_type);
         }
         
@@ -107,13 +116,18 @@ fn main() {
         std::process::exit(status.code().unwrap_or(1));
     }
     
-    // Handle cargo's --print queries by delegating to real rustc
-    if args.iter().any(|arg| arg.starts_with("--print")) {
+    // Handle cargo's --print and --version queries by delegating to real rustc
+    if args.iter().any(|arg| arg.starts_with("--print") || arg == "--version" || arg == "-V") {
         let mut cmd = std::process::Command::new("rustc");
         cmd.args(&args[1..]);
         let status = cmd.status().expect("Failed to run rustc");
         std::process::exit(status.code().unwrap_or(1));
     }
+    
+    // Set required environment variables for rustc compilation
+    std::env::set_var("CFG_RELEASE_CHANNEL", "dev");
+    std::env::set_var("CFG_RELEASE", "1.91.1");
+    std::env::set_var("CFG_VERSION", "1.91.1");
     
     let mut callbacks = SimpleConstantCallbacks::new();
     
