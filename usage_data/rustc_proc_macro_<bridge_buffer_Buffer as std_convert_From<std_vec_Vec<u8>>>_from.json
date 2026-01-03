@@ -2,9 +2,9 @@
   "crate": "rustc_proc_macro",
   "module": "<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from",
   "usages": [
-    "crate::rustc_proc_macro::<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from::to_vec USES crate::core::std::mem::ManuallyDrop::<T>::new (AssocFn)",
-    "crate::rustc_proc_macro::<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from::to_vec USES crate::alloc::std::vec::Vec::<T>::from_raw_parts (AssocFn)",
-    "crate::rustc_proc_macro::<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from::reserve USES crate::alloc::std::vec::Vec::<T, A>::reserve (AssocFn)",
-    "crate::rustc_proc_macro::<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from::reserve USES crate::core::std::convert::From::from (AssocFn)"
+    "{"usage":"crate::rustc_proc_macro::<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from::to_vec USES crate::core::std::mem::ManuallyDrop::<T>::new (AssocFn) [DefId: DefId(2:2134 ~ core[4720]::mem::manually_drop::{impl#0}::new)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:90 ~ rustc_proc_macro[4b11]::bridge::buffer::{impl#8}::from::to_vec)","used_def_id":"DefId(2:2134 ~ core[4720]::mem::manually_drop::{impl#0}::new)"}",
+    "{"usage":"crate::rustc_proc_macro::<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from::to_vec USES crate::alloc::std::vec::Vec::<T>::from_raw_parts (AssocFn) [DefId: DefId(3:8089 ~ alloc[27b0]::vec::{impl#0}::from_raw_parts)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:90 ~ rustc_proc_macro[4b11]::bridge::buffer::{impl#8}::from::to_vec)","used_def_id":"DefId(3:8089 ~ alloc[27b0]::vec::{impl#0}::from_raw_parts)"}",
+    "{"usage":"crate::rustc_proc_macro::<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from::reserve USES crate::alloc::std::vec::Vec::<T, A>::reserve (AssocFn) [DefId: DefId(3:8105 ~ alloc[27b0]::vec::{impl#1}::reserve)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:91 ~ rustc_proc_macro[4b11]::bridge::buffer::{impl#8}::from::reserve)","used_def_id":"DefId(3:8105 ~ alloc[27b0]::vec::{impl#1}::reserve)"}",
+    "{"usage":"crate::rustc_proc_macro::<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from::reserve USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]","usage_count":1,"usage_type":"MethodCall","node_type":"Item","user_def_id":"DefId(0:91 ~ rustc_proc_macro[4b11]::bridge::buffer::{impl#8}::from::reserve)","used_def_id":"DefId(2:3435 ~ core[4720]::convert::From::from)"}"
   ]
 }
