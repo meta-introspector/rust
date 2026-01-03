@@ -91,6 +91,7 @@ impl Callbacks for SimpleConstantCallbacks {
         writeln!(file, "]}}").ok();
         println!("SAVED: {} items to {}", krate.items.len(), output_file);
         
+        // Always continue compilation to generate proper build artifacts
         rustc_driver::Compilation::Continue
     }
 
@@ -127,6 +128,13 @@ impl Callbacks for SimpleConstantCallbacks {
 
 fn main() {
     let args: Vec<String> = std::env::args().collect();
+    
+    // If this is a build script, delegate to real rustc
+    if args.iter().any(|arg| arg.contains("build-script") || arg.contains("build_script")) {
+        let mut cmd = std::process::Command::new("rustc");
+        cmd.args(&args[1..]);
+        std::process::exit(cmd.status().unwrap().code().unwrap_or(1));
+    }
     
     // Handle cargo's --print and --version queries by delegating to real rustc
     if args.iter().any(|arg| arg.starts_with("--print") || arg == "--version" || arg == "-V") {
