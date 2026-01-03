@@ -33,11 +33,12 @@ impl Callbacks for SimpleConstantCallbacks {
         
         // Create scan_results directory in project root
         let project_root = "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver";
-        let scan_dir = format!("{}/scan_results", project_root);
+        let output_dir = std::env::var("SCAN_OUTPUT_DIR").unwrap_or_else(|_| "scan_results".to_string());
+        let scan_dir = format!("{}/{}", project_root, output_dir);
         std::fs::create_dir_all(&scan_dir).ok();
         println!("SCAN_DIR: {}", scan_dir);
         
-        let output_file = format!("{}/scan_results/{}.json", project_root, crate_name);
+        let output_file = format!("{}/{}/{}.json", project_root, output_dir, crate_name);
         
         let mut file = match std::fs::File::create(&output_file) {
             Ok(f) => f,
@@ -56,14 +57,32 @@ impl Callbacks for SimpleConstantCallbacks {
             
             if i > 0 { writeln!(file, ",").ok(); }
             
-            // Extract function names and details
-            let mut item_detail = format!("\"type\":\"{}\",\"span\":\"{:?}\"", clean_type, item.span);
-            if let rustc_ast::ItemKind::Fn(_) = item.kind {
-                let debug_str = format!("{:?}", item.kind);
-                let fn_name = debug_str.split('(').nth(1).unwrap_or("unknown").split(',').next().unwrap_or("unknown");
-                item_detail = format!("\"type\":\"Fn\",\"name\":\"{}\",\"span\":\"{:?}\"", 
-                    fn_name, item.span);
-            }
+            // Extract detailed item information
+            let mut item_detail = match &item.kind {
+                rustc_ast::ItemKind::Use(use_tree) => {
+                    format!("\"type\":\"Use\",\"path\":\"{:?}\",\"span\":\"{:?}\"", use_tree, item.span)
+                },
+                rustc_ast::ItemKind::ExternCrate(name, _) => {
+                    let crate_name = name.map(|n| n.to_string()).unwrap_or_else(|| "unknown".to_string());
+                    format!("\"type\":\"ExternCrate\",\"name\":\"{}\",\"span\":\"{:?}\"", crate_name, item.span)
+                },
+                rustc_ast::ItemKind::Fn(_) => {
+                    let visibility = if matches!(item.vis.kind, rustc_ast::VisibilityKind::Public) { "pub" } else { "private" };
+                    format!("\"type\":\"Fn\",\"visibility\":\"{}\",\"span\":\"{:?}\"", 
+                        visibility, item.span)
+                },
+                rustc_ast::ItemKind::Struct(..) => {
+                    let visibility = if matches!(item.vis.kind, rustc_ast::VisibilityKind::Public) { "pub" } else { "private" };
+                    format!("\"type\":\"Struct\",\"visibility\":\"{}\",\"span\":\"{:?}\"", 
+                        visibility, item.span)
+                },
+                rustc_ast::ItemKind::Mod(..) => {
+                    let visibility = if matches!(item.vis.kind, rustc_ast::VisibilityKind::Public) { "pub" } else { "private" };
+                    format!("\"type\":\"Mod\",\"visibility\":\"{}\",\"span\":\"{:?}\"", 
+                        visibility, item.span)
+                },
+                _ => format!("\"type\":\"{}\",\"span\":\"{:?}\"", clean_type, item.span)
+            };
             
             writeln!(file, "  {{{}}}", item_detail).ok();
             self.count_item(&item_type);
@@ -80,12 +99,13 @@ impl Callbacks for SimpleConstantCallbacks {
         
         // Create scan_results directory in project root
         let project_root = "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver";
-        let scan_dir = format!("{}/scan_results", project_root);
+        let output_dir = std::env::var("SCAN_OUTPUT_DIR").unwrap_or_else(|_| "scan_results".to_string());
+        let scan_dir = format!("{}/{}", project_root, output_dir);
         std::fs::create_dir_all(&scan_dir).ok();
         println!("SUMMARY_DIR: {}", scan_dir);
         
         // Save summary
-        let summary_file = format!("{}/scan_results/{}_summary.json", project_root, crate_name);
+        let summary_file = format!("{}/{}/{}_summary.json", project_root, output_dir, crate_name);
         if let Ok(mut file) = std::fs::File::create(&summary_file) {
             use std::io::Write;
             writeln!(file, "{{\"crate\":\"{}\",\"summary\":{{", crate_name).ok();
