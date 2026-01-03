@@ -1,0 +1,14 @@
+{
+  "crate": "rustc_mir_transform",
+  "module": "ctfe_limit",
+  "usages": [
+    "crate::rustc_mir_transform::ctfe_limit::has_back_edge USES crate::rustc_data_structures::rustc_data_structures::graph::dominators::Dominators::<Node>::is_reachable (AssocFn)",
+    "crate::rustc_mir_transform::ctfe_limit::has_back_edge USES crate::core::std::iter::Iterator::any (AssocFn)",
+    "crate::rustc_mir_transform::ctfe_limit::has_back_edge USES crate::rustc_middle::rustc_middle::mir::Terminator::<'tcx>::successors (AssocFn)",
+    "crate::rustc_mir_transform::ctfe_limit::has_back_edge USES crate::rustc_middle::rustc_middle::mir::BasicBlockData::<'tcx>::terminator (AssocFn)",
+    "crate::rustc_mir_transform::ctfe_limit::has_back_edge USES crate::rustc_data_structures::rustc_data_structures::graph::dominators::Dominators::<Node>::dominates (AssocFn)",
+    "crate::rustc_mir_transform::ctfe_limit::insert_counter USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn)",
+    "crate::rustc_mir_transform::ctfe_limit::insert_counter USES crate::rustc_middle::rustc_middle::mir::Statement::<'tcx>::new (AssocFn)",
+    "crate::rustc_mir_transform::ctfe_limit::insert_counter USES crate::rustc_middle::rustc_middle::mir::BasicBlockData::<'tcx>::terminator (AssocFn)"
+  ]
+}

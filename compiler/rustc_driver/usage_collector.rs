@@ -29,10 +29,26 @@ impl UsageCollector {
     }
     
     fn save_to_files(&self, crate_name: &str) {
-        std::fs::create_dir_all("usage_data").unwrap();
+        let output_dir = format!("{}/usage_data", std::env::current_dir().unwrap().display());
+        std::fs::create_dir_all(&output_dir).unwrap();
         
         for (module, usages) in &self.module_data {
-            let filename = format!("usage_data/{}_{}.json", crate_name, module.replace("::", "_"));
+            // Use hash for long names to avoid filesystem limits
+            use std::collections::hash_map::DefaultHasher;
+            use std::hash::{Hash, Hasher};
+            
+            let full_name = format!("{}_{}", crate_name, module);
+            let mut hasher = DefaultHasher::new();
+            full_name.hash(&mut hasher);
+            let hash = hasher.finish();
+            
+            let file_name = if full_name.len() > 100 {
+                format!("{:x}.json", hash)
+            } else {
+                format!("{}_{}.json", crate_name, module.replace("::", "_").replace("<", "_").replace(">", "_").replace(" ", "_").replace(",", "_").replace("'", "_"))
+            };
+            
+            let filename = format!("{}/{}", output_dir, file_name);
             let mut file = File::create(&filename).unwrap();
             
             writeln!(file, "{{").unwrap();
@@ -49,6 +65,7 @@ impl UsageCollector {
             writeln!(file, "}}").unwrap();
             
             eprintln!("Saved {} usages to {}", usages.len(), filename);
+            eprintln!("ABS_FILE: {}", std::fs::canonicalize(&filename).unwrap_or_else(|_| filename.into()).display());
         }
     }
 }

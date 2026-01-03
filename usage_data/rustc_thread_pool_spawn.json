@@ -1,0 +1,19 @@
+{
+  "crate": "rustc_thread_pool",
+  "module": "spawn",
+  "usages": [
+    "crate::rustc_thread_pool::spawn::spawn USES crate::rustc_thread_pool::registry::Registry::current (AssocFn)",
+    "crate::rustc_thread_pool::spawn::spawn_in USES crate::rustc_thread_pool::registry::Registry::inject_or_push (AssocFn)",
+    "crate::rustc_thread_pool::spawn::spawn_job USES crate::rustc_thread_pool::registry::Registry::increment_terminate_count (AssocFn)",
+    "crate::rustc_thread_pool::spawn::spawn_job USES crate::rustc_thread_pool::job::HeapJob::<BODY>::into_static_job_ref (AssocFn)",
+    "crate::rustc_thread_pool::spawn::spawn_job USES crate::rustc_thread_pool::job::HeapJob::<BODY>::new (AssocFn)",
+    "crate::rustc_thread_pool::spawn::spawn_job USES crate::rustc_thread_pool::tlv::Tlv::null (AssocFn)",
+    "crate::rustc_thread_pool::spawn::spawn_job USES crate::core::std::clone::Clone::clone (AssocFn)",
+    "crate::rustc_thread_pool::spawn::spawn_job USES crate::rustc_thread_pool::registry::Registry::catch_unwind (AssocFn)",
+    "crate::rustc_thread_pool::spawn::spawn_job USES crate::rustc_thread_pool::registry::Registry::terminate (AssocFn)",
+    "crate::rustc_thread_pool::spawn::spawn_fifo USES crate::rustc_thread_pool::registry::Registry::current (AssocFn)",
+    "crate::rustc_thread_pool::spawn::spawn_fifo_in USES crate::rustc_thread_pool::registry::Registry::current_thread (AssocFn)",
+    "crate::rustc_thread_pool::spawn::spawn_fifo_in USES crate::rustc_thread_pool::registry::WorkerThread::push_fifo (AssocFn)",
+    "crate::rustc_thread_pool::spawn::spawn_fifo_in USES crate::rustc_thread_pool::registry::Registry::inject (AssocFn)"
+  ]
+}

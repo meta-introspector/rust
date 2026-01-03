@@ -1,0 +1,10 @@
+{
+  "crate": "rustc_proc_macro",
+  "module": "<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from",
+  "usages": [
+    "crate::rustc_proc_macro::<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from::to_vec USES crate::core::std::mem::ManuallyDrop::<T>::new (AssocFn)",
+    "crate::rustc_proc_macro::<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from::to_vec USES crate::alloc::std::vec::Vec::<T>::from_raw_parts (AssocFn)",
+    "crate::rustc_proc_macro::<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from::reserve USES crate::alloc::std::vec::Vec::<T, A>::reserve (AssocFn)",
+    "crate::rustc_proc_macro::<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from::reserve USES crate::core::std::convert::From::from (AssocFn)"
+  ]
+}

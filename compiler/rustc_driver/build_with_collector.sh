@@ -7,7 +7,7 @@ echo "=== Building rustc_driver with usage_collector ==="
 rustc usage_collector.rs -o usage_collector
 
 # Use our collector as RUSTC to build current directory
-RUSTC=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/usage_collector cargo build
+CFG_RELEASE_CHANNEL=dev RUSTC_INSTALL_BINDIR=/usr/bin RUSTC=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_driver/usage_collector cargo build
 
 echo "=== Results ==="
 ls -la usage_data/
