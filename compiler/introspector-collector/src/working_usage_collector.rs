@@ -219,7 +219,9 @@ impl Callbacks for UsageCollector {
         }
         
         // NEW: Collect constants and literals
+        eprintln!("🔍 About to call collect_constants");
         self.collect_constants(tcx);
+        eprintln!("✅ collect_constants returned");
         
         self.save_to_files(&local_crate.to_string());
         eprintln!("✅ COLLECTION COMPLETE");
@@ -230,21 +232,27 @@ impl Callbacks for UsageCollector {
 
 impl UsageCollector {
     fn collect_constants<'tcx>(&mut self, tcx: TyCtxt<'tcx>) {
+        eprintln!("🔍 collect_constants called!");
+        
         struct ConstantVisitor<'a> {
             collector: &'a mut UsageCollector,
         }
         
         impl<'tcx> Visitor<'tcx> for ConstantVisitor<'_> {
             fn visit_expr(&mut self, expr: &'tcx Expr<'tcx>) {
+                eprintln!("🔍 Visiting expr: {:?}", expr.kind);
                 match &expr.kind {
                     ExprKind::Lit(lit) => {
                         let constant_value = format!("{:?}", lit.node);
+                        eprintln!("🎯 FOUND LITERAL: {}", constant_value);
                         self.collector.add_usage("constants", constant_value.clone(), "Literal".to_string(), 
                                                "Constant".to_string(), 
                                                format!("{:?}", expr.hir_id),
                                                constant_value);
                     }
-                    _ => {}
+                    _ => {
+                        eprintln!("   Other expr: {:?}", expr.kind);
+                    }
                 }
                 
                 intravisit::walk_expr(self, expr);
@@ -253,9 +261,13 @@ impl UsageCollector {
         
         let mut visitor = ConstantVisitor { collector: self };
         let all_items = tcx.hir_crate_items(());
+        eprintln!("🔍 Starting to visit items");
+        
         for item_id in all_items.free_items() {
             let node = tcx.hir_node_by_def_id(item_id.owner_id.def_id);
+            eprintln!("🔍 Visiting item: {:?}", item_id);
             if let rustc_hir::Node::Item(item) = node {
+                eprintln!("🔍 Item is: {:?}", item.kind);
                 visitor.visit_item(item);
             }
         }
