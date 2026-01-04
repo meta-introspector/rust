@@ -162,11 +162,16 @@ macro_rules! core_lang {
     }};
 }
 
-// Enhanced mkbuild! macro with feature filtering
+// removed code to help.rs
+
+// Compatibility shim for existing usage
 #[macro_export]
 macro_rules! mkbuild {
     () => {
-        mkbuild!(features = full)
+        println!("cargo::rustc-check-cfg=cfg(bootstrap)");
+        println!("cargo::rustc-check-cfg=cfg(llvm_enzyme)");
+        println!("cargo:rustc-env=CFG_RELEASE_CHANNEL=dev");
+        println!("cargo:rustc-env=RUSTC_INSTALL_BINDIR=/usr/local/bin/");
     };
     
     (features = $lang:ident) => {{
@@ -217,48 +222,18 @@ fn generate_feature_filters(cfg_flags: &[String]) {
 
 fn generate_source_filters(_matrix: &FeatureMatrix) {
     // Generate conditional compilation attributes
-    let filter_code = format!(r#"
-// Auto-generated source filters
-#[cfg(not(feature_visibility))]
-macro_rules! zap_visibility {{
-    (pub $item:item) => {{ $item }};
-    ($item:item) => {{ $item }};
-}}
-
-#[cfg(not(feature_generics))]
-macro_rules! zap_generics {{
-    ($name:ident<$($gen:tt)*>) => {{ $name }};
-}}
-
-#[cfg(not(feature_lifetimes))]
-macro_rules! zap_lifetimes {{
-    ($name:ident<$lt:lifetime>) => {{ $name }};
-}}
-
-#[cfg(not(feature_traits))]
-macro_rules! zap_traits {{
-    (impl $trait:path for $type:ty {{ $($body:tt)* }}) => {{}};
-}}
-
-#[cfg(not(feature_async))]
-macro_rules! zap_async {{
-    (async fn $name:ident($($args:tt)*) -> $ret:ty {{ $($body:tt)* }}) => {{
-        fn $name($($args)*) -> $ret {{ $($body)* }}
-    }};
-}}
-
-#[cfg(not(feature_unsafe))]
-macro_rules! zap_unsafe {{
-    (unsafe $item:item) => {{ $item }};
-}}
-
-#[cfg(not(feature_macros))]
-macro_rules! zap_macros {{
-    (macro_rules! $name:ident {{ $($body:tt)* }}) => {{}};
-}}
-"#);
+    // Note: filters.rs contains macro definitions, not expressions
     
     // Write filter to a file that gets included
+    let filter_code = r#"
+// Auto-generated feature filters
+#[cfg(not(feature_visibility))]
+macro_rules! zap_visibility {
+    (pub $item:item) => { $item };
+    ($item:item) => { $item };
+}
+"#;
+    
     std::fs::write("target/feature_filters.rs", filter_code)
         .expect("Failed to write feature filters");
     

@@ -1,11 +1,6 @@
-#[macro_export]
-macro_rules! mkbuild {
-    () => {
-        println!("cargo::rustc-check-cfg=cfg(bootstrap)");
-        println!("cargo::rustc-check-cfg=cfg(llvm_enzyme)");
-        println!("cargo:rustc-env=CFG_RELEASE_CHANNEL=dev");
-        println!("cargo:rustc-env=RUSTC_INSTALL_BINDIR=/usr/local/bin/");
-    };
-}
+// mkbuild macro moved to core_lang.rs for full compatibility
+// macro_export automatically makes it available at crate root
 
 pub mod core_lang;
+pub mod mkshim;
+pub mod hir_compat;

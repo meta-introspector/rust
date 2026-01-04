@@ -72,20 +72,6 @@ struct EnumInfo {
 }
 
 #[derive(Serialize, Deserialize)]
-struct EnumData {
-    #[serde(rename = "crate")]
-    crate_name: String,
-    enums: HashMap<String, EnumInfo>,
-}
-
-#[derive(Serialize, Deserialize, Clone)]
-struct EnumInfo {
-    name: String,
-    variants: Vec<EnumVariantUsage>,
-    total_usage: usize,
-}
-
-#[derive(Serialize, Deserialize)]
 struct ModuleData {
     #[serde(rename = "crate")]
     crate_name: String,
@@ -96,7 +82,6 @@ struct ModuleData {
 struct UsageCollector {
     module_data: HashMap<String, Vec<UsageEntry>>,
     enum_data: HashMap<String, EnumInfo>,
-}
 }
 
 impl UsageCollector {
@@ -250,16 +235,6 @@ impl UsageCollector {
         enum_info.total_usage_classes.debug_format += classification.debug_format;
         enum_info.total_usage_classes.serialization += classification.serialization;
         enum_info.total_usage_classes.general += classification.general;
-    }
-        let entry = UsageEntry {
-            usage,
-            usage_count: 1,
-            usage_type,
-            node_type,
-            user_def_id,
-            used_def_id,
-        };
-        self.module_data.entry(module.to_string()).or_insert_with(Vec::new).push(entry);
     }
     
     fn save_to_files(&self, crate_name: &str) {
