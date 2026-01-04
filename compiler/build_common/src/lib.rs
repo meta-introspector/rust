@@ -2,5 +2,5 @@
 // macro_export automatically makes it available at crate root
 
 pub mod core_lang;
-pub mod mkshim;
-pub mod hir_compat;
+// pub mod mkshim;      // Commented out - did not work
+// pub mod hir_compat;  // Commented out due to rustc dependency issues
