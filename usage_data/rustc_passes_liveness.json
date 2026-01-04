@@ -1,0 +1,470 @@
+{
+  "crate": "rustc_passes",
+  "module": "liveness",
+  "usages": [
+    {
+      "usage": "crate::rustc_passes::liveness::live_node_kind_to_string USES crate::rustc_session::rustc_session::Session::source_map (AssocFn) [DefId: DefId(174:1315 ~ rustc_session[612c]::session::{impl#2}::source_map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1093 ~ rustc_passes[804c]::liveness::live_node_kind_to_string)",
+      "used_def_id": "DefId(174:1315 ~ rustc_session[612c]::session::{impl#2}::source_map)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::live_node_kind_to_string USES crate::rustc_span::rustc_span::source_map::SourceMap::span_to_diagnostic_string (AssocFn) [DefId: DefId(98:138 ~ rustc_span[e3e8]::source_map::{impl#1}::span_to_diagnostic_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1093 ~ rustc_passes[804c]::liveness::live_node_kind_to_string)",
+      "used_def_id": "DefId(98:138 ~ rustc_span[e3e8]::source_map::{impl#1}::span_to_diagnostic_string)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::live_node_kind_to_string USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1093 ~ rustc_passes[804c]::liveness::live_node_kind_to_string)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::live_node_kind_to_string USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1093 ~ rustc_passes[804c]::liveness::live_node_kind_to_string)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::live_node_kind_to_string USES crate::rustc_span::rustc_span::source_map::SourceMap::span_to_diagnostic_string (AssocFn) [DefId: DefId(98:138 ~ rustc_span[e3e8]::source_map::{impl#1}::span_to_diagnostic_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1093 ~ rustc_passes[804c]::liveness::live_node_kind_to_string)",
+      "used_def_id": "DefId(98:138 ~ rustc_span[e3e8]::source_map::{impl#1}::span_to_diagnostic_string)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::live_node_kind_to_string USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1093 ~ rustc_passes[804c]::liveness::live_node_kind_to_string)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::live_node_kind_to_string USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1093 ~ rustc_passes[804c]::liveness::live_node_kind_to_string)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::live_node_kind_to_string USES crate::rustc_span::rustc_span::source_map::SourceMap::span_to_diagnostic_string (AssocFn) [DefId: DefId(98:138 ~ rustc_span[e3e8]::source_map::{impl#1}::span_to_diagnostic_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1093 ~ rustc_passes[804c]::liveness::live_node_kind_to_string)",
+      "used_def_id": "DefId(98:138 ~ rustc_span[e3e8]::source_map::{impl#1}::span_to_diagnostic_string)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::live_node_kind_to_string USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1093 ~ rustc_passes[804c]::liveness::live_node_kind_to_string)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::live_node_kind_to_string USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1093 ~ rustc_passes[804c]::liveness::live_node_kind_to_string)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::live_node_kind_to_string USES crate::alloc::std::borrow::ToOwned::to_owned (AssocFn) [DefId: DefId(3:179 ~ alloc[27b0]::borrow::ToOwned::to_owned)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1093 ~ rustc_passes[804c]::liveness::live_node_kind_to_string)",
+      "used_def_id": "DefId(3:179 ~ alloc[27b0]::borrow::ToOwned::to_owned)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::live_node_kind_to_string USES crate::alloc::std::borrow::ToOwned::to_owned (AssocFn) [DefId: DefId(3:179 ~ alloc[27b0]::borrow::ToOwned::to_owned)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1093 ~ rustc_passes[804c]::liveness::live_node_kind_to_string)",
+      "used_def_id": "DefId(3:179 ~ alloc[27b0]::borrow::ToOwned::to_owned)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_middle::rustc_middle::ty::<impl rustc_middle::ty::TyCtxt<'_>>::local_parent (AssocFn) [DefId: DefId(20:9232 ~ rustc_middle[8ead]::ty::{impl#3}::local_parent)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(20:9232 ~ rustc_middle[8ead]::ty::{impl#3}::local_parent)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_kind (AssocFn) [DefId: DefId(20:36778 ~ rustc_middle[8ead]::query::{impl#3}::def_kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(20:36778 ~ rustc_middle[8ead]::query::{impl#3}::def_kind)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_middle::rustc_middle::ty::<impl rustc_middle::ty::TyCtxt<'tcx>>::get_all_attrs (AssocFn) [DefId: DefId(20:9455 ~ rustc_middle[8ead]::ty::{impl#44}::get_all_attrs)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(20:9455 ~ rustc_middle[8ead]::ty::{impl#44}::get_all_attrs)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_middle::rustc_middle::ty::<impl rustc_middle::ty::TyCtxt<'tcx>>::get_all_attrs (AssocFn) [DefId: DefId(20:9455 ~ rustc_middle[8ead]::ty::{impl#44}::get_all_attrs)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(20:9455 ~ rustc_middle[8ead]::ty::{impl#44}::get_all_attrs)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_span::rustc_span::def_id::LocalDefId::to_def_id (AssocFn) [DefId: DefId(98:590 ~ rustc_span[e3e8]::def_id::{impl#16}::to_def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(98:590 ~ rustc_span[e3e8]::def_id::{impl#16}::to_def_id)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_passes::liveness::IrMaps::<'tcx>::new (AssocFn) [DefId: DefId(0:1115 ~ rustc_passes[804c]::liveness::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(0:1115 ~ rustc_passes[804c]::liveness::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_body_owned_by (AssocFn) [DefId: DefId(20:146 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_body_owned_by)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(20:146 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_body_owned_by)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_body_owner (AssocFn) [DefId: DefId(20:143 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_body_owner)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(20:143 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_body_owner)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_hir::rustc_hir::Body::<'hir>::id (AssocFn) [DefId: DefId(155:655 ~ rustc_hir[e411]::hir::{impl#36}::id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(155:655 ~ rustc_hir[e411]::hir::{impl#36}::id)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::upvars_mentioned (AssocFn) [DefId: DefId(20:36899 ~ rustc_middle[8ead]::query::{impl#3}::upvars_mentioned)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(20:36899 ~ rustc_middle[8ead]::query::{impl#3}::upvars_mentioned)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::indexmap::indexmap::map::IndexMap::<K, V, S>::keys (AssocFn) [DefId: DefId(32:1482 ~ indexmap[8f0e]::map::{impl#3}::keys)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(32:1482 ~ indexmap[8f0e]::map::{impl#3}::keys)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_name (AssocFn) [DefId: DefId(20:211 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(20:211 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_name)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_passes::liveness::IrMaps::<'tcx>::add_variable (AssocFn) [DefId: DefId(0:1118 ~ rustc_passes[804c]::liveness::{impl#1}::add_variable)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(0:1118 ~ rustc_passes[804c]::liveness::{impl#1}::add_variable)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_hir::rustc_hir::intravisit::Visitor::visit_body (AssocFn) [DefId: DefId(155:953 ~ rustc_hir[e411]::intravisit::Visitor::visit_body)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(155:953 ~ rustc_hir[e411]::intravisit::Visitor::visit_body)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_passes::liveness::Liveness::<'a, 'tcx>::new (AssocFn) [DefId: DefId(0:1156 ~ rustc_passes[804c]::liveness::{impl#3}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(0:1156 ~ rustc_passes[804c]::liveness::{impl#3}::new)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_passes::liveness::Liveness::<'a, 'tcx>::compute (AssocFn) [DefId: DefId(0:1178 ~ rustc_passes[804c]::liveness::{impl#3}::compute)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(0:1178 ~ rustc_passes[804c]::liveness::{impl#3}::compute)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_passes::liveness::Liveness::<'a, 'tcx>::log_liveness (AssocFn) [DefId: DefId(0:1172 ~ rustc_passes[804c]::liveness::{impl#3}::log_liveness)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(0:1172 ~ rustc_passes[804c]::liveness::{impl#3}::log_liveness)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_hir::rustc_hir::Body::<'hir>::id (AssocFn) [DefId: DefId(155:655 ~ rustc_hir[e411]::hir::{impl#36}::id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(155:655 ~ rustc_hir[e411]::hir::{impl#36}::id)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_hir::rustc_hir::intravisit::Visitor::visit_body (AssocFn) [DefId: DefId(155:953 ~ rustc_hir[e411]::intravisit::Visitor::visit_body)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(155:953 ~ rustc_hir[e411]::intravisit::Visitor::visit_body)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_passes::liveness::Liveness::<'_, 'tcx>::warn_about_unused_upvars (AssocFn) [DefId: DefId(0:1218 ~ rustc_passes[804c]::liveness::{impl#5}::warn_about_unused_upvars)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(0:1218 ~ rustc_passes[804c]::liveness::{impl#5}::warn_about_unused_upvars)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_liveness USES crate::rustc_passes::liveness::Liveness::<'_, 'tcx>::warn_about_unused_args (AssocFn) [DefId: DefId(0:1219 ~ rustc_passes[804c]::liveness::{impl#5}::warn_about_unused_args)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_passes[804c]::liveness::check_liveness)",
+      "used_def_id": "DefId(0:1219 ~ rustc_passes[804c]::liveness::{impl#5}::warn_about_unused_args)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_expr USES crate::rustc_passes::liveness::Liveness::<'_, 'tcx>::check_place (AssocFn) [DefId: DefId(0:1216 ~ rustc_passes[804c]::liveness::{impl#5}::check_place)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1211 ~ rustc_passes[804c]::liveness::check_expr)",
+      "used_def_id": "DefId(0:1216 ~ rustc_passes[804c]::liveness::{impl#5}::check_place)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_expr USES crate::rustc_middle::rustc_middle::ty::TypeckResults::<'tcx>::is_method_call (AssocFn) [DefId: DefId(20:9064 ~ rustc_middle[8ead]::ty::typeck_results::{impl#0}::is_method_call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1211 ~ rustc_passes[804c]::liveness::check_expr)",
+      "used_def_id": "DefId(20:9064 ~ rustc_middle[8ead]::ty::typeck_results::{impl#0}::is_method_call)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_expr USES crate::rustc_passes::liveness::Liveness::<'_, 'tcx>::check_place (AssocFn) [DefId: DefId(0:1216 ~ rustc_passes[804c]::liveness::{impl#5}::check_place)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1211 ~ rustc_passes[804c]::liveness::check_expr)",
+      "used_def_id": "DefId(0:1216 ~ rustc_passes[804c]::liveness::{impl#5}::check_place)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_expr USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1211 ~ rustc_passes[804c]::liveness::check_expr)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_expr USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1211 ~ rustc_passes[804c]::liveness::check_expr)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_expr USES crate::rustc_passes::liveness::Liveness::<'_, 'tcx>::check_place (AssocFn) [DefId: DefId(0:1216 ~ rustc_passes[804c]::liveness::{impl#5}::check_place)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1211 ~ rustc_passes[804c]::liveness::check_expr)",
+      "used_def_id": "DefId(0:1216 ~ rustc_passes[804c]::liveness::{impl#5}::check_place)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_expr USES crate::rustc_passes::liveness::Liveness::<'_, 'tcx>::check_place (AssocFn) [DefId: DefId(0:1216 ~ rustc_passes[804c]::liveness::{impl#5}::check_place)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1211 ~ rustc_passes[804c]::liveness::check_expr)",
+      "used_def_id": "DefId(0:1216 ~ rustc_passes[804c]::liveness::{impl#5}::check_place)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_expr USES crate::rustc_passes::liveness::Liveness::<'_, 'tcx>::check_place (AssocFn) [DefId: DefId(0:1216 ~ rustc_passes[804c]::liveness::{impl#5}::check_place)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1211 ~ rustc_passes[804c]::liveness::check_expr)",
+      "used_def_id": "DefId(0:1216 ~ rustc_passes[804c]::liveness::{impl#5}::check_place)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_expr USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1211 ~ rustc_passes[804c]::liveness::check_expr)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_expr USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1211 ~ rustc_passes[804c]::liveness::check_expr)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_passes::liveness::check_expr USES crate::rustc_passes::liveness::Liveness::<'_, 'tcx>::check_unused_vars_in_pat (AssocFn) [DefId: DefId(0:1221 ~ rustc_passes[804c]::liveness::{impl#5}::check_unused_vars_in_pat)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1211 ~ rustc_passes[804c]::liveness::check_expr)",
+      "used_def_id": "DefId(0:1221 ~ rustc_passes[804c]::liveness::{impl#5}::check_unused_vars_in_pat)"
+    }
+  ]
+}

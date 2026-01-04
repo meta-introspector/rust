@@ -1,0 +1,286 @@
+{
+  "crate": "rustc_mir_transform",
+  "module": "deduce_param_attrs",
+  "usages": [
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::type_will_always_be_passed_directly USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(173:8867 ~ rustc_middle[8ead]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:268 ~ rustc_mir_transform[7c27]::deduce_param_attrs::type_will_always_be_passed_directly)",
+      "used_def_id": "DefId(173:8867 ~ rustc_middle[8ead]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::std::option::Option::<T>::is_none (AssocFn) [DefId: DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_hir::rustc_hir::LanguageItems::freeze_trait (AssocFn) [DefId: DefId(155:6731 ~ rustc_hir[e411]::lang_items::{impl#4}::freeze_trait)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(155:6731 ~ rustc_hir[e411]::lang_items::{impl#4}::freeze_trait)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::lang_items (AssocFn) [DefId: DefId(173:6791 ~ rustc_middle[8ead]::ty::context::{impl#25}::lang_items)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(173:6791 ~ rustc_middle[8ead]::ty::context::{impl#25}::lang_items)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_type_ir::rustc_middle::infer::canonical::rustc_type_ir::EarlyBinder::<I, T>::instantiate_identity (AssocFn) [DefId: DefId(178:1473 ~ rustc_type_ir[d73e]::binder::{impl#30}::instantiate_identity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(178:1473 ~ rustc_type_ir[d73e]::binder::{impl#30}::instantiate_identity)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::type_of (AssocFn) [DefId: DefId(173:36656 ~ rustc_middle[8ead]::query::{impl#3}::type_of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(173:36656 ~ rustc_middle[8ead]::query::{impl#3}::type_of)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(173:8867 ~ rustc_middle[8ead]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(173:8867 ~ rustc_middle[8ead]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::std::iter::Iterator::all (AssocFn) [DefId: DefId(2:9556 ~ core[4720]::iter::traits::iterator::Iterator::all)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:9556 ~ core[4720]::iter::traits::iterator::Iterator::all)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::std::iter::Iterator::cloned (AssocFn) [DefId: DefId(2:9660 ~ core[4720]::iter::traits::iterator::Iterator::cloned)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:9660 ~ core[4720]::iter::traits::iterator::Iterator::cloned)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_type_ir::rustc_middle::infer::canonical::rustc_type_ir::Binder::<I, T>::skip_binder (AssocFn) [DefId: DefId(178:1304 ~ rustc_type_ir[d73e]::binder::{impl#7}::skip_binder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(178:1304 ~ rustc_type_ir[d73e]::binder::{impl#7}::skip_binder)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_type_ir::rustc_middle::infer::canonical::rustc_type_ir::ty_kind::<impl rustc_middle::infer::canonical::rustc_type_ir::Binder<I, rustc_middle::infer::canonical::rustc_type_ir::FnSig<I>>>::inputs (AssocFn) [DefId: DefId(178:2705 ~ rustc_type_ir[d73e]::ty_kind::{impl#19}::inputs)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(178:2705 ~ rustc_type_ir[d73e]::ty_kind::{impl#19}::inputs)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::fn_sig (AssocFn) [DefId: DefId(173:27341 ~ rustc_middle[8ead]::ty::sty::{impl#11}::fn_sig)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(173:27341 ~ rustc_middle[8ead]::ty::sty::{impl#11}::fn_sig)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::is_mir_available (AssocFn) [DefId: DefId(173:36798 ~ rustc_middle[8ead]::query::{impl#3}::is_mir_available)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(173:36798 ~ rustc_middle[8ead]::query::{impl#3}::is_mir_available)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::optimized_mir (AssocFn) [DefId: DefId(173:36697 ~ rustc_middle[8ead]::query::{impl#3}::optimized_mir)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(173:36697 ~ rustc_middle[8ead]::query::{impl#3}::optimized_mir)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_mir_transform::deduce_param_attrs::DeduceReadOnly::new (AssocFn) [DefId: DefId(0:263 ~ rustc_mir_transform[7c27]::deduce_param_attrs::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(0:263 ~ rustc_mir_transform[7c27]::deduce_param_attrs::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_middle::rustc_middle::mir::visit::Visitor::visit_body (AssocFn) [DefId: DefId(173:17690 ~ rustc_middle[8ead]::mir::visit::Visitor::visit_body)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(173:17690 ~ rustc_middle[8ead]::mir::visit::Visitor::visit_body)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_middle::rustc_middle::mir::Body::<'tcx>::typing_env (AssocFn) [DefId: DefId(173:3018 ~ rustc_middle[8ead]::mir::{impl#6}::typing_env)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(173:3018 ~ rustc_middle[8ead]::mir::{impl#6}::typing_env)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_middle::rustc_middle::arena::Arena::<'tcx>::alloc_from_iter (AssocFn) [DefId: DefId(173:11194 ~ rustc_middle[8ead]::arena::{impl#56}::alloc_from_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(173:11194 ~ rustc_middle[8ead]::arena::{impl#56}::alloc_from_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::std::iter::Iterator::enumerate (AssocFn) [DefId: DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::std::iter::Iterator::take (AssocFn) [DefId: DefId(2:9483 ~ core[4720]::iter::traits::iterator::Iterator::take)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:9483 ~ core[4720]::iter::traits::iterator::Iterator::take)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::std::iter::Iterator::skip (AssocFn) [DefId: DefId(2:9482 ~ core[4720]::iter::traits::iterator::Iterator::skip)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:9482 ~ core[4720]::iter::traits::iterator::Iterator::skip)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_index::rustc_index::IndexSlice::<I, T>::iter (AssocFn) [DefId: DefId(25:526 ~ rustc_index[140d]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(25:526 ~ rustc_index[140d]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_index::rustc_index::bit_set::DenseBitSet::<T>::contains (AssocFn) [DefId: DefId(25:56 ~ rustc_index[140d]::bit_set::{impl#1}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(25:56 ~ rustc_index[140d]::bit_set::{impl#1}::contains)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_middle::rustc_middle::ty::util::<impl rustc_middle::ty::Ty<'tcx>>::is_freeze (AssocFn) [DefId: DefId(173:5432 ~ rustc_middle[8ead]::ty::util::{impl#6}::is_freeze)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(173:5432 ~ rustc_middle[8ead]::ty::util::{impl#6}::is_freeze)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::rustc_middle::rustc_middle::ty::normalize_erasing_regions::<impl rustc_middle::ty::TyCtxt<'tcx>>::normalize_erasing_regions (AssocFn) [DefId: DefId(173:22886 ~ rustc_middle[8ead]::ty::normalize_erasing_regions::{impl#1}::normalize_erasing_regions)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(173:22886 ~ rustc_middle[8ead]::ty::normalize_erasing_regions::{impl#1}::normalize_erasing_regions)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::core::slice::<impl [T]>::last (AssocFn) [DefId: DefId(2:14042 ~ core[4720]::slice::{impl#0}::last)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:14042 ~ core[4720]::slice::{impl#0}::last)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::std::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(2:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::deduce_param_attrs::deduced_param_attrs USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:269 ~ rustc_mir_transform[7c27]::deduce_param_attrs::deduced_param_attrs)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    }
+  ]
+}

@@ -1,0 +1,1406 @@
+{
+  "crate": "rustc_mir_transform",
+  "module": "dataflow_const_prop",
+  "usages": [
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::subscriber::Interest::never (AssocFn) [DefId: DefId(41:731 ~ tracing_core[77f1]::subscriber::{impl#4}::never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:731 ~ tracing_core[77f1]::subscriber::{impl#4}::never)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing::tracing::Span::new (AssocFn) [DefId: DefId(40:164 ~ tracing[282d]::span::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(40:164 ~ tracing[282d]::span::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing::tracing::Span::enter (AssocFn) [DefId: DefId(40:180 ~ tracing[282d]::span::{impl#0}::enter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(40:180 ~ tracing[282d]::span::{impl#0}::enter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::rustc_mir_dataflow::rustc_mir_dataflow::value_analysis::State::<V>::get_idx (AssocFn) [DefId: DefId(186:1396 ~ rustc_mir_dataflow[be42]::value_analysis::{impl#4}::get_idx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(186:1396 ~ rustc_mir_dataflow[be42]::value_analysis::{impl#4}::get_idx)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::core::std::result::Result::<T, E>::is_ok (AssocFn) [DefId: DefId(2:11073 ~ core[4720]::result::{impl#0}::is_ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(2:11073 ~ core[4720]::result::{impl#0}::is_ok)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::rustc_middle::rustc_const_eval::interpret::Scalar::<Prov>::try_to_scalar_int (AssocFn) [DefId: DefId(173:1994 ~ rustc_middle[8ead]::mir::interpret::value::{impl#9}::try_to_scalar_int)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(173:1994 ~ rustc_middle[8ead]::mir::interpret::value::{impl#9}::try_to_scalar_int)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(41:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::propagatable_scalar USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7959 ~ rustc_mir_transform[7c27]::dataflow_const_prop::propagatable_scalar)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::subscriber::Interest::never (AssocFn) [DefId: DefId(41:731 ~ tracing_core[77f1]::subscriber::{impl#4}::never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:731 ~ tracing_core[77f1]::subscriber::{impl#4}::never)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing::tracing::Span::new (AssocFn) [DefId: DefId(40:164 ~ tracing[282d]::span::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(40:164 ~ tracing[282d]::span::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing::tracing::Span::enter (AssocFn) [DefId: DefId(40:180 ~ tracing[282d]::span::{impl#0}::enter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(40:180 ~ tracing[282d]::span::{impl#0}::enter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::FnMut::call_mut (AssocFn) [DefId: DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_const_eval::rustc_const_eval::interpret::InterpCx::<'tcx, M>::layout_of (AssocFn) [DefId: DefId(20:1300 ~ rustc_const_eval[1652]::interpret::eval_context::{impl#5}::layout_of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(20:1300 ~ rustc_const_eval[1652]::interpret::eval_context::{impl#5}::layout_of)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_abi::rustc_abi::LayoutData::<FieldIdx, VariantIdx>::is_zst (AssocFn) [DefId: DefId(142:769 ~ rustc_abi[42d2]::{impl#38}::is_zst)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(142:769 ~ rustc_abi[42d2]::{impl#38}::is_zst)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_abi::rustc_abi::BackendRepr::is_scalar (AssocFn) [DefId: DefId(142:737 ~ rustc_abi[42d2]::{impl#34}::is_scalar)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(142:737 ~ rustc_abi[42d2]::{impl#34}::is_scalar)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_const_eval::rustc_const_eval::interpret::place::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::write_immediate (AssocFn) [DefId: DefId(20:5050 ~ rustc_const_eval[1652]::interpret::place::{impl#12}::write_immediate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(20:5050 ~ rustc_const_eval[1652]::interpret::place::{impl#12}::write_immediate)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(173:8867 ~ rustc_middle[8ead]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(173:8867 ~ rustc_middle[8ead]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::iter::Iterator::enumerate (AssocFn) [DefId: DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_middle::rustc_middle::ty::list::RawList::<H, T>::iter (AssocFn) [DefId: DefId(173:7911 ~ rustc_middle[8ead]::ty::list::{impl#1}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(173:7911 ~ rustc_middle[8ead]::ty::list::{impl#1}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_abi::rustc_abi::FieldIdx::from_usize (AssocFn) [DefId: DefId(142:1115 ~ rustc_abi[42d2]::layout::ty::{impl#8}::from_usize)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(142:1115 ~ rustc_abi[42d2]::layout::ty::{impl#8}::from_usize)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_mir_dataflow::rustc_mir_dataflow::value_analysis::Map::<'tcx>::apply (AssocFn) [DefId: DefId(186:1420 ~ rustc_mir_dataflow[be42]::value_analysis::{impl#9}::apply)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(186:1420 ~ rustc_mir_dataflow[be42]::value_analysis::{impl#9}::apply)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_const_eval::rustc_const_eval::interpret::projection::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::project_field (AssocFn) [DefId: DefId(20:2365 ~ rustc_const_eval[1652]::interpret::projection::{impl#1}::project_field)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(20:2365 ~ rustc_const_eval[1652]::interpret::projection::{impl#1}::project_field)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_middle::rustc_middle::ty::AdtDef::<'tcx>::is_union (AssocFn) [DefId: DefId(173:5610 ~ rustc_middle[8ead]::ty::adt::{impl#8}::is_union)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(173:5610 ~ rustc_middle[8ead]::ty::adt::{impl#8}::is_union)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_middle::rustc_middle::ty::AdtDef::<'tcx>::is_enum (AssocFn) [DefId: DefId(173:5611 ~ rustc_middle[8ead]::ty::adt::{impl#8}::is_enum)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(173:5611 ~ rustc_middle[8ead]::ty::adt::{impl#8}::is_enum)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_mir_dataflow::rustc_mir_dataflow::value_analysis::Map::<'tcx>::apply (AssocFn) [DefId: DefId(186:1420 ~ rustc_mir_dataflow[be42]::value_analysis::{impl#9}::apply)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(186:1420 ~ rustc_mir_dataflow[be42]::value_analysis::{impl#9}::apply)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_mir_dataflow::rustc_mir_dataflow::value_analysis::State::<V>::get_idx (AssocFn) [DefId: DefId(186:1396 ~ rustc_mir_dataflow[be42]::value_analysis::{impl#4}::get_idx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(186:1396 ~ rustc_mir_dataflow[be42]::value_analysis::{impl#4}::get_idx)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_middle::rustc_middle::ty::ScalarInt::to_bits (AssocFn) [DefId: DefId(173:5865 ~ rustc_middle[8ead]::ty::consts::int::{impl#6}::to_bits)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(173:5865 ~ rustc_middle[8ead]::ty::consts::int::{impl#6}::to_bits)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_middle::rustc_middle::ty::ScalarInt::size (AssocFn) [DefId: DefId(173:5850 ~ rustc_middle[8ead]::ty::consts::int::{impl#6}::size)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(173:5850 ~ rustc_middle[8ead]::ty::consts::int::{impl#6}::size)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::iter::Iterator::find (AssocFn) [DefId: DefId(2:9570 ~ core[4720]::iter::traits::iterator::Iterator::find)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:9570 ~ core[4720]::iter::traits::iterator::Iterator::find)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_middle::rustc_middle::ty::AdtDef::<'tcx>::discriminants (AssocFn) [DefId: DefId(173:5643 ~ rustc_middle[8ead]::ty::adt::{impl#8}::discriminants)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(173:5643 ~ rustc_middle[8ead]::ty::adt::{impl#8}::discriminants)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_mir_dataflow::rustc_mir_dataflow::value_analysis::Map::<'tcx>::apply (AssocFn) [DefId: DefId(186:1420 ~ rustc_mir_dataflow[be42]::value_analysis::{impl#9}::apply)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(186:1420 ~ rustc_mir_dataflow[be42]::value_analysis::{impl#9}::apply)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_const_eval::rustc_const_eval::interpret::projection::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::project_downcast (AssocFn) [DefId: DefId(20:2373 ~ rustc_const_eval[1652]::interpret::projection::{impl#1}::project_downcast)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(20:2373 ~ rustc_const_eval[1652]::interpret::projection::{impl#1}::project_downcast)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_middle::rustc_middle::ty::AdtDef::<'tcx>::variant (AssocFn) [DefId: DefId(173:5587 ~ rustc_middle[8ead]::ty::adt::{impl#4}::variant)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(173:5587 ~ rustc_middle[8ead]::ty::adt::{impl#4}::variant)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_middle::rustc_middle::ty::AdtDef::<'tcx>::non_enum_variant (AssocFn) [DefId: DefId(173:5625 ~ rustc_middle[8ead]::ty::adt::{impl#8}::non_enum_variant)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(173:5625 ~ rustc_middle[8ead]::ty::adt::{impl#8}::non_enum_variant)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_index::rustc_index::IndexSlice::<I, T>::iter_enumerated (AssocFn) [DefId: DefId(25:527 ~ rustc_index[140d]::slice::{impl#0}::iter_enumerated)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(25:527 ~ rustc_index[140d]::slice::{impl#0}::iter_enumerated)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_middle::rustc_middle::ty::FieldDef::ty (AssocFn) [DefId: DefId(173:9426 ~ rustc_middle[8ead]::ty::{impl#43}::ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(173:9426 ~ rustc_middle[8ead]::ty::{impl#43}::ty)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_mir_dataflow::rustc_mir_dataflow::value_analysis::Map::<'tcx>::apply (AssocFn) [DefId: DefId(186:1420 ~ rustc_mir_dataflow[be42]::value_analysis::{impl#9}::apply)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(186:1420 ~ rustc_mir_dataflow[be42]::value_analysis::{impl#9}::apply)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_const_eval::rustc_const_eval::interpret::projection::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::project_field (AssocFn) [DefId: DefId(20:2365 ~ rustc_const_eval[1652]::interpret::projection::{impl#1}::project_field)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(20:2365 ~ rustc_const_eval[1652]::interpret::projection::{impl#1}::project_field)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::rustc_const_eval::rustc_const_eval::interpret::discriminant::<impl rustc_const_eval::interpret::InterpCx<'tcx, M>>::write_discriminant (AssocFn) [DefId: DefId(20:4358 ~ rustc_const_eval[1652]::interpret::discriminant::{impl#0}::write_discriminant)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(20:4358 ~ rustc_const_eval[1652]::interpret::discriminant::{impl#0}::write_discriminant)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::try_trait::from_yeet (Fn) [DefId: DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:4246 ~ core[4720]::ops::try_trait::from_yeet)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(41:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::dataflow_const_prop::try_write_constant USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7859 ~ rustc_mir_transform[7c27]::dataflow_const_prop::try_write_constant)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    }
+  ]
+}

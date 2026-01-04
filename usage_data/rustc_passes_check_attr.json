@@ -1,0 +1,702 @@
+{
+  "crate": "rustc_passes",
+  "module": "check_attr",
+  "usages": [
+    {
+      "usage": "crate::rustc_passes::check_attr::target_from_impl_item USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_get_parent_item (AssocFn) [DefId: DefId(20:189 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_get_parent_item)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:137 ~ rustc_passes[804c]::check_attr::target_from_impl_item)",
+      "used_def_id": "DefId(20:189 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_get_parent_item)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::target_from_impl_item USES crate::rustc_hir::rustc_hir::ImplItem::<'hir>::hir_id (AssocFn) [DefId: DefId(155:722 ~ rustc_hir[e411]::hir::{impl#54}::hir_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:137 ~ rustc_passes[804c]::check_attr::target_from_impl_item)",
+      "used_def_id": "DefId(155:722 ~ rustc_hir[e411]::hir::{impl#54}::hir_id)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::target_from_impl_item USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_expect_item (AssocFn) [DefId: DefId(20:198 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_expect_item)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:137 ~ rustc_passes[804c]::check_attr::target_from_impl_item)",
+      "used_def_id": "DefId(20:198 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_expect_item)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::target_from_impl_item USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:137 ~ rustc_passes[804c]::check_attr::target_from_impl_item)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::target_from_impl_item USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:137 ~ rustc_passes[804c]::check_attr::target_from_impl_item)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::is_c_like_enum USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:253 ~ rustc_passes[804c]::check_attr::is_c_like_enum)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::is_c_like_enum USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:253 ~ rustc_passes[804c]::check_attr::is_c_like_enum)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::is_c_like_enum USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:253 ~ rustc_passes[804c]::check_attr::is_c_like_enum)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::is_c_like_enum USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:253 ~ rustc_passes[804c]::check_attr::is_c_like_enum)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::std::iter::Iterator::find (AssocFn) [DefId: DefId(2:9570 ~ core[4720]::iter::traits::iterator::Iterator::find)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:9570 ~ core[4720]::iter::traits::iterator::Iterator::find)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_hir::rustc_hir::Attribute::has_name (AssocFn) [DefId: DefId(155:583 ~ rustc_hir[e411]::hir::{impl#25}::has_name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(155:583 ~ rustc_hir[e411]::hir::{impl#25}::has_name)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_hir::rustc_hir::Attribute::span (AssocFn) [DefId: DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::std::option::Option::<T>::map (AssocFn) [DefId: DefId(2:10234 ~ core[4720]::option::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:10234 ~ core[4720]::option::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::std::iter::Iterator::find (AssocFn) [DefId: DefId(2:9570 ~ core[4720]::iter::traits::iterator::Iterator::find)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:9570 ~ core[4720]::iter::traits::iterator::Iterator::find)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_free_items (AssocFn) [DefId: DefId(20:125 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_free_items)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(20:125 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_free_items)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_item (AssocFn) [DefId: DefId(20:135 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_item)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(20:135 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_item)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_span::rustc_span::Span::is_dummy (AssocFn) [DefId: DefId(98:704 ~ rustc_span[e3e8]::span_encoding::{impl#4}::is_dummy)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(98:704 ~ rustc_span[e3e8]::span_encoding::{impl#4}::is_dummy)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_hir::rustc_hir::ItemKind::<'_>::ident (AssocFn) [DefId: DefId(155:835 ~ rustc_hir[e411]::hir::{impl#82}::ident)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(155:835 ~ rustc_hir[e411]::hir::{impl#82}::ident)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_middle::rustc_middle::ty::util::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_descr (AssocFn) [DefId: DefId(20:5379 ~ rustc_middle[8ead]::ty::util::{impl#2}::def_descr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(20:5379 ~ rustc_middle[8ead]::ty::util::{impl#2}::def_descr)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_hir_id::rustc_hir::OwnerId::to_def_id (AssocFn) [DefId: DefId(138:29 ~ rustc_hir_id[ea75]::{impl#3}::to_def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(138:29 ~ rustc_hir_id[ea75]::{impl#3}::to_def_id)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::create_err (AssocFn) [DefId: DefId(21:1245 ~ rustc_errors[6adb]::{impl#9}::create_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(21:1245 ~ rustc_errors[6adb]::{impl#9}::create_err)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(20:6819 ~ rustc_middle[8ead]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(20:6819 ~ rustc_middle[8ead]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::std::option::Option::<T>::map (AssocFn) [DefId: DefId(2:10234 ~ core[4720]::option::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:10234 ~ core[4720]::option::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::std::option::Option::<T>::filter (AssocFn) [DefId: DefId(2:10263 ~ core[4720]::option::{impl#0}::filter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:10263 ~ core[4720]::option::{impl#0}::filter)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_span::rustc_span::source_map::SourceMap::span_to_snippet (AssocFn) [DefId: DefId(98:152 ~ rustc_span[e3e8]::source_map::{impl#1}::span_to_snippet)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(98:152 ~ rustc_span[e3e8]::source_map::{impl#1}::span_to_snippet)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_session::rustc_session::Session::source_map (AssocFn) [DefId: DefId(174:1315 ~ rustc_session[612c]::session::{impl#2}::source_map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(174:1315 ~ rustc_session[612c]::session::{impl#2}::source_map)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::core::str::<impl str>::starts_with (AssocFn) [DefId: DefId(2:15188 ~ core[4720]::str::{impl#0}::starts_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:15188 ~ core[4720]::str::{impl#0}::starts_with)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_span::rustc_span::<impl rustc_span::Span>::with_hi (AssocFn) [DefId: DefId(98:1058 ~ rustc_span[e3e8]::{impl#12}::with_hi)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(98:1058 ~ rustc_span[e3e8]::{impl#12}::with_hi)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_span::rustc_span::<impl rustc_span::Span>::with_lo (AssocFn) [DefId: DefId(98:1056 ~ rustc_span[e3e8]::{impl#12}::with_lo)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(98:1056 ~ rustc_span[e3e8]::{impl#12}::with_lo)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::std::ops::Add::add (AssocFn) [DefId: DefId(2:3776 ~ core[4720]::ops::arith::Add::add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:3776 ~ core[4720]::ops::arith::Add::add)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_span::rustc_span::<impl rustc_span::Span>::lo (AssocFn) [DefId: DefId(98:1055 ~ rustc_span[e3e8]::{impl#12}::lo)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(98:1055 ~ rustc_span[e3e8]::{impl#12}::lo)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::std::ops::Add::add (AssocFn) [DefId: DefId(2:3776 ~ core[4720]::ops::arith::Add::add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:3776 ~ core[4720]::ops::arith::Add::add)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_span::rustc_span::<impl rustc_span::Span>::lo (AssocFn) [DefId: DefId(98:1055 ~ rustc_span[e3e8]::{impl#12}::lo)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(98:1055 ~ rustc_span[e3e8]::{impl#12}::lo)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::try_steal_replace_and_emit_err (AssocFn) [DefId: DefId(21:1178 ~ rustc_errors[6adb]::{impl#8}::try_steal_replace_and_emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(21:1178 ~ rustc_errors[6adb]::{impl#8}::try_steal_replace_and_emit_err)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(20:6819 ~ rustc_middle[8ead]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(20:6819 ~ rustc_middle[8ead]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::rustc_errors::rustc_errors::Diag::<'a, G>::emit (AssocFn) [DefId: DefId(21:431 ~ rustc_errors[6adb]::diagnostic::{impl#18}::emit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(21:431 ~ rustc_errors[6adb]::diagnostic::{impl#18}::emit)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_invalid_crate_level_attr USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:254 ~ rustc_passes[804c]::check_attr::check_invalid_crate_level_attr)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_non_exported_macro_for_invalid_attrs USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_attrs (AssocFn) [DefId: DefId(20:213 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_attrs)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:262 ~ rustc_passes[804c]::check_attr::check_non_exported_macro_for_invalid_attrs)",
+      "used_def_id": "DefId(20:213 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_attrs)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_non_exported_macro_for_invalid_attrs USES crate::rustc_hir::rustc_hir::Item::<'hir>::hir_id (AssocFn) [DefId: DefId(155:814 ~ rustc_hir[e411]::hir::{impl#76}::hir_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:262 ~ rustc_passes[804c]::check_attr::check_non_exported_macro_for_invalid_attrs)",
+      "used_def_id": "DefId(155:814 ~ rustc_hir[e411]::hir::{impl#76}::hir_id)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_non_exported_macro_for_invalid_attrs USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:262 ~ rustc_passes[804c]::check_attr::check_non_exported_macro_for_invalid_attrs)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_non_exported_macro_for_invalid_attrs USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:262 ~ rustc_passes[804c]::check_attr::check_non_exported_macro_for_invalid_attrs)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_non_exported_macro_for_invalid_attrs USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:262 ~ rustc_passes[804c]::check_attr::check_non_exported_macro_for_invalid_attrs)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_non_exported_macro_for_invalid_attrs USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:262 ~ rustc_passes[804c]::check_attr::check_non_exported_macro_for_invalid_attrs)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_non_exported_macro_for_invalid_attrs USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(21:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:262 ~ rustc_passes[804c]::check_attr::check_non_exported_macro_for_invalid_attrs)",
+      "used_def_id": "DefId(21:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_non_exported_macro_for_invalid_attrs USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(20:6819 ~ rustc_middle[8ead]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:262 ~ rustc_passes[804c]::check_attr::check_non_exported_macro_for_invalid_attrs)",
+      "used_def_id": "DefId(20:6819 ~ rustc_middle[8ead]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_mod_attrs USES crate::core::std::cell::Cell::<T>::new (AssocFn) [DefId: DefId(2:5543 ~ core[4720]::cell::{impl#9}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:263 ~ rustc_passes[804c]::check_attr::check_mod_attrs)",
+      "used_def_id": "DefId(2:5543 ~ core[4720]::cell::{impl#9}::new)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_mod_attrs USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_visit_item_likes_in_module (AssocFn) [DefId: DefId(20:170 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_visit_item_likes_in_module)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:263 ~ rustc_passes[804c]::check_attr::check_mod_attrs)",
+      "used_def_id": "DefId(20:170 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_visit_item_likes_in_module)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_mod_attrs USES crate::rustc_span::rustc_span::def_id::LocalDefId::is_top_level_module (AssocFn) [DefId: DefId(98:591 ~ rustc_span[e3e8]::def_id::{impl#16}::is_top_level_module)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:263 ~ rustc_passes[804c]::check_attr::check_mod_attrs)",
+      "used_def_id": "DefId(98:591 ~ rustc_span[e3e8]::def_id::{impl#16}::is_top_level_module)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_mod_attrs USES crate::rustc_span::rustc_span::def_id::LocalModDefId::to_local_def_id (AssocFn) [DefId: DefId(98:2386 ~ rustc_span[e3e8]::def_id::{impl#100}::to_local_def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:263 ~ rustc_passes[804c]::check_attr::check_mod_attrs)",
+      "used_def_id": "DefId(98:2386 ~ rustc_span[e3e8]::def_id::{impl#100}::to_local_def_id)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_mod_attrs USES crate::rustc_passes::check_attr::CheckAttrVisitor::<'tcx>::check_attributes (AssocFn) [DefId: DefId(0:150 ~ rustc_passes[804c]::check_attr::{impl#2}::check_attributes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:263 ~ rustc_passes[804c]::check_attr::check_mod_attrs)",
+      "used_def_id": "DefId(0:150 ~ rustc_passes[804c]::check_attr::{impl#2}::check_attributes)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_mod_attrs USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_krate_attrs (AssocFn) [DefId: DefId(20:161 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_krate_attrs)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:263 ~ rustc_passes[804c]::check_attr::check_mod_attrs)",
+      "used_def_id": "DefId(20:161 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_krate_attrs)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_mod_attrs USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:263 ~ rustc_passes[804c]::check_attr::check_mod_attrs)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_mod_attrs USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::abort_if_errors (AssocFn) [DefId: DefId(21:1190 ~ rustc_errors[6adb]::{impl#8}::abort_if_errors)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:263 ~ rustc_passes[804c]::check_attr::check_mod_attrs)",
+      "used_def_id": "DefId(21:1190 ~ rustc_errors[6adb]::{impl#8}::abort_if_errors)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_mod_attrs USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(20:6819 ~ rustc_middle[8ead]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:263 ~ rustc_passes[804c]::check_attr::check_mod_attrs)",
+      "used_def_id": "DefId(20:6819 ~ rustc_middle[8ead]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::rustc_hir::rustc_hir::Attribute::is_word (AssocFn) [DefId: DefId(155:586 ~ rustc_hir[e411]::hir::{impl#25}::is_word)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(155:586 ~ rustc_hir[e411]::hir::{impl#25}::is_word)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::rustc_hir::rustc_hir::Attribute::name (AssocFn) [DefId: DefId(155:576 ~ rustc_hir[e411]::hir::{impl#25}::name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(155:576 ~ rustc_hir[e411]::hir::{impl#25}::name)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::std::std::collections::HashMap::<K, V, S>::entry (AssocFn) [DefId: DefId(1:939 ~ std[93f5]::collections::hash::map::{impl#2}::entry)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(1:939 ~ std[93f5]::collections::hash::map::{impl#2}::entry)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::std::std::collections::hash_map::OccupiedEntry::<'a, K, V>::insert (AssocFn) [DefId: DefId(1:1435 ~ std[93f5]::collections::hash::map::{impl#74}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(1:1435 ~ std[93f5]::collections::hash::map::{impl#74}::insert)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::rustc_hir::rustc_hir::Attribute::span (AssocFn) [DefId: DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::rustc_hir::rustc_hir::Attribute::span (AssocFn) [DefId: DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::rustc_hir::rustc_hir::Attribute::span (AssocFn) [DefId: DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::std::std::collections::hash_map::OccupiedEntry::<'a, K, V>::get (AssocFn) [DefId: DefId(1:1432 ~ std[93f5]::collections::hash::map::{impl#74}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(1:1432 ~ std[93f5]::collections::hash::map::{impl#74}::get)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::emit_node_span_lint (AssocFn) [DefId: DefId(20:7038 ~ rustc_middle[8ead]::ty::context::{impl#44}::emit_node_span_lint)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(20:7038 ~ rustc_middle[8ead]::ty::context::{impl#44}::emit_node_span_lint)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::std::std::collections::hash_map::VacantEntry::<'a, K, V>::insert (AssocFn) [DefId: DefId(1:1443 ~ std[93f5]::collections::hash::map::{impl#75}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(1:1443 ~ std[93f5]::collections::hash::map::{impl#75}::insert)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::rustc_hir::rustc_hir::Attribute::span (AssocFn) [DefId: DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::std::std::collections::HashMap::<K, V, S>::entry (AssocFn) [DefId: DefId(1:939 ~ std[93f5]::collections::hash::map::{impl#2}::entry)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(1:939 ~ std[93f5]::collections::hash::map::{impl#2}::entry)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::std::std::collections::hash_map::OccupiedEntry::<'a, K, V>::insert (AssocFn) [DefId: DefId(1:1435 ~ std[93f5]::collections::hash::map::{impl#74}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(1:1435 ~ std[93f5]::collections::hash::map::{impl#74}::insert)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::rustc_hir::rustc_hir::Attribute::span (AssocFn) [DefId: DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::rustc_hir::rustc_hir::Attribute::span (AssocFn) [DefId: DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::rustc_hir::rustc_hir::Attribute::span (AssocFn) [DefId: DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::std::std::collections::hash_map::OccupiedEntry::<'a, K, V>::get (AssocFn) [DefId: DefId(1:1432 ~ std[93f5]::collections::hash::map::{impl#74}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(1:1432 ~ std[93f5]::collections::hash::map::{impl#74}::get)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(21:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(21:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(20:6819 ~ rustc_middle[8ead]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(20:6819 ~ rustc_middle[8ead]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::std::std::collections::hash_map::VacantEntry::<'a, K, V>::insert (AssocFn) [DefId: DefId(1:1443 ~ std[93f5]::collections::hash::map::{impl#75}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(1:1443 ~ std[93f5]::collections::hash::map::{impl#75}::insert)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::check_duplicates USES crate::rustc_hir::rustc_hir::Attribute::span (AssocFn) [DefId: DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:265 ~ rustc_passes[804c]::check_attr::check_duplicates)",
+      "used_def_id": "DefId(155:585 ~ rustc_hir[e411]::hir::{impl#25}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::doc_fake_variadic_is_allowed_self_ty USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:267 ~ rustc_passes[804c]::check_attr::doc_fake_variadic_is_allowed_self_ty)",
+      "used_def_id": "DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::doc_fake_variadic_is_allowed_self_ty USES crate::core::std::option::Option::<T>::map (AssocFn) [DefId: DefId(2:10234 ~ core[4720]::option::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:267 ~ rustc_passes[804c]::check_attr::doc_fake_variadic_is_allowed_self_ty)",
+      "used_def_id": "DefId(2:10234 ~ core[4720]::option::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::doc_fake_variadic_is_allowed_self_ty USES crate::core::core::slice::<impl [T]>::last (AssocFn) [DefId: DefId(2:14042 ~ core[4720]::slice::{impl#0}::last)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:267 ~ rustc_passes[804c]::check_attr::doc_fake_variadic_is_allowed_self_ty)",
+      "used_def_id": "DefId(2:14042 ~ core[4720]::slice::{impl#0}::last)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::doc_fake_variadic_is_allowed_self_ty USES crate::rustc_hir::rustc_hir::PathSegment::<'hir>::args (AssocFn) [DefId: DefId(155:448 ~ rustc_hir[e411]::hir::{impl#6}::args)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:267 ~ rustc_passes[804c]::check_attr::doc_fake_variadic_is_allowed_self_ty)",
+      "used_def_id": "DefId(155:448 ~ rustc_hir[e411]::hir::{impl#6}::args)"
+    },
+    {
+      "usage": "crate::rustc_passes::check_attr::doc_fake_variadic_is_allowed_self_ty USES crate::rustc_hir::rustc_hir::Ty::<'hir, rustc_hir::AmbigArg>::as_unambig_ty (AssocFn) [DefId: DefId(155:740 ~ rustc_hir[e411]::hir::{impl#59}::as_unambig_ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:267 ~ rustc_passes[804c]::check_attr::doc_fake_variadic_is_allowed_self_ty)",
+      "used_def_id": "DefId(155:740 ~ rustc_hir[e411]::hir::{impl#59}::as_unambig_ty)"
+    }
+  ]
+}

@@ -1,0 +1,1942 @@
+{
+  "crate": "rustc_mir_transform",
+  "module": "lint_tail_expr_drop_order",
+  "usages": [
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::place_has_common_prefix USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:568 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::place_has_common_prefix)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::place_has_common_prefix USES crate::core::std::iter::Iterator::all (AssocFn) [DefId: DefId(2:9556 ~ core[4720]::iter::traits::iterator::Iterator::all)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:568 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::place_has_common_prefix)",
+      "used_def_id": "DefId(2:9556 ~ core[4720]::iter::traits::iterator::Iterator::all)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::place_has_common_prefix USES crate::core::std::iter::Iterator::zip (AssocFn) [DefId: DefId(2:9453 ~ core[4720]::iter::traits::iterator::Iterator::zip)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:568 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::place_has_common_prefix)",
+      "used_def_id": "DefId(2:9453 ~ core[4720]::iter::traits::iterator::Iterator::zip)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::place_has_common_prefix USES crate::rustc_middle::rustc_middle::ty::list::RawList::<H, T>::iter (AssocFn) [DefId: DefId(173:7911 ~ rustc_middle[8ead]::ty::list::{impl#1}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:568 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::place_has_common_prefix)",
+      "used_def_id": "DefId(173:7911 ~ rustc_middle[8ead]::ty::list::{impl#1}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::place_has_common_prefix USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:568 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::place_has_common_prefix)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::place_descendent_of_bids USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:589 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::place_descendent_of_bids)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::place_descendent_of_bids USES crate::rustc_data_structures::rustc_data_structures::unord::UnordSet::<V>::contains (AssocFn) [DefId: DefId(22:2777 ~ rustc_data_structures[bda7]::unord::{impl#7}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:589 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::place_descendent_of_bids)",
+      "used_def_id": "DefId(22:2777 ~ rustc_data_structures[bda7]::unord::{impl#7}::contains)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_kind (AssocFn) [DefId: DefId(173:36778 ~ rustc_middle[8ead]::query::{impl#3}::def_kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(173:36778 ~ rustc_middle[8ead]::query::{impl#3}::def_kind)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_span::rustc_span::edition::Edition::at_least_rust_2024 (AssocFn) [DefId: DefId(98:254 ~ rustc_span[e3e8]::edition::{impl#1}::at_least_rust_2024)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(98:254 ~ rustc_span[e3e8]::edition::{impl#1}::at_least_rust_2024)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_span::rustc_span::<impl rustc_span::Span>::edition (AssocFn) [DefId: DefId(98:1086 ~ rustc_span[e3e8]::{impl#12}::edition)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(98:1086 ~ rustc_span[e3e8]::{impl#12}::edition)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_data_structures::rustc_data_structures::unord::UnordSet::<V>::contains (AssocFn) [DefId: DefId(22:2777 ~ rustc_data_structures[bda7]::unord::{impl#7}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(22:2777 ~ rustc_data_structures[bda7]::unord::{impl#7}::contains)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::lints_that_dont_need_to_run (AssocFn) [DefId: DefId(173:36678 ~ rustc_middle[8ead]::query::{impl#3}::lints_that_dont_need_to_run)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(173:36678 ~ rustc_middle[8ead]::query::{impl#3}::lints_that_dont_need_to_run)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_lint_defs::rustc_session::rustc_lint_defs::LintId::of (AssocFn) [DefId: DefId(137:88 ~ rustc_lint_defs[2c07]::{impl#11}::of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(137:88 ~ rustc_lint_defs[2c07]::{impl#11}::of)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_middle::rustc_middle::ty::TypingEnv::<'tcx>::non_body_analysis (AssocFn) [DefId: DefId(173:9391 ~ rustc_middle[8ead]::ty::{impl#35}::non_body_analysis)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(173:9391 ~ rustc_middle[8ead]::ty::{impl#35}::non_body_analysis)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_data_structures::rustc_data_structures::unord::UnordSet::<V>::new (AssocFn) [DefId: DefId(22:2771 ~ rustc_data_structures[bda7]::unord::{impl#7}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(22:2771 ~ rustc_data_structures[bda7]::unord::{impl#7}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::IndexSlice::<I, T>::iter_enumerated (AssocFn) [DefId: DefId(25:527 ~ rustc_index[140d]::slice::{impl#0}::iter_enumerated)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:527 ~ rustc_index[140d]::slice::{impl#0}::iter_enumerated)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::enumerate (AssocFn) [DefId: DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_middle::rustc_middle::mir::statement::<impl rustc_middle::mir::Place<'tcx>>::ty (AssocFn) [DefId: DefId(173:2642 ~ rustc_middle[8ead]::mir::statement::{impl#5}::ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(173:2642 ~ rustc_middle[8ead]::mir::statement::{impl#5}::ty)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::smallvec::smallvec::SmallVec::<A>::is_empty (AssocFn) [DefId: DefId(27:164 ~ smallvec[9e2e]::{impl#17}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(27:164 ~ smallvec[9e2e]::{impl#17}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::std::std::collections::hash_map::Entry::<'a, K, V>::or_insert_with (AssocFn) [DefId: DefId(1:1413 ~ std[93f5]::collections::hash::map::{impl#72}::or_insert_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(1:1413 ~ std[93f5]::collections::hash::map::{impl#72}::or_insert_with)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_data_structures::rustc_data_structures::unord::UnordMap::<K, V>::entry (AssocFn) [DefId: DefId(22:2855 ~ rustc_data_structures[bda7]::unord::{impl#19}::entry)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(22:2855 ~ rustc_data_structures[bda7]::unord::{impl#19}::entry)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::indexmap::indexmap::map::core::entry::Entry::<'a, K, V>::or_insert (AssocFn) [DefId: DefId(32:163 ~ indexmap[8f0e]::map::core::entry::{impl#1}::or_insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(32:163 ~ indexmap[8f0e]::map::core::entry::{impl#1}::or_insert)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::indexmap::indexmap::map::IndexMap::<K, V, S>::entry (AssocFn) [DefId: DefId(32:1510 ~ indexmap[8f0e]::map::{impl#4}::entry)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(32:1510 ~ indexmap[8f0e]::map::{impl#4}::entry)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_data_structures::rustc_data_structures::unord::UnordSet::<V>::insert (AssocFn) [DefId: DefId(22:2776 ~ rustc_data_structures[bda7]::unord::{impl#7}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(22:2776 ~ rustc_data_structures[bda7]::unord::{impl#7}::insert)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::indexmap::indexmap::map::IndexMap::<K, V, S>::is_empty (AssocFn) [DefId: DefId(32:1479 ~ indexmap[8f0e]::map::{impl#3}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(32:1479 ~ indexmap[8f0e]::map::{impl#3}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_middle::rustc_middle::mir::MirDumper::<'dis, 'de, 'tcx>::new (AssocFn) [DefId: DefId(173:2370 ~ rustc_middle[8ead]::mir::pretty::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(173:2370 ~ rustc_middle[8ead]::mir::pretty::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_middle::rustc_middle::mir::MirDumper::<'dis, 'de, 'tcx>::dump_mir (AssocFn) [DefId: DefId(173:2378 ~ rustc_middle[8ead]::mir::pretty::{impl#1}::dump_mir)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(173:2378 ~ rustc_middle[8ead]::mir::pretty::{impl#1}::dump_mir)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_middle::rustc_middle::ty::util::<impl rustc_middle::ty::TyCtxt<'tcx>>::is_closure_like (AssocFn) [DefId: DefId(173:5365 ~ rustc_middle[8ead]::ty::util::{impl#2}::is_closure_like)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(173:5365 ~ rustc_middle[8ead]::ty::util::{impl#2}::is_closure_like)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_span::rustc_span::def_id::LocalDefId::to_def_id (AssocFn) [DefId: DefId(98:590 ~ rustc_span[e3e8]::def_id::{impl#16}::to_def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(98:590 ~ rustc_span[e3e8]::def_id::{impl#16}::to_def_id)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_mir_dataflow::rustc_mir_dataflow::move_paths::MoveData::<'tcx>::gather_moves (AssocFn) [DefId: DefId(186:1198 ~ rustc_mir_dataflow[be42]::move_paths::{impl#13}::gather_moves)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(186:1198 ~ rustc_mir_dataflow[be42]::move_paths::{impl#13}::gather_moves)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_mir_dataflow::rustc_mir_dataflow::framework::results::AnalysisAndResults::<'tcx, A>::into_results_cursor (AssocFn) [DefId: DefId(186:555 ~ rustc_mir_dataflow[be42]::framework::results::{impl#0}::into_results_cursor)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(186:555 ~ rustc_mir_dataflow[be42]::framework::results::{impl#0}::into_results_cursor)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_mir_dataflow::rustc_mir_dataflow::Analysis::iterate_to_fixpoint (AssocFn) [DefId: DefId(186:627 ~ rustc_mir_dataflow[be42]::framework::Analysis::iterate_to_fixpoint)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(186:627 ~ rustc_mir_dataflow[be42]::framework::Analysis::iterate_to_fixpoint)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_mir_dataflow::rustc_mir_dataflow::impls::MaybeInitializedPlaces::<'a, 'tcx>::new (AssocFn) [DefId: DefId(186:766 ~ rustc_mir_dataflow[be42]::impls::initialized::{impl#2}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(186:766 ~ rustc_mir_dataflow[be42]::impls::initialized::{impl#2}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::IndexVec::<I, T>::from_elem_n (AssocFn) [DefId: DefId(25:628 ~ rustc_index[140d]::vec::{impl#0}::from_elem_n)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:628 ~ rustc_index[140d]::vec::{impl#0}::from_elem_n)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::IndexSlice::<I, T>::len (AssocFn) [DefId: DefId(25:523 ~ rustc_index[140d]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:523 ~ rustc_index[140d]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::new_empty (AssocFn) [DefId: DefId(25:202 ~ rustc_index[140d]::bit_set::{impl#19}::new_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:202 ~ rustc_index[140d]::bit_set::{impl#19}::new_empty)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::IndexSlice::<I, T>::len (AssocFn) [DefId: DefId(25:523 ~ rustc_index[140d]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:523 ~ rustc_index[140d]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::new_empty (AssocFn) [DefId: DefId(25:202 ~ rustc_index[140d]::bit_set::{impl#19}::new_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:202 ~ rustc_index[140d]::bit_set::{impl#19}::new_empty)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::IndexSlice::<I, T>::len (AssocFn) [DefId: DefId(25:523 ~ rustc_index[140d]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:523 ~ rustc_index[140d]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_mir_transform::lint_tail_expr_drop_order::DropsReachable::<'a, 'mir, 'tcx>::visit (AssocFn) [DefId: DefId(0:587 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::{impl#0}::visit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(0:587 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::{impl#0}::visit)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::union (AssocFn) [DefId: DefId(25:842 ~ rustc_index[140d]::bit_set::{impl#19}::union)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:842 ~ rustc_index[140d]::bit_set::{impl#19}::union)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::new_empty (AssocFn) [DefId: DefId(25:202 ~ rustc_index[140d]::bit_set::{impl#19}::new_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:202 ~ rustc_index[140d]::bit_set::{impl#19}::new_empty)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::domain_size (AssocFn) [DefId: DefId(25:199 ~ rustc_index[140d]::bit_set::{impl#18}::domain_size)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:199 ~ rustc_index[140d]::bit_set::{impl#18}::domain_size)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::iter (AssocFn) [DefId: DefId(25:208 ~ rustc_index[140d]::bit_set::{impl#19}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:208 ~ rustc_index[140d]::bit_set::{impl#19}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_middle::rustc_middle::mir::Local::ZERO (AssocConst) [DefId: DefId(173:18220 ~ rustc_middle[8ead]::mir::{impl#50}::ZERO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(173:18220 ~ rustc_middle[8ead]::mir::{impl#50}::ZERO)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(41:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::insert (AssocFn) [DefId: DefId(25:205 ~ rustc_index[140d]::bit_set::{impl#19}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:205 ~ rustc_index[140d]::bit_set::{impl#19}::insert)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(41:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::insert (AssocFn) [DefId: DefId(25:205 ~ rustc_index[140d]::bit_set::{impl#19}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:205 ~ rustc_index[140d]::bit_set::{impl#19}::insert)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(41:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::insert (AssocFn) [DefId: DefId(25:205 ~ rustc_index[140d]::bit_set::{impl#19}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:205 ~ rustc_index[140d]::bit_set::{impl#19}::insert)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_middle::rustc_middle::mir::statement::<impl rustc_middle::mir::Place<'tcx>>::ty (AssocFn) [DefId: DefId(173:2642 ~ rustc_middle[8ead]::mir::statement::{impl#5}::ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(173:2642 ~ rustc_middle[8ead]::mir::statement::{impl#5}::ty)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::smallvec::smallvec::SmallVec::<A>::is_empty (AssocFn) [DefId: DefId(27:164 ~ smallvec[9e2e]::{impl#17}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(27:164 ~ smallvec[9e2e]::{impl#17}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::std::std::collections::hash_map::Entry::<'a, K, V>::or_insert_with (AssocFn) [DefId: DefId(1:1413 ~ std[93f5]::collections::hash::map::{impl#72}::or_insert_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(1:1413 ~ std[93f5]::collections::hash::map::{impl#72}::or_insert_with)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_data_structures::rustc_data_structures::unord::UnordMap::<K, V>::entry (AssocFn) [DefId: DefId(22:2855 ~ rustc_data_structures[bda7]::unord::{impl#19}::entry)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(22:2855 ~ rustc_data_structures[bda7]::unord::{impl#19}::entry)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(41:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(41:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::insert (AssocFn) [DefId: DefId(25:205 ~ rustc_index[140d]::bit_set::{impl#19}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:205 ~ rustc_index[140d]::bit_set::{impl#19}::insert)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::itertools::itertools::Itertools::all_equal_value (AssocFn) [DefId: DefId(119:2384 ~ itertools[ee0a]::Itertools::all_equal_value)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(119:2384 ~ itertools[ee0a]::Itertools::all_equal_value)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::iter (AssocFn) [DefId: DefId(25:208 ~ rustc_index[140d]::bit_set::{impl#19}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:208 ~ rustc_index[140d]::bit_set::{impl#19}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::insert (AssocFn) [DefId: DefId(25:205 ~ rustc_index[140d]::bit_set::{impl#19}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:205 ~ rustc_index[140d]::bit_set::{impl#19}::insert)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::subtract (AssocFn) [DefId: DefId(25:844 ~ rustc_index[140d]::bit_set::{impl#19}::subtract)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:844 ~ rustc_index[140d]::bit_set::{impl#19}::subtract)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::is_empty (AssocFn) [DefId: DefId(25:203 ~ rustc_index[140d]::bit_set::{impl#19}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:203 ~ rustc_index[140d]::bit_set::{impl#19}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::chain (AssocFn) [DefId: DefId(2:9451 ~ core[4720]::iter::traits::iterator::Iterator::chain)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9451 ~ core[4720]::iter::traits::iterator::Iterator::chain)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::iter (AssocFn) [DefId: DefId(25:208 ~ rustc_index[140d]::bit_set::{impl#19}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:208 ~ rustc_index[140d]::bit_set::{impl#19}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::indexmap::indexmap::map::IndexMap::<K, V, S>::get (AssocFn) [DefId: DefId(32:1524 ~ indexmap[8f0e]::map::{impl#5}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(32:1524 ~ indexmap[8f0e]::map::{impl#5}::get)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::alloc::std::string::String::as_str (AssocFn) [DefId: DefId(3:6446 ~ alloc[27b0]::string::{impl#0}::as_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(3:6446 ~ alloc[27b0]::string::{impl#0}::as_str)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::option::Option::<T>::is_none (AssocFn) [DefId: DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::filter_map (AssocFn) [DefId: DefId(2:9470 ~ core[4720]::iter::traits::iterator::Iterator::filter_map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9470 ~ core[4720]::iter::traits::iterator::Iterator::filter_map)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_data_structures::rustc_data_structures::unord::UnordMap::<K, V>::get (AssocFn) [DefId: DefId(22:2856 ~ rustc_data_structures[bda7]::unord::{impl#19}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(22:2856 ~ rustc_data_structures[bda7]::unord::{impl#19}::get)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(173:8867 ~ rustc_middle[8ead]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(173:8867 ~ rustc_middle[8ead]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_index::rustc_index::bit_set::MixedBitSet::<T>::iter (AssocFn) [DefId: DefId(25:208 ~ rustc_index[140d]::bit_set::{impl#19}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(25:208 ~ rustc_index[140d]::bit_set::{impl#19}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_middle::rustc_middle::mir::statement::<impl rustc_middle::mir::Place<'tcx>>::ty (AssocFn) [DefId: DefId(173:2642 ~ rustc_middle[8ead]::mir::statement::{impl#5}::ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(173:2642 ~ rustc_middle[8ead]::mir::statement::{impl#5}::ty)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::indexmap::indexmap::map::IndexMap::<K, V, S>::get (AssocFn) [DefId: DefId(32:1524 ~ indexmap[8f0e]::map::{impl#5}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(32:1524 ~ indexmap[8f0e]::map::{impl#5}::get)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::alloc::std::string::String::as_str (AssocFn) [DefId: DefId(3:6446 ~ alloc[27b0]::string::{impl#0}::as_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(3:6446 ~ alloc[27b0]::string::{impl#0}::as_str)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::filter_map (AssocFn) [DefId: DefId(2:9470 ~ core[4720]::iter::traits::iterator::Iterator::filter_map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9470 ~ core[4720]::iter::traits::iterator::Iterator::filter_map)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(173:8867 ~ rustc_middle[8ead]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(173:8867 ~ rustc_middle[8ead]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::emit_node_span_lint (AssocFn) [DefId: DefId(173:7038 ~ rustc_middle[8ead]::ty::context::{impl#44}::emit_node_span_lint)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(173:7038 ~ rustc_middle[8ead]::ty::context::{impl#44}::emit_node_span_lint)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::option::Option::<T>::unwrap_or (AssocFn) [DefId: DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::run_lint USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::run_lint)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::collect_user_names USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:601 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::collect_user_names)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::collect_user_names USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:601 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::collect_user_names)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::collect_user_names USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:601 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::collect_user_names)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::collect_user_names USES crate::rustc_middle::rustc_middle::mir::statement::<impl rustc_middle::mir::Place<'tcx>>::local_or_deref_local (AssocFn) [DefId: DefId(173:2634 ~ rustc_middle[8ead]::mir::statement::{impl#5}::local_or_deref_local)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:601 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::collect_user_names)",
+      "used_def_id": "DefId(173:2634 ~ rustc_middle[8ead]::mir::statement::{impl#5}::local_or_deref_local)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::collect_user_names USES crate::indexmap::indexmap::map::core::entry::Entry::<'a, K, V>::or_insert (AssocFn) [DefId: DefId(32:163 ~ indexmap[8f0e]::map::core::entry::{impl#1}::or_insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:601 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::collect_user_names)",
+      "used_def_id": "DefId(32:163 ~ indexmap[8f0e]::map::core::entry::{impl#1}::or_insert)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::collect_user_names USES crate::indexmap::indexmap::map::IndexMap::<K, V, S>::entry (AssocFn) [DefId: DefId(32:1510 ~ indexmap[8f0e]::map::{impl#4}::entry)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:601 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::collect_user_names)",
+      "used_def_id": "DefId(32:1510 ~ indexmap[8f0e]::map::{impl#4}::entry)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::collect_user_names USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:601 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::collect_user_names)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::collect_user_names USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:601 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::collect_user_names)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::indexmap::indexmap::map::IndexMap::<K, V, S>::get (AssocFn) [DefId: DefId(32:1524 ~ indexmap[8f0e]::map::{impl#5}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(32:1524 ~ indexmap[8f0e]::map::{impl#5}::get)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::rustc_span::rustc_span::Symbol::as_str (AssocFn) [DefId: DefId(98:812 ~ rustc_span[e3e8]::symbol::{impl#14}::as_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(98:812 ~ rustc_span[e3e8]::symbol::{impl#14}::as_str)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::std::std::collections::HashSet::<T, S>::contains (AssocFn) [DefId: DefId(1:1559 ~ std[93f5]::collections::hash::set::{impl#2}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(1:1559 ~ std[93f5]::collections::hash::set::{impl#2}::contains)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::core::std::ops::FnMut::call_mut (AssocFn) [DefId: DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::alloc::std::borrow::ToOwned::to_owned (AssocFn) [DefId: DefId(3:179 ~ alloc[27b0]::borrow::ToOwned::to_owned)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(3:179 ~ alloc[27b0]::borrow::ToOwned::to_owned)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::core::std::ops::FnMut::call_mut (AssocFn) [DefId: DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::std::std::collections::HashSet::<T, S>::insert (AssocFn) [DefId: DefId(1:1574 ~ std[93f5]::collections::hash::set::{impl#2}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(1:1574 ~ std[93f5]::collections::hash::set::{impl#2}::insert)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::indexmap::indexmap::map::IndexMap::<K, V, S>::insert (AssocFn) [DefId: DefId(32:1505 ~ indexmap[8f0e]::map::{impl#4}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(32:1505 ~ indexmap[8f0e]::map::{impl#4}::insert)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::lint_tail_expr_drop_order::assign_observables_names USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ rustc_mir_transform[7c27]::lint_tail_expr_drop_order::assign_observables_names)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    }
+  ]
+}
