@@ -1,0 +1,22 @@
+{
+  "crate": "rustc_monomorphize",
+  "module": "partitioning::place_mono_items",
+  "usages": [
+    {
+      "usage": "crate::rustc_monomorphize::partitioning::place_mono_items::get_reachable_inlined_items USES crate::rustc_monomorphize::collector::UsageMap::<'tcx>::for_each_inlined_used_item (AssocFn) [DefId: DefId(0:119 ~ rustc_monomorphize[fa0c]::collector::{impl#0}::for_each_inlined_used_item)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:408 ~ rustc_monomorphize[fa0c]::partitioning::place_mono_items::get_reachable_inlined_items)",
+      "used_def_id": "DefId(0:119 ~ rustc_monomorphize[fa0c]::collector::{impl#0}::for_each_inlined_used_item)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::partitioning::place_mono_items::get_reachable_inlined_items USES crate::indexmap::indexmap::set::IndexSet::<T, S>::insert (AssocFn) [DefId: DefId(33:2273 ~ indexmap[8f0e]::set::{impl#4}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:408 ~ rustc_monomorphize[fa0c]::partitioning::place_mono_items::get_reachable_inlined_items)",
+      "used_def_id": "DefId(33:2273 ~ indexmap[8f0e]::set::{impl#4}::insert)"
+    }
+  ]
+}

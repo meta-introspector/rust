@@ -1,0 +1,1182 @@
+{
+  "crate": "rustc_incremental",
+  "module": "persist::load",
+  "usages": [
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_data USES crate::rustc_session::rustc_session::Session::is_nightly_build (AssocFn) [DefId: DefId(174:1369 ~ rustc_session[612c]::session::{impl#3}::is_nightly_build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:372 ~ rustc_incremental[7bdb]::persist::load::load_data)",
+      "used_def_id": "DefId(174:1369 ~ rustc_session[612c]::session::{impl#3}::is_nightly_build)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_data USES crate::std::std::path::Path::to_path_buf (AssocFn) [DefId: DefId(1:5855 ~ std[93f5]::path::{impl#70}::to_path_buf)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:372 ~ rustc_incremental[7bdb]::persist::load::load_data)",
+      "used_def_id": "DefId(1:5855 ~ std[93f5]::path::{impl#70}::to_path_buf)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::delete_dirty_work_product USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:373 ~ rustc_incremental[7bdb]::persist::load::delete_dirty_work_product)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::option::Option::<T>::is_none (AssocFn) [DefId: DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::generic_activity (AssocFn) [DefId: DefId(20:1067 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(20:1067 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_session::rustc_session::config::Options::dep_tracking_hash (AssocFn) [DefId: DefId(174:3917 ~ rustc_session[612c]::options::{impl#10}::dep_tracking_hash)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(174:3917 ~ rustc_session[612c]::options::{impl#10}::dep_tracking_hash)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_session::rustc_session::Session::incr_comp_session_dir_opt (AssocFn) [DefId: DefId(174:1345 ~ rustc_session[612c]::session::{impl#2}::incr_comp_session_dir_opt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(174:1345 ~ rustc_session[612c]::session::{impl#2}::incr_comp_session_dir_opt)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_serialize::rustc_serialize::opaque::MemDecoder::<'a>::new (AssocFn) [DefId: DefId(26:477 ~ rustc_serialize[5759]::opaque::{impl#3}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(26:477 ~ rustc_serialize[5759]::opaque::{impl#3}::new)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::ops::RangeFull (Struct) [DefId: DefId(2:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_warn (AssocFn) [DefId: DefId(164:1266 ~ rustc_errors[6adb]::{impl#9}::emit_warn)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(164:1266 ~ rustc_errors[6adb]::{impl#9}::emit_warn)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(174:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(174:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_data_structures::rustc_data_structures::unord::UnordItems::<T, I>::all (AssocFn) [DefId: DefId(20:2699 ~ rustc_data_structures[bda7]::unord::{impl#0}::all)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(20:2699 ~ rustc_data_structures[bda7]::unord::{impl#0}::all)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_data_structures::rustc_data_structures::unord::UnordMap::<K, V>::items (AssocFn) [DefId: DefId(20:2862 ~ rustc_data_structures[bda7]::unord::{impl#19}::items)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(20:2862 ~ rustc_data_structures[bda7]::unord::{impl#19}::items)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::std::std::path::Path::exists (AssocFn) [DefId: DefId(1:5901 ~ std[93f5]::path::{impl#70}::exists)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(1:5901 ~ std[93f5]::path::{impl#70}::exists)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_data_structures::rustc_data_structures::unord::UnordMap::<K, V>::insert (AssocFn) [DefId: DefId(20:2850 ~ rustc_data_structures[bda7]::unord::{impl#19}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(20:2850 ~ rustc_data_structures[bda7]::unord::{impl#19}::insert)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::generic_activity (AssocFn) [DefId: DefId(20:1067 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(20:1067 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_serialize::rustc_serialize::opaque::MemDecoder::<'a>::new (AssocFn) [DefId: DefId(26:477 ~ rustc_serialize[5759]::opaque::{impl#3}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(26:477 ~ rustc_serialize[5759]::opaque::{impl#3}::new)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_warn (AssocFn) [DefId: DefId(164:1266 ~ rustc_errors[6adb]::{impl#9}::emit_warn)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(164:1266 ~ rustc_errors[6adb]::{impl#9}::emit_warn)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(174:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(174:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_serialize::rustc_serialize::Decodable::decode (AssocFn) [DefId: DefId(26:81 ~ rustc_serialize[5759]::serialize::Decodable::decode)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(26:81 ~ rustc_serialize[5759]::serialize::Decodable::decode)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_dep_graph USES crate::rustc_query_system::rustc_middle::dep_graph::SerializedDepGraph::decode (AssocFn) [DefId: DefId(179:1622 ~ rustc_query_system[7129]::dep_graph::serialized::{impl#2}::decode)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:374 ~ rustc_incremental[7bdb]::persist::load::load_dep_graph)",
+      "used_def_id": "DefId(179:1622 ~ rustc_query_system[7129]::dep_graph::serialized::{impl#2}::decode)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_query_result_cache USES crate::core::std::option::Option::<T>::is_none (AssocFn) [DefId: DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:376 ~ rustc_incremental[7bdb]::persist::load::load_query_result_cache)",
+      "used_def_id": "DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_query_result_cache USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::generic_activity (AssocFn) [DefId: DefId(20:1067 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:376 ~ rustc_incremental[7bdb]::persist::load::load_query_result_cache)",
+      "used_def_id": "DefId(20:1067 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_query_result_cache USES crate::core::std::result::Result::<T, E>::unwrap_or_else (AssocFn) [DefId: DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:376 ~ rustc_incremental[7bdb]::persist::load::load_query_result_cache)",
+      "used_def_id": "DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_query_result_cache USES crate::rustc_middle::rustc_middle::query::on_disk_cache::OnDiskCache::new (AssocFn) [DefId: DefId(163:10425 ~ rustc_middle[8ead]::query::on_disk_cache::{impl#2}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:376 ~ rustc_incremental[7bdb]::persist::load::load_query_result_cache)",
+      "used_def_id": "DefId(163:10425 ~ rustc_middle[8ead]::query::on_disk_cache::{impl#2}::new)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_query_result_cache USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_warn (AssocFn) [DefId: DefId(164:1266 ~ rustc_errors[6adb]::{impl#9}::emit_warn)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:376 ~ rustc_incremental[7bdb]::persist::load::load_query_result_cache)",
+      "used_def_id": "DefId(164:1266 ~ rustc_errors[6adb]::{impl#9}::emit_warn)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_query_result_cache USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(174:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:376 ~ rustc_incremental[7bdb]::persist::load::load_query_result_cache)",
+      "used_def_id": "DefId(174:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_query_result_cache USES crate::rustc_middle::rustc_middle::query::on_disk_cache::OnDiskCache::new_empty (AssocFn) [DefId: DefId(163:10428 ~ rustc_middle[8ead]::query::on_disk_cache::{impl#2}::new_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:376 ~ rustc_incremental[7bdb]::persist::load::load_query_result_cache)",
+      "used_def_id": "DefId(163:10428 ~ rustc_middle[8ead]::query::on_disk_cache::{impl#2}::new_empty)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::load_query_result_cache USES crate::rustc_middle::rustc_middle::query::on_disk_cache::OnDiskCache::new_empty (AssocFn) [DefId: DefId(163:10428 ~ rustc_middle[8ead]::query::on_disk_cache::{impl#2}::new_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:376 ~ rustc_incremental[7bdb]::persist::load::load_query_result_cache)",
+      "used_def_id": "DefId(163:10428 ~ rustc_middle[8ead]::query::on_disk_cache::{impl#2}::new_empty)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::core::core::bool::<impl bool>::then (AssocFn) [DefId: DefId(2:15936 ~ core[4720]::bool::{impl#0}::then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(2:15936 ~ core[4720]::bool::{impl#0}::then)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::rustc_session::rustc_session::config::<impl rustc_session::config::Options>::build_dep_graph (AssocFn) [DefId: DefId(174:500 ~ rustc_session[612c]::config::{impl#16}::build_dep_graph)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(174:500 ~ rustc_session[612c]::config::{impl#16}::build_dep_graph)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::rustc_session::rustc_session::utils::<impl rustc_session::Session>::time (AssocFn) [DefId: DefId(174:66 ~ rustc_session[612c]::utils::{impl#0}::time)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(174:66 ~ rustc_session[612c]::utils::{impl#0}::time)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(39:537 ~ tracing_core[77f1]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:537 ~ tracing_core[77f1]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(39:537 ~ tracing_core[77f1]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:537 ~ tracing_core[77f1]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::core::std::option::Option::<T>::unwrap_or_else (AssocFn) [DefId: DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::rustc_incremental::persist::load::LoadResult::<T>::open (AssocFn) [DefId: DefId(0:371 ~ rustc_incremental[7bdb]::persist::load::{impl#0}::open)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(0:371 ~ rustc_incremental[7bdb]::persist::load::{impl#0}::open)"
+    },
+    {
+      "usage": "crate::rustc_incremental::persist::load::setup_dep_graph USES crate::rustc_query_system::rustc_query_system::dep_graph::graph::DepGraph::<D>::new_disabled (AssocFn) [DefId: DefId(179:248 ~ rustc_query_system[7129]::dep_graph::graph::{impl#3}::new_disabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ rustc_incremental[7bdb]::persist::load::setup_dep_graph)",
+      "used_def_id": "DefId(179:248 ~ rustc_query_system[7129]::dep_graph::graph::{impl#3}::new_disabled)"
+    }
+  ]
+}

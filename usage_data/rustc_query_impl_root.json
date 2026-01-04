@@ -1,0 +1,30 @@
+{
+  "crate": "rustc_query_impl",
+  "module": "root",
+  "usages": [
+    {
+      "usage": "crate::rustc_query_impl::root::query_system USES crate::core::rustc_data_structures::sync::AtomicU64::new (AssocFn) [DefId: DefId(2:50157 ~ core[4720]::sync::atomic::{impl#84}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:329 ~ rustc_query_impl[82b8]::query_system)",
+      "used_def_id": "DefId(2:50157 ~ core[4720]::sync::atomic::{impl#84}::new)"
+    },
+    {
+      "usage": "crate::rustc_query_impl::root::query_callbacks USES crate::rustc_middle::rustc_middle::arena::Arena::<'tcx>::alloc_from_iter (AssocFn) [DefId: DefId(72:11194 ~ rustc_middle[8ead]::arena::{impl#56}::alloc_from_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:12583 ~ rustc_query_impl[82b8]::query_callbacks)",
+      "used_def_id": "DefId(72:11194 ~ rustc_middle[8ead]::arena::{impl#56}::alloc_from_iter)"
+    },
+    {
+      "usage": "crate::rustc_query_impl::root::dep_kind_names USES crate::alloc::std::slice::<impl [T]>::into_vec (AssocFn) [DefId: DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:12585 ~ rustc_query_impl[82b8]::dep_kind_names)",
+      "used_def_id": "DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)"
+    }
+  ]
+}
