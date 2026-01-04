@@ -1,0 +1,986 @@
+{
+  "analysis_type": "rust_feature_lattice_mapping",
+  "lattice_levels": [
+    {
+      "complexity_level": 4,
+      "examples": [
+        "\"\n#include <openssl/aes.h>\n#include <openssl/asn1.",
+        "\"\npub fn to_lower(c: char) -> [char; 3] {\n    if c",
+        "\" ### What it does\n\n Checks for a return type cont",
+        "\" ### What it does\n\n Checks for binary comparisons",
+        "\" ### What it does\n\n Checks if the `seek` method o",
+        "\" ### What it does\n\n Confirms that items are sorte",
+        "\" ### What it does\n\n Detects functions that are wr",
+        "\" ### What it does\n\n Protects against unintended c",
+        "\" ### What it does\n\n This lint is concerned with t",
+        "\" ### What it does\n Checks for `#[inline]` on trai"
+      ],
+      "type_function_count": 2197
+    },
+    {
+      "complexity_level": 9,
+      "examples": [
+        "\"hir_analysis_abi_custom_clothed_function =\n    it",
+        "\"lint_abs_path_with_module = absolute paths must s",
+        "\"resolve_accessible_unsure = not sure whether the "
+      ],
+      "type_function_count": 3
+    },
+    {
+      "complexity_level": 1,
+      "examples": [
+        "\"\t\"",
+        "\"\n\"",
+        "\"\u001b[0m\"",
+        "\"    \"",
+        "\" \"",
+        "\" ### What it does\n\n Checks for `Command::arg()` i",
+        "\" ### What it does\n\n Checks for `repeat().take()` ",
+        "\" ### What it does\n\n Checks for usage of `\"\"` to c",
+        "\" ### What it does\n\n Checks for usages of `str.tri",
+        "\" ### What it does\n\n Detects cases where a whole-n"
+      ],
+      "type_function_count": 141410
+    },
+    {
+      "complexity_level": 2,
+      "examples": [
+        "\"\t\"",
+        "\"\n                                                ",
+        "\"\n       \"",
+        "\"\n\"",
+        "\"\n<script>\ndocument.addEventListener(\"DOMContentLo",
+        "\"\r\n\"",
+        "\"\u001b[0m\"",
+        "\"\u001b[1m\"",
+        "\"\u001b[21m\"",
+        "\"\u001b[2m\""
+      ],
+      "type_function_count": 63934
+    },
+    {
+      "complexity_level": 8,
+      "examples": [
+        "\"parse_add_paren = try adding parentheses\n\nparse_a"
+      ],
+      "type_function_count": 1
+    },
+    {
+      "complexity_level": 3,
+      "examples": [
+        "\"\n#[cfg(target_arch = \"arm\")]\n#[repr(C)]\npub struc",
+        "\"\nArguments:\n      [FILTER]...     Skip tests whos",
+        "\" ### What it does\n\n Checks for `Iterator::map` ov",
+        "\" ### What it does\n\n Checks for `NonZero*::new_unc",
+        "\" ### What it does\n\n Checks for calls to `iter`, `",
+        "\" ### What it does\n\n Checks for calls to `size_of_",
+        "\" ### What it does\n\n Checks for jumps to the start",
+        "\" ### What it does\n\n Finds manual impls of `TryFro",
+        "\" ### What it does\n\n Finds patterns that reimpleme",
+        "\" ### What it does\n\n It detects manual bit rotatio"
+      ],
+      "type_function_count": 5324
+    },
+    {
+      "complexity_level": 6,
+      "examples": [
+        "\" ### What it does\n Checks for deriving `serde::De",
+        "\" ### What it does\n It detects references to uninh",
+        "\" ### What it does\n Looks for macros that expand m",
+        "\" ### What it does\n This lint requires Future impl",
+        "\" ### What it does\n This lint warns about a `Send`",
+        "\"#### Note: this error code is no longer emitted b",
+        "\"A cross-crate opt-out trait was implemented on so",
+        "\"A function was given both the `ffi_const` and `ff",
+        "\"A struct constructor with private fields was invo",
+        "\"A type mismatched an associated type of a trait.\n"
+      ],
+      "type_function_count": 43
+    },
+    {
+      "complexity_level": 5,
+      "examples": [
+        "\" ### What it does\n Checks for (in-)equality compa",
+        "\" ### What it does\n Checks for a borrow of a named",
+        "\" ### What it does\n Checks for code like `foo = ba",
+        "\" ### What it does\n Checks for functions that are ",
+        "\" ### What it does\n Checks for functions that use ",
+        "\" ### What it does\n Checks for instances of `map_e",
+        "\" ### What it does\n Checks for items that implemen",
+        "\" ### What it does\n Checks for patterns that aren'",
+        "\" ### What it does\n Checks for public `impl` or `f",
+        "\" ### What it does\n Checks for public functions th"
+      ],
+      "type_function_count": 401
+    },
+    {
+      "complexity_level": 7,
+      "examples": [
+        "\"#### Note: this error code is no longer emitted b",
+        "\"-passes_previously_accepted =\n    this was previo",
+        "\"A borrow of a constant containing interior mutabi",
+        "\"A captured variable in a closure may not live lon",
+        "\"An argument lifetime was elided in an async funct",
+        "\"ast_passes_abi_cannot_be_coroutine =\n    function",
+        "\"const_eval_address_space_full =\n    there are no ",
+        "\"hir_typeck_abi_cannot_be_called =\n    functions w",
+        "\"middle_assert_async_resume_after_drop = `async fn"
+      ],
+      "type_function_count": 9
+    }
+  ],
+  "sample_mappings": [
+    {
+      "complexity_level": 3,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "traits"
+      ],
+      "name": "named_variable_map"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "entered"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "never"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "le"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "TRACE"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "le"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "TRACE"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "current"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "interest"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "is_never"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "metadata"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "metadata"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "new"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "iter"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "fields"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "value_set"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "fields"
+    },
+    {
+      "complexity_level": 3,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "traits"
+      ],
+      "name": "expect"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "metadata"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "le"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "TRACE"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "ERROR"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "WARN"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "INFO"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "DEBUG"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "record_all"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "iter"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "fields"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "metadata"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "value_set"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "fields"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "metadata"
+    },
+    {
+      "complexity_level": 3,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "traits"
+      ],
+      "name": "expect"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "new"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "le"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "TRACE"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "le"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "TRACE"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "current"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "interest"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "is_never"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "metadata"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "call"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "metadata"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "dispatch"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "le"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "TRACE"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "ERROR"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "WARN"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "INFO"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "DEBUG"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "TRACE"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "ERROR"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "WARN"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "INFO"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "DEBUG"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "le"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "metadata"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "build"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "target"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "level"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "builder"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "target"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "enabled"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "iter"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "fields"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "metadata"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "value_set"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "fields"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "metadata"
+    },
+    {
+      "complexity_level": 3,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "traits"
+      ],
+      "name": "expect"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "le"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "TRACE"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "ERROR"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "WARN"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "INFO"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "DEBUG"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "TRACE"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "ERROR"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "WARN"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "INFO"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "DEBUG"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "le"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "metadata"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "build"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "target"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "level"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "builder"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "target"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "enabled"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "iter"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "fields"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "metadata"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "value_set"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "fields"
+    },
+    {
+      "complexity_level": 2,
+      "feature_bitmap": [
+        "base",
+        "traits"
+      ],
+      "name": "metadata"
+    },
+    {
+      "complexity_level": 3,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "traits"
+      ],
+      "name": "expect"
+    },
+    {
+      "complexity_level": 3,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "traits"
+      ],
+      "name": "new_debug"
+    },
+    {
+      "complexity_level": 4,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "lifetimes",
+        "traits"
+      ],
+      "name": "new_v1"
+    },
+    {
+      "complexity_level": 3,
+      "feature_bitmap": [
+        "base",
+        "generics",
+        "traits"
+      ],
+      "name": "try_collect_active_jobs"
+    }
+  ],
+  "statistics": {
+    "lattice_levels": 9,
+    "max_complexity": 9,
+    "total_mappings": 1466058
+  }
+}

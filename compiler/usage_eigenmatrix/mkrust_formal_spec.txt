@@ -1,0 +1,9 @@
+# mkrust Formal Language Specification
+
+## Terminals: 4
+- bool: ["true", "false"] -> ["true", "false"] (1500)
+- Option: ["Some", "None"] -> ["some", "none"] (2300)
+- Result: ["Ok", "Err"] -> ["ok", "error"] (1800)
+- ControlFlow: ["Continue", "Break"] -> ["continue", "break"] (800)
+
+## Base Features: {"boolean", "core", "option", "result"}

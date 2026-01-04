@@ -1,10 +1,19 @@
 [package]
-name = "usage_eigenmatrix"
+name = "mklang-wasm"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
-anyhow = "1.0"
-serde_json = "1.0"
-rand = "0.8"
-regex = "1.0"
+wasm-bindgen = "0.2"
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+  "console",
+  "Document",
+  "Element",
+  "Window",
+]

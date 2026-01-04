@@ -1,0 +1,64 @@
+// WARNING: This output format is intended for human consumers only
+// and is subject to change without notice. Knock yourself out.
+// HINT: See also -Z dump-mir for MIR at specific points during compilation.
+const BITS: i32 = {
+    let mut _0: i32;
+
+    bb0: {
+        _0 = const 64_i32;
+        return;
+    }
+}
+
+const ENABLED: bool = {
+    let mut _0: bool;
+
+    bb0: {
+        _0 = const true;
+        return;
+    }
+}
+
+const MESSAGE: &str = {
+    let mut _0: &str;
+
+    bb0: {
+        _0 = const "hello";
+        return;
+    }
+}
+
+alloc3 (size: 5, align: 1) {
+    68 65 6c 6c 6f                                  │ hello
+}
+
+const COUNT: i32 = {
+    let mut _0: i32;
+
+    bb0: {
+        _0 = const 42_i32;
+        return;
+    }
+}
+
+const DEBUG: bool = {
+    let mut _0: bool;
+
+    bb0: {
+        _0 = const false;
+        return;
+    }
+}
+
+const VERSION: &str = {
+    let mut _0: &str;
+
+    bb0: {
+        _0 = const "1.0";
+        return;
+    }
+}
+
+alloc7 (size: 3, align: 1) {
+    31 2e 30                                        │ 1.0
+}

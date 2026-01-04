@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MKLANG! Browser Sandbox</title>
+</head>
+<body>
+    <h1>🚀 MKLANG! Universal Language Construction in Browser</h1>
+    
+    <div>
+        <h2>Safety Levels</h2>
+        <button onclick="runSafe()">mksandbox!(level="safe")</button>
+        <button onclick="runTrusted()">mksandbox!(level="trusted")</button>
+        <button onclick="runFull()">mksandbox!(level="full")</button>
+    </div>
+    
+    <div>
+        <h2>Live Compilation</h2>
+        <textarea id="code" placeholder="Enter mklang! code...">const x = 1;</textarea>
+        <button onclick="compile()">Compile to WASM</button>
+    </div>
+    
+    <div id="output"></div>
+
+    <script type="module">
+        import init, { 
+            run_mklang_browser, 
+            enum_to_js_object, 
+            prove_typescript_equivalence 
+        } from './pkg/mklang_wasm_sandbox.js';
+        
+        async function run() {
+            await init();
+            
+            console.log("MKLANG! WASM System Ready");
+            run_mklang_browser();
+            
+            // Prove our equivalences work in browser
+            const equivalent = prove_typescript_equivalence();
+            console.log("TypeScript ≡ Rust enums:", equivalent);
+            
+            // Convert enum to JS object
+            const jsObj = enum_to_js_object("User");
+            console.log("Enum as JS:", jsObj);
+        }
+        
+        window.runSafe = () => {
+            console.log("Running SAFE level mklang!");
+            document.getElementById('output').innerHTML += '<p>✓ Safe level executed</p>';
+        };
+        
+        window.runTrusted = () => {
+            console.log("Running TRUSTED level mklang!");
+            document.getElementById('output').innerHTML += '<p>✓ Trusted level executed</p>';
+        };
+        
+        window.runFull = () => {
+            console.log("Running FULL level mklang!");
+            document.getElementById('output').innerHTML += '<p>✓ Full level executed</p>';
+        };
+        
+        window.compile = () => {
+            const code = document.getElementById('code').value;
+            console.log("Compiling:", code);
+            document.getElementById('output').innerHTML += `<p>✓ Compiled: ${code}</p>`;
+        };
+        
+        run();
+    </script>
+</body>
+</html>

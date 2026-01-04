@@ -1,0 +1,1345 @@
+{
+  "enum_count": 100,
+  "enums": [
+    {
+      "macro_name": "mk-flow!",
+      "name": "ControlFlow",
+      "string_mappings": [
+        "continue",
+        "break",
+        "should_break",
+        "should_prune",
+        "continuing"
+      ],
+      "usage_count": 13770,
+      "variants": [
+        "Continue"
+      ]
+    },
+    {
+      "macro_name": "mk-option!",
+      "name": "Option",
+      "string_mappings": [
+        "none",
+        "some"
+      ],
+      "usage_count": 11972,
+      "variants": [
+        "None"
+      ]
+    },
+    {
+      "macro_name": "mk-typevisitableext!",
+      "name": "TypeVisitableExt",
+      "string_mappings": [
+        "has_non_region_infer",
+        "has_erased_regions",
+        "references_error",
+        "has_non_region_param",
+        "has_param",
+        "has_infer",
+        "has_erasable_regions",
+        "has_non_region_bound_vars",
+        "has_escaping_bound_vars",
+        "has_free_regions",
+        "error_reported",
+        "has_type_flags",
+        "has_aliases",
+        "still_further_specializable",
+        "has_infer_types",
+        "has_infer_regions",
+        "has_bound_regions",
+        "has_placeholders",
+        "is_global"
+      ],
+      "usage_count": 173,
+      "variants": [
+        "has_non_region_infer"
+      ]
+    },
+    {
+      "macro_name": "mk-unknown!",
+      "name": "Unknown",
+      "string_mappings": [
+        "Which kind of debuginfo does the target use?\n\nUseful in determining whether a target supports Split DWARF (a target with\n`DebuginfoKind::Dwarf` and supporting `SplitDebuginfo::Unpacked` for example).",
+        "diff --git a/src/ir/item.rs b/src/ir/item.rs\nindex 7f3afefb..90d15e96 100644\n--- a/src/ir/item.rs\n+++ b/src/ir/item.rs\n@@ -148,7 +148,11 @@ impl<'a, 'b> Iterator for ItemAncestorsIter<'a, 'b>\n impl AsTemplateParam for ItemId {\n     type Extra = ();\n \n-    fn as_template_param(&self, ctx: &BindgenContext, _: &()) -> Option<ItemId> {\n+    fn as_template_param(\n+        &self,\n+        ctx: &BindgenContext,\n+        _: &(),\n+    ) -> Option<ItemId> {\n         ctx.resolve_item(*self).as_template_param(ctx, &())\n     }\n }\n@@ -156,7 +160,11 @@ impl AsTemplateParam for ItemId {\n impl AsTemplateParam for Item {\n     type Extra = ();\n \n-    fn as_template_param(&self, ctx: &BindgenContext, _: &()) -> Option<ItemId> {\n+    fn as_template_param(\n+        &self,\n+        ctx: &BindgenContext,\n+        _: &(),\n+    ) -> Option<ItemId> {\n         self.kind.as_template_param(ctx, self)\n     }\n }\ndiff --git a/src/ir/traversal.rs b/src/ir/traversal.rs\nindex 762a3e2d..b9c9dd4e 100644\n--- a/src/ir/traversal.rs\n+++ b/src/ir/traversal.rs\n@@ -9,6 +9,8 @@ use std::collections::{BTreeMap, VecDeque};\n ///\n ///   from --> to\n ///\n+/// Random content to generate a diff.\n+///\n /// The `from` is left implicit: it is the concrete `Trace` implementer which\n /// yielded this outgoing edge.\n #[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]\n@@ -33,7 +35,9 @@ impl Into<ItemId> for Edge {\n     }\n }\n \n-/// The kind of edge reference. This is useful when we wish to only consider\n+/// The kind of edge reference.\n+///\n+/// This is useful when we wish to only consider\n /// certain kinds of edges for a particular traversal or analysis.\n #[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]\n pub enum EdgeKind {\ndiff --git a/tests/headers/anon_enum.hpp b/tests/headers/anon_enum.hpp\nindex 1961fe6c..34759df3 100644\n--- a/tests/headers/anon_enum.hpp\n+++ b/tests/headers/anon_enum.hpp\n@@ -1,7 +1,7 @@\n struct Test {\n   int foo;\n   float bar;\n-  enum { T_NONE };\n+  enum { T_NONE, T_SOME };\n };\n \n typedef enum {\n",
+        "parse_add_paren = try adding parentheses\n\nparse_ambiguous_range_pattern = the range pattern here has ambiguous interpretation\nparse_ambiguous_range_pattern_suggestion = add parentheses to clarify the precedence\n\nparse_array_brackets_instead_of_braces = this is a block expression, not an array\n    .suggestion = to make an array, use square brackets instead of curly braces\n\nparse_array_index_offset_of = array indexing not supported in offset_of\n\nparse_asm_expected_comma = expected token: `,`\n    .label = expected `,`\n\nparse_asm_expected_other = expected operand, {$is_inline_asm ->\n    [false] options\n    *[true] clobber_abi, options\n    }, or additional template string\n\nparse_asm_expected_register_class_or_explicit_register = expected register class or explicit register\n\nparse_asm_expected_string_literal = expected string literal\n    .label = not a string literal\n\nparse_asm_non_abi = at least one abi must be provided as an argument to `clobber_abi`\n\nparse_asm_requires_template = requires at least a template string argument\n\nparse_asm_sym_no_path = expected a path for argument to `sym`\n\nparse_asm_underscore_input = _ cannot be used for input operands\n\nparse_asm_unsupported_operand = the `{$symbol}` operand cannot be used with `{$macro_name}!`\n    .label = the `{$symbol}` operand is not meaningful for global-scoped inline assembly, remove it\n\nparse_assignment_else_not_allowed = <assignment> ... else {",
+        "const_eval_address_space_full =\n    there are no more free addresses in the address space\n\nconst_eval_alignment_check_failed =\n    {$msg ->\n     [AccessedPtr] accessing memory\n     *[other] accessing memory based on pointer\n    } with alignment {$has}, but alignment {$required} is required\n\nconst_eval_already_reported =\n    an error has already been reported elsewhere (this should not usually be printed)\nconst_eval_assume_false =\n    `assume` called with `false`\n\nconst_eval_bad_pointer_op = {$operation ->\n  [MemoryAccess] memory access failed\n  [InboundsPointerArithmetic] in-bounds pointer arithmetic failed\n  *[Dereferenceable] pointer not dereferenceable\n}\nconst_eval_bad_pointer_op_attempting = {const_eval_bad_pointer_op}: {$operation ->\n    [MemoryAccess] attempting to access {$inbounds_size ->\n            [1] 1 byte\n            *[x] {$inbounds_size} bytes\n        }\n    [InboundsPointerArithmetic] attempting to offset pointer by {$inbounds_size ->\n            [1] 1 byte\n            *[x] {$inbounds_size} bytes\n        }\n    *[Dereferenceable] pointer must {$inbounds_size ->\n            [0] point to some allocation\n            [1] be dereferenceable for 1 byte\n            *[x] be dereferenceable for {$inbounds_size} bytes\n        }\n    }\n\nconst_eval_bounds_check_failed =\n    indexing out of bounds: the len is {$len} but the index is {$index}\nconst_eval_call_nonzero_intrinsic =\n    `{$name}` called on 0\n\nconst_eval_closure_call =\n    closures need an RFC before allowed to be called in {const_eval_const_context}s\nconst_eval_closure_fndef_not_const =\n    function defined here, but it is not `const`\n\nconst_eval_consider_dereferencing =\n    consider dereferencing here\n\nconst_eval_const_accesses_mut_global =\n    constant accesses mutable global memory\n\nconst_eval_const_context = {$kind ->\n    [const] constant\n    [static] static\n    [const_fn] constant function\n    *[other] {",
+        "usage of `ty::TyKind` outside of the `ty::sty` module",
+        "lint_abs_path_with_module = absolute paths must start with `self`, `super`, `crate`, or an external crate name in the 2018 edition\n    .suggestion = use `crate`\n\nlint_ambiguous_glob_reexport = ambiguous glob re-exports\n    .label_first_reexport = the name `{$name}` in the {$namespace} namespace is first re-exported here\n    .label_duplicate_reexport = but the name `{$name}` in the {$namespace} namespace is also re-exported here\n\nlint_ambiguous_negative_literals = `-` has lower precedence than method calls, which might be unexpected\n    .example = e.g. `-4.abs()` equals `-4`; while `(-4).abs()` equals `4`\n    .negative_literal = add parentheses around the `-` and the literal to call the method on a negative literal\n    .current_behavior = add parentheses around the literal and the method call to keep the current behavior\n\nlint_ambiguous_wide_pointer_comparisons = ambiguous wide pointer comparison, the comparison includes metadata which may not be expected\n    .addr_metadata_suggestion = use explicit `std::ptr::eq` method to compare metadata and addresses\n    .addr_suggestion = use `std::ptr::addr_eq` or untyped pointers to only compare their addresses\n    .cast_suggestion = use untyped pointers to only compare their addresses\n    .expect_suggestion = or expect the lint to compare the pointers metadata and addresses\n\nlint_associated_const_elided_lifetime = {$elided ->\n        [true] `&` without an explicit lifetime name cannot be used here\n        *[false] `'_` cannot be used here\n    }\n    .suggestion = use the `'static` lifetime\n    .note = cannot automatically infer `'static` because of other lifetimes in scope\n\nlint_async_fn_in_trait = use of `async fn` in public traits is discouraged as auto trait bounds cannot be specified\n    .note = you can suppress this lint if you plan to use the trait only in your own code, or do not care about auto traits like `Send` on the `Future`\n    .suggestion = you can alternatively desugar to a normal `fn` that returns `impl Future` and add any desired bounds such as `Send`, but these cannot be relaxed without a breaking API change\n\nlint_atomic_ordering_fence = memory fences cannot have `Relaxed` ordering\n    .help = consider using ordering modes `Acquire`, `Release`, `AcqRel` or `SeqCst`\n\nlint_atomic_ordering_invalid = `{$method}`'s failure ordering may not be `Release` or `AcqRel`, since a failed `{$method}` does not result in a write\n    .label = invalid failure ordering\n    .help = consider using `Acquire` or `Relaxed` failure ordering instead\n\nlint_atomic_ordering_load = atomic loads cannot have `Release` or `AcqRel` ordering\n    .help = consider using ordering modes `Acquire`, `SeqCst` or `Relaxed`\n\nlint_atomic_ordering_store = atomic stores cannot have `Acquire` or `AcqRel` ordering\n    .help = consider using ordering modes `Release`, `SeqCst` or `Relaxed`\n\nlint_avoid_att_syntax =\n    avoid using `.att_syntax`, prefer using `options(att_syntax)` instead\n\nlint_avoid_intel_syntax =\n    avoid using `.intel_syntax`, Intel syntax is the default\n\nlint_bad_attribute_argument = bad attribute argument\n\nlint_bad_opt_access = {$msg}\n\nlint_break_with_label_and_loop = this labeled break expression is easy to confuse with an unlabeled break with a labeled value expression\n    .suggestion = wrap this expression in parentheses\n\nlint_builtin_allow_internal_unsafe =\n    `allow_internal_unsafe` allows defining macros using unsafe without triggering the `unsafe_code` lint at their call site\n\nlint_builtin_anonymous_params = anonymous parameters are deprecated and will be removed in the next edition\n    .suggestion = try naming the parameter or explicitly ignoring it\n\nlint_builtin_clashing_extern_diff_name = `{$this}` redeclares `{$orig}` with a different signature\n    .previous_decl_label = `{$orig}` previously declared here\n    .mismatch_label = this signature doesn't match the previous declaration\n\nlint_builtin_clashing_extern_same_name = `{$this}` redeclared with a different signature\n    .previous_decl_label = `{$orig}` previously declared here\n    .mismatch_label = this signature doesn't match the previous declaration\nlint_builtin_const_no_mangle = const items should never be `#[no_mangle]`\n    .suggestion = try a static value\n\nlint_builtin_decl_unsafe_fn = declaration of an `unsafe` function\nlint_builtin_decl_unsafe_method = declaration of an `unsafe` method\n\nlint_builtin_deref_nullptr = dereferencing a null pointer\n    .label = this code causes undefined behavior when executed\n\nlint_builtin_double_negations = use of a double negation\n    .note = the prefix `--` could be misinterpreted as a decrement operator which exists in other languages\n    .note_decrement = use `-= 1` if you meant to decrement the value\n    .add_parens_suggestion = add parentheses for clarity\n\nlint_builtin_ellipsis_inclusive_range_patterns = `...` range patterns are deprecated\n    .suggestion = use `..=` for an inclusive range\n\nlint_builtin_explicit_outlives = outlives requirements can be inferred\n    .suggestion = remove {$count ->\n        [one] this bound\n        *[other] these bounds\n    }\n\nlint_builtin_export_name_fn = declaration of a function with `export_name`\nlint_builtin_export_name_method = declaration of a method with `export_name`\nlint_builtin_export_name_static = declaration of a static with `export_name`\n\nlint_builtin_global_asm = usage of `core::arch::global_asm`\nlint_builtin_global_macro_unsafety = using this macro is unsafe even though it does not need an `unsafe` block\n\nlint_builtin_impl_unsafe_method = implementation of an `unsafe` method\n\nlint_builtin_incomplete_features = the feature `{$name}` is incomplete and may not be safe to use and/or cause compiler crashes\n    .note = see issue #{$n} <https://github.com/rust-lang/rust/issues/{$n}> for more information\n    .help = consider using `min_{$name}` instead, which is more stable and complete\n\nlint_builtin_internal_features = the feature `{$name}` is internal to the compiler or standard library\n    .note = using it is strongly discouraged\n\nlint_builtin_keyword_idents = `{$kw}` is a keyword in the {$next} edition\n    .suggestion = you can use a raw identifier to stay compatible\n\nlint_builtin_link_section_fn = declaration of a function with `link_section`\n\nlint_builtin_link_section_static = declaration of a static with `link_section`\n\nlint_builtin_missing_copy_impl = type could implement `Copy`; consider adding `impl Copy`\n\nlint_builtin_missing_debug_impl =\n    type does not implement `{$debug}`; consider adding `#[derive(Debug)]` or a manual implementation\n\nlint_builtin_missing_doc = missing documentation for {$article} {$desc}\n\nlint_builtin_mutable_transmutes =\n    transmuting &T to &mut T is undefined behavior, even if the reference is unused, consider instead using an UnsafeCell\n\nlint_builtin_no_mangle_fn = declaration of a `no_mangle` function\nlint_builtin_no_mangle_generic = functions generic over types or consts must be mangled\n    .suggestion = remove this attribute\n\nlint_builtin_no_mangle_method = declaration of a `no_mangle` method\nlint_builtin_no_mangle_static = declaration of a `no_mangle` static\nlint_builtin_non_shorthand_field_patterns = the `{$ident}:` in this pattern is redundant\n    .suggestion = use shorthand field pattern\n\nlint_builtin_overridden_symbol_name =\n    the linker's behavior with multiple libraries exporting duplicate symbol names is undefined and Rust cannot provide guarantees when you manually override them\n\nlint_builtin_overridden_symbol_section =\n    the program's behavior with overridden link sections on items is unpredictable and Rust cannot provide guarantees when you manually override them\n\nlint_builtin_special_module_name_used_lib = found module declaration for lib.rs\n    .note = lib.rs is the root of this crate's library target\n    .help = to refer to it from other targets, use the library's name as the path\n\nlint_builtin_special_module_name_used_main = found module declaration for main.rs\n    .note = a binary crate cannot be used as library\n\nlint_builtin_trivial_bounds = {$predicate_kind_name} bound {$predicate} does not depend on any type or lifetime parameters\n\nlint_builtin_type_alias_bounds_enable_feat_help = add `#![feature(lazy_type_alias)]` to the crate attributes to enable the desired semantics\nlint_builtin_type_alias_bounds_label = will not be checked at usage sites of the type alias\nlint_builtin_type_alias_bounds_limitation_note = this is a known limitation of the type checker that may be lifted in a future edition.\n    see issue #112792 <https://github.com/rust-lang/rust/issues/112792> for more information\nlint_builtin_type_alias_bounds_param_bounds = bounds on generic parameters in type aliases are not enforced\n    .suggestion = remove {$count ->\n        [one] this bound\n        *[other] these bounds\n    }\nlint_builtin_type_alias_bounds_qualify_assoc_tys_sugg = fully qualify this associated type\nlint_builtin_type_alias_bounds_where_clause = where clauses on type aliases are not enforced\n    .suggestion = remove this where clause\n\nlint_builtin_unpermitted_type_init_label = this code causes undefined behavior when executed\nlint_builtin_unpermitted_type_init_label_suggestion = help: use `MaybeUninit<T>` instead, and only call `assume_init` after initialization is done\n\nlint_builtin_unpermitted_type_init_uninit = the type `{$ty}` does not permit being left uninitialized\n\nlint_builtin_unpermitted_type_init_zeroed = the type `{$ty}` does not permit zero-initialization\nlint_builtin_unreachable_pub = unreachable `pub` {$what}\n    .suggestion = consider restricting its visibility\n    .help = or consider exporting it for use by other crates\n\nlint_builtin_unsafe_block = usage of an `unsafe` block\n\nlint_builtin_unsafe_extern_block = usage of an `unsafe extern` block\n\nlint_builtin_unsafe_impl = implementation of an `unsafe` trait\n\nlint_builtin_unsafe_trait = declaration of an `unsafe` trait\n\nlint_builtin_unstable_features = use of an unstable feature\n\nlint_builtin_unused_doc_comment = unused doc comment\n    .label = rustdoc does not generate documentation for {$kind}\n    .plain_help = use `//` for a plain comment\n    .block_help = use `/* */` for a plain comment\n\nlint_builtin_while_true = denote infinite loops with `loop {",
+        "assertion failed: std::mem::size_of::<usize>() <= std::mem::size_of::<u64>() ||\n    std::mem::size_of::<big_archive::BigArMemHdrType>() < u64::MAX as usize",
+        "the query `opt_hir_owner_nodes` has a value type `Option < & 'tcx hir :: OwnerNodes < 'tcx > >` that is too large",
+        "the query `opt_ast_lowering_delayed_lints` has a value type `Option < & 'tcx hir :: lints :: DelayedLints >` that is too large",
+        "the query `type_of_opaque` has a value type `Result < ty :: EarlyBinder < 'tcx, Ty < 'tcx > > , CyclePlaceholder >` that is too large",
+        "the query `collect_return_position_impl_trait_in_trait_tys` has a value type `Result < & 'tcx DefIdMap < ty :: EarlyBinder < 'tcx, Ty < 'tcx > > > ,\nErrorGuaranteed >` that is too large",
+        "the query `shallow_lint_levels_on` has a value type `& 'tcx rustc_middle :: lint :: ShallowLintLevelMap` that is too large",
+        "the query `thir_body` has a value type `Result < (& 'tcx Steal < thir :: Thir < 'tcx > > , thir :: ExprId),\nErrorGuaranteed >` that is too large",
+        "the query `thir_abstract_const` has a value type `Result < Option < ty :: EarlyBinder < 'tcx, ty :: Const < 'tcx > > > ,\nErrorGuaranteed >` that is too large",
+        "the query `closure_typeinfo` has a value type `ty :: ClosureTypeInfo < 'tcx >` that is too large",
+        "the query `mir_coroutine_witnesses` has a value type `Option < & 'tcx mir :: CoroutineLayout < 'tcx > >` that is too large",
+        "the query `coverage_ids_info` has a key type `ty :: InstanceKind < 'tcx >` that is too large",
+        "the query `coverage_ids_info` has a value type `Option < & 'tcx mir :: coverage :: CoverageIdsInfo >` that is too large",
+        "the query `adt_destructor` has a value type `Option < ty :: Destructor >` that is too large",
+        "the query `adt_async_destructor` has a value type `Option < ty :: AsyncDestructor >` that is too large",
+        "the query `adt_sizedness_constraint` has a value type `Option < ty :: EarlyBinder < 'tcx, Ty < 'tcx > > >` that is too large",
+        "the query `coroutine_kind` has a value type `Option < hir :: CoroutineKind >` that is too large",
+        "the query `coroutine_hidden_types` has a value type `ty :: EarlyBinder < 'tcx, ty :: Binder < 'tcx, ty :: CoroutineWitnessTypes <\nTyCtxt < 'tcx > > > >` that is too large",
+        "the query `impl_trait_header` has a value type `Option < ty :: ImplTraitHeader < 'tcx > >` that is too large",
+        "the query `check_tail_calls` has a value type `Result < (), rustc_errors :: ErrorGuaranteed >` that is too large",
+        "the query `coerce_unsized_info` has a value type `Result < ty :: adjustment :: CoerceUnsizedInfo, ErrorGuaranteed >` that is too large",
+        "the query `typeck` has a value type `& 'tcx ty :: TypeckResults < 'tcx >` that is too large",
+        "the query `mir_borrowck` has a value type `Result < & 'tcx mir :: ConcreteOpaqueTypes < 'tcx > , ErrorGuaranteed >` that is too large",
+        "the query `mir_inliner_callees` has a key type `ty :: InstanceKind < 'tcx >` that is too large",
+        "the query `tag_for_variant` has a value type `Option < ty :: ScalarInt >` that is too large",
+        "the query `check_match` has a value type `Result < (), rustc_errors :: ErrorGuaranteed >` that is too large",
+        "the query `mir_shims` has a key type `ty :: InstanceKind < 'tcx >` that is too large",
+        "the query `lookup_stability` has a value type `Option < hir :: Stability >` that is too large",
+        "the query `lookup_const_stability` has a value type `Option < hir :: ConstStability >` that is too large",
+        "the query `lookup_default_body_stability` has a value type `Option < hir :: DefaultBodyStability >` that is too large",
+        "the query `fn_arg_idents` has a value type `& 'tcx [Option < rustc_span :: Ident >]` that is too large",
+        "the query `vtable_allocation` has a key type `(Ty < 'tcx > , Option < ty :: ExistentialTraitRef < 'tcx > >)` that is too large",
+        "the query `specialization_graph_of` has a value type `Result < & 'tcx specialization_graph :: Graph, ErrorGuaranteed >` that is too large",
+        "the query `adt_drop_tys` has a value type `Result < & 'tcx ty :: List < Ty < 'tcx > > , AlwaysRequiresDrop >` that is too large",
+        "the query `adt_async_drop_tys` has a value type `Result < & 'tcx ty :: List < Ty < 'tcx > > , AlwaysRequiresDrop >` that is too large",
+        "the query `adt_significant_drop_tys` has a value type `Result < & 'tcx ty :: List < Ty < 'tcx > > , AlwaysRequiresDrop >` that is too large",
+        "the query `layout_of` has a value type `Result < ty :: layout :: TyAndLayout < 'tcx > , & 'tcx ty :: layout ::\nLayoutError < 'tcx > >` that is too large",
+        "the query `fn_abi_of_fn_ptr` has a value type `Result < & 'tcx rustc_target :: callconv :: FnAbi < 'tcx, Ty < 'tcx > > , &\n'tcx ty :: layout :: FnAbiError < 'tcx > >` that is too large",
+        "the query `fn_abi_of_instance` has a value type `Result < & 'tcx rustc_target :: callconv :: FnAbi < 'tcx, Ty < 'tcx > > , &\n'tcx ty :: layout :: FnAbiError < 'tcx > >` that is too large",
+        "the query `late_bound_vars_map` has a value type `& 'tcx SortedMap < ItemLocalId, Vec < ty :: BoundVariableKind > >` that is too large",
+        "the query `visibility` has a value type `ty :: Visibility < DefId >` that is too large",
+        "the query `intrinsic_raw` has a value type `Option < rustc_middle :: ty :: IntrinsicDef >` that is too large",
+        "the query `upvars_mentioned` has a value type `Option < & 'tcx FxIndexMap < hir :: HirId, hir :: Upvar > >` that is too large",
+        "the query `normalize_canonicalized_projection_ty` has a value type `Result < & 'tcx Canonical < 'tcx, canonical :: QueryResponse < 'tcx,\nNormalizationResult < 'tcx > > > , NoSolution, >` that is too large",
+        "the query `normalize_canonicalized_free_alias` has a value type `Result < & 'tcx Canonical < 'tcx, canonical :: QueryResponse < 'tcx,\nNormalizationResult < 'tcx > > > , NoSolution, >` that is too large",
+        "the query `normalize_canonicalized_inherent_projection_ty` has a value type `Result < & 'tcx Canonical < 'tcx, canonical :: QueryResponse < 'tcx,\nNormalizationResult < 'tcx > > > , NoSolution, >` that is too large",
+        "the query `implied_outlives_bounds` has a value type `Result < & 'tcx Canonical < 'tcx, canonical :: QueryResponse < 'tcx, Vec <\nOutlivesBound < 'tcx > > > > , NoSolution, >` that is too large",
+        "the query `dropck_outlives` has a value type `Result < & 'tcx Canonical < 'tcx, canonical :: QueryResponse < 'tcx,\nDropckOutlivesResult < 'tcx > > > , NoSolution, >` that is too large",
+        "the query `type_op_ascribe_user_type` has a value type `Result < & 'tcx Canonical < 'tcx, canonical :: QueryResponse < 'tcx, () > > ,\nNoSolution, >` that is too large",
+        "the query `type_op_prove_predicate` has a value type `Result < & 'tcx Canonical < 'tcx, canonical :: QueryResponse < 'tcx, () > > ,\nNoSolution, >` that is too large",
+        "the query `type_op_normalize_ty` has a value type `Result < & 'tcx Canonical < 'tcx, canonical :: QueryResponse < 'tcx, Ty < 'tcx\n> > > , NoSolution, >` that is too large",
+        "the query `type_op_normalize_clause` has a key type `CanonicalTypeOpNormalizeGoal < 'tcx, ty :: Clause < 'tcx > >` that is too large",
+        "the query `type_op_normalize_clause` has a value type `Result < & 'tcx Canonical < 'tcx, canonical :: QueryResponse < 'tcx, ty ::\nClause < 'tcx > > > , NoSolution, >` that is too large",
+        "the query `type_op_normalize_poly_fn_sig` has a key type `CanonicalTypeOpNormalizeGoal < 'tcx, ty :: PolyFnSig < 'tcx > >` that is too large",
+        "the query `type_op_normalize_poly_fn_sig` has a value type `Result < & 'tcx Canonical < 'tcx, canonical :: QueryResponse < 'tcx, ty ::\nPolyFnSig < 'tcx > > > , NoSolution, >` that is too large",
+        "the query `type_op_normalize_fn_sig` has a key type `CanonicalTypeOpNormalizeGoal < 'tcx, ty :: FnSig < 'tcx > >` that is too large",
+        "the query `type_op_normalize_fn_sig` has a value type `Result < & 'tcx Canonical < 'tcx, canonical :: QueryResponse < 'tcx, ty ::\nFnSig < 'tcx > > > , NoSolution, >` that is too large",
+        "the query `evaluate_root_goal_for_proof_tree_raw` has a value type `(solve :: QueryResult < 'tcx > , & 'tcx solve :: inspect :: Probe < TyCtxt <\n'tcx > >)` that is too large",
+        "the query `resolve_instance_raw` has a value type `Result < Option < ty :: Instance < 'tcx > > , ErrorGuaranteed >` that is too large",
+        "the query `check_validity_requirement` has a value type `Result < bool, & 'tcx ty :: layout :: LayoutError < 'tcx > >` that is too large",
+        "the query `anon_const_kind` has a value type `ty :: AnonConstKind` that is too large",
+        "You tried to provide a generic argument to a type which doesn't need it.\n\nErroneous code example:\n\n```compile_fail,E0109\ntype X = u32<i32>; // error: type arguments are not allowed for this type\ntype Y = bool<'static>; // error: lifetime parameters are not allowed on\n                        //        this type\n```\n\nCheck that you used the correct argument and that the definition is correct.\n\nExample:\n\n```\ntype X = u32; // ok!\ntype Y = bool; // ok!\n```\n\nNote that generic arguments for enum variant constructors go after the variant,\nnot after the enum. For example, you would write `Option::None::<u32>`,\nrather than `Option::<u32>::None`.\n",
+        "#### Note: this error code is no longer emitted by the compiler.\n\nThere are various restrictions on transmuting between types in Rust; for example\ntypes being transmuted must have the same size. To apply all these restrictions,\nthe compiler must know the exact types that may be transmuted. When type\nparameters are involved, this cannot always be done.\n\nSo, for example, the following is not allowed:\n\n```\nuse std::mem::transmute;\n\nstruct Foo<T>(Vec<T>);\n\nfn foo<T>(x: Vec<T>) {\n    // we are transmuting between Vec<T> and Foo<F> here\n    let y: Foo<T> = unsafe { transmute(x) };\n    // do something with y\n}\n```\n\nIn this specific case there's a good chance that the transmute is harmless (but\nthis is not guaranteed by Rust). However, when alignment and enum optimizations\ncome into the picture, it's quite likely that the sizes may or may not match\nwith different type parameter instantiations. It's not possible to check this\nfor _all_ possible types, so `transmute()` simply only accepts types without any\nuninstantiated type parameters.\n\nIf you need this, there's a good chance you're doing something wrong. Keep in\nmind that Rust doesn't guarantee much about the layout of different structs\n(even two structs with identical declarations may have different layouts). If\nthere is a solution that avoids the transmute entirely, try it instead.\n\nIf it's possible, hand-monomorphize the code by writing the function for each\npossible type instantiation. It's possible to use traits to do this cleanly,\nfor example:\n\n```\nuse std::mem::transmute;\n\nstruct Foo<T>(Vec<T>);\n\ntrait MyTransmutableType: Sized {\n    fn transmute(_: Vec<Self>) -> Foo<Self>;\n}\n\nimpl MyTransmutableType for u8 {\n    fn transmute(x: Vec<u8>) -> Foo<u8> {\n        unsafe { transmute(x) }\n    }\n}\n\nimpl MyTransmutableType for String {\n    fn transmute(x: Vec<String>) -> Foo<String> {\n        unsafe { transmute(x) }\n    }\n}\n\n// ... more impls for the types you intend to transmute\n\nfn foo<T: MyTransmutableType>(x: Vec<T>) {\n    let y: Foo<T> = <T as MyTransmutableType>::transmute(x);\n    // do something with y\n}\n```\n\nEach impl will be checked for a size match in the transmute as usual, and since\nthere are no unbound type parameters involved, this should compile unless there\nis a size mismatch in one of the impls.\n\nIt is also possible to manually transmute:\n\n```\n# use std::ptr;\n# let v = Some(",
+        "#### Note: this error code is no longer emitted by the compiler.\n\nImports (`use` statements) are not allowed after non-item statements, such as\nvariable declarations and expression statements.\n\nHere is an example that demonstrates the error:\n\n```\nfn f() {\n    // Variable declaration before import\n    let x = 0;\n    use std::io::Read;\n    // ...\n}\n```\n\nThe solution is to declare the imports at the top of the block, function, or\nfile.\n\nHere is the previous example again, with the correct order:\n\n```\nfn f() {\n    use std::io::Read;\n    let x = 0;\n    // ...\n}\n```\n\nSee the [Declaration Statements][declaration-statements] section of the\nreference for more information about what constitutes an item declaration\nand what does not.\n\n[declaration-statements]: https://doc.rust-lang.org/reference/statements.html#declaration-statements\n",
+        "A type, const or lifetime parameter that is specified for `impl` is not\nconstrained.\n\nErroneous code example:\n\n```compile_fail,E0207\nstruct Foo;\n\nimpl<T: Default> Foo {\n    // error: the type parameter `T` is not constrained by the impl trait, self\n    // type, or predicates [E0207]\n    fn get(&self) -> T {\n        <T as Default>::default()\n    }\n}\n```\n\nAny type or const parameter of an `impl` must meet at least one of the\nfollowing criteria:\n\n - it appears in the _implementing type_ of the impl, e.g. `impl<T> Foo<T>`\n - for a trait impl, it appears in the _implemented trait_, e.g.\n   `impl<T> SomeTrait<T> for Foo`\n - it is bound as an associated type, e.g. `impl<T, U> SomeTrait for T\n   where T: AnotherTrait<AssocType=U>`\n\nAny unconstrained lifetime parameter of an `impl` is not supported if the\nlifetime parameter is used by an associated type.\n\n### Error example 1\n\nSuppose we have a struct `Foo` and we would like to define some methods for it.\nThe previous code example has a definition which leads to a compiler error:\n\nThe problem is that the parameter `T` does not appear in the implementing type\n(`Foo`) of the impl. In this case, we can fix the error by moving the type\nparameter from the `impl` to the method `get`:\n\n```\nstruct Foo;\n\n// Move the type parameter from the impl to the method\nimpl Foo {\n    fn get<T: Default>(&self) -> T {\n        <T as Default>::default()\n    }\n}\n```\n\n### Error example 2\n\nAs another example, suppose we have a `Maker` trait and want to establish a\ntype `FooMaker` that makes `Foo`s:\n\n```compile_fail,E0207\ntrait Maker {\n    type Item;\n    fn make(&mut self) -> Self::Item;\n}\n\nstruct Foo<T> {\n    foo: T\n}\n\nstruct FooMaker;\n\nimpl<T: Default> Maker for FooMaker {\n// error: the type parameter `T` is not constrained by the impl trait, self\n// type, or predicates [E0207]\n    type Item = Foo<T>;\n\n    fn make(&mut self) -> Foo<T> {\n        Foo { foo: <T as Default>::default() }\n    }\n}\n```\n\nThis fails to compile because `T` does not appear in the trait or in the\nimplementing type.\n\nOne way to work around this is to introduce a phantom type parameter into\n`FooMaker`, like so:\n\n```\nuse std::marker::PhantomData;\n\ntrait Maker {\n    type Item;\n    fn make(&mut self) -> Self::Item;\n}\n\nstruct Foo<T> {\n    foo: T\n}\n\n// Add a type parameter to `FooMaker`\nstruct FooMaker<T> {\n    phantom: PhantomData<T>,\n}\n\nimpl<T: Default> Maker for FooMaker<T> {\n    type Item = Foo<T>;\n\n    fn make(&mut self) -> Foo<T> {\n        Foo {\n            foo: <T as Default>::default(),\n        }\n    }\n}\n```\n\nAnother way is to do away with the associated type in `Maker` and use an input\ntype parameter instead:\n\n```\n// Use a type parameter instead of an associated type here\ntrait Maker<Item> {\n    fn make(&mut self) -> Item;\n}\n\nstruct Foo<T> {\n    foo: T\n}\n\nstruct FooMaker;\n\nimpl<T: Default> Maker<Foo<T>> for FooMaker {\n    fn make(&mut self) -> Foo<T> {\n        Foo { foo: <T as Default>::default() }\n    }\n}\n```\n\n### Error example 3\n\nSuppose we have a struct `Foo` and we would like to define some methods for it.\nThe following code example has a definition which leads to a compiler error:\n\n```compile_fail,E0207\nstruct Foo;\n\nimpl<const T: i32> Foo {\n    // error: the const parameter `T` is not constrained by the impl trait, self\n    // type, or predicates [E0207]\n    fn get(&self) -> i32 {\n        i32::default()\n    }\n}\n```\n\nThe problem is that the const parameter `T` does not appear in the implementing\ntype (`Foo`) of the impl. In this case, we can fix the error by moving the type\nparameter from the `impl` to the method `get`:\n\n\n```\nstruct Foo;\n\n// Move the const parameter from the impl to the method\nimpl Foo {\n    fn get<const T: i32>(&self) -> i32 {\n        i32::default()\n    }\n}\n```\n\n### Error example 4\n\nSuppose we have a struct `Foo` and a struct `Bar` that uses lifetime `'a`. We\nwould like to implement trait `Contains` for `Foo`. The trait `Contains` have\nthe associated type `B`. The following code example has a definition which\nleads to a compiler error:\n\n```compile_fail,E0207\nstruct Foo;\nstruct Bar<'a>;\n\ntrait Contains {\n    type B;\n\n    fn get(&self) -> i32;\n}\n\nimpl<'a> Contains for Foo {\n    type B = Bar<'a>;\n\n    // error: the lifetime parameter `'a` is not constrained by the impl trait,\n    // self type, or predicates [E0207]\n    fn get(&self) -> i32 {\n        i32::default()\n    }\n}\n```\n\nPlease note that unconstrained lifetime parameters are not supported if they are\nbeing used by an associated type.\n\nIn cases where the associated type's lifetime is meant to be tied to the\nself type, and none of the methods on the trait need ownership or different\nmutability, then an option is to implement the trait on a borrowed type:\n\n```rust\nstruct Foo(i32);\n\ntrait Contents {\n    type Item;\n\n    fn get(&self) -> Self::Item;\n}\n\n// Note the lifetime `'a` is used both for the self type...\nimpl<'a> Contents for &'a Foo {\n    // ...and the associated type.\n    type Item = &'a i32;\n\n    fn get(&self) -> Self::Item {\n        &self.0\n    }\n}\n```\n\n### Additional information\n\nFor more information, please see [RFC 447].\n\n[RFC 447]: https://github.com/rust-lang/rfcs/blob/master/text/0447-no-unused-impl-parameters.md\n",
+        "This error indicates a violation of one of Rust's orphan rules for trait\nimplementations. The rule concerns the use of type parameters in an\nimplementation of a foreign trait (a trait defined in another crate), and\nstates that type parameters must be ",
+        "#### Note: this error code is no longer emitted by the compiler.\n\nAttempt was made to import an unimportable type. This can happen when trying\nto import a type from a trait.\n\nErroneous code example:\n\n```\n#![feature(import_trait_associated_functions)]\n\nmod foo {\n    pub trait MyTrait {\n        type SomeType;\n    }\n}\n\nuse foo::MyTrait::SomeType;\n// error: `SomeType` is not directly importable\n\nfn main() {}\n```\n\nIt's invalid to directly import types belonging to a trait.\n",
+        "A type mismatched an associated type of a trait.\n\nErroneous code example:\n\n```compile_fail,E0271\ntrait Trait { type AssociatedType; }\n\nfn foo<T>(t: T) where T: Trait<AssociatedType=u32> {\n//                    ~~~~~~~~ ~~~~~~~~~~~~~~~~~~\n//                        |            |\n//         This says `foo` can         |\n//           only be used with         |\n//              some type that         |\n//         implements `Trait`.         |\n//                                     |\n//                             This says not only must\n//                             `T` be an impl of `Trait`\n//                             but also that the impl\n//                             must assign the type `u32`\n//                             to the associated type.\n    println!(",
+        "The Unsize trait should not be implemented directly. All implementations of\nUnsize are provided automatically by the compiler.\n\nErroneous code example:\n\n```compile_fail,E0328\n#![feature(unsize)]\n\nuse std::marker::Unsize;\n\npub struct MyType;\n\nimpl<T> Unsize<T> for MyType {}\n```\n\nIf you are defining your own smart pointer type and would like to enable\nconversion from a sized to an unsized type with the\n[DST coercion system][RFC 982], use [`CoerceUnsized`] instead.\n\n```\n#![feature(coerce_unsized)]\n\nuse std::ops::CoerceUnsized;\n\npub struct MyType<T: ?Sized> {\n    field_with_unsized_type: T,\n}\n\nimpl<T, U> CoerceUnsized<MyType<U>> for MyType<T>\n    where T: CoerceUnsized<U> {}\n```\n\n[RFC 982]: https://github.com/rust-lang/rfcs/blob/master/text/0982-dst-coercion.md\n[`CoerceUnsized`]: https://doc.rust-lang.org/std/ops/trait.CoerceUnsized.html\n",
+        "A value with a custom `Drop` implementation may be dropped during const-eval.\n\nErroneous code example:\n\n```compile_fail,E0493\nenum DropType {\n    A,\n}\n\nimpl Drop for DropType {\n    fn drop(&mut self) {}\n}\n\nstruct Foo {\n    field1: DropType,\n}\n\nstatic FOO: Foo = Foo { field1: (DropType::A, DropType::A).1 }; // error!\n```\n\nThe problem here is that if the given type or one of its fields implements the\n`Drop` trait, this `Drop` implementation cannot be called within a const\ncontext since it may run arbitrary, non-const-checked code. To prevent this\nissue, ensure all values with a custom `Drop` implementation escape the\ninitializer.\n\n```\nenum DropType {\n    A,\n}\n\nimpl Drop for DropType {\n    fn drop(&mut self) {}\n}\n\nstruct Foo {\n    field1: DropType,\n}\n\nstatic FOO: Foo = Foo { field1: DropType::A }; // We initialize all fields\n                                               // by hand.\n```\n",
+        "An unknown tuple struct/variant has been used.\n\nErroneous code example:\n\n```compile_fail,E0531\nlet Type(x) = Type(12); // error!\nmatch Bar(12) {\n    Bar(x) => {} // error!\n    _ => {}\n}\n```\n\nIn most cases, it's either a forgotten import or a typo. However, let's look at\nhow you can have such a type:\n\n```edition2018\nstruct Type(u32); // this is a tuple struct\n\nenum Foo {\n    Bar(u32), // this is a tuple variant\n}\n\nuse Foo::*; // To use Foo's variant directly, we need to import them in\n            // the scope.\n```\n\nEither way, it should work fine with our previous code:\n\n```edition2018\nstruct Type(u32);\n\nenum Foo {\n    Bar(u32),\n}\nuse Foo::*;\n\nlet Type(x) = Type(12); // ok!\nmatch Type(12) {\n    Type(x) => {} // ok!\n    _ => {}\n}\n```\n",
+        "Pattern arm did not match expected kind.\n\nErroneous code example:\n\n```compile_fail,E0532\nenum State {\n    Succeeded,\n    Failed(String),\n}\n\nfn print_on_failure(state: &State) {\n    match *state {\n        // error: expected unit struct, unit variant or constant, found tuple\n        //        variant `State::Failed`\n        State::Failed => println!(",
+        "A lifetime is only present in an associated-type binding, and not in the input\ntypes to the trait.\n\nErroneous code example:\n\n```compile_fail,E0582\nfn bar<F>(t: F)\n    // No type can satisfy this requirement, since `'a` does not\n    // appear in any of the input types (here, `i32`):\n    where F: for<'a> Fn(i32) -> Option<&'a i32>\n{\n}\n\nfn main() { }\n```\n\nTo fix this issue, either use the lifetime in the inputs, or use\n`'static`. Example:\n\n```\nfn bar<F, G>(t: F, u: G)\n    where F: for<'a> Fn(&'a i32) -> Option<&'a i32>,\n          G: Fn(i32) -> Option<&'static i32>,\n{\n}\n\nfn main() { }\n```\n\nThis error also includes the use of associated types with lifetime parameters.\n```compile_fail,E0582\ntrait Foo {\n    type Assoc<'a>;\n}\n\nstruct Bar<X, F>\nwhere\n    X: Foo,\n    F: for<'a> Fn(X::Assoc<'a>) -> &'a i32\n{\n    x: X,\n    f: F\n}\n```\nThe latter scenario encounters this error because `Foo::Assoc<'a>` could be\nimplemented by a type that does not use the `'a` parameter, so there is no\nguarantee that `X::Assoc<'a>` actually uses `'a`.\n\nTo fix this we can pass a dummy parameter:\n```\n# trait Foo {\n#     type Assoc<'a>;\n# }\nstruct Bar<X, F>\nwhere\n    X: Foo,\n    F: for<'a> Fn(X::Assoc<'a>, /* dummy */ &'a ()) -> &'a i32\n{\n    x: X,\n    f: F\n}\n```\n\nNote: The examples above used to be (erroneously) accepted by the\ncompiler, but this was since corrected. See [issue #33685] for more\ndetails.\n\n[issue #33685]: https://github.com/rust-lang/rust/issues/33685\n",
+        "A cast to `char` was attempted on a type other than `u8`.\n\nErroneous code example:\n\n```compile_fail,E0604\n0u32 as char; // error: only `u8` can be cast as `char`, not `u32`\n```\n\n`char` is a Unicode Scalar Value, an integer value from 0 to 0xD7FF and\n0xE000 to 0x10FFFF. (The gap is for surrogate pairs.) Only `u8` always fits in\nthose ranges so only `u8` may be cast to `char`.\n\nTo allow larger values, use `char::from_u32`, which checks the value is valid.\n\n```\nassert_eq!(86u8 as char, 'V'); // ok!\nassert_eq!(char::from_u32(0x3B1), Some('α')); // ok!\nassert_eq!(char::from_u32(0xD800), None); // not a USV.\n```\n\nFor more information about casts, take a look at the Type cast section in\n[The Reference Book][1].\n\n[1]: https://doc.rust-lang.org/reference/expressions/operator-expr.html#type-cast-expressions\n",
+        "An invalid cast was attempted.\n\nErroneous code examples:\n\n```compile_fail,E0605\nlet x = 0u8;\nx as Vec<u8>; // error: non-primitive cast: `u8` as `std::vec::Vec<u8>`\n\n// Another example\n\nlet v = core::ptr::null::<u8>(); // So here, `v` is a `*const u8`.\nv as &u8; // error: non-primitive cast: `*const u8` as `&u8`\n```\n\nOnly primitive types can be cast into each other. Examples:\n\n```\nlet x = 0u8;\nx as u32; // ok!\n\nlet v = core::ptr::null::<u8>();\nv as *const i8; // ok!\n```\n\nFor more information about casts, take a look at the Type cast section in\n[The Reference Book][1].\n\n[1]: https://doc.rust-lang.org/reference/expressions/operator-expr.html#type-cast-expressions\n",
+        "A cast between a thin and a wide pointer was attempted.\n\nErroneous code example:\n\n```compile_fail,E0607\nlet v = core::ptr::null::<u8>();\nv as *const [u8];\n```\n\nFirst: what are thin and wide pointers?\n\nThin pointers are ",
+        "This error indicates that the struct, enum or enum variant must be matched\nnon-exhaustively as it has been marked as `non_exhaustive`.\n\nWhen applied within a crate, downstream users of the crate will need to use the\n`_` pattern when matching enums and use the `..` pattern when matching structs.\nDownstream crates cannot match against non-exhaustive enum variants.\n\nFor example, in the below example, since the enum is marked as\n`non_exhaustive`, it is required that downstream crates match non-exhaustively\non it.\n\n```rust,ignore (pseudo-Rust)\n#[non_exhaustive]\npub enum Error {\n    Message(String),\n    Other,\n}\n\nimpl Display for Error {\n    fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {\n        // This will not error, despite being marked as non_exhaustive, as this\n        // enum is defined within the current crate, it can be matched\n        // exhaustively.\n        let display = match self {\n            Message(s) => s,\n            Other => ",
+        "Attempted to cast to/from a pointer with an unknown kind.\n\nErroneous code example:\n\n```compile_fail,E0641\nlet b = 0 as *const _; // error\n```\n\nType information must be provided if a pointer type being cast from/into another\ntype which cannot be inferred:\n\n```\n// Creating a pointer from reference: type can be inferred\nlet a = &(String::from(",
+        "An incorrect visibility restriction was specified.\n\nErroneous code example:\n\n```compile_fail,E0704\nmod foo {\n    pub(foo) struct Bar {\n        x: i32\n    }\n}\n```\n\nTo make struct `Bar` only visible in module `foo` the `in` keyword should be\nused:\n\n```\nmod foo {\n    pub(in crate::foo) struct Bar {\n        x: i32\n    }\n}\n# fn main() {}\n```\n\nFor more information see the Rust Reference on [Visibility].\n\n[Visibility]: https://doc.rust-lang.org/reference/visibility-and-privacy.html\n",
+        "Visibility is restricted to a module which isn't an ancestor of the current\nitem.\n\nErroneous code example:\n\n```compile_fail,E0742,edition2018\npub mod sea {}\n\npub (in crate::sea) struct Shark; // error!\n\nfn main() {}\n```\n\nTo fix this error, we need to move the `Shark` struct inside the `sea` module:\n\n```edition2018\npub mod sea {\n    pub (in crate::sea) struct Shark; // ok!\n}\n\nfn main() {}\n```\n\nOf course, you can do it as long as the module you're referring to is an\nancestor:\n\n```edition2018\npub mod earth {\n    pub mod sea {\n        pub (in crate::earth) struct Shark; // ok!\n    }\n}\n\nfn main() {}\n```\n",
+        "Invalid argument for the `offset_of!` macro.\n\nErroneous code example:\n\n```compile_fail,E0795\n#![feature(offset_of_enum)]\n\nlet x = std::mem::offset_of!(Option<u8>, Some);\n```\n\nThe `offset_of!` macro gives the offset of a field within a type. It can\nnavigate through enum variants, but the final component of its second argument\nmust be a field and not a variant.\n\nThe offset of the contained `u8` in the `Option<u8>` can be found by specifying\nthe field name `0`:\n\n```\n#![feature(offset_of_enum)]\n\nlet x: usize = std::mem::offset_of!(Option<u8>, Some.0);\n```\n\nThe discriminant of an enumeration may be read with `core::mem::discriminant`,\nbut this is not always a value physically present within the enum.\n\nFurther information about enum layout may be found at\nhttps://rust-lang.github.io/unsafe-code-guidelines/layout/enums.html.\n",
+        "behavior of std::io::ErrorKind::BrokenPipe (SIGPIPE)",
+        "hir_typeck_abi_cannot_be_called =\n    functions with the {$abi} ABI cannot be called\n    .note = an `extern {$abi}` function can only be called using inline assembly\n\nhir_typeck_add_missing_parentheses_in_range = you must surround the range in parentheses to call its `{$func_name}` function\n\nhir_typeck_add_return_type_add = try adding a return type\n\nhir_typeck_add_return_type_missing_here = a return type might be missing here\n\nhir_typeck_address_of_temporary_taken = cannot take address of a temporary\n    .label = temporary value\n\nhir_typeck_arg_mismatch_indeterminate = argument type mismatch was detected, but rustc had trouble determining where\n    .note = we would appreciate a bug report: https://github.com/rust-lang/rust/issues/new\n\nhir_typeck_as_deref_suggestion = consider using `as_deref` here\nhir_typeck_base_expression_double_dot = base expression required after `..`\nhir_typeck_base_expression_double_dot_add_expr = add a base expression here\nhir_typeck_base_expression_double_dot_enable_default_field_values =\n    add `#![feature(default_field_values)]` to the crate attributes to enable default values on `struct` fields\nhir_typeck_base_expression_double_dot_remove = remove the `..` as all the fields are already present\n\nhir_typeck_break_inside_closure =\n    `{$name}` inside of a closure\n    .label = cannot `{$name}` inside of a closure\n    .closure_label = enclosing closure\n\nhir_typeck_break_inside_coroutine =\n    `{$name}` inside `{$kind}` {$source}\n    .label = cannot `{$name}` inside `{$kind}` {$source}\n    .coroutine_label = enclosing `{$kind}` {$source}\n\nhir_typeck_break_non_loop =\n    `break` with value from a `{$kind}` loop\n    .label = can only break with a value inside `loop` or breakable block\n    .label2 = you can't `break` with a value in a `{$kind}` loop\n    .suggestion = use `break` on its own without a value inside this `{$kind}` loop\n    .break_expr_suggestion = alternatively, you might have meant to use the available loop label\n\n\nhir_typeck_candidate_trait_note = `{$trait_name}` defines an item `{$item_name}`{$action_or_ty ->\n    [NONE] {",
+        " ### What it does\n\n Confirms that items are sorted in source files as per configuration.\n\n ### Why restrict this?\n\n Keeping a consistent ordering throughout the codebase helps with working\n as a team, and possibly improves maintainability of the codebase. The\n idea is that by defining a consistent and enforceable rule for how\n source files are structured, less time will be wasted during reviews on\n a topic that is (under most circumstances) not relevant to the logic\n implemented in the code. Sometimes this will be referred to as\n ",
+        " ### What it does\n Checks for `assert!(r.is_ok())` or `assert!(r.is_err())` calls.\n\n ### Why restrict this?\n This form of assertion does not show any of the information present in the `Result`\n other than which variant it isn’t.\n\n ### Known problems\n The suggested replacement decreases the readability of code and log output.\n\n ### Example\n ```rust,no_run\n # let r = Ok::<_, ()>(());\n assert!(r.is_ok());\n # let r = Err::<(), _>(());\n assert!(r.is_err());\n ```\n\n Use instead:\n\n ```rust,no_run\n # let r = Ok::<_, ()>(());\n r.unwrap();\n # let r = Err::<(), _>(());\n r.unwrap_err();\n ```\n",
+        " ### What it does\n Checks for casts to the same type, casts of int literals to integer\n types, casts of float literals to float types, and casts between raw\n pointers that don't change type or constness.\n\n ### Why is this bad?\n It's just unnecessary.\n\n ### Known problems\n When the expression on the left is a function call, the lint considers\n the return type to be a type alias if it's aliased through a `use`\n statement (like `use std::io::Result as IoResult`). It will not lint\n such cases.\n\n This check will only work on primitive types without any intermediate\n references: raw pointers and trait objects may or may not work.\n\n ### Example\n ```no_run\n let _ = 2i32 as i32;\n let _ = 0.5 as f32;\n ```\n\n Better:\n\n ```no_run\n let _ = 2_i32;\n let _ = 0.5_f32;\n ```\n",
+        " ### What it does\n Denies the configured types in clippy.toml.\n\n Note: Even though this lint is warn-by-default, it will only trigger if\n types are defined in the clippy.toml file.\n\n ### Why is this bad?\n Some types are undesirable in certain contexts.\n\n ### Example:\n An example clippy.toml configuration:\n ```toml\n # clippy.toml\n disallowed-types = [\n     # Can use a string as the path of the disallowed type.\n     ",
+        " ### What it does\n Checks the doc comments of publicly visible functions that\n return a `Result` type and warns if there is no `# Errors` section.\n\n ### Why is this bad?\n Documenting the type of errors that can be returned from a\n function can help callers write code to handle the errors appropriately.\n\n ### Examples\n Since the following function returns a `Result` it has an `# Errors` section in\n its doc comment:\n\n ```no_run\n# use std::io;\n /// # Errors\n ///\n /// Will return `Err` if `filename` does not exist or the user does not have\n /// permission to read it.\n pub fn read(filename: String) -> io::Result<String> {\n     unimplemented!();\n }\n ```\n",
+        " ### What it does\n Detects calls to the `exit()` function that are not in the `main` function. Calls to `exit()`\n immediately terminate the program.\n\n ### Why restrict this?\n `exit()` immediately terminates the program with no information other than an exit code.\n This provides no means to troubleshoot a problem, and may be an unexpected side effect.\n\n Codebases may use this lint to require that all exits are performed either by panicking\n (which produces a message, a code location, and optionally a backtrace)\n or by calling `exit()` from `main()` (which is a single place to look).\n\n ### Good example\n ```no_run\n fn main() {\n     std::process::exit(0);\n }\n ```\n\n ### Bad example\n ```no_run\n fn main() {\n     other_function();\n }\n\n fn other_function() {\n     std::process::exit(0);\n }\n ```\n\n Use instead:\n\n ```ignore\n // To provide a stacktrace and additional information\n panic!(",
+        " ### What it does\n Checks for impls of `From<..>` that contain `panic!()` or `unwrap()`\n\n ### Why is this bad?\n `TryFrom` should be used if there's a possibility of failure.\n\n ### Example\n ```no_run\n struct Foo(i32);\n\n impl From<String> for Foo {\n     fn from(s: String) -> Self {\n         Foo(s.parse().unwrap())\n     }\n }\n ```\n\n Use instead:\n ```no_run\n struct Foo(i32);\n\n impl TryFrom<String> for Foo {\n     type Error = ();\n     fn try_from(s: String) -> Result<Self, Self::Error> {\n         if let Ok(parsed) = s.parse() {\n             Ok(Foo(parsed))\n         } else {\n             Err(())\n         }\n     }\n }\n ```\n",
+        " ### What it does\n Checks for format trait implementations (e.g. `Display`) with a recursive call to itself\n which uses `self` as a parameter.\n This is typically done indirectly with the `write!` macro or with `to_string()`.\n\n ### Why is this bad?\n This will lead to infinite recursion and a stack overflow.\n\n ### Example\n\n ```no_run\n use std::fmt;\n\n struct Structure(i32);\n impl fmt::Display for Structure {\n     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {\n         write!(f, ",
+        " ### What it does\n Checks for usage of `println`, `print`, `eprintln` or `eprint` in an\n implementation of a formatting trait.\n\n ### Why is this bad?\n Using a print macro is likely unintentional since formatting traits\n should write to the `Formatter`, not stdout/stderr.\n\n ### Example\n ```no_run\n use std::fmt::{Display, Error, Formatter};\n\n struct S;\n impl Display for S {\n     fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {\n         println!(",
+        " ### What it does\n Detects cases where the result of a `format!` call is\n appended to an existing `String`.\n\n ### Why is this bad?\n Introduces an extra, avoidable heap allocation.\n\n ### Known problems\n `format!` returns a `String` but `write!` returns a `Result`.\n Thus you are forced to ignore the `Err` variant to achieve the same API.\n\n While using `write!` in the suggested way should never fail, this isn't necessarily clear to the programmer.\n\n ### Example\n ```no_run\n let mut s = String::new();\n s += &format!(",
+        " ### What it does\n Checks for public functions that return a `Result`\n with an `Err` type of `()`. It suggests using a custom type that\n implements `std::error::Error`.\n\n ### Why is this bad?\n Unit does not implement `Error` and carries no\n further information about what went wrong.\n\n ### Known problems\n Of course, this lint assumes that `Result` is used\n for a fallible operation (which is after all the intended use). However\n code may opt to (mis)use it as a basic two-variant-enum. In that case,\n the suggestion is misguided, and the code should use a custom enum\n instead.\n\n ### Examples\n ```no_run\n pub fn read_u8() -> Result<u8, ()> { Err(()) }\n ```\n should become\n ```rust,should_panic\n use std::fmt;\n\n #[derive(Debug)]\n pub struct EndOfStream;\n\n impl fmt::Display for EndOfStream {\n     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {\n         write!(f, ",
+        " ### What it does\n\n This lint is concerned with the semantics of `Borrow` and `Hash` for a\n type that implements all three of `Hash`, `Borrow<str>` and `Borrow<[u8]>`\n as it is impossible to satisfy the semantics of Borrow and `Hash` for\n both `Borrow<str>` and `Borrow<[u8]>`.\n\n ### Why is this bad?\n\n When providing implementations for `Borrow<T>`, one should consider whether the different\n implementations should act as facets or representations of the underlying type. Generic code\n typically uses `Borrow<T>` when it relies on the identical behavior of these additional trait\n implementations. These traits will likely appear as additional trait bounds.\n\n In particular `Eq`, `Ord` and `Hash` must be equivalent for borrowed and owned values:\n `x.borrow() == y.borrow()` should give the same result as `x == y`.\n It follows then that the following equivalence must hold:\n `hash(x) == hash((x as Borrow<[u8]>).borrow()) == hash((x as Borrow<str>).borrow())`\n\n Unfortunately it doesn't hold as `hash(",
+        " ### What it does\n Checks if both `.write(true)` and `.append(true)` methods are called\n on a same `OpenOptions`.\n\n ### Why is this bad?\n `.append(true)` already enables `write(true)`, making this one\n superfluous.\n\n ### Example\n ```no_run\n # use std::fs::OpenOptions;\n let _ = OpenOptions::new()\n            .write(true)\n            .append(true)\n            .create(true)\n            .open(",
+        " ### What it does\n\n Finds manual impls of `TryFrom` with infallible error types.\n\n ### Why is this bad?\n\n Infallible conversions should be implemented via `From` with the blanket conversion.\n\n ### Example\n ```no_run\n use std::convert::Infallible;\n struct MyStruct(i16);\n impl TryFrom<i16> for MyStruct {\n     type Error = Infallible;\n     fn try_from(other: i16) -> Result<Self, Infallible> {\n         Ok(Self(other.into()))\n     }\n }\n ```\n Use instead:\n ```no_run\n struct MyStruct(i16);\n impl From<i16> for MyStruct {\n     fn from(other: i16) -> Self {\n         Self(other)\n     }\n }\n ```\n",
+        " ### What it does\n Checks for the definition of inherent methods with a signature of `to_string(&self) -> String`.\n\n ### Why is this bad?\n This method is also implicitly defined if a type implements the `Display` trait. As the functionality of `Display` is much more versatile, it should be preferred.\n\n ### Example\n ```no_run\n pub struct A;\n\n impl A {\n     pub fn to_string(&self) -> String {\n         ",
+        " ### What it does\n Checks for the definition of inherent methods with a signature of `to_string(&self) -> String` and if the type implementing this method also implements the `Display` trait.\n\n ### Why is this bad?\n This method is also implicitly defined if a type implements the `Display` trait. The less versatile inherent method will then shadow the implementation introduced by `Display`.\n\n ### Example\n ```no_run\n use std::fmt;\n\n pub struct A;\n\n impl A {\n     pub fn to_string(&self) -> String {\n         ",
+        " ### What it does\n Looks for `iter` and `iter_mut` methods without an associated `IntoIterator for (&|&mut) Type` implementation.\n\n ### Why is this bad?\n It's not bad, but having them is idiomatic and allows the type to be used in for loops directly\n (`for val in &iter {}`), without having to first call `iter()` or `iter_mut()`.\n\n ### Limitations\n This lint focuses on providing an idiomatic API. Therefore, it will only\n lint on types which are accessible outside of the crate. For internal types,\n the `IntoIterator` trait can be implemented on demand if it is actually needed.\n\n ### Example\n ```no_run\n struct MySlice<'a>(&'a [u8]);\n impl<'a> MySlice<'a> {\n     pub fn iter(&self) -> std::slice::Iter<'a, u8> {\n         self.0.iter()\n     }\n }\n ```\n Use instead:\n ```no_run\n struct MySlice<'a>(&'a [u8]);\n impl<'a> MySlice<'a> {\n     pub fn iter(&self) -> std::slice::Iter<'a, u8> {\n         self.0.iter()\n     }\n }\n impl<'a> IntoIterator for &MySlice<'a> {\n     type Item = &'a u8;\n     type IntoIter = std::slice::Iter<'a, u8>;\n     fn into_iter(self) -> Self::IntoIter {\n         self.iter()\n     }\n }\n ```\n",
+        " ### What it does\n This is the opposite of the `iter_without_into_iter` lint.\n It looks for `IntoIterator for (&|&mut) Type` implementations without an inherent `iter` or `iter_mut` method\n on the type or on any of the types in its `Deref` chain.\n\n ### Why is this bad?\n It's not bad, but having them is idiomatic and allows the type to be used in iterator chains\n by just calling `.iter()`, instead of the more awkward `<&Type>::into_iter` or `(&val).into_iter()` syntax\n in case of ambiguity with another `IntoIterator` impl.\n\n ### Limitations\n This lint focuses on providing an idiomatic API. Therefore, it will only\n lint on types which are accessible outside of the crate. For internal types,\n these methods can be added on demand if they are actually needed. Otherwise,\n it would trigger the [`dead_code`] lint for the unused method.\n\n [`dead_code`]: https://doc.rust-lang.org/rustc/lints/listing/warn-by-default.html#dead-code\n\n ### Example\n ```no_run\n struct MySlice<'a>(&'a [u8]);\n impl<'a> IntoIterator for &MySlice<'a> {\n     type Item = &'a u8;\n     type IntoIter = std::slice::Iter<'a, u8>;\n     fn into_iter(self) -> Self::IntoIter {\n         self.0.iter()\n     }\n }\n ```\n Use instead:\n ```no_run\n struct MySlice<'a>(&'a [u8]);\n impl<'a> MySlice<'a> {\n     pub fn iter(&self) -> std::slice::Iter<'a, u8> {\n         self.into_iter()\n     }\n }\n impl<'a> IntoIterator for &MySlice<'a> {\n     type Item = &'a u8;\n     type IntoIter = std::slice::Iter<'a, u8>;\n     fn into_iter(self) -> Self::IntoIter {\n         self.0.iter()\n     }\n }\n ```\n",
+        " ### What it does\n Checks for usage of `lines.filter_map(Result::ok)` or `lines.flat_map(Result::ok)`\n when `lines` has type `std::io::Lines`.\n\n ### Why is this bad?\n `Lines` instances might produce a never-ending stream of `Err`, in which case\n `filter_map(Result::ok)` will enter an infinite loop while waiting for an\n `Ok` variant. Calling `next()` once is sufficient to enter the infinite loop,\n even in the absence of explicit loops in the user code.\n\n This situation can arise when working with user-provided paths. On some platforms,\n `std::fs::File::open(path)` might return `Ok(fs)` even when `path` is a directory,\n but any later attempt to read from `fs` will return an error.\n\n ### Known problems\n This lint suggests replacing `filter_map()` or `flat_map()` applied to a `Lines`\n instance in all cases. There are two cases where the suggestion might not be\n appropriate or necessary:\n\n - If the `Lines` instance can never produce any error, or if an error is produced\n   only once just before terminating the iterator, using `map_while()` is not\n   necessary but will not do any harm.\n - If the `Lines` instance can produce intermittent errors then recover and produce\n   successful results, using `map_while()` would stop at the first error.\n\n ### Example\n ```no_run\n # use std::{fs::File, io::{self, BufRead, BufReader}};\n # let _ = || -> io::Result<()> {\n let mut lines = BufReader::new(File::open(",
+        " ### What it does\n Checks for manual implementations of Iterator::find\n\n ### Why is this bad?\n It doesn't affect performance, but using `find` is shorter and easier to read.\n\n ### Example\n\n ```no_run\n fn example(arr: Vec<i32>) -> Option<i32> {\n     for el in arr {\n         if el == 1 {\n             return Some(el);\n         }\n     }\n     None\n }\n ```\n Use instead:\n ```no_run\n fn example(arr: Vec<i32>) -> Option<i32> {\n     arr.into_iter().find(|&el| el == 1)\n }\n ```\n",
+        " ### What it does\n Checks for cases where [`BuildHasher::hash_one`] can be used.\n\n [`BuildHasher::hash_one`]: https://doc.rust-lang.org/std/hash/trait.BuildHasher.html#method.hash_one\n\n ### Why is this bad?\n It is more concise to use the `hash_one` method.\n\n ### Example\n ```no_run\n use std::hash::{BuildHasher, Hash, Hasher};\n use std::collections::hash_map::RandomState;\n\n let s = RandomState::new();\n let value = vec![1, 2, 3];\n\n let mut hasher = s.build_hasher();\n value.hash(&mut hasher);\n let hash = hasher.finish();\n ```\n Use instead:\n ```no_run\n use std::hash::BuildHasher;\n use std::collections::hash_map::RandomState;\n\n let s = RandomState::new();\n let value = vec![1, 2, 3];\n\n let hash = s.hash_one(&value);\n ```\n",
+        "manual `Option::as_slice`",
+        " ### What it does\n This detects various manual reimplementations of `Option::as_slice`.\n\n ### Why is this bad?\n Those implementations are both more complex than calling `as_slice`\n and unlike that incur a branch, pessimizing performance and leading\n to more generated code.\n\n ### Example\n ```no_run\n# let opt = Some(1);\n _ = opt.as_ref().map_or(&[][..], std::slice::from_ref);\n _ = match opt.as_ref() {\n     Some(f) => std::slice::from_ref(f),\n     None => &[],\n };\n ```\n Use instead:\n ```no_run\n# let opt = Some(1);\n _ = opt.as_slice();\n _ = opt.as_slice();\n ```\n",
+        " ### What it does\n Checks for usage of `option.map(f)` where f is a function\n or closure that returns the unit type `()`.\n\n ### Why is this bad?\n Readability, this can be written more clearly with\n an if let statement\n\n ### Example\n ```no_run\n # fn do_stuff() -> Option<String> { Some(String::new()) }\n # fn log_err_msg(foo: String) -> Option<String> { Some(foo) }\n # fn format_msg(foo: String) -> String { String::new() }\n let x: Option<String> = do_stuff();\n x.map(log_err_msg);\n # let x: Option<String> = do_stuff();\n x.map(|msg| log_err_msg(format_msg(msg)));\n ```\n\n The correct use would be:\n\n ```no_run\n # fn do_stuff() -> Option<String> { Some(String::new()) }\n # fn log_err_msg(foo: String) -> Option<String> { Some(foo) }\n # fn format_msg(foo: String) -> String { String::new() }\n let x: Option<String> = do_stuff();\n if let Some(msg) = x {\n     log_err_msg(msg);\n }\n\n # let x: Option<String> = do_stuff();\n if let Some(msg) = x {\n     log_err_msg(format_msg(msg));\n }\n ```\n",
+        " ### What it does\n Checks for usage of `result.map(f)` where f is a function\n or closure that returns the unit type `()`.\n\n ### Why is this bad?\n Readability, this can be written more clearly with\n an if let statement\n\n ### Example\n ```no_run\n # fn do_stuff() -> Result<String, String> { Ok(String::new()) }\n # fn log_err_msg(foo: String) -> Result<String, String> { Ok(foo) }\n # fn format_msg(foo: String) -> String { String::new() }\n let x: Result<String, String> = do_stuff();\n x.map(log_err_msg);\n # let x: Result<String, String> = do_stuff();\n x.map(|msg| log_err_msg(format_msg(msg)));\n ```\n\n The correct use would be:\n\n ```no_run\n # fn do_stuff() -> Result<String, String> { Ok(String::new()) }\n # fn log_err_msg(foo: String) -> Result<String, String> { Ok(foo) }\n # fn format_msg(foo: String) -> String { String::new() }\n let x: Result<String, String> = do_stuff();\n if let Ok(msg) = x {\n     log_err_msg(msg);\n };\n # let x: Result<String, String> = do_stuff();\n if let Ok(msg) = x {\n     log_err_msg(format_msg(msg));\n };\n ```\n",
+        " ### What it does\n Lint for redundant pattern matching over `Result`, `Option`,\n `std::task::Poll`, `std::net::IpAddr` or `bool`s\n\n ### Why is this bad?\n It's more concise and clear to just use the proper\n utility function or using the condition directly\n\n ### Known problems\n For suggestions involving bindings in patterns, this will change the drop order for the matched type.\n Both `if let` and `while let` will drop the value at the end of the block, both `if` and `while` will drop the\n value before entering the block. For most types this change will not matter, but for a few\n types this will not be an acceptable change (e.g. locks). See the\n [reference](https://doc.rust-lang.org/reference/destructors.html#drop-scopes) for more about\n drop order.\n\n ### Example\n ```no_run\n # use std::task::Poll;\n # use std::net::{IpAddr, Ipv4Addr, Ipv6Addr};\n if let Ok(_) = Ok::<i32, i32>(42) {}\n if let Err(_) = Err::<i32, i32>(42) {}\n if let None = None::<()> {}\n if let Some(_) = Some(42) {}\n if let Poll::Pending = Poll::Pending::<()> {}\n if let Poll::Ready(_) = Poll::Ready(42) {}\n if let IpAddr::V4(_) = IpAddr::V4(Ipv4Addr::LOCALHOST) {}\n if let IpAddr::V6(_) = IpAddr::V6(Ipv6Addr::LOCALHOST) {}\n match Ok::<i32, i32>(42) {\n     Ok(_) => true,\n     Err(_) => false,\n };\n\n let cond = true;\n if let true = cond {}\n matches!(cond, true);\n ```\n\n The more idiomatic use would be:\n\n ```no_run\n # use std::task::Poll;\n # use std::net::{IpAddr, Ipv4Addr, Ipv6Addr};\n if Ok::<i32, i32>(42).is_ok() {}\n if Err::<i32, i32>(42).is_err() {}\n if None::<()>.is_none() {}\n if Some(42).is_some() {}\n if Poll::Pending::<()>.is_pending() {}\n if Poll::Ready(42).is_ready() {}\n if IpAddr::V4(Ipv4Addr::LOCALHOST).is_ipv4() {}\n if IpAddr::V6(Ipv6Addr::LOCALHOST).is_ipv6() {}\n Ok::<i32, i32>(42).is_ok();\n\n let cond = true;\n if cond {}\n cond;\n ```\n",
+        "finds patterns that can be encoded more concisely with `Option::unwrap_or` or `Result::unwrap_or`",
+        " ### What it does\n Finds patterns that reimplement `Option::unwrap_or` or `Result::unwrap_or`.\n\n ### Why is this bad?\n Concise code helps focusing on behavior instead of boilerplate.\n\n ### Example\n ```no_run\n let foo: Option<i32> = None;\n match foo {\n     Some(v) => v,\n     None => 1,\n };\n ```\n\n Use instead:\n ```no_run\n let foo: Option<i32> = None;\n foo.unwrap_or(1);\n ```\n",
+        " ### What it does\n Checks if a `match` or `if let` expression can be simplified using\n `.unwrap_or_default()`.\n\n ### Why is this bad?\n It can be done in one call with `.unwrap_or_default()`.\n\n ### Example\n ```no_run\n let x: Option<String> = Some(String::new());\n let y: String = match x {\n     Some(v) => v,\n     None => String::new(),\n };\n\n let x: Option<Vec<String>> = Some(Vec::new());\n let y: Vec<String> = if let Some(v) = x {\n     v\n } else {\n     Vec::new()\n };\n ```\n Use instead:\n ```no_run\n let x: Option<String> = Some(String::new());\n let y: String = x.unwrap_or_default();\n\n let x: Option<Vec<String>> = Some(Vec::new());\n let y: Vec<String> = x.unwrap_or_default();\n ```\n",
+        " ### What it does\n Checks for temporaries returned from function calls in a match scrutinee that have the\n `clippy::has_significant_drop` attribute.\n\n ### Why is this bad?\n The `clippy::has_significant_drop` attribute can be added to types whose Drop impls have\n an important side-effect, such as unlocking a mutex, making it important for users to be\n able to accurately understand their lifetimes. When a temporary is returned in a function\n call in a match scrutinee, its lifetime lasts until the end of the match block, which may\n be surprising.\n\n For `Mutex`es this can lead to a deadlock. This happens when the match scrutinee uses a\n function call that returns a `MutexGuard` and then tries to lock again in one of the match\n arms. In that case the `MutexGuard` in the scrutinee will not be dropped until the end of\n the match block and thus will not unlock.\n\n ### Example\n ```rust,ignore\n # use std::sync::Mutex;\n # struct State {}\n # impl State {\n #     fn foo(&self) -> bool {\n #         true\n #     }\n #     fn bar(&self) {}\n # }\n let mutex = Mutex::new(State {});\n\n match mutex.lock().unwrap().foo() {\n     true => {\n         mutex.lock().unwrap().bar(); // Deadlock!\n     }\n     false => {}\n };\n\n println!(",
+        " ### What it does\n Checks for `mem::replace()` on an `Option` with\n `None`.\n\n ### Why is this bad?\n `Option` already has the method `take()` for\n taking its current value (Some(..) or None) and replacing it with\n `None`.\n\n ### Example\n ```no_run\n use std::mem;\n\n let mut an_option = Some(0);\n let replaced = mem::replace(&mut an_option, None);\n ```\n Is better expressed with:\n ```no_run\n let mut an_option = Some(0);\n let taken = an_option.take();\n ```\n",
+        " ### What it does\n Checks for `mem::replace()` on an `Option` with `Some(…)`.\n\n ### Why is this bad?\n `Option` already has the method `replace()` for\n taking its current value (Some(…) or None) and replacing it with\n `Some(…)`.\n\n ### Example\n ```no_run\n let mut an_option = Some(0);\n let replaced = std::mem::replace(&mut an_option, Some(1));\n ```\n Is better expressed with:\n ```no_run\n let mut an_option = Some(0);\n let taken = an_option.replace(1);\n ```\n",
+        " ### What it does\n Checks for usage of `Iterator::flat_map()` where `filter_map()` could be\n used instead.\n\n ### Why is this bad?\n `filter_map()` is known to always produce 0 or 1 output items per input item,\n rather than however many the inner iterator type produces.\n Therefore, it maintains the upper bound in `Iterator::size_hint()`,\n and communicates to the reader that the input items are not being expanded into\n multiple output items without their having to notice that the mapping function\n returns an `Option`.\n\n ### Example\n ```no_run\n let nums: Vec<i32> = [",
+        " ### What it does\n Checks for `.unwrap()` related calls on `Result`s and `Option`s that are constructed.\n\n ### Why is this bad?\n It is better to write the value directly without the indirection.\n\n ### Examples\n ```no_run\n let val1 = Some(1).unwrap();\n let val2 = Ok::<_, ()>(1).unwrap();\n let val3 = Err::<(), _>(1).unwrap_err();\n ```\n\n Use instead:\n ```no_run\n let val1 = 1;\n let val2 = 1;\n let val3 = 1;\n ```\n",
+        " ### What it does\n Checks for usage of `ok().expect(..)`.\n\n ### Why is this bad?\n Because you usually call `expect()` on the `Result`\n directly to get a better error message.\n\n ### Example\n ```no_run\n # let x = Ok::<_, ()>(());\n x.ok().expect(",
+        " ### What it does\n Checks for `.or(…).unwrap()` calls to Options and Results.\n\n ### Why is this bad?\n You should use `.unwrap_or(…)` instead for clarity.\n\n ### Example\n ```no_run\n # let fallback = ",
+        " ### What it does\n Checks for iterators of `Option`s using `.filter(Option::is_some).map(Option::unwrap)` that may\n be replaced with a `.flatten()` call.\n\n ### Why is this bad?\n `Option` is like a collection of 0-1 things, so `flatten`\n automatically does this without suspicious-looking `unwrap` calls.\n\n ### Example\n ```no_run\n let _ = std::iter::empty::<Option<i32>>().filter(Option::is_some).map(Option::unwrap);\n ```\n Use instead:\n ```no_run\n let _ = std::iter::empty::<Option<i32>>().flatten();\n ```\n",
+        "`FileType::is_file` is not recommended to test for readable file type",
+        " ### What it does\n Checks for `FileType::is_file()`.\n\n ### Why restrict this?\n When people testing a file type with `FileType::is_file`\n they are testing whether a path is something they can get bytes from. But\n `is_file` doesn't cover special file types in unix-like systems, and doesn't cover\n symlink in windows. Using `!FileType::is_dir()` is a better way to that intention.\n\n ### Example\n ```no_run\n # || {\n let metadata = std::fs::metadata(",
+        "using `.map(_).collect::<Result<(),_>()`, which can be replaced with `try_for_each`",
+        " ### What it does\n Checks for usage of `_.map(_).collect::<Result<(), _>()`.\n\n ### Why is this bad?\n Using `try_for_each` instead is more readable and idiomatic.\n\n ### Example\n ```no_run\n (0..3).map(|t| Err(t)).collect::<Result<(), _>>();\n ```\n Use instead:\n ```no_run\n (0..3).try_for_each(|t| Err(t));\n ```\n",
+        " ### What it does\n Checks for no-op uses of `Option::{as_deref, as_deref_mut}`,\n for example, `Option<&T>::as_deref()` returns the same type.\n\n ### Why is this bad?\n Redundant code and improving readability.\n\n ### Example\n ```no_run\n let a = Some(&1);\n let b = a.as_deref(); // goes from Option<&i32> to Option<&i32>\n ```\n\n Use instead:\n ```no_run\n let a = Some(&1);\n let b = a;\n ```\n",
+        "finds patterns that can be encoded more concisely with `Option::ok_or`",
+        " ### What it does\n\n Finds patterns that reimplement `Option::ok_or`.\n\n ### Why is this bad?\n\n Concise code helps focusing on behavior instead of boilerplate.\n\n ### Examples\n ```no_run\n let foo: Option<i32> = None;\n foo.map_or(Err(",
+        " ### What it does\n Checks for instances of `map_err(|_| Some::Enum)`\n\n ### Why restrict this?\n This `map_err` throws away the original error rather than allowing the enum to\n contain and report the cause of the error.\n\n ### Example\n Before:\n ```no_run\n use std::fmt;\n\n #[derive(Debug)]\n enum Error {\n     Indivisible,\n     Remainder(u8),\n }\n\n impl fmt::Display for Error {\n     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {\n         match self {\n             Error::Indivisible => write!(f, ",
+        " ### What it does\n Checks for duplicate open options as well as combinations\n that make no sense.\n\n ### Why is this bad?\n In the best case, the code will be harder to read than\n necessary. I don't know the worst case.\n\n ### Example\n ```no_run\n use std::fs::OpenOptions;\n\n OpenOptions::new().read(true).truncate(true);\n ```\n",
+        " ### What it does\n Checks for the suspicious use of `OpenOptions::create()`\n without an explicit `OpenOptions::truncate()`.\n\n ### Why is this bad?\n `create()` alone will either create a new file or open an\n existing file. If the file already exists, it will be\n overwritten when written to, but the file will not be\n truncated by default.\n If less data is written to the file\n than it already contains, the remainder of the file will\n remain unchanged, and the end of the file will contain old\n data.\n In most cases, one should either use `create_new` to ensure\n the file is created from scratch, or ensure `truncate` is\n called so that the truncation behaviour is explicit. `truncate(true)`\n will ensure the file is entirely overwritten with new data, whereas\n `truncate(false)` will explicitly keep the default behavior.\n\n ### Example\n ```rust,no_run\n use std::fs::OpenOptions;\n\n OpenOptions::new().create(true);\n ```\n Use instead:\n ```rust,no_run\n use std::fs::OpenOptions;\n\n OpenOptions::new().create(true).truncate(true);\n ```\n",
+        " ### What it does\n Looks for calls to `.type_id()` on a `Box<dyn _>`.\n\n ### Why is this bad?\n This almost certainly does not do what the user expects and can lead to subtle bugs.\n Calling `.type_id()` on a `Box<dyn Trait>` returns a fixed `TypeId` of the `Box` itself,\n rather than returning the `TypeId` of the underlying type behind the trait object.\n\n For `Box<dyn Any>` specifically (and trait objects that have `Any` as its supertrait),\n this lint will provide a suggestion, which is to dereference the receiver explicitly\n to go from `Box<dyn Any>` to `dyn Any`.\n This makes sure that `.type_id()` resolves to a dynamic call on the trait object\n and not on the box.\n\n If the fixed `TypeId` of the `Box` is the intended behavior, it's better to be explicit about it\n and write `TypeId::of::<Box<dyn Trait>>()`:\n this makes it clear that a fixed `TypeId` is returned and not the `TypeId` of the implementor.\n\n ### Example\n ```rust,ignore\n use std::any::{Any, TypeId};\n\n let any_box: Box<dyn Any> = Box::new(42_i32);\n assert_eq!(any_box.type_id(), TypeId::of::<i32>()); // ⚠️ this fails!\n ```\n Use instead:\n ```no_run\n use std::any::{Any, TypeId};\n\n let any_box: Box<dyn Any> = Box::new(42_i32);\n assert_eq!((*any_box).type_id(), TypeId::of::<i32>());\n //          ^ dereference first, to call `type_id` on `dyn Any`\n ```\n",
+        " ### What it does\n\n Checks if the `seek` method of the `Seek` trait is called with `SeekFrom::Current(0)`,\n and if it is, suggests using `stream_position` instead.\n\n ### Why is this bad?\n\n Readability. Use dedicated method.\n\n ### Example\n\n ```rust,no_run\n use std::fs::File;\n use std::io::{self, Write, Seek, SeekFrom};\n\n fn main() -> io::Result<()> {\n     let mut f = File::create(",
+        " ### What it does\n Checks for usage of `.map(|_| format!(..)).collect::<String>()`.\n\n ### Why is this bad?\n This allocates a new string for every element in the iterator.\n This can be done more efficiently by creating the `String` once and appending to it in `Iterator::fold`,\n using either the `write!` macro which supports exactly the same syntax as the `format!` macro,\n or concatenating with `+` in case the iterator yields `&str`/`String`.\n\n Note also that `write!`-ing into a `String` can never fail, despite the return type of `write!` being `std::fmt::Result`,\n so it can be safely ignored or unwrapped.\n\n ### Example\n ```no_run\n fn hex_encode(bytes: &[u8]) -> String {\n     bytes.iter().map(|b| format!(",
+        " ### What it does\n Checks for calls to `TryInto::try_into` and `TryFrom::try_from` when their infallible counterparts\n could be used.\n\n ### Why is this bad?\n In those cases, the `TryInto` and `TryFrom` trait implementation is a blanket impl that forwards\n to `Into` or `From`, which always succeeds.\n The returned `Result<_, Infallible>` requires error handling to get the contained value\n even though the conversion can never fail.\n\n ### Example\n ```rust\n let _: Result<i64, _> = 1i32.try_into();\n let _: Result<i64, _> = <_>::try_from(1i32);\n ```\n Use `from`/`into` instead:\n ```rust\n let _: i64 = 1i32.into();\n let _: i64 = <_>::from(1i32);\n ```\n",
+        " ### What it does\n Checks for iterators of `Result`s using `.filter(Result::is_ok).map(Result::unwrap)` that may\n be replaced with a `.flatten()` call.\n\n ### Why is this bad?\n `Result` implements `IntoIterator<Item = T>`. This means that `Result` can be flattened\n automatically without suspicious-looking `unwrap` calls.\n\n ### Example\n ```no_run\n let _ = std::iter::empty::<Result<i32, ()>>().filter(Result::is_ok).map(Result::unwrap);\n ```\n Use instead:\n ```no_run\n let _ = std::iter::empty::<Result<i32, ()>>().flatten();\n ```\n",
+        " ### What it does\n Checks for usage of `.filter(Option::is_some)` that may be replaced with a `.flatten()` call.\n This lint will require additional changes to the follow-up calls as it affects the type.\n\n ### Why is this bad?\n This pattern is often followed by manual unwrapping of the `Option`. The simplification\n results in more readable and succinct code without the need for manual unwrapping.\n\n ### Example\n ```no_run\n vec![Some(1)].into_iter().filter(Option::is_some);\n\n ```\n Use instead:\n ```no_run\n vec![Some(1)].into_iter().flatten();\n ```\n",
+        " ### What it does\n Checks for usage of `.filter(Result::is_ok)` that may be replaced with a `.flatten()` call.\n This lint will require additional changes to the follow-up calls as it affects the type.\n\n ### Why is this bad?\n This pattern is often followed by manual unwrapping of `Result`. The simplification\n results in more readable and succinct code without the need for manual unwrapping.\n\n ### Example\n ```no_run\n vec![Ok::<i32, String>(1)].into_iter().filter(Result::is_ok);\n\n ```\n Use instead:\n ```no_run\n vec![Ok::<i32, String>(1)].into_iter().flatten();\n ```\n",
+        "using `Option::and_then` or `Result::and_then` to chain a computation that returns an `Option` or a `Result`",
+        " ### What it does\n Detect functions that end with `Option::and_then` or `Result::and_then`, and suggest using\n the `?` operator instead.\n\n ### Why is this bad?\n The `and_then` method is used to chain a computation that returns an `Option` or a `Result`.\n This can be replaced with the `?` operator, which is more concise and idiomatic.\n\n ### Example\n\n ```no_run\n fn test(opt: Option<i32>) -> Option<i32> {\n     opt.and_then(|n| {\n         if n > 1 {\n             Some(n + 1)\n         } else {\n             None\n        }\n     })\n }\n ```\n Use instead:\n ```no_run\n fn test(opt: Option<i32>) -> Option<i32> {\n     let n = opt?;\n     if n > 1 {\n         Some(n + 1)\n     } else {\n         None\n     }\n }\n ```\n",
+        "calling `std::io::Error::new(std::io::ErrorKind::Other, _)`",
+        " This lint warns on calling `io::Error::new(..)` with a kind of\n `io::ErrorKind::Other`.\n\n ### Why is this bad?\n Since Rust 1.74, there's the `io::Error::other(_)` shortcut.\n\n ### Example\n ```no_run\n use std::io;\n let _ = io::Error::new(io::ErrorKind::Other, ",
+        " ### What it does\n Checks for type parameters which are positioned inconsistently between\n a type definition and impl block. Specifically, a parameter in an impl\n block which has the same name as a parameter in the type def, but is in\n a different place.\n\n ### Why is this bad?\n Type parameters are determined by their position rather than name.\n Naming type parameters inconsistently may cause you to refer to the\n wrong type parameter.\n\n ### Limitations\n This lint only applies to impl blocks with simple generic params, e.g.\n `A`. If there is anything more complicated, such as a tuple, it will be\n ignored.\n\n ### Example\n ```no_run\n struct Foo<A, B> {\n     x: A,\n     y: B,\n }\n // inside the impl, B refers to Foo::A\n impl<B, A> Foo<B, A> {}\n ```\n Use instead:\n ```no_run\n struct Foo<A, B> {\n     x: A,\n     y: B,\n }\n impl<A, B> Foo<A, B> {}\n ```\n",
+        " ### What it does\n Checks for manual [`core::fmt::Debug`](https://doc.rust-lang.org/core/fmt/trait.Debug.html) implementations that do not use all fields.\n\n ### Why is this bad?\n A common mistake is to forget to update manual `Debug` implementations when adding a new field\n to a struct or a new variant to an enum.\n\n At the same time, it also acts as a style lint to suggest using [`core::fmt::DebugStruct::finish_non_exhaustive`](https://doc.rust-lang.org/core/fmt/struct.DebugStruct.html#method.finish_non_exhaustive)\n for the times when the user intentionally wants to leave out certain fields (e.g. to hide implementation details).\n\n ### Known problems\n This lint works based on the `DebugStruct` helper types provided by the `Formatter`,\n so this won't detect `Debug` impls that use the `write!` macro.\n Oftentimes there is more logic to a `Debug` impl if it uses `write!` macro, so it tries\n to be on the conservative side and not lint in those cases in an attempt to prevent false positives.\n\n This lint also does not look through function calls, so calling a function does not consider fields\n used inside of that function as used by the `Debug` impl.\n\n Lastly, it also ignores tuple structs as their `DebugTuple` formatter does not have a `finish_non_exhaustive`\n method, as well as enums because their exhaustiveness is already checked by the compiler when matching on the enum,\n making it much less likely to accidentally forget to update the `Debug` impl when adding a new variant.\n\n ### Example\n ```no_run\n use std::fmt;\n struct Foo {\n     data: String,\n     // implementation detail\n     hidden_data: i32\n }\n impl fmt::Debug for Foo {\n     fn fmt(&self, formatter: &mut fmt::Formatter<'_>) -> fmt::Result {\n         formatter\n             .debug_struct(",
+        " ### What it does\n Checks if a provided method is used implicitly by a trait\n implementation.\n\n ### Why restrict this?\n To ensure that a certain implementation implements every method; for example,\n a wrapper type where every method should delegate to the corresponding method of\n the inner type's implementation.\n\n This lint should typically be enabled on a specific trait `impl` item\n rather than globally.\n\n ### Example\n ```no_run\n trait Trait {\n     fn required();\n\n     fn provided() {}\n }\n\n # struct Type;\n #[warn(clippy::missing_trait_methods)]\n impl Trait for Type {\n     fn required() { /* ... */ }\n }\n ```\n Use instead:\n ```no_run\n trait Trait {\n     fn required();\n\n     fn provided() {}\n }\n\n # struct Type;\n #[warn(clippy::missing_trait_methods)]\n impl Trait for Type {\n     fn required() { /* ... */ }\n\n     fn provided() { /* ... */ }\n }\n ```\n",
+        " ### What it does\n The lint checks for `self` in fn parameters that\n specify the `Self`-type explicitly\n ### Why is this bad?\n Increases the amount and decreases the readability of code\n\n ### Example\n ```no_run\n enum ValType {\n     I32,\n     I64,\n     F32,\n     F64,\n }\n\n impl ValType {\n     pub fn bytes(self: Self) -> usize {\n         match self {\n             Self::I32 | Self::F32 => 4,\n             Self::I64 | Self::F64 => 8,\n         }\n     }\n }\n ```\n\n Could be rewritten as\n\n ```no_run\n enum ValType {\n     I32,\n     I64,\n     F32,\n     F64,\n }\n\n impl ValType {\n     pub fn bytes(self) -> usize {\n         match self {\n             Self::I32 | Self::F32 => 4,\n             Self::I64 | Self::F64 => 8,\n         }\n     }\n }\n ```\n",
+        " ### What it does\n The lint checks for `if`-statements appearing in loops\n that contain a `continue` statement in either their main blocks or their\n `else`-blocks, when omitting the `else`-block possibly with some\n rearrangement of code can make the code easier to understand.\n The lint also checks if the last statement in the loop is a `continue`\n\n ### Why is this bad?\n Having explicit `else` blocks for `if` statements\n containing `continue` in their THEN branch adds unnecessary branching and\n nesting to the code. Having an else block containing just `continue` can\n also be better written by grouping the statements following the whole `if`\n statement within the THEN block and omitting the else block completely.\n\n ### Example\n ```no_run\n # fn condition() -> bool { false }\n # fn update_condition() {}\n # let x = false;\n while condition() {\n     update_condition();\n     if x {\n         // ...\n     } else {\n         continue;\n     }\n     println!(",
+        " ### What it does\n Suggests replacing `Ok(x?)` or `Some(x?)` with `x` in return positions where the `?` operator\n is not needed to convert the type of `x`.\n\n ### Why is this bad?\n There's no reason to use `?` to short-circuit when execution of the body will end there anyway.\n\n ### Example\n ```no_run\n # use std::num::ParseIntError;\n fn f(s: &str) -> Option<usize> {\n     Some(s.find('x')?)\n }\n\n fn g(s: &str) -> Result<usize, ParseIntError> {\n     Ok(s.parse()?)\n }\n ```\n Use instead:\n ```no_run\n # use std::num::ParseIntError;\n fn f(s: &str) -> Option<usize> {\n     s.find('x')\n }\n\n fn g(s: &str) -> Result<usize, ParseIntError> {\n     s.parse()\n }\n ```\n",
+        " ### What it does\n Checks for non-canonical implementations of `PartialOrd` when `Ord` is already implemented.\n\n ### Why is this bad?\n If both `PartialOrd` and `Ord` are implemented, they must agree. This is commonly done by\n wrapping the result of `cmp` in `Some` for `partial_cmp`. Not doing this may silently\n introduce an error upon refactoring.\n\n ### Known issues\n Code that calls the `.into()` method instead will be flagged, despite `.into()` wrapping it\n in `Some`.\n\n ### Example\n ```no_run\n # use std::cmp::Ordering;\n #[derive(Eq, PartialEq)]\n struct A(u32);\n\n impl Ord for A {\n     fn cmp(&self, other: &Self) -> Ordering {\n         // ...\n #       todo!();\n     }\n }\n\n impl PartialOrd for A {\n     fn partial_cmp(&self, other: &Self) -> Option<Ordering> {\n         // ...\n #       todo!();\n     }\n }\n ```\n Use instead:\n ```no_run\n # use std::cmp::Ordering;\n #[derive(Eq, PartialEq)]\n struct A(u32);\n\n impl Ord for A {\n     fn cmp(&self, other: &Self) -> Ordering {\n         // ...\n #       todo!();\n     }\n }\n\n impl PartialOrd for A {\n     fn partial_cmp(&self, other: &Self) -> Option<Ordering> {\n         Some(self.cmp(other))   // or self.cmp(other).into()\n     }\n }\n ```\n",
+        " ### What it does\n Checks for non-octal values used to set Unix file permissions.\n\n ### Why is this bad?\n They will be converted into octal, creating potentially\n unintended file permissions.\n\n ### Example\n ```rust,ignore\n use std::fs::OpenOptions;\n use std::os::unix::fs::OpenOptionsExt;\n\n let mut options = OpenOptions::new();\n options.mode(644);\n ```\n Use instead:\n ```rust,ignore\n use std::fs::OpenOptions;\n use std::os::unix::fs::OpenOptionsExt;\n\n let mut options = OpenOptions::new();\n options.mode(0o644);\n ```\n",
+        "reimplementation of Option::map_or",
+        " ### What it does\n Lints usage of `if let Some(v) = ... { y } else { x }` and\n `match .. { Some(v) => y, None/_ => x }` which are more\n idiomatically done with `Option::map_or` (if the else bit is a pure\n expression) or `Option::map_or_else` (if the else bit is an impure\n expression).\n\n ### Why is this bad?\n Using the dedicated functions of the `Option` type is clearer and\n more concise than an `if let` expression.\n\n ### Notes\n This lint uses a deliberately conservative metric for checking if the\n inside of either body contains loop control expressions `break` or\n `continue` (which cannot be used within closures). If these are found,\n this lint will not be raised.\n\n ### Example\n ```no_run\n # let optional: Option<u32> = Some(0);\n # fn do_complicated_function() -> u32 { 5 };\n let _ = if let Some(foo) = optional {\n     foo\n } else {\n     5\n };\n let _ = match optional {\n     Some(val) => val + 1,\n     None => 5\n };\n let _ = if let Some(foo) = optional {\n     foo\n } else {\n     let y = do_complicated_function();\n     y*y\n };\n ```\n\n should be\n\n ```no_run\n # let optional: Option<u32> = Some(0);\n # fn do_complicated_function() -> u32 { 5 };\n let _ = optional.map_or(5, |foo| foo);\n let _ = optional.map_or(5, |val| val + 1);\n let _ = optional.map_or_else(||{\n     let y = do_complicated_function();\n     y*y\n }, |foo| foo);\n ```\n",
+        " ### What it does\n Checks for usage of `panic!` or assertions in a function whose return type is `Result`.\n\n ### Why restrict this?\n For some codebases, it is desirable for functions of type result to return an error instead of crashing. Hence panicking macros should be avoided.\n\n ### Known problems\n Functions called from a function returning a `Result` may invoke a panicking macro. This is not checked.\n\n ### Example\n ```no_run\n fn result_with_panic() -> Result<bool, String>\n {\n     panic!(",
+        "Binary comparison to `Option<T>::None` relies on `T: PartialEq`, which is unneeded",
+        " ### What it does\n\n Checks for binary comparisons to a literal `Option::None`.\n\n ### Why is this bad?\n\n A programmer checking if some `foo` is `None` via a comparison `foo == None`\n is usually inspired from other programming languages (e.g. `foo is None`\n in Python).\n Checking if a value of type `Option<T>` is (not) equal to `None` in that\n way relies on `T: PartialEq` to do the comparison, which is unneeded.\n\n ### Example\n ```no_run\n fn foo(f: Option<u32>) -> &'static str {\n     if f != None { ",
+        " ### What it does\n Checks for direct implementations of `ToString`.\n ### Why is this bad?\n This trait is automatically implemented for any type which implements the `Display` trait.\n As such, `ToString` shouldn’t be implemented directly: `Display` should be implemented instead,\n and you get the `ToString` implementation for free.\n ### Example\n ```no_run\n struct Point {\n   x: usize,\n   y: usize,\n }\n\n impl ToString for Point {\n   fn to_string(&self) -> String {\n     format!(",
+        " ### What it does\n Checks for null function pointer creation through transmute.\n\n ### Why is this bad?\n Creating a null function pointer is undefined behavior.\n\n More info: https://doc.rust-lang.org/nomicon/ffi.html#the-nullable-pointer-optimization\n\n ### Known problems\n Not all cases can be detected at the moment of this writing.\n For example, variables which hold a null pointer and are then fed to a `transmute`\n call, aren't detectable yet.\n\n ### Example\n ```no_run\n let null_fn: fn() = unsafe { std::mem::transmute( std::ptr::null::<()>() ) };\n ```\n Use instead:\n ```no_run\n let null_fn: Option<fn()> = None;\n ```\n",
+        " ### What it does\n Checks for integer validity checks, followed by a transmute that is (incorrectly) evaluated\n eagerly (e.g. using `bool::then_some`).\n\n ### Why is this bad?\n Eager evaluation means that the `transmute` call is executed regardless of whether the condition is true or false.\n This can introduce unsoundness and other subtle bugs.\n\n ### Example\n Consider the following function which is meant to convert an unsigned integer to its enum equivalent via transmute.\n\n ```no_run\n #[repr(u8)]\n enum Opcode {\n     Add = 0,\n     Sub = 1,\n     Mul = 2,\n     Div = 3\n }\n\n fn int_to_opcode(op: u8) -> Option<Opcode> {\n     (op < 4).then_some(unsafe { std::mem::transmute(op) })\n }\n ```\n This may appear fine at first given that it checks that the `u8` is within the validity range of the enum,\n *however* the transmute is evaluated eagerly, meaning that it executes even if `op >= 4`!\n\n This makes the function unsound, because it is possible for the caller to cause undefined behavior\n (creating an enum with an invalid bitpattern) entirely in safe code only by passing an incorrect value,\n which is normally only a bug that is possible in unsafe code.\n\n One possible way in which this can go wrong practically is that the compiler sees it as:\n ```rust,ignore (illustrative)\n let temp: Foo = unsafe { std::mem::transmute(op) };\n (0 < 4).then_some(temp)\n ```\n and optimizes away the `(0 < 4)` check based on the assumption that since a `Foo` was created from `op` with the validity range `0..3`,\n it is **impossible** for this condition to be false.\n\n In short, it is possible for this function to be optimized in a way that makes it [never return `None`](https://godbolt.org/z/ocrcenevq),\n even if passed the value `4`.\n\n This can be avoided by instead using lazy evaluation. For the example above, this should be written:\n ```rust,ignore (illustrative)\n fn int_to_opcode(op: u8) -> Option<Opcode> {\n     (op < 4).then(|| unsafe { std::mem::transmute(op) })\n              ^^^^ ^^ `bool::then` only executes the closure if the condition is true!\n }\n ```\n",
+        " ### What it does\n Checks for usage of `Option<Option<_>>` in function signatures and type\n definitions\n\n ### Why is this bad?\n `Option<_>` represents an optional value. `Option<Option<_>>`\n represents an optional value which itself wraps an optional. This is logically the\n same thing as an optional value but has an unneeded extra level of wrapping.\n\n If you have a case where `Some(Some(_))`, `Some(None)` and `None` are distinct cases,\n consider a custom `enum` instead, with clear names for each case.\n\n ### Example\n ```no_run\n fn get_data() -> Option<Option<u32>> {\n     None\n }\n ```\n\n Better:\n\n ```no_run\n pub enum Contents {\n     Data(Vec<u8>), // Was Some(Some(Vec<u8>))\n     NotYetFetched, // Was Some(None)\n     None,          // Was None\n }\n\n fn get_data() -> Contents {\n     Contents::None\n }\n ```\n",
+        " ### What it does\n Suggests removing the use of a `map()` (or `map_err()`) method when an `Option` or `Result`\n is being constructed.\n\n ### Why is this bad?\n It introduces unnecessary complexity. Instead, the function can be called before\n constructing the `Option` or `Result` from its return value.\n\n ### Example\n ```no_run\n Some(4).map(i32::swap_bytes)\n # ;\n ```\n Use instead:\n ```no_run\n Some(i32::swap_bytes(4))\n # ;\n ```\n",
+        " ### What it does\n Checks for unused written/read amount.\n\n ### Why is this bad?\n `io::Write::write(_vectored)` and\n `io::Read::read(_vectored)` are not guaranteed to\n process the entire buffer. They return how many bytes were processed, which\n might be smaller\n than a given buffer's length. If you don't need to deal with\n partial-write/read, use\n `write_all`/`read_exact` instead.\n\n When working with asynchronous code (either with the `futures`\n crate or with `tokio`), a similar issue exists for\n `AsyncWriteExt::write()` and `AsyncReadExt::read()` : these\n functions are also not guaranteed to process the entire\n buffer.  Your code should either handle partial-writes/reads, or\n call the `write_all`/`read_exact` methods on those traits instead.\n\n ### Known problems\n Detects only common patterns.\n\n ### Examples\n ```rust,ignore\n use std::io;\n fn foo<W: io::Write>(w: &mut W) -> io::Result<()> {\n     w.write(b",
+        " ### What it does\n Checks for calls to `Result::ok()` without using the returned `Option`.\n\n ### Why is this bad?\n Using `Result::ok()` may look like the result is checked like `unwrap` or `expect` would do\n but it only silences the warning caused by `#[must_use]` on the `Result`.\n\n ### Example\n ```no_run\n # fn some_function() -> Result<(), ()> { Ok(()) }\n some_function().ok();\n ```\n Use instead:\n ```no_run\n # fn some_function() -> Result<(), ()> { Ok(()) }\n let _ = some_function();\n ```\n",
+        " ### What it does\n Checks for functions of type `Result` that contain `expect()` or `unwrap()`\n\n ### Why restrict this?\n These functions promote recoverable errors to non-recoverable errors,\n which may be undesirable in code bases which wish to avoid panics,\n or be a bug in the specific function.\n\n ### Known problems\n This can cause false positives in functions that handle both recoverable and non recoverable errors.\n\n ### Example\n Before:\n ```no_run\n fn divisible_by_3(i_str: String) -> Result<(), String> {\n     let i = i_str\n         .parse::<i32>()\n         .expect("
+      ],
+      "usage_count": 168,
+      "variants": [
+        "Unknown"
+      ]
+    },
+    {
+      "macro_name": "mk-visitorresult!",
+      "name": "VisitorResult",
+      "string_mappings": [
+        "output"
+      ],
+      "usage_count": 51,
+      "variants": [
+        "output"
+      ]
+    },
+    {
+      "macro_name": "mk-trait!",
+      "name": "Trait",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 46,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-type!",
+      "name": "Type",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 44,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-typefoldable!",
+      "name": "TypeFoldable",
+      "string_mappings": [
+        "fold_with",
+        "try_fold_with"
+      ],
+      "usage_count": 37,
+      "variants": [
+        "fold_with"
+      ]
+    },
+    {
+      "macro_name": "mk-typevisitable!",
+      "name": "TypeVisitable",
+      "string_mappings": [
+        "visit_with"
+      ],
+      "usage_count": 36,
+      "variants": [
+        "visit_with"
+      ]
+    },
+    {
+      "macro_name": "mk-basetypecodegenmethods!",
+      "name": "BaseTypeCodegenMethods",
+      "string_mappings": [
+        "type_ptr",
+        "val_ty",
+        "type_kind",
+        "element_type",
+        "int_width",
+        "type_isize",
+        "type_func",
+        "type_i8",
+        "vector_length"
+      ],
+      "usage_count": 35,
+      "variants": [
+        "type_ptr"
+      ]
+    },
+    {
+      "macro_name": "mk-lifetime!",
+      "name": "Lifetime",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 30,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-projection!",
+      "name": "Projection",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 29,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-clause!",
+      "name": "Clause",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 29,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-typerelation!",
+      "name": "TypeRelation",
+      "string_mappings": [
+        "relate",
+        "cx",
+        "relate_with_variance",
+        "relate_item_args",
+        "binders"
+      ],
+      "usage_count": 27,
+      "variants": [
+        "relate"
+      ]
+    },
+    {
+      "macro_name": "mk-intokind!",
+      "name": "IntoKind",
+      "string_mappings": [
+        "kind"
+      ],
+      "usage_count": 25,
+      "variants": [
+        "kind"
+      ]
+    },
+    {
+      "macro_name": "mk-const!",
+      "name": "Const",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 23,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-printstate!",
+      "name": "PrintState",
+      "string_mappings": [
+        "head",
+        "token_kind_to_string",
+        "token_to_string",
+        "ty_to_string",
+        "pat_to_string",
+        "expr_to_string",
+        "tts_to_string",
+        "item_to_string",
+        "assoc_item_to_string",
+        "foreign_item_to_string",
+        "stmt_to_string",
+        "path_to_string",
+        "vis_to_string",
+        "to_string",
+        "print_inner_attributes",
+        "print_remaining_comments",
+        "maybe_print_shebang"
+      ],
+      "usage_count": 21,
+      "variants": [
+        "head"
+      ]
+    },
+    {
+      "macro_name": "mk-typeoutlives!",
+      "name": "TypeOutlives",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 20,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-hosteffect!",
+      "name": "HostEffect",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 20,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-wellformed!",
+      "name": "WellFormed",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 19,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-param!",
+      "name": "Param",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 18,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-regionoutlives!",
+      "name": "RegionOutlives",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 18,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-stateid!",
+      "name": "StateID",
+      "string_mappings": [
+        "from_usize",
+        "to_usize",
+        "max_id"
+      ],
+      "usage_count": 15,
+      "variants": [
+        "from_usize"
+      ]
+    },
+    {
+      "macro_name": "mk-constarghastype!",
+      "name": "ConstArgHasType",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 15,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-spannedtypevisitor!",
+      "name": "SpannedTypeVisitor",
+      "string_mappings": [
+        "visit"
+      ],
+      "usage_count": 13,
+      "variants": [
+        "visit"
+      ]
+    },
+    {
+      "macro_name": "mk-indextype!",
+      "name": "IndexType",
+      "string_mappings": [
+        "new",
+        "index"
+      ],
+      "usage_count": 12,
+      "variants": [
+        "new"
+      ]
+    },
+    {
+      "macro_name": "mk-constevaluatable!",
+      "name": "ConstEvaluatable",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 11,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-unstablefeature!",
+      "name": "UnstableFeature",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 11,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-value!",
+      "name": "Value",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 9,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-unevaluated!",
+      "name": "Unevaluated",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 9,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-derivedtypecodegenmethods!",
+      "name": "DerivedTypeCodegenMethods",
+      "string_mappings": [
+        "type_is_sized",
+        "type_int",
+        "type_from_scalar"
+      ],
+      "usage_count": 8,
+      "variants": [
+        "type_is_sized"
+      ]
+    },
+    {
+      "macro_name": "mk-anyhasher!",
+      "name": "AnyHasher",
+      "string_mappings": [
+        "hashtypelength"
+      ],
+      "usage_count": 7,
+      "variants": [
+        "HashTypeLength"
+      ]
+    },
+    {
+      "macro_name": "mk-expr!",
+      "name": "Expr",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 6,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-layouttypecodegenmethods!",
+      "name": "LayoutTypeCodegenMethods",
+      "string_mappings": [
+        "cast_backend_type",
+        "reg_backend_type",
+        "immediate_backend_type",
+        "fn_decl_backend_type"
+      ],
+      "usage_count": 6,
+      "variants": [
+        "cast_backend_type"
+      ]
+    },
+    {
+      "macro_name": "mk-uint!",
+      "name": "Uint",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 6,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-int!",
+      "name": "Int",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 6,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-openoptionsext!",
+      "name": "OpenOptionsExt",
+      "string_mappings": [
+        "mode",
+        "custom_flags"
+      ],
+      "usage_count": 6,
+      "variants": [
+        "mode"
+      ]
+    },
+    {
+      "macro_name": "mk-infer!",
+      "name": "Infer",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 5,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-clioptions!",
+      "name": "CliOptions",
+      "string_mappings": [
+        "edition",
+        "style_edition",
+        "version",
+        "apply_to",
+        "config_path"
+      ],
+      "usage_count": 5,
+      "variants": [
+        "edition"
+      ]
+    },
+    {
+      "macro_name": "mk-kind!",
+      "name": "Kind",
+      "string_mappings": [
+        "kind"
+      ],
+      "usage_count": 5,
+      "variants": [
+        "kind"
+      ]
+    },
+    {
+      "macro_name": "mk-error!",
+      "name": "Error",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 5,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-or!",
+      "name": "Or",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 5,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-ok!",
+      "name": "Ok",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 5,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-bound!",
+      "name": "Bound",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 5,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-patternkind!",
+      "name": "PatternKind",
+      "string_mappings": [
+        "range"
+      ],
+      "usage_count": 5,
+      "variants": [
+        "Range"
+      ]
+    },
+    {
+      "macro_name": "mk-placeholder!",
+      "name": "Placeholder",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 4,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-filetypeext!",
+      "name": "FileTypeExt",
+      "string_mappings": [
+        "is_socket",
+        "is_fifo",
+        "is_char_device",
+        "is_block_device"
+      ],
+      "usage_count": 4,
+      "variants": [
+        "is_socket"
+      ]
+    },
+    {
+      "macro_name": "mk-argumentsorts!",
+      "name": "ArgumentSorts",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 4,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-argumentmut-flag!",
+      "name": "ArgumentMutability",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 4,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-ambiguous!",
+      "name": "Ambiguous",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 4,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-dyncompatible!",
+      "name": "DynCompatible",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 3,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-inttypeext!",
+      "name": "IntTypeExt",
+      "string_mappings": [
+        "initial_discriminant",
+        "disr_incr",
+        "to_ty"
+      ],
+      "usage_count": 3,
+      "variants": [
+        "initial_discriminant"
+      ]
+    },
+    {
+      "macro_name": "mk-rebound!",
+      "name": "ReBound",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 3,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-ty!",
+      "name": "Ty",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 3,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-normalizesto!",
+      "name": "NormalizesTo",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 3,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-aliasrelate!",
+      "name": "AliasRelate",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 3,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-subtype!",
+      "name": "Subtype",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 3,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-ioresultext!",
+      "name": "IoResultExt",
+      "string_mappings": [
+        "with_err_path"
+      ],
+      "usage_count": 3,
+      "variants": [
+        "with_err_path"
+      ]
+    },
+    {
+      "macro_name": "mk-mismatch!",
+      "name": "Mismatch",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 3,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-constequate!",
+      "name": "ConstEquate",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 3,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-coerce!",
+      "name": "Coerce",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 3,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-sorts!",
+      "name": "Sorts",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 2,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-edgetype!",
+      "name": "EdgeType",
+      "string_mappings": [
+        "is_directed"
+      ],
+      "usage_count": 2,
+      "variants": [
+        "is_directed"
+      ]
+    },
+    {
+      "macro_name": "mk-typesize!",
+      "name": "TypeSize",
+      "string_mappings": [
+        "get_size"
+      ],
+      "usage_count": 2,
+      "variants": [
+        "get_size"
+      ]
+    },
+    {
+      "macro_name": "mk-revar!",
+      "name": "ReVar",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 2,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-mut-flag!",
+      "name": "Mutability",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 2,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-{impl#0}!",
+      "name": "{impl#0}",
+      "string_mappings": [
+        "brotlistatemetablockbegin",
+        "brotlistatecleanupaftermetablock"
+      ],
+      "usage_count": 2,
+      "variants": [
+        "BrotliStateMetablockBegin"
+      ]
+    },
+    {
+      "macro_name": "mk-reearlyparam!",
+      "name": "ReEarlyParam",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 2,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-walkitemkind!",
+      "name": "WalkItemKind",
+      "string_mappings": [
+        "walk"
+      ],
+      "usage_count": 2,
+      "variants": [
+        "walk"
+      ]
+    },
+    {
+      "macro_name": "mk-float!",
+      "name": "Float",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 2,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-tocexprresult!",
+      "name": "ToCexprResult",
+      "string_mappings": [
+        "to_cexpr_result"
+      ],
+      "usage_count": 2,
+      "variants": [
+        "to_cexpr_result"
+      ]
+    },
+    {
+      "macro_name": "mk-ptr!",
+      "name": "Ptr",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 2,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-nexttypeparamname!",
+      "name": "NextTypeParamName",
+      "string_mappings": [
+        "next_type_param_name"
+      ],
+      "usage_count": 2,
+      "variants": [
+        "next_type_param_name"
+      ]
+    },
+    {
+      "macro_name": "mk-typefolder!",
+      "name": "TypeFolder",
+      "string_mappings": [
+        "cx",
+        "fold_ty"
+      ],
+      "usage_count": 2,
+      "variants": [
+        "cx"
+      ]
+    },
+    {
+      "macro_name": "mk-ctype!",
+      "name": "CType",
+      "string_mappings": [
+        "reify"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "reify"
+      ]
+    },
+    {
+      "macro_name": "mk-imageoptionalheader!",
+      "name": "ImageOptionalHeader",
+      "string_mappings": [
+        "magic"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "magic"
+      ]
+    },
+    {
+      "macro_name": "mk-array!",
+      "name": "Array",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-regionsplaceholdermismatch!",
+      "name": "RegionsPlaceholderMismatch",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-relateparam!",
+      "name": "ReLateParam",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-reerased!",
+      "name": "ReErased",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-typemembershipcodegenmethods!",
+      "name": "TypeMembershipCodegenMethods",
+      "string_mappings": [
+        "typeid_metadata"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "typeid_metadata"
+      ]
+    },
+    {
+      "macro_name": "mk-typevisitor!",
+      "name": "TypeVisitor",
+      "string_mappings": [
+        "visit_ty"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "visit_ty"
+      ]
+    },
+    {
+      "macro_name": "mk-optionext!",
+      "name": "OptionExt",
+      "string_mappings": [
+        "contains"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "contains"
+      ]
+    },
+    {
+      "macro_name": "mk-char!",
+      "name": "Char",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-restatic!",
+      "name": "ReStatic",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-fallibletypefolder!",
+      "name": "FallibleTypeFolder",
+      "string_mappings": [
+        "cx"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "cx"
+      ]
+    },
+    {
+      "macro_name": "mk-uncheckedoptionext!",
+      "name": "UncheckedOptionExt",
+      "string_mappings": [
+        "unchecked_unwrap"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "unchecked_unwrap"
+      ]
+    },
+    {
+      "macro_name": "mk-typesuperfoldable!",
+      "name": "TypeSuperFoldable",
+      "string_mappings": [
+        "super_fold_with"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "super_fold_with"
+      ]
+    },
+    {
+      "macro_name": "mk-reerror!",
+      "name": "ReError",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-typeop!",
+      "name": "TypeOp",
+      "string_mappings": [
+        "fully_perform"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "fully_perform"
+      ]
+    },
+    {
+      "macro_name": "mk-str!",
+      "name": "Str",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-none!",
+      "name": "None",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-interpretationresult!",
+      "name": "InterpretationResult",
+      "string_mappings": [
+        "make_result"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "make_result"
+      ]
+    },
+    {
+      "macro_name": "mk-configtype!",
+      "name": "ConfigType",
+      "string_mappings": [
+        "stable_variant"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "stable_variant"
+      ]
+    },
+    {
+      "macro_name": "mk-replaceholder!",
+      "name": "RePlaceholder",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-bool!",
+      "name": "Bool",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-slice!",
+      "name": "Slice",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-single!",
+      "name": "Single",
+      "string_mappings": [
+        "{constructor#0}"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "{constructor#0}"
+      ]
+    },
+    {
+      "macro_name": "mk-mayberesult!",
+      "name": "MaybeResult",
+      "string_mappings": [
+        "to_result"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "to_result"
+      ]
+    },
+    {
+      "macro_name": "mk-typeerrortostringext!",
+      "name": "TypeErrorToStringExt",
+      "string_mappings": [
+        "to_string"
+      ],
+      "usage_count": 1,
+      "variants": [
+        "to_string"
+      ]
+    }
+  ],
+  "size": 1,
+  "total_usage": 26896
+}
