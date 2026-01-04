@@ -1,0 +1,57 @@
+digraph rustc_ecosystem {
+  rankdir=TB;
+  node [shape=box, style=filled];
+  
+  // Central rustc_driver node
+  "rustc_driver" [fillcolor=red, fontcolor=white, style="filled,bold"];
+  
+  // Core Rust functions (most connected)
+  "core::fmt" [fillcolor=lightblue];
+  "core::cmp" [fillcolor=lightblue];
+  "core::iter" [fillcolor=lightblue];
+  "core::option" [fillcolor=lightblue];
+  "core::result" [fillcolor=lightblue];
+  
+  // Tracing system
+  "tracing_core" [fillcolor=yellow];
+  "META" [fillcolor=orange];
+  "__CALLSITE" [fillcolor=orange];
+  
+  // Rustc components
+  "rustc_middle" [fillcolor=lightgreen];
+  "rustc_query_impl" [fillcolor=lightgreen];
+  "rustc_span" [fillcolor=lightgreen];
+  
+  // Direct connections from rustc_driver
+  "rustc_driver" -> "core::cmp" [label="22", color=red, penwidth=3];
+  "rustc_driver" -> "core::fmt" [label="12", color=red, penwidth=2];
+  "rustc_driver" -> "core::option" [label="10", color=red, penwidth=2];
+  "rustc_driver" -> "core::iter" [label="6", color=red];
+  "rustc_driver" -> "core::result" [label="6", color=red];
+  
+  // Central ecosystem connections
+  "META" -> "tracing_core" [label="30490", color=purple, penwidth=5];
+  "__CALLSITE" -> "tracing_core" [label="4885", color=purple, penwidth=3];
+  
+  "core::fmt" -> "core::cmp" [label="7315", color=blue, penwidth=4];
+  "core::iter" -> "core::option" [label="4648", color=blue, penwidth=3];
+  "core::cmp" -> "core::option" [label="4856", color=blue, penwidth=3];
+  
+  // Rustc internal connections
+  "rustc_driver" -> "rustc_middle" [color=green];
+  "rustc_driver" -> "rustc_query_impl" [color=green];
+  "rustc_driver" -> "rustc_span" [color=green];
+  
+  // Legend
+  subgraph cluster_legend {
+    label="Legend";
+    style=filled;
+    fillcolor=white;
+    
+    "Driver" [fillcolor=red, fontcolor=white];
+    "Core Rust" [fillcolor=lightblue];
+    "Tracing" [fillcolor=yellow];
+    "Rustc Internal" [fillcolor=lightgreen];
+    "Constants" [fillcolor=orange];
+  }
+}
