@@ -1,0 +1,262 @@
+{
+  "crate": "portable_atomic",
+  "module": "imp::atomic128::x86_64::fallback",
+  "usages": [
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_load USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:121 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_load)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_load USES crate::portable_atomic::imp::fallback::AtomicU128::load (AssocFn) [DefId: DefId(0:926 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:121 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_load)",
+      "used_def_id": "DefId(0:926 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::load)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_store USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:122 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_store)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_store USES crate::portable_atomic::imp::fallback::AtomicU128::store (AssocFn) [DefId: DefId(0:927 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::store)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:122 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_store)",
+      "used_def_id": "DefId(0:927 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::store)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_compare_exchange USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:123 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_compare_exchange)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_compare_exchange USES crate::portable_atomic::imp::fallback::AtomicU128::compare_exchange (AssocFn) [DefId: DefId(0:929 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::compare_exchange)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:123 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_compare_exchange)",
+      "used_def_id": "DefId(0:929 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::compare_exchange)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_swap USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_swap)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_swap USES crate::portable_atomic::imp::fallback::AtomicU128::swap (AssocFn) [DefId: DefId(0:928 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::swap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_swap)",
+      "used_def_id": "DefId(0:928 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::swap)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_add USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:604 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_add)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_add USES crate::portable_atomic::imp::fallback::AtomicU128::fetch_add (AssocFn) [DefId: DefId(0:931 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:604 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_add)",
+      "used_def_id": "DefId(0:931 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_add)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_sub USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_sub)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_sub USES crate::portable_atomic::imp::fallback::AtomicU128::fetch_sub (AssocFn) [DefId: DefId(0:932 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_sub)",
+      "used_def_id": "DefId(0:932 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_sub)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_and USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:608 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_and)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_and USES crate::portable_atomic::imp::fallback::AtomicU128::fetch_and (AssocFn) [DefId: DefId(0:933 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_and)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:608 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_and)",
+      "used_def_id": "DefId(0:933 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_and)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_nand USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:610 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_nand)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_nand USES crate::portable_atomic::imp::fallback::AtomicU128::fetch_nand (AssocFn) [DefId: DefId(0:934 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_nand)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:610 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_nand)",
+      "used_def_id": "DefId(0:934 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_nand)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_or USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:612 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_or)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_or USES crate::portable_atomic::imp::fallback::AtomicU128::fetch_or (AssocFn) [DefId: DefId(0:935 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:612 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_or)",
+      "used_def_id": "DefId(0:935 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_or)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_xor USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:614 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_xor)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_xor USES crate::portable_atomic::imp::fallback::AtomicU128::fetch_xor (AssocFn) [DefId: DefId(0:936 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_xor)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:614 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_xor)",
+      "used_def_id": "DefId(0:936 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_xor)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_max USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:616 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_max)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_max USES crate::portable_atomic::imp::fallback::AtomicI128::fetch_max (AssocFn) [DefId: DefId(0:888 ~ portable_atomic[cff0]::imp::fallback::{impl#2}::fetch_max)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:616 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_max)",
+      "used_def_id": "DefId(0:888 ~ portable_atomic[cff0]::imp::fallback::{impl#2}::fetch_max)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_umax USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:618 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_umax)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_umax USES crate::portable_atomic::imp::fallback::AtomicU128::fetch_max (AssocFn) [DefId: DefId(0:937 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_max)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:618 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_umax)",
+      "used_def_id": "DefId(0:937 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_max)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_min USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:620 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_min)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_min USES crate::portable_atomic::imp::fallback::AtomicI128::fetch_min (AssocFn) [DefId: DefId(0:889 ~ portable_atomic[cff0]::imp::fallback::{impl#2}::fetch_min)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:620 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_min)",
+      "used_def_id": "DefId(0:889 ~ portable_atomic[cff0]::imp::fallback::{impl#2}::fetch_min)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_umin USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:622 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_umin)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_umin USES crate::portable_atomic::imp::fallback::AtomicU128::fetch_min (AssocFn) [DefId: DefId(0:938 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_min)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:622 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_umin)",
+      "used_def_id": "DefId(0:938 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_min)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_not USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:624 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_not)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_not USES crate::portable_atomic::imp::fallback::AtomicU128::fetch_not (AssocFn) [DefId: DefId(0:939 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_not)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:624 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_not)",
+      "used_def_id": "DefId(0:939 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_not)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_neg USES crate::portable_atomic::imp::atomic128::x86_64::detect::CpuInfo::cmpxchg16b (AssocFn) [DefId: DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:626 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_neg)",
+      "used_def_id": "DefId(0:646 ~ portable_atomic[cff0]::imp::atomic128::x86_64::detect::{impl#3}::cmpxchg16b)"
+    },
+    {
+      "usage": "crate::portable_atomic::imp::atomic128::x86_64::fallback::atomic_neg USES crate::portable_atomic::imp::fallback::AtomicU128::fetch_neg (AssocFn) [DefId: DefId(0:941 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_neg)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:626 ~ portable_atomic[cff0]::imp::atomic128::x86_64::fallback::atomic_neg)",
+      "used_def_id": "DefId(0:941 ~ portable_atomic[cff0]::imp::fallback::{impl#7}::fetch_neg)"
+    }
+  ]
+}

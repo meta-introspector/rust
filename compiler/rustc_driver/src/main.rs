@@ -7,9 +7,10 @@ extern crate rustc_hir;
 extern crate rustc_span;
 
 use rustc_driver::Callbacks;
-use rustc_interface::{interface, Queries};
+use rustc_interface::{interface, queries};
 use rustc_middle::ty::TyCtxt;
 use rustc_hir as hir;
+use rustc_ast::ast;
 use rustc_span::Span;
 use serde::{Serialize, Deserialize};
 use std::fs::File;
@@ -58,12 +59,12 @@ fn extract_and_serialize_hir(tcx: TyCtxt<'_>) {
     println!("=== Extracting HIR Data ===");
     
     let crate_name = tcx.crate_name(rustc_span::def_id::LOCAL_CRATE).to_string();
-    let hir = tcx.hir();
+    let hir_crate_items = tcx.hir_crate_items(());
     let mut items = Vec::new();
     
     // Walk through all top-level items
-    for item_id in hir.root_module().item_ids {
-        let item = hir.item(*item_id);
+    for item_id in hir_crate_items.free_items() {
+        let item = tcx.hir().item(item_id);
         
         let item_data = ItemData {
             name: item.ident.to_string(),
@@ -101,7 +102,7 @@ fn extract_and_serialize_hir(tcx: TyCtxt<'_>) {
 
 fn get_item_kind(kind: &hir::ItemKind) -> String {
     match kind {
-        hir::ItemKind::Fn(..) => "function".to_string(),
+        hir::ItemKind::Fn { .. } => "function".to_string(),
         hir::ItemKind::Struct(..) => "struct".to_string(),
         hir::ItemKind::Enum(..) => "enum".to_string(),
         hir::ItemKind::Const(..) => "const".to_string(),
@@ -150,7 +151,7 @@ fn main() {
     
     let mut callbacks = HirExtractor;
     let result = rustc_driver::catch_fatal_errors(|| {
-        rustc_driver::RunCompiler::new(&args, &mut callbacks).run()
+        rustc_driver::run_compiler(&args, &mut callbacks, None, None)
     });
     
     std::process::exit(match result {

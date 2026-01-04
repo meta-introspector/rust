@@ -3,6 +3,9 @@ name = "rustc_span"
 version = "0.0.0"
 edition = "2024"
 
+[build-dependencies]
+build_common = { path = "../build_common" }
+
 [dependencies]
 # tidy-alphabetical-start
 blake3 = "1.5.2"

@@ -38,6 +38,53 @@ struct UsageEntry {
     used_def_id: String,
 }
 
+#[derive(Serialize, Deserialize, Clone, Default)]
+struct UsageClassification {
+    string_conversion: usize,    // to_string, Display, fmt usage
+    pattern_matching: usize,     // match arms, if let usage  
+    construction: usize,         // Enum::Variant construction
+    comparison: usize,           // == != usage
+    debug_format: usize,         // Debug, {:?} usage
+    serialization: usize,        // serde, json usage
+    general: usize,              // other usage
+}
+
+#[derive(Serialize, Deserialize, Clone)]
+struct EnumVariantUsage {
+    enum_name: String,
+    variant_name: String,
+    usage_classes: UsageClassification,
+    top_converters: HashMap<String, Vec<(String, usize)>>, // usage_type -> [(function, count)]
+}
+
+#[derive(Serialize, Deserialize)]
+struct EnumData {
+    #[serde(rename = "crate")]
+    crate_name: String,
+    enums: HashMap<String, EnumInfo>,
+}
+
+#[derive(Serialize, Deserialize, Clone)]
+struct EnumInfo {
+    name: String,
+    variants: Vec<EnumVariantUsage>,
+    total_usage_classes: UsageClassification,
+}
+
+#[derive(Serialize, Deserialize)]
+struct EnumData {
+    #[serde(rename = "crate")]
+    crate_name: String,
+    enums: HashMap<String, EnumInfo>,
+}
+
+#[derive(Serialize, Deserialize, Clone)]
+struct EnumInfo {
+    name: String,
+    variants: Vec<EnumVariantUsage>,
+    total_usage: usize,
+}
+
 #[derive(Serialize, Deserialize)]
 struct ModuleData {
     #[serde(rename = "crate")]
@@ -48,12 +95,15 @@ struct ModuleData {
 
 struct UsageCollector {
     module_data: HashMap<String, Vec<UsageEntry>>,
+    enum_data: HashMap<String, EnumInfo>,
+}
 }
 
 impl UsageCollector {
     fn new() -> Self {
         Self {
             module_data: HashMap::new(),
+            enum_data: HashMap::new(),
         }
     }
     
@@ -74,6 +124,133 @@ impl UsageCollector {
     }
     
     fn add_usage(&mut self, module: &str, usage: String, usage_type: String, node_type: String, user_def_id: String, used_def_id: String) {
+        // Classify the usage pattern
+        let classification = self.classify_usage(&usage, &usage_type, &used_def_id);
+        
+        let entry = UsageEntry {
+            usage: usage.clone(),
+            usage_count: 1,
+            usage_type: usage_type.clone(),
+            node_type: node_type.clone(),
+            user_def_id: user_def_id.clone(),
+            used_def_id: used_def_id.clone(),
+        };
+        
+        self.module_data.entry(module.to_string()).or_insert_with(Vec::new).push(entry);
+        
+        // Update enum data if this is an enum variant usage
+        if let Some((enum_name, variant_name)) = self.extract_enum_variant(&used_def_id) {
+            self.update_enum_usage(enum_name, variant_name, classification, &usage_type, &user_def_id);
+        }
+    }
+    
+    fn classify_usage(&self, usage: &str, usage_type: &str, used_def_id: &str) -> UsageClassification {
+        let mut classification = UsageClassification::default();
+        
+        // String conversion patterns
+        if usage.contains("to_string") || usage.contains("Display") || usage.contains("fmt") || 
+           usage.contains("format!") || usage.contains("write!") {
+            classification.string_conversion = 1;
+        }
+        // Pattern matching
+        else if usage.contains("match") || usage.contains("if let") || usage_type == "PatternMatch" {
+            classification.pattern_matching = 1;
+        }
+        // Construction
+        else if usage.contains("::") && !usage.contains("(") {
+            classification.construction = 1;
+        }
+        // Comparison
+        else if usage.contains("==") || usage.contains("!=") || usage.contains("cmp") {
+            classification.comparison = 1;
+        }
+        // Debug formatting
+        else if usage.contains("Debug") || usage.contains("{:?}") || usage.contains("dbg!") {
+            classification.debug_format = 1;
+        }
+        // Serialization
+        else if usage.contains("serde") || usage.contains("serialize") || usage.contains("json") {
+            classification.serialization = 1;
+        }
+        // General usage
+        else {
+            classification.general = 1;
+        }
+        
+        classification
+    }
+    
+    fn extract_enum_variant(&self, def_id: &str) -> Option<(String, String)> {
+        // Parse DefId format to extract enum and variant names
+        if let Some(path_part) = def_id.strip_prefix("DefId(").and_then(|s| s.split(" ~ ").nth(1)) {
+            if let Some(clean_path) = path_part.strip_suffix(")") {
+                let parts: Vec<&str> = clean_path.split("::").collect();
+                if parts.len() >= 2 {
+                    let variant = parts[parts.len() - 1].to_string();
+                    let enum_name = parts[parts.len() - 2].to_string();
+                    
+                    // Check if this looks like an enum variant (not a function)
+                    if !variant.contains("(") && !variant.contains("<") && 
+                       (variant.chars().next().unwrap_or('a').is_uppercase() || 
+                        variant == "true" || variant == "false") {
+                        return Some((enum_name, variant));
+                    }
+                }
+            }
+        }
+        None
+    }
+    
+    fn update_enum_usage(&mut self, enum_name: String, variant_name: String, 
+                        classification: UsageClassification, usage_type: &str, converter_fn: &str) {
+        let enum_info = self.enum_data.entry(enum_name.clone()).or_insert_with(|| EnumInfo {
+            name: enum_name.clone(),
+            variants: Vec::new(),
+            total_usage_classes: UsageClassification::default(),
+        });
+        
+        // Find or create variant
+        if let Some(variant) = enum_info.variants.iter_mut().find(|v| v.variant_name == variant_name) {
+            // Update existing variant
+            variant.usage_classes.string_conversion += classification.string_conversion;
+            variant.usage_classes.pattern_matching += classification.pattern_matching;
+            variant.usage_classes.construction += classification.construction;
+            variant.usage_classes.comparison += classification.comparison;
+            variant.usage_classes.debug_format += classification.debug_format;
+            variant.usage_classes.serialization += classification.serialization;
+            variant.usage_classes.general += classification.general;
+            
+            // Track top converter functions (keep top 3)
+            let converters = variant.top_converters.entry(usage_type.to_string()).or_insert_with(Vec::new);
+            if let Some(existing) = converters.iter_mut().find(|(fn_name, _)| fn_name == converter_fn) {
+                existing.1 += 1;
+            } else {
+                converters.push((converter_fn.to_string(), 1));
+            }
+            converters.sort_by(|a, b| b.1.cmp(&a.1));
+            converters.truncate(3); // Keep top 3
+        } else {
+            // Create new variant
+            let mut top_converters = HashMap::new();
+            top_converters.insert(usage_type.to_string(), vec![(converter_fn.to_string(), 1)]);
+            
+            enum_info.variants.push(EnumVariantUsage {
+                enum_name: enum_name.clone(),
+                variant_name: variant_name.clone(),
+                usage_classes: classification.clone(),
+                top_converters,
+            });
+        }
+        
+        // Update total usage for enum
+        enum_info.total_usage_classes.string_conversion += classification.string_conversion;
+        enum_info.total_usage_classes.pattern_matching += classification.pattern_matching;
+        enum_info.total_usage_classes.construction += classification.construction;
+        enum_info.total_usage_classes.comparison += classification.comparison;
+        enum_info.total_usage_classes.debug_format += classification.debug_format;
+        enum_info.total_usage_classes.serialization += classification.serialization;
+        enum_info.total_usage_classes.general += classification.general;
+    }
         let entry = UsageEntry {
             usage,
             usage_count: 1,
@@ -89,6 +266,7 @@ impl UsageCollector {
         let output_dir = std::env::var("USAGE_OUTPUT_DIR").unwrap_or_else(|_| "usage_data".to_string());
         std::fs::create_dir_all(&output_dir).unwrap();
         
+        let mut total_usages = 0;
         for (module, usages) in &self.module_data {
             let module_data = ModuleData {
                 crate_name: crate_name.to_string(),
@@ -142,11 +320,21 @@ impl UsageCollector {
             
             let json = serde_json::to_string_pretty(&module_data).unwrap();
             std::fs::write(&filename, json).unwrap();
-            
-            let abs_path = std::fs::canonicalize(&filename)
-                .unwrap_or_else(|_| std::path::PathBuf::from(&filename));
-            eprintln!("Saved {} usages to {}", usages.len(), abs_path.display());
+            total_usages += usages.len();
         }
+        
+        // Save enum data separately
+        if !self.enum_data.is_empty() {
+            let enum_filename = format!("{}/{}_enums_classified.json", output_dir, crate_name);
+            let enum_data = EnumData {
+                crate_name: crate_name.to_string(),
+                enums: self.enum_data.clone(),
+            };
+            let enum_json = serde_json::to_string_pretty(&enum_data).unwrap();
+            std::fs::write(&enum_filename, enum_json).unwrap();
+            eprintln!("=== SAVED {} CLASSIFIED ENUMS FOR CRATE: {} ===", self.enum_data.len(), crate_name);
+        }
+        eprintln!("=== COLLECTING USAGE DATA FOR CRATE: {} === ({} total usages)", crate_name, total_usages);
     }
 }
 
@@ -158,8 +346,6 @@ impl Callbacks for UsageCollector {
     ) -> Compilation {
         let local_crate = tcx.crate_name(LOCAL_CRATE);
         let all_items = tcx.hir_crate_items(());
-        
-        eprintln!("=== COLLECTING USAGE DATA FOR CRATE: {} ===", local_crate);
         
         // Optional HIR dump for debugging
         if std::env::var("DUMP_HIR").is_ok() {
@@ -258,7 +444,6 @@ impl Callbacks for UsageCollector {
             self.collect_constants(tcx);
             
             self.save_to_files(&local_crate.to_string());
-            eprintln!("✅ COLLECTION COMPLETE");
         
         Compilation::Continue
     }

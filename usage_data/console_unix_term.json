@@ -1,0 +1,1054 @@
+{
+  "crate": "console",
+  "module": "unix_term",
+  "usages": [
+    {
+      "usage": "crate::console::unix_term::is_a_terminal USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:153 ~ console[4b72]::unix_term::is_a_terminal)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::console::unix_term::is_a_color_terminal USES crate::core::std::result::Result::<T, E>::is_ok (AssocFn) [DefId: DefId(2:11073 ~ core[4720]::result::{impl#0}::is_ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:155 ~ console[4b72]::unix_term::is_a_color_terminal)",
+      "used_def_id": "DefId(2:11073 ~ core[4720]::result::{impl#0}::is_ok)"
+    },
+    {
+      "usage": "crate::console::unix_term::is_a_color_terminal USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:155 ~ console[4b72]::unix_term::is_a_color_terminal)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::console::unix_term::c_result USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:156 ~ console[4b72]::unix_term::c_result)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::console::unix_term::c_result USES crate::std::std::io::Error::last_os_error (AssocFn) [DefId: DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:156 ~ console[4b72]::unix_term::c_result)",
+      "used_def_id": "DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)"
+    },
+    {
+      "usage": "crate::console::unix_term::terminal_size USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:158 ~ console[4b72]::unix_term::terminal_size)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::console::unix_term::terminal_size USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:158 ~ console[4b72]::unix_term::terminal_size)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::console::unix_term::Input::<std::io::BufReader<std::fs::File>>::buffered (AssocFn) [DefId: DefId(0:168 ~ console[4b72]::unix_term::{impl#0}::buffered)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(0:168 ~ console[4b72]::unix_term::{impl#0}::buffered)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::mem::MaybeUninit::<T>::uninit (AssocFn) [DefId: DefId(2:2167 ~ core[4720]::mem::maybe_uninit::{impl#2}::uninit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:2167 ~ core[4720]::mem::maybe_uninit::{impl#2}::uninit)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::mem::MaybeUninit::<T>::as_mut_ptr (AssocFn) [DefId: DefId(2:2171 ~ core[4720]::mem::maybe_uninit::{impl#2}::as_mut_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:2171 ~ core[4720]::mem::maybe_uninit::{impl#2}::as_mut_ptr)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::mem::MaybeUninit::<T>::assume_init (AssocFn) [DefId: DefId(2:2172 ~ core[4720]::mem::maybe_uninit::{impl#2}::assume_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:2172 ~ core[4720]::mem::maybe_uninit::{impl#2}::assume_init)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::alloc::std::string::String::new (AssocFn) [DefId: DefId(3:6420 ~ alloc[27b0]::string::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(3:6420 ~ alloc[27b0]::string::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::console::unix_term::Input::<T>::read_line (AssocFn) [DefId: DefId(0:173 ~ console[4b72]::unix_term::{impl#2}::read_line)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(0:173 ~ console[4b72]::unix_term::{impl#2}::read_line)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::result::Result::<T, E>::map (AssocFn) [DefId: DefId(2:11083 ~ core[4720]::result::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:11083 ~ core[4720]::result::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::core::str::<impl str>::len (AssocFn) [DefId: DefId(2:15149 ~ core[4720]::str::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:15149 ~ core[4720]::str::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::core::str::<impl str>::trim_end_matches (AssocFn) [DefId: DefId(2:15252 ~ core[4720]::str::{impl#0}::trim_end_matches)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:15252 ~ core[4720]::str::{impl#0}::trim_end_matches)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::core::std::ops::RangeFull (Struct) [DefId: DefId(2:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(2:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_secure USES crate::alloc::std::string::String::truncate (AssocFn) [DefId: DefId(3:6460 ~ alloc[27b0]::string::{impl#0}::truncate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:178 ~ console[4b72]::unix_term::read_secure)",
+      "used_def_id": "DefId(3:6460 ~ alloc[27b0]::string::{impl#0}::truncate)"
+    },
+    {
+      "usage": "crate::console::unix_term::poll_fd USES crate::std::std::io::Error::last_os_error (AssocFn) [DefId: DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:183 ~ console[4b72]::unix_term::poll_fd)",
+      "used_def_id": "DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_char USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:185 ~ console[4b72]::unix_term::read_single_char)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_char USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:185 ~ console[4b72]::unix_term::read_single_char)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_char USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:185 ~ console[4b72]::unix_term::read_single_char)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_char USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:185 ~ console[4b72]::unix_term::read_single_char)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_char USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:185 ~ console[4b72]::unix_term::read_single_char)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_char USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:185 ~ console[4b72]::unix_term::read_single_char)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_char USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:185 ~ console[4b72]::unix_term::read_single_char)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_char USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:185 ~ console[4b72]::unix_term::read_single_char)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_bytes USES crate::core::core::slice::<impl [T]>::as_mut_ptr (AssocFn) [DefId: DefId(2:14077 ~ core[4720]::slice::{impl#0}::as_mut_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:187 ~ console[4b72]::unix_term::read_bytes)",
+      "used_def_id": "DefId(2:14077 ~ core[4720]::slice::{impl#0}::as_mut_ptr)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_bytes USES crate::std::std::io::Error::last_os_error (AssocFn) [DefId: DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:187 ~ console[4b72]::unix_term::read_bytes)",
+      "used_def_id": "DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_bytes USES crate::std::std::io::Error::new (AssocFn) [DefId: DefId(1:3323 ~ std[93f5]::io::error::{impl#7}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:187 ~ console[4b72]::unix_term::read_bytes)",
+      "used_def_id": "DefId(1:3323 ~ std[93f5]::io::error::{impl#7}::new)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_bytes USES crate::std::std::io::Error::new (AssocFn) [DefId: DefId(1:3323 ~ std[93f5]::io::error::{impl#7}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:187 ~ console[4b72]::unix_term::read_bytes)",
+      "used_def_id": "DefId(1:3323 ~ std[93f5]::io::error::{impl#7}::new)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::alloc::std::slice::<impl [T]>::into_vec (AssocFn) [DefId: DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::alloc::std::slice::<impl [T]>::into_vec (AssocFn) [DefId: DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::alloc::std::slice::<impl [T]>::into_vec (AssocFn) [DefId: DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::alloc::std::slice::<impl [T]>::into_vec (AssocFn) [DefId: DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::alloc::std::slice::<impl [T]>::into_vec (AssocFn) [DefId: DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(3:6190 ~ alloc[27b0]::slice::{impl#0}::into_vec)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(2:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::RangeFrom (Struct) [DefId: DefId(2:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::RangeTo (Struct) [DefId: DefId(2:45217 ~ core[4720]::ops::range::RangeTo)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45217 ~ core[4720]::ops::range::RangeTo)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(2:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::RangeFrom (Struct) [DefId: DefId(2:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::RangeTo (Struct) [DefId: DefId(2:45217 ~ core[4720]::ops::range::RangeTo)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45217 ~ core[4720]::ops::range::RangeTo)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(2:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::RangeFrom (Struct) [DefId: DefId(2:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::core::std::ops::RangeTo (Struct) [DefId: DefId(2:45217 ~ core[4720]::ops::range::RangeTo)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(2:45217 ~ core[4720]::ops::range::RangeTo)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key_impl USES crate::std::std::io::Error::last_os_error (AssocFn) [DefId: DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:188 ~ console[4b72]::unix_term::read_single_key_impl)",
+      "used_def_id": "DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::console::unix_term::Input::<std::fs::File>::unbuffered (AssocFn) [DefId: DefId(0:170 ~ console[4b72]::unix_term::{impl#1}::unbuffered)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(0:170 ~ console[4b72]::unix_term::{impl#1}::unbuffered)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::mem::MaybeUninit::<T>::uninit (AssocFn) [DefId: DefId(2:2167 ~ core[4720]::mem::maybe_uninit::{impl#2}::uninit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:2167 ~ core[4720]::mem::maybe_uninit::{impl#2}::uninit)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::mem::MaybeUninit::<T>::as_mut_ptr (AssocFn) [DefId: DefId(2:2171 ~ core[4720]::mem::maybe_uninit::{impl#2}::as_mut_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:2171 ~ core[4720]::mem::maybe_uninit::{impl#2}::as_mut_ptr)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::mem::MaybeUninit::<T>::assume_init (AssocFn) [DefId: DefId(2:2172 ~ core[4720]::mem::maybe_uninit::{impl#2}::assume_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:2172 ~ core[4720]::mem::maybe_uninit::{impl#2}::assume_init)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::console::unix_term::read_single_key USES crate::std::std::io::Error::kind (AssocFn) [DefId: DefId(1:3337 ~ std[93f5]::io::error::{impl#7}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:190 ~ console[4b72]::unix_term::read_single_key)",
+      "used_def_id": "DefId(1:3337 ~ std[93f5]::io::error::{impl#7}::kind)"
+    },
+    {
+      "usage": "crate::console::unix_term::key_from_utf8 USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ console[4b72]::unix_term::key_from_utf8)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::console::unix_term::key_from_utf8 USES crate::core::core::str::<impl str>::chars (AssocFn) [DefId: DefId(2:15178 ~ core[4720]::str::{impl#0}::chars)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:194 ~ console[4b72]::unix_term::key_from_utf8)",
+      "used_def_id": "DefId(2:15178 ~ core[4720]::str::{impl#0}::chars)"
+    },
+    {
+      "usage": "crate::console::unix_term::IS_LANG_UTF8 USES crate::once_cell::once_cell::sync::Lazy::<T, F>::new (AssocFn) [DefId: DefId(20:235 ~ once_cell[255b]::sync::{impl#10}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:195 ~ console[4b72]::unix_term::IS_LANG_UTF8)",
+      "used_def_id": "DefId(20:235 ~ once_cell[255b]::sync::{impl#10}::new)"
+    },
+    {
+      "usage": "crate::console::unix_term::IS_LANG_UTF8 USES crate::core::core::str::<impl str>::ends_with (AssocFn) [DefId: DefId(2:15190 ~ core[4720]::str::{impl#0}::ends_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:195 ~ console[4b72]::unix_term::IS_LANG_UTF8)",
+      "used_def_id": "DefId(2:15190 ~ core[4720]::str::{impl#0}::ends_with)"
+    },
+    {
+      "usage": "crate::console::unix_term::IS_LANG_UTF8 USES crate::alloc::std::str::<impl str>::to_uppercase (AssocFn) [DefId: DefId(3:6367 ~ alloc[27b0]::str::{impl#5}::to_uppercase)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:195 ~ console[4b72]::unix_term::IS_LANG_UTF8)",
+      "used_def_id": "DefId(3:6367 ~ alloc[27b0]::str::{impl#5}::to_uppercase)"
+    },
+    {
+      "usage": "crate::console::unix_term::wants_emoji USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:197 ~ console[4b72]::unix_term::wants_emoji)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::console::unix_term::set_title USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:198 ~ console[4b72]::unix_term::set_title)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::console::unix_term::set_title USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:198 ~ console[4b72]::unix_term::set_title)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    }
+  ]
+}

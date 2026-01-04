@@ -3,6 +3,9 @@ name = "rustc_driver_impl"
 version = "0.0.0"
 edition = "2024"
 
+[build-dependencies]
+build_common = { path = "../build_common" }
+
 [dependencies]
 # tidy-alphabetical-start
 jiff = { version = "0.2.5", default-features = false, features = ["std"] }

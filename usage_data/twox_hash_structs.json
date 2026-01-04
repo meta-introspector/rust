@@ -3,12 +3,28 @@
   "module": "structs",
   "usages": [
     {
-      "usage": "STRUCT_DECL: BufferData in twox_hash",
+      "usage": "STRUCT_DECL: XxCore in twox_hash",
       "usage_count": 1,
       "usage_type": "StructDecl",
       "node_type": "Item",
       "user_def_id": "twox_hash",
-      "used_def_id": "BufferData"
+      "used_def_id": "XxCore"
+    },
+    {
+      "usage": "STRUCT_DECL: XxHash64 in twox_hash",
+      "usage_count": 1,
+      "usage_type": "StructDecl",
+      "node_type": "Item",
+      "user_def_id": "twox_hash",
+      "used_def_id": "XxHash64"
+    },
+    {
+      "usage": "STRUCT_DECL: AlignToU64 in twox_hash",
+      "usage_count": 1,
+      "usage_type": "StructDecl",
+      "node_type": "Item",
+      "user_def_id": "twox_hash",
+      "used_def_id": "AlignToU64"
     },
     {
       "usage": "STRUCT_DECL: Buffer in twox_hash",
@@ -19,44 +35,28 @@
       "used_def_id": "Buffer"
     },
     {
-      "usage": "STRUCT_DECL: Accumulators in twox_hash",
+      "usage": "STRUCT_DECL: XxCore in twox_hash",
       "usage_count": 1,
       "usage_type": "StructDecl",
       "node_type": "Item",
       "user_def_id": "twox_hash",
-      "used_def_id": "Accumulators"
+      "used_def_id": "XxCore"
     },
     {
-      "usage": "STRUCT_DECL: Hasher in twox_hash",
+      "usage": "STRUCT_DECL: XxHash32 in twox_hash",
       "usage_count": 1,
       "usage_type": "StructDecl",
       "node_type": "Item",
       "user_def_id": "twox_hash",
-      "used_def_id": "Hasher"
+      "used_def_id": "XxHash32"
     },
     {
-      "usage": "STRUCT_DECL: State in twox_hash",
+      "usage": "STRUCT_DECL: AlignToU32 in twox_hash",
       "usage_count": 1,
       "usage_type": "StructDecl",
       "node_type": "Item",
       "user_def_id": "twox_hash",
-      "used_def_id": "State"
-    },
-    {
-      "usage": "STRUCT_DECL: RandomState in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "RandomState"
-    },
-    {
-      "usage": "STRUCT_DECL: BufferData in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "BufferData"
+      "used_def_id": "AlignToU32"
     },
     {
       "usage": "STRUCT_DECL: Buffer in twox_hash",
@@ -67,68 +67,20 @@
       "used_def_id": "Buffer"
     },
     {
-      "usage": "STRUCT_DECL: Accumulators in twox_hash",
+      "usage": "STRUCT_DECL: Hash64 in twox_hash",
       "usage_count": 1,
       "usage_type": "StructDecl",
       "node_type": "Item",
       "user_def_id": "twox_hash",
-      "used_def_id": "Accumulators"
+      "used_def_id": "Hash64"
     },
     {
-      "usage": "STRUCT_DECL: Hasher in twox_hash",
+      "usage": "STRUCT_DECL: Hash128 in twox_hash",
       "usage_count": 1,
       "usage_type": "StructDecl",
       "node_type": "Item",
       "user_def_id": "twox_hash",
-      "used_def_id": "Hasher"
-    },
-    {
-      "usage": "STRUCT_DECL: State in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "State"
-    },
-    {
-      "usage": "STRUCT_DECL: RandomState in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "RandomState"
-    },
-    {
-      "usage": "STRUCT_DECL: Impl in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "Impl"
-    },
-    {
-      "usage": "STRUCT_DECL: Impl in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "Impl"
-    },
-    {
-      "usage": "STRUCT_DECL: Impl in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "Impl"
-    },
-    {
-      "usage": "STRUCT_DECL: Algorithm in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "Algorithm"
+      "used_def_id": "Hash128"
     },
     {
       "usage": "STRUCT_DECL: Secret in twox_hash",
@@ -139,132 +91,60 @@
       "used_def_id": "Secret"
     },
     {
-      "usage": "STRUCT_DECL: Secret64BitView in twox_hash",
+      "usage": "STRUCT_DECL: Acc in twox_hash",
       "usage_count": 1,
       "usage_type": "StructDecl",
       "node_type": "Item",
       "user_def_id": "twox_hash",
-      "used_def_id": "Secret64BitView"
+      "used_def_id": "Acc"
     },
     {
-      "usage": "STRUCT_DECL: Secret128BitView in twox_hash",
+      "usage": "STRUCT_DECL: State in twox_hash",
       "usage_count": 1,
       "usage_type": "StructDecl",
       "node_type": "Item",
       "user_def_id": "twox_hash",
-      "used_def_id": "Secret128BitView"
+      "used_def_id": "State"
     },
     {
-      "usage": "STRUCT_DECL: Error in twox_hash",
+      "usage": "STRUCT_DECL: RandomXxHashBuilder64 in twox_hash",
       "usage_count": 1,
       "usage_type": "StructDecl",
       "node_type": "Item",
       "user_def_id": "twox_hash",
-      "used_def_id": "Error"
+      "used_def_id": "RandomXxHashBuilder64"
     },
     {
-      "usage": "STRUCT_DECL: SecretBuffer in twox_hash",
+      "usage": "STRUCT_DECL: RandomXxHashBuilder32 in twox_hash",
       "usage_count": 1,
       "usage_type": "StructDecl",
       "node_type": "Item",
       "user_def_id": "twox_hash",
-      "used_def_id": "SecretBuffer"
+      "used_def_id": "RandomXxHashBuilder32"
     },
     {
-      "usage": "STRUCT_DECL: RawHasherCore in twox_hash",
+      "usage": "STRUCT_DECL: RandomHashBuilder64 in twox_hash",
       "usage_count": 1,
       "usage_type": "StructDecl",
       "node_type": "Item",
       "user_def_id": "twox_hash",
-      "used_def_id": "RawHasherCore"
+      "used_def_id": "RandomHashBuilder64"
     },
     {
-      "usage": "STRUCT_DECL: StripeAccumulator in twox_hash",
+      "usage": "STRUCT_DECL: RandomHashBuilder128 in twox_hash",
       "usage_count": 1,
       "usage_type": "StructDecl",
       "node_type": "Item",
       "user_def_id": "twox_hash",
-      "used_def_id": "StripeAccumulator"
+      "used_def_id": "RandomHashBuilder128"
     },
     {
-      "usage": "STRUCT_DECL: SecretWithSeedError in twox_hash",
+      "usage": "STRUCT_DECL: UnalignedBuffer in twox_hash",
       "usage_count": 1,
       "usage_type": "StructDecl",
       "node_type": "Item",
       "user_def_id": "twox_hash",
-      "used_def_id": "SecretWithSeedError"
-    },
-    {
-      "usage": "STRUCT_DECL: SecretTooShortError in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "SecretTooShortError"
-    },
-    {
-      "usage": "STRUCT_DECL: OneshotWithSecretError in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "OneshotWithSecretError"
-    },
-    {
-      "usage": "STRUCT_DECL: X128 in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "X128"
-    },
-    {
-      "usage": "STRUCT_DECL: Hasher in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "Hasher"
-    },
-    {
-      "usage": "STRUCT_DECL: RawHasher in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "RawHasher"
-    },
-    {
-      "usage": "STRUCT_DECL: Finalize64 in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "Finalize64"
-    },
-    {
-      "usage": "STRUCT_DECL: Hasher in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "Hasher"
-    },
-    {
-      "usage": "STRUCT_DECL: RawHasher in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "RawHasher"
-    },
-    {
-      "usage": "STRUCT_DECL: Finalize128 in twox_hash",
-      "usage_count": 1,
-      "usage_type": "StructDecl",
-      "node_type": "Item",
-      "user_def_id": "twox_hash",
-      "used_def_id": "Finalize128"
+      "used_def_id": "UnalignedBuffer"
     }
   ]
 }

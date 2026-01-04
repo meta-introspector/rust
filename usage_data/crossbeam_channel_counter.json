@@ -3,27 +3,19 @@
   "module": "counter",
   "usages": [
     {
-      "usage": "crate::crossbeam_channel::counter::new USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage": "crate::crossbeam_channel::counter::new USES crate::alloc::std::boxed::Box::<T>::into_raw (AssocFn) [DefId: DefId(3:730 ~ alloc[27b0]::boxed::{impl#6}::into_raw)]",
       "usage_count": 1,
       "usage_type": "MethodCall",
       "node_type": "Item",
-      "user_def_id": "DefId(0:260 ~ crossbeam_channel[7166]::counter::new)",
-      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
-    },
-    {
-      "usage": "crate::crossbeam_channel::counter::new USES crate::alloc::std::boxed::Box::<T, A>::leak (AssocFn) [DefId: DefId(3:743 ~ alloc[27b0]::boxed::{impl#7}::leak)]",
-      "usage_count": 1,
-      "usage_type": "MethodCall",
-      "node_type": "Item",
-      "user_def_id": "DefId(0:260 ~ crossbeam_channel[7166]::counter::new)",
-      "used_def_id": "DefId(3:743 ~ alloc[27b0]::boxed::{impl#7}::leak)"
+      "user_def_id": "DefId(0:260 ~ crossbeam_channel[d705]::counter::new)",
+      "used_def_id": "DefId(3:730 ~ alloc[27b0]::boxed::{impl#6}::into_raw)"
     },
     {
       "usage": "crate::crossbeam_channel::counter::new USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
       "usage_count": 1,
       "usage_type": "MethodCall",
       "node_type": "Item",
-      "user_def_id": "DefId(0:260 ~ crossbeam_channel[7166]::counter::new)",
+      "user_def_id": "DefId(0:260 ~ crossbeam_channel[d705]::counter::new)",
       "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
     },
     {
@@ -31,7 +23,7 @@
       "usage_count": 1,
       "usage_type": "MethodCall",
       "node_type": "Item",
-      "user_def_id": "DefId(0:260 ~ crossbeam_channel[7166]::counter::new)",
+      "user_def_id": "DefId(0:260 ~ crossbeam_channel[d705]::counter::new)",
       "used_def_id": "DefId(1:50241 ~ core[4720]::sync::atomic::{impl#94}::new)"
     },
     {
@@ -39,7 +31,7 @@
       "usage_count": 1,
       "usage_type": "MethodCall",
       "node_type": "Item",
-      "user_def_id": "DefId(0:260 ~ crossbeam_channel[7166]::counter::new)",
+      "user_def_id": "DefId(0:260 ~ crossbeam_channel[d705]::counter::new)",
       "used_def_id": "DefId(1:50241 ~ core[4720]::sync::atomic::{impl#94}::new)"
     },
     {
@@ -47,7 +39,7 @@
       "usage_count": 1,
       "usage_type": "MethodCall",
       "node_type": "Item",
-      "user_def_id": "DefId(0:260 ~ crossbeam_channel[7166]::counter::new)",
+      "user_def_id": "DefId(0:260 ~ crossbeam_channel[d705]::counter::new)",
       "used_def_id": "DefId(1:11283 ~ core[4720]::sync::atomic::{impl#5}::new)"
     }
   ]

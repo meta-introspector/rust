@@ -3,6 +3,9 @@ name = "rustc_interface"
 version = "0.0.0"
 edition = "2024"
 
+[build-dependencies]
+build_common = { path = "../build_common" }
+
 [dependencies]
 # tidy-alphabetical-start
 rustc_ast = { path = "../rustc_ast" }

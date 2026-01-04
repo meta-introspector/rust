@@ -9,4 +9,11 @@ crate-type = ["dylib"]
 [dependencies]
 # tidy-alphabetical-start
 rustc_driver_impl = { path = "../rustc_driver_impl" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
 # tidy-alphabetical-end
+
+[build-dependencies]
+syn = { version = "2.0", features = ["full", "visit-mut"] }
+quote = "1.0"
+build_common = { path = "../build_common" }

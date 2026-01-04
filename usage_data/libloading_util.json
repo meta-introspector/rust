@@ -3,52 +3,116 @@
   "module": "util",
   "usages": [
     {
-      "usage": "crate::libloading::util::check_null_bytes USES crate::core::core::slice::<impl [T]>::contains (AssocFn) [DefId: DefId(1:14156 ~ core[4720]::slice::{impl#0}::contains)]",
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::core::core::slice::<impl [T]>::last (AssocFn) [DefId: DefId(2:14042 ~ core[4720]::slice::{impl#0}::last)]",
       "usage_count": 1,
       "usage_type": "MethodCall",
       "node_type": "Item",
-      "user_def_id": "DefId(0:356 ~ libloading[5fb2]::util::check_null_bytes)",
-      "used_def_id": "DefId(1:14156 ~ core[4720]::slice::{impl#0}::contains)"
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(2:14042 ~ core[4720]::slice::{impl#0}::last)"
     },
     {
-      "usage": "crate::libloading::util::copy_and_push USES crate::alloc::alloc::vec::Vec::<T>::new (AssocFn) [DefId: DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::core::std::ffi::CStr::from_ptr (AssocFn) [DefId: DefId(2:6092 ~ core[4720]::ffi::c_str::{impl#5}::from_ptr)]",
       "usage_count": 1,
       "usage_type": "MethodCall",
       "node_type": "Item",
-      "user_def_id": "DefId(0:357 ~ libloading[5fb2]::util::copy_and_push)",
-      "used_def_id": "DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(2:6092 ~ core[4720]::ffi::c_str::{impl#5}::from_ptr)"
     },
     {
-      "usage": "crate::libloading::util::copy_and_push USES crate::alloc::alloc::vec::Vec::<T, A>::reserve_exact (AssocFn) [DefId: DefId(2:8106 ~ alloc[27b0]::vec::{impl#1}::reserve_exact)]",
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::core::std::result::Result::<T, E>::map_err (AssocFn) [DefId: DefId(2:11096 ~ core[4720]::result::{impl#0}::map_err)]",
       "usage_count": 1,
       "usage_type": "MethodCall",
       "node_type": "Item",
-      "user_def_id": "DefId(0:357 ~ libloading[5fb2]::util::copy_and_push)",
-      "used_def_id": "DefId(2:8106 ~ alloc[27b0]::vec::{impl#1}::reserve_exact)"
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(2:11096 ~ core[4720]::result::{impl#0}::map_err)"
     },
     {
-      "usage": "crate::libloading::util::copy_and_push USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::core::std::ffi::CStr::from_bytes_with_nul (AssocFn) [DefId: DefId(2:6095 ~ core[4720]::ffi::c_str::{impl#5}::from_bytes_with_nul)]",
       "usage_count": 1,
       "usage_type": "MethodCall",
       "node_type": "Item",
-      "user_def_id": "DefId(0:357 ~ libloading[5fb2]::util::copy_and_push)",
-      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(2:6095 ~ core[4720]::ffi::c_str::{impl#5}::from_bytes_with_nul)"
     },
     {
-      "usage": "crate::libloading::util::copy_and_push USES crate::alloc::alloc::vec::Vec::<T, A>::extend_from_slice (AssocFn) [DefId: DefId(2:8201 ~ alloc[27b0]::vec::{impl#2}::extend_from_slice)]",
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
       "usage_count": 1,
       "usage_type": "MethodCall",
       "node_type": "Item",
-      "user_def_id": "DefId(0:357 ~ libloading[5fb2]::util::copy_and_push)",
-      "used_def_id": "DefId(2:8201 ~ alloc[27b0]::vec::{impl#2}::extend_from_slice)"
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
     },
     {
-      "usage": "crate::libloading::util::copy_and_push USES crate::alloc::alloc::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(2:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
       "usage_count": 1,
       "usage_type": "MethodCall",
       "node_type": "Item",
-      "user_def_id": "DefId(0:357 ~ libloading[5fb2]::util::copy_and_push)",
-      "used_def_id": "DefId(2:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::core::std::result::Result::<T, E>::map_err (AssocFn) [DefId: DefId(2:11096 ~ core[4720]::result::{impl#0}::map_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(2:11096 ~ core[4720]::result::{impl#0}::map_err)"
+    },
+    {
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::alloc::std::ffi::CString::new (AssocFn) [DefId: DefId(3:5286 ~ alloc[27b0]::ffi::c_str::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(3:5286 ~ alloc[27b0]::ffi::c_str::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::libloading::util::cstr_cow_from_bytes USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:146 ~ libloading[9876]::util::cstr_cow_from_bytes)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
     }
   ]
 }

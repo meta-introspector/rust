@@ -1,0 +1,54 @@
+{
+  "crate": "proc_macro2",
+  "module": "detection",
+  "usages": [
+    {
+      "usage": "crate::proc_macro2::detection::WORKS USES crate::core::std::sync::atomic::AtomicUsize::new (AssocFn) [DefId: DefId(2:50241 ~ core[4720]::sync::atomic::{impl#94}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:202 ~ proc_macro2[7bf1]::detection::WORKS)",
+      "used_def_id": "DefId(2:50241 ~ core[4720]::sync::atomic::{impl#94}::new)"
+    },
+    {
+      "usage": "crate::proc_macro2::detection::INIT USES crate::std::std::sync::Once::new (AssocFn) [DefId: DefId(1:7435 ~ std[93f5]::sync::poison::once::{impl#2}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:203 ~ proc_macro2[7bf1]::detection::INIT)",
+      "used_def_id": "DefId(1:7435 ~ std[93f5]::sync::poison::once::{impl#2}::new)"
+    },
+    {
+      "usage": "crate::proc_macro2::detection::inside_proc_macro USES crate::core::std::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:204 ~ proc_macro2[7bf1]::detection::inside_proc_macro)",
+      "used_def_id": "DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::proc_macro2::detection::inside_proc_macro USES crate::std::std::sync::Once::call_once (AssocFn) [DefId: DefId(1:7436 ~ std[93f5]::sync::poison::once::{impl#2}::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:204 ~ proc_macro2[7bf1]::detection::inside_proc_macro)",
+      "used_def_id": "DefId(1:7436 ~ std[93f5]::sync::poison::once::{impl#2}::call_once)"
+    },
+    {
+      "usage": "crate::proc_macro2::detection::force_fallback USES crate::core::std::sync::atomic::AtomicUsize::store (AssocFn) [DefId: DefId(2:50252 ~ core[4720]::sync::atomic::{impl#94}::store)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:205 ~ proc_macro2[7bf1]::detection::force_fallback)",
+      "used_def_id": "DefId(2:50252 ~ core[4720]::sync::atomic::{impl#94}::store)"
+    },
+    {
+      "usage": "crate::proc_macro2::detection::initialize USES crate::core::std::sync::atomic::AtomicUsize::store (AssocFn) [DefId: DefId(2:50252 ~ core[4720]::sync::atomic::{impl#94}::store)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:207 ~ proc_macro2[7bf1]::detection::initialize)",
+      "used_def_id": "DefId(2:50252 ~ core[4720]::sync::atomic::{impl#94}::store)"
+    }
+  ]
+}

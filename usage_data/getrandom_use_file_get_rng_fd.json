@@ -1,0 +1,30 @@
+{
+  "crate": "getrandom",
+  "module": "use_file::get_rng_fd",
+  "usages": [
+    {
+      "usage": "crate::getrandom::use_file::get_rng_fd::FD USES crate::core::core::sync::atomic::AtomicUsize::new (AssocFn) [DefId: DefId(1:50241 ~ core[4720]::sync::atomic::{impl#94}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:114 ~ getrandom[b745]::use_file::get_rng_fd::FD)",
+      "used_def_id": "DefId(1:50241 ~ core[4720]::sync::atomic::{impl#94}::new)"
+    },
+    {
+      "usage": "crate::getrandom::use_file::get_rng_fd::get_fd USES crate::core::core::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(1:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:115 ~ getrandom[b745]::use_file::get_rng_fd::get_fd)",
+      "used_def_id": "DefId(1:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::getrandom::use_file::get_rng_fd::MUTEX USES crate::getrandom::use_file::Mutex::new (AssocFn) [DefId: DefId(0:124 ~ getrandom[b745]::use_file::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:116 ~ getrandom[b745]::use_file::get_rng_fd::MUTEX)",
+      "used_def_id": "DefId(0:124 ~ getrandom[b745]::use_file::{impl#0}::new)"
+    }
+  ]
+}
