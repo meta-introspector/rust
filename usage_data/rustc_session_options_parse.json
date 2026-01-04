@@ -1,0 +1,1854 @@
+{
+  "crate": "rustc_session",
+  "module": "options::parse",
+  "usages": [
+    {
+      "usage": "crate::rustc_session::options::parse::parse_string USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1032 ~ rustc_session[6a23]::options::parse::parse_string)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_opt_string USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1033 ~ rustc_session[6a23]::options::parse::parse_opt_string)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_opt_langid USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1034 ~ rustc_session[6a23]::options::parse::parse_opt_langid)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_opt_langid USES crate::core::std::str::FromStr::from_str (AssocFn) [DefId: DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1034 ~ rustc_session[6a23]::options::parse::parse_opt_langid)",
+      "used_def_id": "DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_opt_pathbuf USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1035 ~ rustc_session[6a23]::options::parse::parse_opt_pathbuf)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_string_push USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1036 ~ rustc_session[6a23]::options::parse::parse_string_push)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_string_push USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1036 ~ rustc_session[6a23]::options::parse::parse_string_push)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list USES crate::core::std::iter::Extend::extend (AssocFn) [DefId: DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1037 ~ rustc_session[6a23]::options::parse::parse_list)",
+      "used_def_id": "DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1037 ~ rustc_session[6a23]::options::parse::parse_list)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list USES crate::core::bitflags::__private::core::str::<impl str>::split_whitespace (AssocFn) [DefId: DefId(2:15181 ~ core[4720]::str::{impl#0}::split_whitespace)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1037 ~ rustc_session[6a23]::options::parse::parse_list)",
+      "used_def_id": "DefId(2:15181 ~ core[4720]::str::{impl#0}::split_whitespace)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1037 ~ rustc_session[6a23]::options::parse::parse_list)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list_with_polarity USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1039 ~ rustc_session[6a23]::options::parse::parse_list_with_polarity)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list_with_polarity USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1039 ~ rustc_session[6a23]::options::parse::parse_list_with_polarity)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list_with_polarity USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1039 ~ rustc_session[6a23]::options::parse::parse_list_with_polarity)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list_with_polarity USES crate::core::bitflags::__private::core::str::<impl str>::strip_prefix (AssocFn) [DefId: DefId(2:15242 ~ core[4720]::str::{impl#0}::strip_prefix)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1039 ~ rustc_session[6a23]::options::parse::parse_list_with_polarity)",
+      "used_def_id": "DefId(2:15242 ~ core[4720]::str::{impl#0}::strip_prefix)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list_with_polarity USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1039 ~ rustc_session[6a23]::options::parse::parse_list_with_polarity)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list_with_polarity USES crate::core::std::ops::RangeFull (Struct) [DefId: DefId(2:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1039 ~ rustc_session[6a23]::options::parse::parse_list_with_polarity)",
+      "used_def_id": "DefId(2:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list_with_polarity USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1039 ~ rustc_session[6a23]::options::parse::parse_list_with_polarity)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list_with_polarity USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1039 ~ rustc_session[6a23]::options::parse::parse_list_with_polarity)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list_with_polarity USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1039 ~ rustc_session[6a23]::options::parse::parse_list_with_polarity)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list_with_polarity USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1039 ~ rustc_session[6a23]::options::parse::parse_list_with_polarity)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list_with_polarity USES crate::core::std::ops::RangeTo (Struct) [DefId: DefId(2:45217 ~ core[4720]::ops::range::RangeTo)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1039 ~ rustc_session[6a23]::options::parse::parse_list_with_polarity)",
+      "used_def_id": "DefId(2:45217 ~ core[4720]::ops::range::RangeTo)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list_with_polarity USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1039 ~ rustc_session[6a23]::options::parse::parse_list_with_polarity)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_list_with_polarity USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1039 ~ rustc_session[6a23]::options::parse::parse_list_with_polarity)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_location_detail USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1041 ~ rustc_session[6a23]::options::parse::parse_location_detail)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_location_detail USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1041 ~ rustc_session[6a23]::options::parse::parse_location_detail)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_location_detail USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1041 ~ rustc_session[6a23]::options::parse::parse_location_detail)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_location_detail USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1041 ~ rustc_session[6a23]::options::parse::parse_location_detail)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_location_detail USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1041 ~ rustc_session[6a23]::options::parse::parse_location_detail)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_location_detail USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1041 ~ rustc_session[6a23]::options::parse::parse_location_detail)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_comma_list USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1042 ~ rustc_session[6a23]::options::parse::parse_comma_list)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_comma_list USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1042 ~ rustc_session[6a23]::options::parse::parse_comma_list)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_comma_list USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1042 ~ rustc_session[6a23]::options::parse::parse_comma_list)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_comma_list USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1042 ~ rustc_session[6a23]::options::parse::parse_comma_list)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_comma_list USES crate::core::bitflags::__private::core::slice::<impl [T]>::sort_unstable (AssocFn) [DefId: DefId(2:14177 ~ core[4720]::slice::{impl#0}::sort_unstable)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1042 ~ rustc_session[6a23]::options::parse::parse_comma_list)",
+      "used_def_id": "DefId(2:14177 ~ core[4720]::slice::{impl#0}::sort_unstable)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_opt_comma_list USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1044 ~ rustc_session[6a23]::options::parse::parse_opt_comma_list)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_opt_comma_list USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1044 ~ rustc_session[6a23]::options::parse::parse_opt_comma_list)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_opt_comma_list USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1044 ~ rustc_session[6a23]::options::parse::parse_opt_comma_list)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_opt_comma_list USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1044 ~ rustc_session[6a23]::options::parse::parse_opt_comma_list)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_opt_comma_list USES crate::core::bitflags::__private::core::slice::<impl [T]>::sort_unstable (AssocFn) [DefId: DefId(2:14177 ~ core[4720]::slice::{impl#0}::sort_unstable)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1044 ~ rustc_session[6a23]::options::parse::parse_opt_comma_list)",
+      "used_def_id": "DefId(2:14177 ~ core[4720]::slice::{impl#0}::sort_unstable)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_threads USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1046 ~ rustc_session[6a23]::options::parse::parse_threads)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_threads USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1046 ~ rustc_session[6a23]::options::parse::parse_threads)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_threads USES crate::core::bitflags::__private::core::str::<impl str>::parse (AssocFn) [DefId: DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1046 ~ rustc_session[6a23]::options::parse::parse_threads)",
+      "used_def_id": "DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_threads USES crate::core::std::result::Result::<T, E>::map_or (AssocFn) [DefId: DefId(2:11086 ~ core[4720]::result::{impl#0}::map_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1046 ~ rustc_session[6a23]::options::parse::parse_threads)",
+      "used_def_id": "DefId(2:11086 ~ core[4720]::result::{impl#0}::map_or)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_threads USES crate::core::std::num::NonZero::<T>::get (AssocFn) [DefId: DefId(2:1246 ~ core[4720]::num::nonzero::{impl#15}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1046 ~ rustc_session[6a23]::options::parse::parse_threads)",
+      "used_def_id": "DefId(2:1246 ~ core[4720]::num::nonzero::{impl#15}::get)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_threads USES crate::core::std::cmp::Ord::min (AssocFn) [DefId: DefId(2:3253 ~ core[4720]::cmp::Ord::min)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1046 ~ rustc_session[6a23]::options::parse::parse_threads)",
+      "used_def_id": "DefId(2:3253 ~ core[4720]::cmp::Ord::min)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_threads USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1046 ~ rustc_session[6a23]::options::parse::parse_threads)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_number USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1048 ~ rustc_session[6a23]::options::parse::parse_number)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_number USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1048 ~ rustc_session[6a23]::options::parse::parse_number)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_number USES crate::core::bitflags::__private::core::str::<impl str>::parse (AssocFn) [DefId: DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1048 ~ rustc_session[6a23]::options::parse::parse_number)",
+      "used_def_id": "DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_opt_number USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1051 ~ rustc_session[6a23]::options::parse::parse_opt_number)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_opt_number USES crate::core::bitflags::__private::core::str::<impl str>::parse (AssocFn) [DefId: DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1051 ~ rustc_session[6a23]::options::parse::parse_opt_number)",
+      "used_def_id": "DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_opt_number USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1051 ~ rustc_session[6a23]::options::parse::parse_opt_number)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_frame_pointer USES crate::rustc_target::rustc_target::spec::FramePointer::ratchet (AssocFn) [DefId: DefId(154:1914 ~ rustc_target[caf7]::spec::{impl#26}::ratchet)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1053 ~ rustc_session[6a23]::options::parse::parse_frame_pointer)",
+      "used_def_id": "DefId(154:1914 ~ rustc_target[caf7]::spec::{impl#26}::ratchet)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_frame_pointer USES crate::rustc_target::rustc_target::spec::FramePointer::ratchet (AssocFn) [DefId: DefId(154:1914 ~ rustc_target[caf7]::spec::{impl#26}::ratchet)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1053 ~ rustc_session[6a23]::options::parse::parse_frame_pointer)",
+      "used_def_id": "DefId(154:1914 ~ rustc_target[caf7]::spec::{impl#26}::ratchet)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_frame_pointer USES crate::rustc_target::rustc_target::spec::FramePointer::ratchet (AssocFn) [DefId: DefId(154:1914 ~ rustc_target[caf7]::spec::{impl#26}::ratchet)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1053 ~ rustc_session[6a23]::options::parse::parse_frame_pointer)",
+      "used_def_id": "DefId(154:1914 ~ rustc_target[caf7]::spec::{impl#26}::ratchet)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_frame_pointer USES crate::rustc_target::rustc_target::spec::FramePointer::ratchet (AssocFn) [DefId: DefId(154:1914 ~ rustc_target[caf7]::spec::{impl#26}::ratchet)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1053 ~ rustc_session[6a23]::options::parse::parse_frame_pointer)",
+      "used_def_id": "DefId(154:1914 ~ rustc_target[caf7]::spec::{impl#26}::ratchet)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_passes USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1054 ~ rustc_session[6a23]::options::parse::parse_passes)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_passes USES crate::rustc_session::config::Passes::extend (AssocFn) [DefId: DefId(0:523 ~ rustc_session[6a23]::config::{impl#19}::extend)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1054 ~ rustc_session[6a23]::options::parse::parse_passes)",
+      "used_def_id": "DefId(0:523 ~ rustc_session[6a23]::config::{impl#19}::extend)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_patchable_function_entry USES crate::core::std::option::Option::<(T, U)>::unzip (AssocFn) [DefId: DefId(2:10292 ~ core[4720]::option::{impl#1}::unzip)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1058 ~ rustc_session[6a23]::options::parse::parse_patchable_function_entry)",
+      "used_def_id": "DefId(2:10292 ~ core[4720]::option::{impl#1}::unzip)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_patchable_function_entry USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1058 ~ rustc_session[6a23]::options::parse::parse_patchable_function_entry)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_patchable_function_entry USES crate::core::bitflags::__private::core::str::<impl str>::split_once (AssocFn) [DefId: DefId(2:15217 ~ core[4720]::str::{impl#0}::split_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1058 ~ rustc_session[6a23]::options::parse::parse_patchable_function_entry)",
+      "used_def_id": "DefId(2:15217 ~ core[4720]::str::{impl#0}::split_once)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_patchable_function_entry USES crate::rustc_session::config::PatchableFunctionEntry::from_total_and_prefix_nops (AssocFn) [DefId: DefId(0:738 ~ rustc_session[6a23]::config::{impl#27}::from_total_and_prefix_nops)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1058 ~ rustc_session[6a23]::options::parse::parse_patchable_function_entry)",
+      "used_def_id": "DefId(0:738 ~ rustc_session[6a23]::config::{impl#27}::from_total_and_prefix_nops)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_relro_level USES crate::core::bitflags::__private::core::str::<impl str>::parse (AssocFn) [DefId: DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1061 ~ rustc_session[6a23]::options::parse::parse_relro_level)",
+      "used_def_id": "DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::core::std::ops::BitOrAssign::bitor_assign (AssocFn) [DefId: DefId(2:43799 ~ core[4720]::ops::bit::BitOrAssign::bitor_assign)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(2:43799 ~ core[4720]::ops::bit::BitOrAssign::bitor_assign)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::rustc_target::rustc_target::spec::SanitizerSet::ADDRESS (AssocConst) [DefId: DefId(154:8222 ~ rustc_target[caf7]::spec::{impl#313}::ADDRESS)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(154:8222 ~ rustc_target[caf7]::spec::{impl#313}::ADDRESS)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::rustc_target::rustc_target::spec::SanitizerSet::CFI (AssocConst) [DefId: DefId(154:8227 ~ rustc_target[caf7]::spec::{impl#313}::CFI)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(154:8227 ~ rustc_target[caf7]::spec::{impl#313}::CFI)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::rustc_target::rustc_target::spec::SanitizerSet::DATAFLOW (AssocConst) [DefId: DefId(154:8233 ~ rustc_target[caf7]::spec::{impl#313}::DATAFLOW)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(154:8233 ~ rustc_target[caf7]::spec::{impl#313}::DATAFLOW)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::rustc_target::rustc_target::spec::SanitizerSet::KCFI (AssocConst) [DefId: DefId(154:8230 ~ rustc_target[caf7]::spec::{impl#313}::KCFI)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(154:8230 ~ rustc_target[caf7]::spec::{impl#313}::KCFI)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::rustc_target::rustc_target::spec::SanitizerSet::KERNELADDRESS (AssocConst) [DefId: DefId(154:8231 ~ rustc_target[caf7]::spec::{impl#313}::KERNELADDRESS)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(154:8231 ~ rustc_target[caf7]::spec::{impl#313}::KERNELADDRESS)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::rustc_target::rustc_target::spec::SanitizerSet::LEAK (AssocConst) [DefId: DefId(154:8223 ~ rustc_target[caf7]::spec::{impl#313}::LEAK)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(154:8223 ~ rustc_target[caf7]::spec::{impl#313}::LEAK)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::rustc_target::rustc_target::spec::SanitizerSet::MEMORY (AssocConst) [DefId: DefId(154:8224 ~ rustc_target[caf7]::spec::{impl#313}::MEMORY)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(154:8224 ~ rustc_target[caf7]::spec::{impl#313}::MEMORY)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::rustc_target::rustc_target::spec::SanitizerSet::MEMTAG (AssocConst) [DefId: DefId(154:8228 ~ rustc_target[caf7]::spec::{impl#313}::MEMTAG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(154:8228 ~ rustc_target[caf7]::spec::{impl#313}::MEMTAG)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::rustc_target::rustc_target::spec::SanitizerSet::SHADOWCALLSTACK (AssocConst) [DefId: DefId(154:8229 ~ rustc_target[caf7]::spec::{impl#313}::SHADOWCALLSTACK)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(154:8229 ~ rustc_target[caf7]::spec::{impl#313}::SHADOWCALLSTACK)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::rustc_target::rustc_target::spec::SanitizerSet::THREAD (AssocConst) [DefId: DefId(154:8225 ~ rustc_target[caf7]::spec::{impl#313}::THREAD)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(154:8225 ~ rustc_target[caf7]::spec::{impl#313}::THREAD)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::rustc_target::rustc_target::spec::SanitizerSet::HWADDRESS (AssocConst) [DefId: DefId(154:8226 ~ rustc_target[caf7]::spec::{impl#313}::HWADDRESS)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(154:8226 ~ rustc_target[caf7]::spec::{impl#313}::HWADDRESS)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::rustc_target::rustc_target::spec::SanitizerSet::SAFESTACK (AssocConst) [DefId: DefId(154:8232 ~ rustc_target[caf7]::spec::{impl#313}::SAFESTACK)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(154:8232 ~ rustc_target[caf7]::spec::{impl#313}::SAFESTACK)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_sanitizers USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1062 ~ rustc_session[6a23]::options::parse::parse_sanitizers)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_cfguard USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1065 ~ rustc_session[6a23]::options::parse::parse_cfguard)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_cfguard USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1065 ~ rustc_session[6a23]::options::parse::parse_cfguard)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_cfprotection USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1066 ~ rustc_session[6a23]::options::parse::parse_cfprotection)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_cfprotection USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1066 ~ rustc_session[6a23]::options::parse::parse_cfprotection)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_linker_flavor USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1070 ~ rustc_session[6a23]::options::parse::parse_linker_flavor)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_linker_flavor USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1070 ~ rustc_session[6a23]::options::parse::parse_linker_flavor)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_linker_flavor USES crate::core::std::str::FromStr::from_str (AssocFn) [DefId: DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1070 ~ rustc_session[6a23]::options::parse::parse_linker_flavor)",
+      "used_def_id": "DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_opt_symbol_visibility USES crate::core::std::str::FromStr::from_str (AssocFn) [DefId: DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1072 ~ rustc_session[6a23]::options::parse::parse_opt_symbol_visibility)",
+      "used_def_id": "DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_unpretty USES crate::core::std::iter::Iterator::count (AssocFn) [DefId: DefId(2:9434 ~ core[4720]::iter::traits::iterator::Iterator::count)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1073 ~ rustc_session[6a23]::options::parse::parse_unpretty)",
+      "used_def_id": "DefId(2:9434 ~ core[4720]::iter::traits::iterator::Iterator::count)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_unpretty USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1073 ~ rustc_session[6a23]::options::parse::parse_unpretty)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_unpretty USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1073 ~ rustc_session[6a23]::options::parse::parse_unpretty)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_offload USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1076 ~ rustc_session[6a23]::options::parse::parse_offload)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_offload USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1076 ~ rustc_session[6a23]::options::parse::parse_offload)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_offload USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1076 ~ rustc_session[6a23]::options::parse::parse_offload)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_offload USES crate::core::bitflags::__private::core::slice::<impl [T]>::sort_unstable (AssocFn) [DefId: DefId(2:14177 ~ core[4720]::slice::{impl#0}::sort_unstable)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1076 ~ rustc_session[6a23]::options::parse::parse_offload)",
+      "used_def_id": "DefId(2:14177 ~ core[4720]::slice::{impl#0}::sort_unstable)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_offload USES crate::core::bitflags::__private::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1076 ~ rustc_session[6a23]::options::parse::parse_offload)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_offload USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1076 ~ rustc_session[6a23]::options::parse::parse_offload)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_offload USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1076 ~ rustc_session[6a23]::options::parse::parse_offload)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_offload USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1076 ~ rustc_session[6a23]::options::parse::parse_offload)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_offload USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1076 ~ rustc_session[6a23]::options::parse::parse_offload)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_offload USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1076 ~ rustc_session[6a23]::options::parse::parse_offload)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_autodiff USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1077 ~ rustc_session[6a23]::options::parse::parse_autodiff)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_autodiff USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1077 ~ rustc_session[6a23]::options::parse::parse_autodiff)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_autodiff USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1077 ~ rustc_session[6a23]::options::parse::parse_autodiff)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_autodiff USES crate::core::bitflags::__private::core::slice::<impl [T]>::sort_unstable (AssocFn) [DefId: DefId(2:14177 ~ core[4720]::slice::{impl#0}::sort_unstable)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1077 ~ rustc_session[6a23]::options::parse::parse_autodiff)",
+      "used_def_id": "DefId(2:14177 ~ core[4720]::slice::{impl#0}::sort_unstable)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_autodiff USES crate::core::bitflags::__private::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1077 ~ rustc_session[6a23]::options::parse::parse_autodiff)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_autodiff USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1077 ~ rustc_session[6a23]::options::parse::parse_autodiff)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_autodiff USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1077 ~ rustc_session[6a23]::options::parse::parse_autodiff)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_autodiff USES crate::core::bitflags::__private::core::str::<impl str>::split_once (AssocFn) [DefId: DefId(2:15217 ~ core[4720]::str::{impl#0}::split_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1077 ~ rustc_session[6a23]::options::parse::parse_autodiff)",
+      "used_def_id": "DefId(2:15217 ~ core[4720]::str::{impl#0}::split_once)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_autodiff USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1077 ~ rustc_session[6a23]::options::parse::parse_autodiff)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_autodiff USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1077 ~ rustc_session[6a23]::options::parse::parse_autodiff)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_autodiff USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1077 ~ rustc_session[6a23]::options::parse::parse_autodiff)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_autodiff USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1077 ~ rustc_session[6a23]::options::parse::parse_autodiff)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_coverage USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_session[6a23]::options::parse::parse_instrument_coverage)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_coverage_options USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1079 ~ rustc_session[6a23]::options::parse::parse_coverage_options)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_coverage_options USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1079 ~ rustc_session[6a23]::options::parse::parse_coverage_options)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_coverage_options USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1079 ~ rustc_session[6a23]::options::parse::parse_coverage_options)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_coverage_options USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1079 ~ rustc_session[6a23]::options::parse::parse_coverage_options)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_coverage_options USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1079 ~ rustc_session[6a23]::options::parse::parse_coverage_options)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::std::option::Option::<T>::get_or_insert_default (AssocFn) [DefId: DefId(2:10272 ~ core[4720]::option::{impl#0}::get_or_insert_default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:10272 ~ core[4720]::option::{impl#0}::get_or_insert_default)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::std::iter::Iterator::flat_map (AssocFn) [DefId: DefId(2:9488 ~ core[4720]::iter::traits::iterator::Iterator::flat_map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:9488 ~ core[4720]::iter::traits::iterator::Iterator::flat_map)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::bitflags::__private::core::str::<impl str>::starts_with (AssocFn) [DefId: DefId(2:15188 ~ core[4720]::str::{impl#0}::starts_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:15188 ~ core[4720]::str::{impl#0}::starts_with)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::bitflags::__private::core::str::<impl str>::split_once (AssocFn) [DefId: DefId(2:15217 ~ core[4720]::str::{impl#0}::split_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:15217 ~ core[4720]::str::{impl#0}::split_once)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::bitflags::__private::core::str::<impl str>::parse (AssocFn) [DefId: DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_instrument_xray USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1080 ~ rustc_session[6a23]::options::parse::parse_instrument_xray)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_treat_err_as_bug USES crate::core::bitflags::__private::core::str::<impl str>::parse (AssocFn) [DefId: DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ rustc_session[6a23]::options::parse::parse_treat_err_as_bug)",
+      "used_def_id": "DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_treat_err_as_bug USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ rustc_session[6a23]::options::parse::parse_treat_err_as_bug)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_treat_err_as_bug USES crate::core::std::num::ParseIntError::kind (AssocFn) [DefId: DefId(2:1103 ~ core[4720]::num::error::{impl#4}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ rustc_session[6a23]::options::parse::parse_treat_err_as_bug)",
+      "used_def_id": "DefId(2:1103 ~ core[4720]::num::error::{impl#4}::kind)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_treat_err_as_bug USES crate::core::std::num::NonZero::<T>::new (AssocFn) [DefId: DefId(2:1242 ~ core[4720]::num::nonzero::{impl#15}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ rustc_session[6a23]::options::parse::parse_treat_err_as_bug)",
+      "used_def_id": "DefId(2:1242 ~ core[4720]::num::nonzero::{impl#15}::new)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_lto USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_session[6a23]::options::parse::parse_lto)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_lto USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_session[6a23]::options::parse::parse_lto)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_linker_plugin_lto USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_session[6a23]::options::parse::parse_linker_plugin_lto)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_linker_plugin_lto USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_session[6a23]::options::parse::parse_linker_plugin_lto)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_linker_plugin_lto USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_session[6a23]::options::parse::parse_linker_plugin_lto)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_switch_with_opt_path USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1086 ~ rustc_session[6a23]::options::parse::parse_switch_with_opt_path)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_merge_functions USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1087 ~ rustc_session[6a23]::options::parse::parse_merge_functions)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_merge_functions USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1087 ~ rustc_session[6a23]::options::parse::parse_merge_functions)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_merge_functions USES crate::core::std::str::FromStr::from_str (AssocFn) [DefId: DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1087 ~ rustc_session[6a23]::options::parse::parse_merge_functions)",
+      "used_def_id": "DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_remap_path_scope USES crate::rustc_session::config::_::<impl config::RemapPathScopeComponents>::empty (AssocFn) [DefId: DefId(0:3298 ~ rustc_session[6a23]::config::_#16::{impl#34}::empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_session[6a23]::options::parse::parse_remap_path_scope)",
+      "used_def_id": "DefId(0:3298 ~ rustc_session[6a23]::config::_#16::{impl#34}::empty)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_remap_path_scope USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_session[6a23]::options::parse::parse_remap_path_scope)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_remap_path_scope USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_session[6a23]::options::parse::parse_remap_path_scope)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_remap_path_scope USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_session[6a23]::options::parse::parse_remap_path_scope)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_remap_path_scope USES crate::core::std::ops::BitOrAssign::bitor_assign (AssocFn) [DefId: DefId(2:43799 ~ core[4720]::ops::bit::BitOrAssign::bitor_assign)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_session[6a23]::options::parse::parse_remap_path_scope)",
+      "used_def_id": "DefId(2:43799 ~ core[4720]::ops::bit::BitOrAssign::bitor_assign)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_remap_path_scope USES crate::rustc_session::config::RemapPathScopeComponents::MACRO (AssocConst) [DefId: DefId(0:3190 ~ rustc_session[6a23]::config::{impl#242}::MACRO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_session[6a23]::options::parse::parse_remap_path_scope)",
+      "used_def_id": "DefId(0:3190 ~ rustc_session[6a23]::config::{impl#242}::MACRO)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_remap_path_scope USES crate::rustc_session::config::RemapPathScopeComponents::DIAGNOSTICS (AssocConst) [DefId: DefId(0:3191 ~ rustc_session[6a23]::config::{impl#242}::DIAGNOSTICS)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_session[6a23]::options::parse::parse_remap_path_scope)",
+      "used_def_id": "DefId(0:3191 ~ rustc_session[6a23]::config::{impl#242}::DIAGNOSTICS)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_remap_path_scope USES crate::rustc_session::config::RemapPathScopeComponents::DEBUGINFO (AssocConst) [DefId: DefId(0:3192 ~ rustc_session[6a23]::config::{impl#242}::DEBUGINFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_session[6a23]::options::parse::parse_remap_path_scope)",
+      "used_def_id": "DefId(0:3192 ~ rustc_session[6a23]::config::{impl#242}::DEBUGINFO)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_remap_path_scope USES crate::rustc_session::config::RemapPathScopeComponents::OBJECT (AssocConst) [DefId: DefId(0:3193 ~ rustc_session[6a23]::config::{impl#242}::OBJECT)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_session[6a23]::options::parse::parse_remap_path_scope)",
+      "used_def_id": "DefId(0:3193 ~ rustc_session[6a23]::config::{impl#242}::OBJECT)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_remap_path_scope USES crate::rustc_session::config::_::<impl config::RemapPathScopeComponents>::all (AssocFn) [DefId: DefId(0:3299 ~ rustc_session[6a23]::config::_#16::{impl#34}::all)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_session[6a23]::options::parse::parse_remap_path_scope)",
+      "used_def_id": "DefId(0:3299 ~ rustc_session[6a23]::config::_#16::{impl#34}::all)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_remap_path_scope USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_session[6a23]::options::parse::parse_remap_path_scope)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_remap_path_scope USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_session[6a23]::options::parse::parse_remap_path_scope)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_relocation_model USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1090 ~ rustc_session[6a23]::options::parse::parse_relocation_model)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_relocation_model USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1090 ~ rustc_session[6a23]::options::parse::parse_relocation_model)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_relocation_model USES crate::core::std::str::FromStr::from_str (AssocFn) [DefId: DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1090 ~ rustc_session[6a23]::options::parse::parse_relocation_model)",
+      "used_def_id": "DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_relocation_model USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1090 ~ rustc_session[6a23]::options::parse::parse_relocation_model)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_code_model USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1092 ~ rustc_session[6a23]::options::parse::parse_code_model)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_code_model USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1092 ~ rustc_session[6a23]::options::parse::parse_code_model)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_code_model USES crate::core::std::str::FromStr::from_str (AssocFn) [DefId: DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1092 ~ rustc_session[6a23]::options::parse::parse_code_model)",
+      "used_def_id": "DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_tls_model USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_session[6a23]::options::parse::parse_tls_model)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_tls_model USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_session[6a23]::options::parse::parse_tls_model)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_tls_model USES crate::core::std::str::FromStr::from_str (AssocFn) [DefId: DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1094 ~ rustc_session[6a23]::options::parse::parse_tls_model)",
+      "used_def_id": "DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_src_file_hash USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1098 ~ rustc_session[6a23]::options::parse::parse_src_file_hash)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_src_file_hash USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1098 ~ rustc_session[6a23]::options::parse::parse_src_file_hash)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_src_file_hash USES crate::core::std::str::FromStr::from_str (AssocFn) [DefId: DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1098 ~ rustc_session[6a23]::options::parse::parse_src_file_hash)",
+      "used_def_id": "DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_cargo_src_file_hash USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1100 ~ rustc_session[6a23]::options::parse::parse_cargo_src_file_hash)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_cargo_src_file_hash USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1100 ~ rustc_session[6a23]::options::parse::parse_cargo_src_file_hash)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_cargo_src_file_hash USES crate::core::std::str::FromStr::from_str (AssocFn) [DefId: DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1100 ~ rustc_session[6a23]::options::parse::parse_cargo_src_file_hash)",
+      "used_def_id": "DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_target_feature USES crate::alloc::std::string::String::is_empty (AssocFn) [DefId: DefId(3:6481 ~ alloc[27b0]::string::{impl#0}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1102 ~ rustc_session[6a23]::options::parse::parse_target_feature)",
+      "used_def_id": "DefId(3:6481 ~ alloc[27b0]::string::{impl#0}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_target_feature USES crate::alloc::std::string::String::push (AssocFn) [DefId: DefId(3:6458 ~ alloc[27b0]::string::{impl#0}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1102 ~ rustc_session[6a23]::options::parse::parse_target_feature)",
+      "used_def_id": "DefId(3:6458 ~ alloc[27b0]::string::{impl#0}::push)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_target_feature USES crate::alloc::std::string::String::push_str (AssocFn) [DefId: DefId(3:6448 ~ alloc[27b0]::string::{impl#0}::push_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1102 ~ rustc_session[6a23]::options::parse::parse_target_feature)",
+      "used_def_id": "DefId(3:6448 ~ alloc[27b0]::string::{impl#0}::push_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_link_self_contained USES crate::core::std::option::Option::<T>::unwrap_or (AssocFn) [DefId: DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ rustc_session[6a23]::options::parse::parse_link_self_contained)",
+      "used_def_id": "DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_link_self_contained USES crate::rustc_session::config::LinkSelfContained::set_all_explicitly (AssocFn) [DefId: DefId(0:419 ~ rustc_session[6a23]::config::{impl#1}::set_all_explicitly)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ rustc_session[6a23]::options::parse::parse_link_self_contained)",
+      "used_def_id": "DefId(0:419 ~ rustc_session[6a23]::config::{impl#1}::set_all_explicitly)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_link_self_contained USES crate::rustc_session::config::LinkSelfContained::set_all_explicitly (AssocFn) [DefId: DefId(0:419 ~ rustc_session[6a23]::config::{impl#1}::set_all_explicitly)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ rustc_session[6a23]::options::parse::parse_link_self_contained)",
+      "used_def_id": "DefId(0:419 ~ rustc_session[6a23]::config::{impl#1}::set_all_explicitly)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_link_self_contained USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ rustc_session[6a23]::options::parse::parse_link_self_contained)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_link_self_contained USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ rustc_session[6a23]::options::parse::parse_link_self_contained)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_link_self_contained USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ rustc_session[6a23]::options::parse::parse_link_self_contained)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_link_self_contained USES crate::core::std::option::Option::<T>::is_none (AssocFn) [DefId: DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ rustc_session[6a23]::options::parse::parse_link_self_contained)",
+      "used_def_id": "DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_link_self_contained USES crate::rustc_session::config::LinkSelfContained::handle_cli_component (AssocFn) [DefId: DefId(0:418 ~ rustc_session[6a23]::config::{impl#1}::handle_cli_component)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ rustc_session[6a23]::options::parse::parse_link_self_contained)",
+      "used_def_id": "DefId(0:418 ~ rustc_session[6a23]::config::{impl#1}::handle_cli_component)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_link_self_contained USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ rustc_session[6a23]::options::parse::parse_link_self_contained)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_link_self_contained USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ rustc_session[6a23]::options::parse::parse_link_self_contained)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_linker_features USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1104 ~ rustc_session[6a23]::options::parse::parse_linker_features)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_linker_features USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1104 ~ rustc_session[6a23]::options::parse::parse_linker_features)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_linker_features USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1104 ~ rustc_session[6a23]::options::parse::parse_linker_features)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_linker_features USES crate::core::std::option::Option::<T>::is_none (AssocFn) [DefId: DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1104 ~ rustc_session[6a23]::options::parse::parse_linker_features)",
+      "used_def_id": "DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_linker_features USES crate::rustc_session::config::LinkerFeaturesCli::handle_cli_feature (AssocFn) [DefId: DefId(0:426 ~ rustc_session[6a23]::config::{impl#2}::handle_cli_feature)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1104 ~ rustc_session[6a23]::options::parse::parse_linker_features)",
+      "used_def_id": "DefId(0:426 ~ rustc_session[6a23]::config::{impl#2}::handle_cli_feature)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_linker_features USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1104 ~ rustc_session[6a23]::options::parse::parse_linker_features)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_linker_features USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1104 ~ rustc_session[6a23]::options::parse::parse_linker_features)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_split_debuginfo USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1106 ~ rustc_session[6a23]::options::parse::parse_split_debuginfo)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_split_debuginfo USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1106 ~ rustc_session[6a23]::options::parse::parse_split_debuginfo)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_split_debuginfo USES crate::core::std::str::FromStr::from_str (AssocFn) [DefId: DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1106 ~ rustc_session[6a23]::options::parse::parse_split_debuginfo)",
+      "used_def_id": "DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_split_dwarf_kind USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1108 ~ rustc_session[6a23]::options::parse::parse_split_dwarf_kind)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_split_dwarf_kind USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1108 ~ rustc_session[6a23]::options::parse::parse_split_dwarf_kind)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_split_dwarf_kind USES crate::core::std::str::FromStr::from_str (AssocFn) [DefId: DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1108 ~ rustc_session[6a23]::options::parse::parse_split_dwarf_kind)",
+      "used_def_id": "DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_stack_protector USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1110 ~ rustc_session[6a23]::options::parse::parse_stack_protector)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_stack_protector USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1110 ~ rustc_session[6a23]::options::parse::parse_stack_protector)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_stack_protector USES crate::core::std::str::FromStr::from_str (AssocFn) [DefId: DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1110 ~ rustc_session[6a23]::options::parse::parse_stack_protector)",
+      "used_def_id": "DefId(2:14790 ~ core[4720]::str::traits::FromStr::from_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_branch_protection USES crate::core::std::option::Option::<T>::get_or_insert_default (AssocFn) [DefId: DefId(2:10272 ~ core[4720]::option::{impl#0}::get_or_insert_default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1112 ~ rustc_session[6a23]::options::parse::parse_branch_protection)",
+      "used_def_id": "DefId(2:10272 ~ core[4720]::option::{impl#0}::get_or_insert_default)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_branch_protection USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1112 ~ rustc_session[6a23]::options::parse::parse_branch_protection)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_branch_protection USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1112 ~ rustc_session[6a23]::options::parse::parse_branch_protection)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_branch_protection USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1112 ~ rustc_session[6a23]::options::parse::parse_branch_protection)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_branch_protection USES crate::core::std::option::Option::<T>::is_none (AssocFn) [DefId: DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1112 ~ rustc_session[6a23]::options::parse::parse_branch_protection)",
+      "used_def_id": "DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_branch_protection USES crate::core::std::option::Option::<T>::as_mut (AssocFn) [DefId: DefId(2:10221 ~ core[4720]::option::{impl#0}::as_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1112 ~ rustc_session[6a23]::options::parse::parse_branch_protection)",
+      "used_def_id": "DefId(2:10221 ~ core[4720]::option::{impl#0}::as_mut)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_branch_protection USES crate::core::std::option::Option::<T>::as_mut (AssocFn) [DefId: DefId(2:10221 ~ core[4720]::option::{impl#0}::as_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1112 ~ rustc_session[6a23]::options::parse::parse_branch_protection)",
+      "used_def_id": "DefId(2:10221 ~ core[4720]::option::{impl#0}::as_mut)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_branch_protection USES crate::core::std::option::Option::<T>::as_mut (AssocFn) [DefId: DefId(2:10221 ~ core[4720]::option::{impl#0}::as_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1112 ~ rustc_session[6a23]::options::parse::parse_branch_protection)",
+      "used_def_id": "DefId(2:10221 ~ core[4720]::option::{impl#0}::as_mut)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_branch_protection USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1112 ~ rustc_session[6a23]::options::parse::parse_branch_protection)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_branch_protection USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1112 ~ rustc_session[6a23]::options::parse::parse_branch_protection)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_collapse_macro_debuginfo USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1113 ~ rustc_session[6a23]::options::parse::parse_collapse_macro_debuginfo)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_collapse_macro_debuginfo USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1113 ~ rustc_session[6a23]::options::parse::parse_collapse_macro_debuginfo)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_inlining_threshold USES crate::core::bitflags::__private::core::str::<impl str>::parse (AssocFn) [DefId: DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1115 ~ rustc_session[6a23]::options::parse::parse_inlining_threshold)",
+      "used_def_id": "DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_llvm_module_flag USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1116 ~ rustc_session[6a23]::options::parse::parse_llvm_module_flag)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_llvm_module_flag USES crate::core::bitflags::__private::core::str::<impl str>::split (AssocFn) [DefId: DefId(2:15200 ~ core[4720]::str::{impl#0}::split)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1116 ~ rustc_session[6a23]::options::parse::parse_llvm_module_flag)",
+      "used_def_id": "DefId(2:15200 ~ core[4720]::str::{impl#0}::split)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_llvm_module_flag USES crate::core::std::option::Option::<T>::unwrap_or_default (AssocFn) [DefId: DefId(2:10232 ~ core[4720]::option::{impl#0}::unwrap_or_default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1116 ~ rustc_session[6a23]::options::parse::parse_llvm_module_flag)",
+      "used_def_id": "DefId(2:10232 ~ core[4720]::option::{impl#0}::unwrap_or_default)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_llvm_module_flag USES crate::alloc::std::vec::Vec::<T, A>::as_slice (AssocFn) [DefId: DefId(3:8113 ~ alloc[27b0]::vec::{impl#1}::as_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1116 ~ rustc_session[6a23]::options::parse::parse_llvm_module_flag)",
+      "used_def_id": "DefId(3:8113 ~ alloc[27b0]::vec::{impl#1}::as_slice)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_llvm_module_flag USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1116 ~ rustc_session[6a23]::options::parse::parse_llvm_module_flag)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_llvm_module_flag USES crate::core::bitflags::__private::core::str::<impl str>::parse (AssocFn) [DefId: DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1116 ~ rustc_session[6a23]::options::parse::parse_llvm_module_flag)",
+      "used_def_id": "DefId(2:15260 ~ core[4720]::str::{impl#0}::parse)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_llvm_module_flag USES crate::alloc::std::str::<impl str>::to_lowercase (AssocFn) [DefId: DefId(3:6362 ~ alloc[27b0]::str::{impl#5}::to_lowercase)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1116 ~ rustc_session[6a23]::options::parse::parse_llvm_module_flag)",
+      "used_def_id": "DefId(3:6362 ~ alloc[27b0]::str::{impl#5}::to_lowercase)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_llvm_module_flag USES crate::core::bitflags::__private::core::slice::<impl [T]>::contains (AssocFn) [DefId: DefId(2:14156 ~ core[4720]::slice::{impl#0}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1116 ~ rustc_session[6a23]::options::parse::parse_llvm_module_flag)",
+      "used_def_id": "DefId(2:14156 ~ core[4720]::slice::{impl#0}::contains)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_llvm_module_flag USES crate::alloc::std::string::String::as_str (AssocFn) [DefId: DefId(3:6446 ~ alloc[27b0]::string::{impl#0}::as_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1116 ~ rustc_session[6a23]::options::parse::parse_llvm_module_flag)",
+      "used_def_id": "DefId(3:6446 ~ alloc[27b0]::string::{impl#0}::as_str)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_llvm_module_flag USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1116 ~ rustc_session[6a23]::options::parse::parse_llvm_module_flag)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_llvm_module_flag USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1116 ~ rustc_session[6a23]::options::parse::parse_llvm_module_flag)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_wasm_c_abi USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1118 ~ rustc_session[6a23]::options::parse::parse_wasm_c_abi)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_session::options::parse::parse_align USES crate::rustc_abi::rustc_abi::Align::from_bytes (AssocFn) [DefId: DefId(141:637 ~ rustc_abi[42d2]::{impl#23}::from_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1120 ~ rustc_session[6a23]::options::parse::parse_align)",
+      "used_def_id": "DefId(141:637 ~ rustc_abi[42d2]::{impl#23}::from_bytes)"
+    }
+  ]
+}
