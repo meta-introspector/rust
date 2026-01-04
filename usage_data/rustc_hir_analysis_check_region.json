@@ -1,0 +1,1270 @@
+{
+  "crate": "rustc_hir_analysis",
+  "module": "check::region",
+  "usages": [
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::record_var_lifetime USES crate::rustc_middle::rustc_middle::middle::region::ScopeTree::record_var_scope (AssocFn) [DefId: DefId(173:744 ~ rustc_middle[8ead]::middle::region::{impl#2}::record_var_scope)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_hir_analysis[3bcb]::check::region::record_var_lifetime)",
+      "used_def_id": "DefId(173:744 ~ rustc_middle[8ead]::middle::region::{impl#2}::record_var_scope)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::record_var_lifetime USES crate::rustc_middle::rustc_middle::middle::region::ScopeTree::record_future_incompatible_var_scope (AssocFn) [DefId: DefId(173:745 ~ rustc_middle[8ead]::middle::region::{impl#2}::record_future_incompatible_var_scope)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:591 ~ rustc_hir_analysis[3bcb]::check::region::record_var_lifetime)",
+      "used_def_id": "DefId(173:745 ~ rustc_middle[8ead]::middle::region::{impl#2}::record_future_incompatible_var_scope)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_hir_analysis::check::region::ScopeResolutionVisitor::<'tcx>::enter_node_scope_with_dtor (AssocFn) [DefId: DefId(0:614 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_node_scope_with_dtor)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(0:614 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_node_scope_with_dtor)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::core::std::iter::Iterator::enumerate (AssocFn) [DefId: DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_hir_analysis::check::region::ScopeResolutionVisitor::<'tcx>::enter_scope (AssocFn) [DefId: DefId(0:613 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_scope)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(0:613 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_scope)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_index::rustc_index::Idx::new (AssocFn) [DefId: DefId(23:431 ~ rustc_index[140d]::idx::Idx::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(23:431 ~ rustc_index[140d]::idx::Idx::new)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_hir::rustc_hir::intravisit::Visitor::visit_stmt (AssocFn) [DefId: DefId(155:961 ~ rustc_hir[e411]::intravisit::Visitor::visit_stmt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(155:961 ~ rustc_hir[e411]::intravisit::Visitor::visit_stmt)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_hir_analysis::check::region::ScopeResolutionVisitor::<'tcx>::enter_scope (AssocFn) [DefId: DefId(0:613 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_scope)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(0:613 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_scope)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_index::rustc_index::Idx::new (AssocFn) [DefId: DefId(23:431 ~ rustc_index[140d]::idx::Idx::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(23:431 ~ rustc_index[140d]::idx::Idx::new)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_hir::rustc_hir::intravisit::Visitor::visit_stmt (AssocFn) [DefId: DefId(155:961 ~ rustc_hir[e411]::intravisit::Visitor::visit_stmt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(155:961 ~ rustc_hir[e411]::intravisit::Visitor::visit_stmt)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_hir::rustc_hir::intravisit::Visitor::visit_stmt (AssocFn) [DefId: DefId(155:961 ~ rustc_hir[e411]::intravisit::Visitor::visit_stmt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(155:961 ~ rustc_hir[e411]::intravisit::Visitor::visit_stmt)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_span::rustc_span::<impl rustc_span::Span>::edition (AssocFn) [DefId: DefId(97:1086 ~ rustc_span[e3e8]::{impl#12}::edition)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(97:1086 ~ rustc_span[e3e8]::{impl#12}::edition)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_span::rustc_lint_defs::Edition::at_least_rust_2024 (AssocFn) [DefId: DefId(97:254 ~ rustc_span[e3e8]::edition::{impl#1}::at_least_rust_2024)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(97:254 ~ rustc_span[e3e8]::edition::{impl#1}::at_least_rust_2024)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_data_structures::rustc_data_structures::unord::UnordSet::<V>::contains (AssocFn) [DefId: DefId(20:2777 ~ rustc_data_structures[bda7]::unord::{impl#7}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(20:2777 ~ rustc_data_structures[bda7]::unord::{impl#7}::contains)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::lints_that_dont_need_to_run (AssocFn) [DefId: DefId(173:36678 ~ rustc_middle[8ead]::query::{impl#3}::lints_that_dont_need_to_run)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(173:36678 ~ rustc_middle[8ead]::query::{impl#3}::lints_that_dont_need_to_run)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_lint_defs::rustc_lint_defs::LintId::of (AssocFn) [DefId: DefId(136:88 ~ rustc_lint_defs[2c07]::{impl#11}::of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(136:88 ~ rustc_lint_defs[2c07]::{impl#11}::of)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_block USES crate::rustc_data_structures::rustc_data_structures::unord::UnordMap::<K, V>::insert (AssocFn) [DefId: DefId(20:2850 ~ rustc_data_structures[bda7]::unord::{impl#19}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ rustc_hir_analysis[3bcb]::check::region::resolve_block)",
+      "used_def_id": "DefId(20:2850 ~ rustc_data_structures[bda7]::unord::{impl#19}::insert)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_arm USES crate::rustc_hir_analysis::check::region::ScopeResolutionVisitor::<'tcx>::enter_node_scope_with_dtor (AssocFn) [DefId: DefId(0:614 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_node_scope_with_dtor)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:596 ~ rustc_hir_analysis[3bcb]::check::region::resolve_arm)",
+      "used_def_id": "DefId(0:614 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_node_scope_with_dtor)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_arm USES crate::rustc_hir_analysis::check::region::ScopeResolutionVisitor::<'tcx>::enter_scope (AssocFn) [DefId: DefId(0:613 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_scope)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:596 ~ rustc_hir_analysis[3bcb]::check::region::resolve_arm)",
+      "used_def_id": "DefId(0:613 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_scope)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::subscriber::Interest::never (AssocFn) [DefId: DefId(39:731 ~ tracing_core[77f1]::subscriber::{impl#4}::never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:731 ~ tracing_core[77f1]::subscriber::{impl#4}::never)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing::tracing::Span::new (AssocFn) [DefId: DefId(38:164 ~ tracing[282d]::span::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(38:164 ~ tracing[282d]::span::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_pat USES crate::tracing::tracing::Span::enter (AssocFn) [DefId: DefId(38:180 ~ tracing[282d]::span::{impl#0}::enter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3653 ~ rustc_hir_analysis[3bcb]::check::region::resolve_pat)",
+      "used_def_id": "DefId(38:180 ~ tracing[282d]::span::{impl#0}::enter)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_stmt USES crate::rustc_hir_analysis::check::region::ScopeResolutionVisitor::<'tcx>::enter_node_scope_with_dtor (AssocFn) [DefId: DefId(0:614 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_node_scope_with_dtor)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ rustc_hir_analysis[3bcb]::check::region::resolve_stmt)",
+      "used_def_id": "DefId(0:614 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_node_scope_with_dtor)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::subscriber::Interest::never (AssocFn) [DefId: DefId(39:731 ~ tracing_core[77f1]::subscriber::{impl#4}::never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:731 ~ tracing_core[77f1]::subscriber::{impl#4}::never)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing::tracing::Span::new (AssocFn) [DefId: DefId(38:164 ~ tracing[282d]::span::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(38:164 ~ tracing[282d]::span::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::tracing::tracing::Span::enter (AssocFn) [DefId: DefId(38:180 ~ tracing[282d]::span::{impl#0}::enter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(38:180 ~ tracing[282d]::span::{impl#0}::enter)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::rustc_hir_analysis::check::region::ScopeResolutionVisitor::<'tcx>::enter_node_scope_with_dtor (AssocFn) [DefId: DefId(0:614 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_node_scope_with_dtor)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(0:614 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_node_scope_with_dtor)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_body (AssocFn) [DefId: DefId(173:139 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_body)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(173:139 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_body)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::rustc_hir::rustc_hir::intravisit::Visitor::visit_body (AssocFn) [DefId: DefId(155:953 ~ rustc_hir[e411]::intravisit::Visitor::visit_body)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(155:953 ~ rustc_hir[e411]::intravisit::Visitor::visit_body)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::rustc_hir::rustc_hir::intravisit::Visitor::visit_expr (AssocFn) [DefId: DefId(155:974 ~ rustc_hir[e411]::intravisit::Visitor::visit_expr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(155:974 ~ rustc_hir[e411]::intravisit::Visitor::visit_expr)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::rustc_hir::rustc_hir::intravisit::Visitor::visit_expr (AssocFn) [DefId: DefId(155:974 ~ rustc_hir[e411]::intravisit::Visitor::visit_expr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(155:974 ~ rustc_hir[e411]::intravisit::Visitor::visit_expr)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::rustc_span::rustc_span::<impl rustc_span::Span>::at_least_rust_2024 (AssocFn) [DefId: DefId(97:1090 ~ rustc_span[e3e8]::{impl#12}::at_least_rust_2024)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(97:1090 ~ rustc_span[e3e8]::{impl#12}::at_least_rust_2024)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::rustc_hir_analysis::check::region::ScopeResolutionVisitor::<'tcx>::enter_scope (AssocFn) [DefId: DefId(0:613 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_scope)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(0:613 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_scope)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::rustc_span::rustc_span::<impl rustc_span::Span>::at_least_rust_2024 (AssocFn) [DefId: DefId(97:1090 ~ rustc_span[e3e8]::{impl#12}::at_least_rust_2024)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(97:1090 ~ rustc_span[e3e8]::{impl#12}::at_least_rust_2024)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_expr USES crate::rustc_hir_analysis::check::region::ScopeResolutionVisitor::<'tcx>::enter_scope (AssocFn) [DefId: DefId(0:613 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_scope)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3670 ~ rustc_hir_analysis[3bcb]::check::region::resolve_expr)",
+      "used_def_id": "DefId(0:613 ~ rustc_hir_analysis[3bcb]::check::region::{impl#0}::enter_scope)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::std::std::collections::HashMap::<K, V, S>::remove (AssocFn) [DefId: DefId(1:960 ~ std[93f5]::collections::hash::map::{impl#2}::remove)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(1:960 ~ std[93f5]::collections::hash::map::{impl#2}::remove)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::rustc_middle::rustc_middle::middle::region::ScopeTree::default_temporary_scope (AssocFn) [DefId: DefId(173:750 ~ rustc_middle[8ead]::middle::region::{impl#2}::default_temporary_scope)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(173:750 ~ rustc_middle[8ead]::middle::region::{impl#2}::default_temporary_scope)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::rustc_middle::rustc_middle::middle::region::ScopeTree::record_rvalue_candidate (AssocFn) [DefId: DefId(173:746 ~ rustc_middle[8ead]::middle::region::{impl#2}::record_rvalue_candidate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(173:746 ~ rustc_middle[8ead]::middle::region::{impl#2}::record_rvalue_candidate)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::rustc_hir::rustc_hir::intravisit::Visitor::visit_expr (AssocFn) [DefId: DefId(155:974 ~ rustc_hir[e411]::intravisit::Visitor::visit_expr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(155:974 ~ rustc_hir[e411]::intravisit::Visitor::visit_expr)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::resolve_local USES crate::rustc_hir::rustc_hir::intravisit::Visitor::visit_pat (AssocFn) [DefId: DefId(155:963 ~ rustc_hir[e411]::intravisit::Visitor::visit_pat)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:600 ~ rustc_hir_analysis[3bcb]::check::region::resolve_local)",
+      "used_def_id": "DefId(155:963 ~ rustc_hir[e411]::intravisit::Visitor::visit_pat)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::region_scope_tree USES crate::rustc_middle::rustc_middle::ty::util::<impl rustc_middle::ty::TyCtxt<'tcx>>::typeck_root_def_id (AssocFn) [DefId: DefId(173:5370 ~ rustc_middle[8ead]::ty::util::{impl#2}::typeck_root_def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:628 ~ rustc_hir_analysis[3bcb]::check::region::region_scope_tree)",
+      "used_def_id": "DefId(173:5370 ~ rustc_middle[8ead]::ty::util::{impl#2}::typeck_root_def_id)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::region_scope_tree USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:628 ~ rustc_hir_analysis[3bcb]::check::region::region_scope_tree)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::region_scope_tree USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::region_scope_tree (AssocFn) [DefId: DefId(173:36775 ~ rustc_middle[8ead]::query::{impl#3}::region_scope_tree)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:628 ~ rustc_hir_analysis[3bcb]::check::region::region_scope_tree)",
+      "used_def_id": "DefId(173:36775 ~ rustc_middle[8ead]::query::{impl#3}::region_scope_tree)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::region_scope_tree USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_maybe_body_owned_by (AssocFn) [DefId: DefId(173:145 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_maybe_body_owned_by)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:628 ~ rustc_hir_analysis[3bcb]::check::region::region_scope_tree)",
+      "used_def_id": "DefId(173:145 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_maybe_body_owned_by)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::region_scope_tree USES crate::rustc_span::rustc_span::def_id::DefId::expect_local (AssocFn) [DefId: DefId(97:573 ~ rustc_span[e3e8]::def_id::{impl#10}::expect_local)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:628 ~ rustc_hir_analysis[3bcb]::check::region::region_scope_tree)",
+      "used_def_id": "DefId(97:573 ~ rustc_span[e3e8]::def_id::{impl#10}::expect_local)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::region_scope_tree USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:628 ~ rustc_hir_analysis[3bcb]::check::region::region_scope_tree)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::region_scope_tree USES crate::rustc_hir::rustc_hir::intravisit::Visitor::visit_body (AssocFn) [DefId: DefId(155:953 ~ rustc_hir[e411]::intravisit::Visitor::visit_body)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:628 ~ rustc_hir_analysis[3bcb]::check::region::region_scope_tree)",
+      "used_def_id": "DefId(155:953 ~ rustc_hir[e411]::intravisit::Visitor::visit_body)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::region_scope_tree USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:628 ~ rustc_hir_analysis[3bcb]::check::region::region_scope_tree)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_hir_analysis::check::region::region_scope_tree USES crate::rustc_middle::rustc_middle::arena::Arena::<'tcx>::alloc (AssocFn) [DefId: DefId(173:11188 ~ rustc_middle[8ead]::arena::{impl#56}::alloc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:628 ~ rustc_hir_analysis[3bcb]::check::region::region_scope_tree)",
+      "used_def_id": "DefId(173:11188 ~ rustc_middle[8ead]::arena::{impl#56}::alloc)"
+    }
+  ]
+}
