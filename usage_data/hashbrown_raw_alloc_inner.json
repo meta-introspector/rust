@@ -1,0 +1,22 @@
+{
+  "crate": "hashbrown",
+  "module": "raw::alloc::inner",
+  "usages": [
+    {
+      "usage": "crate::hashbrown::raw::alloc::inner::do_alloc USES crate::allocator_api2::allocator_api2::alloc::Allocator::allocate (AssocFn) [DefId: DefId(4:50 ~ allocator_api2[a6f1]::stable::alloc::Allocator::allocate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ hashbrown[7333]::raw::alloc::inner::do_alloc)",
+      "used_def_id": "DefId(4:50 ~ allocator_api2[a6f1]::stable::alloc::Allocator::allocate)"
+    },
+    {
+      "usage": "crate::hashbrown::raw::alloc::inner::do_alloc USES crate::core::core::ptr::NonNull::<T>::cast (AssocFn) [DefId: DefId(1:2570 ~ core[4720]::ptr::non_null::{impl#3}::cast)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ hashbrown[7333]::raw::alloc::inner::do_alloc)",
+      "used_def_id": "DefId(1:2570 ~ core[4720]::ptr::non_null::{impl#3}::cast)"
+    }
+  ]
+}
