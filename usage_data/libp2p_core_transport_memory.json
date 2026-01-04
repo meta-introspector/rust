@@ -1,0 +1,54 @@
+{
+  "crate": "libp2p_core",
+  "module": "transport::memory",
+  "usages": [
+    {
+      "usage": "crate::libp2p_core::transport::memory::HUB USES crate::once_cell::once_cell::sync::Lazy::<T, F>::new (AssocFn) [DefId: DefId(58:235 ~ once_cell[255b]::sync::{impl#10}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:538 ~ libp2p_core[efce]::transport::memory::HUB)",
+      "used_def_id": "DefId(58:235 ~ once_cell[255b]::sync::{impl#10}::new)"
+    },
+    {
+      "usage": "crate::libp2p_core::transport::memory::HUB USES crate::lock_api::parking_lot::lock_api::Mutex::<R, T>::new (AssocFn) [DefId: DefId(118:48 ~ lock_api[0759]::mutex::{impl#2}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:538 ~ libp2p_core[efce]::transport::memory::HUB)",
+      "used_def_id": "DefId(118:48 ~ lock_api[0759]::mutex::{impl#2}::new)"
+    },
+    {
+      "usage": "crate::libp2p_core::transport::memory::HUB USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:538 ~ libp2p_core[efce]::transport::memory::HUB)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::libp2p_core::transport::memory::parse_memory_addr USES crate::multiaddr::multiaddr::Multiaddr::iter (AssocFn) [DefId: DefId(20:228 ~ multiaddr[fe99]::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:581 ~ libp2p_core[efce]::transport::memory::parse_memory_addr)",
+      "used_def_id": "DefId(20:228 ~ multiaddr[fe99]::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::libp2p_core::transport::memory::parse_memory_addr USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:581 ~ libp2p_core[efce]::transport::memory::parse_memory_addr)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::libp2p_core::transport::memory::parse_memory_addr USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:581 ~ libp2p_core[efce]::transport::memory::parse_memory_addr)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "crate": "ctrlc",
+  "module": "platform::unix",
+  "usages": [
+    {
+      "usage": "crate::ctrlc::platform::unix::init_os_handler USES crate::nix::nix::sys::signal::SigAction::new (AssocFn) [DefId: DefId(20:10259 ~ nix[db1d]::sys::signal::{impl#56}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ ctrlc[3f68]::platform::unix::init_os_handler)",
+      "used_def_id": "DefId(20:10259 ~ nix[db1d]::sys::signal::{impl#56}::new)"
+    },
+    {
+      "usage": "crate::ctrlc::platform::unix::init_os_handler USES crate::nix::nix::sys::signal::SaFlags::SA_RESTART (AssocConst) [DefId: DefId(20:10004 ~ nix[db1d]::sys::signal::{impl#32}::SA_RESTART)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ ctrlc[3f68]::platform::unix::init_os_handler)",
+      "used_def_id": "DefId(20:10004 ~ nix[db1d]::sys::signal::{impl#32}::SA_RESTART)"
+    },
+    {
+      "usage": "crate::ctrlc::platform::unix::init_os_handler USES crate::nix::nix::sys::signal::SigSet::empty (AssocFn) [DefId: DefId(20:10208 ~ nix[db1d]::sys::signal::{impl#43}::empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ ctrlc[3f68]::platform::unix::init_os_handler)",
+      "used_def_id": "DefId(20:10208 ~ nix[db1d]::sys::signal::{impl#43}::empty)"
+    },
+    {
+      "usage": "crate::ctrlc::platform::unix::init_os_handler USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ ctrlc[3f68]::platform::unix::init_os_handler)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::ctrlc::platform::unix::init_os_handler USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ ctrlc[3f68]::platform::unix::init_os_handler)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::ctrlc::platform::unix::init_os_handler USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ ctrlc[3f68]::platform::unix::init_os_handler)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::ctrlc::platform::unix::init_os_handler USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ ctrlc[3f68]::platform::unix::init_os_handler)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::ctrlc::platform::unix::init_os_handler USES crate::nix::nix::sys::signal::SigAction::handler (AssocFn) [DefId: DefId(20:10263 ~ nix[db1d]::sys::signal::{impl#56}::handler)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ ctrlc[3f68]::platform::unix::init_os_handler)",
+      "used_def_id": "DefId(20:10263 ~ nix[db1d]::sys::signal::{impl#56}::handler)"
+    },
+    {
+      "usage": "crate::ctrlc::platform::unix::init_os_handler USES crate::core::std::result::Result::<T, E>::unwrap (AssocFn) [DefId: DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ ctrlc[3f68]::platform::unix::init_os_handler)",
+      "used_def_id": "DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::ctrlc::platform::unix::init_os_handler USES crate::nix::nix::errno::Errno::EEXIST (Ctor(Variant, Const)) [DefId: DefId(20:745 ~ nix[db1d]::errno::consts::Errno::EEXIST::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ ctrlc[3f68]::platform::unix::init_os_handler)",
+      "used_def_id": "DefId(20:745 ~ nix[db1d]::errno::consts::Errno::EEXIST::{constructor#0})"
+    }
+  ]
+}

@@ -1,0 +1,2558 @@
+{
+  "crate": "brotli_decompressor",
+  "module": "decode",
+  "usages": [
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSimpleHuffmanSymbols USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:588 ~ brotli_decompressor[2727]::decode::ReadSimpleHuffmanSymbols)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessSingleCodeLength USES crate::core::core::num::<impl u32>::wrapping_sub (AssocFn) [DefId: DefId(1:35310 ~ core[4720]::num::{impl#8}::wrapping_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:592 ~ brotli_decompressor[2727]::decode::ProcessSingleCodeLength)",
+      "used_def_id": "DefId(1:35310 ~ core[4720]::num::{impl#8}::wrapping_sub)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessRepeatedCodeLength USES crate::core::core::num::<impl u32>::wrapping_sub (AssocFn) [DefId: DefId(1:35310 ~ core[4720]::num::{impl#8}::wrapping_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:593 ~ brotli_decompressor[2727]::decode::ProcessRepeatedCodeLength)",
+      "used_def_id": "DefId(1:35310 ~ core[4720]::num::{impl#8}::wrapping_sub)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSymbolCodeLengths USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:594 ~ brotli_decompressor[2727]::decode::ReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSymbolCodeLengths USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:594 ~ brotli_decompressor[2727]::decode::ReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSymbolCodeLengths USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:594 ~ brotli_decompressor[2727]::decode::ReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSymbolCodeLengths USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:594 ~ brotli_decompressor[2727]::decode::ReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSymbolCodeLengths USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:594 ~ brotli_decompressor[2727]::decode::ReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSymbolCodeLengths USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:594 ~ brotli_decompressor[2727]::decode::ReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSymbolCodeLengths USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:594 ~ brotli_decompressor[2727]::decode::ReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadSymbolCodeLengths USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:594 ~ brotli_decompressor[2727]::decode::ReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::SafeReadSymbolCodeLengths USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ brotli_decompressor[2727]::decode::SafeReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::SafeReadSymbolCodeLengths USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ brotli_decompressor[2727]::decode::SafeReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::SafeReadSymbolCodeLengths USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ brotli_decompressor[2727]::decode::SafeReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::SafeReadSymbolCodeLengths USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ brotli_decompressor[2727]::decode::SafeReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::SafeReadSymbolCodeLengths USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ brotli_decompressor[2727]::decode::SafeReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::SafeReadSymbolCodeLengths USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ brotli_decompressor[2727]::decode::SafeReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::SafeReadSymbolCodeLengths USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ brotli_decompressor[2727]::decode::SafeReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::SafeReadSymbolCodeLengths USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:598 ~ brotli_decompressor[2727]::decode::SafeReadSymbolCodeLengths)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadCodeLengthCodeLengths USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ brotli_decompressor[2727]::decode::ReadCodeLengthCodeLengths)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadCodeLengthCodeLengths USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ brotli_decompressor[2727]::decode::ReadCodeLengthCodeLengths)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadCodeLengthCodeLengths USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ brotli_decompressor[2727]::decode::ReadCodeLengthCodeLengths)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadCodeLengthCodeLengths USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ brotli_decompressor[2727]::decode::ReadCodeLengthCodeLengths)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadCodeLengthCodeLengths USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ brotli_decompressor[2727]::decode::ReadCodeLengthCodeLengths)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadCodeLengthCodeLengths USES crate::core::core::num::<impl u32>::wrapping_sub (AssocFn) [DefId: DefId(1:35310 ~ core[4720]::num::{impl#8}::wrapping_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ brotli_decompressor[2727]::decode::ReadCodeLengthCodeLengths)",
+      "used_def_id": "DefId(1:35310 ~ core[4720]::num::{impl#8}::wrapping_sub)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadCodeLengthCodeLengths USES crate::core::core::num::<impl u32>::wrapping_sub (AssocFn) [DefId: DefId(1:35310 ~ core[4720]::num::{impl#8}::wrapping_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ brotli_decompressor[2727]::decode::ReadCodeLengthCodeLengths)",
+      "used_def_id": "DefId(1:35310 ~ core[4720]::num::{impl#8}::wrapping_sub)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadCodeLengthCodeLengths USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ brotli_decompressor[2727]::decode::ReadCodeLengthCodeLengths)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadCodeLengthCodeLengths USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:602 ~ brotli_decompressor[2727]::decode::ReadCodeLengthCodeLengths)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::RangeFrom (Struct) [DefId: DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::iter::Iterator::enumerate (AssocFn) [DefId: DefId(1:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::RangeFrom (Struct) [DefId: DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadHuffmanCode USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:606 ~ brotli_decompressor[2727]::decode::ReadHuffmanCode)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::iter::Iterator::enumerate (AssocFn) [DefId: DefId(1:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::InverseMoveToFrontTransform USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:615 ~ brotli_decompressor[2727]::decode::InverseMoveToFrontTransform)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::HuffmanTreeGroupDecode USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:617 ~ brotli_decompressor[2727]::decode::HuffmanTreeGroupDecode)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::bzero USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:622 ~ brotli_decompressor[2727]::decode::bzero)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::bzero USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:622 ~ brotli_decompressor[2727]::decode::bzero)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::bzero USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:622 ~ brotli_decompressor[2727]::decode::bzero)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::bzero USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:622 ~ brotli_decompressor[2727]::decode::bzero)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::bzero USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:622 ~ brotli_decompressor[2727]::decode::bzero)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMapInner USES crate::alloc_no_stdlib::alloc_stdlib::Allocator::alloc_cell (AssocFn) [DefId: DefId(21:32 ~ alloc_no_stdlib[e91f]::stack_allocator::Allocator::alloc_cell)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:623 ~ brotli_decompressor[2727]::decode::DecodeContextMapInner)",
+      "used_def_id": "DefId(21:32 ~ alloc_no_stdlib[e91f]::stack_allocator::Allocator::alloc_cell)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMapInner USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:623 ~ brotli_decompressor[2727]::decode::DecodeContextMapInner)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMapInner USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:623 ~ brotli_decompressor[2727]::decode::DecodeContextMapInner)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMapInner USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:623 ~ brotli_decompressor[2727]::decode::DecodeContextMapInner)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMapInner USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:623 ~ brotli_decompressor[2727]::decode::DecodeContextMapInner)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMapInner USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:623 ~ brotli_decompressor[2727]::decode::DecodeContextMapInner)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMapInner USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:623 ~ brotli_decompressor[2727]::decode::DecodeContextMapInner)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMapInner USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:623 ~ brotli_decompressor[2727]::decode::DecodeContextMapInner)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMapInner USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:623 ~ brotli_decompressor[2727]::decode::DecodeContextMapInner)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMapInner USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:623 ~ brotli_decompressor[2727]::decode::DecodeContextMapInner)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMap USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:627 ~ brotli_decompressor[2727]::decode::DecodeContextMap)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMap USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:627 ~ brotli_decompressor[2727]::decode::DecodeContextMap)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMap USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:627 ~ brotli_decompressor[2727]::decode::DecodeContextMap)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeContextMap USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:627 ~ brotli_decompressor[2727]::decode::DecodeContextMap)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::core::core::ops::RangeFrom (Struct) [DefId: DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::core::core::ops::RangeFrom (Struct) [DefId: DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::core::core::ops::RangeFrom (Struct) [DefId: DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::core::core::ops::RangeFrom (Struct) [DefId: DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeBlockTypeAndLength USES crate::core::core::ops::RangeFrom (Struct) [DefId: DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:631 ~ brotli_decompressor[2727]::decode::DecodeBlockTypeAndLength)",
+      "used_def_id": "DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DetectTrivialLiteralBlockTypes USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:633 ~ brotli_decompressor[2727]::decode::DetectTrivialLiteralBlockTypes)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DetectTrivialLiteralBlockTypes USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:633 ~ brotli_decompressor[2727]::decode::DetectTrivialLiteralBlockTypes)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DetectTrivialLiteralBlockTypes USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:633 ~ brotli_decompressor[2727]::decode::DetectTrivialLiteralBlockTypes)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DetectTrivialLiteralBlockTypes USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:633 ~ brotli_decompressor[2727]::decode::DetectTrivialLiteralBlockTypes)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DetectTrivialLiteralBlockTypes USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:633 ~ brotli_decompressor[2727]::decode::DetectTrivialLiteralBlockTypes)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DetectTrivialLiteralBlockTypes USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:633 ~ brotli_decompressor[2727]::decode::DetectTrivialLiteralBlockTypes)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DetectTrivialLiteralBlockTypes USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:633 ~ brotli_decompressor[2727]::decode::DetectTrivialLiteralBlockTypes)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DetectTrivialLiteralBlockTypes USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:633 ~ brotli_decompressor[2727]::decode::DetectTrivialLiteralBlockTypes)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DetectTrivialLiteralBlockTypes USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:633 ~ brotli_decompressor[2727]::decode::DetectTrivialLiteralBlockTypes)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DetectTrivialLiteralBlockTypes USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:633 ~ brotli_decompressor[2727]::decode::DetectTrivialLiteralBlockTypes)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::PrepareLiteralDecoding USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:637 ~ brotli_decompressor[2727]::decode::PrepareLiteralDecoding)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::PrepareLiteralDecoding USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:637 ~ brotli_decompressor[2727]::decode::PrepareLiteralDecoding)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::DecodeDistanceBlockSwitchInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:657 ~ brotli_decompressor[2727]::decode::DecodeDistanceBlockSwitchInternal)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::WriteRingBuffer USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:673 ~ brotli_decompressor[2727]::decode::WriteRingBuffer)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::WriteRingBuffer USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:673 ~ brotli_decompressor[2727]::decode::WriteRingBuffer)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::WriteRingBuffer USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:673 ~ brotli_decompressor[2727]::decode::WriteRingBuffer)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::WriteRingBuffer USES crate::core::core::slice::<impl [T]>::clone_from_slice (AssocFn) [DefId: DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:673 ~ brotli_decompressor[2727]::decode::WriteRingBuffer)",
+      "used_def_id": "DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::WriteRingBuffer USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:673 ~ brotli_decompressor[2727]::decode::WriteRingBuffer)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::WriteRingBuffer USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:673 ~ brotli_decompressor[2727]::decode::WriteRingBuffer)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::WrapRingBuffer USES crate::core::core::slice::<impl [T]>::split_at_mut (AssocFn) [DefId: DefId(1:14127 ~ core[4720]::slice::{impl#0}::split_at_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:678 ~ brotli_decompressor[2727]::decode::WrapRingBuffer)",
+      "used_def_id": "DefId(1:14127 ~ core[4720]::slice::{impl#0}::split_at_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::WrapRingBuffer USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:678 ~ brotli_decompressor[2727]::decode::WrapRingBuffer)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::WrapRingBuffer USES crate::core::core::slice::<impl [T]>::clone_from_slice (AssocFn) [DefId: DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:678 ~ brotli_decompressor[2727]::decode::WrapRingBuffer)",
+      "used_def_id": "DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::WrapRingBuffer USES crate::core::core::slice::<impl [T]>::split_at_mut (AssocFn) [DefId: DefId(1:14127 ~ core[4720]::slice::{impl#0}::split_at_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:678 ~ brotli_decompressor[2727]::decode::WrapRingBuffer)",
+      "used_def_id": "DefId(1:14127 ~ core[4720]::slice::{impl#0}::split_at_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::WrapRingBuffer USES crate::core::core::slice::<impl [T]>::split_at (AssocFn) [DefId: DefId(1:14126 ~ core[4720]::slice::{impl#0}::split_at)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:678 ~ brotli_decompressor[2727]::decode::WrapRingBuffer)",
+      "used_def_id": "DefId(1:14126 ~ core[4720]::slice::{impl#0}::split_at)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::CopyUncompressedBlockToOutput USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:682 ~ brotli_decompressor[2727]::decode::CopyUncompressedBlockToOutput)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::CopyUncompressedBlockToOutput USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:682 ~ brotli_decompressor[2727]::decode::CopyUncompressedBlockToOutput)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::CopyUncompressedBlockToOutput USES crate::core::core::ops::RangeFrom (Struct) [DefId: DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:682 ~ brotli_decompressor[2727]::decode::CopyUncompressedBlockToOutput)",
+      "used_def_id": "DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::alloc_no_stdlib::alloc_stdlib::Allocator::alloc_cell (AssocFn) [DefId: DefId(21:32 ~ alloc_no_stdlib[e91f]::stack_allocator::Allocator::alloc_cell)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(21:32 ~ alloc_no_stdlib[e91f]::stack_allocator::Allocator::alloc_cell)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::core::core::slice::<impl [T]>::clone_from_slice (AssocFn) [DefId: DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::alloc_no_stdlib::alloc_stdlib::Allocator::free_cell (AssocFn) [DefId: DefId(21:33 ~ alloc_no_stdlib[e91f]::stack_allocator::Allocator::free_cell)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(21:33 ~ alloc_no_stdlib[e91f]::stack_allocator::Allocator::free_cell)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliAllocateRingBuffer USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:686 ~ brotli_decompressor[2727]::decode::BrotliAllocateRingBuffer)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadContextModes USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:691 ~ brotli_decompressor[2727]::decode::ReadContextModes)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadContextModes USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:691 ~ brotli_decompressor[2727]::decode::ReadContextModes)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadContextModes USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:691 ~ brotli_decompressor[2727]::decode::ReadContextModes)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadContextModes USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:691 ~ brotli_decompressor[2727]::decode::ReadContextModes)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadContextModes USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:691 ~ brotli_decompressor[2727]::decode::ReadContextModes)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadContextModes USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:691 ~ brotli_decompressor[2727]::decode::ReadContextModes)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadContextModes USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:691 ~ brotli_decompressor[2727]::decode::ReadContextModes)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadContextModes USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:691 ~ brotli_decompressor[2727]::decode::ReadContextModes)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadDistanceInternal USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:702 ~ brotli_decompressor[2727]::decode::ReadDistanceInternal)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadDistanceInternal USES crate::core::core::num::<impl i32>::wrapping_sub (AssocFn) [DefId: DefId(1:34391 ~ core[4720]::num::{impl#2}::wrapping_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:702 ~ brotli_decompressor[2727]::decode::ReadDistanceInternal)",
+      "used_def_id": "DefId(1:34391 ~ core[4720]::num::{impl#2}::wrapping_sub)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadDistanceInternal USES crate::core::core::num::<impl i32>::wrapping_add (AssocFn) [DefId: DefId(1:34389 ~ core[4720]::num::{impl#2}::wrapping_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:702 ~ brotli_decompressor[2727]::decode::ReadDistanceInternal)",
+      "used_def_id": "DefId(1:34389 ~ core[4720]::num::{impl#2}::wrapping_add)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadDistanceInternal USES crate::core::core::num::<impl i64>::wrapping_add (AssocFn) [DefId: DefId(1:34542 ~ core[4720]::num::{impl#3}::wrapping_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:702 ~ brotli_decompressor[2727]::decode::ReadDistanceInternal)",
+      "used_def_id": "DefId(1:34542 ~ core[4720]::num::{impl#3}::wrapping_add)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadDistanceInternal USES crate::core::core::num::<impl i64>::wrapping_add (AssocFn) [DefId: DefId(1:34542 ~ core[4720]::num::{impl#3}::wrapping_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:702 ~ brotli_decompressor[2727]::decode::ReadDistanceInternal)",
+      "used_def_id": "DefId(1:34542 ~ core[4720]::num::{impl#3}::wrapping_add)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadDistanceInternal USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:702 ~ brotli_decompressor[2727]::decode::ReadDistanceInternal)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadDistanceInternal USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:702 ~ brotli_decompressor[2727]::decode::ReadDistanceInternal)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadDistanceInternal USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:702 ~ brotli_decompressor[2727]::decode::ReadDistanceInternal)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadDistanceInternal USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:702 ~ brotli_decompressor[2727]::decode::ReadDistanceInternal)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadDistanceInternal USES crate::core::core::num::<impl i32>::wrapping_add (AssocFn) [DefId: DefId(1:34389 ~ core[4720]::num::{impl#2}::wrapping_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:702 ~ brotli_decompressor[2727]::decode::ReadDistanceInternal)",
+      "used_def_id": "DefId(1:34389 ~ core[4720]::num::{impl#2}::wrapping_add)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadDistanceInternal USES crate::core::core::num::<impl i32>::wrapping_sub (AssocFn) [DefId: DefId(1:34391 ~ core[4720]::num::{impl#2}::wrapping_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:702 ~ brotli_decompressor[2727]::decode::ReadDistanceInternal)",
+      "used_def_id": "DefId(1:34391 ~ core[4720]::num::{impl#2}::wrapping_sub)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadCommandInternal USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:707 ~ brotli_decompressor[2727]::decode::ReadCommandInternal)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ReadCommandInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:707 ~ brotli_decompressor[2727]::decode::ReadCommandInternal)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memmove16 USES crate::core::core::slice::<impl [T]>::clone_from_slice (AssocFn) [DefId: DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:714 ~ brotli_decompressor[2727]::decode::memmove16)",
+      "used_def_id": "DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memmove16 USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:714 ~ brotli_decompressor[2727]::decode::memmove16)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memmove16 USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:714 ~ brotli_decompressor[2727]::decode::memmove16)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memmove16 USES crate::core::core::slice::<impl [T]>::clone_from_slice (AssocFn) [DefId: DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:714 ~ brotli_decompressor[2727]::decode::memmove16)",
+      "used_def_id": "DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memmove16 USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:714 ~ brotli_decompressor[2727]::decode::memmove16)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memmove16 USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:714 ~ brotli_decompressor[2727]::decode::memmove16)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memcpy_within_slice USES crate::core::core::slice::<impl [T]>::split_at_mut (AssocFn) [DefId: DefId(1:14127 ~ core[4720]::slice::{impl#0}::split_at_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:716 ~ brotli_decompressor[2727]::decode::memcpy_within_slice)",
+      "used_def_id": "DefId(1:14127 ~ core[4720]::slice::{impl#0}::split_at_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memcpy_within_slice USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:716 ~ brotli_decompressor[2727]::decode::memcpy_within_slice)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memcpy_within_slice USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:716 ~ brotli_decompressor[2727]::decode::memcpy_within_slice)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memcpy_within_slice USES crate::core::core::slice::<impl [T]>::clone_from_slice (AssocFn) [DefId: DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:716 ~ brotli_decompressor[2727]::decode::memcpy_within_slice)",
+      "used_def_id": "DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memcpy_within_slice USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:716 ~ brotli_decompressor[2727]::decode::memcpy_within_slice)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memcpy_within_slice USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:716 ~ brotli_decompressor[2727]::decode::memcpy_within_slice)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memcpy_within_slice USES crate::core::core::slice::<impl [T]>::split_at_mut (AssocFn) [DefId: DefId(1:14127 ~ core[4720]::slice::{impl#0}::split_at_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:716 ~ brotli_decompressor[2727]::decode::memcpy_within_slice)",
+      "used_def_id": "DefId(1:14127 ~ core[4720]::slice::{impl#0}::split_at_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memcpy_within_slice USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:716 ~ brotli_decompressor[2727]::decode::memcpy_within_slice)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memcpy_within_slice USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:716 ~ brotli_decompressor[2727]::decode::memcpy_within_slice)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memcpy_within_slice USES crate::core::core::slice::<impl [T]>::clone_from_slice (AssocFn) [DefId: DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:716 ~ brotli_decompressor[2727]::decode::memcpy_within_slice)",
+      "used_def_id": "DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memcpy_within_slice USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:716 ~ brotli_decompressor[2727]::decode::memcpy_within_slice)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::memcpy_within_slice USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:716 ~ brotli_decompressor[2727]::decode::memcpy_within_slice)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecoderHasMoreOutput USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::len (AssocFn) [DefId: DefId(21:15 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:717 ~ brotli_decompressor[2727]::decode::BrotliDecoderHasMoreOutput)",
+      "used_def_id": "DefId(21:15 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecoderTakeOutput USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::len (AssocFn) [DefId: DefId(21:15 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:721 ~ brotli_decompressor[2727]::decode::BrotliDecoderTakeOutput)",
+      "used_def_id": "DefId(21:15 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::brotli_decompressor::huffman::HuffmanTreeGroup::<AllocU32, AllocHC>::build_hgroup_cache (AssocFn) [DefId: DefId(0:159 ~ brotli_decompressor[2727]::huffman::{impl#2}::build_hgroup_cache)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(0:159 ~ brotli_decompressor[2727]::huffman::{impl#2}::build_hgroup_cache)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::brotli_decompressor::huffman::HuffmanTreeGroup::<AllocU32, AllocHC>::build_hgroup_cache (AssocFn) [DefId: DefId(0:159 ~ brotli_decompressor[2727]::huffman::{impl#2}::build_hgroup_cache)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(0:159 ~ brotli_decompressor[2727]::huffman::{impl#2}::build_hgroup_cache)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::brotli_decompressor::huffman::HuffmanTreeGroup::<AllocU32, AllocHC>::build_hgroup_cache (AssocFn) [DefId: DefId(0:159 ~ brotli_decompressor[2727]::huffman::{impl#2}::build_hgroup_cache)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(0:159 ~ brotli_decompressor[2727]::huffman::{impl#2}::build_hgroup_cache)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::core::core::slice::<impl [T]>::clone_from_slice (AssocFn) [DefId: DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::core::core::ops::RangeFrom (Struct) [DefId: DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::ProcessCommandsInternal USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:734 ~ brotli_decompressor[2727]::decode::ProcessCommandsInternal)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::slice::<impl [T]>::clone_from_slice (AssocFn) [DefId: DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::slice::<impl [T]>::clone_from_slice (AssocFn) [DefId: DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:14206 ~ core[4720]::slice::{impl#0}::clone_from_slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::Allocator::alloc_cell (AssocFn) [DefId: DefId(21:32 ~ alloc_no_stdlib[e91f]::stack_allocator::Allocator::alloc_cell)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:32 ~ alloc_no_stdlib[e91f]::stack_allocator::Allocator::alloc_cell)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::Allocator::alloc_cell (AssocFn) [DefId: DefId(21:32 ~ alloc_no_stdlib[e91f]::stack_allocator::Allocator::alloc_cell)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:32 ~ alloc_no_stdlib[e91f]::stack_allocator::Allocator::alloc_cell)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::brotli_decompressor::state::BrotliState::<AllocU8, AllocU32, AllocHC>::BrotliStateMetablockBegin (AssocFn) [DefId: DefId(0:385 ~ brotli_decompressor[2727]::state::{impl#0}::BrotliStateMetablockBegin)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(0:385 ~ brotli_decompressor[2727]::state::{impl#0}::BrotliStateMetablockBegin)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapperMut::slice_mut (AssocFn) [DefId: DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:18 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapperMut::slice_mut)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::ops::RangeFrom (Struct) [DefId: DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::Allocator::alloc_cell (AssocFn) [DefId: DefId(21:32 ~ alloc_no_stdlib[e91f]::stack_allocator::Allocator::alloc_cell)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:32 ~ alloc_no_stdlib[e91f]::stack_allocator::Allocator::alloc_cell)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::brotli_decompressor::huffman::HuffmanTreeGroup::<AllocU32, AllocHC>::init (AssocFn) [DefId: DefId(0:155 ~ brotli_decompressor[2727]::huffman::{impl#2}::init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(0:155 ~ brotli_decompressor[2727]::huffman::{impl#2}::init)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::brotli_decompressor::huffman::HuffmanTreeGroup::<AllocU32, AllocHC>::init (AssocFn) [DefId: DefId(0:155 ~ brotli_decompressor[2727]::huffman::{impl#2}::init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(0:155 ~ brotli_decompressor[2727]::huffman::{impl#2}::init)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::brotli_decompressor::huffman::HuffmanTreeGroup::<AllocU32, AllocHC>::init (AssocFn) [DefId: DefId(0:155 ~ brotli_decompressor[2727]::huffman::{impl#2}::init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(0:155 ~ brotli_decompressor[2727]::huffman::{impl#2}::init)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::brotli_decompressor::state::BrotliState::<AllocU8, AllocU32, AllocHC>::BrotliStateCleanupAfterMetablock (AssocFn) [DefId: DefId(0:386 ~ brotli_decompressor[2727]::state::{impl#0}::BrotliStateCleanupAfterMetablock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(0:386 ~ brotli_decompressor[2727]::state::{impl#0}::BrotliStateCleanupAfterMetablock)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::brotli_decompressor::decode::BrotliDecompressStream USES crate::alloc_no_stdlib::alloc_stdlib::SliceWrapper::slice (AssocFn) [DefId: DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:749 ~ brotli_decompressor[2727]::decode::BrotliDecompressStream)",
+      "used_def_id": "DefId(21:14 ~ alloc_no_stdlib[e91f]::allocated_memory::SliceWrapper::slice)"
+    }
+  ]
+}
