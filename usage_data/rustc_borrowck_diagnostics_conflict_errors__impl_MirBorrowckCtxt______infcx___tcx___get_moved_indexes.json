@@ -1,0 +1,54 @@
+{
+  "crate": "rustc_borrowck",
+  "module": "diagnostics::conflict_errors::<impl MirBorrowckCtxt<'_, 'infcx, 'tcx>>::get_moved_indexes",
+  "usages": [
+    {
+      "usage": "crate::rustc_borrowck::diagnostics::conflict_errors::<impl MirBorrowckCtxt<'_, 'infcx, 'tcx>>::get_moved_indexes::predecessor_locations USES crate::alloc::std::slice::<impl [T]>::to_vec (AssocFn) [DefId: DefId(3:6165 ~ alloc[27b0]::slice::{impl#0}::to_vec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1273 ~ rustc_borrowck[babe]::diagnostics::conflict_errors::{impl#0}::get_moved_indexes::predecessor_locations)",
+      "used_def_id": "DefId(3:6165 ~ alloc[27b0]::slice::{impl#0}::to_vec)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::diagnostics::conflict_errors::<impl MirBorrowckCtxt<'_, 'infcx, 'tcx>>::get_moved_indexes::predecessor_locations USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1273 ~ rustc_borrowck[babe]::diagnostics::conflict_errors::{impl#0}::get_moved_indexes::predecessor_locations)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::diagnostics::conflict_errors::<impl MirBorrowckCtxt<'_, 'infcx, 'tcx>>::get_moved_indexes::predecessor_locations USES crate::rustc_middle::rustc_middle::mir::BasicBlocks::<'tcx>::predecessors (AssocFn) [DefId: DefId(175:996 ~ rustc_middle[8ead]::mir::basic_blocks::{impl#0}::predecessors)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1273 ~ rustc_borrowck[babe]::diagnostics::conflict_errors::{impl#0}::get_moved_indexes::predecessor_locations)",
+      "used_def_id": "DefId(175:996 ~ rustc_middle[8ead]::mir::basic_blocks::{impl#0}::predecessors)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::diagnostics::conflict_errors::<impl MirBorrowckCtxt<'_, 'infcx, 'tcx>>::get_moved_indexes::predecessor_locations USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1273 ~ rustc_borrowck[babe]::diagnostics::conflict_errors::{impl#0}::get_moved_indexes::predecessor_locations)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::diagnostics::conflict_errors::<impl MirBorrowckCtxt<'_, 'infcx, 'tcx>>::get_moved_indexes::predecessor_locations USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1273 ~ rustc_borrowck[babe]::diagnostics::conflict_errors::{impl#0}::get_moved_indexes::predecessor_locations)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::diagnostics::conflict_errors::<impl MirBorrowckCtxt<'_, 'infcx, 'tcx>>::get_moved_indexes::predecessor_locations USES crate::rustc_middle::rustc_middle::mir::Body::<'tcx>::terminator_loc (AssocFn) [DefId: DefId(175:3035 ~ rustc_middle[8ead]::mir::{impl#6}::terminator_loc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1273 ~ rustc_borrowck[babe]::diagnostics::conflict_errors::{impl#0}::get_moved_indexes::predecessor_locations)",
+      "used_def_id": "DefId(175:3035 ~ rustc_middle[8ead]::mir::{impl#6}::terminator_loc)"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "crate": "rustc_resolve",
+  "module": "def_collector",
+  "usages": [
+    {
+      "usage": "crate::rustc_resolve::def_collector::collect_definitions USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:460 ~ rustc_resolve[e6f1]::def_collector::collect_definitions)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_resolve::def_collector::collect_definitions USES crate::rustc_expand::rustc_expand::expand::AstFragment::visit_with (AssocFn) [DefId: DefId(154:3409 ~ rustc_expand[6bc6]::expand::{impl#33}::visit_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:460 ~ rustc_resolve[e6f1]::def_collector::collect_definitions)",
+      "used_def_id": "DefId(154:3409 ~ rustc_expand[6bc6]::expand::{impl#33}::visit_with)"
+    }
+  ]
+}

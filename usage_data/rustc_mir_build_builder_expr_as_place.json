@@ -1,0 +1,1086 @@
+{
+  "crate": "rustc_mir_build",
+  "module": "builder::expr::as_place",
+  "usages": [
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:481 ~ rustc_mir_build[51ea]::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:481 ~ rustc_mir_build[51ea]::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:481 ~ rustc_mir_build[51ea]::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture USES crate::core::std::option::Option::<T>::unwrap_or (AssocFn) [DefId: DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:481 ~ rustc_mir_build[51ea]::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture)",
+      "used_def_id": "DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:481 ~ rustc_mir_build[51ea]::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:481 ~ rustc_mir_build[51ea]::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:481 ~ rustc_mir_build[51ea]::builder::expr::as_place::convert_to_hir_projections_and_truncate_for_capture)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::is_ancestor_or_same_capture USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:482 ~ rustc_mir_build[51ea]::builder::expr::as_place::is_ancestor_or_same_capture)",
+      "used_def_id": "DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::is_ancestor_or_same_capture USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:482 ~ rustc_mir_build[51ea]::builder::expr::as_place::is_ancestor_or_same_capture)",
+      "used_def_id": "DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::is_ancestor_or_same_capture USES crate::core::std::iter::Iterator::all (AssocFn) [DefId: DefId(2:9556 ~ core[4720]::iter::traits::iterator::Iterator::all)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:482 ~ rustc_mir_build[51ea]::builder::expr::as_place::is_ancestor_or_same_capture)",
+      "used_def_id": "DefId(2:9556 ~ core[4720]::iter::traits::iterator::Iterator::all)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::is_ancestor_or_same_capture USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:482 ~ rustc_mir_build[51ea]::builder::expr::as_place::is_ancestor_or_same_capture)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::find_capture_matching_projections USES crate::core::std::iter::Iterator::find (AssocFn) [DefId: DefId(2:9570 ~ core[4720]::iter::traits::iterator::Iterator::find)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:484 ~ rustc_mir_build[51ea]::builder::expr::as_place::find_capture_matching_projections)",
+      "used_def_id": "DefId(2:9570 ~ core[4720]::iter::traits::iterator::Iterator::find)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::find_capture_matching_projections USES crate::rustc_data_structures::rustc_data_structures::sorted_map::SortedIndexMultiMap::<I, K, V>::get_by_key_enumerated (AssocFn) [DefId: DefId(24:1423 ~ rustc_data_structures[bda7]::sorted_map::index_map::{impl#0}::get_by_key_enumerated)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:484 ~ rustc_mir_build[51ea]::builder::expr::as_place::find_capture_matching_projections)",
+      "used_def_id": "DefId(24:1423 ~ rustc_data_structures[bda7]::sorted_map::index_map::{impl#0}::get_by_key_enumerated)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::find_capture_matching_projections USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:484 ~ rustc_mir_build[51ea]::builder::expr::as_place::find_capture_matching_projections)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::find_capture_matching_projections USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:484 ~ rustc_mir_build[51ea]::builder::expr::as_place::find_capture_matching_projections)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::find_capture_matching_projections USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:484 ~ rustc_mir_build[51ea]::builder::expr::as_place::find_capture_matching_projections)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(43:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::subscriber::Interest::never (AssocFn) [DefId: DefId(43:731 ~ tracing_core[77f1]::subscriber::{impl#4}::never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:731 ~ tracing_core[77f1]::subscriber::{impl#4}::never)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(43:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(43:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(43:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing::tracing::Span::new (AssocFn) [DefId: DefId(42:164 ~ tracing[282d]::span::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(42:164 ~ tracing[282d]::span::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(43:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(43:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing::tracing::Span::enter (AssocFn) [DefId: DefId(42:180 ~ tracing[282d]::span::{impl#0}::enter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(42:180 ~ tracing[282d]::span::{impl#0}::enter)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_span (AssocFn) [DefId: DefId(174:36779 ~ rustc_middle[8ead]::query::{impl#3}::def_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(174:36779 ~ rustc_middle[8ead]::query::{impl#3}::def_span)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Placeholder (Struct) [DefId: DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Placeholder (Struct) [DefId: DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1_formatted (AssocFn) [DefId: DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(43:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(43:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(43:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(43:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(43:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(43:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(43:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(43:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Placeholder (Struct) [DefId: DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Placeholder (Struct) [DefId: DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1_formatted (AssocFn) [DefId: DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(43:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(43:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(43:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(43:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(43:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(43:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::iter::Extend::extend (AssocFn) [DefId: DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:540 ~ tracing_core[77f1]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(43:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(43:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(43:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(43:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(43:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(43:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(43:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::to_upvars_resolved_place_builder USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2523 ~ rustc_mir_build[51ea]::builder::expr::as_place::to_upvars_resolved_place_builder)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::std::iter::Iterator::filter (AssocFn) [DefId: DefId(2:9468 ~ core[4720]::iter::traits::iterator::Iterator::filter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:9468 ~ core[4720]::iter::traits::iterator::Iterator::filter)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::std::iter::Iterator::copied (AssocFn) [DefId: DefId(2:9657 ~ core[4720]::iter::traits::iterator::Iterator::copied)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:9657 ~ core[4720]::iter::traits::iterator::Iterator::copied)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::is_enum (AssocFn) [DefId: DefId(174:8902 ~ rustc_middle[8ead]::ty::sty::{impl#11}::is_enum)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(174:8902 ~ rustc_middle[8ead]::ty::sty::{impl#11}::is_enum)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::strip_prefix USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:489 ~ rustc_mir_build[51ea]::builder::expr::as_place::strip_prefix)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_mir_build::builder::expr::as_place::enable_precise_capture USES crate::rustc_span::rustc_span::<impl rustc_span::Span>::at_least_rust_2021 (AssocFn) [DefId: DefId(74:1089 ~ rustc_span[e3e8]::{impl#12}::at_least_rust_2021)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:531 ~ rustc_mir_build[51ea]::builder::expr::as_place::enable_precise_capture)",
+      "used_def_id": "DefId(74:1089 ~ rustc_span[e3e8]::{impl#12}::at_least_rust_2021)"
+    }
+  ]
+}

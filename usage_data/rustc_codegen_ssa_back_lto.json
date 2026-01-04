@@ -1,0 +1,510 @@
+{
+  "crate": "rustc_codegen_ssa",
+  "module": "back::lto",
+  "usages": [
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::rustc_session::rustc_session::Session::lto (AssocFn) [DefId: DefId(175:1365 ~ rustc_session[612c]::session::{impl#3}::lto)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(175:1365 ~ rustc_session[612c]::session::{impl#3}::lto)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::crate_types (AssocFn) [DefId: DefId(164:6810 ~ rustc_middle[8ead]::ty::context::{impl#25}::crate_types)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(164:6810 ~ rustc_middle[8ead]::ty::context::{impl#25}::crate_types)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::iter::Iterator::filter_map (AssocFn) [DefId: DefId(2:9470 ~ core[4720]::iter::traits::iterator::Iterator::filter_map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:9470 ~ core[4720]::iter::traits::iterator::Iterator::filter_map)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::iter::Iterator::chain (AssocFn) [DefId: DefId(2:9451 ~ core[4720]::iter::traits::iterator::Iterator::chain)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:9451 ~ core[4720]::iter::traits::iterator::Iterator::chain)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::bitflags::__private::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::exported_non_generic_symbols (AssocFn) [DefId: DefId(164:36906 ~ rustc_middle[8ead]::query::{impl#3}::exported_non_generic_symbols)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(164:36906 ~ rustc_middle[8ead]::query::{impl#3}::exported_non_generic_symbols)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::exported_generic_symbols (AssocFn) [DefId: DefId(164:36907 ~ rustc_middle[8ead]::query::{impl#3}::exported_generic_symbols)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(164:36907 ~ rustc_middle[8ead]::query::{impl#3}::exported_generic_symbols)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::rustc_middle::rustc_middle::middle::exported_symbols::SymbolExportLevel::is_below_threshold (AssocFn) [DefId: DefId(164:625 ~ rustc_middle[8ead]::middle::exported_symbols::{impl#0}::is_below_threshold)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(164:625 ~ rustc_middle[8ead]::middle::exported_symbols::{impl#0}::is_below_threshold)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::generic_activity (AssocFn) [DefId: DefId(20:1067 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(20:1067 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(39:538 ~ tracing_core[77f1]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:538 ~ tracing_core[77f1]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(39:538 ~ tracing_core[77f1]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:538 ~ tracing_core[77f1]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::alloc::std::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::rustc_session::rustc_session::Session::lto (AssocFn) [DefId: DefId(175:1365 ~ rustc_session[612c]::session::{impl#3}::lto)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(175:1365 ~ rustc_session[612c]::session::{impl#3}::lto)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::generic_activity (AssocFn) [DefId: DefId(20:1067 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(20:1067 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::iter::Extend::extend (AssocFn) [DefId: DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::iter::Extend::extend (AssocFn) [DefId: DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::exported_symbols_for_lto USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_codegen_ssa[2fdc]::back::lto::exported_symbols_for_lto)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::rustc_codegen_ssa::back::write::CodegenContext::<B>::create_dcx (AssocFn) [DefId: DefId(0:1452 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#2}::create_dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(0:1452 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#2}::create_dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::core::bitflags::__private::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_fatal (AssocFn) [DefId: DefId(165:1229 ~ rustc_errors[6adb]::{impl#9}::emit_fatal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(165:1229 ~ rustc_errors[6adb]::{impl#9}::emit_fatal)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::rustc_errors::rustc_errors::DiagCtxt::handle (AssocFn) [DefId: DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_fatal (AssocFn) [DefId: DefId(165:1229 ~ rustc_errors[6adb]::{impl#9}::emit_fatal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(165:1229 ~ rustc_errors[6adb]::{impl#9}::emit_fatal)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::rustc_errors::rustc_errors::DiagCtxt::handle (AssocFn) [DefId: DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_fatal (AssocFn) [DefId: DefId(165:1229 ~ rustc_errors[6adb]::{impl#9}::emit_fatal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(165:1229 ~ rustc_errors[6adb]::{impl#9}::emit_fatal)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::rustc_errors::rustc_errors::DiagCtxt::handle (AssocFn) [DefId: DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_fatal (AssocFn) [DefId: DefId(165:1229 ~ rustc_errors[6adb]::{impl#9}::emit_fatal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(165:1229 ~ rustc_errors[6adb]::{impl#9}::emit_fatal)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::lto::check_lto_allowed USES crate::rustc_errors::rustc_errors::DiagCtxt::handle (AssocFn) [DefId: DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1089 ~ rustc_codegen_ssa[2fdc]::back::lto::check_lto_allowed)",
+      "used_def_id": "DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)"
+    }
+  ]
+}
