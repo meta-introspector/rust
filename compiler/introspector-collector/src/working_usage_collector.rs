@@ -19,6 +19,15 @@ use serde::{Serialize, Deserialize};
 
 static USAGE_CACHE: OnceLock<HashMap<String, Vec<UsageEntry>>> = OnceLock::new();
 
+#[derive(Serialize, Deserialize, Debug, Clone)]
+struct CleanGraphData {
+    crate_name: String,
+    call_graph: HashMap<String, Vec<String>>,
+    symbol_table: HashMap<String, String>,
+    def_paths: HashMap<String, String>,
+    total_nodes: usize,
+}
+
 #[derive(Serialize, Deserialize, Clone)]
 struct UsageEntry {
     usage: String,
