@@ -1,0 +1,566 @@
+{
+  "crate": "rustc_trait_selection",
+  "module": "error_reporting::traits::ambiguity",
+  "usages": [
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::Binder::<I, T>::skip_binder (AssocFn) [DefId: DefId(178:1304 ~ rustc_type_ir[d73e]::binder::{impl#7}::skip_binder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(178:1304 ~ rustc_type_ir[d73e]::binder::{impl#7}::skip_binder)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_trait_selection::traits::engine::ObligationCtxt::<'a, 'tcx>::new (AssocFn) [DefId: DefId(0:3576 ~ rustc_trait_selection[b15a]::traits::engine::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(0:3576 ~ rustc_trait_selection[b15a]::traits::engine::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_infer::rustc_infer::infer::relate::higher_ranked::<impl rustc_infer::infer::InferCtxt<'tcx>>::enter_forall (AssocFn) [DefId: DefId(154:3765 ~ rustc_infer[2c7b]::infer::relate::higher_ranked::{impl#0}::enter_forall)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(154:3765 ~ rustc_infer[2c7b]::infer::relate::higher_ranked::{impl#0}::enter_forall)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_trait_selection::traits::engine::ObligationCtxt::<'a, 'tcx, E>::normalize (AssocFn) [DefId: DefId(0:3587 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::normalize)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(0:3587 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::normalize)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_infer::traits::ObligationCause::<'tcx>::dummy (AssocFn) [DefId: DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_infer::rustc_infer::infer::InferCtxt::<'tcx>::fresh_args_for_item (AssocFn) [DefId: DefId(154:1917 ~ rustc_infer[2c7b]::infer::{impl#7}::fresh_args_for_item)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(154:1917 ~ rustc_infer[2c7b]::infer::{impl#7}::fresh_args_for_item)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::EarlyBinder::<I, T>::instantiate (AssocFn) [DefId: DefId(178:1471 ~ rustc_type_ir[d73e]::binder::{impl#30}::instantiate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(178:1471 ~ rustc_type_ir[d73e]::binder::{impl#30}::instantiate)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::impl_trait_ref (AssocFn) [DefId: DefId(173:7082 ~ rustc_middle[8ead]::ty::context::{impl#44}::impl_trait_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:7082 ~ rustc_middle[8ead]::ty::context::{impl#44}::impl_trait_ref)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_trait_selection::traits::engine::ObligationCtxt::<'a, 'tcx, E>::normalize (AssocFn) [DefId: DefId(0:3587 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::normalize)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(0:3587 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::normalize)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_infer::traits::ObligationCause::<'tcx>::dummy (AssocFn) [DefId: DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_trait_selection::traits::engine::ObligationCtxt::<'a, 'tcx, E>::eq (AssocFn) [DefId: DefId(0:3589 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(0:3589 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::eq)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_infer::traits::ObligationCause::<'tcx>::dummy (AssocFn) [DefId: DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::impl_trait_header (AssocFn) [DefId: DefId(173:36733 ~ rustc_middle[8ead]::query::{impl#3}::impl_trait_header)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:36733 ~ rustc_middle[8ead]::query::{impl#3}::impl_trait_header)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::iter::Iterator::filter (AssocFn) [DefId: DefId(2:9468 ~ core[4720]::iter::traits::iterator::Iterator::filter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:9468 ~ core[4720]::iter::traits::iterator::Iterator::filter)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_middle::ty::GenericPredicates::<'tcx>::instantiate (AssocFn) [DefId: DefId(173:7667 ~ rustc_middle[8ead]::ty::generics::{impl#4}::instantiate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:7667 ~ rustc_middle[8ead]::ty::generics::{impl#4}::instantiate)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::predicates_of (AssocFn) [DefId: DefId(173:36666 ~ rustc_middle[8ead]::query::{impl#3}::predicates_of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:36666 ~ rustc_middle[8ead]::query::{impl#3}::predicates_of)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_infer::rustc_infer::traits::Obligation::<'tcx, O>::new (AssocFn) [DefId: DefId(154:2218 ~ rustc_infer[2c7b]::traits::{impl#6}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(154:2218 ~ rustc_infer[2c7b]::traits::{impl#6}::new)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_infer::traits::ObligationCause::<'tcx>::dummy (AssocFn) [DefId: DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_infer::rustc_infer::infer::InferCtxt::<'tcx>::next_trait_solver (AssocFn) [DefId: DefId(154:1879 ~ rustc_infer[2c7b]::infer::{impl#7}::next_trait_solver)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(154:1879 ~ rustc_infer[2c7b]::infer::{impl#7}::next_trait_solver)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::result::Result::<T, E>::is_ok (AssocFn) [DefId: DefId(2:11073 ~ core[4720]::result::{impl#0}::is_ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:11073 ~ core[4720]::result::{impl#0}::is_ok)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_trait_selection::traits::query::evaluate_obligation::InferCtxtExt::evaluate_obligation (AssocFn) [DefId: DefId(0:9242 ~ rustc_trait_selection[b15a]::traits::query::evaluate_obligation::InferCtxtExt::evaluate_obligation)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(0:9242 ~ rustc_trait_selection[b15a]::traits::query::evaluate_obligation::InferCtxtExt::evaluate_obligation)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_trait_selection::traits::engine::ObligationCtxt::<'a, 'tcx, E>::register_obligations (AssocFn) [DefId: DefId(0:3582 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::register_obligations)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(0:3582 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::register_obligations)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::alloc::std::vec::Vec::<T, A>::is_empty (AssocFn) [DefId: DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_trait_selection::traits::engine::ObligationCtxt::<'a, 'tcx, E>::select_where_possible (AssocFn) [DefId: DefId(0:3607 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::select_where_possible)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(0:3607 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::select_where_possible)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_trait_selection::traits::engine::ObligationCtxt::<'a, 'tcx>::new (AssocFn) [DefId: DefId(0:3576 ~ rustc_trait_selection[b15a]::traits::engine::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(0:3576 ~ rustc_trait_selection[b15a]::traits::engine::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_infer::rustc_infer::infer::relate::higher_ranked::<impl rustc_infer::infer::InferCtxt<'tcx>>::enter_forall (AssocFn) [DefId: DefId(154:3765 ~ rustc_infer[2c7b]::infer::relate::higher_ranked::{impl#0}::enter_forall)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(154:3765 ~ rustc_infer[2c7b]::infer::relate::higher_ranked::{impl#0}::enter_forall)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_trait_selection::traits::engine::ObligationCtxt::<'a, 'tcx, E>::normalize (AssocFn) [DefId: DefId(0:3587 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::normalize)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(0:3587 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::normalize)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_infer::traits::ObligationCause::<'tcx>::dummy (AssocFn) [DefId: DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_infer::rustc_infer::infer::InferCtxt::<'tcx>::instantiate_binder_with_fresh_vars (AssocFn) [DefId: DefId(154:1950 ~ rustc_infer[2c7b]::infer::{impl#7}::instantiate_binder_with_fresh_vars)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(154:1950 ~ rustc_infer[2c7b]::infer::{impl#7}::instantiate_binder_with_fresh_vars)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_trait_selection::traits::engine::ObligationCtxt::<'a, 'tcx, E>::normalize (AssocFn) [DefId: DefId(0:3587 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::normalize)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(0:3587 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::normalize)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_infer::traits::ObligationCause::<'tcx>::dummy (AssocFn) [DefId: DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_trait_selection::traits::engine::ObligationCtxt::<'a, 'tcx, E>::eq (AssocFn) [DefId: DefId(0:3589 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(0:3589 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::eq)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_infer::traits::ObligationCause::<'tcx>::dummy (AssocFn) [DefId: DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:3560 ~ rustc_middle[8ead]::traits::{impl#1}::dummy)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::alloc::std::vec::Vec::<T, A>::is_empty (AssocFn) [DefId: DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_trait_selection::traits::engine::ObligationCtxt::<'a, 'tcx, E>::select_where_possible (AssocFn) [DefId: DefId(0:3607 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::select_where_possible)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(0:3607 ~ rustc_trait_selection[b15a]::traits::engine::{impl#2}::select_where_possible)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_middle::ty::trait_def::<impl rustc_middle::ty::TyCtxt<'tcx>>::for_each_relevant_impl (AssocFn) [DefId: DefId(173:5256 ~ rustc_middle[8ead]::ty::trait_def::{impl#2}::for_each_relevant_impl)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:5256 ~ rustc_middle[8ead]::ty::trait_def::{impl#2}::for_each_relevant_impl)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::predicate::<impl rustc_infer::infer::canonical::rustc_type_ir::Binder<I, rustc_infer::infer::canonical::rustc_type_ir::TraitPredicate<I>>>::def_id (AssocFn) [DefId: DefId(178:2265 ~ rustc_type_ir[d73e]::predicate::{impl#7}::def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(178:2265 ~ rustc_type_ir[d73e]::predicate::{impl#7}::def_id)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::TraitRef::<I>::self_ty (AssocFn) [DefId: DefId(178:2248 ~ rustc_type_ir[d73e]::predicate::{impl#3}::self_ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(178:2248 ~ rustc_type_ir[d73e]::predicate::{impl#3}::self_ty)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::Binder::<I, T>::skip_binder (AssocFn) [DefId: DefId(178:1304 ~ rustc_type_ir[d73e]::binder::{impl#7}::skip_binder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(178:1304 ~ rustc_type_ir[d73e]::binder::{impl#7}::skip_binder)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_infer::rustc_infer::infer::snapshot::<impl rustc_infer::infer::InferCtxt<'tcx>>::probe (AssocFn) [DefId: DefId(154:3986 ~ rustc_infer[2c7b]::infer::snapshot::{impl#0}::probe)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(154:3986 ~ rustc_infer[2c7b]::infer::snapshot::{impl#0}::probe)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_middle::ty::GenericPredicates::<'tcx>::instantiate_identity (AssocFn) [DefId: DefId(173:7672 ~ rustc_middle[8ead]::ty::generics::{impl#4}::instantiate_identity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:7672 ~ rustc_middle[8ead]::ty::generics::{impl#4}::instantiate_identity)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::predicates_of (AssocFn) [DefId: DefId(173:36666 ~ rustc_middle[8ead]::query::{impl#3}::predicates_of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:36666 ~ rustc_middle[8ead]::query::{impl#3}::predicates_of)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_span::rustc_span::def_id::LocalDefId::to_def_id (AssocFn) [DefId: DefId(97:590 ~ rustc_span[e3e8]::def_id::{impl#16}::to_def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(97:590 ~ rustc_span[e3e8]::def_id::{impl#16}::to_def_id)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_middle::ty::Clause::<'tcx>::kind (AssocFn) [DefId: DefId(173:8131 ~ rustc_middle[8ead]::ty::predicate::{impl#8}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:8131 ~ rustc_middle[8ead]::ty::predicate::{impl#8}::kind)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::ClauseKind::Trait (Ctor(Variant, Fn)) [DefId: DefId(178:6727 ~ rustc_type_ir[d73e]::predicate_kind::ClauseKind::Trait::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(178:6727 ~ rustc_type_ir[d73e]::predicate_kind::ClauseKind::Trait::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::Binder::<I, T>::skip_binder (AssocFn) [DefId: DefId(178:1304 ~ rustc_type_ir[d73e]::binder::{impl#7}::skip_binder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(178:1304 ~ rustc_type_ir[d73e]::binder::{impl#7}::skip_binder)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::Binder::<I, T>::rebind (AssocFn) [DefId: DefId(178:1318 ~ rustc_type_ir[d73e]::binder::{impl#7}::rebind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(178:1318 ~ rustc_type_ir[d73e]::binder::{impl#7}::rebind)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::Binder::<I, T>::rebind (AssocFn) [DefId: DefId(178:1318 ~ rustc_type_ir[d73e]::binder::{impl#7}::rebind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(178:1318 ~ rustc_type_ir[d73e]::binder::{impl#7}::rebind)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::Binder::<I, T>::dummy (AssocFn) [DefId: DefId(178:1273 ~ rustc_type_ir[d73e]::binder::{impl#2}::dummy)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(178:1273 ~ rustc_type_ir[d73e]::binder::{impl#2}::dummy)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::TraitRef::<I>::identity (AssocFn) [DefId: DefId(178:2246 ~ rustc_type_ir[d73e]::predicate::{impl#3}::identity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(178:2246 ~ rustc_type_ir[d73e]::predicate::{impl#3}::identity)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::TraitPredicate::<I>::def_id (AssocFn) [DefId: DefId(178:2261 ~ rustc_type_ir[d73e]::predicate::{impl#6}::def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(178:2261 ~ rustc_type_ir[d73e]::predicate::{impl#6}::def_id)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_span (AssocFn) [DefId: DefId(173:36779 ~ rustc_middle[8ead]::query::{impl#3}::def_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(173:36779 ~ rustc_middle[8ead]::query::{impl#3}::def_span)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::TraitPredicate::<I>::def_id (AssocFn) [DefId: DefId(178:2261 ~ rustc_type_ir[d73e]::predicate::{impl#6}::def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(178:2261 ~ rustc_type_ir[d73e]::predicate::{impl#6}::def_id)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1158 ~ rustc_trait_selection[b15a]::error_reporting::traits::ambiguity::compute_applicable_impls_for_diagnostics)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    }
+  ]
+}
