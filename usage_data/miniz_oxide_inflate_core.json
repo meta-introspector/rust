@@ -1,0 +1,2094 @@
+{
+  "crate": "miniz_oxide",
+  "module": "inflate::core",
+  "usages": [
+    {
+      "usage": "crate::miniz_oxide::inflate::core::num_extra_bits_for_distance_code USES crate::core::core::num::<impl u8>::saturating_sub (AssocFn) [DefId: DefId(1:35000 ~ core[4720]::num::{impl#6}::saturating_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:424 ~ miniz_oxide[b433]::inflate::core::num_extra_bits_for_distance_code)",
+      "used_def_id": "DefId(1:35000 ~ core[4720]::num::{impl#6}::saturating_sub)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::read_u16_le USES crate::core::core::result::Result::<T, E>::unwrap_or_default (AssocFn) [DefId: DefId(1:11109 ~ core[4720]::result::{impl#0}::unwrap_or_default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:426 ~ miniz_oxide[b433]::inflate::core::read_u16_le)",
+      "used_def_id": "DefId(1:11109 ~ core[4720]::result::{impl#0}::unwrap_or_default)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::read_u16_le USES crate::core::core::convert::TryInto::try_into (AssocFn) [DefId: DefId(1:3439 ~ core[4720]::convert::TryInto::try_into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:426 ~ miniz_oxide[b433]::inflate::core::read_u16_le)",
+      "used_def_id": "DefId(1:3439 ~ core[4720]::convert::TryInto::try_into)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::read_u16_le USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:426 ~ miniz_oxide[b433]::inflate::core::read_u16_le)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::read_u16_le USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::as_slice (AssocFn) [DefId: DefId(0:484 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::as_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:426 ~ miniz_oxide[b433]::inflate::core::read_u16_le)",
+      "used_def_id": "DefId(0:484 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::as_slice)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::read_u16_le USES crate::core::core::ops::RangeTo (Struct) [DefId: DefId(1:45217 ~ core[4720]::ops::range::RangeTo)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:426 ~ miniz_oxide[b433]::inflate::core::read_u16_le)",
+      "used_def_id": "DefId(1:45217 ~ core[4720]::ops::range::RangeTo)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::read_u16_le USES crate::core::core::num::<impl u16>::from_le_bytes (AssocFn) [DefId: DefId(1:35212 ~ core[4720]::num::{impl#7}::from_le_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:426 ~ miniz_oxide[b433]::inflate::core::read_u16_le)",
+      "used_def_id": "DefId(1:35212 ~ core[4720]::num::{impl#7}::from_le_bytes)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::read_u16_le USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::advance (AssocFn) [DefId: DefId(0:486 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::advance)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:426 ~ miniz_oxide[b433]::inflate::core::read_u16_le)",
+      "used_def_id": "DefId(0:486 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::advance)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::fill_bit_buffer USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:427 ~ miniz_oxide[b433]::inflate::core::fill_bit_buffer)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::fill_bit_buffer USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::read_u32_le (AssocFn) [DefId: DefId(0:489 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::read_u32_le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:427 ~ miniz_oxide[b433]::inflate::core::fill_bit_buffer)",
+      "used_def_id": "DefId(0:489 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::read_u32_le)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decode_huffman_code USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::bytes_left (AssocFn) [DefId: DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:438 ~ miniz_oxide[b433]::inflate::core::decode_huffman_code)",
+      "used_def_id": "DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decode_huffman_code USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:438 ~ miniz_oxide[b433]::inflate::core::decode_huffman_code)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decode_huffman_code USES crate::miniz_oxide::inflate::core::HuffmanTable::fast_lookup (AssocFn) [DefId: DefId(0:382 ~ miniz_oxide[b433]::inflate::core::{impl#0}::fast_lookup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:438 ~ miniz_oxide[b433]::inflate::core::decode_huffman_code)",
+      "used_def_id": "DefId(0:382 ~ miniz_oxide[b433]::inflate::core::{impl#0}::fast_lookup)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decode_huffman_code USES crate::core::core::convert::Into::into (AssocFn) [DefId: DefId(1:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:438 ~ miniz_oxide[b433]::inflate::core::decode_huffman_code)",
+      "used_def_id": "DefId(1:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decode_huffman_code USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:438 ~ miniz_oxide[b433]::inflate::core::decode_huffman_code)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decode_huffman_code USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:438 ~ miniz_oxide[b433]::inflate::core::decode_huffman_code)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decode_huffman_code USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:438 ~ miniz_oxide[b433]::inflate::core::decode_huffman_code)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decode_huffman_code USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:438 ~ miniz_oxide[b433]::inflate::core::decode_huffman_code)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decode_huffman_code USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:438 ~ miniz_oxide[b433]::inflate::core::decode_huffman_code)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decode_huffman_code USES crate::miniz_oxide::inflate::core::HuffmanTable::fast_lookup (AssocFn) [DefId: DefId(0:382 ~ miniz_oxide[b433]::inflate::core::{impl#0}::fast_lookup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:438 ~ miniz_oxide[b433]::inflate::core::decode_huffman_code)",
+      "used_def_id": "DefId(0:382 ~ miniz_oxide[b433]::inflate::core::{impl#0}::fast_lookup)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decode_huffman_code USES crate::miniz_oxide::inflate::core::HuffmanTable::tree_lookup (AssocFn) [DefId: DefId(0:383 ~ miniz_oxide[b433]::inflate::core::{impl#0}::tree_lookup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:438 ~ miniz_oxide[b433]::inflate::core::decode_huffman_code)",
+      "used_def_id": "DefId(0:383 ~ miniz_oxide[b433]::inflate::core::{impl#0}::tree_lookup)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decode_huffman_code USES crate::core::core::ops::FnOnce::call_once (AssocFn) [DefId: DefId(1:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:438 ~ miniz_oxide[b433]::inflate::core::decode_huffman_code)",
+      "used_def_id": "DefId(1:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::read_byte USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::read_byte (AssocFn) [DefId: DefId(0:487 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::read_byte)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:441 ~ miniz_oxide[b433]::inflate::core::read_byte)",
+      "used_def_id": "DefId(0:487 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::read_byte)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::read_byte USES crate::core::core::ops::FnOnce::call_once (AssocFn) [DefId: DefId(1:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:441 ~ miniz_oxide[b433]::inflate::core::read_byte)",
+      "used_def_id": "DefId(1:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::read_bits USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:443 ~ miniz_oxide[b433]::inflate::core::read_bits)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::read_bits USES crate::core::core::ops::FnOnce::call_once (AssocFn) [DefId: DefId(1:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:443 ~ miniz_oxide[b433]::inflate::core::read_bits)",
+      "used_def_id": "DefId(1:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::pad_to_bytes USES crate::core::core::ops::FnOnce::call_once (AssocFn) [DefId: DefId(1:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:446 ~ miniz_oxide[b433]::inflate::core::pad_to_bytes)",
+      "used_def_id": "DefId(1:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::slice::<impl [T]>::fill (AssocFn) [DefId: DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::slice::<impl [T]>::fill (AssocFn) [DefId: DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::slice::<impl [T]>::fill (AssocFn) [DefId: DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::slice::<impl [T]>::fill (AssocFn) [DefId: DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::slice::<impl [T]>::fill (AssocFn) [DefId: DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::start_static_table USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:451 ~ miniz_oxide[b433]::inflate::core::start_static_table)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::ops::RangeFull (Struct) [DefId: DefId(1:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::slice::<impl [T]>::fill (AssocFn) [DefId: DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::slice::<impl [T]>::fill (AssocFn) [DefId: DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::ops::RangeTo (Struct) [DefId: DefId(1:45217 ~ core[4720]::ops::range::RangeTo)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:45217 ~ core[4720]::ops::range::RangeTo)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::iter::Iterator::skip (AssocFn) [DefId: DefId(1:9482 ~ core[4720]::iter::traits::iterator::Iterator::skip)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:9482 ~ core[4720]::iter::traits::iterator::Iterator::skip)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::iter::Iterator::zip (AssocFn) [DefId: DefId(1:9453 ~ core[4720]::iter::traits::iterator::Iterator::zip)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:9453 ~ core[4720]::iter::traits::iterator::Iterator::zip)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::ops::RangeFrom (Struct) [DefId: DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::num::<impl u32>::MAX (AssocConst) [DefId: DefId(1:35229 ~ core[4720]::num::{impl#8}::MAX)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:35229 ~ core[4720]::num::{impl#8}::MAX)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::num::<impl u16>::reverse_bits (AssocFn) [DefId: DefId(1:35097 ~ core[4720]::num::{impl#7}::reverse_bits)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:35097 ~ core[4720]::num::{impl#7}::reverse_bits)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::init_tree USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:456 ~ miniz_oxide[b433]::inflate::core::init_tree)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::num::<impl usize>::MAX (AssocConst) [DefId: DefId(1:35682 ~ core[4720]::num::{impl#11}::MAX)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:35682 ~ core[4720]::num::{impl#11}::MAX)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::num::<impl usize>::wrapping_sub (AssocFn) [DefId: DefId(1:35763 ~ core[4720]::num::{impl#11}::wrapping_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:35763 ~ core[4720]::num::{impl#11}::wrapping_sub)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::slice::<impl [T]>::fill (AssocFn) [DefId: DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::num::<impl usize>::saturating_sub (AssocFn) [DefId: DefId(1:35756 ~ core[4720]::num::{impl#11}::saturating_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:35756 ~ core[4720]::num::{impl#11}::saturating_sub)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::slice::<impl [T]>::copy_within (AssocFn) [DefId: DefId(1:14209 ~ core[4720]::slice::{impl#0}::copy_within)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:14209 ~ core[4720]::slice::{impl#0}::copy_within)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::ops::RangeInclusive::<Idx>::new (AssocFn) [DefId: DefId(1:4093 ~ core[4720]::ops::range::{impl#7}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:4093 ~ core[4720]::ops::range::{impl#7}::new)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::num::<impl usize>::saturating_sub (AssocFn) [DefId: DefId(1:35756 ~ core[4720]::num::{impl#11}::saturating_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:35756 ~ core[4720]::num::{impl#11}::saturating_sub)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::transfer USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:461 ~ miniz_oxide[b433]::inflate::core::transfer)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(1:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::num::<impl usize>::checked_add (AssocFn) [DefId: DefId(1:35706 ~ core[4720]::num::{impl#11}::checked_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:35706 ~ core[4720]::num::{impl#11}::checked_add)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::num::<impl usize>::wrapping_sub (AssocFn) [DefId: DefId(1:35763 ~ core[4720]::num::{impl#11}::wrapping_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:35763 ~ core[4720]::num::{impl#11}::wrapping_sub)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::cell::Cell::<[T]>::as_slice_of_cells (AssocFn) [DefId: DefId(1:5571 ~ core[4720]::cell::{impl#15}::as_slice_of_cells)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:5571 ~ core[4720]::cell::{impl#15}::as_slice_of_cells)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::cell::Cell::<T>::from_mut (AssocFn) [DefId: DefId(1:5559 ~ core[4720]::cell::{impl#11}::from_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:5559 ~ core[4720]::cell::{impl#11}::from_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::slice::<impl [T]>::get (AssocFn) [DefId: DefId(1:14068 ~ core[4720]::slice::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:14068 ~ core[4720]::slice::{impl#0}::get)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::option::Option::<T>::zip (AssocFn) [DefId: DefId(1:10279 ~ core[4720]::option::{impl#0}::zip)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:10279 ~ core[4720]::option::{impl#0}::zip)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::option::Option::<T>::zip (AssocFn) [DefId: DefId(1:10279 ~ core[4720]::option::{impl#0}::zip)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:10279 ~ core[4720]::option::{impl#0}::zip)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::slice::<impl [T]>::get (AssocFn) [DefId: DefId(1:14068 ~ core[4720]::slice::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:14068 ~ core[4720]::slice::{impl#0}::get)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::slice::<impl [T]>::get (AssocFn) [DefId: DefId(1:14068 ~ core[4720]::slice::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:14068 ~ core[4720]::slice::{impl#0}::get)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::slice::<impl [T]>::get (AssocFn) [DefId: DefId(1:14068 ~ core[4720]::slice::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:14068 ~ core[4720]::slice::{impl#0}::get)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::cell::Cell::<T>::set (AssocFn) [DefId: DefId(1:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::cell::Cell::<T>::get (AssocFn) [DefId: DefId(1:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::cell::Cell::<T>::set (AssocFn) [DefId: DefId(1:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::cell::Cell::<T>::get (AssocFn) [DefId: DefId(1:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::cell::Cell::<T>::set (AssocFn) [DefId: DefId(1:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::cell::Cell::<T>::get (AssocFn) [DefId: DefId(1:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::slice::<impl [T]>::split_at_mut (AssocFn) [DefId: DefId(1:14127 ~ core[4720]::slice::{impl#0}::split_at_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:14127 ~ core[4720]::slice::{impl#0}::split_at_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::slice::<impl [T]>::copy_from_slice (AssocFn) [DefId: DefId(1:14207 ~ core[4720]::slice::{impl#0}::copy_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:14207 ~ core[4720]::slice::{impl#0}::copy_from_slice)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::ops::RangeTo (Struct) [DefId: DefId(1:45217 ~ core[4720]::ops::range::RangeTo)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:45217 ~ core[4720]::ops::range::RangeTo)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::slice::<impl [T]>::split_at_mut (AssocFn) [DefId: DefId(1:14127 ~ core[4720]::slice::{impl#0}::split_at_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:14127 ~ core[4720]::slice::{impl#0}::split_at_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::slice::<impl [T]>::copy_from_slice (AssocFn) [DefId: DefId(1:14207 ~ core[4720]::slice::{impl#0}::copy_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:14207 ~ core[4720]::slice::{impl#0}::copy_from_slice)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::apply_match USES crate::core::core::ops::RangeTo (Struct) [DefId: DefId(1:45217 ~ core[4720]::ops::range::RangeTo)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:462 ~ miniz_oxide[b433]::inflate::core::apply_match)",
+      "used_def_id": "DefId(1:45217 ~ core[4720]::ops::range::RangeTo)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::bytes_left (AssocFn) [DefId: DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::bytes_left (AssocFn) [DefId: DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::core::HuffmanTable::lookup (AssocFn) [DefId: DefId(0:384 ~ miniz_oxide[b433]::inflate::core::{impl#0}::lookup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:384 ~ miniz_oxide[b433]::inflate::core::{impl#0}::lookup)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::core::HuffmanTable::lookup (AssocFn) [DefId: DefId(0:384 ~ miniz_oxide[b433]::inflate::core::{impl#0}::lookup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:384 ~ miniz_oxide[b433]::inflate::core::{impl#0}::lookup)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::write_byte (AssocFn) [DefId: DefId(0:477 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_byte)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:477 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_byte)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::write_byte (AssocFn) [DefId: DefId(0:477 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_byte)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:477 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_byte)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::core::State::begin (AssocFn) [DefId: DefId(0:422 ~ miniz_oxide[b433]::inflate::core::{impl#3}::begin)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:422 ~ miniz_oxide[b433]::inflate::core::{impl#3}::begin)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::core::State::begin (AssocFn) [DefId: DefId(0:422 ~ miniz_oxide[b433]::inflate::core::{impl#3}::begin)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:422 ~ miniz_oxide[b433]::inflate::core::{impl#3}::begin)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::core::HuffmanTable::lookup (AssocFn) [DefId: DefId(0:384 ~ miniz_oxide[b433]::inflate::core::{impl#0}::lookup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:384 ~ miniz_oxide[b433]::inflate::core::{impl#0}::lookup)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::core::State::begin (AssocFn) [DefId: DefId(0:422 ~ miniz_oxide[b433]::inflate::core::{impl#3}::begin)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:422 ~ miniz_oxide[b433]::inflate::core::{impl#3}::begin)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::position (AssocFn) [DefId: DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::position (AssocFn) [DefId: DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::get_ref (AssocFn) [DefId: DefId(0:480 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::get_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:480 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::get_ref)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::core::State::begin (AssocFn) [DefId: DefId(0:422 ~ miniz_oxide[b433]::inflate::core::{impl#3}::begin)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:422 ~ miniz_oxide[b433]::inflate::core::{impl#3}::begin)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::get_mut (AssocFn) [DefId: DefId(0:481 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::get_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:481 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::get_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_fast USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::set_position (AssocFn) [DefId: DefId(0:476 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::set_position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:463 ~ miniz_oxide[b433]::inflate::core::decompress_fast)",
+      "used_def_id": "DefId(0:476 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::set_position)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress USES crate::core::core::num::<impl usize>::MAX (AssocConst) [DefId: DefId(1:35682 ~ core[4720]::num::{impl#11}::MAX)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:464 ~ miniz_oxide[b433]::inflate::core::decompress)",
+      "used_def_id": "DefId(1:35682 ~ core[4720]::num::{impl#11}::MAX)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::num::<impl usize>::MAX (AssocConst) [DefId: DefId(1:35682 ~ core[4720]::num::{impl#11}::MAX)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:35682 ~ core[4720]::num::{impl#11}::MAX)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::num::<impl usize>::saturating_sub (AssocFn) [DefId: DefId(1:35756 ~ core[4720]::num::{impl#11}::saturating_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:35756 ~ core[4720]::num::{impl#11}::saturating_sub)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::num::<impl usize>::wrapping_add (AssocFn) [DefId: DefId(1:35761 ~ core[4720]::num::{impl#11}::wrapping_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:35761 ~ core[4720]::num::{impl#11}::wrapping_add)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::from_slice (AssocFn) [DefId: DefId(0:485 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:485 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::from_slice)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::from_slice_pos_and_max (AssocFn) [DefId: DefId(0:474 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::from_slice_pos_and_max)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:474 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::from_slice_pos_and_max)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::option::Option::<T>::unwrap_or (AssocFn) [DefId: DefId(1:10229 ~ core[4720]::option::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:10229 ~ core[4720]::option::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::Into::into (AssocFn) [DefId: DefId(1:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::bytes_left (AssocFn) [DefId: DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::write_byte (AssocFn) [DefId: DefId(0:477 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_byte)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:477 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_byte)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::bytes_left (AssocFn) [DefId: DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::bytes_left (AssocFn) [DefId: DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::bytes_left (AssocFn) [DefId: DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::bytes_left (AssocFn) [DefId: DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::write_slice (AssocFn) [DefId: DefId(0:478 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:478 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_slice)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::as_slice (AssocFn) [DefId: DefId(0:484 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::as_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:484 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::as_slice)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::RangeTo (Struct) [DefId: DefId(1:45217 ~ core[4720]::ops::range::RangeTo)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:45217 ~ core[4720]::ops::range::RangeTo)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::advance (AssocFn) [DefId: DefId(0:486 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::advance)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:486 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::advance)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::fill (AssocFn) [DefId: DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::Into::into (AssocFn) [DefId: DefId(1:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::option::Option::<T>::unwrap_or (AssocFn) [DefId: DefId(1:10229 ~ core[4720]::option::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:10229 ~ core[4720]::option::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::copy_from_slice (AssocFn) [DefId: DefId(1:14207 ~ core[4720]::slice::{impl#0}::copy_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14207 ~ core[4720]::slice::{impl#0}::copy_from_slice)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::RangeTo (Struct) [DefId: DefId(1:45217 ~ core[4720]::ops::range::RangeTo)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:45217 ~ core[4720]::ops::range::RangeTo)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::RangeTo (Struct) [DefId: DefId(1:45217 ~ core[4720]::ops::range::RangeTo)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:45217 ~ core[4720]::ops::range::RangeTo)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::copy_from_slice (AssocFn) [DefId: DefId(1:14207 ~ core[4720]::slice::{impl#0}::copy_from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14207 ~ core[4720]::slice::{impl#0}::copy_from_slice)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::RangeTo (Struct) [DefId: DefId(1:45217 ~ core[4720]::ops::range::RangeTo)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:45217 ~ core[4720]::ops::range::RangeTo)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::option::Option::<T>::unwrap_or (AssocFn) [DefId: DefId(1:10229 ~ core[4720]::option::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:10229 ~ core[4720]::option::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::Into::into (AssocFn) [DefId: DefId(1:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::fill (AssocFn) [DefId: DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14203 ~ core[4720]::slice::{impl#0}::fill)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::bytes_left (AssocFn) [DefId: DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::bytes_left (AssocFn) [DefId: DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::bytes_left (AssocFn) [DefId: DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::bytes_left (AssocFn) [DefId: DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::cmp::PartialEq::eq (AssocFn) [DefId: DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::core::HuffmanTable::lookup (AssocFn) [DefId: DefId(0:384 ~ miniz_oxide[b433]::inflate::core::{impl#0}::lookup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:384 ~ miniz_oxide[b433]::inflate::core::{impl#0}::lookup)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::core::HuffmanTable::lookup (AssocFn) [DefId: DefId(0:384 ~ miniz_oxide[b433]::inflate::core::{impl#0}::lookup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:384 ~ miniz_oxide[b433]::inflate::core::{impl#0}::lookup)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::write_byte (AssocFn) [DefId: DefId(0:477 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_byte)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:477 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_byte)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::write_byte (AssocFn) [DefId: DefId(0:477 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_byte)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:477 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_byte)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::bytes_left (AssocFn) [DefId: DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::write_byte (AssocFn) [DefId: DefId(0:477 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_byte)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:477 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::write_byte)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::Into::into (AssocFn) [DefId: DefId(1:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::Into::into (AssocFn) [DefId: DefId(1:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::position (AssocFn) [DefId: DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::get_ref (AssocFn) [DefId: DefId(0:480 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::get_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:480 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::get_ref)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::position (AssocFn) [DefId: DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::num::<impl usize>::wrapping_sub (AssocFn) [DefId: DefId(1:35763 ~ core[4720]::num::{impl#11}::wrapping_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:35763 ~ core[4720]::num::{impl#11}::wrapping_sub)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::position (AssocFn) [DefId: DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::bytes_left (AssocFn) [DefId: DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::position (AssocFn) [DefId: DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::get_mut (AssocFn) [DefId: DefId(0:481 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::get_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:481 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::get_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::set_position (AssocFn) [DefId: DefId(0:476 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::set_position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:476 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::set_position)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::bytes_left (AssocFn) [DefId: DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::position (AssocFn) [DefId: DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::num::<impl usize>::wrapping_sub (AssocFn) [DefId: DefId(1:35763 ~ core[4720]::num::{impl#11}::wrapping_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:35763 ~ core[4720]::num::{impl#11}::wrapping_sub)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::position (AssocFn) [DefId: DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::bytes_left (AssocFn) [DefId: DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::get_mut (AssocFn) [DefId: DefId(0:481 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::get_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:481 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::get_mut)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::set_position (AssocFn) [DefId: DefId(0:476 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::set_position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:476 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::set_position)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::bytes_left (AssocFn) [DefId: DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::from_slice (AssocFn) [DefId: DefId(0:485 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::from_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:485 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::from_slice)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::Iter::<'a, T>::as_slice (AssocFn) [DefId: DefId(1:13156 ~ core[4720]::slice::iter::{impl#6}::as_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:13156 ~ core[4720]::slice::iter::{impl#6}::as_slice)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::RangeFrom (Struct) [DefId: DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::cmp::PartialEq::ne (AssocFn) [DefId: DefId(1:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::cmp::PartialEq::ne (AssocFn) [DefId: DefId(1:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::bytes_left (AssocFn) [DefId: DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::cmp::PartialEq::eq (AssocFn) [DefId: DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::bytes_left (AssocFn) [DefId: DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:479 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::cmp::PartialEq::ne (AssocFn) [DefId: DefId(1:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::position (AssocFn) [DefId: DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::get_ref (AssocFn) [DefId: DefId(0:480 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::get_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:480 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::get_ref)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::cmp::PartialEq::eq (AssocFn) [DefId: DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(1:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::InputWrapper::<'a>::bytes_left (AssocFn) [DefId: DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:491 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#1}::bytes_left)"
+    },
+    {
+      "usage": "crate::miniz_oxide::inflate::core::decompress_with_limit USES crate::miniz_oxide::inflate::output_buffer::OutputBuffer::<'a>::position (AssocFn) [DefId: DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:465 ~ miniz_oxide[b433]::inflate::core::decompress_with_limit)",
+      "used_def_id": "DefId(0:475 ~ miniz_oxide[b433]::inflate::output_buffer::{impl#0}::position)"
+    }
+  ]
+}

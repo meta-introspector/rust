@@ -1,0 +1,30 @@
+{
+  "crate": "futures_channel",
+  "module": "oneshot",
+  "usages": [
+    {
+      "usage": "crate::futures_channel::oneshot::channel USES crate::alloc::alloc::sync::Arc::<T>::new (AssocFn) [DefId: DefId(2:6862 ~ alloc[27b0]::sync::{impl#14}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:407 ~ futures_channel[6d4e]::oneshot::channel)",
+      "used_def_id": "DefId(2:6862 ~ alloc[27b0]::sync::{impl#14}::new)"
+    },
+    {
+      "usage": "crate::futures_channel::oneshot::channel USES crate::futures_channel::oneshot::Inner::<T>::new (AssocFn) [DefId: DefId(0:411 ~ futures_channel[6d4e]::oneshot::{impl#2}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:407 ~ futures_channel[6d4e]::oneshot::channel)",
+      "used_def_id": "DefId(0:411 ~ futures_channel[6d4e]::oneshot::{impl#2}::new)"
+    },
+    {
+      "usage": "crate::futures_channel::oneshot::channel USES crate::core::core::clone::Clone::clone (AssocFn) [DefId: DefId(1:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:407 ~ futures_channel[6d4e]::oneshot::channel)",
+      "used_def_id": "DefId(1:3159 ~ core[4720]::clone::Clone::clone)"
+    }
+  ]
+}

@@ -24,8 +24,20 @@ for project in "${PROJECTS[@]}"; do
             # Make it executable
             chmod +x build_with_collector.sh
             
-            # Run with debug output
-            bash -x ./build_with_collector.sh
+            # Run with debug output and file tracking
+            echo "=== Before collection ==="
+            ls -la ../rust/usage_data/ | wc -l
+            
+            USAGE_OUTPUT_DIR="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/usage_data" bash -x ./build_with_collector.sh
+            
+            echo "=== After collection ==="
+            ls -la ../rust/usage_data/ | wc -l
+            
+            echo "=== Files created in this run ==="
+            find ../rust/usage_data/ -name "*.json" -newer ./build_with_collector.sh | head -10
+            
+            echo "=== Collector trace summary ==="
+            grep -E "(usage_data|\.json)" /tmp/collector_trace_$project.log | tail -5
             
             echo "✅ Collection complete for $project"
         else
@@ -41,4 +53,4 @@ done
 
 echo ""
 echo "🎯 All projects processed!"
-echo "Usage data should now be in ../../usage_data/"
+echo "Usage data should now be in ../rust/usage_data/"

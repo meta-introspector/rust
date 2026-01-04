@@ -1,0 +1,30 @@
+{
+  "crate": "nix",
+  "module": "sys::reboot",
+  "usages": [
+    {
+      "usage": "crate::nix::sys::reboot::reboot USES crate::nix::errno::<impl errno::consts::Errno>::last (AssocFn) [DefId: DefId(0:21 ~ nix[db1d]::errno::{impl#0}::last)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:20130 ~ nix[db1d]::sys::reboot::reboot)",
+      "used_def_id": "DefId(0:21 ~ nix[db1d]::errno::{impl#0}::last)"
+    },
+    {
+      "usage": "crate::nix::sys::reboot::set_cad_enabled USES crate::core::std::result::Result::<T, E>::map (AssocFn) [DefId: DefId(2:11083 ~ core[4720]::result::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:20131 ~ nix[db1d]::sys::reboot::set_cad_enabled)",
+      "used_def_id": "DefId(2:11083 ~ core[4720]::result::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::nix::sys::reboot::set_cad_enabled USES crate::nix::errno::<impl errno::consts::Errno>::result (AssocFn) [DefId: DefId(0:29 ~ nix[db1d]::errno::{impl#0}::result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:20131 ~ nix[db1d]::sys::reboot::set_cad_enabled)",
+      "used_def_id": "DefId(0:29 ~ nix[db1d]::errno::{impl#0}::result)"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "crate": "tracing_subscriber",
+  "module": "<fmt::fmt_layer::Layer<S, N, E, W> as layer::Layer<S>>::on_event",
+  "usages": [
+    {
+      "usage": "crate::tracing_subscriber::<fmt::fmt_layer::Layer<S, N, E, W> as layer::Layer<S>>::on_event::BUF USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(4:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3647 ~ tracing_subscriber[12d7]::fmt::fmt_layer::{impl#11}::on_event::BUF)",
+      "used_def_id": "DefId(4:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::tracing_subscriber::<fmt::fmt_layer::Layer<S, N, E, W> as layer::Layer<S>>::on_event::BUF USES crate::std::std::thread::local_impl::EagerStorage::<T>::get (AssocFn) [DefId: DefId(4:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3647 ~ tracing_subscriber[12d7]::fmt::fmt_layer::{impl#11}::on_event::BUF)",
+      "used_def_id": "DefId(4:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)"
+    }
+  ]
+}

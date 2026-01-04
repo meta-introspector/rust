@@ -1,0 +1,38 @@
+{
+  "crate": "rayon",
+  "module": "iter::sum",
+  "usages": [
+    {
+      "usage": "crate::rayon::iter::sum::sum USES crate::rayon::iter::ParallelIterator::drive_unindexed (AssocFn) [DefId: DefId(0:4861 ~ rayon[708f]::iter::ParallelIterator::drive_unindexed)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3542 ~ rayon[708f]::iter::sum::sum)",
+      "used_def_id": "DefId(0:4861 ~ rayon[708f]::iter::ParallelIterator::drive_unindexed)"
+    },
+    {
+      "usage": "crate::rayon::iter::sum::sum USES crate::rayon::iter::sum::SumConsumer::<S>::new (AssocFn) [DefId: DefId(0:3554 ~ rayon[708f]::iter::sum::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3542 ~ rayon[708f]::iter::sum::sum)",
+      "used_def_id": "DefId(0:3554 ~ rayon[708f]::iter::sum::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::rayon::iter::sum::add USES crate::core::std::iter::Iterator::sum (AssocFn) [DefId: DefId(2:9666 ~ core[4720]::iter::traits::iterator::Iterator::sum)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3545 ~ rayon[708f]::iter::sum::add)",
+      "used_def_id": "DefId(2:9666 ~ core[4720]::iter::traits::iterator::Iterator::sum)"
+    },
+    {
+      "usage": "crate::rayon::iter::sum::add USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3545 ~ rayon[708f]::iter::sum::add)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    }
+  ]
+}

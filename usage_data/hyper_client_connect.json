@@ -1,0 +1,30 @@
+{
+  "crate": "hyper",
+  "module": "client::connect",
+  "usages": [
+    {
+      "usage": "crate::hyper::client::connect::capture_connection USES crate::hyper::client::connect::CaptureConnection::new (AssocFn) [DefId: DefId(0:2548 ~ hyper[13b6]::client::connect::{impl#3}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2543 ~ hyper[13b6]::client::connect::capture_connection)",
+      "used_def_id": "DefId(0:2548 ~ hyper[13b6]::client::connect::{impl#3}::new)"
+    },
+    {
+      "usage": "crate::hyper::client::connect::capture_connection USES crate::http::http::Extensions::insert (AssocFn) [DefId: DefId(20:1841 ~ http[812a]::extensions::{impl#1}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2543 ~ hyper[13b6]::client::connect::capture_connection)",
+      "used_def_id": "DefId(20:1841 ~ http[812a]::extensions::{impl#1}::insert)"
+    },
+    {
+      "usage": "crate::hyper::client::connect::capture_connection USES crate::http::http::Request::<T>::extensions_mut (AssocFn) [DefId: DefId(20:1091 ~ http[812a]::request::{impl#1}::extensions_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2543 ~ hyper[13b6]::client::connect::capture_connection)",
+      "used_def_id": "DefId(20:1091 ~ http[812a]::request::{impl#1}::extensions_mut)"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "crate": "async_std",
+  "module": "io::read::take",
+  "usages": [
+    {
+      "usage": "crate::async_std::io::read::take::take_read_internal USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1891 ~ async_std[cb59]::io::read::take::take_read_internal)",
+      "used_def_id": "DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::async_std::io::read::take::take_read_internal USES crate::futures_io::futures_io::AsyncRead::poll_read (AssocFn) [DefId: DefId(42:21 ~ futures_io[b0e5]::if_std::AsyncRead::poll_read)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1891 ~ async_std[cb59]::io::read::take::take_read_internal)",
+      "used_def_id": "DefId(42:21 ~ futures_io[b0e5]::if_std::AsyncRead::poll_read)"
+    },
+    {
+      "usage": "crate::async_std::io::read::take::take_read_internal USES crate::core::std::pin::Pin::<Ptr>::as_mut (AssocFn) [DefId: DefId(2:10753 ~ core[4720]::pin::{impl#7}::as_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1891 ~ async_std[cb59]::io::read::take::take_read_internal)",
+      "used_def_id": "DefId(2:10753 ~ core[4720]::pin::{impl#7}::as_mut)"
+    },
+    {
+      "usage": "crate::async_std::io::read::take::take_read_internal USES crate::core::std::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(2:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1891 ~ async_std[cb59]::io::read::take::take_read_internal)",
+      "used_def_id": "DefId(2:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::async_std::io::read::take::take_read_internal USES crate::core::std::ops::RangeTo (Struct) [DefId: DefId(2:45217 ~ core[4720]::ops::range::RangeTo)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1891 ~ async_std[cb59]::io::read::take::take_read_internal)",
+      "used_def_id": "DefId(2:45217 ~ core[4720]::ops::range::RangeTo)"
+    }
+  ]
+}

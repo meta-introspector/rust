@@ -1,0 +1,30 @@
+{
+  "crate": "chrono",
+  "module": "datetime::serde::ts_seconds",
+  "usages": [
+    {
+      "usage": "crate::chrono::datetime::serde::ts_seconds::serialize USES crate::serde_core::serde::Serializer::serialize_i64 (AssocFn) [DefId: DefId(22:8381 ~ serde_core[e077]::ser::Serializer::serialize_i64)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:562 ~ chrono[487a]::datetime::serde::ts_seconds::serialize)",
+      "used_def_id": "DefId(22:8381 ~ serde_core[e077]::ser::Serializer::serialize_i64)"
+    },
+    {
+      "usage": "crate::chrono::datetime::serde::ts_seconds::serialize USES crate::chrono::datetime::DateTime::<Tz>::timestamp (AssocFn) [DefId: DefId(0:612 ~ chrono[487a]::datetime::{impl#0}::timestamp)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:562 ~ chrono[487a]::datetime::serde::ts_seconds::serialize)",
+      "used_def_id": "DefId(0:612 ~ chrono[487a]::datetime::{impl#0}::timestamp)"
+    },
+    {
+      "usage": "crate::chrono::datetime::serde::ts_seconds::deserialize USES crate::serde_core::serde::Deserializer::deserialize_i64 (AssocFn) [DefId: DefId(22:7664 ~ serde_core[e077]::de::Deserializer::deserialize_i64)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:564 ~ chrono[487a]::datetime::serde::ts_seconds::deserialize)",
+      "used_def_id": "DefId(22:7664 ~ serde_core[e077]::de::Deserializer::deserialize_i64)"
+    }
+  ]
+}

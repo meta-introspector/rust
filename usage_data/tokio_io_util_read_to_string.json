@@ -1,0 +1,54 @@
+{
+  "crate": "tokio",
+  "module": "io::util::read_to_string",
+  "usages": [
+    {
+      "usage": "crate::tokio::io::util::read_to_string::read_to_string USES crate::alloc::std::string::String::into_bytes (AssocFn) [DefId: DefId(3:6445 ~ alloc[27b0]::string::{impl#0}::into_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2901 ~ tokio[47da]::io::util::read_to_string::read_to_string)",
+      "used_def_id": "DefId(3:6445 ~ alloc[27b0]::string::{impl#0}::into_bytes)"
+    },
+    {
+      "usage": "crate::tokio::io::util::read_to_string::read_to_string USES crate::tokio::io::util::vec_with_initialized::VecWithInitialized::<V>::new (AssocFn) [DefId: DefId(0:2873 ~ tokio[47da]::io::util::vec_with_initialized::{impl#3}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2901 ~ tokio[47da]::io::util::read_to_string::read_to_string)",
+      "used_def_id": "DefId(0:2873 ~ tokio[47da]::io::util::vec_with_initialized::{impl#3}::new)"
+    },
+    {
+      "usage": "crate::tokio::io::util::read_to_string::read_to_string_internal USES crate::alloc::std::string::String::from_utf8 (AssocFn) [DefId: DefId(3:6423 ~ alloc[27b0]::string::{impl#0}::from_utf8)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2904 ~ tokio[47da]::io::util::read_to_string::read_to_string_internal)",
+      "used_def_id": "DefId(3:6423 ~ alloc[27b0]::string::{impl#0}::from_utf8)"
+    },
+    {
+      "usage": "crate::tokio::io::util::read_to_string::read_to_string_internal USES crate::tokio::io::util::vec_with_initialized::VecWithInitialized::<std::vec::Vec<u8>>::take (AssocFn) [DefId: DefId(0:2870 ~ tokio[47da]::io::util::vec_with_initialized::{impl#2}::take)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2904 ~ tokio[47da]::io::util::read_to_string::read_to_string_internal)",
+      "used_def_id": "DefId(0:2870 ~ tokio[47da]::io::util::vec_with_initialized::{impl#2}::take)"
+    },
+    {
+      "usage": "crate::tokio::io::util::read_to_string::read_to_string_internal USES crate::tokio::io::util::vec_with_initialized::VecWithInitialized::<V>::is_empty (AssocFn) [DefId: DefId(0:2875 ~ tokio[47da]::io::util::vec_with_initialized::{impl#3}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2904 ~ tokio[47da]::io::util::read_to_string::read_to_string_internal)",
+      "used_def_id": "DefId(0:2875 ~ tokio[47da]::io::util::vec_with_initialized::{impl#3}::is_empty)"
+    },
+    {
+      "usage": "crate::tokio::io::util::read_to_string::read_to_string_internal USES crate::alloc::std::string::String::is_empty (AssocFn) [DefId: DefId(3:6481 ~ alloc[27b0]::string::{impl#0}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2904 ~ tokio[47da]::io::util::read_to_string::read_to_string_internal)",
+      "used_def_id": "DefId(3:6481 ~ alloc[27b0]::string::{impl#0}::is_empty)"
+    }
+  ]
+}

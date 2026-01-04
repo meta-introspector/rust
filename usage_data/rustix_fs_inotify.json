@@ -1,0 +1,30 @@
+{
+  "crate": "rustix",
+  "module": "fs::inotify",
+  "usages": [
+    {
+      "usage": "crate::rustix::fs::inotify::add_watch USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:4464 ~ rustix[561d]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2932 ~ rustix[561d]::fs::inotify::add_watch)",
+      "used_def_id": "DefId(0:4464 ~ rustix[561d]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::inotify::add_watch USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2932 ~ rustix[561d]::fs::inotify::add_watch)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::inotify::remove_watch USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2936 ~ rustix[561d]::fs::inotify::remove_watch)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    }
+  ]
+}

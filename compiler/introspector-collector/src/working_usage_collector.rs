@@ -10,7 +10,7 @@ use rustc_driver::{Callbacks, Compilation};
 use rustc_interface::interface;
 use rustc_middle::ty::TyCtxt;
 use rustc_hir::def_id::LOCAL_CRATE;
-use rustc_hir::intravisit::{self, Visitor};
+use rustc_hir::intravisit;
 use rustc_hir::{Expr, ExprKind};
 use std::collections::HashMap;
 use std::sync::OnceLock;
@@ -66,7 +66,7 @@ impl UsageCollector {
     fn load_previous_data(&self) -> Result<HashMap<String, Vec<UsageEntry>>, Box<dyn std::error::Error>> {
         // Load from previous eigenmatrix runs
         if let Ok(content) = std::fs::read_to_string("usage_eigenmatrix.json") {
-            if let Ok(data) = serde_json::from_str::<serde_json::Value>(&content) {
+            if let Ok(_data) = serde_json::from_str::<serde_json::Value>(&content) {
                 return Ok(HashMap::new()); // Simplified for now
             }
         }
@@ -86,7 +86,8 @@ impl UsageCollector {
     }
     
     fn save_to_files(&self, crate_name: &str) {
-        std::fs::create_dir_all("usage_data").unwrap();
+        let output_dir = std::env::var("USAGE_OUTPUT_DIR").unwrap_or_else(|_| "usage_data".to_string());
+        std::fs::create_dir_all(&output_dir).unwrap();
         
         for (module, usages) in &self.module_data {
             let module_data = ModuleData {
@@ -134,15 +135,17 @@ impl UsageCollector {
                 use std::hash::{Hash, Hasher};
                 let mut hasher = hash;
                 module.hash(&mut hasher);
-                format!("usage_data/{}_{:x}.json", crate_name, hasher.finish())
+                format!("{}/{}_{:x}.json", output_dir, crate_name, hasher.finish())
             } else {
-                format!("usage_data/{}_{}.json", crate_name, module_clean)
+                format!("{}/{}_{}.json", output_dir, crate_name, module_clean)
             };
             
             let json = serde_json::to_string_pretty(&module_data).unwrap();
             std::fs::write(&filename, json).unwrap();
             
-            eprintln!("Saved {} usages to {}", usages.len(), filename);
+            let abs_path = std::fs::canonicalize(&filename)
+                .unwrap_or_else(|_| std::path::PathBuf::from(&filename));
+            eprintln!("Saved {} usages to {}", usages.len(), abs_path.display());
         }
     }
 }
@@ -362,7 +365,7 @@ impl UsageCollector {
             context: String,
         }
         
-        impl<'tcx> Visitor<'tcx> for LiteralVisitor<'_> {
+        impl<'tcx> intravisit::Visitor<'tcx> for LiteralVisitor<'_> {
             fn visit_expr(&mut self, expr: &'tcx rustc_hir::Expr<'tcx>) {
                 match &expr.kind {
                     rustc_hir::ExprKind::Lit(lit) => {

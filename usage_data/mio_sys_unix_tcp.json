@@ -1,0 +1,302 @@
+{
+  "crate": "mio",
+  "module": "sys::unix::tcp",
+  "usages": [
+    {
+      "usage": "crate::mio::sys::unix::tcp::bind USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:388 ~ mio[8c24]::sys::unix::tcp::bind)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::bind USES crate::mio::sys::unix::net::SocketAddrCRepr::as_ptr (AssocFn) [DefId: DefId(0:368 ~ mio[8c24]::sys::unix::net::{impl#0}::as_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:388 ~ mio[8c24]::sys::unix::tcp::bind)",
+      "used_def_id": "DefId(0:368 ~ mio[8c24]::sys::unix::net::{impl#0}::as_ptr)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::bind USES crate::std::std::io::Error::last_os_error (AssocFn) [DefId: DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:388 ~ mio[8c24]::sys::unix::tcp::bind)",
+      "used_def_id": "DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::bind USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:388 ~ mio[8c24]::sys::unix::tcp::bind)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::bind USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:388 ~ mio[8c24]::sys::unix::tcp::bind)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::bind USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:388 ~ mio[8c24]::sys::unix::tcp::bind)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::bind USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:388 ~ mio[8c24]::sys::unix::tcp::bind)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::connect USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:389 ~ mio[8c24]::sys::unix::tcp::connect)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::connect USES crate::mio::sys::unix::net::SocketAddrCRepr::as_ptr (AssocFn) [DefId: DefId(0:368 ~ mio[8c24]::sys::unix::net::{impl#0}::as_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:389 ~ mio[8c24]::sys::unix::tcp::connect)",
+      "used_def_id": "DefId(0:368 ~ mio[8c24]::sys::unix::net::{impl#0}::as_ptr)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::connect USES crate::std::std::io::Error::last_os_error (AssocFn) [DefId: DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:389 ~ mio[8c24]::sys::unix::tcp::connect)",
+      "used_def_id": "DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::connect USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:389 ~ mio[8c24]::sys::unix::tcp::connect)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::connect USES crate::std::std::io::Error::raw_os_error (AssocFn) [DefId: DefId(1:3331 ~ std[93f5]::io::error::{impl#7}::raw_os_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:389 ~ mio[8c24]::sys::unix::tcp::connect)",
+      "used_def_id": "DefId(1:3331 ~ std[93f5]::io::error::{impl#7}::raw_os_error)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::listen USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:390 ~ mio[8c24]::sys::unix::tcp::listen)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::listen USES crate::std::std::io::Error::last_os_error (AssocFn) [DefId: DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:390 ~ mio[8c24]::sys::unix::tcp::listen)",
+      "used_def_id": "DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::listen USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:390 ~ mio[8c24]::sys::unix::tcp::listen)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::listen USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:390 ~ mio[8c24]::sys::unix::tcp::listen)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::listen USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:390 ~ mio[8c24]::sys::unix::tcp::listen)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::listen USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:390 ~ mio[8c24]::sys::unix::tcp::listen)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::set_reuseaddr USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:391 ~ mio[8c24]::sys::unix::tcp::set_reuseaddr)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::set_reuseaddr USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:391 ~ mio[8c24]::sys::unix::tcp::set_reuseaddr)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::set_reuseaddr USES crate::std::std::io::Error::last_os_error (AssocFn) [DefId: DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:391 ~ mio[8c24]::sys::unix::tcp::set_reuseaddr)",
+      "used_def_id": "DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::set_reuseaddr USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:391 ~ mio[8c24]::sys::unix::tcp::set_reuseaddr)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::set_reuseaddr USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:391 ~ mio[8c24]::sys::unix::tcp::set_reuseaddr)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::set_reuseaddr USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:391 ~ mio[8c24]::sys::unix::tcp::set_reuseaddr)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::set_reuseaddr USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:391 ~ mio[8c24]::sys::unix::tcp::set_reuseaddr)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::accept USES crate::core::std::mem::MaybeUninit::<T>::uninit (AssocFn) [DefId: DefId(2:2167 ~ core[4720]::mem::maybe_uninit::{impl#2}::uninit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ mio[8c24]::sys::unix::tcp::accept)",
+      "used_def_id": "DefId(2:2167 ~ core[4720]::mem::maybe_uninit::{impl#2}::uninit)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::accept USES crate::core::std::result::Result::<T, E>::map (AssocFn) [DefId: DefId(2:11083 ~ core[4720]::result::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ mio[8c24]::sys::unix::tcp::accept)",
+      "used_def_id": "DefId(2:11083 ~ core[4720]::result::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::accept USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ mio[8c24]::sys::unix::tcp::accept)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::accept USES crate::core::std::mem::MaybeUninit::<T>::as_mut_ptr (AssocFn) [DefId: DefId(2:2171 ~ core[4720]::mem::maybe_uninit::{impl#2}::as_mut_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ mio[8c24]::sys::unix::tcp::accept)",
+      "used_def_id": "DefId(2:2171 ~ core[4720]::mem::maybe_uninit::{impl#2}::as_mut_ptr)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::accept USES crate::std::std::io::Error::last_os_error (AssocFn) [DefId: DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ mio[8c24]::sys::unix::tcp::accept)",
+      "used_def_id": "DefId(1:3329 ~ std[93f5]::io::error::{impl#7}::last_os_error)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::accept USES crate::std::std::os::fd::FromRawFd::from_raw_fd (AssocFn) [DefId: DefId(1:5257 ~ std[93f5]::os::fd::raw::FromRawFd::from_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ mio[8c24]::sys::unix::tcp::accept)",
+      "used_def_id": "DefId(1:5257 ~ std[93f5]::os::fd::raw::FromRawFd::from_raw_fd)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::accept USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ mio[8c24]::sys::unix::tcp::accept)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::accept USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ mio[8c24]::sys::unix::tcp::accept)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::accept USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ mio[8c24]::sys::unix::tcp::accept)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::accept USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ mio[8c24]::sys::unix::tcp::accept)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::accept USES crate::core::std::result::Result::<T, E>::map (AssocFn) [DefId: DefId(2:11083 ~ core[4720]::result::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ mio[8c24]::sys::unix::tcp::accept)",
+      "used_def_id": "DefId(2:11083 ~ core[4720]::result::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::mio::sys::unix::tcp::accept USES crate::core::std::mem::MaybeUninit::<T>::as_ptr (AssocFn) [DefId: DefId(2:2170 ~ core[4720]::mem::maybe_uninit::{impl#2}::as_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:392 ~ mio[8c24]::sys::unix::tcp::accept)",
+      "used_def_id": "DefId(2:2170 ~ core[4720]::mem::maybe_uninit::{impl#2}::as_ptr)"
+    }
+  ]
+}

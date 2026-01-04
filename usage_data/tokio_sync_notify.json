@@ -1,0 +1,110 @@
+{
+  "crate": "tokio",
+  "module": "sync::notify",
+  "usages": [
+    {
+      "usage": "crate::tokio::sync::notify::atomic_inc_num_notify_waiters_calls USES crate::core::std::sync::atomic::AtomicUsize::fetch_add (AssocFn) [DefId: DefId(2:50257 ~ core[4720]::sync::atomic::{impl#94}::fetch_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:10336 ~ tokio[47da]::sync::notify::atomic_inc_num_notify_waiters_calls)",
+      "used_def_id": "DefId(2:50257 ~ core[4720]::sync::atomic::{impl#94}::fetch_add)"
+    },
+    {
+      "usage": "crate::tokio::sync::notify::notify_locked USES crate::core::std::sync::atomic::AtomicUsize::compare_exchange (AssocFn) [DefId: DefId(2:50255 ~ core[4720]::sync::atomic::{impl#94}::compare_exchange)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:10354 ~ tokio[47da]::sync::notify::notify_locked)",
+      "used_def_id": "DefId(2:50255 ~ core[4720]::sync::atomic::{impl#94}::compare_exchange)"
+    },
+    {
+      "usage": "crate::tokio::sync::notify::notify_locked USES crate::core::std::sync::atomic::AtomicUsize::store (AssocFn) [DefId: DefId(2:50252 ~ core[4720]::sync::atomic::{impl#94}::store)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:10354 ~ tokio[47da]::sync::notify::notify_locked)",
+      "used_def_id": "DefId(2:50252 ~ core[4720]::sync::atomic::{impl#94}::store)"
+    },
+    {
+      "usage": "crate::tokio::sync::notify::notify_locked USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:10354 ~ tokio[47da]::sync::notify::notify_locked)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::tokio::sync::notify::notify_locked USES crate::tokio::util::linked_list::LinkedList::<L, <L as util::linked_list::Link>::Target>::pop_back (AssocFn) [DefId: DefId(0:679 ~ tokio[47da]::util::linked_list::{impl#5}::pop_back)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:10354 ~ tokio[47da]::sync::notify::notify_locked)",
+      "used_def_id": "DefId(0:679 ~ tokio[47da]::util::linked_list::{impl#5}::pop_back)"
+    },
+    {
+      "usage": "crate::tokio::sync::notify::notify_locked USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:10354 ~ tokio[47da]::sync::notify::notify_locked)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::tokio::sync::notify::notify_locked USES crate::tokio::util::linked_list::LinkedList::<L, <L as util::linked_list::Link>::Target>::pop_front (AssocFn) [DefId: DefId(0:678 ~ tokio[47da]::util::linked_list::{impl#5}::pop_front)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:10354 ~ tokio[47da]::sync::notify::notify_locked)",
+      "used_def_id": "DefId(0:678 ~ tokio[47da]::util::linked_list::{impl#5}::pop_front)"
+    },
+    {
+      "usage": "crate::tokio::sync::notify::notify_locked USES crate::core::std::ptr::NonNull::<T>::as_ref (AssocFn) [DefId: DefId(2:2566 ~ core[4720]::ptr::non_null::{impl#3}::as_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:10354 ~ tokio[47da]::sync::notify::notify_locked)",
+      "used_def_id": "DefId(2:2566 ~ core[4720]::ptr::non_null::{impl#3}::as_ref)"
+    },
+    {
+      "usage": "crate::tokio::sync::notify::notify_locked USES crate::tokio::loom::std::unsafe_cell::UnsafeCell::<T>::with_mut (AssocFn) [DefId: DefId(0:481 ~ tokio[47da]::loom::std::unsafe_cell::{impl#0}::with_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:10354 ~ tokio[47da]::sync::notify::notify_locked)",
+      "used_def_id": "DefId(0:481 ~ tokio[47da]::loom::std::unsafe_cell::{impl#0}::with_mut)"
+    },
+    {
+      "usage": "crate::tokio::sync::notify::notify_locked USES crate::core::std::option::Option::<T>::take (AssocFn) [DefId: DefId(2:10275 ~ core[4720]::option::{impl#0}::take)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:10354 ~ tokio[47da]::sync::notify::notify_locked)",
+      "used_def_id": "DefId(2:10275 ~ core[4720]::option::{impl#0}::take)"
+    },
+    {
+      "usage": "crate::tokio::sync::notify::notify_locked USES crate::tokio::sync::notify::AtomicNotification::store_release (AssocFn) [DefId: DefId(0:10301 ~ tokio[47da]::sync::notify::{impl#1}::store_release)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:10354 ~ tokio[47da]::sync::notify::notify_locked)",
+      "used_def_id": "DefId(0:10301 ~ tokio[47da]::sync::notify::{impl#1}::store_release)"
+    },
+    {
+      "usage": "crate::tokio::sync::notify::notify_locked USES crate::tokio::util::linked_list::LinkedList::<L, <L as util::linked_list::Link>::Target>::is_empty (AssocFn) [DefId: DefId(0:680 ~ tokio[47da]::util::linked_list::{impl#5}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:10354 ~ tokio[47da]::sync::notify::notify_locked)",
+      "used_def_id": "DefId(0:680 ~ tokio[47da]::util::linked_list::{impl#5}::is_empty)"
+    },
+    {
+      "usage": "crate::tokio::sync::notify::notify_locked USES crate::core::std::sync::atomic::AtomicUsize::store (AssocFn) [DefId: DefId(2:50252 ~ core[4720]::sync::atomic::{impl#94}::store)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:10354 ~ tokio[47da]::sync::notify::notify_locked)",
+      "used_def_id": "DefId(2:50252 ~ core[4720]::sync::atomic::{impl#94}::store)"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "crate": "lzma_rust2",
+  "module": "lzma2_reader_mt",
+  "usages": [
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::core::std::sync::atomic::AtomicBool::load (AssocFn) [DefId: DefId(2:11291 ~ core[4720]::sync::atomic::{impl#5}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(2:11291 ~ core[4720]::sync::atomic::{impl#5}::load)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::lzma_rust2::work_queue::WorkerHandle::<T>::steal (AssocFn) [DefId: DefId(0:702 ~ lzma_rust2[5a41]::work_queue::{impl#2}::steal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(0:702 ~ lzma_rust2[5a41]::work_queue::{impl#2}::steal)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::core::std::sync::atomic::AtomicU32::fetch_add (AssocFn) [DefId: DefId(2:50091 ~ core[4720]::sync::atomic::{impl#74}::fetch_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(2:50091 ~ core[4720]::sync::atomic::{impl#74}::fetch_add)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::lzma_rust2::lzma2_reader::Lzma2Reader::<R>::new (AssocFn) [DefId: DefId(0:528 ~ lzma_rust2[5a41]::lzma2_reader::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(0:528 ~ lzma_rust2[5a41]::lzma2_reader::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::alloc::std::vec::Vec::<T, A>::as_slice (AssocFn) [DefId: DefId(3:8113 ~ alloc[27b0]::vec::{impl#1}::as_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(3:8113 ~ alloc[27b0]::vec::{impl#1}::as_slice)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::core::std::option::Option::<T>::map (AssocFn) [DefId: DefId(2:10234 ~ core[4720]::option::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(2:10234 ~ core[4720]::option::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::core::std::option::Option::<T>::as_deref (AssocFn) [DefId: DefId(2:10254 ~ core[4720]::option::{impl#0}::as_deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(2:10254 ~ core[4720]::option::{impl#0}::as_deref)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::alloc::std::vec::Vec::<T, A>::as_slice (AssocFn) [DefId: DefId(3:8113 ~ alloc[27b0]::vec::{impl#1}::as_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(3:8113 ~ alloc[27b0]::vec::{impl#1}::as_slice)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::alloc::std::vec::Vec::<T>::with_capacity (AssocFn) [DefId: DefId(3:8087 ~ alloc[27b0]::vec::{impl#0}::with_capacity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(3:8087 ~ alloc[27b0]::vec::{impl#0}::with_capacity)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::alloc::std::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::std::std::io::Read::read_to_end (AssocFn) [DefId: DefId(1:3931 ~ std[93f5]::io::Read::read_to_end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(1:3931 ~ std[93f5]::io::Read::read_to_end)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::core::std::sync::atomic::AtomicU32::fetch_sub (AssocFn) [DefId: DefId(2:50092 ~ core[4720]::sync::atomic::{impl#74}::fetch_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(2:50092 ~ core[4720]::sync::atomic::{impl#74}::fetch_sub)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::core::std::result::Result::<T, E>::is_err (AssocFn) [DefId: DefId(2:11076 ~ core[4720]::result::{impl#0}::is_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(2:11076 ~ core[4720]::result::{impl#0}::is_err)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::std::std::sync::mpsc::SyncSender::<T>::send (AssocFn) [DefId: DefId(1:6823 ~ std[93f5]::sync::mpsc::{impl#8}::send)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(1:6823 ~ std[93f5]::sync::mpsc::{impl#8}::send)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::core::std::sync::atomic::AtomicU32::fetch_sub (AssocFn) [DefId: DefId(2:50092 ~ core[4720]::sync::atomic::{impl#74}::fetch_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(2:50092 ~ core[4720]::sync::atomic::{impl#74}::fetch_sub)"
+    },
+    {
+      "usage": "crate::lzma_rust2::lzma2_reader_mt::worker_thread_logic USES crate::core::std::sync::atomic::AtomicU32::fetch_sub (AssocFn) [DefId: DefId(2:50092 ~ core[4720]::sync::atomic::{impl#74}::fetch_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1868 ~ lzma_rust2[5a41]::lzma2_reader_mt::worker_thread_logic)",
+      "used_def_id": "DefId(2:50092 ~ core[4720]::sync::atomic::{impl#74}::fetch_sub)"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "crate": "tokio",
+  "module": "runtime::context::current",
+  "usages": [
+    {
+      "usage": "crate::tokio::runtime::context::current::try_set_current USES crate::core::std::result::Result::<T, E>::ok (AssocFn) [DefId: DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5842 ~ tokio[47da]::runtime::context::current::try_set_current)",
+      "used_def_id": "DefId(2:11079 ~ core[4720]::result::{impl#0}::ok)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::current::try_set_current USES crate::std::std::thread::LocalKey::<T>::try_with (AssocFn) [DefId: DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5842 ~ tokio[47da]::runtime::context::current::try_set_current)",
+      "used_def_id": "DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::current::try_set_current USES crate::tokio::runtime::context::current::<impl runtime::context::Context>::set_current (AssocFn) [DefId: DefId(0:5849 ~ tokio[47da]::runtime::context::current::{impl#0}::set_current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5842 ~ tokio[47da]::runtime::context::current::try_set_current)",
+      "used_def_id": "DefId(0:5849 ~ tokio[47da]::runtime::context::current::{impl#0}::set_current)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::current::with_current USES crate::std::std::thread::LocalKey::<T>::try_with (AssocFn) [DefId: DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5844 ~ tokio[47da]::runtime::context::current::with_current)",
+      "used_def_id": "DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::current::with_current USES crate::core::std::option::Option::<T>::map (AssocFn) [DefId: DefId(2:10234 ~ core[4720]::option::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5844 ~ tokio[47da]::runtime::context::current::with_current)",
+      "used_def_id": "DefId(2:10234 ~ core[4720]::option::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::current::with_current USES crate::core::std::option::Option::<T>::as_ref (AssocFn) [DefId: DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5844 ~ tokio[47da]::runtime::context::current::with_current)",
+      "used_def_id": "DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::current::with_current USES crate::core::std::cell::RefCell::<T>::borrow (AssocFn) [DefId: DefId(2:5604 ~ core[4720]::cell::{impl#20}::borrow)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5844 ~ tokio[47da]::runtime::context::current::with_current)",
+      "used_def_id": "DefId(2:5604 ~ core[4720]::cell::{impl#20}::borrow)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::current::with_current USES crate::tokio::runtime::handle::TryCurrentError::new_no_context (AssocFn) [DefId: DefId(0:8590 ~ tokio[47da]::runtime::handle::{impl#3}::new_no_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5844 ~ tokio[47da]::runtime::context::current::with_current)",
+      "used_def_id": "DefId(0:8590 ~ tokio[47da]::runtime::handle::{impl#3}::new_no_context)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::current::with_current USES crate::tokio::runtime::handle::TryCurrentError::new_thread_local_destroyed (AssocFn) [DefId: DefId(0:8591 ~ tokio[47da]::runtime::handle::{impl#3}::new_thread_local_destroyed)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5844 ~ tokio[47da]::runtime::context::current::with_current)",
+      "used_def_id": "DefId(0:8591 ~ tokio[47da]::runtime::handle::{impl#3}::new_thread_local_destroyed)"
+    }
+  ]
+}

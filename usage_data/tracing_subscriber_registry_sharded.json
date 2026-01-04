@@ -1,0 +1,38 @@
+{
+  "crate": "tracing_subscriber",
+  "module": "registry::sharded",
+  "usages": [
+    {
+      "usage": "crate::tracing_subscriber::registry::sharded::idx_to_id USES crate::tracing_core::tracing::Id::from_u64 (AssocFn) [DefId: DefId(20:635 ~ tracing_core[5cb0]::span::{impl#0}::from_u64)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1910 ~ tracing_subscriber[12d7]::registry::sharded::idx_to_id)",
+      "used_def_id": "DefId(20:635 ~ tracing_core[5cb0]::span::{impl#0}::from_u64)"
+    },
+    {
+      "usage": "crate::tracing_subscriber::registry::sharded::id_to_idx USES crate::tracing_core::tracing::Id::into_u64 (AssocFn) [DefId: DefId(20:637 ~ tracing_core[5cb0]::span::{impl#0}::into_u64)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1911 ~ tracing_subscriber[12d7]::registry::sharded::id_to_idx)",
+      "used_def_id": "DefId(20:637 ~ tracing_core[5cb0]::span::{impl#0}::into_u64)"
+    },
+    {
+      "usage": "crate::tracing_subscriber::registry::sharded::CLOSE_COUNT USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(4:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3654 ~ tracing_subscriber[12d7]::registry::sharded::CLOSE_COUNT)",
+      "used_def_id": "DefId(4:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::tracing_subscriber::registry::sharded::CLOSE_COUNT USES crate::std::std::thread::local_impl::EagerStorage::<T>::get (AssocFn) [DefId: DefId(4:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3654 ~ tracing_subscriber[12d7]::registry::sharded::CLOSE_COUNT)",
+      "used_def_id": "DefId(4:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)"
+    }
+  ]
+}

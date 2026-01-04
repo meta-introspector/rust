@@ -1,0 +1,958 @@
+{
+  "crate": "toml_parser",
+  "module": "lexer",
+  "usages": [
+    {
+      "usage": "crate::toml_parser::lexer::process_token USES crate::core::core::str::<impl str>::starts_with (AssocFn) [DefId: DefId(2:15188 ~ core[4720]::str::{impl#0}::starts_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:319 ~ toml_parser[6fc0]::lexer::process_token)",
+      "used_def_id": "DefId(2:15188 ~ core[4720]::str::{impl#0}::starts_with)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::process_token USES crate::core::core::str::<impl str>::starts_with (AssocFn) [DefId: DefId(2:15188 ~ core[4720]::str::{impl#0}::starts_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:319 ~ toml_parser[6fc0]::lexer::process_token)",
+      "used_def_id": "DefId(2:15188 ~ core[4720]::str::{impl#0}::starts_with)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ascii_char USES crate::core::core::str::<impl str>::is_empty (AssocFn) [DefId: DefId(2:15150 ~ core[4720]::str::{impl#0}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:320 ~ toml_parser[6fc0]::lexer::lex_ascii_char)",
+      "used_def_id": "DefId(2:15150 ~ core[4720]::str::{impl#0}::is_empty)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ascii_char USES crate::winnow::winnow::stream::Location::current_token_start (AssocFn) [DefId: DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:320 ~ toml_parser[6fc0]::lexer::lex_ascii_char)",
+      "used_def_id": "DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ascii_char USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:320 ~ toml_parser[6fc0]::lexer::lex_ascii_char)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ascii_char USES crate::winnow::winnow::stream::Location::previous_token_end (AssocFn) [DefId: DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:320 ~ toml_parser[6fc0]::lexer::lex_ascii_char)",
+      "used_def_id": "DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ascii_char USES crate::toml_parser::source::Span::new_unchecked (AssocFn) [DefId: DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:320 ~ toml_parser[6fc0]::lexer::lex_ascii_char)",
+      "used_def_id": "DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ascii_char USES crate::toml_parser::lexer::token::Token::new (AssocFn) [DefId: DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:320 ~ toml_parser[6fc0]::lexer::lex_ascii_char)",
+      "used_def_id": "DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_whitespace USES crate::core::core::str::<impl str>::is_empty (AssocFn) [DefId: DefId(2:15150 ~ core[4720]::str::{impl#0}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:321 ~ toml_parser[6fc0]::lexer::lex_whitespace)",
+      "used_def_id": "DefId(2:15150 ~ core[4720]::str::{impl#0}::is_empty)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_whitespace USES crate::winnow::winnow::stream::Location::current_token_start (AssocFn) [DefId: DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:321 ~ toml_parser[6fc0]::lexer::lex_whitespace)",
+      "used_def_id": "DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_whitespace USES crate::core::std::option::Option::<T>::unwrap_or (AssocFn) [DefId: DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:321 ~ toml_parser[6fc0]::lexer::lex_whitespace)",
+      "used_def_id": "DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_whitespace USES crate::winnow::winnow::stream::Stream::offset_for (AssocFn) [DefId: DefId(20:1182 ~ winnow[6208]::stream::Stream::offset_for)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:321 ~ toml_parser[6fc0]::lexer::lex_whitespace)",
+      "used_def_id": "DefId(20:1182 ~ winnow[6208]::stream::Stream::offset_for)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_whitespace USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:321 ~ toml_parser[6fc0]::lexer::lex_whitespace)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_whitespace USES crate::winnow::winnow::stream::ContainsToken::contains_token (AssocFn) [DefId: DefId(20:1643 ~ winnow[6208]::stream::ContainsToken::contains_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:321 ~ toml_parser[6fc0]::lexer::lex_whitespace)",
+      "used_def_id": "DefId(20:1643 ~ winnow[6208]::stream::ContainsToken::contains_token)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_whitespace USES crate::winnow::winnow::stream::Stream::eof_offset (AssocFn) [DefId: DefId(20:1179 ~ winnow[6208]::stream::Stream::eof_offset)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:321 ~ toml_parser[6fc0]::lexer::lex_whitespace)",
+      "used_def_id": "DefId(20:1179 ~ winnow[6208]::stream::Stream::eof_offset)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_whitespace USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:321 ~ toml_parser[6fc0]::lexer::lex_whitespace)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_whitespace USES crate::winnow::winnow::stream::Location::previous_token_end (AssocFn) [DefId: DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:321 ~ toml_parser[6fc0]::lexer::lex_whitespace)",
+      "used_def_id": "DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_whitespace USES crate::toml_parser::source::Span::new_unchecked (AssocFn) [DefId: DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:321 ~ toml_parser[6fc0]::lexer::lex_whitespace)",
+      "used_def_id": "DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_whitespace USES crate::toml_parser::lexer::token::Token::new (AssocFn) [DefId: DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:321 ~ toml_parser[6fc0]::lexer::lex_whitespace)",
+      "used_def_id": "DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_comment USES crate::winnow::winnow::stream::Location::current_token_start (AssocFn) [DefId: DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:324 ~ toml_parser[6fc0]::lexer::lex_comment)",
+      "used_def_id": "DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_comment USES crate::core::std::option::Option::<T>::unwrap_or_else (AssocFn) [DefId: DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:324 ~ toml_parser[6fc0]::lexer::lex_comment)",
+      "used_def_id": "DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_comment USES crate::core::std::option::Option::<T>::map (AssocFn) [DefId: DefId(2:10234 ~ core[4720]::option::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:324 ~ toml_parser[6fc0]::lexer::lex_comment)",
+      "used_def_id": "DefId(2:10234 ~ core[4720]::option::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_comment USES crate::winnow::winnow::stream::FindSlice::find_slice (AssocFn) [DefId: DefId(20:1392 ~ winnow[6208]::stream::FindSlice::find_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:324 ~ toml_parser[6fc0]::lexer::lex_comment)",
+      "used_def_id": "DefId(20:1392 ~ winnow[6208]::stream::FindSlice::find_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_comment USES crate::core::core::str::<impl str>::as_bytes (AssocFn) [DefId: DefId(2:15158 ~ core[4720]::str::{impl#0}::as_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:324 ~ toml_parser[6fc0]::lexer::lex_comment)",
+      "used_def_id": "DefId(2:15158 ~ core[4720]::str::{impl#0}::as_bytes)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_comment USES crate::winnow::winnow::stream::Stream::eof_offset (AssocFn) [DefId: DefId(20:1179 ~ winnow[6208]::stream::Stream::eof_offset)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:324 ~ toml_parser[6fc0]::lexer::lex_comment)",
+      "used_def_id": "DefId(20:1179 ~ winnow[6208]::stream::Stream::eof_offset)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_comment USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:324 ~ toml_parser[6fc0]::lexer::lex_comment)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_comment USES crate::winnow::winnow::stream::Location::previous_token_end (AssocFn) [DefId: DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:324 ~ toml_parser[6fc0]::lexer::lex_comment)",
+      "used_def_id": "DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_comment USES crate::toml_parser::source::Span::new_unchecked (AssocFn) [DefId: DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:324 ~ toml_parser[6fc0]::lexer::lex_comment)",
+      "used_def_id": "DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_comment USES crate::toml_parser::lexer::token::Token::new (AssocFn) [DefId: DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:324 ~ toml_parser[6fc0]::lexer::lex_comment)",
+      "used_def_id": "DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_crlf USES crate::winnow::winnow::stream::Location::current_token_start (AssocFn) [DefId: DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ toml_parser[6fc0]::lexer::lex_crlf)",
+      "used_def_id": "DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_crlf USES crate::core::std::char::methods::<impl char>::len_utf8 (AssocFn) [DefId: DefId(2:5899 ~ core[4720]::char::methods::{impl#0}::len_utf8)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ toml_parser[6fc0]::lexer::lex_crlf)",
+      "used_def_id": "DefId(2:5899 ~ core[4720]::char::methods::{impl#0}::len_utf8)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_crlf USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ toml_parser[6fc0]::lexer::lex_crlf)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_crlf USES crate::core::core::slice::<impl [T]>::get (AssocFn) [DefId: DefId(2:14068 ~ core[4720]::slice::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ toml_parser[6fc0]::lexer::lex_crlf)",
+      "used_def_id": "DefId(2:14068 ~ core[4720]::slice::{impl#0}::get)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_crlf USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ toml_parser[6fc0]::lexer::lex_crlf)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_crlf USES crate::core::std::char::methods::<impl char>::len_utf8 (AssocFn) [DefId: DefId(2:5899 ~ core[4720]::char::methods::{impl#0}::len_utf8)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ toml_parser[6fc0]::lexer::lex_crlf)",
+      "used_def_id": "DefId(2:5899 ~ core[4720]::char::methods::{impl#0}::len_utf8)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_crlf USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ toml_parser[6fc0]::lexer::lex_crlf)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_crlf USES crate::winnow::winnow::stream::Location::previous_token_end (AssocFn) [DefId: DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ toml_parser[6fc0]::lexer::lex_crlf)",
+      "used_def_id": "DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_crlf USES crate::toml_parser::source::Span::new_unchecked (AssocFn) [DefId: DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ toml_parser[6fc0]::lexer::lex_crlf)",
+      "used_def_id": "DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_crlf USES crate::toml_parser::lexer::token::Token::new (AssocFn) [DefId: DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ toml_parser[6fc0]::lexer::lex_crlf)",
+      "used_def_id": "DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_literal_string USES crate::winnow::winnow::stream::Location::current_token_start (AssocFn) [DefId: DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:329 ~ toml_parser[6fc0]::lexer::lex_literal_string)",
+      "used_def_id": "DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_literal_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:329 ~ toml_parser[6fc0]::lexer::lex_literal_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_literal_string USES crate::winnow::winnow::stream::FindSlice::find_slice (AssocFn) [DefId: DefId(20:1392 ~ winnow[6208]::stream::FindSlice::find_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:329 ~ toml_parser[6fc0]::lexer::lex_literal_string)",
+      "used_def_id": "DefId(20:1392 ~ winnow[6208]::stream::FindSlice::find_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_literal_string USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:329 ~ toml_parser[6fc0]::lexer::lex_literal_string)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_literal_string USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:329 ~ toml_parser[6fc0]::lexer::lex_literal_string)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_literal_string USES crate::winnow::winnow::stream::Stream::eof_offset (AssocFn) [DefId: DefId(20:1179 ~ winnow[6208]::stream::Stream::eof_offset)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:329 ~ toml_parser[6fc0]::lexer::lex_literal_string)",
+      "used_def_id": "DefId(20:1179 ~ winnow[6208]::stream::Stream::eof_offset)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_literal_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:329 ~ toml_parser[6fc0]::lexer::lex_literal_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_literal_string USES crate::winnow::winnow::stream::Location::previous_token_end (AssocFn) [DefId: DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:329 ~ toml_parser[6fc0]::lexer::lex_literal_string)",
+      "used_def_id": "DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_literal_string USES crate::toml_parser::source::Span::new_unchecked (AssocFn) [DefId: DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:329 ~ toml_parser[6fc0]::lexer::lex_literal_string)",
+      "used_def_id": "DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_literal_string USES crate::toml_parser::lexer::token::Token::new (AssocFn) [DefId: DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:329 ~ toml_parser[6fc0]::lexer::lex_literal_string)",
+      "used_def_id": "DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::winnow::winnow::stream::Location::current_token_start (AssocFn) [DefId: DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::core::core::str::<impl str>::len (AssocFn) [DefId: DefId(2:15149 ~ core[4720]::str::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(2:15149 ~ core[4720]::str::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::winnow::winnow::stream::FindSlice::find_slice (AssocFn) [DefId: DefId(20:1392 ~ winnow[6208]::stream::FindSlice::find_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(20:1392 ~ winnow[6208]::stream::FindSlice::find_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::winnow::winnow::stream::Stream::eof_offset (AssocFn) [DefId: DefId(20:1179 ~ winnow[6208]::stream::Stream::eof_offset)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(20:1179 ~ winnow[6208]::stream::Stream::eof_offset)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::winnow::winnow::stream::Stream::peek_token (AssocFn) [DefId: DefId(20:1181 ~ winnow[6208]::stream::Stream::peek_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(20:1181 ~ winnow[6208]::stream::Stream::peek_token)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::winnow::winnow::stream::Stream::peek_token (AssocFn) [DefId: DefId(20:1181 ~ winnow[6208]::stream::Stream::peek_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(20:1181 ~ winnow[6208]::stream::Stream::peek_token)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::winnow::winnow::stream::Location::previous_token_end (AssocFn) [DefId: DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::toml_parser::source::Span::new_unchecked (AssocFn) [DefId: DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_literal_string USES crate::toml_parser::lexer::token::Token::new (AssocFn) [DefId: DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:331 ~ toml_parser[6fc0]::lexer::lex_ml_literal_string)",
+      "used_def_id": "DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::winnow::winnow::stream::Location::current_token_start (AssocFn) [DefId: DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::winnow::winnow::stream::FindSlice::find_slice (AssocFn) [DefId: DefId(20:1392 ~ winnow[6208]::stream::FindSlice::find_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(20:1392 ~ winnow[6208]::stream::FindSlice::find_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::winnow::winnow::stream::Stream::peek_token (AssocFn) [DefId: DefId(20:1181 ~ winnow[6208]::stream::Stream::peek_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(20:1181 ~ winnow[6208]::stream::Stream::peek_token)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::winnow::winnow::stream::Stream::finish (AssocFn) [DefId: DefId(20:1189 ~ winnow[6208]::stream::Stream::finish)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(20:1189 ~ winnow[6208]::stream::Stream::finish)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::winnow::winnow::stream::Location::previous_token_end (AssocFn) [DefId: DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::toml_parser::source::Span::new_unchecked (AssocFn) [DefId: DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_basic_string USES crate::toml_parser::lexer::token::Token::new (AssocFn) [DefId: DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:333 ~ toml_parser[6fc0]::lexer::lex_basic_string)",
+      "used_def_id": "DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::Location::current_token_start (AssocFn) [DefId: DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::core::core::str::<impl str>::len (AssocFn) [DefId: DefId(2:15149 ~ core[4720]::str::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(2:15149 ~ core[4720]::str::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::FindSlice::find_slice (AssocFn) [DefId: DefId(20:1392 ~ winnow[6208]::stream::FindSlice::find_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1392 ~ winnow[6208]::stream::FindSlice::find_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::Stream::peek_token (AssocFn) [DefId: DefId(20:1181 ~ winnow[6208]::stream::Stream::peek_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1181 ~ winnow[6208]::stream::Stream::peek_token)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::Stream::finish (AssocFn) [DefId: DefId(20:1189 ~ winnow[6208]::stream::Stream::finish)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1189 ~ winnow[6208]::stream::Stream::finish)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::Stream::peek_token (AssocFn) [DefId: DefId(20:1181 ~ winnow[6208]::stream::Stream::peek_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1181 ~ winnow[6208]::stream::Stream::peek_token)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::Stream::peek_token (AssocFn) [DefId: DefId(20:1181 ~ winnow[6208]::stream::Stream::peek_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1181 ~ winnow[6208]::stream::Stream::peek_token)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::winnow::winnow::stream::Location::previous_token_end (AssocFn) [DefId: DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::toml_parser::source::Span::new_unchecked (AssocFn) [DefId: DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_ml_basic_string USES crate::toml_parser::lexer::token::Token::new (AssocFn) [DefId: DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ toml_parser[6fc0]::lexer::lex_ml_basic_string)",
+      "used_def_id": "DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_atom USES crate::winnow::winnow::stream::Location::current_token_start (AssocFn) [DefId: DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ toml_parser[6fc0]::lexer::lex_atom)",
+      "used_def_id": "DefId(20:1271 ~ winnow[6208]::stream::Location::current_token_start)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_atom USES crate::core::std::option::Option::<T>::unwrap_or_else (AssocFn) [DefId: DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ toml_parser[6fc0]::lexer::lex_atom)",
+      "used_def_id": "DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_atom USES crate::winnow::winnow::stream::Stream::offset_for (AssocFn) [DefId: DefId(20:1182 ~ winnow[6208]::stream::Stream::offset_for)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ toml_parser[6fc0]::lexer::lex_atom)",
+      "used_def_id": "DefId(20:1182 ~ winnow[6208]::stream::Stream::offset_for)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_atom USES crate::winnow::winnow::stream::AsBStr::as_bstr (AssocFn) [DefId: DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ toml_parser[6fc0]::lexer::lex_atom)",
+      "used_def_id": "DefId(20:1326 ~ winnow[6208]::stream::AsBStr::as_bstr)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_atom USES crate::winnow::winnow::stream::ContainsToken::contains_token (AssocFn) [DefId: DefId(20:1643 ~ winnow[6208]::stream::ContainsToken::contains_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ toml_parser[6fc0]::lexer::lex_atom)",
+      "used_def_id": "DefId(20:1643 ~ winnow[6208]::stream::ContainsToken::contains_token)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_atom USES crate::winnow::winnow::stream::Stream::eof_offset (AssocFn) [DefId: DefId(20:1179 ~ winnow[6208]::stream::Stream::eof_offset)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ toml_parser[6fc0]::lexer::lex_atom)",
+      "used_def_id": "DefId(20:1179 ~ winnow[6208]::stream::Stream::eof_offset)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_atom USES crate::winnow::winnow::stream::Stream::next_slice (AssocFn) [DefId: DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ toml_parser[6fc0]::lexer::lex_atom)",
+      "used_def_id": "DefId(20:1185 ~ winnow[6208]::stream::Stream::next_slice)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_atom USES crate::winnow::winnow::stream::Location::previous_token_end (AssocFn) [DefId: DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ toml_parser[6fc0]::lexer::lex_atom)",
+      "used_def_id": "DefId(20:1270 ~ winnow[6208]::stream::Location::previous_token_end)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_atom USES crate::toml_parser::source::Span::new_unchecked (AssocFn) [DefId: DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ toml_parser[6fc0]::lexer::lex_atom)",
+      "used_def_id": "DefId(0:61 ~ toml_parser[6fc0]::source::{impl#2}::new_unchecked)"
+    },
+    {
+      "usage": "crate::toml_parser::lexer::lex_atom USES crate::toml_parser::lexer::token::Token::new (AssocFn) [DefId: DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ toml_parser[6fc0]::lexer::lex_atom)",
+      "used_def_id": "DefId(0:290 ~ toml_parser[6fc0]::lexer::token::{impl#0}::new)"
+    }
+  ]
+}

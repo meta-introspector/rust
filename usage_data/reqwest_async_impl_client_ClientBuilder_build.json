@@ -1,0 +1,22 @@
+{
+  "crate": "reqwest",
+  "module": "async_impl::client::ClientBuilder::build",
+  "usages": [
+    {
+      "usage": "crate::reqwest::async_impl::client::ClientBuilder::build::user_agent USES crate::core::std::option::Option::<&T>::cloned (AssocFn) [DefId: DefId(2:10296 ~ core[4720]::option::{impl#2}::cloned)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:394 ~ reqwest[c5d8]::async_impl::client::{impl#1}::build::user_agent)",
+      "used_def_id": "DefId(2:10296 ~ core[4720]::option::{impl#2}::cloned)"
+    },
+    {
+      "usage": "crate::reqwest::async_impl::client::ClientBuilder::build::user_agent USES crate::http::http::HeaderMap::<T>::get (AssocFn) [DefId: DefId(20:56 ~ http[812a]::header::map::{impl#1}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:394 ~ reqwest[c5d8]::async_impl::client::{impl#1}::build::user_agent)",
+      "used_def_id": "DefId(20:56 ~ http[812a]::header::map::{impl#1}::get)"
+    }
+  ]
+}

@@ -1,0 +1,758 @@
+{
+  "crate": "toml",
+  "module": "de::parser::document",
+  "usages": [
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::winnow::winnow::stream::Stream::next_token (AssocFn) [DefId: DefId(64:1180 ~ winnow[1826]::stream::Stream::next_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(64:1180 ~ winnow[1826]::stream::Stream::next_token)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::toml_parser::toml_parser::parser::Event::kind (AssocFn) [DefId: DefId(63:537 ~ toml_parser[c8a4]::parser::event::{impl#7}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(63:537 ~ toml_parser[c8a4]::parser::event::{impl#7}::kind)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::toml::de::parser::document::State::<'i>::finish_table (AssocFn) [DefId: DefId(0:1099 ~ toml[398a]::de::parser::document::{impl#0}::finish_table)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(0:1099 ~ toml[398a]::de::parser::document::{impl#0}::finish_table)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::toml::de::parser::document::State::<'i>::start_table (AssocFn) [DefId: DefId(0:1102 ~ toml[398a]::de::parser::document::{impl#0}::start_table)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(0:1102 ~ toml[398a]::de::parser::document::{impl#0}::start_table)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::winnow::winnow::stream::Stream::next_token (AssocFn) [DefId: DefId(64:1180 ~ winnow[1826]::stream::Stream::next_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(64:1180 ~ winnow[1826]::stream::Stream::next_token)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::toml_parser::toml_parser::parser::Event::kind (AssocFn) [DefId: DefId(63:537 ~ toml_parser[c8a4]::parser::event::{impl#7}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(63:537 ~ toml_parser[c8a4]::parser::event::{impl#7}::kind)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::winnow::winnow::stream::Stream::next_token (AssocFn) [DefId: DefId(64:1180 ~ winnow[1826]::stream::Stream::next_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(64:1180 ~ winnow[1826]::stream::Stream::next_token)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::toml_parser::toml_parser::parser::Event::kind (AssocFn) [DefId: DefId(63:537 ~ toml_parser[c8a4]::parser::event::{impl#7}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(63:537 ~ toml_parser[c8a4]::parser::event::{impl#7}::kind)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::core::std::option::Option::<T>::unwrap_or (AssocFn) [DefId: DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::core::std::option::Option::<T>::map (AssocFn) [DefId: DefId(2:10234 ~ core[4720]::option::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(2:10234 ~ core[4720]::option::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::core::core::slice::<impl [T]>::first (AssocFn) [DefId: DefId(2:14036 ~ core[4720]::slice::{impl#0}::first)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(2:14036 ~ core[4720]::slice::{impl#0}::first)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::toml_parser::toml_parser::parser::Event::kind (AssocFn) [DefId: DefId(63:537 ~ toml_parser[c8a4]::parser::event::{impl#7}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(63:537 ~ toml_parser[c8a4]::parser::event::{impl#7}::kind)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::winnow::winnow::stream::Stream::next_token (AssocFn) [DefId: DefId(64:1180 ~ winnow[1826]::stream::Stream::next_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(64:1180 ~ winnow[1826]::stream::Stream::next_token)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::toml::de::parser::document::State::<'i>::capture_key_value (AssocFn) [DefId: DefId(0:1098 ~ toml[398a]::de::parser::document::{impl#0}::capture_key_value)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(0:1098 ~ toml[398a]::de::parser::document::{impl#0}::capture_key_value)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::toml::de::parser::document::State::<'i>::capture_trailing (AssocFn) [DefId: DefId(0:1097 ~ toml[398a]::de::parser::document::{impl#0}::capture_trailing)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(0:1097 ~ toml[398a]::de::parser::document::{impl#0}::capture_trailing)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::toml::de::parser::document::State::<'i>::finish_table (AssocFn) [DefId: DefId(0:1099 ~ toml[398a]::de::parser::document::{impl#0}::finish_table)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(0:1099 ~ toml[398a]::de::parser::document::{impl#0}::finish_table)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::document USES crate::serde_spanned::serde_spanned::Spanned::<T>::new (AssocFn) [DefId: DefId(62:16 ~ serde_spanned[108c]::spanned::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1082 ~ toml[398a]::de::parser::document::document)",
+      "used_def_id": "DefId(62:16 ~ serde_spanned[108c]::spanned::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::toml_parser::toml_parser::parser::Event::kind (AssocFn) [DefId: DefId(63:537 ~ toml_parser[c8a4]::parser::event::{impl#7}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(63:537 ~ toml_parser[c8a4]::parser::event::{impl#7}::kind)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::toml_parser::toml_parser::parser::Event::span (AssocFn) [DefId: DefId(63:539 ~ toml_parser[c8a4]::parser::event::{impl#7}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(63:539 ~ toml_parser[c8a4]::parser::event::{impl#7}::span)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::winnow::winnow::stream::Stream::next_token (AssocFn) [DefId: DefId(64:1180 ~ winnow[1826]::stream::Stream::next_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(64:1180 ~ winnow[1826]::stream::Stream::next_token)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::toml_parser::toml_parser::parser::Event::kind (AssocFn) [DefId: DefId(63:537 ~ toml_parser[c8a4]::parser::event::{impl#7}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(63:537 ~ toml_parser[c8a4]::parser::event::{impl#7}::kind)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::toml_parser::toml_parser::Span::append (AssocFn) [DefId: DefId(63:68 ~ toml_parser[c8a4]::source::{impl#2}::append)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(63:68 ~ toml_parser[c8a4]::source::{impl#2}::append)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::toml_parser::toml_parser::parser::Event::span (AssocFn) [DefId: DefId(63:539 ~ toml_parser[c8a4]::parser::event::{impl#7}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(63:539 ~ toml_parser[c8a4]::parser::event::{impl#7}::span)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::core::std::option::Option::<T>::get_or_insert_with (AssocFn) [DefId: DefId(2:10273 ~ core[4720]::option::{impl#0}::get_or_insert_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(2:10273 ~ core[4720]::option::{impl#0}::get_or_insert_with)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::toml_parser::toml_parser::Span::before (AssocFn) [DefId: DefId(63:66 ~ toml_parser[c8a4]::source::{impl#2}::before)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(63:66 ~ toml_parser[c8a4]::source::{impl#2}::before)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::toml_parser::toml_parser::parser::Event::span (AssocFn) [DefId: DefId(63:539 ~ toml_parser[c8a4]::parser::event::{impl#7}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(63:539 ~ toml_parser[c8a4]::parser::event::{impl#7}::span)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::core::std::option::Option::<T>::get_or_insert_with (AssocFn) [DefId: DefId(2:10273 ~ core[4720]::option::{impl#0}::get_or_insert_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(2:10273 ~ core[4720]::option::{impl#0}::get_or_insert_with)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::toml_parser::toml_parser::Span::after (AssocFn) [DefId: DefId(63:67 ~ toml_parser[c8a4]::source::{impl#2}::after)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(63:67 ~ toml_parser[c8a4]::source::{impl#2}::after)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::toml_parser::toml_parser::parser::Event::span (AssocFn) [DefId: DefId(63:539 ~ toml_parser[c8a4]::parser::event::{impl#7}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(63:539 ~ toml_parser[c8a4]::parser::event::{impl#7}::span)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::toml_parser::toml_parser::parser::Event::span (AssocFn) [DefId: DefId(63:539 ~ toml_parser[c8a4]::parser::event::{impl#7}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(63:539 ~ toml_parser[c8a4]::parser::event::{impl#7}::span)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::toml_parser::toml_parser::parser::Event::span (AssocFn) [DefId: DefId(63:539 ~ toml_parser[c8a4]::parser::event::{impl#7}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(63:539 ~ toml_parser[c8a4]::parser::event::{impl#7}::span)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::on_table USES crate::core::std::option::Option::<T>::unwrap_or_default (AssocFn) [DefId: DefId(2:10232 ~ core[4720]::option::{impl#0}::unwrap_or_default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ toml[398a]::de::parser::document::on_table)",
+      "used_def_id": "DefId(2:10232 ~ core[4720]::option::{impl#0}::unwrap_or_default)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml::map::Map::<K, V>::entry (AssocFn) [DefId: DefId(0:54 ~ toml[398a]::map::{impl#0}::entry)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(0:54 ~ toml[398a]::map::{impl#0}::entry)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml::map::Map::<K, V>::new (AssocFn) [DefId: DefId(0:35 ~ toml[398a]::map::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(0:35 ~ toml[398a]::map::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml::map::Map::<K, V>::set_implicit (AssocFn) [DefId: DefId(0:72 ~ toml[398a]::map::{impl#1}::set_implicit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(0:72 ~ toml[398a]::map::{impl#1}::set_implicit)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml::map::Map::<K, V>::set_dotted (AssocFn) [DefId: DefId(0:73 ~ toml[398a]::map::{impl#1}::set_dotted)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(0:73 ~ toml[398a]::map::{impl#1}::set_dotted)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::serde_spanned::serde_spanned::Spanned::<T>::new (AssocFn) [DefId: DefId(62:16 ~ serde_spanned[108c]::spanned::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(62:16 ~ serde_spanned[108c]::spanned::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::serde_spanned::serde_spanned::Spanned::<T>::span (AssocFn) [DefId: DefId(62:17 ~ serde_spanned[108c]::spanned::{impl#0}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(62:17 ~ serde_spanned[108c]::spanned::{impl#0}::span)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml::map::VacantEntry::<'a, K, V>::insert (AssocFn) [DefId: DefId(0:154 ~ toml[398a]::map::{impl#11}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(0:154 ~ toml[398a]::map::{impl#11}::insert)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml::de::parser::devalue::DeValue::<'i>::as_table_mut (AssocFn) [DefId: DefId(0:1035 ~ toml[398a]::de::parser::devalue::{impl#6}::as_table_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(0:1035 ~ toml[398a]::de::parser::devalue::{impl#6}::as_table_mut)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::std::convert::AsMut::as_mut (AssocFn) [DefId: DefId(2:3429 ~ core[4720]::convert::AsMut::as_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:3429 ~ core[4720]::convert::AsMut::as_mut)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml::map::OccupiedEntry::<'a, K, V>::into_mut (AssocFn) [DefId: DefId(0:162 ~ toml[398a]::map::{impl#12}::into_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(0:162 ~ toml[398a]::map::{impl#12}::into_mut)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::serde_spanned::serde_spanned::Spanned::<T>::span (AssocFn) [DefId: DefId(62:17 ~ serde_spanned[108c]::spanned::{impl#0}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(62:17 ~ serde_spanned[108c]::spanned::{impl#0}::span)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::std::convert::AsMut::as_mut (AssocFn) [DefId: DefId(2:3429 ~ core[4720]::convert::AsMut::as_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:3429 ~ core[4720]::convert::AsMut::as_mut)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml::de::parser::dearray::DeArray::<'_>::is_array_of_tables (AssocFn) [DefId: DefId(0:925 ~ toml[398a]::de::parser::dearray::{impl#1}::is_array_of_tables)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(0:925 ~ toml[398a]::de::parser::dearray::{impl#1}::is_array_of_tables)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::Span::new_unchecked (AssocFn) [DefId: DefId(63:61 ~ toml_parser[c8a4]::source::{impl#2}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:61 ~ toml_parser[c8a4]::source::{impl#2}::new_unchecked)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ErrorSink::report_error (AssocFn) [DefId: DefId(63:8 ~ toml_parser[c8a4]::error::ErrorSink::report_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:8 ~ toml_parser[c8a4]::error::ErrorSink::report_error)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ParseError::with_context (AssocFn) [DefId: DefId(63:21 ~ toml_parser[c8a4]::error::{impl#4}::with_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:21 ~ toml_parser[c8a4]::error::{impl#4}::with_context)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ParseError::with_unexpected (AssocFn) [DefId: DefId(63:23 ~ toml_parser[c8a4]::error::{impl#4}::with_unexpected)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:23 ~ toml_parser[c8a4]::error::{impl#4}::with_unexpected)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ParseError::new (AssocFn) [DefId: DefId(63:19 ~ toml_parser[c8a4]::error::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:19 ~ toml_parser[c8a4]::error::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::core::slice::<impl [T]>::is_empty (AssocFn) [DefId: DefId(2:14035 ~ core[4720]::slice::{impl#0}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:14035 ~ core[4720]::slice::{impl#0}::is_empty)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::core::slice::<impl [T]>::get_mut (AssocFn) [DefId: DefId(2:14070 ~ core[4720]::slice::{impl#0}::get_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:14070 ~ core[4720]::slice::{impl#0}::get_mut)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::std::convert::AsMut::as_mut (AssocFn) [DefId: DefId(2:3429 ~ core[4720]::convert::AsMut::as_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:3429 ~ core[4720]::convert::AsMut::as_mut)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::Span::new_unchecked (AssocFn) [DefId: DefId(63:61 ~ toml_parser[c8a4]::source::{impl#2}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:61 ~ toml_parser[c8a4]::source::{impl#2}::new_unchecked)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ErrorSink::report_error (AssocFn) [DefId: DefId(63:8 ~ toml_parser[c8a4]::error::ErrorSink::report_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:8 ~ toml_parser[c8a4]::error::ErrorSink::report_error)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ParseError::with_context (AssocFn) [DefId: DefId(63:21 ~ toml_parser[c8a4]::error::{impl#4}::with_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:21 ~ toml_parser[c8a4]::error::{impl#4}::with_context)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ParseError::with_unexpected (AssocFn) [DefId: DefId(63:23 ~ toml_parser[c8a4]::error::{impl#4}::with_unexpected)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:23 ~ toml_parser[c8a4]::error::{impl#4}::with_unexpected)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ParseError::new (AssocFn) [DefId: DefId(63:19 ~ toml_parser[c8a4]::error::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:19 ~ toml_parser[c8a4]::error::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml::de::parser::devalue::DeValue::<'i>::type_str (AssocFn) [DefId: DefId(0:1038 ~ toml[398a]::de::parser::devalue::{impl#6}::type_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(0:1038 ~ toml[398a]::de::parser::devalue::{impl#6}::type_str)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml::map::Map::<K, V>::is_inline (AssocFn) [DefId: DefId(0:71 ~ toml[398a]::map::{impl#1}::is_inline)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(0:71 ~ toml[398a]::map::{impl#1}::is_inline)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ErrorSink::report_error (AssocFn) [DefId: DefId(63:8 ~ toml_parser[c8a4]::error::ErrorSink::report_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:8 ~ toml_parser[c8a4]::error::ErrorSink::report_error)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ParseError::with_unexpected (AssocFn) [DefId: DefId(63:23 ~ toml_parser[c8a4]::error::{impl#4}::with_unexpected)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:23 ~ toml_parser[c8a4]::error::{impl#4}::with_unexpected)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ParseError::new (AssocFn) [DefId: DefId(63:19 ~ toml_parser[c8a4]::error::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:19 ~ toml_parser[c8a4]::error::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml::map::Map::<K, V>::is_implicit (AssocFn) [DefId: DefId(0:70 ~ toml[398a]::map::{impl#1}::is_implicit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(0:70 ~ toml[398a]::map::{impl#1}::is_implicit)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ErrorSink::report_error (AssocFn) [DefId: DefId(63:8 ~ toml_parser[c8a4]::error::ErrorSink::report_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:8 ~ toml_parser[c8a4]::error::ErrorSink::report_error)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ParseError::with_unexpected (AssocFn) [DefId: DefId(63:23 ~ toml_parser[c8a4]::error::{impl#4}::with_unexpected)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:23 ~ toml_parser[c8a4]::error::{impl#4}::with_unexpected)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ParseError::new (AssocFn) [DefId: DefId(63:19 ~ toml_parser[c8a4]::error::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:19 ~ toml_parser[c8a4]::error::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::Span::new_unchecked (AssocFn) [DefId: DefId(63:61 ~ toml_parser[c8a4]::source::{impl#2}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:61 ~ toml_parser[c8a4]::source::{impl#2}::new_unchecked)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ErrorSink::report_error (AssocFn) [DefId: DefId(63:8 ~ toml_parser[c8a4]::error::ErrorSink::report_error)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:8 ~ toml_parser[c8a4]::error::ErrorSink::report_error)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ParseError::with_context (AssocFn) [DefId: DefId(63:21 ~ toml_parser[c8a4]::error::{impl#4}::with_context)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:21 ~ toml_parser[c8a4]::error::{impl#4}::with_context)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ParseError::with_unexpected (AssocFn) [DefId: DefId(63:23 ~ toml_parser[c8a4]::error::{impl#4}::with_unexpected)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:23 ~ toml_parser[c8a4]::error::{impl#4}::with_unexpected)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml_parser::toml_parser::ParseError::new (AssocFn) [DefId: DefId(63:19 ~ toml_parser[c8a4]::error::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(63:19 ~ toml_parser[c8a4]::error::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::toml::de::parser::devalue::DeValue::<'i>::type_str (AssocFn) [DefId: DefId(0:1038 ~ toml[398a]::de::parser::devalue::{impl#6}::type_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(0:1038 ~ toml[398a]::de::parser::devalue::{impl#6}::type_str)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::descend_path USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1103 ~ toml[398a]::de::parser::document::descend_path)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::get_key_span USES crate::serde_spanned::serde_spanned::Spanned::<T>::span (AssocFn) [DefId: DefId(62:17 ~ serde_spanned[108c]::spanned::{impl#0}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1106 ~ toml[398a]::de::parser::document::get_key_span)",
+      "used_def_id": "DefId(62:17 ~ serde_spanned[108c]::spanned::{impl#0}::span)"
+    },
+    {
+      "usage": "crate::toml::de::parser::document::get_key_span USES crate::toml_parser::toml_parser::Span::new_unchecked (AssocFn) [DefId: DefId(63:61 ~ toml_parser[c8a4]::source::{impl#2}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1106 ~ toml[398a]::de::parser::document::get_key_span)",
+      "used_def_id": "DefId(63:61 ~ toml_parser[c8a4]::source::{impl#2}::new_unchecked)"
+    }
+  ]
+}

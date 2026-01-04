@@ -1,0 +1,62 @@
+{
+  "crate": "tokio",
+  "module": "sync::broadcast",
+  "usages": [
+    {
+      "usage": "crate::tokio::sync::broadcast::MAX_RECEIVERS USES crate::core::core::num::<impl usize>::MAX (AssocConst) [DefId: DefId(2:35682 ~ core[4720]::num::{impl#11}::MAX)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9301 ~ tokio[47da]::sync::broadcast::MAX_RECEIVERS)",
+      "used_def_id": "DefId(2:35682 ~ core[4720]::num::{impl#11}::MAX)"
+    },
+    {
+      "usage": "crate::tokio::sync::broadcast::channel USES crate::tokio::sync::broadcast::Sender::<T>::new_with_receiver_count (AssocFn) [DefId: DefId(0:9307 ~ tokio[47da]::sync::broadcast::{impl#3}::new_with_receiver_count)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9302 ~ tokio[47da]::sync::broadcast::channel)",
+      "used_def_id": "DefId(0:9307 ~ tokio[47da]::sync::broadcast::{impl#3}::new_with_receiver_count)"
+    },
+    {
+      "usage": "crate::tokio::sync::broadcast::channel USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9302 ~ tokio[47da]::sync::broadcast::channel)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::tokio::sync::broadcast::new_receiver USES crate::tokio::loom::std::mutex::Mutex::<T>::lock (AssocFn) [DefId: DefId(0:459 ~ tokio[47da]::loom::std::mutex::{impl#0}::lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9322 ~ tokio[47da]::sync::broadcast::new_receiver)",
+      "used_def_id": "DefId(0:459 ~ tokio[47da]::loom::std::mutex::{impl#0}::lock)"
+    },
+    {
+      "usage": "crate::tokio::sync::broadcast::new_receiver USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9322 ~ tokio[47da]::sync::broadcast::new_receiver)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::tokio::sync::broadcast::new_receiver USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9322 ~ tokio[47da]::sync::broadcast::new_receiver)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::tokio::sync::broadcast::new_receiver USES crate::core::core::num::<impl usize>::checked_add (AssocFn) [DefId: DefId(2:35706 ~ core[4720]::num::{impl#11}::checked_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9322 ~ tokio[47da]::sync::broadcast::new_receiver)",
+      "used_def_id": "DefId(2:35706 ~ core[4720]::num::{impl#11}::checked_add)"
+    }
+  ]
+}

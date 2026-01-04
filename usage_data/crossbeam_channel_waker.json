@@ -1,0 +1,30 @@
+{
+  "crate": "crossbeam_channel",
+  "module": "waker",
+  "usages": [
+    {
+      "usage": "crate::crossbeam_channel::waker::current_thread_id USES crate::core::core::result::Result::<T, E>::unwrap_or_else (AssocFn) [DefId: DefId(1:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:980 ~ crossbeam_channel[7166]::waker::current_thread_id)",
+      "used_def_id": "DefId(1:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::waker::current_thread_id USES crate::std::std::thread::LocalKey::<T>::try_with (AssocFn) [DefId: DefId(2:573 ~ std[93f5]::thread::local::{impl#4}::try_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:980 ~ crossbeam_channel[7166]::waker::current_thread_id)",
+      "used_def_id": "DefId(2:573 ~ std[93f5]::thread::local::{impl#4}::try_with)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::waker::current_thread_id USES crate::std::std::thread::Thread::id (AssocFn) [DefId: DefId(2:693 ~ std[93f5]::thread::{impl#4}::id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:980 ~ crossbeam_channel[7166]::waker::current_thread_id)",
+      "used_def_id": "DefId(2:693 ~ std[93f5]::thread::{impl#4}::id)"
+    }
+  ]
+}

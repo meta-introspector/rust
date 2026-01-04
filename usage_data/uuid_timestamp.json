@@ -1,0 +1,94 @@
+{
+  "crate": "uuid",
+  "module": "timestamp",
+  "usages": [
+    {
+      "usage": "crate::uuid::timestamp::encode_gregorian_timestamp USES crate::uuid::builder::<impl Uuid>::from_fields (AssocFn) [DefId: DefId(0:21 ~ uuid[8edc]::builder::{impl#0}::from_fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:302 ~ uuid[8edc]::timestamp::encode_gregorian_timestamp)",
+      "used_def_id": "DefId(0:21 ~ uuid[8edc]::builder::{impl#0}::from_fields)"
+    },
+    {
+      "usage": "crate::uuid::timestamp::decode_gregorian_timestamp USES crate::uuid::Uuid::as_bytes (AssocFn) [DefId: DefId(0:560 ~ uuid[8edc]::{impl#0}::as_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:305 ~ uuid[8edc]::timestamp::decode_gregorian_timestamp)",
+      "used_def_id": "DefId(0:560 ~ uuid[8edc]::{impl#0}::as_bytes)"
+    },
+    {
+      "usage": "crate::uuid::timestamp::encode_sorted_gregorian_timestamp USES crate::uuid::builder::<impl Uuid>::from_fields (AssocFn) [DefId: DefId(0:21 ~ uuid[8edc]::builder::{impl#0}::from_fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:306 ~ uuid[8edc]::timestamp::encode_sorted_gregorian_timestamp)",
+      "used_def_id": "DefId(0:21 ~ uuid[8edc]::builder::{impl#0}::from_fields)"
+    },
+    {
+      "usage": "crate::uuid::timestamp::decode_sorted_gregorian_timestamp USES crate::uuid::Uuid::as_bytes (AssocFn) [DefId: DefId(0:560 ~ uuid[8edc]::{impl#0}::as_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:309 ~ uuid[8edc]::timestamp::decode_sorted_gregorian_timestamp)",
+      "used_def_id": "DefId(0:560 ~ uuid[8edc]::{impl#0}::as_bytes)"
+    },
+    {
+      "usage": "crate::uuid::timestamp::encode_unix_timestamp_millis USES crate::uuid::builder::<impl Uuid>::from_fields (AssocFn) [DefId: DefId(0:21 ~ uuid[8edc]::builder::{impl#0}::from_fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:310 ~ uuid[8edc]::timestamp::encode_unix_timestamp_millis)",
+      "used_def_id": "DefId(0:21 ~ uuid[8edc]::builder::{impl#0}::from_fields)"
+    },
+    {
+      "usage": "crate::uuid::timestamp::decode_unix_timestamp_millis USES crate::uuid::Uuid::as_bytes (AssocFn) [DefId: DefId(0:560 ~ uuid[8edc]::{impl#0}::as_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:313 ~ uuid[8edc]::timestamp::decode_unix_timestamp_millis)",
+      "used_def_id": "DefId(0:560 ~ uuid[8edc]::{impl#0}::as_bytes)"
+    },
+    {
+      "usage": "crate::uuid::timestamp::now USES crate::core::core::result::Result::<T, E>::expect (AssocFn) [DefId: DefId(1:11107 ~ core[4720]::result::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:314 ~ uuid[8edc]::timestamp::now)",
+      "used_def_id": "DefId(1:11107 ~ core[4720]::result::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::uuid::timestamp::now USES crate::std::std::time::SystemTime::elapsed (AssocFn) [DefId: DefId(2:7967 ~ std[93f5]::time::{impl#7}::elapsed)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:314 ~ uuid[8edc]::timestamp::now)",
+      "used_def_id": "DefId(2:7967 ~ std[93f5]::time::{impl#7}::elapsed)"
+    },
+    {
+      "usage": "crate::uuid::timestamp::now USES crate::std::std::time::SystemTime::UNIX_EPOCH (AssocConst) [DefId: DefId(2:7964 ~ std[93f5]::time::{impl#7}::UNIX_EPOCH)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:314 ~ uuid[8edc]::timestamp::now)",
+      "used_def_id": "DefId(2:7964 ~ std[93f5]::time::{impl#7}::UNIX_EPOCH)"
+    },
+    {
+      "usage": "crate::uuid::timestamp::now USES crate::core::core::time::Duration::as_secs (AssocFn) [DefId: DefId(1:15326 ~ core[4720]::time::{impl#0}::as_secs)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:314 ~ uuid[8edc]::timestamp::now)",
+      "used_def_id": "DefId(1:15326 ~ core[4720]::time::{impl#0}::as_secs)"
+    },
+    {
+      "usage": "crate::uuid::timestamp::now USES crate::core::core::time::Duration::subsec_nanos (AssocFn) [DefId: DefId(1:15329 ~ core[4720]::time::{impl#0}::subsec_nanos)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:314 ~ uuid[8edc]::timestamp::now)",
+      "used_def_id": "DefId(1:15329 ~ core[4720]::time::{impl#0}::subsec_nanos)"
+    }
+  ]
+}

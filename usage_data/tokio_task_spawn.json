@@ -1,0 +1,54 @@
+{
+  "crate": "tokio",
+  "module": "task::spawn",
+  "usages": [
+    {
+      "usage": "crate::tokio::task::spawn::spawn USES crate::alloc::std::boxed::Box::<T>::pin (AssocFn) [DefId: DefId(3:683 ~ alloc[27b0]::boxed::{impl#0}::pin)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:12288 ~ tokio[47da]::task::spawn::spawn)",
+      "used_def_id": "DefId(3:683 ~ alloc[27b0]::boxed::{impl#0}::pin)"
+    },
+    {
+      "usage": "crate::tokio::task::spawn::spawn USES crate::tokio::util::trace::SpawnMeta::<'a>::new_unnamed (AssocFn) [DefId: DefId(0:13111 ~ tokio[47da]::util::trace::{impl#0}::new_unnamed)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:12288 ~ tokio[47da]::task::spawn::spawn)",
+      "used_def_id": "DefId(0:13111 ~ tokio[47da]::util::trace::{impl#0}::new_unnamed)"
+    },
+    {
+      "usage": "crate::tokio::task::spawn::spawn USES crate::tokio::util::trace::SpawnMeta::<'a>::new_unnamed (AssocFn) [DefId: DefId(0:13111 ~ tokio[47da]::util::trace::{impl#0}::new_unnamed)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:12288 ~ tokio[47da]::task::spawn::spawn)",
+      "used_def_id": "DefId(0:13111 ~ tokio[47da]::util::trace::{impl#0}::new_unnamed)"
+    },
+    {
+      "usage": "crate::tokio::task::spawn::spawn_inner USES crate::tokio::runtime::task::id::Id::next (AssocFn) [DefId: DefId(0:7776 ~ tokio[47da]::runtime::task::id::{impl#1}::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:12290 ~ tokio[47da]::task::spawn::spawn_inner)",
+      "used_def_id": "DefId(0:7776 ~ tokio[47da]::runtime::task::id::{impl#1}::next)"
+    },
+    {
+      "usage": "crate::tokio::task::spawn::spawn_inner USES crate::tokio::runtime::task::id::Id::as_u64 (AssocFn) [DefId: DefId(0:7780 ~ tokio[47da]::runtime::task::id::{impl#1}::as_u64)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:12290 ~ tokio[47da]::task::spawn::spawn_inner)",
+      "used_def_id": "DefId(0:7780 ~ tokio[47da]::runtime::task::id::{impl#1}::as_u64)"
+    },
+    {
+      "usage": "crate::tokio::task::spawn::spawn_inner USES crate::tokio::runtime::scheduler::Handle::spawn (AssocFn) [DefId: DefId(0:6889 ~ tokio[47da]::runtime::scheduler::{impl#3}::spawn)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:12290 ~ tokio[47da]::task::spawn::spawn_inner)",
+      "used_def_id": "DefId(0:6889 ~ tokio[47da]::runtime::scheduler::{impl#3}::spawn)"
+    }
+  ]
+}

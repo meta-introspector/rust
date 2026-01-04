@@ -1,0 +1,78 @@
+{
+  "crate": "backtrace",
+  "module": "lock",
+  "usages": [
+    {
+      "usage": "crate::backtrace::lock::LOCK USES crate::std::std::sync::Mutex::<T>::new (AssocFn) [DefId: DefId(2:7329 ~ std[93f5]::sync::poison::mutex::{impl#6}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:158 ~ backtrace[6380]::lock::LOCK)",
+      "used_def_id": "DefId(2:7329 ~ std[93f5]::sync::poison::mutex::{impl#6}::new)"
+    },
+    {
+      "usage": "crate::backtrace::lock::LOCK_HELD USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(2:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:703 ~ backtrace[6380]::lock::LOCK_HELD)",
+      "used_def_id": "DefId(2:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::backtrace::lock::LOCK_HELD USES crate::std::std::thread::local_impl::EagerStorage::<T>::get (AssocFn) [DefId: DefId(2:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:703 ~ backtrace[6380]::lock::LOCK_HELD)",
+      "used_def_id": "DefId(2:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)"
+    },
+    {
+      "usage": "crate::backtrace::lock::lock USES crate::std::std::thread::LocalKey::<T>::with (AssocFn) [DefId: DefId(2:570 ~ std[93f5]::thread::local::{impl#4}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:162 ~ backtrace[6380]::lock::lock)",
+      "used_def_id": "DefId(2:570 ~ std[93f5]::thread::local::{impl#4}::with)"
+    },
+    {
+      "usage": "crate::backtrace::lock::lock USES crate::core::core::cell::Cell::<T>::get (AssocFn) [DefId: DefId(1:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:162 ~ backtrace[6380]::lock::lock)",
+      "used_def_id": "DefId(1:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::backtrace::lock::lock USES crate::std::std::thread::LocalKey::<T>::with (AssocFn) [DefId: DefId(2:570 ~ std[93f5]::thread::local::{impl#4}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:162 ~ backtrace[6380]::lock::lock)",
+      "used_def_id": "DefId(2:570 ~ std[93f5]::thread::local::{impl#4}::with)"
+    },
+    {
+      "usage": "crate::backtrace::lock::lock USES crate::core::core::cell::Cell::<T>::set (AssocFn) [DefId: DefId(1:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:162 ~ backtrace[6380]::lock::lock)",
+      "used_def_id": "DefId(1:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::backtrace::lock::lock USES crate::core::core::result::Result::<T, E>::unwrap (AssocFn) [DefId: DefId(1:11108 ~ core[4720]::result::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:162 ~ backtrace[6380]::lock::lock)",
+      "used_def_id": "DefId(1:11108 ~ core[4720]::result::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::backtrace::lock::lock USES crate::std::std::sync::Mutex::<T>::lock (AssocFn) [DefId: DefId(2:7335 ~ std[93f5]::sync::poison::mutex::{impl#7}::lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:162 ~ backtrace[6380]::lock::lock)",
+      "used_def_id": "DefId(2:7335 ~ std[93f5]::sync::poison::mutex::{impl#7}::lock)"
+    }
+  ]
+}

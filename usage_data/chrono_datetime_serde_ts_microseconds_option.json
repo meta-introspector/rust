@@ -1,0 +1,38 @@
+{
+  "crate": "chrono",
+  "module": "datetime::serde::ts_microseconds_option",
+  "usages": [
+    {
+      "usage": "crate::chrono::datetime::serde::ts_microseconds_option::serialize USES crate::serde_core::serde::Serializer::serialize_some (AssocFn) [DefId: DefId(22:8394 ~ serde_core[e077]::ser::Serializer::serialize_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:482 ~ chrono[487a]::datetime::serde::ts_microseconds_option::serialize)",
+      "used_def_id": "DefId(22:8394 ~ serde_core[e077]::ser::Serializer::serialize_some)"
+    },
+    {
+      "usage": "crate::chrono::datetime::serde::ts_microseconds_option::serialize USES crate::chrono::datetime::DateTime::<Tz>::timestamp_micros (AssocFn) [DefId: DefId(0:614 ~ chrono[487a]::datetime::{impl#0}::timestamp_micros)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:482 ~ chrono[487a]::datetime::serde::ts_microseconds_option::serialize)",
+      "used_def_id": "DefId(0:614 ~ chrono[487a]::datetime::{impl#0}::timestamp_micros)"
+    },
+    {
+      "usage": "crate::chrono::datetime::serde::ts_microseconds_option::serialize USES crate::serde_core::serde::Serializer::serialize_none (AssocFn) [DefId: DefId(22:8393 ~ serde_core[e077]::ser::Serializer::serialize_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:482 ~ chrono[487a]::datetime::serde::ts_microseconds_option::serialize)",
+      "used_def_id": "DefId(22:8393 ~ serde_core[e077]::ser::Serializer::serialize_none)"
+    },
+    {
+      "usage": "crate::chrono::datetime::serde::ts_microseconds_option::deserialize USES crate::serde_core::serde::Deserializer::deserialize_option (AssocFn) [DefId: DefId(22:7692 ~ serde_core[e077]::de::Deserializer::deserialize_option)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:484 ~ chrono[487a]::datetime::serde::ts_microseconds_option::deserialize)",
+      "used_def_id": "DefId(22:7692 ~ serde_core[e077]::de::Deserializer::deserialize_option)"
+    }
+  ]
+}

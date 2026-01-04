@@ -1,0 +1,854 @@
+{
+  "crate": "rustix",
+  "module": "net::sockopt",
+  "usages": [
+    {
+      "usage": "crate::rustix::net::sockopt::socket_type USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4202 ~ rustix[561d]::net::sockopt::socket_type)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_socket_reuseaddr USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4204 ~ rustix[561d]::net::sockopt::set_socket_reuseaddr)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_reuseaddr USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4206 ~ rustix[561d]::net::sockopt::socket_reuseaddr)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_socket_broadcast USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4208 ~ rustix[561d]::net::sockopt::set_socket_broadcast)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_broadcast USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4210 ~ rustix[561d]::net::sockopt::socket_broadcast)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_socket_linger USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4212 ~ rustix[561d]::net::sockopt::set_socket_linger)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_linger USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4214 ~ rustix[561d]::net::sockopt::socket_linger)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_socket_passcred USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4216 ~ rustix[561d]::net::sockopt::set_socket_passcred)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_passcred USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4218 ~ rustix[561d]::net::sockopt::socket_passcred)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_socket_timeout USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4220 ~ rustix[561d]::net::sockopt::set_socket_timeout)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_timeout USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4222 ~ rustix[561d]::net::sockopt::socket_timeout)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_error USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4224 ~ rustix[561d]::net::sockopt::socket_error)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_socket_keepalive USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4226 ~ rustix[561d]::net::sockopt::set_socket_keepalive)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_keepalive USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4228 ~ rustix[561d]::net::sockopt::socket_keepalive)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_socket_recv_buffer_size USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4230 ~ rustix[561d]::net::sockopt::set_socket_recv_buffer_size)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_socket_recv_buffer_size_force USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4232 ~ rustix[561d]::net::sockopt::set_socket_recv_buffer_size_force)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_recv_buffer_size USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4234 ~ rustix[561d]::net::sockopt::socket_recv_buffer_size)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_socket_send_buffer_size USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4236 ~ rustix[561d]::net::sockopt::set_socket_send_buffer_size)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_socket_send_buffer_size_force USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4238 ~ rustix[561d]::net::sockopt::set_socket_send_buffer_size_force)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_send_buffer_size USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4240 ~ rustix[561d]::net::sockopt::socket_send_buffer_size)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_domain USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4242 ~ rustix[561d]::net::sockopt::socket_domain)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_acceptconn USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4244 ~ rustix[561d]::net::sockopt::socket_acceptconn)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_socket_oobinline USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4246 ~ rustix[561d]::net::sockopt::set_socket_oobinline)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_oobinline USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4248 ~ rustix[561d]::net::sockopt::socket_oobinline)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_socket_reuseport USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4250 ~ rustix[561d]::net::sockopt::set_socket_reuseport)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_reuseport USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4252 ~ rustix[561d]::net::sockopt::socket_reuseport)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_protocol USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4254 ~ rustix[561d]::net::sockopt::socket_protocol)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_cookie USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4256 ~ rustix[561d]::net::sockopt::socket_cookie)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_incoming_cpu USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4258 ~ rustix[561d]::net::sockopt::socket_incoming_cpu)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_socket_incoming_cpu USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4260 ~ rustix[561d]::net::sockopt::set_socket_incoming_cpu)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_ttl USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4262 ~ rustix[561d]::net::sockopt::set_ip_ttl)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ip_ttl USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4264 ~ rustix[561d]::net::sockopt::ip_ttl)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ipv6_v6only USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4266 ~ rustix[561d]::net::sockopt::set_ipv6_v6only)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ipv6_v6only USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4268 ~ rustix[561d]::net::sockopt::ipv6_v6only)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ip_mtu USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4270 ~ rustix[561d]::net::sockopt::ip_mtu)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ipv6_mtu USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4272 ~ rustix[561d]::net::sockopt::ipv6_mtu)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_mtu_discover USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4274 ~ rustix[561d]::net::sockopt::set_ip_mtu_discover)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ip_mtu_discover USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4276 ~ rustix[561d]::net::sockopt::ip_mtu_discover)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ipv6_mtu_discover USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4278 ~ rustix[561d]::net::sockopt::set_ipv6_mtu_discover)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ipv6_mtu_discover USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4280 ~ rustix[561d]::net::sockopt::ipv6_mtu_discover)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_multicast_if USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4282 ~ rustix[561d]::net::sockopt::set_ip_multicast_if)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_multicast_if_with_ifindex USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4284 ~ rustix[561d]::net::sockopt::set_ip_multicast_if_with_ifindex)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ip_multicast_if USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4286 ~ rustix[561d]::net::sockopt::ip_multicast_if)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ipv6_multicast_if USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4288 ~ rustix[561d]::net::sockopt::set_ipv6_multicast_if)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ipv6_multicast_if USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4290 ~ rustix[561d]::net::sockopt::ipv6_multicast_if)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_multicast_loop USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4292 ~ rustix[561d]::net::sockopt::set_ip_multicast_loop)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ip_multicast_loop USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4294 ~ rustix[561d]::net::sockopt::ip_multicast_loop)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_multicast_ttl USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4296 ~ rustix[561d]::net::sockopt::set_ip_multicast_ttl)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ip_multicast_ttl USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4298 ~ rustix[561d]::net::sockopt::ip_multicast_ttl)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ipv6_multicast_loop USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4300 ~ rustix[561d]::net::sockopt::set_ipv6_multicast_loop)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ipv6_multicast_loop USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4302 ~ rustix[561d]::net::sockopt::ipv6_multicast_loop)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ipv6_unicast_hops USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4304 ~ rustix[561d]::net::sockopt::ipv6_unicast_hops)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ipv6_unicast_hops USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4306 ~ rustix[561d]::net::sockopt::set_ipv6_unicast_hops)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ipv6_multicast_hops USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4308 ~ rustix[561d]::net::sockopt::set_ipv6_multicast_hops)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ipv6_multicast_hops USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4310 ~ rustix[561d]::net::sockopt::ipv6_multicast_hops)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_add_membership USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4312 ~ rustix[561d]::net::sockopt::set_ip_add_membership)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_add_membership_with_ifindex USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4314 ~ rustix[561d]::net::sockopt::set_ip_add_membership_with_ifindex)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_add_source_membership USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4316 ~ rustix[561d]::net::sockopt::set_ip_add_source_membership)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_drop_source_membership USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4318 ~ rustix[561d]::net::sockopt::set_ip_drop_source_membership)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ipv6_add_membership USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4320 ~ rustix[561d]::net::sockopt::set_ipv6_add_membership)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_drop_membership USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4322 ~ rustix[561d]::net::sockopt::set_ip_drop_membership)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_drop_membership_with_ifindex USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4324 ~ rustix[561d]::net::sockopt::set_ip_drop_membership_with_ifindex)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ipv6_drop_membership USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4326 ~ rustix[561d]::net::sockopt::set_ipv6_drop_membership)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_tos USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4328 ~ rustix[561d]::net::sockopt::set_ip_tos)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ip_tos USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4330 ~ rustix[561d]::net::sockopt::ip_tos)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_recvtos USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4332 ~ rustix[561d]::net::sockopt::set_ip_recvtos)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ip_recvtos USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4334 ~ rustix[561d]::net::sockopt::ip_recvtos)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ipv6_recvtclass USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4336 ~ rustix[561d]::net::sockopt::set_ipv6_recvtclass)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ipv6_recvtclass USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4338 ~ rustix[561d]::net::sockopt::ipv6_recvtclass)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ip_freebind USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4340 ~ rustix[561d]::net::sockopt::set_ip_freebind)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ip_freebind USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4342 ~ rustix[561d]::net::sockopt::ip_freebind)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ipv6_freebind USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4344 ~ rustix[561d]::net::sockopt::set_ipv6_freebind)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ipv6_freebind USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4346 ~ rustix[561d]::net::sockopt::ipv6_freebind)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ip_original_dst USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4348 ~ rustix[561d]::net::sockopt::ip_original_dst)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ipv6_original_dst USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4350 ~ rustix[561d]::net::sockopt::ipv6_original_dst)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_ipv6_tclass USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4352 ~ rustix[561d]::net::sockopt::set_ipv6_tclass)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::ipv6_tclass USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4354 ~ rustix[561d]::net::sockopt::ipv6_tclass)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_tcp_nodelay USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4356 ~ rustix[561d]::net::sockopt::set_tcp_nodelay)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::tcp_nodelay USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4358 ~ rustix[561d]::net::sockopt::tcp_nodelay)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_tcp_keepcnt USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4360 ~ rustix[561d]::net::sockopt::set_tcp_keepcnt)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::tcp_keepcnt USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4362 ~ rustix[561d]::net::sockopt::tcp_keepcnt)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_tcp_keepidle USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4364 ~ rustix[561d]::net::sockopt::set_tcp_keepidle)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::tcp_keepidle USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4366 ~ rustix[561d]::net::sockopt::tcp_keepidle)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_tcp_keepintvl USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4368 ~ rustix[561d]::net::sockopt::set_tcp_keepintvl)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::tcp_keepintvl USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4370 ~ rustix[561d]::net::sockopt::tcp_keepintvl)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_tcp_user_timeout USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4372 ~ rustix[561d]::net::sockopt::set_tcp_user_timeout)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::tcp_user_timeout USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4374 ~ rustix[561d]::net::sockopt::tcp_user_timeout)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_tcp_quickack USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4376 ~ rustix[561d]::net::sockopt::set_tcp_quickack)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::tcp_quickack USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4378 ~ rustix[561d]::net::sockopt::tcp_quickack)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_tcp_congestion USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4380 ~ rustix[561d]::net::sockopt::set_tcp_congestion)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::tcp_congestion USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4382 ~ rustix[561d]::net::sockopt::tcp_congestion)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_tcp_thin_linear_timeouts USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4384 ~ rustix[561d]::net::sockopt::set_tcp_thin_linear_timeouts)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::tcp_thin_linear_timeouts USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4386 ~ rustix[561d]::net::sockopt::tcp_thin_linear_timeouts)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_tcp_cork USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4388 ~ rustix[561d]::net::sockopt::set_tcp_cork)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::tcp_cork USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4390 ~ rustix[561d]::net::sockopt::tcp_cork)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::socket_peercred USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4392 ~ rustix[561d]::net::sockopt::socket_peercred)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::get_txtime USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4394 ~ rustix[561d]::net::sockopt::get_txtime)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_txtime USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4396 ~ rustix[561d]::net::sockopt::set_txtime)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_xdp_umem_reg USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4398 ~ rustix[561d]::net::sockopt::set_xdp_umem_reg)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_xdp_umem_fill_ring_size USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4400 ~ rustix[561d]::net::sockopt::set_xdp_umem_fill_ring_size)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_xdp_umem_completion_ring_size USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4402 ~ rustix[561d]::net::sockopt::set_xdp_umem_completion_ring_size)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_xdp_tx_ring_size USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4404 ~ rustix[561d]::net::sockopt::set_xdp_tx_ring_size)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::set_xdp_rx_ring_size USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4406 ~ rustix[561d]::net::sockopt::set_xdp_rx_ring_size)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::xdp_mmap_offsets USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4408 ~ rustix[561d]::net::sockopt::xdp_mmap_offsets)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::xdp_statistics USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4410 ~ rustix[561d]::net::sockopt::xdp_statistics)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::net::sockopt::xdp_options USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4412 ~ rustix[561d]::net::sockopt::xdp_options)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    }
+  ]
+}

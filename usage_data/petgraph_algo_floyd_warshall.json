@@ -1,0 +1,862 @@
+{
+  "crate": "petgraph",
+  "module": "algo::floyd_warshall",
+  "usages": [
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::petgraph::visit::NodeCount::node_count (AssocFn) [DefId: DefId(0:5363 ~ petgraph[6c95]::visit::NodeCount::node_count)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(0:5363 ~ petgraph[6c95]::visit::NodeCount::node_count)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::petgraph::algo::BoundedMeasure::max (AssocFn) [DefId: DefId(0:2259 ~ petgraph[6c95]::algo::BoundedMeasure::max)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(0:2259 ~ petgraph[6c95]::algo::BoundedMeasure::max)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::ops::Try::branch (AssocFn) [DefId: DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::ops::ControlFlow::Continue (Variant) [DefId: DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::ops::ControlFlow::Break (Variant) [DefId: DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::hashbrown::hashbrown::HashMap::<K, V>::with_capacity (AssocFn) [DefId: DefId(22:603 ~ hashbrown[79d5]::map::{impl#1}::with_capacity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(22:603 ~ hashbrown[79d5]::map::{impl#1}::with_capacity)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::hashbrown::hashbrown::HashMap::<K, V, S, A>::insert (AssocFn) [DefId: DefId(22:731 ~ hashbrown[79d5]::map::{impl#5}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(22:731 ~ hashbrown[79d5]::map::{impl#5}::insert)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::petgraph::visit::NodeIndexable::from_index (AssocFn) [DefId: DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::petgraph::visit::NodeIndexable::from_index (AssocFn) [DefId: DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1488 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::petgraph::visit::NodeCount::node_count (AssocFn) [DefId: DefId(0:5363 ~ petgraph[6c95]::visit::NodeCount::node_count)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(0:5363 ~ petgraph[6c95]::visit::NodeCount::node_count)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::petgraph::algo::BoundedMeasure::max (AssocFn) [DefId: DefId(0:2259 ~ petgraph[6c95]::algo::BoundedMeasure::max)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(0:2259 ~ petgraph[6c95]::algo::BoundedMeasure::max)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::ops::Try::branch (AssocFn) [DefId: DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::ops::ControlFlow::Continue (Variant) [DefId: DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::ops::ControlFlow::Break (Variant) [DefId: DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::hashbrown::hashbrown::HashMap::<K, V>::with_capacity (AssocFn) [DefId: DefId(22:603 ~ hashbrown[79d5]::map::{impl#1}::with_capacity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(22:603 ~ hashbrown[79d5]::map::{impl#1}::with_capacity)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::hashbrown::hashbrown::HashMap::<K, V, S, A>::insert (AssocFn) [DefId: DefId(22:731 ~ hashbrown[79d5]::map::{impl#5}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(22:731 ~ hashbrown[79d5]::map::{impl#5}::insert)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::petgraph::visit::NodeIndexable::from_index (AssocFn) [DefId: DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::petgraph::visit::NodeIndexable::from_index (AssocFn) [DefId: DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::floyd_warshall_path USES crate::core::core::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(1:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1492 ~ petgraph[6c95]::algo::floyd_warshall::floyd_warshall_path)",
+      "used_def_id": "DefId(1:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::set_object USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1496 ~ petgraph[6c95]::algo::floyd_warshall::set_object)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::set_object USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1496 ~ petgraph[6c95]::algo::floyd_warshall::set_object)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::is_greater USES crate::core::core::cmp::PartialOrd::gt (AssocFn) [DefId: DefId(1:3261 ~ core[4720]::cmp::PartialOrd::gt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1498 ~ petgraph[6c95]::algo::floyd_warshall::is_greater)",
+      "used_def_id": "DefId(1:3261 ~ core[4720]::cmp::PartialOrd::gt)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::is_greater USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1498 ~ petgraph[6c95]::algo::floyd_warshall::is_greater)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::is_greater USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1498 ~ petgraph[6c95]::algo::floyd_warshall::is_greater)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::petgraph::visit::NodeCount::node_count (AssocFn) [DefId: DefId(0:5363 ~ petgraph[6c95]::visit::NodeCount::node_count)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(0:5363 ~ petgraph[6c95]::visit::NodeCount::node_count)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::petgraph::visit::IntoEdgeReferences::edge_references (AssocFn) [DefId: DefId(0:5324 ~ petgraph[6c95]::visit::IntoEdgeReferences::edge_references)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(0:5324 ~ petgraph[6c95]::visit::IntoEdgeReferences::edge_references)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::petgraph::visit::NodeIndexable::to_index (AssocFn) [DefId: DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::petgraph::visit::EdgeRef::source (AssocFn) [DefId: DefId(0:235 ~ petgraph[6c95]::visit::EdgeRef::source)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(0:235 ~ petgraph[6c95]::visit::EdgeRef::source)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::petgraph::visit::NodeIndexable::to_index (AssocFn) [DefId: DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::petgraph::visit::EdgeRef::target (AssocFn) [DefId: DefId(0:236 ~ petgraph[6c95]::visit::EdgeRef::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(0:236 ~ petgraph[6c95]::visit::EdgeRef::target)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::FnMut::call_mut (AssocFn) [DefId: DefId(1:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::petgraph::visit::GraphProp::is_directed (AssocFn) [DefId: DefId(0:5334 ~ petgraph[6c95]::visit::GraphProp::is_directed)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(0:5334 ~ petgraph[6c95]::visit::GraphProp::is_directed)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::petgraph::visit::IntoNodeIdentifiers::node_identifiers (AssocFn) [DefId: DefId(0:5284 ~ petgraph[6c95]::visit::IntoNodeIdentifiers::node_identifiers)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(0:5284 ~ petgraph[6c95]::visit::IntoNodeIdentifiers::node_identifiers)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::petgraph::visit::NodeIndexable::to_index (AssocFn) [DefId: DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::petgraph::algo::BoundedMeasure::overflowing_add (AssocFn) [DefId: DefId(0:2260 ~ petgraph[6c95]::algo::BoundedMeasure::overflowing_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(0:2260 ~ petgraph[6c95]::algo::BoundedMeasure::overflowing_add)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::cmp::PartialOrd::gt (AssocFn) [DefId: DefId(1:3261 ~ core[4720]::cmp::PartialOrd::gt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:3261 ~ core[4720]::cmp::PartialOrd::gt)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::cmp::PartialOrd::lt (AssocFn) [DefId: DefId(1:3259 ~ core[4720]::cmp::PartialOrd::lt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:3259 ~ core[4720]::cmp::PartialOrd::lt)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::floyd_warshall::_floyd_warshall_path USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1500 ~ petgraph[6c95]::algo::floyd_warshall::_floyd_warshall_path)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    }
+  ]
+}

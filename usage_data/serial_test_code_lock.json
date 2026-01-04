@@ -1,0 +1,118 @@
+{
+  "crate": "serial_test",
+  "module": "code_lock",
+  "usages": [
+    {
+      "usage": "crate::serial_test::code_lock::global_locks USES crate::once_cell::once_cell::sync::OnceCell::<T>::get_or_init (AssocFn) [DefId: DefId(20:208 ~ once_cell[e995]::sync::{impl#6}::get_or_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:17 ~ serial_test[da6a]::code_lock::global_locks)",
+      "used_def_id": "DefId(20:208 ~ once_cell[e995]::sync::{impl#6}::get_or_init)"
+    },
+    {
+      "usage": "crate::serial_test::code_lock::global_locks USES crate::scc::scc::HashMap::<K, V>::new (AssocFn) [DefId: DefId(21:992 ~ scc[c9e8]::hash_map::{impl#2}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:17 ~ serial_test[da6a]::code_lock::global_locks)",
+      "used_def_id": "DefId(21:992 ~ scc[c9e8]::hash_map::{impl#2}::new)"
+    },
+    {
+      "usage": "crate::serial_test::code_lock::is_locked_serially USES crate::core::std::option::Option::<T>::unwrap_or_default (AssocFn) [DefId: DefId(2:10232 ~ core[4720]::option::{impl#0}::unwrap_or_default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:19 ~ serial_test[da6a]::code_lock::is_locked_serially)",
+      "used_def_id": "DefId(2:10232 ~ core[4720]::option::{impl#0}::unwrap_or_default)"
+    },
+    {
+      "usage": "crate::serial_test::code_lock::is_locked_serially USES crate::core::std::option::Option::<T>::map (AssocFn) [DefId: DefId(2:10234 ~ core[4720]::option::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:19 ~ serial_test[da6a]::code_lock::is_locked_serially)",
+      "used_def_id": "DefId(2:10234 ~ core[4720]::option::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::serial_test::code_lock::is_locked_serially USES crate::scc::scc::HashMap::<K, V, H>::get (AssocFn) [DefId: DefId(21:923 ~ scc[c9e8]::hash_map::{impl#1}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:19 ~ serial_test[da6a]::code_lock::is_locked_serially)",
+      "used_def_id": "DefId(21:923 ~ scc[c9e8]::hash_map::{impl#1}::get)"
+    },
+    {
+      "usage": "crate::serial_test::code_lock::is_locked_serially USES crate::core::std::option::Option::<T>::unwrap_or_default (AssocFn) [DefId: DefId(2:10232 ~ core[4720]::option::{impl#0}::unwrap_or_default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:19 ~ serial_test[da6a]::code_lock::is_locked_serially)",
+      "used_def_id": "DefId(2:10232 ~ core[4720]::option::{impl#0}::unwrap_or_default)"
+    },
+    {
+      "usage": "crate::serial_test::code_lock::is_locked_serially USES crate::serial_test::code_lock::UniqueReentrantMutex::is_locked_by_current_thread (AssocFn) [DefId: DefId(0:16 ~ serial_test[da6a]::code_lock::{impl#0}::is_locked_by_current_thread)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:19 ~ serial_test[da6a]::code_lock::is_locked_serially)",
+      "used_def_id": "DefId(0:16 ~ serial_test[da6a]::code_lock::{impl#0}::is_locked_by_current_thread)"
+    },
+    {
+      "usage": "crate::serial_test::code_lock::is_locked_serially USES crate::scc::scc::hash_map::OccupiedEntry::<'h, K, V, H>::get (AssocFn) [DefId: DefId(21:1076 ~ scc[c9e8]::hash_map::{impl#13}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:19 ~ serial_test[da6a]::code_lock::is_locked_serially)",
+      "used_def_id": "DefId(21:1076 ~ scc[c9e8]::hash_map::{impl#13}::get)"
+    },
+    {
+      "usage": "crate::serial_test::code_lock::MUTEX_ID USES crate::core::std::sync::atomic::AtomicU32::new (AssocFn) [DefId: DefId(2:50075 ~ core[4720]::sync::atomic::{impl#74}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:21 ~ serial_test[da6a]::code_lock::MUTEX_ID)",
+      "used_def_id": "DefId(2:50075 ~ core[4720]::sync::atomic::{impl#74}::new)"
+    },
+    {
+      "usage": "crate::serial_test::code_lock::check_new_key USES crate::scc::scc::HashMap::<K, V, H>::contains (AssocFn) [DefId: DefId(21:939 ~ scc[c9e8]::hash_map::{impl#1}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:24 ~ serial_test[da6a]::code_lock::check_new_key)",
+      "used_def_id": "DefId(21:939 ~ scc[c9e8]::hash_map::{impl#1}::contains)"
+    },
+    {
+      "usage": "crate::serial_test::code_lock::check_new_key USES crate::scc::scc::HashMap::<K, V, H>::entry (AssocFn) [DefId: DefId(21:874 ~ scc[c9e8]::hash_map::{impl#1}::entry)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:24 ~ serial_test[da6a]::code_lock::check_new_key)",
+      "used_def_id": "DefId(21:874 ~ scc[c9e8]::hash_map::{impl#1}::entry)"
+    },
+    {
+      "usage": "crate::serial_test::code_lock::check_new_key USES crate::alloc::std::borrow::ToOwned::to_owned (AssocFn) [DefId: DefId(3:179 ~ alloc[27b0]::borrow::ToOwned::to_owned)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:24 ~ serial_test[da6a]::code_lock::check_new_key)",
+      "used_def_id": "DefId(3:179 ~ alloc[27b0]::borrow::ToOwned::to_owned)"
+    },
+    {
+      "usage": "crate::serial_test::code_lock::check_new_key USES crate::scc::scc::hash_map::VacantEntry::<'h, K, V, H>::insert_entry (AssocFn) [DefId: DefId(21:1107 ~ scc[c9e8]::hash_map::{impl#17}::insert_entry)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:24 ~ serial_test[da6a]::code_lock::check_new_key)",
+      "used_def_id": "DefId(21:1107 ~ scc[c9e8]::hash_map::{impl#17}::insert_entry)"
+    },
+    {
+      "usage": "crate::serial_test::code_lock::check_new_key USES crate::serial_test::code_lock::UniqueReentrantMutex::new_mutex (AssocFn) [DefId: DefId(0:23 ~ serial_test[da6a]::code_lock::{impl#1}::new_mutex)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:24 ~ serial_test[da6a]::code_lock::check_new_key)",
+      "used_def_id": "DefId(0:23 ~ serial_test[da6a]::code_lock::{impl#1}::new_mutex)"
+    }
+  ]
+}

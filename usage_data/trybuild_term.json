@@ -1,0 +1,150 @@
+{
+  "crate": "trybuild",
+  "module": "term",
+  "usages": [
+    {
+      "usage": "crate::trybuild::term::TERM USES crate::std::std::sync::OnceLock::<T>::new (AssocFn) [DefId: DefId(1:7801 ~ std[93f5]::sync::once_lock::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:18 ~ trybuild[3aa3]::term::TERM)",
+      "used_def_id": "DefId(1:7801 ~ std[93f5]::sync::once_lock::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::trybuild::term::lock USES crate::core::std::result::Result::<T, E>::unwrap_or_else (AssocFn) [DefId: DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:19 ~ trybuild[3aa3]::term::lock)",
+      "used_def_id": "DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::trybuild::term::lock USES crate::std::std::sync::Mutex::<T>::lock (AssocFn) [DefId: DefId(1:7335 ~ std[93f5]::sync::poison::mutex::{impl#7}::lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:19 ~ trybuild[3aa3]::term::lock)",
+      "used_def_id": "DefId(1:7335 ~ std[93f5]::sync::poison::mutex::{impl#7}::lock)"
+    },
+    {
+      "usage": "crate::trybuild::term::lock USES crate::std::std::sync::OnceLock::<T>::get_or_init (AssocFn) [DefId: DefId(1:7808 ~ std[93f5]::sync::once_lock::{impl#0}::get_or_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:19 ~ trybuild[3aa3]::term::lock)",
+      "used_def_id": "DefId(1:7808 ~ std[93f5]::sync::once_lock::{impl#0}::get_or_init)"
+    },
+    {
+      "usage": "crate::trybuild::term::lock USES crate::std::std::sync::Mutex::<T>::new (AssocFn) [DefId: DefId(1:7329 ~ std[93f5]::sync::poison::mutex::{impl#6}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:19 ~ trybuild[3aa3]::term::lock)",
+      "used_def_id": "DefId(1:7329 ~ std[93f5]::sync::poison::mutex::{impl#6}::new)"
+    },
+    {
+      "usage": "crate::trybuild::term::lock USES crate::trybuild::term::Term::new (AssocFn) [DefId: DefId(0:32 ~ trybuild[3aa3]::term::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:19 ~ trybuild[3aa3]::term::lock)",
+      "used_def_id": "DefId(0:32 ~ trybuild[3aa3]::term::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::trybuild::term::lock USES crate::std::std::sync::PoisonError::<T>::into_inner (AssocFn) [DefId: DefId(1:7659 ~ std[93f5]::sync::poison::{impl#4}::into_inner)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:19 ~ trybuild[3aa3]::term::lock)",
+      "used_def_id": "DefId(1:7659 ~ std[93f5]::sync::poison::{impl#4}::into_inner)"
+    },
+    {
+      "usage": "crate::trybuild::term::bold USES crate::trybuild::term::Term::set_color (AssocFn) [DefId: DefId(0:33 ~ trybuild[3aa3]::term::{impl#0}::set_color)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:21 ~ trybuild[3aa3]::term::bold)",
+      "used_def_id": "DefId(0:33 ~ trybuild[3aa3]::term::{impl#0}::set_color)"
+    },
+    {
+      "usage": "crate::trybuild::term::bold USES crate::termcolor::termcolor::ColorSpec::set_bold (AssocFn) [DefId: DefId(20:224 ~ termcolor[2197]::{impl#37}::set_bold)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:21 ~ trybuild[3aa3]::term::bold)",
+      "used_def_id": "DefId(20:224 ~ termcolor[2197]::{impl#37}::set_bold)"
+    },
+    {
+      "usage": "crate::trybuild::term::bold USES crate::termcolor::termcolor::ColorSpec::new (AssocFn) [DefId: DefId(20:218 ~ termcolor[2197]::{impl#37}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:21 ~ trybuild[3aa3]::term::bold)",
+      "used_def_id": "DefId(20:218 ~ termcolor[2197]::{impl#37}::new)"
+    },
+    {
+      "usage": "crate::trybuild::term::color USES crate::trybuild::term::Term::set_color (AssocFn) [DefId: DefId(0:33 ~ trybuild[3aa3]::term::{impl#0}::set_color)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:22 ~ trybuild[3aa3]::term::color)",
+      "used_def_id": "DefId(0:33 ~ trybuild[3aa3]::term::{impl#0}::set_color)"
+    },
+    {
+      "usage": "crate::trybuild::term::color USES crate::termcolor::termcolor::ColorSpec::set_fg (AssocFn) [DefId: DefId(20:220 ~ termcolor[2197]::{impl#37}::set_fg)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:22 ~ trybuild[3aa3]::term::color)",
+      "used_def_id": "DefId(20:220 ~ termcolor[2197]::{impl#37}::set_fg)"
+    },
+    {
+      "usage": "crate::trybuild::term::color USES crate::termcolor::termcolor::ColorSpec::new (AssocFn) [DefId: DefId(20:218 ~ termcolor[2197]::{impl#37}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:22 ~ trybuild[3aa3]::term::color)",
+      "used_def_id": "DefId(20:218 ~ termcolor[2197]::{impl#37}::new)"
+    },
+    {
+      "usage": "crate::trybuild::term::bold_color USES crate::trybuild::term::Term::set_color (AssocFn) [DefId: DefId(0:33 ~ trybuild[3aa3]::term::{impl#0}::set_color)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:23 ~ trybuild[3aa3]::term::bold_color)",
+      "used_def_id": "DefId(0:33 ~ trybuild[3aa3]::term::{impl#0}::set_color)"
+    },
+    {
+      "usage": "crate::trybuild::term::bold_color USES crate::termcolor::termcolor::ColorSpec::set_fg (AssocFn) [DefId: DefId(20:220 ~ termcolor[2197]::{impl#37}::set_fg)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:23 ~ trybuild[3aa3]::term::bold_color)",
+      "used_def_id": "DefId(20:220 ~ termcolor[2197]::{impl#37}::set_fg)"
+    },
+    {
+      "usage": "crate::trybuild::term::bold_color USES crate::termcolor::termcolor::ColorSpec::set_bold (AssocFn) [DefId: DefId(20:224 ~ termcolor[2197]::{impl#37}::set_bold)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:23 ~ trybuild[3aa3]::term::bold_color)",
+      "used_def_id": "DefId(20:224 ~ termcolor[2197]::{impl#37}::set_bold)"
+    },
+    {
+      "usage": "crate::trybuild::term::bold_color USES crate::termcolor::termcolor::ColorSpec::new (AssocFn) [DefId: DefId(20:218 ~ termcolor[2197]::{impl#37}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:23 ~ trybuild[3aa3]::term::bold_color)",
+      "used_def_id": "DefId(20:218 ~ termcolor[2197]::{impl#37}::new)"
+    },
+    {
+      "usage": "crate::trybuild::term::reset USES crate::trybuild::term::Term::reset (AssocFn) [DefId: DefId(0:34 ~ trybuild[3aa3]::term::{impl#0}::reset)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:24 ~ trybuild[3aa3]::term::reset)",
+      "used_def_id": "DefId(0:34 ~ trybuild[3aa3]::term::{impl#0}::reset)"
+    }
+  ]
+}

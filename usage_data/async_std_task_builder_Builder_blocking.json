@@ -1,0 +1,30 @@
+{
+  "crate": "async_std",
+  "module": "task::builder::Builder::blocking",
+  "usages": [
+    {
+      "usage": "crate::async_std::task::builder::Builder::blocking::NUM_NESTED_BLOCKING USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1393 ~ async_std[cb59]::task::builder::{impl#0}::blocking::NUM_NESTED_BLOCKING)",
+      "used_def_id": "DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::async_std::task::builder::Builder::blocking::NUM_NESTED_BLOCKING USES crate::std::std::thread::local_impl::LazyStorage::<T, D>::get_or_init (AssocFn) [DefId: DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1393 ~ async_std[cb59]::task::builder::{impl#0}::blocking::NUM_NESTED_BLOCKING)",
+      "used_def_id": "DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)"
+    },
+    {
+      "usage": "crate::async_std::task::builder::Builder::blocking::NUM_NESTED_BLOCKING USES crate::std::std::thread::local_impl::LazyStorage::<T, D>::get_or_init (AssocFn) [DefId: DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1393 ~ async_std[cb59]::task::builder::{impl#0}::blocking::NUM_NESTED_BLOCKING)",
+      "used_def_id": "DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)"
+    }
+  ]
+}

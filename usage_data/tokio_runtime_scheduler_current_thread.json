@@ -1,0 +1,70 @@
+{
+  "crate": "tokio",
+  "module": "runtime::scheduler::current_thread",
+  "usages": [
+    {
+      "usage": "crate::tokio::runtime::scheduler::current_thread::shutdown2 USES crate::tokio::runtime::task::list::OwnedTasks::<S>::close_and_shutdown_all (AssocFn) [DefId: DefId(0:7900 ~ tokio[47da]::runtime::task::list::{impl#0}::close_and_shutdown_all)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:6157 ~ tokio[47da]::runtime::scheduler::current_thread::shutdown2)",
+      "used_def_id": "DefId(0:7900 ~ tokio[47da]::runtime::task::list::{impl#0}::close_and_shutdown_all)"
+    },
+    {
+      "usage": "crate::tokio::runtime::scheduler::current_thread::shutdown2 USES crate::tokio::runtime::scheduler::current_thread::Core::next_local_task (AssocFn) [DefId: DefId(0:6165 ~ tokio[47da]::runtime::scheduler::current_thread::{impl#2}::next_local_task)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:6157 ~ tokio[47da]::runtime::scheduler::current_thread::shutdown2)",
+      "used_def_id": "DefId(0:6165 ~ tokio[47da]::runtime::scheduler::current_thread::{impl#2}::next_local_task)"
+    },
+    {
+      "usage": "crate::tokio::runtime::scheduler::current_thread::shutdown2 USES crate::tokio::runtime::scheduler::inject::Inject::<T>::close (AssocFn) [DefId: DefId(0:6321 ~ tokio[47da]::runtime::scheduler::inject::{impl#0}::close)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:6157 ~ tokio[47da]::runtime::scheduler::current_thread::shutdown2)",
+      "used_def_id": "DefId(0:6321 ~ tokio[47da]::runtime::scheduler::inject::{impl#0}::close)"
+    },
+    {
+      "usage": "crate::tokio::runtime::scheduler::current_thread::shutdown2 USES crate::tokio::runtime::scheduler::inject::Inject::<T>::pop (AssocFn) [DefId: DefId(0:6323 ~ tokio[47da]::runtime::scheduler::inject::{impl#0}::pop)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:6157 ~ tokio[47da]::runtime::scheduler::current_thread::shutdown2)",
+      "used_def_id": "DefId(0:6323 ~ tokio[47da]::runtime::scheduler::inject::{impl#0}::pop)"
+    },
+    {
+      "usage": "crate::tokio::runtime::scheduler::current_thread::shutdown2 USES crate::tokio::runtime::task::list::OwnedTasks::<S>::is_empty (AssocFn) [DefId: DefId(0:7904 ~ tokio[47da]::runtime::task::list::{impl#0}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:6157 ~ tokio[47da]::runtime::scheduler::current_thread::shutdown2)",
+      "used_def_id": "DefId(0:7904 ~ tokio[47da]::runtime::task::list::{impl#0}::is_empty)"
+    },
+    {
+      "usage": "crate::tokio::runtime::scheduler::current_thread::shutdown2 USES crate::tokio::runtime::scheduler::current_thread::Core::submit_metrics (AssocFn) [DefId: DefId(0:6167 ~ tokio[47da]::runtime::scheduler::current_thread::{impl#2}::submit_metrics)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:6157 ~ tokio[47da]::runtime::scheduler::current_thread::shutdown2)",
+      "used_def_id": "DefId(0:6167 ~ tokio[47da]::runtime::scheduler::current_thread::{impl#2}::submit_metrics)"
+    },
+    {
+      "usage": "crate::tokio::runtime::scheduler::current_thread::shutdown2 USES crate::core::std::option::Option::<T>::as_mut (AssocFn) [DefId: DefId(2:10221 ~ core[4720]::option::{impl#0}::as_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:6157 ~ tokio[47da]::runtime::scheduler::current_thread::shutdown2)",
+      "used_def_id": "DefId(2:10221 ~ core[4720]::option::{impl#0}::as_mut)"
+    },
+    {
+      "usage": "crate::tokio::runtime::scheduler::current_thread::shutdown2 USES crate::tokio::runtime::driver::Driver::shutdown (AssocFn) [DefId: DefId(0:5775 ~ tokio[47da]::runtime::driver::{impl#0}::shutdown)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:6157 ~ tokio[47da]::runtime::scheduler::current_thread::shutdown2)",
+      "used_def_id": "DefId(0:5775 ~ tokio[47da]::runtime::driver::{impl#0}::shutdown)"
+    }
+  ]
+}
