@@ -1,5 +1,5 @@
 // Core Language Constructor with Feature Matrix
-use std::collections::HashMap;
+//use std::collections::HashMap;
 
 #[derive(Debug, Clone)]
 pub struct FeatureMatrix {
@@ -213,7 +213,7 @@ macro_rules! mkbuild {
     }};
 }
 
-fn generate_feature_filters(cfg_flags: &[String]) {
+pub fn generate_feature_filters(cfg_flags: &[String]) {
     println!("// Generated feature filters");
     for flag in cfg_flags {
         println!("cargo:rustc-cfg=enable_{}", flag);

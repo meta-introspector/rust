@@ -72,12 +72,13 @@ impl PureEmojiectTracer {
         }
         
         println!("\n🔄 Call Graph (Who Calls Who):");
+        let default_emoji = "❓".to_string();
         for (caller, callees) in self.call_graph.iter().take(10) {
-            let caller_emoji = self.function_emojis.get(caller).unwrap_or(&"❓".to_string());
+            let caller_emoji = self.function_emojis.get(caller).unwrap_or(&default_emoji);
             println!("  {} calls:", caller_emoji);
             
             for callee in callees.iter().take(5) {
-                let callee_emoji = self.function_emojis.get(callee).unwrap_or(&"❓".to_string());
+                let callee_emoji = self.function_emojis.get(callee).unwrap_or(&default_emoji);
                 println!("    {} → {}", caller_emoji, callee_emoji);
             }
         }

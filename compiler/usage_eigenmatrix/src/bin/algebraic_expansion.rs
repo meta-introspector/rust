@@ -5,11 +5,13 @@
 macro_rules! mklang {
     (terminals!($($t:ident),*), nonterminals!($($nt:ident),*)) => {
         {
-            let terminals = vec![$(stringify!($t)),*];
-            let nonterminals = vec![$(stringify!($nt)),*];
-            (terminals.len(), nonterminals.len())
+            const TERMINAL_COUNT: usize = mklang!(@count $($t)*);
+            const NONTERMINAL_COUNT: usize = mklang!(@count $($nt)*);
+            (TERMINAL_COUNT, NONTERMINAL_COUNT)
         }
     };
+    (@count) => { 0 };
+    (@count $head:ident $($tail:ident)*) => { 1 + mklang!(@count $($tail)*) };
 }
 
 // Level 0: Core Terminals

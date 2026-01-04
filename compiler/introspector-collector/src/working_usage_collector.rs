@@ -10,13 +10,14 @@ use rustc_driver::{Callbacks, Compilation};
 use rustc_interface::interface;
 use rustc_middle::ty::TyCtxt;
 use rustc_hir::def_id::LOCAL_CRATE;
-use rustc_hir::intravisit;
-use rustc_hir::{Expr, ExprKind};
+//use rustc_hir::intravisit;
+//use rustc_hir::{Expr, ExprKind};
 use std::collections::HashMap;
 use std::sync::OnceLock;
 use std::io::Write;
 use serde::{Serialize, Deserialize};
 
+// this is used
 static USAGE_CACHE: OnceLock<HashMap<String, Vec<UsageEntry>>> = OnceLock::new();
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
@@ -129,7 +130,7 @@ impl UsageCollector {
         }
     }
     
-    fn classify_usage(&self, usage: &str, usage_type: &str, used_def_id: &str) -> UsageClassification {
+    fn classify_usage(&self, usage: &str, usage_type: &str, _used_def_id: &str) -> UsageClassification {
         let mut classification = UsageClassification::default();
         
         // String conversion patterns

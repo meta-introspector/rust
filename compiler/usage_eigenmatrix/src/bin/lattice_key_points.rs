@@ -33,15 +33,7 @@ impl MetaMachine16 {
     }
 }
 
-#[derive(Debug, Clone, PartialEq)]
-struct LatticePoint {
-    prime_set: Vec<u32>,
-    level: usize,
-    coordinates: (usize, usize),
-    monster_bits: u64,
-    cell_id: u32,
-    bitmask: u64,
-}
+// Duplicate struct removed - using the first definition above
 
 // Monster Group prime powers: 2^46, 3^20, 5^9, 7^6, 11^2, 13^3, 17^1, 19^1
 const MONSTER_POWERS: [(u32, u32); 8] = [(2, 46), (3, 20), (5, 9), (7, 6), (11, 2), (13, 3), (17, 1), (19, 1)];

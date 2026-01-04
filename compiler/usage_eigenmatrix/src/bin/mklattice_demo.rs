@@ -1,4 +1,4 @@
-use crate::mklattice_macro::*;
+include!("../../mklattice_macro.rs");
 
 fn main() {
     println!("🔬 MKLATTICE! MACRO DEMONSTRATION");

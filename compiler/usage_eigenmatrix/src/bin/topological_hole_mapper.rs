@@ -15,7 +15,7 @@ const BOTT_TOPOLOGY: [&str; 10] = [
     "→",      // 9: Colimit cocone (divergent holes)
 ];
 
-#[derive(Debug)]
+#[derive(Debug, Serialize)]
 struct TopologicalMapping {
     element: String,
     holes: Vec<Hole>,

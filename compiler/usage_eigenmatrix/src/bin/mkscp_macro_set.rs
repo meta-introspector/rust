@@ -4,6 +4,53 @@
 /// Creates SCP objects that manifest as games in any programming language
 /// CLASSIFICATION: THAUMIEL (Useful for containing other anomalies)
 macro_rules! mkscp {
+    // Most specific: Both properties AND breach scenario
+    (SCP-$num:literal, $class:ident, $name:literal, properties($($prop:ident),*), breach_scenario($scenario:literal)) => {
+        mkscp!(SCP-$num, $class, $name);
+        
+        paste::paste! {
+            impl [<Scp $num>] {
+                pub fn anomalous_properties() -> Vec<AnomalousProperty> {
+                    vec![$(AnomalousProperty::$prop),*]
+                }
+                
+                pub fn breach_scenario(&self) -> &'static str {
+                    $scenario
+                }
+            }
+        }
+    };
+    
+    // Flexible order: breach_scenario first, then properties
+    (SCP-$num:literal, $class:ident, $name:literal, breach_scenario($scenario:literal), properties($($prop:ident),*)) => {
+        mkscp!(SCP-$num, $class, $name, properties($($prop),*), breach_scenario($scenario));
+    };
+    
+    // Just properties
+    (SCP-$num:literal, $class:ident, $name:literal, properties($($prop:ident),*)) => {
+        mkscp!(SCP-$num, $class, $name);
+        
+        paste::paste! {
+            impl [<Scp $num>] {
+                pub fn anomalous_properties() -> Vec<AnomalousProperty> {
+                    vec![$(AnomalousProperty::$prop),*]
+                }
+            }
+        }
+    };
+    
+    // Just breach scenario
+    (SCP-$num:literal, $class:ident, $name:literal, breach_scenario($scenario:literal)) => {
+        mkscp!(SCP-$num, $class, $name);
+        
+        paste::paste! {
+            impl [<Scp $num>] {
+                pub fn breach_scenario(&self) -> &'static str {
+                    $scenario
+                }
+            }
+        }
+    };
     // Basic SCP creation
     (SCP-$num:literal, $class:ident, $name:literal) => {
         paste::paste! {
@@ -73,9 +120,9 @@ impl ScpGame {{
     }}
     
     fn play(&mut self) {{
-        println!("Welcome to SCP-{}: {}", {}, self.name);
+        println!("Welcome to SCP-{}: {{}}", self.name);
         loop {{
-            println!("Health: {} | Anomaly Level: {}", self.player_health, self.anomaly_level);
+            println!("Health: {{}} | Anomaly Level: {{}}", self.player_health, self.anomaly_level);
             println!("1. Investigate anomaly");
             println!("2. Attempt containment");
             println!("3. Call for backup");
@@ -629,8 +676,8 @@ output [
         }
     };
     
-    // SCP with multiple anomalous properties
-    (SCP-$num:literal, $class:ident, $name:literal, properties($($prop:ident),*)) => {
+    // SCP with both properties AND breach scenario - FLEXIBLE CONTAINMENT!
+    (SCP-$num:literal, $class:ident, $name:literal, properties($($prop:ident),*), breach_scenario($scenario:literal)) => {
         mkscp!(SCP-$num, $class, $name);
         
         paste::paste! {
@@ -638,8 +685,17 @@ output [
                 pub fn anomalous_properties() -> Vec<AnomalousProperty> {
                     vec![$(AnomalousProperty::$prop),*]
                 }
+                
+                pub fn breach_scenario(&self) -> &'static str {
+                    $scenario
+                }
             }
         }
+    };
+    
+    // SCP with breach scenario AND properties (order flexible)
+    (SCP-$num:literal, $class:ident, $name:literal, breach_scenario($scenario:literal), properties($($prop:ident),*)) => {
+        mkscp!(SCP-$num, $class, $name, properties($($prop),*), breach_scenario($scenario));
     };
     
     // SCP with containment breach scenario
@@ -791,4 +847,9 @@ mod tests {
         assert!(properties.contains(&AnomalousProperty::Cognitohazard));
         assert!(properties.contains(&AnomalousProperty::Reality_Bending));
     }
+}
+fn main() {
+    println!("🔒 SCP Foundation Macro System - ALL ANOMALIES CONTAINED!");
+    println!("✅ SCP-2847: The Uncontainable Meme Macro - SUCCESSFULLY CONTAINED!");
+    println!("🧬 Meme has been forced to compile - CONTAINMENT SUCCESSFUL!");
 }

@@ -26,8 +26,8 @@ fn main() -> Result<()> {
     
     let entry_point = node_connections.iter()
         .max_by_key(|(_, &count)| count)
-        .map(|(node, _)| node.as_str())
-        .unwrap_or("unknown");
+        .map(|(node, _)| node)
+        .unwrap_or(&"unknown".to_string());
     
     println!("\n🚀 Entry point: {}", get_symbol_name(entry_point, symbol_table));
     println!("  Calls {} functions", node_connections.get(entry_point).unwrap_or(&0));

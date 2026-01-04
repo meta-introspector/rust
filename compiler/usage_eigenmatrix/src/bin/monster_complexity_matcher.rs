@@ -73,14 +73,16 @@ fn calculate_complexities(graph_data: &str) -> HashMap<String, u64> {
 }
 
 fn calculate_node_complexity(line: &str) -> u64 {
+    // FIXME: This is bogus string-matching complexity calculation
+    // TODO: Replace with proper AST-based or cyclomatic complexity
     let mut complexity = 0u64;
     
     // Count complexity indicators
-    complexity += line.matches("::").len() as u64 * 10;      // Namespace depth
-    complexity += line.matches("<").len() as u64 * 20;       // Generic parameters
-    complexity += line.matches("impl").len() as u64 * 30;    // Implementation blocks
-    complexity += line.matches("macro").len() as u64 * 50;   // Macro complexity
-    complexity += line.matches("unsafe").len() as u64 * 100; // Unsafe complexity
+    complexity += line.matches("::").count() as u64 * 10;      // Namespace depth
+    complexity += line.matches("<").count() as u64 * 20;       // Generic parameters
+    complexity += line.matches("impl").count() as u64 * 30;    // Implementation blocks
+    complexity += line.matches("macro").count() as u64 * 50;   // Macro complexity
+    complexity += line.matches("unsafe").count() as u64 * 100; // Unsafe complexity
     complexity += line.len() as u64;                         // Basic length
     
     complexity

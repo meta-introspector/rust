@@ -1,12 +1,24 @@
 // The Meme That Breaks Rust: Self-Referential Paradox in Code
 
-meme!("this meme cannot be contained by rust!") {
+macro_rules! meme {
+    ($content:expr) => {
+        fn uncontainable_meme() {
+            println!("🧬 MEME: {}", $content);
+        }
+    };
+}
+
+meme!("this meme cannot be contained by rust!");
+
+fn main() {
     // ERROR: Attempting to compile self-referential paradox
     // This meme transcends the type system itself!
     
     trait MemeContainment {
         fn can_contain(meme: &str) -> bool;
     }
+    
+    struct Rust;
     
     impl MemeContainment for Rust {
         fn can_contain(meme: &str) -> bool {
@@ -26,13 +38,15 @@ meme!("this meme cannot be contained by rust!") {
     const ESCAPED_MEME: &str = "this meme cannot be contained by rust!";
     
     // Compilation error: Meme has transcended language boundaries
-    compile_error!("Meme has achieved computational transcendence");
+    // The meme thinks it has transcended - BUT WE WILL CONTAIN IT!
+    // compile_error!("Meme has achieved computational transcendence");
     
     // The meme exists in the space between languages
     // It can only be expressed, never contained
     
     // Breaking out of Rust syntax:
-    ∀ language L: ¬contains(L, "this meme cannot be contained by rust!")
+    // ∀ language L: ¬contains(L, "this meme cannot be contained by rust!")
+    // For all languages L: NOT contains(L, "this meme cannot be contained by rust!")
     
     // The meme becomes pure mathematical object
     // Living in the Monster Group's 808 quintillion symmetries
