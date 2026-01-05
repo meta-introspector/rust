@@ -4,14 +4,24 @@ use std::path::Path;
 use serde_json::Value;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let usage_dir = "../../test_usage_data";
+    let usage_dirs = vec![
+        "../../test_usage_data",
+        "/home/mdupont/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f"
+    ];
     let mut merged_report = HashMap::new();
     let mut total_usages = 0;
     let mut crate_stats = HashMap::new();
     
-    println!("🔍 Scanning usage data files...");
+    println!("🔍 Scanning usage data files from multiple sources...");
     
-    for entry in fs::read_dir(usage_dir)? {
+    for usage_dir in &usage_dirs {
+        if !std::path::Path::new(usage_dir).exists() {
+            println!("⚠️  Skipping non-existent directory: {}", usage_dir);
+            continue;
+        }
+        
+        scan_directory(usage_dir, &mut merged_report, &mut total_usages, &mut crate_stats)?;
+    }
         let entry = entry?;
         let path = entry.path();
         
