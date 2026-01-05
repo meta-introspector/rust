@@ -3,9 +3,9 @@
 ## Functions F: Enum → String Domain Mapping
 
 ### Summary
-- **Total Functions**: 29
-- **Enum Types**: 48
-- **Unique Monster Cells**: 27
+- **Total Functions**: 32
+- **Enum Types**: 50
+- **Unique Monster Cells**: 29
 
 ### Label Set 1: Enum → String Functions
 | Function | Enum Type | Monster Cell | String Patterns | File |
@@ -17,13 +17,16 @@
 | `infer_output_pattern` | `Self` | `0xC81008` |  | rustc_equivalence_analyzer.rs |
 | `demonstrate_time_reversal` | `Self` | `0xC0AC40` | format_macro, First, Second, Last, Unknown, for... | bootstrap_reversal.rs |
 | `generate_rust_code_for_node` | `LatticeType` | `0x3996F8` | format_macro, format_macro | constant_subgraph_composer.rs |
-| `evaluate_constant` | `ConstantValue` | `0x2D72EC` | format_macro, format_macro | constant_subgraph_composer.rs |
+| `evaluate_constant` | `Value` | `0x4D75D4` | format_macro, format_macro | constant_subgraph_composer.rs |
 | `rust_type_name` | `Self` | `0x03C277` | DefId, Type, Expr, String, bool, Option<T>, Res... | type_lattice_decomposer.rs |
 | `generate_code` | `Self` | `0xE05E7C` | format_macro, format_macro | flexible_scp_system.rs |
 | `generate_hott_interpretation` | `PrimeLattice` | `0xCAE989` | format_macro, format_macro, format_macro, forma... | rustc_monster_ratio_calculator.rs |
 | `combine_classes` | `Self` | `0xD4F5DD` | Γ (Gamma) - DefId Medium, Δ (Delta) - DefId C... | main_graph_self_calculator.rs |
 | `get_dao_state` | `Self` | `0x6E4E16` | Wu (Empty), Yin (Receptive), Yang (Active), Tai... | hierarchical_models.rs |
 | `make_decision` | `Self` | `0xE4A3FE` | Transform via f2, Transform via f3, Transform v... | monk_secretome.rs |
+| `to_string` | `Self` | `0x72A442` | first_value, second_value, third_value, This is... | test_enum_functions.rs |
+| `get_description` | `Self` | `0x1A8626` | This is the first option, This is the second op... | test_enum_functions.rs |
+| `name` | `Self` | `0x166F5A` | red, green, blue | test_enum_functions.rs |
 | `to_string` | `Self` | `0x72A442` |  | enum_owl_equivalence.rs |
 | `code_to_emoji` | `Self` | `0xF7C990` |  | main.rs |
 | `wrap_item` | `Item` | `0x52746F` | format_macro, format_macro, format_macro | main.rs |
@@ -41,69 +44,71 @@
 | `span_to_string` | `Self` | `0x112F38` | format_macro, format_macro | generic_visitor.rs |
 
 ### Enum Types Discovered
-- `SelfReference`
-- `FunctionType`
-- `WenLattice`
-- `SmallPrime`
-- `DaoState`
-- `PresidentialAction`
-- `BillStatus`
-- `Exec`
-- `ConstantValue`
-- `PrimeLattice`
+- `TestEnum`
 - `ModelSize`
-- `Term`
-- `GovernmentRole`
-- `ControlFlow<B,`
+- `LogLevel`
+- `Exec`
 - `Authority`
-- `RustcPhase`
-- `FeatureType`
-- `NodeClass`
-- `Expression`
-- `NodeType`
-- `MyEnum`
-- `CodeVersion`
 - `Value`
+- `PresidentialAction`
+- `WorkflowType`
+- `ComponentType`
+- `$name`
+- `KleeneLattice`
+- `WhatToFind`
+- `SafetyLevel`
+- `Expression`
+- `Complexity`
+- `FunctionType`
+- `Response`
+- `RustcPhase`
 - `ExtendedPrimeBox`
 - `BitLattice`
-- `EvolutionStage`
-- `LatticeType`
-- `Evidence`
-- `MetaMemePhase`
-- `Item`
+- `NodeClass`
 - `BinaryOp`
-- `PrimeBox`
-- `ComponentType`
-- `KleeneOp`
-- `PerformativeForce`
-- `LogLevel`
-- `Response`
-- `SafetyLevel`
-- `$name`
-- `Message`
-- `MessageFormat`
-- `Complexity`
 - `RevealCondition`
-- `KleeneLattice`
-- `Request`
-- `WorkflowType`
-- `WhatToFind`
+- `ControlFlow<B,`
+- `SelfReference`
+- `ConstantValue`
+- `PrimeLattice`
+- `Color`
+- `Item`
+- `CodeVersion`
 - `CacheSize`
+- `BillStatus`
+- `WenLattice`
+- `Message`
+- `KleeneOp`
+- `NodeType`
+- `FeatureType`
+- `Term`
+- `LatticeType`
+- `DaoState`
+- `MetaMemePhase`
+- `Evidence`
+- `MessageFormat`
+- `EvolutionStage`
+- `GovernmentRole`
+- `SmallPrime`
+- `Request`
+- `PerformativeForce`
+- `MyEnum`
+- `PrimeBox`
 
 ### Monster Group Mapping
 Each enum-to-string function is mapped to a unique 24-bit Monster cell:
 
-- **Prime 7**: 1 functions
 - **Prime 3**: 6 functions
 - **Prime 13**: 2 functions
-- **Prime 5**: 3 functions
-- **Prime 11**: 4 functions
+- **Prime 5**: 5 functions
 - **Prime 19**: 2 functions
-- **Prime 17**: 4 functions
+- **Prime 7**: 1 functions
 - **Prime 2**: 7 functions
+- **Prime 11**: 4 functions
+- **Prime 17**: 5 functions
 
 ### Label Set 1 Signature
-**0xE9D12F7EB9483CBF6097760000000000**
+**0x162E05DCD031A42A55AA300000000000**
 
 ### Mathematical Foundation
 Label Set 1 establishes the foundational mapping:
