@@ -8,8 +8,8 @@
 
 ## Evolution Stages
 - Germinating: 8 spores
-- Dormant: 37 spores
 - Mature: 55 spores
+- Dormant: 37 spores
 
 ## Generated DWIM Fixes
 1. Add `#[derive(Clone)]` for cloning support

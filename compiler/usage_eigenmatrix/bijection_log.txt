@@ -1,0 +1,66 @@
+   Compiling usage_eigenmatrix v0.1.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/usage_eigenmatrix)
+warning: unused import: `serde_json::Value`
+ --> compiler/usage_eigenmatrix/src/bin/syn_hir_bijection_prover.rs:2:5
+  |
+2 | use serde_json::Value;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `evidence` is never read
+  --> compiler/usage_eigenmatrix/src/bin/syn_hir_bijection_prover.rs:21:5
+   |
+17 | struct ProofStep {
+   |        --------- field in this struct
+...
+21 |     evidence: Evidence,
+   |     ^^^^^^^^
+   |
+   = note: `ProofStep` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: fields `field_count` and `name_similarity` are never read
+  --> compiler/usage_eigenmatrix/src/bin/syn_hir_bijection_prover.rs:26:23
+   |
+26 |     StructuralMatch { field_count: usize, name_similarity: f64 },
+   |     ---------------   ^^^^^^^^^^^         ^^^^^^^^^^^^^^^
+   |     |
+   |     fields in this variant
+   |
+   = note: `Evidence` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+
+warning: variant `TraceCorrelation` is never constructed
+  --> compiler/usage_eigenmatrix/src/bin/syn_hir_bijection_prover.rs:27:5
+   |
+25 | enum Evidence {
+   |      -------- variant in this enum
+26 |     StructuralMatch { field_count: usize, name_similarity: f64 },
+27 |     TraceCorrelation { syn_usage: u32, hir_usage: u32 },
+   |     ^^^^^^^^^^^^^^^^
+   |
+   = note: `Evidence` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+
+warning: `usage_eigenmatrix` (bin "syn_hir_bijection_prover") generated 4 warnings (run `cargo fix --bin "syn_hir_bijection_prover"` to apply 1 suggestion)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.30s
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/syn_hir_bijection_prover`
+🔍 Auto-constructing syn↔hir bijection...
+📊 Mapping Results:
+  Type mappings: 2
+  Proof steps: 5
+  Completeness: 100.0%
+
+🔗 Discovered Mappings:
+  Type ↔ TyKind
+  Expr ↔ ExprKind
+
+📝 Proof Steps:
+  Type::Array ↔ TyKind::Array (score: 1.00)
+  Type::Path ↔ TyKind::Path (score: 1.00)
+  Type::Reference ↔ TyKind::Ref (score: 0.95)
+  Expr::Binary ↔ ExprKind::Binary (score: 1.00)
+  Expr::Call ↔ ExprKind::Call (score: 1.00)
+
+✅ Generated:
+  - syn_hir_bijection.v (Coq proof)
+  - syn_hir_converter.rs (Auto-generated converter)
+🎉 Bijection proof complete! Converter is ready to use.
