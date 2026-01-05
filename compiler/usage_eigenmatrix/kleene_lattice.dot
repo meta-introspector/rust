@@ -1,0 +1,34 @@
+digraph KleeneLattice {
+  rankdir=TB;
+  node [shape=box];
+
+  subgraph cluster_recursive {
+    label="Recursive";
+    core_iter_traits_collect_IntoIterator_into_iter [label="into_iter\nC(it)+*"];
+  }
+
+  subgraph cluster_presentation {
+    label="Presentation";
+    core_fmt_Display_fmt [label="fmt\nC(fmt)++"];
+  }
+
+  subgraph cluster_relational {
+    label="Relational";
+    core_cmp_PartialEq_eq [label="eq\nC(eq|ord)*+"];
+    core_cmp_PartialOrd_le [label="le\nC(eq|ord)*{2,}"];
+  }
+
+  subgraph cluster_control {
+    label="Control";
+    core_ops_control_flow_ControlFlow_Continue [label="Continue\nC(op)*{2,}"];
+    core_ops_control_flow_ControlFlow_Break [label="Break\nC(op)*{2,}"];
+  }
+
+  subgraph cluster_algebraic {
+    label="Algebraic";
+    core_option_Option_Some [label="Some\nC(opt|none){2,}"];
+    core_option_Option_None [label="None\nC(opt|none){2,}"];
+    core_result_Result_Ok [label="Ok\nC(ok|err)+"];
+  }
+
+}
