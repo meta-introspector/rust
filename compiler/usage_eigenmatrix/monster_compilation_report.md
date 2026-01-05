@@ -4,15 +4,14 @@
 
 ### Compilation Statistics
 - **Files Compiled**: 1
-- **Monster DefIds Generated**: 1
+- **Monster DefIds Generated**: 0
 - **Function Compositions**: 0
-- **Label Signatures**: 1
-- **System Signature**: `0x00000000000000A7D4D8CB67E7D5D13D`
+- **Label Signatures**: 0
+- **System Signature**: `0x00000000000000000000000000000001`
 
 ### Monster DefIds Generated
 | Position | DefId | Signature | Context |
 |----------|-------|-----------|----------|
-| 0 | `UltimateDefId(0)` | `0xD4D8CB67E7D5D13D` | `Self::") &&::default_string` |
 
 ### Function Compositions
 | f | g | σ(f) ⊗ σ(g) |

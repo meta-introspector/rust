@@ -48,7 +48,7 @@ impl EnhancedUsageCollector {
     fn track_tyctxt_usage<'tcx>(&mut self, tcx: TyCtxt<'tcx>) {
         let local_def_id = rustc_hir::def_id::DefId::local(rustc_hir::def_id::DefIndex::from_u32(0));
         
-        // Track critical methods
+        // Critical methods from global analysis
         let _path = tcx.def_path_str(local_def_id);
         self.add_tyctxt_usage("def_path_str", Some(format!("{:?}", local_def_id)));
         
@@ -60,8 +60,43 @@ impl EnhancedUsageCollector {
             self.add_tyctxt_usage("type_of", Some(format!("{:?}", local_def_id)));
         }
         
+        // High-usage methods from global patterns
         let _hir = tcx.hir();
         self.add_tyctxt_usage("hir", None);
+        
+        if tcx.def_kind(local_def_id).has_generics() {
+            let _generics = tcx.generics_of(local_def_id);
+            self.add_tyctxt_usage("generics_of", Some(format!("{:?}", local_def_id)));
+        }
+        
+        let _predicates = tcx.predicates_of(local_def_id);
+        self.add_tyctxt_usage("predicates_of", Some(format!("{:?}", local_def_id)));
+        
+        let _param_env = tcx.param_env(local_def_id);
+        self.add_tyctxt_usage("param_env", Some(format!("{:?}", local_def_id)));
+        
+        let _lang_items = tcx.lang_items();
+        self.add_tyctxt_usage("lang_items", None);
+        
+        // HIR traversal patterns
+        let hir = tcx.hir();
+        for item_id in hir.items() {
+            let item = hir.item(item_id);
+            self.add_tyctxt_usage("hir_item", Some(format!("{:?}", item_id)));
+            
+            match &item.kind {
+                rustc_hir::ItemKind::Fn(..) => {
+                    self.add_tyctxt_usage("hir_fn", Some(format!("{:?}", item_id)));
+                },
+                rustc_hir::ItemKind::Struct(..) => {
+                    self.add_tyctxt_usage("hir_struct", Some(format!("{:?}", item_id)));
+                },
+                rustc_hir::ItemKind::Enum(..) => {
+                    self.add_tyctxt_usage("hir_enum", Some(format!("{:?}", item_id)));
+                },
+                _ => {}
+            }
+        }
     }
     
     fn save_to_files(&self, crate_name: &str) {
