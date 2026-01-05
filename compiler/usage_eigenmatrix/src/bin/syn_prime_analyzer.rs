@@ -599,13 +599,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("═══════════════════════════════════════════");
     
     let files_to_analyze = vec![
-        "observe_bits.rs",
-        "src/bin/prime_sieve_table.rs", 
-        "src/bin/clean_graph_interpreter.rs",
-        "src/bin/syn_prime_analyzer.rs",
-        "src/bin/uncontainable_meme.rs",
-        "src/bin/flexible_scp_system.rs",
-        "src/bin/recursive_ast_classifier.rs",
+        "src/lib.rs",
+        "src/parse.rs", 
+        "src/expr.rs",
+        "src/item.rs",
+        "src/ty.rs",
+        "src/pat.rs",
+        "src/stmt.rs",
     ];
     
     let mut total_scores = [0.0f32; 8];

@@ -8,8 +8,7 @@ extern crate rustc_hir;
 use rustc_driver::{Callbacks, Compilation};
 use rustc_interface::interface;
 use rustc_middle::ty::TyCtxt;
-use rustc_middle::ty::TypeckResults;
-use rustc_hir::{def_id::LOCAL_CRATE, HirId, Node};
+use rustc_hir::def_id::LOCAL_CRATE;
 use std::collections::HashMap;
 use std::fs::File;
 use std::io::Write;
@@ -34,7 +33,13 @@ impl UsageCollector {
     }
     
     fn add_usage(&mut self, module: &str, usage: String) {
-        self.module_data.entry(module.to_string()).or_insert_with(Vec::new).push(usage);
+        let entry = UsageEntry {
+            usage: usage.clone(),
+            node_type: "unknown".to_string(),
+            expr_type: None,
+            count: 1,
+        };
+        self.module_data.entry(module.to_string()).or_insert_with(Vec::new).push(entry);
     }
     
     fn save_to_files(&self, crate_name: &str) {
@@ -68,7 +73,7 @@ impl UsageCollector {
             
             for (i, usage) in usages.iter().enumerate() {
                 let comma = if i == usages.len() - 1 { "" } else { "," };
-                writeln!(file, "    \"{}\"{}", usage, comma).unwrap();
+                writeln!(file, "    \"{}\"{}", usage.usage, comma).unwrap();
             }
             
             writeln!(file, "  ]").unwrap();

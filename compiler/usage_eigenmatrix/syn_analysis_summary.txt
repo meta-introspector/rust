@@ -1,0 +1,54 @@
+Syn Crate Analysis Summary
+==========================
+
+Date: January 5, 2026
+Target: syn crate (GitHub current)
+Analyzer: syn_prime_analyzer v0.1.0
+
+PRIME SIGNATURE: [2, 7] - Binary-Septenary
+
+KEY METRICS:
+- Prime 2 (Binary): 123.1 avg
+- Prime 7 (Septenary): 78.1 avg  
+- Prime 5 (Pentagonal): 13.7 avg
+- Prime 3 (Ternary): 10.1 avg
+
+COMPLEXITY HOTSPOTS:
+1. src/expr.rs: 607.0 total (4,173 lines)
+2. src/item.rs: 448.5 total (3,490 lines)  
+3. src/ty.rs: 239.0 total (1,271 lines)
+4. src/parse.rs: 185.0 total (1,419 lines)
+
+TOP COMPLEX DECLARATIONS:
+1. impl_block (expr.rs): 57
+2. impl_block (parse.rs): 41
+3. impl_block (parse.rs): 25
+4. parse_file (lib.rs): 20
+5. span_of_unexpected_ignoring_nones (parse.rs): 16
+
+AST PATTERNS:
+- Path expressions: 2,525 (expr.rs), 2,266 (item.rs)
+- Method calls: 728 (expr.rs), 933 (item.rs)
+- Try expressions: 217 (expr.rs), 349 (item.rs)
+
+PRIME LITERALS: Only 2 found total
+- src/lib.rs: 1 prime
+- src/pat.rs: 1 prime
+
+COMPLEXITY DISTRIBUTION:
+- 0-9: 62 declarations (89.9%)
+- 10-19: 3 declarations (4.3%)
+- 20-29: 2 declarations (2.9%)
+- 40-49: 1 declaration (1.4%)
+- 50-59: 1 declaration (1.4%)
+
+COMPARISON vs OUR CODE:
+- Syn: [2,7] signature vs Our: [2] signature
+- Syn: 123.1 binary avg vs Our: 17.6 binary avg
+- Syn: Production parser vs Our: Math experiments
+
+INSIGHTS:
+- Expression parsing is complexity epicenter
+- Deep 7-level nesting in parsing logic
+- Clean API with minimal prime literals
+- Binary-Septenary architecture pattern
