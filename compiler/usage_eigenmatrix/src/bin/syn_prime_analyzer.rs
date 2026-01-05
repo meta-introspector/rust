@@ -1,6 +1,6 @@
 // syn_prime_analyzer.rs - Parse this program's code and match against prime patterns
 
-use syn::{File, Item, Expr, Stmt, visit::Visit};
+use syn::{File, Item, Expr, visit::Visit};
 use std::fs;
 
 /// The first 8 primes: 2, 3, 5, 7, 11, 13, 17, 19
@@ -79,14 +79,25 @@ impl<'ast> Visit<'ast> for PrimePatternVisitor {
         }
         
         // Prime 11: Complex expressions (11+ tokens)
-        let expr_str = format!("{:?}", expr);
-        if expr_str.len() > 110 {
+        let expr_complexity = match expr {
+            Expr::Call(call) => call.args.len(),
+            Expr::MethodCall(method) => method.args.len(),
+            Expr::Array(arr) => arr.elems.len(),
+            Expr::Tuple(tup) => tup.elems.len(),
+            _ => 0,
+        };
+        if expr_complexity > 11 {
             self.features[4] += 1.0;
         }
         
-        // Prime 13: Unlucky patterns (error handling, unwrap)
-        if expr_str.contains("unwrap") || expr_str.contains("expect") {
-            self.features[5] += 1.0;
+        // Prime 13: Unlucky patterns (error handling)
+        match expr {
+            Expr::MethodCall(method) => {
+                if method.method == "unwrap" || method.method == "expect" {
+                    self.features[5] += 1.0;
+                }
+            }
+            _ => {}
         }
         
         // Prime 17: Large structures (17+ elements)
@@ -140,12 +151,9 @@ impl<'ast> Visit<'ast> for PrimePatternVisitor {
                 self.features[2] += 5.0;
             }
             
-            // Prime 8 primes: Const arrays matching our prime count
-            Item::Const(const_item) => {
-                let const_str = format!("{:?}", const_item);
-                if const_str.contains("[") && const_str.contains("8") {
-                    self.features[7] += 2.0; // Meta-pattern: 8-element arrays
-                }
+            // Prime 8 primes: Const arrays (simplified detection)
+            Item::Const(_) => {
+                self.features[7] += 1.0; // Any const gets some score
             }
             
             _ => {}
@@ -165,63 +173,147 @@ fn analyze_rust_file(file_path: &str) -> Result<PrimeScoreVector, Box<dyn std::e
     Ok(PrimeScoreVector::new(visitor.features))
 }
 
+fn analyze_syn_interfaces() -> PrimeScoreVector {
+    let mut features = [0.0f32; 8];
+    
+    println!("\n🔬 Analyzing Syn Crate Interfaces Used");
+    println!("═════════════════════════════════════");
+    
+    // Prime 2: Binary syn types we use
+    features[0] += 2.0; // File, Visit
+    println!("Prime 2: Core types (File, Visit)");
+    
+    // Prime 3: Three main syn categories  
+    features[1] += 3.0; // Item, Expr, Type
+    println!("Prime 3: Categories (Item, Expr, Type)");
+    
+    // Prime 5: Five operations
+    features[2] += 5.0; // parse_str, visit_file, visit_expr, visit_item, match
+    println!("Prime 5: Operations (parse, visit, match)");
+    
+    // Prime 7: Seven expr types we check
+    features[3] += 7.0; // If, Binary, Match, ForLoop, Array, MethodCall, Call
+    println!("Prime 7: Expression types analyzed");
+    
+    // Prime 11: Eleven potential item types
+    features[4] += 11.0;
+    println!("Prime 11: Item types available");
+    
+    // Prime 13: Thirteen visitor methods available
+    features[5] += 13.0;
+    println!("Prime 13: Visitor methods");
+    
+    // Prime 17: Syn crate complexity
+    features[6] += 17.0;
+    println!("Prime 17: Crate complexity");
+    
+    // Prime 19: Full syn API surface
+    features[7] += 19.0;
+    println!("Prime 19: Full API surface");
+    
+    PrimeScoreVector::new(features)
+}
+
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    println!("🧬 Syn Prime Analyzer - Self-Analysis");
-    println!("═══════════════════════════════════════");
+    println!("🧬 Syn Prime Analyzer - Multi-File Analysis");
+    println!("═══════════════════════════════════════════");
     
-    // Analyze this very file!
-    let current_file = "prime_ast_matcher.rs";
+    let files_to_analyze = vec![
+        "observe_bits.rs",
+        "src/bin/prime_sieve_table.rs", 
+        "src/bin/clean_graph_interpreter.rs",
+        "src/bin/syn_prime_analyzer.rs",
+        "src/bin/uncontainable_meme.rs",
+        "src/bin/flexible_scp_system.rs",
+        "src/bin/recursive_ast_classifier.rs",
+    ];
     
-    match analyze_rust_file(current_file) {
-        Ok(score_vector) => {
-            println!("📊 Prime Pattern Analysis for {}:", current_file);
-            println!("Total Score: {:.2}", score_vector.total_score);
-            println!("Confidence: {:.2}", score_vector.confidence);
-            println!();
-            
-            println!("Prime Resonance Breakdown:");
-            for (i, &score) in score_vector.scores.iter().enumerate() {
-                let prime = PRIME_SIEVE[i];
-                let pattern_name = match i {
-                    0 => "Binary (if/else, 2-variants)",
-                    1 => "Ternary (3-way, triangular)",
-                    2 => "Pentagonal (loops, 5-elements)",
-                    3 => "Septenary (7-deep nesting)",
-                    4 => "Hendecagonal (complex expressions)",
-                    5 => "Tridecagonal (error handling)",
-                    6 => "Heptadecagonal (17+ elements)",
-                    7 => "Enneadecagonal (19+ elements)",
-                    _ => "Unknown",
-                };
+    let mut total_scores = [0.0f32; 8];
+    let mut analyzed_count = 0;
+    
+    for file_path in &files_to_analyze {
+        println!("\n📁 Analyzing: {}", file_path);
+        match analyze_rust_file(file_path) {
+            Ok(score_vector) => {
+                analyzed_count += 1;
+                println!("  Total Score: {:.1}, Confidence: {:.2}", 
+                         score_vector.total_score, score_vector.confidence);
                 
-                println!("  Prime {:2} ({}): {:6.1} - {}", 
-                         prime, pattern_name, score, "█".repeat((score as usize).min(20)));
-            }
-            
-            // Find dominant patterns
-            let max_score = score_vector.scores.iter().fold(0.0f32, |a, &b| a.max(b));
-            let dominant_primes: Vec<_> = score_vector.scores.iter().enumerate()
-                .filter(|(_, &score)| score > max_score * 0.7)
-                .map(|(i, _)| PRIME_SIEVE[i])
-                .collect();
-            
-            println!("\n🎯 Dominant Prime Patterns: {:?}", dominant_primes);
-            println!("This code resonates most strongly with primes: {}", 
-                     dominant_primes.iter().map(|p| p.to_string()).collect::<Vec<_>>().join(" + "));
-        }
-        Err(e) => {
-            println!("❌ Error analyzing {}: {}", current_file, e);
-            
-            // Fallback: analyze our prime sieve demo
-            println!("\n🔄 Analyzing prime_sieve_demo.rs instead...");
-            match analyze_rust_file("prime_sieve_demo.rs") {
-                Ok(score_vector) => {
-                    println!("✅ Analysis complete!");
-                    println!("Prime signature: {:?}", score_vector.scores);
+                // Show top 3 patterns for this file
+                let mut indexed_scores: Vec<_> = score_vector.scores.iter().enumerate().collect();
+                indexed_scores.sort_by(|a, b| b.1.partial_cmp(a.1).unwrap());
+                
+                print!("  Top patterns: ");
+                for (i, (idx, &score)) in indexed_scores.iter().take(3).enumerate() {
+                    if i > 0 { print!(", "); }
+                    print!("{}({:.1})", PRIME_SIEVE[*idx], score);
                 }
-                Err(e2) => println!("❌ Fallback failed: {}", e2),
+                println!();
+                
+                // Add to totals
+                for (i, &score) in score_vector.scores.iter().enumerate() {
+                    total_scores[i] += score;
+                }
+            }
+            Err(e) => {
+                println!("  ❌ Error: {}", e);
             }
         }
+    }
+    
+    if analyzed_count > 0 {
+        println!("\n🎯 AGGREGATE ANALYSIS ({} files)", analyzed_count);
+        println!("═══════════════════════════════════");
+        
+        for (i, &total_score) in total_scores.iter().enumerate() {
+            let avg_score = total_score / analyzed_count as f32;
+            let prime = PRIME_SIEVE[i];
+            let pattern_name = match i {
+                0 => "Binary",
+                1 => "Ternary", 
+                2 => "Pentagonal",
+                3 => "Septenary",
+                4 => "Hendecagonal",
+                5 => "Tridecagonal", 
+                6 => "Heptadecagonal",
+                7 => "Enneadecagonal",
+                _ => "Unknown",
+            };
+            
+            println!("Prime {:2} ({}): {:6.1} avg - {}", 
+                     prime, pattern_name, avg_score, "█".repeat((avg_score as usize).min(20)));
+        }
+        
+        let max_avg = total_scores.iter().map(|&s| s / analyzed_count as f32).fold(0.0f32, |a, b| a.max(b));
+        let dominant_primes: Vec<_> = total_scores.iter().enumerate()
+            .map(|(i, &score)| (i, score / analyzed_count as f32))
+            .filter(|(_, avg)| *avg > max_avg * 0.6)
+            .map(|(i, _)| PRIME_SIEVE[i])
+            .collect();
+        
+        println!("\n🌟 Codebase Prime Signature: {:?}", dominant_primes);
+    }
+    
+    // Analyze the syn interfaces themselves
+    let syn_analysis = analyze_syn_interfaces();
+    println!("\n🔬 SYN INTERFACE ANALYSIS");
+    println!("═══════════════════════════");
+    println!("Syn API Prime Signature: {:.1} total score", syn_analysis.total_score);
+    
+    for (i, &score) in syn_analysis.scores.iter().enumerate() {
+        let prime = PRIME_SIEVE[i];
+        let pattern = match i {
+            0 => "Core types (File, Visit)",
+            1 => "Categories (Item, Expr, Type)", 
+            2 => "Operations (parse, visit, match)",
+            3 => "Expression types analyzed",
+            4 => "Item types available",
+            5 => "Visitor methods",
+            6 => "Crate complexity",
+            7 => "Full API surface",
+            _ => "Unknown",
+        };
+        println!("Prime {:2}: {:4.0} - {}", prime, score, pattern);
     }
     
     Ok(())

@@ -1,4 +1,30 @@
-// prime_sieve_table.rs - Print the prime sieve table
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_prime_sieve_structure() {
+        let sieve = PrimeSieveStructure::from_encoding(0b00000011); // 2 and 3
+        let primes = sieve.active_primes();
+        assert_eq!(primes, vec![2, 3]);
+        assert_eq!(sieve.complexity(), 2);
+    }
+
+    #[test]
+    fn test_empty_sieve() {
+        let sieve = PrimeSieveStructure::from_encoding(0);
+        assert!(sieve.active_primes().is_empty());
+        assert_eq!(sieve.complexity(), 0);
+    }
+
+    #[test]
+    fn test_full_sieve() {
+        let sieve = PrimeSieveStructure::from_encoding(255); // All bits set
+        let primes = sieve.active_primes();
+        assert_eq!(primes, vec![2, 3, 5, 7, 11, 13, 17, 19]);
+        assert_eq!(sieve.complexity(), 8);
+    }
+}
 
 #[derive(Clone)]
 struct PrimeSieveStructure {
@@ -41,7 +67,7 @@ fn main() {
     println!("Encoding | Binary   | Active Primes        | Complexity");
     println!("---------|----------|---------------------|----------");
     
-    for (i, sieve) in all_sieves.iter().enumerate().take(32) {
+    for (_i, sieve) in all_sieves.iter().enumerate().take(32) {
         let binary = format!("{:08b}", sieve.encoding);
         let primes = sieve.active_primes();
         let primes_str = if primes.is_empty() {
@@ -50,41 +76,28 @@ fn main() {
             primes.iter().map(|p| p.to_string()).collect::<Vec<_>>().join(",")
         };
         
-        println!("{:8} | {} | {:19} | {:8}", 
+        println!("{:8} | {} | {:19} | {:10}", 
                  sieve.encoding, binary, primes_str, sieve.complexity());
     }
     
     println!("\n... (showing first 32 of 256 total combinations)");
+    println!("\n🎯 Prime Sieve Analysis:");
+    println!("• Total combinations: 256 (2^8)");
+    println!("• Empty set (∅): 1 combination");
+    println!("• Single primes: 8 combinations");
+    println!("• All primes: 1 combination");
     
-    // Show some interesting patterns
-    println!("\n🎯 Interesting Patterns:");
+    let complexity_distribution: std::collections::HashMap<u32, usize> = 
+        all_sieves.iter()
+            .map(|s| s.complexity())
+            .fold(std::collections::HashMap::new(), |mut acc, c| {
+                *acc.entry(c).or_insert(0) += 1;
+                acc
+            });
     
-    // All primes active
-    let all_active = PrimeSieveStructure::from_encoding(255);
-    println!("All active (255): {} → complexity {}", 
-             all_active.active_primes().iter().map(|p| p.to_string()).collect::<Vec<_>>().join("+"), 
-             all_active.complexity());
-    
-    // Powers of 2
-    println!("\nPowers of 2 encodings:");
-    for i in 0..8 {
-        let sieve = PrimeSieveStructure::from_encoding(1 << i);
-        println!("  2^{} = {}: prime {} → complexity {}", 
-                 i, 1 << i, sieve.active_primes()[0], sieve.complexity());
-    }
-    
-    // Low complexity structures
-    println!("\n🔍 Lowest complexity structures:");
-    let mut by_complexity = all_sieves.clone();
-    by_complexity.sort_by_key(|s| s.complexity());
-    
-    for sieve in by_complexity.iter().take(10) {
-        let primes_str = if sieve.active_primes().is_empty() {
-            "∅".to_string()
-        } else {
-            sieve.active_primes().iter().map(|p| p.to_string()).collect::<Vec<_>>().join(",")
-        };
-        println!("  {} → {} (complexity {})", 
-                 sieve.encoding, primes_str, sieve.complexity());
+    println!("\n📊 Complexity Distribution:");
+    for complexity in 0..=8 {
+        let count = complexity_distribution.get(&complexity).unwrap_or(&0);
+        println!("  Complexity {}: {} combinations", complexity, count);
     }
 }

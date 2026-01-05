@@ -1,27 +1,47 @@
 [package]
-name = "mklang-wasm"
+name = "usage_eigenmatrix"
 version = "0.1.0"
 edition = "2021"
 
-[lib]
-crate-type = ["cdylib"]
+[[bin]]
+name = "observe_bits"
+path = "observe_bits.rs"
+
+[[bin]]
+name = "prime_sieve_table"
+path = "src/bin/prime_sieve_table.rs"
+
+[[bin]]
+name = "clean_graph_interpreter"
+path = "src/bin/clean_graph_interpreter.rs"
+
+[[bin]]
+name = "syn_prime_analyzer"
+path = "src/bin/syn_prime_analyzer.rs"
+
+[[bin]]
+name = "uncontainable_meme"
+path = "src/bin/uncontainable_meme.rs"
+
+[[bin]]
+name = "flexible_scp_system"
+path = "src/bin/flexible_scp_system.rs"
+
+[[bin]]
+name = "recursive_ast_classifier"
+path = "src/bin/recursive_ast_classifier.rs"
+
+[[bin]]
+name = "mkscp_macro_set"
+path = "src/bin/mkscp_macro_set.rs"
+
+[features]
+default = []
+wasm = ["wasm-bindgen"]
 
 [dependencies]
-wasm-bindgen = "0.2"
-anyhow = "1.0"
-serde = { version = "1.0", features = ["derive"] }
+syn = { version = "2.0", features = ["full", "visit"] }
 serde_json = "1.0"
-regex = "1.0"
-rand = "0.8"
-syn = { version = "2.0", features = ["full", "parsing", "visit", "extra-traits"] }
-quote = "1.0"
+anyhow = "1.0"
 paste = "1.0"
-
-[dependencies.web-sys]
-version = "0.3"
-features = [
-  "console",
-  "Document",
-  "Element",
-  "Window",
-]
+wasm-bindgen = { version = "0.2", optional = true }
