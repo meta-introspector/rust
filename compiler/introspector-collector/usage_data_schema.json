@@ -1,106 +1,64 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Rust Usage Data Files Schema",
-  "oneOf": [
-    {
-      "title": "ModuleUsageData",
-      "type": "object",
-      "properties": {
-        "crate": {"type": "string"},
-        "module": {"type": "string"},
-        "usages": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "usage": {"type": "string"},
-              "usage_count": {"type": "integer", "minimum": 1},
-              "usage_type": {
-                "type": "string",
-                "enum": ["MethodCall", "AssocConstAccess", "EnumVariant", "StructUsage", "EnumUsage", "FunctionCall", "ConstantAccess", "StaticAccess", "MacroCall", "TypeAlias", "UnionUsage", "TraitUsage", "ConstDecl", "StaticDecl", "StructDecl", "EnumDecl", "NumericLiteral", "Other"]
-              },
-              "node_type": {
-                "type": "string", 
-                "enum": ["Item", "Expr", "Stmt", "TraitItem", "ImplItem", "Pat", "Ty", "Expression", "Other"]
-              },
-              "user_def_id": {"type": "string"},
-              "used_def_id": {"type": "string"}
-            },
-            "required": ["usage", "usage_count", "usage_type", "node_type", "user_def_id", "used_def_id"]
-          }
-        }
-      },
-      "required": ["crate", "module", "usages"]
+  "title": "Usage Data Schema",
+  "description": "Schema for validating collected usage data files",
+  "type": "object",
+  "properties": {
+    "crate": {
+      "type": "string",
+      "description": "Name of the crate"
     },
-    {
-      "title": "EnumClassificationData", 
-      "type": "object",
-      "properties": {
-        "crate": {"type": "string"},
-        "enums": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "object",
-            "properties": {
-              "name": {"type": "string"},
-              "variants": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "enum_name": {"type": "string"},
-                    "variant_name": {"type": "string"},
-                    "usage_classes": {
-                      "type": "object",
-                      "properties": {
-                        "string_conversion": {"type": "integer", "minimum": 0},
-                        "pattern_matching": {"type": "integer", "minimum": 0},
-                        "construction": {"type": "integer", "minimum": 0},
-                        "comparison": {"type": "integer", "minimum": 0},
-                        "debug_format": {"type": "integer", "minimum": 0},
-                        "serialization": {"type": "integer", "minimum": 0},
-                        "general": {"type": "integer", "minimum": 0}
-                      },
-                      "required": ["string_conversion", "pattern_matching", "construction", "comparison", "debug_format", "serialization", "general"]
-                    },
-                    "top_converters": {
-                      "type": "object",
-                      "additionalProperties": {
-                        "type": "array",
-                        "items": {
-                          "type": "array",
-                          "items": [
-                            {"type": "string"},
-                            {"type": "integer", "minimum": 1}
-                          ],
-                          "minItems": 2,
-                          "maxItems": 2
-                        }
-                      }
-                    }
-                  },
-                  "required": ["enum_name", "variant_name", "usage_classes", "top_converters"]
-                }
-              },
-              "total_usage_classes": {
-                "type": "object",
-                "properties": {
-                  "string_conversion": {"type": "integer", "minimum": 0},
-                  "pattern_matching": {"type": "integer", "minimum": 0},
-                  "construction": {"type": "integer", "minimum": 0},
-                  "comparison": {"type": "integer", "minimum": 0},
-                  "debug_format": {"type": "integer", "minimum": 0},
-                  "serialization": {"type": "integer", "minimum": 0},
-                  "general": {"type": "integer", "minimum": 0}
-                },
-                "required": ["string_conversion", "pattern_matching", "construction", "comparison", "debug_format", "serialization", "general"]
-              }
-            },
-            "required": ["name", "variants", "total_usage_classes"]
+    "module": {
+      "type": "string", 
+      "description": "Module name (e.g., 'structs', 'enums', 'functions')"
+    },
+    "usages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "description": "Kind of usage (e.g., 'struct_decl', 'enum_decl')"
+          },
+          "node_type": {
+            "type": "string",
+            "description": "AST node type"
+          },
+          "symbol": {
+            "type": "string",
+            "description": "Symbol name"
+          },
+          "usage_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "usage_type": {
+            "type": "string",
+            "enum": ["StructDecl", "EnumDecl", "FunctionCall", "TypeUsage"]
+          },
+          "used_crate": {
+            "type": ["string", "null"],
+            "description": "Crate where the symbol is used"
+          },
+          "used_def_id": {
+            "type": "string",
+            "description": "Definition ID of the used symbol"
+          },
+          "user_crate": {
+            "type": "string",
+            "description": "Crate that uses the symbol"
+          },
+          "user_def_id": {
+            "type": "string",
+            "description": "Definition ID of the user"
           }
-        }
-      },
-      "required": ["crate", "enums"]
+        },
+        "required": ["kind", "node_type", "symbol", "usage_count", "usage_type", "used_def_id", "user_crate", "user_def_id"],
+        "additionalProperties": true
+      }
     }
-  ]
+  },
+  "required": ["crate", "module", "usages"],
+  "additionalProperties": false
 }
