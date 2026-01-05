@@ -1,28 +1,26 @@
 use std::fs;
 
-/// Signature Reproduction Engine
-/// Generates code that produces the same Monster Group signature
-
+/// Code signature reproduction engine
 #[derive(Debug)]
 struct SignatureReproducer {
-    target_signature: u128,
-    prime_generators: [u8; 8],
+    target_signature: u64,
+    prime_basis: [u8; 8],
 }
 
 impl SignatureReproducer {
-    fn new(target_signature: u128) -> Self {
+    fn new(target_signature: u64) -> Self {
         Self {
             target_signature,
-            prime_generators: [2, 3, 5, 7, 11, 13, 17, 19],
+            prime_basis: [2, 3, 5, 7, 11, 13, 17, 19],
         }
     }
     
-    fn calculate_signature(&self, code: &str) -> u128 {
-        let mut signature = 1u128;
+    fn calculate_signature(&self, code: &str) -> u64 {
+        let mut signature = 1u64;
         for (i, byte) in code.bytes().enumerate() {
             let prime_idx = i % 8;
-            let prime = self.prime_generators[prime_idx] as u128;
-            signature = signature.wrapping_mul(prime).wrapping_add(byte as u128);
+            let prime = self.prime_basis[prime_idx] as u64;
+            signature = signature.wrapping_mul(prime).wrapping_add(byte as u64);
         }
         signature
     }
@@ -102,30 +100,23 @@ fn main() {
     }
     
     fn find_matching_signature(&self) -> Option<String> {
-        println!("🎯 Target signature: 0x{:032X}", self.target_signature);
-        
         let variants = self.generate_prime_sieve_variants();
         
         for (i, variant) in variants.iter().enumerate() {
             let signature = self.calculate_signature(variant);
-            println!("Variant {}: 0x{:032X}", i + 1, signature);
             
             if signature == self.target_signature {
-                println!("✅ EXACT MATCH FOUND! Variant {}", i + 1);
                 return Some(variant.clone());
             }
         }
         
         // Try mutations if no exact match
-        println!("🧬 No exact match, trying mutations...");
-        
         for (i, variant) in variants.iter().enumerate() {
-            for mutation in 0..100 {
+            for mutation in 0..50 {
                 let mutated = self.mutate_code(variant, mutation);
                 let signature = self.calculate_signature(&mutated);
                 
                 if signature == self.target_signature {
-                    println!("✅ MUTATION MATCH FOUND! Variant {} mutation {}", i + 1, mutation);
                     return Some(mutated);
                 }
             }
@@ -165,34 +156,21 @@ fn main() {
 }
 
 fn main() {
-    println!("🔄 Signature Reproduction Engine");
-    println!("================================");
-    
-    // Use the signature from our simple prime sieve (0x1 means no enum-to-string found)
-    // Let's try to reproduce a more interesting signature
-    let target_signature = 0x0000000000000001u128;
-    
+    let target_signature = 0x0000000000000001u64;
     let reproducer = SignatureReproducer::new(target_signature);
     
     match reproducer.find_matching_signature() {
         Some(matching_code) => {
-            println!("\n🎉 SUCCESS! Found code that produces target signature:");
-            println!("====================================================");
+            println!("Found matching code:");
+            println!("{}", matching_code);
             
-            // Save the matching code
-            match fs::write("reproduced_prime_sieve.rs", &matching_code) {
-                Ok(()) => println!("📁 Saved to: reproduced_prime_sieve.rs"),
-                Err(e) => eprintln!("❌ Error saving: {}", e),
+            match fs::write("reproduced_code.rs", &matching_code) {
+                Ok(()) => println!("Saved to: reproduced_code.rs"),
+                Err(e) => eprintln!("Error saving: {}", e),
             }
-            
-            // Verify by compiling with Monster compiler
-            println!("\n🧬 Verifying with Monster compiler...");
         }
         None => {
-            println!("❌ Could not find code that produces target signature");
-            println!("💡 Try different mutations or signature targets");
+            println!("Could not find code that produces target signature");
         }
     }
-    
-    println!("\n🎯 Signature reproduction attempt complete!");
 }
