@@ -1,0 +1,6 @@
+5:extern crate rustc_middle;
+6:extern crate rustc_hir;
+10:use rustc_middle::ty::TyCtxt;
+11:use rustc_hir::def_id::LOCAL_CRATE;
+91:        tcx: TyCtxt<'tcx>,
+110:            if !matches!(def_kind, rustc_hir::def::DefKind::Fn | rustc_hir::def::DefKind::Const | rustc_hir::def::DefKind::Static { .. }) {

@@ -1,0 +1,101 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+     Running `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/target/debug/syn_prime_analyzer ../rustc_driver/usage_collector.rs`
+🧬 Syn Prime Analyzer - Multi-File Analysis
+═══════════════════════════════════════════
+
+📁 Analyzing: src/lib.rs
+  Total Score: 0.0, Confidence: 0.00
+  Top patterns: 2(0.0), 3(0.0), 5(0.0)
+
+📊 SYN FINGERPRINT: src/lib.rs
+═══════════════════════════════════
+📦 Items:
+  Fn: 2 ██
+  Use: 1 █
+  ForeignMod: 1 █
+
+🔧 Expressions:
+  Call: 1 █
+  Reference: 1 █
+  Macro: 1 █
+  Unsafe: 1 █
+  Path: 1 █
+
+🏷️ Types:
+  Reference: 3 ███
+  Path: 3 ███
+
+🎯 Patterns:
+  Ident: 3 ███
+
+📝 Statements:
+  Expr: 1 █
+  Macro: 1 █
+  ExprSemi: 1 █
+
+🔍 PUBLIC DECLARATION ANALYSIS: src/lib.rs
+═══════════════════════════════════════════
+
+📦 greet (Function) [pub]
+  Complexity: 1
+  Node histogram:
+    Other: 3 ███
+    Call: 1 █
+    Fn: 1 █
+    Expr: 1 █
+    ExprSemi: 1 █
+    Path: 1 █
+
+📦 greet (Function) [pub]
+  Complexity: 0
+  Node histogram:
+    Fn: 1 █
+    Macro: 1 █
+
+📁 Analyzing: src/parse.rs
+  ❌ Error: No such file or directory (os error 2)
+
+📁 Analyzing: src/expr.rs
+  ❌ Error: No such file or directory (os error 2)
+
+📁 Analyzing: src/item.rs
+  ❌ Error: No such file or directory (os error 2)
+
+📁 Analyzing: src/ty.rs
+  ❌ Error: No such file or directory (os error 2)
+
+📁 Analyzing: src/pat.rs
+  ❌ Error: No such file or directory (os error 2)
+
+📁 Analyzing: src/stmt.rs
+  ❌ Error: No such file or directory (os error 2)
+
+🎯 AGGREGATE ANALYSIS (1 files)
+═══════════════════════════════════
+Prime  2 (Binary):    0.0 avg - 
+Prime  3 (Ternary):    0.0 avg - 
+Prime  5 (Pentagonal):    0.0 avg - 
+Prime  7 (Septenary):    0.0 avg - 
+Prime 11 (Hendecagonal):    0.0 avg - 
+Prime 13 (Tridecagonal):    0.0 avg - 
+Prime 17 (Heptadecagonal):    0.0 avg - 
+Prime 19 (Enneadecagonal):    0.0 avg - 
+
+🌟 Codebase Prime Signature: []
+
+🔢 PRIME LITERAL EXTRACTION
+═══════════════════════════
+src/lib.rs: 0 primes found
+
+📊 PRIME HISTOGRAM (All Code)
+═══════════════════════════════
+
+💾 Saved to prime_histogram.txt
+
+🗺️ COMPLEXITY BITMAP
+═══════════════════════
+
+📁 src/lib.rs
+  greet                  1 █
+  greet                  0 █
+Error: Os { code: 2, kind: NotFound, message: "No such file or directory" }
