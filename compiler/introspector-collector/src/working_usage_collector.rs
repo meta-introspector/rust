@@ -31,12 +31,15 @@ struct CleanGraphData {
 
 #[derive(Serialize, Deserialize, Clone)]
 struct UsageEntry {
-    usage: String,
+    symbol: String,
+    kind: String,
     usage_count: usize,
     usage_type: String,
     node_type: String,
     user_def_id: String,
     used_def_id: String,
+    user_crate: Option<String>,
+    used_crate: Option<String>,
 }
 
 #[derive(Serialize, Deserialize, Clone, Default)]
@@ -58,11 +61,37 @@ struct EnumVariantUsage {
     top_converters: HashMap<String, Vec<(String, usize)>>, // usage_type -> [(function, count)]
 }
 
-#[derive(Serialize, Deserialize)]
-struct EnumData {
-    #[serde(rename = "crate")]
-    crate_name: String,
-    enums: HashMap<String, EnumInfo>,
+#[derive(Serialize, Deserialize, Clone)]
+struct ItemComplexity {
+    name: String,
+    item_type: String, // "struct", "enum", "function", "macro"
+    complexity: String, // "simple", "medium", "complex"
+    field_count: Option<usize>,
+    variant_count: Option<usize>,
+    param_count: Option<usize>,
+    fields: Option<Vec<FieldInfo>>,
+    variants: Option<Vec<VariantInfo>>,
+    parameters: Option<Vec<ParamInfo>>,
+}
+
+#[derive(Serialize, Deserialize, Clone)]
+struct FieldInfo {
+    name: String,
+    field_type: String,
+    is_public: bool,
+}
+
+#[derive(Serialize, Deserialize, Clone)]
+struct VariantInfo {
+    name: String,
+    has_fields: bool,
+    field_count: usize,
+}
+
+#[derive(Serialize, Deserialize, Clone)]
+struct ParamInfo {
+    name: String,
+    param_type: String,
 }
 
 #[derive(Serialize, Deserialize, Clone)]
@@ -83,6 +112,7 @@ struct ModuleData {
 struct UsageCollector {
     module_data: HashMap<String, Vec<UsageEntry>>,
     enum_data: HashMap<String, EnumInfo>,
+    item_complexity: HashMap<String, ItemComplexity>,
 }
 
 impl UsageCollector {
@@ -90,6 +120,7 @@ impl UsageCollector {
         Self {
             module_data: HashMap::new(),
             enum_data: HashMap::new(),
+            item_complexity: HashMap::new(),
         }
     }
     
@@ -109,17 +140,20 @@ impl UsageCollector {
         Ok(HashMap::new())
     }
     
-    fn add_usage(&mut self, module: &str, usage: String, usage_type: String, node_type: String, user_def_id: String, used_def_id: String) {
+    fn add_usage(&mut self, module: &str, symbol: String, kind: String, usage_type: String, node_type: String, user_def_id: String, used_def_id: String, user_crate: Option<String>, used_crate: Option<String>) {
         // Classify the usage pattern
-        let classification = self.classify_usage(&usage, &usage_type, &used_def_id);
+        let classification = self.classify_usage(&kind, &usage_type, &used_def_id);
         
         let entry = UsageEntry {
-            usage: usage.clone(),
+            symbol,
+            kind,
             usage_count: 1,
             usage_type: usage_type.clone(),
-            node_type: node_type.clone(),
+            node_type,
             user_def_id: user_def_id.clone(),
             used_def_id: used_def_id.clone(),
+            user_crate,
+            used_crate,
         };
         
         self.module_data.entry(module.to_string()).or_insert_with(Vec::new).push(entry);
@@ -239,10 +273,34 @@ impl UsageCollector {
     }
     
     fn save_to_files(&self, crate_name: &str) {
-        let output_dir = std::env::var("USAGE_OUTPUT_DIR").unwrap_or_else(|_| "usage_data".to_string());
+        // Debug: Print current working directory and environment variables
+        eprintln!("=== ENV DEBUG ===");
+        eprintln!("PWD: {:?}", std::env::current_dir());
+        eprintln!("CARGO_MANIFEST_DIR: {:?}", std::env::var("CARGO_MANIFEST_DIR"));
+        eprintln!("=== END ENV DEBUG ===");
+        
+        // Use proper Cargo environment variables for target directory
+        let output_dir = std::env::var("USAGE_OUTPUT_DIR")
+            .or_else(|_| {
+                // Try CARGO_TARGET_DIR first (user override)
+                std::env::var("CARGO_TARGET_DIR")
+                    .map(|target_dir| format!("{}/harmonic/usage", target_dir))
+            })
+            .or_else(|_| {
+                // Fall back to calculated target path using CARGO_MANIFEST_DIR + PROFILE
+                std::env::var("CARGO_MANIFEST_DIR")
+                    .and_then(|manifest_dir| {
+                        std::env::var("PROFILE")
+                            .map(|profile| format!("{}/target/{}/harmonic/usage", manifest_dir, profile))
+                    })
+            })
+            .unwrap_or_else(|_| "usage_data".to_string());
+        
         std::fs::create_dir_all(&output_dir).unwrap();
         
         let mut total_usages = 0;
+        let mut generated_files = Vec::new();
+        
         for (module, usages) in &self.module_data {
             let module_data = ModuleData {
                 crate_name: crate_name.to_string(),
@@ -296,21 +354,72 @@ impl UsageCollector {
             
             let json = serde_json::to_string_pretty(&module_data).unwrap();
             std::fs::write(&filename, json).unwrap();
+            generated_files.push(filename.clone());
             total_usages += usages.len();
         }
         
-        // Save enum data separately
-        if !self.enum_data.is_empty() {
-            let enum_filename = format!("{}/{}_enums_classified.json", output_dir, crate_name);
-            let enum_data = EnumData {
-                crate_name: crate_name.to_string(),
-                enums: self.enum_data.clone(),
-            };
-            let enum_json = serde_json::to_string_pretty(&enum_data).unwrap();
-            std::fs::write(&enum_filename, enum_json).unwrap();
-            eprintln!("=== SAVED {} CLASSIFIED ENUMS FOR CRATE: {} ===", self.enum_data.len(), crate_name);
+        // Save complexity data
+        if !self.item_complexity.is_empty() {
+            let complexity_filename = format!("{}/{}_complexity.json", output_dir, crate_name);
+            let complexity_data = serde_json::json!({
+                "crate": crate_name,
+                "items": self.item_complexity.values().collect::<Vec<_>>()
+            });
+            let complexity_json = serde_json::to_string_pretty(&complexity_data).unwrap();
+            std::fs::write(&complexity_filename, complexity_json).unwrap();
+            generated_files.push(complexity_filename);
+            eprintln!("=== SAVED {} COMPLEXITY ITEMS FOR CRATE: {} ===", self.item_complexity.len(), crate_name);
         }
+        
+        // Generate manifest for this crate
+        self.generate_manifest(crate_name, &output_dir, &generated_files, total_usages);
+        
         eprintln!("=== COLLECTING USAGE DATA FOR CRATE: {} === ({} total usages)", crate_name, total_usages);
+    }
+    
+    fn generate_manifest(&self, crate_name: &str, output_dir: &str, generated_files: &[String], total_usages: usize) {
+        use std::time::{SystemTime, UNIX_EPOCH};
+        
+        // Find other manifest files (dependencies)
+        let mut dependency_manifests = Vec::new();
+        if let Ok(entries) = std::fs::read_dir(output_dir) {
+            for entry in entries.flatten() {
+                if let Some(filename) = entry.file_name().to_str() {
+                    if filename.ends_with("_manifest.json") && !filename.starts_with(&format!("{}_", crate_name)) {
+                        dependency_manifests.push(entry.path().to_string_lossy().to_string());
+                    }
+                }
+            }
+        }
+        
+        let manifest = serde_json::json!({
+            "crate_name": crate_name,
+            "timestamp": SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_secs(),
+            "collector_version": "1.0.0",
+            "rustc_version": std::env::var("RUSTC_VERSION").unwrap_or_else(|_| "unknown".to_string()),
+            "output_directory": output_dir,
+            "total_usages": total_usages,
+            "total_modules": self.module_data.len(),
+            "total_enums": self.enum_data.len(),
+            "generated_files": generated_files.iter().map(|f| {
+                serde_json::json!({
+                    "path": f,
+                    "size_bytes": std::fs::metadata(f).map(|m| m.len()).unwrap_or(0),
+                    "type": if f.contains("_enums_classified") { "enum_classification" } else { "usage_data" }
+                })
+            }).collect::<Vec<_>>(),
+            "dependency_manifests": dependency_manifests,
+            "environment": {
+                "pwd": std::env::current_dir().ok().map(|p| p.to_string_lossy().to_string()),
+                "cargo_manifest_dir": std::env::var("CARGO_MANIFEST_DIR").ok(),
+                "cargo_target_dir": std::env::var("CARGO_TARGET_DIR").ok(),
+                "profile": std::env::var("PROFILE").ok()
+            }
+        });
+        
+        let manifest_path = format!("{}/{}_manifest.json", output_dir, crate_name);
+        std::fs::write(&manifest_path, serde_json::to_string_pretty(&manifest).unwrap()).unwrap();
+        eprintln!("=== MANIFEST SAVED: {} ===", manifest_path);
     }
 }
 
@@ -391,7 +500,6 @@ impl Callbacks for UsageCollector {
                             _ => "Other",
                         }.to_string();
                         
-                        // Classify usage type based on def_kind
                         let usage_type = match def_kind {
                             rustc_hir::def::DefKind::AssocFn => "MethodCall",
                             rustc_hir::def::DefKind::AssocConst => "AssocConstAccess",
@@ -408,16 +516,29 @@ impl Callbacks for UsageCollector {
                             _ => "Other",
                         }.to_string();
                         
+                        // Extract symbol name from path
+                        let symbol = used_path.split("::").last().unwrap_or(&used_path).to_string();
+                        let kind = match def_kind {
+                            rustc_hir::def::DefKind::Variant => "enum_variant_usage",
+                            rustc_hir::def::DefKind::Struct => "struct_usage", 
+                            rustc_hir::def::DefKind::Enum => "enum_usage",
+                            rustc_hir::def::DefKind::Macro(_) => "macro_usage",
+                            rustc_hir::def::DefKind::AssocFn => "method_call",
+                            rustc_hir::def::DefKind::Fn => "function_call",
+                            _ => "other_usage",
+                        }.to_string();
+                        
                         let user_def_id_str = format!("{:?}", item_id.owner_id.to_def_id());
                         let used_def_id_str = format!("{:?}", used_def_id);
                         
-                        self.add_usage(&module, usage, usage_type, node_type, user_def_id_str, used_def_id_str);
+                        self.add_usage(&module, symbol, kind, usage_type, node_type, user_def_id_str, used_def_id_str, Some(local_crate.to_string()), Some(used_crate.to_string()));
                     }
                 }
             }
             
-            // NEW: Collect constants, structs, and enums
+            // NEW: Collect constants, structs, enums, and usage patterns
             self.collect_constants(tcx);
+            // Skip type usage collection for now due to API changes
             
             self.save_to_files(&local_crate.to_string());
         
@@ -455,11 +576,14 @@ impl UsageCollector {
                 rustc_hir::ItemKind::Const(_, _, _, body_id) => {
                     self.add_usage(
                         "constants",
-                        format!("CONST_DECL: {} in {}", item_name, crate_name),
+                        item_name.clone(),
+                        "const_decl".to_string(),
                         "ConstDecl".to_string(),
                         "Item".to_string(),
                         crate_name.clone(),
-                        item_name.clone()
+                        item_name.clone(),
+                        Some(crate_name.clone()),
+                        None
                     );
                     
                     // Collect literals from const body
@@ -471,11 +595,14 @@ impl UsageCollector {
                 rustc_hir::ItemKind::Static(_, _, _, body_id) => {
                     self.add_usage(
                         "constants",
-                        format!("STATIC_DECL: {} in {}", item_name, crate_name),
+                        item_name.clone(),
+                        "static_decl".to_string(),
                         "StaticDecl".to_string(),
                         "Item".to_string(),
                         crate_name.clone(),
-                        item_name.clone()
+                        item_name.clone(),
+                        Some(crate_name.clone()),
+                        None
                     );
                     
                     // Collect literals from static body
@@ -490,27 +617,97 @@ impl UsageCollector {
                 // }
                 
                 // Struct definitions
-                rustc_hir::ItemKind::Struct(..) => {
+                rustc_hir::ItemKind::Struct(variant_data, generics, _) => {
                     self.add_usage(
                         "structs",
-                        format!("STRUCT_DECL: {} in {}", item_name, crate_name),
+                        item_name.clone(),
+                        "struct_decl".to_string(),
                         "StructDecl".to_string(),
                         "Item".to_string(),
                         crate_name.clone(),
-                        item_name.clone()
+                        item_name.clone(),
+                        Some(crate_name.clone()),
+                        None
                     );
+                    
+                    // Collect struct complexity
+                    // let fields = self.extract_struct_fields(variant_data);
+                    let fields = Vec::new(); // TODO: Fix when we understand the new ItemKind::Struct structure
+                    let complexity = match fields.len() {
+                        0..=3 => "simple",
+                        4..=8 => "medium", 
+                        _ => "complex"
+                    };
+                    
+                    self.item_complexity.insert(item_name.clone(), ItemComplexity {
+                        name: item_name.clone(),
+                        item_type: "struct".to_string(),
+                        complexity: complexity.to_string(),
+                        field_count: Some(fields.len()),
+                        variant_count: None,
+                        param_count: None,
+                        fields: Some(fields),
+                        variants: None,
+                        parameters: None,
+                    });
                 }
                 
                 // Enum definitions
-                rustc_hir::ItemKind::Enum(_enum_def, _, _) => {
+                rustc_hir::ItemKind::Enum(enum_def, generics, _) => {
                     self.add_usage(
                         "enums",
-                        format!("ENUM_DECL: {} in {}", item_name, crate_name),
+                        item_name.clone(),
+                        "enum_decl".to_string(),
                         "EnumDecl".to_string(),
                         "Item".to_string(),
                         crate_name.clone(),
-                        item_name.clone()
+                        item_name.clone(),
+                        Some(crate_name.clone()),
+                        None
                     );
+                    
+                    // Collect enum complexity
+                    // let variants = self.extract_enum_variants(enum_def);
+                    let variants = Vec::new(); // TODO: Fix when we understand the new ItemKind::Enum structure
+                    let complexity = match variants.len() {
+                        0..=3 => "simple",
+                        4..=8 => "medium",
+                        _ => "complex"
+                    };
+                    
+                    self.item_complexity.insert(item_name.clone(), ItemComplexity {
+                        name: item_name.clone(),
+                        item_type: "enum".to_string(),
+                        complexity: complexity.to_string(),
+                        field_count: None,
+                        variant_count: Some(variants.len()),
+                        param_count: None,
+                        fields: None,
+                        variants: Some(variants),
+                        parameters: None,
+                    });
+                }
+                
+                // Function definitions
+                rustc_hir::ItemKind::Fn { sig, .. } => {
+                    let params = self.extract_function_params(sig);
+                    let complexity = match params.len() {
+                        0..=2 => "simple",
+                        3..=5 => "medium",
+                        _ => "complex"
+                    };
+                    
+                    self.item_complexity.insert(item_name.clone(), ItemComplexity {
+                        name: item_name.clone(),
+                        item_type: "function".to_string(),
+                        complexity: complexity.to_string(),
+                        field_count: None,
+                        variant_count: None,
+                        param_count: Some(params.len()),
+                        fields: None,
+                        variants: None,
+                        parameters: Some(params),
+                    });
                 }
                 
                 _ => {}
@@ -542,11 +739,14 @@ impl UsageCollector {
                         
                         self.collector.add_usage(
                             "literals", 
-                            format!("LITERAL: {} in {}", literal_value, self.context),
+                            literal_value.clone(),
+                            "literal".to_string(),
                             "NumericLiteral".to_string(), 
                             "Expression".to_string(), 
                             self.context.clone(),
-                            literal_value
+                            literal_value,
+                            None,
+                            None
                         );
                     }
                     _ => {}
@@ -562,6 +762,115 @@ impl UsageCollector {
         };
         
         visitor.visit_expr(expr);
+    }
+    
+    fn collect_type_usage<'tcx>(&mut self, tcx: TyCtxt<'tcx>) {
+        let crate_name = tcx.crate_name(LOCAL_CRATE).to_string();
+        
+        // Collect type usage from function signatures, struct fields, etc.
+        use rustc_hir::intravisit::{self, Visitor};
+        
+        // Create visitor outside the loop to avoid borrow conflicts
+        struct TypeUsageVisitor<'a, 'tcx> {
+            collector: &'a mut UsageCollector,
+            crate_name: String,
+            tcx: TyCtxt<'tcx>,
+        }
+        
+        impl<'tcx> intravisit::Visitor<'tcx> for TypeUsageVisitor<'_, 'tcx> {
+            fn visit_ty(&mut self, ty: &'tcx rustc_hir::Ty<'tcx, rustc_hir::AmbigArg>) {
+                match &ty.kind {
+                    rustc_hir::TyKind::Path(rustc_hir::QPath::Resolved(_, path)) => {
+                        if let Some(def_id) = path.res.opt_def_id() {
+                            let def_kind = self.tcx.def_kind(def_id);
+                            match def_kind {
+                                rustc_hir::def::DefKind::Struct | 
+                                rustc_hir::def::DefKind::Enum |
+                                rustc_hir::def::DefKind::Union => {
+                                    let symbol = self.tcx.item_name(def_id).to_string();
+                                    // Record type usage
+                                }
+                                _ => {}
+                            }
+                        }
+                    }
+                    _ => {}
+                }
+                intravisit::walk_ty(self, ty);
+            }
+        }
+
+        for item_id in tcx.hir_crate_items(()).free_items() {
+            let item = tcx.hir_expect_item(item_id.owner_id.def_id);
+            
+            // Create visitor outside the loop to avoid borrow conflicts
+            struct TypeUsageVisitor<'a, 'tcx> {
+                collector: &'a mut UsageCollector,
+                crate_name: String,
+                tcx: TyCtxt<'tcx>,
+            }
+            
+            impl<'tcx> intravisit::Visitor<'tcx> for TypeUsageVisitor<'_, 'tcx> {
+                fn visit_ty(&mut self, ty: &'tcx rustc_hir::Ty<'tcx, rustc_hir::AmbigArg>) {
+                    match &ty.kind {
+                        rustc_hir::TyKind::Path(rustc_hir::QPath::Resolved(_, path)) => {
+                            if let Some(def_id) = path.res.opt_def_id() {
+                                let def_kind = self.tcx.def_kind(def_id);
+                                match def_kind {
+                                    rustc_hir::def::DefKind::Struct | 
+                                    rustc_hir::def::DefKind::Enum |
+                                    rustc_hir::def::DefKind::Union => {
+                                        let symbol = self.tcx.item_name(def_id).to_string();
+                                        // Record type usage
+                                    }
+                                    _ => {}
+                                }
+                            }
+                        }
+                        _ => {}
+                    }
+                    intravisit::walk_ty(self, ty);
+                }
+            }
+            
+            let mut visitor = TypeUsageVisitor { 
+                collector: self, 
+                crate_name: crate_name.clone(),
+                tcx
+            };
+            
+            intravisit::walk_item(&mut visitor, item);
+        }
+    }
+    
+    fn extract_struct_fields(&self, variant_data: &rustc_hir::VariantData) -> Vec<FieldInfo> {
+        variant_data.fields().iter().map(|field| {
+            FieldInfo {
+                name: field.ident.name.to_string(),
+                field_type: "unknown".to_string(),
+                is_public: field.vis_span.is_dummy(),
+            }
+        }).collect()
+    }
+    
+    fn extract_enum_variants(&self, enum_def: &rustc_hir::EnumDef) -> Vec<VariantInfo> {
+        enum_def.variants.iter().map(|variant| {
+            let field_count = variant.data.fields().len();
+            VariantInfo {
+                name: variant.ident.name.to_string(),
+                has_fields: field_count > 0,
+                field_count,
+            }
+        }).collect()
+    }
+    
+    fn extract_function_params(&self, sig: &rustc_hir::FnSig) -> Vec<ParamInfo> {
+        sig.decl.inputs.iter().enumerate().map(|(i, _param)| {
+            ParamInfo {
+                name: format!("param_{}", i),
+                param_type: "unknown".to_string(),
+            }
+        }).collect()
     }
 }
 

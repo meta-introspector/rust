@@ -1,0 +1,2950 @@
+{
+  "crate": "rustc_codegen_ssa",
+  "module": "back::write",
+  "usages": [
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::generate_thin_lto_work USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::generic_activity (AssocFn) [DefId: DefId(20:1067 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1453 ~ rustc_codegen_ssa[2fdc]::back::write::generate_thin_lto_work)",
+      "used_def_id": "DefId(20:1067 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::generate_thin_lto_work USES crate::rustc_codegen_ssa::traits::write::WriteBackendMethods::run_thin_lto (AssocFn) [DefId: DefId(0:3742 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::run_thin_lto)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1453 ~ rustc_codegen_ssa[2fdc]::back::write::generate_thin_lto_work)",
+      "used_def_id": "DefId(0:3742 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::run_thin_lto)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::generate_thin_lto_work USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1453 ~ rustc_codegen_ssa[2fdc]::back::write::generate_thin_lto_work)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::generate_thin_lto_work USES crate::core::std::iter::Iterator::chain (AssocFn) [DefId: DefId(2:9451 ~ core[4720]::iter::traits::iterator::Iterator::chain)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1453 ~ rustc_codegen_ssa[2fdc]::back::write::generate_thin_lto_work)",
+      "used_def_id": "DefId(2:9451 ~ core[4720]::iter::traits::iterator::Iterator::chain)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::generate_thin_lto_work USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1453 ~ rustc_codegen_ssa[2fdc]::back::write::generate_thin_lto_work)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::generate_thin_lto_work USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1453 ~ rustc_codegen_ssa[2fdc]::back::write::generate_thin_lto_work)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::generate_thin_lto_work USES crate::rustc_codegen_ssa::back::lto::ThinModule::<B>::cost (AssocFn) [DefId: DefId(0:1060 ~ rustc_codegen_ssa[2fdc]::back::lto::{impl#0}::cost)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1453 ~ rustc_codegen_ssa[2fdc]::back::write::generate_thin_lto_work)",
+      "used_def_id": "DefId(0:1060 ~ rustc_codegen_ssa[2fdc]::back::lto::{impl#0}::cost)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::generate_thin_lto_work USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1453 ~ rustc_codegen_ssa[2fdc]::back::write::generate_thin_lto_work)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::generate_thin_lto_work USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1453 ~ rustc_codegen_ssa[2fdc]::back::write::generate_thin_lto_work)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::generate_thin_lto_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1453 ~ rustc_codegen_ssa[2fdc]::back::write::generate_thin_lto_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::need_bitcode_in_object USES crate::core::bitflags::__private::core::slice::<impl [T]>::contains (AssocFn) [DefId: DefId(2:14156 ~ core[4720]::slice::{impl#0}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1460 ~ rustc_codegen_ssa[2fdc]::back::write::need_bitcode_in_object)",
+      "used_def_id": "DefId(2:14156 ~ core[4720]::slice::{impl#0}::contains)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::need_bitcode_in_object USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::crate_types (AssocFn) [DefId: DefId(164:6810 ~ rustc_middle[8ead]::ty::context::{impl#25}::crate_types)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1460 ~ rustc_codegen_ssa[2fdc]::back::write::need_bitcode_in_object)",
+      "used_def_id": "DefId(164:6810 ~ rustc_middle[8ead]::ty::context::{impl#25}::crate_types)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::need_bitcode_in_object USES crate::rustc_session::rustc_session::config::OutputTypes::contains_key (AssocFn) [DefId: DefId(175:438 ~ rustc_session[612c]::config::{impl#8}::contains_key)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1460 ~ rustc_codegen_ssa[2fdc]::back::write::need_bitcode_in_object)",
+      "used_def_id": "DefId(175:438 ~ rustc_session[612c]::config::{impl#8}::contains_key)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::need_pre_lto_bitcode_for_incr_comp USES crate::core::std::option::Option::<T>::is_none (AssocFn) [DefId: DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1461 ~ rustc_codegen_ssa[2fdc]::back::write::need_pre_lto_bitcode_for_incr_comp)",
+      "used_def_id": "DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::need_pre_lto_bitcode_for_incr_comp USES crate::rustc_session::rustc_session::Session::lto (AssocFn) [DefId: DefId(175:1365 ~ rustc_session[612c]::session::{impl#3}::lto)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1461 ~ rustc_codegen_ssa[2fdc]::back::write::need_pre_lto_bitcode_for_incr_comp)",
+      "used_def_id": "DefId(175:1365 ~ rustc_session[612c]::session::{impl#3}::lto)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_async_codegen USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_attrs (AssocFn) [DefId: DefId(164:213 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_attrs)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1462 ~ rustc_codegen_ssa[2fdc]::back::write::start_async_codegen)",
+      "used_def_id": "DefId(164:213 ~ rustc_middle[8ead]::hir::map::{impl#3}::hir_attrs)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_async_codegen USES crate::rustc_codegen_ssa::base::<impl CrateInfo>::new (AssocFn) [DefId: DefId(0:1829 ~ rustc_codegen_ssa[2fdc]::base::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1462 ~ rustc_codegen_ssa[2fdc]::back::write::start_async_codegen)",
+      "used_def_id": "DefId(0:1829 ~ rustc_codegen_ssa[2fdc]::base::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_async_codegen USES crate::rustc_codegen_ssa::back::write::ModuleConfig::new (AssocFn) [DefId: DefId(0:1437 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1462 ~ rustc_codegen_ssa[2fdc]::back::write::start_async_codegen)",
+      "used_def_id": "DefId(0:1437 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_async_codegen USES crate::rustc_codegen_ssa::back::write::ModuleConfig::new (AssocFn) [DefId: DefId(0:1437 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1462 ~ rustc_codegen_ssa[2fdc]::back::write::start_async_codegen)",
+      "used_def_id": "DefId(0:1437 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_async_codegen USES crate::rustc_codegen_ssa::back::write::SharedEmitter::new (AssocFn) [DefId: DefId(0:1599 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1462 ~ rustc_codegen_ssa[2fdc]::back::write::start_async_codegen)",
+      "used_def_id": "DefId(0:1599 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_async_codegen USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1462 ~ rustc_codegen_ssa[2fdc]::back::write::start_async_codegen)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_async_codegen USES crate::alloc::std::sync::Arc::<T>::new (AssocFn) [DefId: DefId(3:6862 ~ alloc[27b0]::sync::{impl#14}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1462 ~ rustc_codegen_ssa[2fdc]::back::write::start_async_codegen)",
+      "used_def_id": "DefId(3:6862 ~ alloc[27b0]::sync::{impl#14}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_async_codegen USES crate::alloc::std::sync::Arc::<T>::new (AssocFn) [DefId: DefId(3:6862 ~ alloc[27b0]::sync::{impl#14}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1462 ~ rustc_codegen_ssa[2fdc]::back::write::start_async_codegen)",
+      "used_def_id": "DefId(3:6862 ~ alloc[27b0]::sync::{impl#14}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_async_codegen USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1462 ~ rustc_codegen_ssa[2fdc]::back::write::start_async_codegen)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_async_codegen USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1462 ~ rustc_codegen_ssa[2fdc]::back::write::start_async_codegen)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_async_codegen USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::output_filenames (AssocFn) [DefId: DefId(164:36912 ~ rustc_middle[8ead]::query::{impl#3}::output_filenames)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1462 ~ rustc_codegen_ssa[2fdc]::back::write::start_async_codegen)",
+      "used_def_id": "DefId(164:36912 ~ rustc_middle[8ead]::query::{impl#3}::output_filenames)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::core::std::option::Option::<T>::is_none (AssocFn) [DefId: DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::rustc_session::rustc_session::utils::<impl rustc_session::Session>::timer (AssocFn) [DefId: DefId(175:65 ~ rustc_session[612c]::utils::{impl#0}::timer)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(175:65 ~ rustc_session[612c]::utils::{impl#0}::timer)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::core::std::iter::Iterator::filter (AssocFn) [DefId: DefId(2:9468 ~ core[4720]::iter::traits::iterator::Iterator::filter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(2:9468 ~ core[4720]::iter::traits::iterator::Iterator::filter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::core::bitflags::__private::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::rustc_session::rustc_session::config::OutputType::extension (AssocFn) [DefId: DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::std::std::path::PathBuf::as_path (AssocFn) [DefId: DefId(1:5718 ~ std[93f5]::path::{impl#29}::as_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(1:5718 ~ std[93f5]::path::{impl#29}::as_path)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::std::std::path::PathBuf::as_path (AssocFn) [DefId: DefId(1:5718 ~ std[93f5]::path::{impl#29}::as_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(1:5718 ~ std[93f5]::path::{impl#29}::as_path)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::rustc_session::rustc_session::config::OutputType::extension (AssocFn) [DefId: DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::std::std::path::PathBuf::as_path (AssocFn) [DefId: DefId(1:5718 ~ std[93f5]::path::{impl#29}::as_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(1:5718 ~ std[93f5]::path::{impl#29}::as_path)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::rustc_session::rustc_session::config::OutputType::extension (AssocFn) [DefId: DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::std::std::path::PathBuf::as_path (AssocFn) [DefId: DefId(1:5718 ~ std[93f5]::path::{impl#29}::as_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(1:5718 ~ std[93f5]::path::{impl#29}::as_path)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::rustc_session::rustc_session::config::OutputType::extension (AssocFn) [DefId: DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::std::std::path::PathBuf::as_path (AssocFn) [DefId: DefId(1:5718 ~ std[93f5]::path::{impl#29}::as_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(1:5718 ~ std[93f5]::path::{impl#29}::as_path)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::alloc::std::vec::Vec::<T, A>::as_slice (AssocFn) [DefId: DefId(3:8113 ~ alloc[27b0]::vec::{impl#1}::as_slice)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(3:8113 ~ alloc[27b0]::vec::{impl#1}::as_slice)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::indexmap::indexmap::map::IndexMap::<K, V, S>::insert (AssocFn) [DefId: DefId(30:1505 ~ indexmap[8f0e]::map::{impl#4}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(30:1505 ~ indexmap[8f0e]::map::{impl#4}::insert)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1464 ~ rustc_codegen_ssa[2fdc]::back::write::copy_all_cgu_workproducts_to_incr_comp_cache_dir)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(165:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(165:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_codegen_ssa::errors::CopyPath::<'a>::new (AssocFn) [DefId: DefId(0:2100 ~ rustc_codegen_ssa[2fdc]::errors::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(0:2100 ~ rustc_codegen_ssa[2fdc]::errors::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutFileName::as_path (AssocFn) [DefId: DefId(175:466 ~ rustc_session[612c]::config::{impl#12}::as_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:466 ~ rustc_session[612c]::config::{impl#12}::as_path)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(165:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(165:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_codegen_ssa::errors::CopyPath::<'a>::new (AssocFn) [DefId: DefId(0:2100 ~ rustc_codegen_ssa[2fdc]::errors::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(0:2100 ~ rustc_codegen_ssa[2fdc]::errors::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::ops::RangeFull (Struct) [DefId: DefId(2:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputFilenames::temp_path_for_cgu (AssocFn) [DefId: DefId(175:483 ~ rustc_session[612c]::config::{impl#13}::temp_path_for_cgu)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:483 ~ rustc_session[612c]::config::{impl#13}::temp_path_for_cgu)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::option::Option::<T>::as_deref (AssocFn) [DefId: DefId(2:10254 ~ core[4720]::option::{impl#0}::as_deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:10254 ~ core[4720]::option::{impl#0}::as_deref)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputFilenames::path (AssocFn) [DefId: DefId(175:477 ~ rustc_session[612c]::config::{impl#13}::path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:477 ~ rustc_session[612c]::config::{impl#13}::path)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputType::is_text_output (AssocFn) [DefId: DefId(175:2628 ~ rustc_session[612c]::config::{impl#181}::is_text_output)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:2628 ~ rustc_session[612c]::config::{impl#181}::is_text_output)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutFileName::is_tty (AssocFn) [DefId: DefId(175:464 ~ rustc_session[612c]::config::{impl#12}::is_tty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:464 ~ rustc_session[612c]::config::{impl#12}::is_tty)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(165:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(165:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputType::shorthand (AssocFn) [DefId: DefId(175:2624 ~ rustc_session[612c]::config::{impl#181}::shorthand)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:2624 ~ rustc_session[612c]::config::{impl#181}::shorthand)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputTypes::contains_explicit_name (AssocFn) [DefId: DefId(175:439 ~ rustc_session[612c]::config::{impl#8}::contains_explicit_name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:439 ~ rustc_session[612c]::config::{impl#8}::contains_explicit_name)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_warn (AssocFn) [DefId: DefId(165:1266 ~ rustc_errors[6adb]::{impl#9}::emit_warn)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(165:1266 ~ rustc_errors[6adb]::{impl#9}::emit_warn)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputType::extension (AssocFn) [DefId: DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_warn (AssocFn) [DefId: DefId(165:1266 ~ rustc_errors[6adb]::{impl#9}::emit_warn)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(165:1266 ~ rustc_errors[6adb]::{impl#9}::emit_warn)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputType::extension (AssocFn) [DefId: DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputTypes::keys (AssocFn) [DefId: DefId(175:441 ~ rustc_session[612c]::config::{impl#8}::keys)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:441 ~ rustc_session[612c]::config::{impl#8}::keys)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputTypes::contains_key (AssocFn) [DefId: DefId(175:438 ~ rustc_session[612c]::config::{impl#8}::contains_key)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:438 ~ rustc_session[612c]::config::{impl#8}::contains_key)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::CodegenUnits::as_usize (AssocFn) [DefId: DefId(175:1297 ~ rustc_session[612c]::session::{impl#1}::as_usize)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1297 ~ rustc_session[612c]::session::{impl#1}::as_usize)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::codegen_units (AssocFn) [DefId: DefId(175:1382 ~ rustc_session[612c]::session::{impl#3}::codegen_units)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1382 ~ rustc_session[612c]::session::{impl#3}::codegen_units)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::CodegenUnits::as_usize (AssocFn) [DefId: DefId(175:1297 ~ rustc_session[612c]::session::{impl#1}::as_usize)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1297 ~ rustc_session[612c]::session::{impl#1}::as_usize)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::codegen_units (AssocFn) [DefId: DefId(175:1382 ~ rustc_session[612c]::session::{impl#3}::codegen_units)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1382 ~ rustc_session[612c]::session::{impl#3}::codegen_units)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::bitflags::__private::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::ops::RangeFull (Struct) [DefId: DefId(2:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_codegen_ssa::CompiledModule::for_each_output (AssocFn) [DefId: DefId(0:3818 ~ rustc_codegen_ssa[2fdc]::{impl#1}::for_each_output)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(0:3818 ~ rustc_codegen_ssa[2fdc]::{impl#1}::for_each_output)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputTypes::contains_key (AssocFn) [DefId: DefId(175:438 ~ rustc_session[612c]::config::{impl#8}::contains_key)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:438 ~ rustc_session[612c]::config::{impl#8}::contains_key)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputType::shorthand (AssocFn) [DefId: DefId(175:2624 ~ rustc_session[612c]::config::{impl#181}::shorthand)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:2624 ~ rustc_session[612c]::config::{impl#181}::shorthand)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputFilenames::path (AssocFn) [DefId: DefId(175:477 ~ rustc_session[612c]::config::{impl#13}::path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:477 ~ rustc_session[612c]::config::{impl#13}::path)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_artifact_notification (AssocFn) [DefId: DefId(165:1193 ~ rustc_errors[6adb]::{impl#8}::emit_artifact_notification)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(165:1193 ~ rustc_errors[6adb]::{impl#8}::emit_artifact_notification)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutFileName::as_path (AssocFn) [DefId: DefId(175:466 ~ rustc_session[612c]::config::{impl#12}::as_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:466 ~ rustc_session[612c]::config::{impl#12}::as_path)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_codegen_ssa::CompiledModule::for_each_output (AssocFn) [DefId: DefId(0:3818 ~ rustc_codegen_ssa[2fdc]::{impl#1}::for_each_output)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(0:3818 ~ rustc_codegen_ssa[2fdc]::{impl#1}::for_each_output)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputTypes::contains_key (AssocFn) [DefId: DefId(175:438 ~ rustc_session[612c]::config::{impl#8}::contains_key)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:438 ~ rustc_session[612c]::config::{impl#8}::contains_key)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::config::OutputType::shorthand (AssocFn) [DefId: DefId(175:2624 ~ rustc_session[612c]::config::{impl#181}::shorthand)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:2624 ~ rustc_session[612c]::config::{impl#181}::shorthand)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_artifact_notification (AssocFn) [DefId: DefId(165:1193 ~ rustc_errors[6adb]::{impl#8}::emit_artifact_notification)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(165:1193 ~ rustc_errors[6adb]::{impl#8}::emit_artifact_notification)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::produce_final_output_artifacts USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1466 ~ rustc_codegen_ssa[2fdc]::back::write::produce_final_output_artifacts)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::compute_per_cgu_lto_type USES crate::rustc_session::rustc_session::config::LinkerPluginLto::enabled (AssocFn) [DefId: DefId(175:407 ~ rustc_session[612c]::config::{impl#0}::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1518 ~ rustc_codegen_ssa[2fdc]::back::write::compute_per_cgu_lto_type)",
+      "used_def_id": "DefId(175:407 ~ rustc_session[612c]::config::{impl#0}::enabled)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::compute_per_cgu_lto_type USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1518 ~ rustc_codegen_ssa[2fdc]::back::write::compute_per_cgu_lto_type)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::generic_activity_with_arg (AssocFn) [DefId: DefId(20:1071 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity_with_arg)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(20:1071 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity_with_arg)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::rustc_codegen_ssa::back::write::CodegenContext::<B>::create_dcx (AssocFn) [DefId: DefId(0:1452 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#2}::create_dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(0:1452 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#2}::create_dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::rustc_errors::rustc_errors::DiagCtxt::handle (AssocFn) [DefId: DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::rustc_codegen_ssa::traits::write::WriteBackendMethods::optimize (AssocFn) [DefId: DefId(0:3745 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::optimize)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(0:3745 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::optimize)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::core::std::option::Option::<T>::map (AssocFn) [DefId: DefId(2:10234 ~ core[4720]::option::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(2:10234 ~ core[4720]::option::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::core::std::option::Option::<T>::as_ref (AssocFn) [DefId: DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::std::std::path::Path::join (AssocFn) [DefId: DefId(1:5881 ~ std[93f5]::path::{impl#70}::join)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(1:5881 ~ std[93f5]::path::{impl#70}::join)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::rustc_codegen_ssa::traits::write::WriteBackendMethods::codegen (AssocFn) [DefId: DefId(0:3747 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::codegen)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(0:3747 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::codegen)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::rustc_codegen_ssa::traits::write::WriteBackendMethods::prepare_thin (AssocFn) [DefId: DefId(0:3748 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::prepare_thin)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(0:3748 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::prepare_thin)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::core::std::result::Result::<T, E>::unwrap_or_else (AssocFn) [DefId: DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::rustc_codegen_ssa::traits::write::ThinBufferMethods::data (AssocFn) [DefId: DefId(0:3751 ~ rustc_codegen_ssa[2fdc]::traits::write::ThinBufferMethods::data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(0:3751 ~ rustc_codegen_ssa[2fdc]::traits::write::ThinBufferMethods::data)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::std::std::path::Path::display (AssocFn) [DefId: DefId(1:5894 ~ std[93f5]::path::{impl#70}::display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(1:5894 ~ std[93f5]::path::{impl#70}::display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::rustc_codegen_ssa::traits::write::WriteBackendMethods::serialize_module (AssocFn) [DefId: DefId(0:3749 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::serialize_module)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(0:3749 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::serialize_module)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::core::std::result::Result::<T, E>::unwrap_or_else (AssocFn) [DefId: DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::rustc_codegen_ssa::traits::write::ModuleBufferMethods::data (AssocFn) [DefId: DefId(0:3753 ~ rustc_codegen_ssa[2fdc]::traits::write::ModuleBufferMethods::data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(0:3753 ~ rustc_codegen_ssa[2fdc]::traits::write::ModuleBufferMethods::data)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::std::std::path::Path::display (AssocFn) [DefId: DefId(1:5894 ~ std[93f5]::path::{impl#70}::display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(1:5894 ~ std[93f5]::path::{impl#70}::display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_optimize_work_item USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1519 ~ rustc_codegen_ssa[2fdc]::back::write::execute_optimize_work_item)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::generic_activity_with_arg (AssocFn) [DefId: DefId(20:1071 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity_with_arg)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(20:1071 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity_with_arg)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::option::Option::<T>::as_ref (AssocFn) [DefId: DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:539 ~ tracing_core[77f1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:572 ~ tracing_core[77f1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:59 ~ tracing_core[77f1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:734 ~ tracing_core[77f1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:257 ~ tracing_core[77f1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:437 ~ tracing_core[77f1]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:438 ~ tracing_core[77f1]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:506 ~ tracing_core[77f1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(39:40 ~ tracing_core[77f1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::std::std::path::Path::display (AssocFn) [DefId: DefId(1:5894 ~ std[93f5]::path::{impl#70}::display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(1:5894 ~ std[93f5]::path::{impl#70}::display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(165:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(165:1247 ~ rustc_errors[6adb]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::rustc_errors::rustc_errors::DiagCtxt::handle (AssocFn) [DefId: DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::rustc_codegen_ssa::back::write::CodegenContext::<B>::create_dcx (AssocFn) [DefId: DefId(0:1452 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#2}::create_dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(0:1452 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#2}::create_dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::option::Option::<T>::as_ref (AssocFn) [DefId: DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:10220 ~ core[4720]::option::{impl#0}::as_ref)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::rustc_data_structures::rustc_data_structures::unord::UnordMap::<K, V>::get (AssocFn) [DefId: DefId(20:2856 ~ rustc_data_structures[bda7]::unord::{impl#19}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(20:2856 ~ rustc_data_structures[bda7]::unord::{impl#19}::get)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::rustc_session::rustc_session::config::OutputFilenames::split_dwarf_path (AssocFn) [DefId: DefId(175:489 ~ rustc_session[612c]::config::{impl#13}::split_dwarf_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(175:489 ~ rustc_session[612c]::config::{impl#13}::split_dwarf_path)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::option::Option::<T>::as_deref (AssocFn) [DefId: DefId(2:10254 ~ core[4720]::option::{impl#0}::as_deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:10254 ~ core[4720]::option::{impl#0}::as_deref)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::ops::FnMut::call_mut (AssocFn) [DefId: DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::rustc_data_structures::rustc_data_structures::unord::UnordMap::<K, V>::get (AssocFn) [DefId: DefId(20:2856 ~ rustc_data_structures[bda7]::unord::{impl#19}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(20:2856 ~ rustc_data_structures[bda7]::unord::{impl#19}::get)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::rustc_session::rustc_session::config::OutputType::extension (AssocFn) [DefId: DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(175:2627 ~ rustc_session[612c]::config::{impl#181}::extension)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::rustc_session::rustc_session::config::OutputFilenames::temp_path_for_cgu (AssocFn) [DefId: DefId(175:483 ~ rustc_session[612c]::config::{impl#13}::temp_path_for_cgu)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(175:483 ~ rustc_session[612c]::config::{impl#13}::temp_path_for_cgu)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::option::Option::<T>::as_deref (AssocFn) [DefId: DefId(2:10254 ~ core[4720]::option::{impl#0}::as_deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:10254 ~ core[4720]::option::{impl#0}::as_deref)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::ops::FnMut::call_mut (AssocFn) [DefId: DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::ops::FnMut::call_mut (AssocFn) [DefId: DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::ops::FnMut::call_mut (AssocFn) [DefId: DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::ops::FnMut::call_mut (AssocFn) [DefId: DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::ops::FnMut::call_mut (AssocFn) [DefId: DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::core::std::option::Option::<T>::is_none (AssocFn) [DefId: DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_fatal (AssocFn) [DefId: DefId(165:1229 ~ rustc_errors[6adb]::{impl#9}::emit_fatal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(165:1229 ~ rustc_errors[6adb]::{impl#9}::emit_fatal)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::rustc_errors::rustc_errors::DiagCtxt::handle (AssocFn) [DefId: DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(165:1165 ~ rustc_errors[6adb]::{impl#7}::handle)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_copy_from_cache_work_item USES crate::rustc_codegen_ssa::back::write::CodegenContext::<B>::create_dcx (AssocFn) [DefId: DefId(0:1452 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#2}::create_dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1524 ~ rustc_codegen_ssa[2fdc]::back::write::execute_copy_from_cache_work_item)",
+      "used_def_id": "DefId(0:1452 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#2}::create_dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_fat_lto_work_item USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::generic_activity_with_arg (AssocFn) [DefId: DefId(20:1071 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity_with_arg)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1529 ~ rustc_codegen_ssa[2fdc]::back::write::execute_fat_lto_work_item)",
+      "used_def_id": "DefId(20:1071 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity_with_arg)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_fat_lto_work_item USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1529 ~ rustc_codegen_ssa[2fdc]::back::write::execute_fat_lto_work_item)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_fat_lto_work_item USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1529 ~ rustc_codegen_ssa[2fdc]::back::write::execute_fat_lto_work_item)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_fat_lto_work_item USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1529 ~ rustc_codegen_ssa[2fdc]::back::write::execute_fat_lto_work_item)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_fat_lto_work_item USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1529 ~ rustc_codegen_ssa[2fdc]::back::write::execute_fat_lto_work_item)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_fat_lto_work_item USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1529 ~ rustc_codegen_ssa[2fdc]::back::write::execute_fat_lto_work_item)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_fat_lto_work_item USES crate::rustc_codegen_ssa::traits::write::WriteBackendMethods::run_and_optimize_fat_lto (AssocFn) [DefId: DefId(0:3741 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::run_and_optimize_fat_lto)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1529 ~ rustc_codegen_ssa[2fdc]::back::write::execute_fat_lto_work_item)",
+      "used_def_id": "DefId(0:3741 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::run_and_optimize_fat_lto)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_fat_lto_work_item USES crate::rustc_codegen_ssa::traits::write::WriteBackendMethods::codegen (AssocFn) [DefId: DefId(0:3747 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::codegen)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1529 ~ rustc_codegen_ssa[2fdc]::back::write::execute_fat_lto_work_item)",
+      "used_def_id": "DefId(0:3747 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::codegen)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_thin_lto_work_item USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::generic_activity_with_arg (AssocFn) [DefId: DefId(20:1071 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity_with_arg)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1531 ~ rustc_codegen_ssa[2fdc]::back::write::execute_thin_lto_work_item)",
+      "used_def_id": "DefId(20:1071 ~ rustc_data_structures[bda7]::profiling::{impl#0}::generic_activity_with_arg)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_thin_lto_work_item USES crate::rustc_codegen_ssa::back::lto::ThinModule::<B>::name (AssocFn) [DefId: DefId(0:1059 ~ rustc_codegen_ssa[2fdc]::back::lto::{impl#0}::name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1531 ~ rustc_codegen_ssa[2fdc]::back::write::execute_thin_lto_work_item)",
+      "used_def_id": "DefId(0:1059 ~ rustc_codegen_ssa[2fdc]::back::lto::{impl#0}::name)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_thin_lto_work_item USES crate::rustc_codegen_ssa::traits::write::WriteBackendMethods::optimize_thin (AssocFn) [DefId: DefId(0:3746 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::optimize_thin)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1531 ~ rustc_codegen_ssa[2fdc]::back::write::execute_thin_lto_work_item)",
+      "used_def_id": "DefId(0:3746 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::optimize_thin)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::execute_thin_lto_work_item USES crate::rustc_codegen_ssa::traits::write::WriteBackendMethods::codegen (AssocFn) [DefId: DefId(0:3747 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::codegen)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1531 ~ rustc_codegen_ssa[2fdc]::back::write::execute_thin_lto_work_item)",
+      "used_def_id": "DefId(0:3747 ~ rustc_codegen_ssa[2fdc]::traits::write::WriteBackendMethods::codegen)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::std::std::path::Path::to_path_buf (AssocFn) [DefId: DefId(1:5855 ~ std[93f5]::path::{impl#70}::to_path_buf)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(1:5855 ~ std[93f5]::path::{impl#70}::to_path_buf)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::sync::Arc::<T>::new (AssocFn) [DefId: DefId(3:6862 ~ alloc[27b0]::sync::{impl#14}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:6862 ~ alloc[27b0]::sync::{impl#14}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::result::Result::<T, E>::expect (AssocFn) [DefId: DefId(2:11107 ~ core[4720]::result::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:11107 ~ core[4720]::result::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::jobserver::rustc_data_structures::jobserver::Client::into_helper_thread (AssocFn) [DefId: DefId(43:112 ~ jobserver[6772]::{impl#2}::into_helper_thread)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(43:112 ~ jobserver[6772]::{impl#2}::into_helper_thread)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::std::std::sync::mpsc::Sender::<T>::send (AssocFn) [DefId: DefId(1:6814 ~ std[93f5]::sync::mpsc::{impl#5}::send)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(1:6814 ~ std[93f5]::sync::mpsc::{impl#5}::send)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_session::rustc_session::config::OutputTypes::should_codegen (AssocFn) [DefId: DefId(175:444 ~ rustc_session[612c]::config::{impl#8}::should_codegen)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(175:444 ~ rustc_session[612c]::config::{impl#8}::should_codegen)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::backend_optimization_level (AssocFn) [DefId: DefId(164:36911 ~ rustc_middle[8ead]::query::{impl#3}::backend_optimization_level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(164:36911 ~ rustc_middle[8ead]::query::{impl#3}::backend_optimization_level)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::global_backend_features (AssocFn) [DefId: DefId(164:36938 ~ rustc_middle[8ead]::query::{impl#3}::global_backend_features)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(164:36938 ~ rustc_middle[8ead]::query::{impl#3}::global_backend_features)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::result::Result::<T, E>::and_then (AssocFn) [DefId: DefId(2:11116 ~ core[4720]::result::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:11116 ~ core[4720]::result::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::std::std::path::Path::canonicalize (AssocFn) [DefId: DefId(1:5897 ~ std[93f5]::path::{impl#70}::canonicalize)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(1:5897 ~ std[93f5]::path::{impl#70}::canonicalize)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_fatal (AssocFn) [DefId: DefId(165:1229 ~ rustc_errors[6adb]::{impl#9}::emit_fatal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(165:1229 ~ rustc_errors[6adb]::{impl#9}::emit_fatal)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_session::rustc_session::Session::dcx (AssocFn) [DefId: DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(175:1314 ~ rustc_session[612c]::session::{impl#2}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::slice::<impl [T]>::to_vec (AssocFn) [DefId: DefId(3:6165 ~ alloc[27b0]::slice::{impl#0}::to_vec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:6165 ~ alloc[27b0]::slice::{impl#0}::to_vec)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::crate_types (AssocFn) [DefId: DefId(164:6810 ~ rustc_middle[8ead]::ty::context::{impl#25}::crate_types)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(164:6810 ~ rustc_middle[8ead]::ty::context::{impl#25}::crate_types)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_session::rustc_session::Session::lto (AssocFn) [DefId: DefId(175:1365 ~ rustc_session[612c]::session::{impl#3}::lto)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(175:1365 ~ rustc_session[612c]::session::{impl#3}::lto)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_session::rustc_session::Session::fewer_names (AssocFn) [DefId: DefId(175:1367 ~ rustc_session[612c]::session::{impl#3}::fewer_names)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(175:1367 ~ rustc_session[612c]::session::{impl#3}::fewer_names)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::sync::Arc::<T>::new (AssocFn) [DefId: DefId(3:6862 ~ alloc[27b0]::sync::{impl#14}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:6862 ~ alloc[27b0]::sync::{impl#14}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::option::Option::<T>::map (AssocFn) [DefId: DefId(2:10234 ~ core[4720]::option::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:10234 ~ core[4720]::option::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_session::rustc_session::Session::incr_comp_session_dir_opt (AssocFn) [DefId: DefId(175:1345 ~ rustc_session[612c]::session::{impl#2}::incr_comp_session_dir_opt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(175:1345 ~ rustc_session[612c]::session::{impl#2}::incr_comp_session_dir_opt)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::output_filenames (AssocFn) [DefId: DefId(164:36912 ~ rustc_middle[8ead]::query::{impl#3}::output_filenames)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(164:36912 ~ rustc_middle[8ead]::query::{impl#3}::output_filenames)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_codegen_ssa::traits::backend::ExtraBackendMethods::target_machine_factory (AssocFn) [DefId: DefId(0:3320 ~ rustc_codegen_ssa[2fdc]::traits::backend::ExtraBackendMethods::target_machine_factory)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(0:3320 ~ rustc_codegen_ssa[2fdc]::traits::backend::ExtraBackendMethods::target_machine_factory)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_session::rustc_session::Session::target_can_use_split_dwarf (AssocFn) [DefId: DefId(175:1333 ~ rustc_session[612c]::session::{impl#2}::target_can_use_split_dwarf)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(175:1333 ~ rustc_session[612c]::session::{impl#2}::target_can_use_split_dwarf)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_session::rustc_session::Session::split_debuginfo (AssocFn) [DefId: DefId(175:1377 ~ rustc_session[612c]::session::{impl#3}::split_debuginfo)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(175:1377 ~ rustc_session[612c]::session::{impl#3}::split_debuginfo)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_codegen_ssa::traits::backend::ExtraBackendMethods::supports_parallel (AssocFn) [DefId: DefId(0:3324 ~ rustc_codegen_ssa[2fdc]::traits::backend::ExtraBackendMethods::supports_parallel)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(0:3324 ~ rustc_codegen_ssa[2fdc]::traits::backend::ExtraBackendMethods::supports_parallel)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_abi::rustc_abi::TargetDataLayout::pointer_size (AssocFn) [DefId: DefId(73:549 ~ rustc_abi[42d2]::{impl#4}::pointer_size)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(73:549 ~ rustc_abi[42d2]::{impl#4}::pointer_size)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::result::Result::<T, E>::expect (AssocFn) [DefId: DefId(2:11107 ~ core[4720]::result::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:11107 ~ core[4720]::result::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_codegen_ssa::traits::backend::ExtraBackendMethods::spawn_named_thread (AssocFn) [DefId: DefId(0:3321 ~ rustc_codegen_ssa[2fdc]::traits::backend::ExtraBackendMethods::spawn_named_thread)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(0:3321 ~ rustc_codegen_ssa[2fdc]::traits::backend::ExtraBackendMethods::spawn_named_thread)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T>::new (AssocFn) [DefId: DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::option::Option::<T>::and_then (AssocFn) [DefId: DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:10260 ~ core[4720]::option::{impl#0}::and_then)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::bitflags::__private::core::num::<impl usize>::checked_sub (AssocFn) [DefId: DefId(2:35711 ~ core[4720]::num::{impl#11}::checked_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:35711 ~ core[4720]::num::{impl#11}::checked_sub)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::result::Result::<T, E>::is_err (AssocFn) [DefId: DefId(2:11076 ~ core[4720]::result::{impl#0}::is_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:11076 ~ core[4720]::result::{impl#0}::is_err)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::std::std::sync::mpsc::Sender::<T>::send (AssocFn) [DefId: DefId(1:6814 ~ std[93f5]::sync::mpsc::{impl#5}::send)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(1:6814 ~ std[93f5]::sync::mpsc::{impl#5}::send)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::pop (AssocFn) [DefId: DefId(3:8174 ~ alloc[27b0]::vec::{impl#1}::pop)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8174 ~ alloc[27b0]::vec::{impl#1}::pop)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::is_empty (AssocFn) [DefId: DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::is_empty (AssocFn) [DefId: DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::is_empty (AssocFn) [DefId: DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::is_empty (AssocFn) [DefId: DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::is_empty (AssocFn) [DefId: DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::is_empty (AssocFn) [DefId: DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::jobserver::rustc_data_structures::jobserver::HelperThread::request_token (AssocFn) [DefId: DefId(43:119 ~ jobserver[6772]::{impl#4}::request_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(43:119 ~ jobserver[6772]::{impl#4}::request_token)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::result::Result::<T, E>::unwrap_or_else (AssocFn) [DefId: DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::bitflags::__private::core::slice::<impl [T]>::binary_search_by_key (AssocFn) [DefId: DefId(2:14172 ~ core[4720]::slice::{impl#0}::binary_search_by_key)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:14172 ~ core[4720]::slice::{impl#0}::binary_search_by_key)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::insert (AssocFn) [DefId: DefId(3:8122 ~ alloc[27b0]::vec::{impl#1}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8122 ~ alloc[27b0]::vec::{impl#1}::insert)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::jobserver::rustc_data_structures::jobserver::HelperThread::request_token (AssocFn) [DefId: DefId(43:119 ~ jobserver[6772]::{impl#4}::request_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(43:119 ~ jobserver[6772]::{impl#4}::request_token)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::pop (AssocFn) [DefId: DefId(3:8174 ~ alloc[27b0]::vec::{impl#1}::pop)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8174 ~ alloc[27b0]::vec::{impl#1}::pop)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::pop (AssocFn) [DefId: DefId(3:8174 ~ alloc[27b0]::vec::{impl#1}::pop)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8174 ~ alloc[27b0]::vec::{impl#1}::pop)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::truncate (AssocFn) [DefId: DefId(3:8112 ~ alloc[27b0]::vec::{impl#1}::truncate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8112 ~ alloc[27b0]::vec::{impl#1}::truncate)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::result::Result::<T, E>::unwrap (AssocFn) [DefId: DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::std::std::sync::mpsc::Receiver::<T>::recv (AssocFn) [DefId: DefId(1:6835 ~ std[93f5]::sync::mpsc::{impl#11}::recv)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(1:6835 ~ std[93f5]::sync::mpsc::{impl#11}::recv)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::rustc_codegen_ssa::back::write::SharedEmitter::fatal (AssocFn) [DefId: DefId(0:1601 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#4}::fatal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(0:1601 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#4}::fatal)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::bitflags::__private::core::slice::<impl [T]>::binary_search_by_key (AssocFn) [DefId: DefId(2:14172 ~ core[4720]::slice::{impl#0}::binary_search_by_key)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:14172 ~ core[4720]::slice::{impl#0}::binary_search_by_key)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::insert (AssocFn) [DefId: DefId(3:8122 ~ alloc[27b0]::vec::{impl#1}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8122 ~ alloc[27b0]::vec::{impl#1}::insert)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::jobserver::rustc_data_structures::jobserver::HelperThread::request_token (AssocFn) [DefId: DefId(43:119 ~ jobserver[6772]::{impl#4}::request_token)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(43:119 ~ jobserver[6772]::{impl#4}::request_token)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::is_empty (AssocFn) [DefId: DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::is_empty (AssocFn) [DefId: DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::alloc::std::slice::<impl [T]>::sort_by (AssocFn) [DefId: DefId(3:6153 ~ alloc[27b0]::slice::{impl#0}::sort_by)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(3:6153 ~ alloc[27b0]::slice::{impl#0}::sort_by)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::start_executing_work USES crate::core::std::cmp::Ord::cmp (AssocFn) [DefId: DefId(2:3251 ~ core[4720]::cmp::Ord::cmp)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1561 ~ rustc_codegen_ssa[2fdc]::back::write::start_executing_work)",
+      "used_def_id": "DefId(2:3251 ~ core[4720]::cmp::Ord::cmp)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::spawn_work USES crate::core::std::option::Option::<T>::is_none (AssocFn) [DefId: DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1578 ~ rustc_codegen_ssa[2fdc]::back::write::spawn_work)",
+      "used_def_id": "DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::spawn_work USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::verbose_generic_activity (AssocFn) [DefId: DefId(20:1062 ~ rustc_data_structures[bda7]::profiling::{impl#0}::verbose_generic_activity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1578 ~ rustc_codegen_ssa[2fdc]::back::write::spawn_work)",
+      "used_def_id": "DefId(20:1062 ~ rustc_data_structures[bda7]::profiling::{impl#0}::verbose_generic_activity)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::spawn_work USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1578 ~ rustc_codegen_ssa[2fdc]::back::write::spawn_work)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::spawn_work USES crate::core::std::result::Result::<T, E>::expect (AssocFn) [DefId: DefId(2:11107 ~ core[4720]::result::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1578 ~ rustc_codegen_ssa[2fdc]::back::write::spawn_work)",
+      "used_def_id": "DefId(2:11107 ~ core[4720]::result::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::spawn_work USES crate::rustc_codegen_ssa::traits::backend::ExtraBackendMethods::spawn_named_thread (AssocFn) [DefId: DefId(0:3321 ~ rustc_codegen_ssa[2fdc]::traits::backend::ExtraBackendMethods::spawn_named_thread)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1578 ~ rustc_codegen_ssa[2fdc]::back::write::spawn_work)",
+      "used_def_id": "DefId(0:3321 ~ rustc_codegen_ssa[2fdc]::traits::backend::ExtraBackendMethods::spawn_named_thread)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::spawn_work USES crate::rustc_codegen_ssa::back::write::WorkItem::<B>::short_description (AssocFn) [DefId: DefId(0:1489 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#3}::short_description)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1578 ~ rustc_codegen_ssa[2fdc]::back::write::spawn_work)",
+      "used_def_id": "DefId(0:1489 ~ rustc_codegen_ssa[2fdc]::back::write::{impl#3}::short_description)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::spawn_work USES crate::core::<(dyn std::any::Any + std::marker::Send + 'static)>::is (AssocFn) [DefId: DefId(2:4443 ~ core[4720]::any::{impl#5}::is)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1578 ~ rustc_codegen_ssa[2fdc]::back::write::spawn_work)",
+      "used_def_id": "DefId(2:4443 ~ core[4720]::any::{impl#5}::is)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::spawn_work USES crate::std::std::sync::mpsc::Sender::<T>::send (AssocFn) [DefId: DefId(1:6814 ~ std[93f5]::sync::mpsc::{impl#5}::send)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1578 ~ rustc_codegen_ssa[2fdc]::back::write::spawn_work)",
+      "used_def_id": "DefId(1:6814 ~ std[93f5]::sync::mpsc::{impl#5}::send)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_codegened_module_to_llvm USES crate::std::std::sync::mpsc::Sender::<T>::send (AssocFn) [DefId: DefId(1:6814 ~ std[93f5]::sync::mpsc::{impl#5}::send)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1637 ~ rustc_codegen_ssa[2fdc]::back::write::submit_codegened_module_to_llvm)",
+      "used_def_id": "DefId(1:6814 ~ std[93f5]::sync::mpsc::{impl#5}::send)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_post_lto_module_to_llvm USES crate::std::std::sync::mpsc::Sender::<T>::send (AssocFn) [DefId: DefId(1:6814 ~ std[93f5]::sync::mpsc::{impl#5}::send)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1639 ~ rustc_codegen_ssa[2fdc]::back::write::submit_post_lto_module_to_llvm)",
+      "used_def_id": "DefId(1:6814 ~ std[93f5]::sync::mpsc::{impl#5}::send)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_pre_lto_module_to_llvm USES crate::core::std::result::Result::<T, E>::unwrap_or_else (AssocFn) [DefId: DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1641 ~ rustc_codegen_ssa[2fdc]::back::write::submit_pre_lto_module_to_llvm)",
+      "used_def_id": "DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_pre_lto_module_to_llvm USES crate::std::std::fs::File::open (AssocFn) [DefId: DefId(1:2492 ~ std[93f5]::fs::{impl#4}::open)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1641 ~ rustc_codegen_ssa[2fdc]::back::write::submit_pre_lto_module_to_llvm)",
+      "used_def_id": "DefId(1:2492 ~ std[93f5]::fs::{impl#4}::open)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_pre_lto_module_to_llvm USES crate::std::std::path::Path::display (AssocFn) [DefId: DefId(1:5894 ~ std[93f5]::path::{impl#70}::display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1641 ~ rustc_codegen_ssa[2fdc]::back::write::submit_pre_lto_module_to_llvm)",
+      "used_def_id": "DefId(1:5894 ~ std[93f5]::path::{impl#70}::display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_pre_lto_module_to_llvm USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1641 ~ rustc_codegen_ssa[2fdc]::back::write::submit_pre_lto_module_to_llvm)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_pre_lto_module_to_llvm USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1641 ~ rustc_codegen_ssa[2fdc]::back::write::submit_pre_lto_module_to_llvm)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_pre_lto_module_to_llvm USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1641 ~ rustc_codegen_ssa[2fdc]::back::write::submit_pre_lto_module_to_llvm)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_pre_lto_module_to_llvm USES crate::core::std::result::Result::<T, E>::unwrap_or_else (AssocFn) [DefId: DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1641 ~ rustc_codegen_ssa[2fdc]::back::write::submit_pre_lto_module_to_llvm)",
+      "used_def_id": "DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_pre_lto_module_to_llvm USES crate::rustc_data_structures::rustc_data_structures::memmap::Mmap::map (AssocFn) [DefId: DefId(20:816 ~ rustc_data_structures[bda7]::memmap::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1641 ~ rustc_codegen_ssa[2fdc]::back::write::submit_pre_lto_module_to_llvm)",
+      "used_def_id": "DefId(20:816 ~ rustc_data_structures[bda7]::memmap::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_pre_lto_module_to_llvm USES crate::std::std::path::Path::display (AssocFn) [DefId: DefId(1:5894 ~ std[93f5]::path::{impl#70}::display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1641 ~ rustc_codegen_ssa[2fdc]::back::write::submit_pre_lto_module_to_llvm)",
+      "used_def_id": "DefId(1:5894 ~ std[93f5]::path::{impl#70}::display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_pre_lto_module_to_llvm USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1641 ~ rustc_codegen_ssa[2fdc]::back::write::submit_pre_lto_module_to_llvm)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_pre_lto_module_to_llvm USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1641 ~ rustc_codegen_ssa[2fdc]::back::write::submit_pre_lto_module_to_llvm)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_pre_lto_module_to_llvm USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1641 ~ rustc_codegen_ssa[2fdc]::back::write::submit_pre_lto_module_to_llvm)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::submit_pre_lto_module_to_llvm USES crate::std::std::sync::mpsc::Sender::<T>::send (AssocFn) [DefId: DefId(1:6814 ~ std[93f5]::sync::mpsc::{impl#5}::send)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1641 ~ rustc_codegen_ssa[2fdc]::back::write::submit_pre_lto_module_to_llvm)",
+      "used_def_id": "DefId(1:6814 ~ std[93f5]::sync::mpsc::{impl#5}::send)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::pre_lto_bitcode_filename USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1645 ~ rustc_codegen_ssa[2fdc]::back::write::pre_lto_bitcode_filename)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::pre_lto_bitcode_filename USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1645 ~ rustc_codegen_ssa[2fdc]::back::write::pre_lto_bitcode_filename)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::pre_lto_bitcode_filename USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1645 ~ rustc_codegen_ssa[2fdc]::back::write::pre_lto_bitcode_filename)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::msvc_imps_needed USES crate::rustc_session::rustc_session::config::LinkerPluginLto::enabled (AssocFn) [DefId: DefId(175:407 ~ rustc_session[612c]::config::{impl#0}::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1646 ~ rustc_codegen_ssa[2fdc]::back::write::msvc_imps_needed)",
+      "used_def_id": "DefId(175:407 ~ rustc_session[612c]::config::{impl#0}::enabled)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::msvc_imps_needed USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1646 ~ rustc_codegen_ssa[2fdc]::back::write::msvc_imps_needed)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::msvc_imps_needed USES crate::rustc_session::rustc_session::Session::lto (AssocFn) [DefId: DefId(175:1365 ~ rustc_session[612c]::session::{impl#3}::lto)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1646 ~ rustc_codegen_ssa[2fdc]::back::write::msvc_imps_needed)",
+      "used_def_id": "DefId(175:1365 ~ rustc_session[612c]::session::{impl#3}::lto)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::msvc_imps_needed USES crate::core::bitflags::__private::core::slice::<impl [T]>::contains (AssocFn) [DefId: DefId(2:14156 ~ core[4720]::slice::{impl#0}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1646 ~ rustc_codegen_ssa[2fdc]::back::write::msvc_imps_needed)",
+      "used_def_id": "DefId(2:14156 ~ core[4720]::slice::{impl#0}::contains)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::msvc_imps_needed USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::crate_types (AssocFn) [DefId: DefId(164:6810 ~ rustc_middle[8ead]::ty::context::{impl#25}::crate_types)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1646 ~ rustc_codegen_ssa[2fdc]::back::write::msvc_imps_needed)",
+      "used_def_id": "DefId(164:6810 ~ rustc_middle[8ead]::ty::context::{impl#25}::crate_types)"
+    },
+    {
+      "usage": "crate::rustc_codegen_ssa::back::write::msvc_imps_needed USES crate::rustc_session::rustc_session::config::LinkerPluginLto::enabled (AssocFn) [DefId: DefId(175:407 ~ rustc_session[612c]::config::{impl#0}::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1646 ~ rustc_codegen_ssa[2fdc]::back::write::msvc_imps_needed)",
+      "used_def_id": "DefId(175:407 ~ rustc_session[612c]::config::{impl#0}::enabled)"
+    }
+  ]
+}

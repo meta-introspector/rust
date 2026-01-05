@@ -1,0 +1,214 @@
+{
+  "crate": "tokio",
+  "module": "sync::watch",
+  "usages": [
+    {
+      "usage": "crate::tokio::sync::watch::channel USES crate::alloc::std::sync::Arc::<T>::new (AssocFn) [DefId: DefId(3:6862 ~ alloc[27b0]::sync::{impl#14}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11343 ~ tokio[47da]::sync::watch::channel)",
+      "used_def_id": "DefId(3:6862 ~ alloc[27b0]::sync::{impl#14}::new)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::channel USES crate::tokio::loom::std::rwlock::RwLock::<T>::new (AssocFn) [DefId: DefId(0:469 ~ tokio[47da]::loom::std::rwlock::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11343 ~ tokio[47da]::sync::watch::channel)",
+      "used_def_id": "DefId(0:469 ~ tokio[47da]::loom::std::rwlock::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::channel USES crate::tokio::sync::watch::state::AtomicState::new (AssocFn) [DefId: DefId(0:11339 ~ tokio[47da]::sync::watch::state::{impl#2}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11343 ~ tokio[47da]::sync::watch::channel)",
+      "used_def_id": "DefId(0:11339 ~ tokio[47da]::sync::watch::state::{impl#2}::new)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::channel USES crate::tokio::loom::std::atomic_usize::AtomicUsize::new (AssocFn) [DefId: DefId(0:410 ~ tokio[47da]::loom::std::atomic_usize::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11343 ~ tokio[47da]::sync::watch::channel)",
+      "used_def_id": "DefId(0:410 ~ tokio[47da]::loom::std::atomic_usize::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::channel USES crate::tokio::loom::std::atomic_usize::AtomicUsize::new (AssocFn) [DefId: DefId(0:410 ~ tokio[47da]::loom::std::atomic_usize::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11343 ~ tokio[47da]::sync::watch::channel)",
+      "used_def_id": "DefId(0:410 ~ tokio[47da]::loom::std::atomic_usize::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::channel USES crate::tokio::sync::watch::big_notify::BigNotify::new (AssocFn) [DefId: DefId(0:11321 ~ tokio[47da]::sync::watch::big_notify::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11343 ~ tokio[47da]::sync::watch::channel)",
+      "used_def_id": "DefId(0:11321 ~ tokio[47da]::sync::watch::big_notify::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::channel USES crate::tokio::sync::notify::Notify::new (AssocFn) [DefId: DefId(0:10338 ~ tokio[47da]::sync::notify::{impl#7}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11343 ~ tokio[47da]::sync::watch::channel)",
+      "used_def_id": "DefId(0:10338 ~ tokio[47da]::sync::notify::{impl#7}::new)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::channel USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11343 ~ tokio[47da]::sync::watch::channel)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::channel USES crate::tokio::sync::watch::state::Version::INITIAL (AssocConst) [DefId: DefId(0:11334 ~ tokio[47da]::sync::watch::state::{impl#0}::INITIAL)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11343 ~ tokio[47da]::sync::watch::channel)",
+      "used_def_id": "DefId(0:11334 ~ tokio[47da]::sync::watch::state::{impl#0}::INITIAL)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::maybe_changed USES crate::tokio::sync::watch::state::AtomicState::load (AssocFn) [DefId: DefId(0:11340 ~ tokio[47da]::sync::watch::state::{impl#2}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11366 ~ tokio[47da]::sync::watch::maybe_changed)",
+      "used_def_id": "DefId(0:11340 ~ tokio[47da]::sync::watch::state::{impl#2}::load)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::maybe_changed USES crate::tokio::sync::watch::state::StateSnapshot::version (AssocFn) [DefId: DefId(0:11336 ~ tokio[47da]::sync::watch::state::{impl#1}::version)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11366 ~ tokio[47da]::sync::watch::maybe_changed)",
+      "used_def_id": "DefId(0:11336 ~ tokio[47da]::sync::watch::state::{impl#1}::version)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::maybe_changed USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11366 ~ tokio[47da]::sync::watch::maybe_changed)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::maybe_changed USES crate::tokio::sync::watch::state::StateSnapshot::is_closed (AssocFn) [DefId: DefId(0:11337 ~ tokio[47da]::sync::watch::state::{impl#1}::is_closed)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11366 ~ tokio[47da]::sync::watch::maybe_changed)",
+      "used_def_id": "DefId(0:11337 ~ tokio[47da]::sync::watch::state::{impl#1}::is_closed)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::changed_impl USES crate::core::std::pin::Pin::<Ptr>::new_unchecked (AssocFn) [DefId: DefId(2:10749 ~ core[4720]::pin::{impl#6}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11368 ~ tokio[47da]::sync::watch::changed_impl)",
+      "used_def_id": "DefId(2:10749 ~ core[4720]::pin::{impl#6}::new_unchecked)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::changed_impl USES crate::core::std::future::get_context (Fn) [DefId: DefId(2:15684 ~ core[4720]::future::get_context)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11368 ~ tokio[47da]::sync::watch::changed_impl)",
+      "used_def_id": "DefId(2:15684 ~ core[4720]::future::get_context)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::changed_impl USES crate::core::std::future::Future::poll (AssocFn) [DefId: DefId(2:52753 ~ core[4720]::future::future::Future::poll)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11368 ~ tokio[47da]::sync::watch::changed_impl)",
+      "used_def_id": "DefId(2:52753 ~ core[4720]::future::future::Future::poll)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::changed_impl USES crate::core::std::task::Poll::Ready (Variant) [DefId: DefId(2:52778 ~ core[4720]::task::poll::Poll::Ready)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11368 ~ tokio[47da]::sync::watch::changed_impl)",
+      "used_def_id": "DefId(2:52778 ~ core[4720]::task::poll::Poll::Ready)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::changed_impl USES crate::core::std::task::Poll::Pending (Variant) [DefId: DefId(2:52781 ~ core[4720]::task::poll::Poll::Pending)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11368 ~ tokio[47da]::sync::watch::changed_impl)",
+      "used_def_id": "DefId(2:52781 ~ core[4720]::task::poll::Poll::Pending)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::changed_impl USES crate::core::std::future::IntoFuture::into_future (AssocFn) [DefId: DefId(2:52757 ~ core[4720]::future::into_future::IntoFuture::into_future)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11368 ~ tokio[47da]::sync::watch::changed_impl)",
+      "used_def_id": "DefId(2:52757 ~ core[4720]::future::into_future::IntoFuture::into_future)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::changed_impl USES crate::tokio::sync::watch::big_notify::BigNotify::notified (AssocFn) [DefId: DefId(0:11323 ~ tokio[47da]::sync::watch::big_notify::{impl#0}::notified)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11368 ~ tokio[47da]::sync::watch::changed_impl)",
+      "used_def_id": "DefId(0:11323 ~ tokio[47da]::sync::watch::big_notify::{impl#0}::notified)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::changed_impl USES crate::core::std::pin::Pin::<Ptr>::new_unchecked (AssocFn) [DefId: DefId(2:10749 ~ core[4720]::pin::{impl#6}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11368 ~ tokio[47da]::sync::watch::changed_impl)",
+      "used_def_id": "DefId(2:10749 ~ core[4720]::pin::{impl#6}::new_unchecked)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::changed_impl USES crate::core::std::future::get_context (Fn) [DefId: DefId(2:15684 ~ core[4720]::future::get_context)]",
+      "usage_count": 1,
+      "usage_type": "FunctionCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11368 ~ tokio[47da]::sync::watch::changed_impl)",
+      "used_def_id": "DefId(2:15684 ~ core[4720]::future::get_context)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::changed_impl USES crate::core::std::future::Future::poll (AssocFn) [DefId: DefId(2:52753 ~ core[4720]::future::future::Future::poll)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11368 ~ tokio[47da]::sync::watch::changed_impl)",
+      "used_def_id": "DefId(2:52753 ~ core[4720]::future::future::Future::poll)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::changed_impl USES crate::core::std::task::Poll::Ready (Variant) [DefId: DefId(2:52778 ~ core[4720]::task::poll::Poll::Ready)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11368 ~ tokio[47da]::sync::watch::changed_impl)",
+      "used_def_id": "DefId(2:52778 ~ core[4720]::task::poll::Poll::Ready)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::changed_impl USES crate::core::std::task::Poll::Pending (Variant) [DefId: DefId(2:52781 ~ core[4720]::task::poll::Poll::Pending)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11368 ~ tokio[47da]::sync::watch::changed_impl)",
+      "used_def_id": "DefId(2:52781 ~ core[4720]::task::poll::Poll::Pending)"
+    },
+    {
+      "usage": "crate::tokio::sync::watch::changed_impl USES crate::core::std::future::IntoFuture::into_future (AssocFn) [DefId: DefId(2:52757 ~ core[4720]::future::into_future::IntoFuture::into_future)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11368 ~ tokio[47da]::sync::watch::changed_impl)",
+      "used_def_id": "DefId(2:52757 ~ core[4720]::future::into_future::IntoFuture::into_future)"
+    }
+  ]
+}

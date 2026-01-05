@@ -1,0 +1,62 @@
+{
+  "crate": "cargo_miri",
+  "module": "literals",
+  "usages": [
+    {
+      "usage": "LITERAL: \"Runs binary crates and tests in Miri\n\nUsage:\n    cargo miri [subcommand] [<cargo options>...] [--] [<program/test suite options>...]\n\nSubcommands:\n    run, r                   Run binaries\n    test, t                  Run tests\n    nextest                  Run tests with nextest (requires cargo-nextest installed)\n    setup                    Only perform automatic setup, but without asking questions (for getting a proper libstd)\n    clean                    Clean the Miri cache & target directory\n\nThe cargo options are exactly the same as for `cargo run` and `cargo test`, respectively.\nFurthermore, the following environment variables are recognized for `run` and `test`:\n\n    MIRIFLAGS                Extra flags to pass to the Miri driver. Use this to pass `-Zmiri-...` flags.\n\nExamples:\n    cargo miri run\n    cargo miri test -- test-suite-filter\n\n    cargo miri setup --print-sysroot\n        This will print the path to the generated sysroot (and nothing else) on stdout.\n        stderr will still contain progress information about how the build is doing.\n\n\" in const CARGO_MIRI_HELP",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const CARGO_MIRI_HELP",
+      "used_def_id": "\"Runs binary crates and tests in Miri\n\nUsage:\n    cargo miri [subcommand] [<cargo options>...] [--] [<program/test suite options>...]\n\nSubcommands:\n    run, r                   Run binaries\n    test, t                  Run tests\n    nextest                  Run tests with nextest (requires cargo-nextest installed)\n    setup                    Only perform automatic setup, but without asking questions (for getting a proper libstd)\n    clean                    Clean the Miri cache & target directory\n\nThe cargo options are exactly the same as for `cargo run` and `cargo test`, respectively.\nFurthermore, the following environment variables are recognized for `run` and `test`:\n\n    MIRIFLAGS                Extra flags to pass to the Miri driver. Use this to pass `-Zmiri-...` flags.\n\nExamples:\n    cargo miri run\n    cargo miri test -- test-suite-filter\n\n    cargo miri setup --print-sysroot\n        This will print the path to the generated sysroot (and nothing else) on stdout.\n        stderr will still contain progress information about how the build is doing.\n\n\""
+    },
+    {
+      "usage": "LITERAL: \"args\" in const FIELDS",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const FIELDS",
+      "used_def_id": "\"args\""
+    },
+    {
+      "usage": "LITERAL: \"env\" in const FIELDS",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const FIELDS",
+      "used_def_id": "\"env\""
+    },
+    {
+      "usage": "LITERAL: \"current_dir\" in const FIELDS",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const FIELDS",
+      "used_def_id": "\"current_dir\""
+    },
+    {
+      "usage": "LITERAL: \"stdin\" in const FIELDS",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const FIELDS",
+      "used_def_id": "\"stdin\""
+    },
+    {
+      "usage": "LITERAL: \"RunWith\" in const VARIANTS",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const VARIANTS",
+      "used_def_id": "\"RunWith\""
+    },
+    {
+      "usage": "LITERAL: \"SkipProcMacroTest\" in const VARIANTS",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const VARIANTS",
+      "used_def_id": "\"SkipProcMacroTest\""
+    }
+  ]
+}

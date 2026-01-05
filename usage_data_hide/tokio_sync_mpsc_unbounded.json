@@ -1,0 +1,30 @@
+{
+  "crate": "tokio",
+  "module": "sync::mpsc::unbounded",
+  "usages": [
+    {
+      "usage": "crate::tokio::sync::mpsc::unbounded::unbounded_channel USES crate::tokio::loom::std::atomic_usize::AtomicUsize::new (AssocFn) [DefId: DefId(0:410 ~ tokio[47da]::loom::std::atomic_usize::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9960 ~ tokio[47da]::sync::mpsc::unbounded::unbounded_channel)",
+      "used_def_id": "DefId(0:410 ~ tokio[47da]::loom::std::atomic_usize::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::tokio::sync::mpsc::unbounded::unbounded_channel USES crate::tokio::sync::mpsc::unbounded::UnboundedSender::<T>::new (AssocFn) [DefId: DefId(0:9988 ~ tokio[47da]::sync::mpsc::unbounded::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9960 ~ tokio[47da]::sync::mpsc::unbounded::unbounded_channel)",
+      "used_def_id": "DefId(0:9988 ~ tokio[47da]::sync::mpsc::unbounded::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::tokio::sync::mpsc::unbounded::unbounded_channel USES crate::tokio::sync::mpsc::unbounded::UnboundedReceiver::<T>::new (AssocFn) [DefId: DefId(0:9964 ~ tokio[47da]::sync::mpsc::unbounded::{impl#3}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9960 ~ tokio[47da]::sync::mpsc::unbounded::unbounded_channel)",
+      "used_def_id": "DefId(0:9964 ~ tokio[47da]::sync::mpsc::unbounded::{impl#3}::new)"
+    }
+  ]
+}

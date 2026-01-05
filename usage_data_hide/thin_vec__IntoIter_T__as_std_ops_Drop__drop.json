@@ -1,0 +1,38 @@
+{
+  "crate": "thin_vec",
+  "module": "<IntoIter<T> as std::ops::Drop>::drop",
+  "usages": [
+    {
+      "usage": "crate::thin_vec::<IntoIter<T> as std::ops::Drop>::drop::drop_non_singleton USES crate::thin_vec::ThinVec::<T>::new (AssocFn) [DefId: DefId(0:78 ~ thin_vec[ba20]::{impl#5}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:284 ~ thin_vec[ba20]::{impl#44}::drop::drop_non_singleton)",
+      "used_def_id": "DefId(0:78 ~ thin_vec[ba20]::{impl#5}::new)"
+    },
+    {
+      "usage": "crate::thin_vec::<IntoIter<T> as std::ops::Drop>::drop::drop_non_singleton USES crate::core::std::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(2:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:284 ~ thin_vec[ba20]::{impl#44}::drop::drop_non_singleton)",
+      "used_def_id": "DefId(2:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::thin_vec::<IntoIter<T> as std::ops::Drop>::drop::drop_non_singleton USES crate::core::std::ops::RangeFrom (Struct) [DefId: DefId(2:45199 ~ core[4720]::ops::range::RangeFrom)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:284 ~ thin_vec[ba20]::{impl#44}::drop::drop_non_singleton)",
+      "used_def_id": "DefId(2:45199 ~ core[4720]::ops::range::RangeFrom)"
+    },
+    {
+      "usage": "crate::thin_vec::<IntoIter<T> as std::ops::Drop>::drop::drop_non_singleton USES crate::thin_vec::ThinVec::<T>::set_len_non_singleton (AssocFn) [DefId: DefId(0:89 ~ thin_vec[ba20]::{impl#5}::set_len_non_singleton)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:284 ~ thin_vec[ba20]::{impl#44}::drop::drop_non_singleton)",
+      "used_def_id": "DefId(0:89 ~ thin_vec[ba20]::{impl#5}::set_len_non_singleton)"
+    }
+  ]
+}

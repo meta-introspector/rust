@@ -1,0 +1,38 @@
+{
+  "crate": "rustc_mir_transform",
+  "module": "remove_zsts",
+  "usages": [
+    {
+      "usage": "crate::rustc_mir_transform::remove_zsts::trivially_zst USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(202:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5174 ~ rustc_mir_transform[b6d0]::remove_zsts::trivially_zst)",
+      "used_def_id": "DefId(202:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::remove_zsts::trivially_zst USES crate::core::core::slice::<impl [T]>::is_empty (AssocFn) [DefId: DefId(2:14035 ~ core[4720]::slice::{impl#0}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5174 ~ rustc_mir_transform[b6d0]::remove_zsts::trivially_zst)",
+      "used_def_id": "DefId(2:14035 ~ core[4720]::slice::{impl#0}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::remove_zsts::trivially_zst USES crate::rustc_middle::rustc_middle::ty::Const::<'tcx>::try_to_target_usize (AssocFn) [DefId: DefId(202:6084 ~ rustc_middle[f25a]::ty::consts::{impl#4}::try_to_target_usize)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5174 ~ rustc_mir_transform[b6d0]::remove_zsts::trivially_zst)",
+      "used_def_id": "DefId(202:6084 ~ rustc_middle[f25a]::ty::consts::{impl#4}::try_to_target_usize)"
+    },
+    {
+      "usage": "crate::rustc_mir_transform::remove_zsts::trivially_zst USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::is_async_drop_in_place_coroutine (AssocFn) [DefId: DefId(202:6797 ~ rustc_middle[f25a]::ty::context::{impl#25}::is_async_drop_in_place_coroutine)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5174 ~ rustc_mir_transform[b6d0]::remove_zsts::trivially_zst)",
+      "used_def_id": "DefId(202:6797 ~ rustc_middle[f25a]::ty::context::{impl#25}::is_async_drop_in_place_coroutine)"
+    }
+  ]
+}

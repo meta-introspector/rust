@@ -34,7 +34,14 @@ impl UsageCollector {
     }
     
     fn add_usage(&mut self, module: &str, usage: String) {
-        self.module_data.entry(module.to_string()).or_insert_with(Vec::new).push(usage);
+        // Fix: Create UsageEntry instead of pushing String directly
+        let entry = UsageEntry {
+            usage,
+            node_type: "Unknown".to_string(),
+            expr_type: None,
+            count: 1,
+        };
+        self.module_data.entry(module.to_string()).or_insert_with(Vec::new).push(entry);
     }
     
     fn save_to_files(&self, crate_name: &str) {
@@ -67,7 +74,7 @@ impl UsageCollector {
             
             for (i, usage) in usages.iter().enumerate() {
                 let comma = if i == usages.len() - 1 { "" } else { "," };
-                writeln!(file, "    \"{}\"{}", usage, comma).unwrap();
+                writeln!(file, "    \"{}\"{}", usage.usage, comma).unwrap();
             }
             
             writeln!(file, "  ]").unwrap();

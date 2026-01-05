@@ -1,0 +1,86 @@
+{
+  "crate": "memchr",
+  "module": "arch::x86_64::memchr::memrchr3_raw",
+  "usages": [
+    {
+      "usage": "crate::memchr::arch::x86_64::memchr::memrchr3_raw::FN USES crate::core::core::sync::atomic::AtomicPtr::<T>::new (AssocFn) [DefId: DefId(1:11311 ~ core[4720]::sync::atomic::{impl#6}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1363 ~ memchr[6e91]::arch::x86_64::memchr::memrchr3_raw::FN)",
+      "used_def_id": "DefId(1:11311 ~ core[4720]::sync::atomic::{impl#6}::new)"
+    },
+    {
+      "usage": "crate::memchr::arch::x86_64::memchr::memrchr3_raw::find_avx2 USES crate::memchr::arch::x86_64::avx2::memchr::Three::rfind_raw (AssocFn) [DefId: DefId(0:387 ~ memchr[6e91]::arch::x86_64::avx2::memchr::{impl#8}::rfind_raw)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1364 ~ memchr[6e91]::arch::x86_64::memchr::memrchr3_raw::find_avx2)",
+      "used_def_id": "DefId(0:387 ~ memchr[6e91]::arch::x86_64::avx2::memchr::{impl#8}::rfind_raw)"
+    },
+    {
+      "usage": "crate::memchr::arch::x86_64::memchr::memrchr3_raw::find_avx2 USES crate::memchr::arch::x86_64::avx2::memchr::Three::new_unchecked (AssocFn) [DefId: DefId(0:379 ~ memchr[6e91]::arch::x86_64::avx2::memchr::{impl#8}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1364 ~ memchr[6e91]::arch::x86_64::memchr::memrchr3_raw::find_avx2)",
+      "used_def_id": "DefId(0:379 ~ memchr[6e91]::arch::x86_64::avx2::memchr::{impl#8}::new_unchecked)"
+    },
+    {
+      "usage": "crate::memchr::arch::x86_64::memchr::memrchr3_raw::find_sse2 USES crate::memchr::arch::x86_64::sse2::memchr::Three::rfind_raw (AssocFn) [DefId: DefId(0:516 ~ memchr[6e91]::arch::x86_64::sse2::memchr::{impl#8}::rfind_raw)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1366 ~ memchr[6e91]::arch::x86_64::memchr::memrchr3_raw::find_sse2)",
+      "used_def_id": "DefId(0:516 ~ memchr[6e91]::arch::x86_64::sse2::memchr::{impl#8}::rfind_raw)"
+    },
+    {
+      "usage": "crate::memchr::arch::x86_64::memchr::memrchr3_raw::find_sse2 USES crate::memchr::arch::x86_64::sse2::memchr::Three::new_unchecked (AssocFn) [DefId: DefId(0:508 ~ memchr[6e91]::arch::x86_64::sse2::memchr::{impl#8}::new_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1366 ~ memchr[6e91]::arch::x86_64::memchr::memrchr3_raw::find_sse2)",
+      "used_def_id": "DefId(0:508 ~ memchr[6e91]::arch::x86_64::sse2::memchr::{impl#8}::new_unchecked)"
+    },
+    {
+      "usage": "crate::memchr::arch::x86_64::memchr::memrchr3_raw::find_fallback USES crate::memchr::arch::all::memchr::Three::rfind_raw (AssocFn) [DefId: DefId(0:100 ~ memchr[6e91]::arch::all::memchr::{impl#6}::rfind_raw)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1368 ~ memchr[6e91]::arch::x86_64::memchr::memrchr3_raw::find_fallback)",
+      "used_def_id": "DefId(0:100 ~ memchr[6e91]::arch::all::memchr::{impl#6}::rfind_raw)"
+    },
+    {
+      "usage": "crate::memchr::arch::x86_64::memchr::memrchr3_raw::find_fallback USES crate::memchr::arch::all::memchr::Three::new (AssocFn) [DefId: DefId(0:93 ~ memchr[6e91]::arch::all::memchr::{impl#6}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1368 ~ memchr[6e91]::arch::x86_64::memchr::memrchr3_raw::find_fallback)",
+      "used_def_id": "DefId(0:93 ~ memchr[6e91]::arch::all::memchr::{impl#6}::new)"
+    },
+    {
+      "usage": "crate::memchr::arch::x86_64::memchr::memrchr3_raw::detect USES crate::memchr::arch::x86_64::avx2::memchr::Three::is_available (AssocFn) [DefId: DefId(0:380 ~ memchr[6e91]::arch::x86_64::avx2::memchr::{impl#8}::is_available)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1370 ~ memchr[6e91]::arch::x86_64::memchr::memrchr3_raw::detect)",
+      "used_def_id": "DefId(0:380 ~ memchr[6e91]::arch::x86_64::avx2::memchr::{impl#8}::is_available)"
+    },
+    {
+      "usage": "crate::memchr::arch::x86_64::memchr::memrchr3_raw::detect USES crate::memchr::arch::x86_64::sse2::memchr::Three::is_available (AssocFn) [DefId: DefId(0:509 ~ memchr[6e91]::arch::x86_64::sse2::memchr::{impl#8}::is_available)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1370 ~ memchr[6e91]::arch::x86_64::memchr::memrchr3_raw::detect)",
+      "used_def_id": "DefId(0:509 ~ memchr[6e91]::arch::x86_64::sse2::memchr::{impl#8}::is_available)"
+    },
+    {
+      "usage": "crate::memchr::arch::x86_64::memchr::memrchr3_raw::detect USES crate::core::core::sync::atomic::AtomicPtr::<T>::store (AssocFn) [DefId: DefId(1:11321 ~ core[4720]::sync::atomic::{impl#6}::store)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1370 ~ memchr[6e91]::arch::x86_64::memchr::memrchr3_raw::detect)",
+      "used_def_id": "DefId(1:11321 ~ core[4720]::sync::atomic::{impl#6}::store)"
+    }
+  ]
+}

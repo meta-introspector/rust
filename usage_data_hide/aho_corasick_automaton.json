@@ -1,0 +1,878 @@
+{
+  "crate": "aho_corasick",
+  "module": "automaton",
+  "usages": [
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd USES crate::aho_corasick::util::search::Input::<'h>::is_done (AssocFn) [DefId: DefId(0:1524 ~ aho_corasick[aab5]::util::search::{impl#0}::is_done)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ aho_corasick[aab5]::automaton::try_find_fwd)",
+      "used_def_id": "DefId(0:1524 ~ aho_corasick[aab5]::util::search::{impl#0}::is_done)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd USES crate::aho_corasick::util::search::MatchKind::is_standard (AssocFn) [DefId: DefId(0:1574 ~ aho_corasick[aab5]::util::search::{impl#15}::is_standard)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ aho_corasick[aab5]::automaton::try_find_fwd)",
+      "used_def_id": "DefId(0:1574 ~ aho_corasick[aab5]::util::search::{impl#15}::is_standard)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd USES crate::aho_corasick::automaton::Automaton::match_kind (AssocFn) [DefId: DefId(0:231 ~ aho_corasick[aab5]::automaton::Automaton::match_kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ aho_corasick[aab5]::automaton::try_find_fwd)",
+      "used_def_id": "DefId(0:231 ~ aho_corasick[aab5]::automaton::Automaton::match_kind)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd USES crate::aho_corasick::util::search::Input::<'h>::get_earliest (AssocFn) [DefId: DefId(0:1523 ~ aho_corasick[aab5]::util::search::{impl#0}::get_earliest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ aho_corasick[aab5]::automaton::try_find_fwd)",
+      "used_def_id": "DefId(0:1523 ~ aho_corasick[aab5]::util::search::{impl#0}::get_earliest)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd USES crate::aho_corasick::util::search::Anchored::is_anchored (AssocFn) [DefId: DefId(0:1557 ~ aho_corasick[aab5]::util::search::{impl#12}::is_anchored)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ aho_corasick[aab5]::automaton::try_find_fwd)",
+      "used_def_id": "DefId(0:1557 ~ aho_corasick[aab5]::util::search::{impl#12}::is_anchored)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd USES crate::aho_corasick::util::search::Input::<'h>::get_anchored (AssocFn) [DefId: DefId(0:1522 ~ aho_corasick[aab5]::util::search::{impl#0}::get_anchored)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ aho_corasick[aab5]::automaton::try_find_fwd)",
+      "used_def_id": "DefId(0:1522 ~ aho_corasick[aab5]::util::search::{impl#0}::get_anchored)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd USES crate::aho_corasick::automaton::Automaton::prefilter (AssocFn) [DefId: DefId(0:239 ~ aho_corasick[aab5]::automaton::Automaton::prefilter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:328 ~ aho_corasick[aab5]::automaton::try_find_fwd)",
+      "used_def_id": "DefId(0:239 ~ aho_corasick[aab5]::automaton::Automaton::prefilter)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::automaton::Automaton::start_state (AssocFn) [DefId: DefId(0:225 ~ aho_corasick[aab5]::automaton::Automaton::start_state)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:225 ~ aho_corasick[aab5]::automaton::Automaton::start_state)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::get_anchored (AssocFn) [DefId: DefId(0:1522 ~ aho_corasick[aab5]::util::search::{impl#0}::get_anchored)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1522 ~ aho_corasick[aab5]::util::search::{impl#0}::get_anchored)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::core::core::ops::Try::branch (AssocFn) [DefId: DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::core::core::ops::ControlFlow::Continue (Variant) [DefId: DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::core::core::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::core::core::ops::ControlFlow::Break (Variant) [DefId: DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::start (AssocFn) [DefId: DefId(0:1518 ~ aho_corasick[aab5]::util::search::{impl#0}::start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1518 ~ aho_corasick[aab5]::util::search::{impl#0}::start)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::automaton::Automaton::is_match (AssocFn) [DefId: DefId(0:229 ~ aho_corasick[aab5]::automaton::Automaton::is_match)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:229 ~ aho_corasick[aab5]::automaton::Automaton::is_match)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::prefilter::Prefilter::find_in (AssocFn) [DefId: DefId(0:1315 ~ aho_corasick[aab5]::util::prefilter::{impl#0}::find_in)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1315 ~ aho_corasick[aab5]::util::prefilter::{impl#0}::find_in)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::haystack (AssocFn) [DefId: DefId(0:1517 ~ aho_corasick[aab5]::util::search::{impl#0}::haystack)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1517 ~ aho_corasick[aab5]::util::search::{impl#0}::haystack)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::get_span (AssocFn) [DefId: DefId(0:1520 ~ aho_corasick[aab5]::util::search::{impl#0}::get_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1520 ~ aho_corasick[aab5]::util::search::{impl#0}::get_span)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::end (AssocFn) [DefId: DefId(0:1519 ~ aho_corasick[aab5]::util::search::{impl#0}::end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1519 ~ aho_corasick[aab5]::util::search::{impl#0}::end)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::automaton::Automaton::next_state (AssocFn) [DefId: DefId(0:226 ~ aho_corasick[aab5]::automaton::Automaton::next_state)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:226 ~ aho_corasick[aab5]::automaton::Automaton::next_state)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::haystack (AssocFn) [DefId: DefId(0:1517 ~ aho_corasick[aab5]::util::search::{impl#0}::haystack)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1517 ~ aho_corasick[aab5]::util::search::{impl#0}::haystack)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::automaton::Automaton::is_special (AssocFn) [DefId: DefId(0:227 ~ aho_corasick[aab5]::automaton::Automaton::is_special)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:227 ~ aho_corasick[aab5]::automaton::Automaton::is_special)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::automaton::Automaton::is_dead (AssocFn) [DefId: DefId(0:228 ~ aho_corasick[aab5]::automaton::Automaton::is_dead)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:228 ~ aho_corasick[aab5]::automaton::Automaton::is_dead)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::automaton::Automaton::is_match (AssocFn) [DefId: DefId(0:229 ~ aho_corasick[aab5]::automaton::Automaton::is_match)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:229 ~ aho_corasick[aab5]::automaton::Automaton::is_match)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::search::Anchored::is_anchored (AssocFn) [DefId: DefId(0:1557 ~ aho_corasick[aab5]::util::search::{impl#12}::is_anchored)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1557 ~ aho_corasick[aab5]::util::search::{impl#12}::is_anchored)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::search::Match::start (AssocFn) [DefId: DefId(0:1564 ~ aho_corasick[aab5]::util::search::{impl#13}::start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1564 ~ aho_corasick[aab5]::util::search::{impl#13}::start)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::start (AssocFn) [DefId: DefId(0:1518 ~ aho_corasick[aab5]::util::search::{impl#0}::start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1518 ~ aho_corasick[aab5]::util::search::{impl#0}::start)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::automaton::Automaton::is_start (AssocFn) [DefId: DefId(0:230 ~ aho_corasick[aab5]::automaton::Automaton::is_start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:230 ~ aho_corasick[aab5]::automaton::Automaton::is_start)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::end (AssocFn) [DefId: DefId(0:1519 ~ aho_corasick[aab5]::util::search::{impl#0}::end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1519 ~ aho_corasick[aab5]::util::search::{impl#0}::end)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::prefilter::Candidate::into_option (AssocFn) [DefId: DefId(0:1318 ~ aho_corasick[aab5]::util::prefilter::{impl#1}::into_option)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1318 ~ aho_corasick[aab5]::util::prefilter::{impl#1}::into_option)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::prefilter::Prefilter::find_in (AssocFn) [DefId: DefId(0:1315 ~ aho_corasick[aab5]::util::prefilter::{impl#0}::find_in)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1315 ~ aho_corasick[aab5]::util::prefilter::{impl#0}::find_in)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::haystack (AssocFn) [DefId: DefId(0:1517 ~ aho_corasick[aab5]::util::search::{impl#0}::haystack)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(0:1517 ~ aho_corasick[aab5]::util::search::{impl#0}::haystack)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_fwd_imp USES crate::core::core::fmt::rt::<impl core::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:330 ~ aho_corasick[aab5]::automaton::try_find_fwd_imp)",
+      "used_def_id": "DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd USES crate::aho_corasick::util::search::Input::<'h>::is_done (AssocFn) [DefId: DefId(0:1524 ~ aho_corasick[aab5]::util::search::{impl#0}::is_done)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:332 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd)",
+      "used_def_id": "DefId(0:1524 ~ aho_corasick[aab5]::util::search::{impl#0}::is_done)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd USES crate::core::core::option::Option::<T>::is_some (AssocFn) [DefId: DefId(1:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:332 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd)",
+      "used_def_id": "DefId(1:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd USES crate::aho_corasick::automaton::Automaton::prefilter (AssocFn) [DefId: DefId(0:239 ~ aho_corasick[aab5]::automaton::Automaton::prefilter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:332 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd)",
+      "used_def_id": "DefId(0:239 ~ aho_corasick[aab5]::automaton::Automaton::prefilter)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd USES crate::aho_corasick::util::search::Anchored::is_anchored (AssocFn) [DefId: DefId(0:1557 ~ aho_corasick[aab5]::util::search::{impl#12}::is_anchored)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:332 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd)",
+      "used_def_id": "DefId(0:1557 ~ aho_corasick[aab5]::util::search::{impl#12}::is_anchored)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd USES crate::aho_corasick::util::search::Input::<'h>::get_anchored (AssocFn) [DefId: DefId(0:1522 ~ aho_corasick[aab5]::util::search::{impl#0}::get_anchored)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:332 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd)",
+      "used_def_id": "DefId(0:1522 ~ aho_corasick[aab5]::util::search::{impl#0}::get_anchored)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd USES crate::core::core::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(1:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:332 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd)",
+      "used_def_id": "DefId(1:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd USES crate::aho_corasick::automaton::Automaton::prefilter (AssocFn) [DefId: DefId(0:239 ~ aho_corasick[aab5]::automaton::Automaton::prefilter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:332 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd)",
+      "used_def_id": "DefId(0:239 ~ aho_corasick[aab5]::automaton::Automaton::prefilter)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::automaton::Automaton::start_state (AssocFn) [DefId: DefId(0:225 ~ aho_corasick[aab5]::automaton::Automaton::start_state)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:225 ~ aho_corasick[aab5]::automaton::Automaton::start_state)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::get_anchored (AssocFn) [DefId: DefId(0:1522 ~ aho_corasick[aab5]::util::search::{impl#0}::get_anchored)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:1522 ~ aho_corasick[aab5]::util::search::{impl#0}::get_anchored)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::core::core::ops::Try::branch (AssocFn) [DefId: DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::core::core::ops::ControlFlow::Continue (Variant) [DefId: DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::core::core::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::core::core::ops::ControlFlow::Break (Variant) [DefId: DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::automaton::Automaton::is_match (AssocFn) [DefId: DefId(0:229 ~ aho_corasick[aab5]::automaton::Automaton::is_match)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:229 ~ aho_corasick[aab5]::automaton::Automaton::is_match)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::core::core::option::Option::<T>::unwrap_or (AssocFn) [DefId: DefId(1:10229 ~ core[4720]::option::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(1:10229 ~ core[4720]::option::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::automaton::Automaton::match_len (AssocFn) [DefId: DefId(0:232 ~ aho_corasick[aab5]::automaton::Automaton::match_len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:232 ~ aho_corasick[aab5]::automaton::Automaton::match_len)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::start (AssocFn) [DefId: DefId(0:1518 ~ aho_corasick[aab5]::util::search::{impl#0}::start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:1518 ~ aho_corasick[aab5]::util::search::{impl#0}::start)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::start (AssocFn) [DefId: DefId(0:1518 ~ aho_corasick[aab5]::util::search::{impl#0}::start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:1518 ~ aho_corasick[aab5]::util::search::{impl#0}::start)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::automaton::Automaton::match_len (AssocFn) [DefId: DefId(0:232 ~ aho_corasick[aab5]::automaton::Automaton::match_len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:232 ~ aho_corasick[aab5]::automaton::Automaton::match_len)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::end (AssocFn) [DefId: DefId(0:1519 ~ aho_corasick[aab5]::util::search::{impl#0}::end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:1519 ~ aho_corasick[aab5]::util::search::{impl#0}::end)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::automaton::Automaton::next_state (AssocFn) [DefId: DefId(0:226 ~ aho_corasick[aab5]::automaton::Automaton::next_state)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:226 ~ aho_corasick[aab5]::automaton::Automaton::next_state)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::get_anchored (AssocFn) [DefId: DefId(0:1522 ~ aho_corasick[aab5]::util::search::{impl#0}::get_anchored)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:1522 ~ aho_corasick[aab5]::util::search::{impl#0}::get_anchored)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::haystack (AssocFn) [DefId: DefId(0:1517 ~ aho_corasick[aab5]::util::search::{impl#0}::haystack)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:1517 ~ aho_corasick[aab5]::util::search::{impl#0}::haystack)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::automaton::Automaton::is_special (AssocFn) [DefId: DefId(0:227 ~ aho_corasick[aab5]::automaton::Automaton::is_special)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:227 ~ aho_corasick[aab5]::automaton::Automaton::is_special)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::automaton::Automaton::is_dead (AssocFn) [DefId: DefId(0:228 ~ aho_corasick[aab5]::automaton::Automaton::is_dead)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:228 ~ aho_corasick[aab5]::automaton::Automaton::is_dead)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::automaton::Automaton::is_match (AssocFn) [DefId: DefId(0:229 ~ aho_corasick[aab5]::automaton::Automaton::is_match)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:229 ~ aho_corasick[aab5]::automaton::Automaton::is_match)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::automaton::Automaton::is_start (AssocFn) [DefId: DefId(0:230 ~ aho_corasick[aab5]::automaton::Automaton::is_start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:230 ~ aho_corasick[aab5]::automaton::Automaton::is_start)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::end (AssocFn) [DefId: DefId(0:1519 ~ aho_corasick[aab5]::util::search::{impl#0}::end)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:1519 ~ aho_corasick[aab5]::util::search::{impl#0}::end)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::util::prefilter::Candidate::into_option (AssocFn) [DefId: DefId(0:1318 ~ aho_corasick[aab5]::util::prefilter::{impl#1}::into_option)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:1318 ~ aho_corasick[aab5]::util::prefilter::{impl#1}::into_option)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::util::prefilter::Prefilter::find_in (AssocFn) [DefId: DefId(0:1315 ~ aho_corasick[aab5]::util::prefilter::{impl#0}::find_in)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:1315 ~ aho_corasick[aab5]::util::prefilter::{impl#0}::find_in)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::try_find_overlapping_fwd_imp USES crate::aho_corasick::util::search::Input::<'h>::haystack (AssocFn) [DefId: DefId(0:1517 ~ aho_corasick[aab5]::util::search::{impl#0}::haystack)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:334 ~ aho_corasick[aab5]::automaton::try_find_overlapping_fwd_imp)",
+      "used_def_id": "DefId(0:1517 ~ aho_corasick[aab5]::util::search::{impl#0}::haystack)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::get_match USES crate::aho_corasick::automaton::Automaton::match_pattern (AssocFn) [DefId: DefId(0:233 ~ aho_corasick[aab5]::automaton::Automaton::match_pattern)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ aho_corasick[aab5]::automaton::get_match)",
+      "used_def_id": "DefId(0:233 ~ aho_corasick[aab5]::automaton::Automaton::match_pattern)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::get_match USES crate::aho_corasick::automaton::Automaton::pattern_len (AssocFn) [DefId: DefId(0:235 ~ aho_corasick[aab5]::automaton::Automaton::pattern_len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ aho_corasick[aab5]::automaton::get_match)",
+      "used_def_id": "DefId(0:235 ~ aho_corasick[aab5]::automaton::Automaton::pattern_len)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::get_match USES crate::aho_corasick::util::search::Match::new (AssocFn) [DefId: DefId(0:1559 ~ aho_corasick[aab5]::util::search::{impl#13}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ aho_corasick[aab5]::automaton::get_match)",
+      "used_def_id": "DefId(0:1559 ~ aho_corasick[aab5]::util::search::{impl#13}::new)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::get_match USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:336 ~ aho_corasick[aab5]::automaton::get_match)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::aho_corasick::automaton::Automaton::is_dead (AssocFn) [DefId: DefId(0:228 ~ aho_corasick[aab5]::automaton::Automaton::is_dead)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(0:228 ~ aho_corasick[aab5]::automaton::Automaton::is_dead)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::fmt::Formatter::<'a>::write_fmt (AssocFn) [DefId: DefId(1:12043 ~ core[4720]::fmt::{impl#11}::write_fmt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:12043 ~ core[4720]::fmt::{impl#11}::write_fmt)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::fmt::rt::<impl core::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::Try::branch (AssocFn) [DefId: DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::ControlFlow::Continue (Variant) [DefId: DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::ControlFlow::Break (Variant) [DefId: DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::aho_corasick::automaton::Automaton::is_match (AssocFn) [DefId: DefId(0:229 ~ aho_corasick[aab5]::automaton::Automaton::is_match)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(0:229 ~ aho_corasick[aab5]::automaton::Automaton::is_match)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::aho_corasick::automaton::Automaton::is_start (AssocFn) [DefId: DefId(0:230 ~ aho_corasick[aab5]::automaton::Automaton::is_start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(0:230 ~ aho_corasick[aab5]::automaton::Automaton::is_start)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::fmt::Formatter::<'a>::write_fmt (AssocFn) [DefId: DefId(1:12043 ~ core[4720]::fmt::{impl#11}::write_fmt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:12043 ~ core[4720]::fmt::{impl#11}::write_fmt)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::fmt::rt::<impl core::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::Try::branch (AssocFn) [DefId: DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::ControlFlow::Continue (Variant) [DefId: DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::ControlFlow::Break (Variant) [DefId: DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::fmt::Formatter::<'a>::write_fmt (AssocFn) [DefId: DefId(1:12043 ~ core[4720]::fmt::{impl#11}::write_fmt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:12043 ~ core[4720]::fmt::{impl#11}::write_fmt)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::fmt::rt::<impl core::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::Try::branch (AssocFn) [DefId: DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::ControlFlow::Continue (Variant) [DefId: DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::ControlFlow::Break (Variant) [DefId: DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::aho_corasick::automaton::Automaton::is_start (AssocFn) [DefId: DefId(0:230 ~ aho_corasick[aab5]::automaton::Automaton::is_start)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(0:230 ~ aho_corasick[aab5]::automaton::Automaton::is_start)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::fmt::Formatter::<'a>::write_fmt (AssocFn) [DefId: DefId(1:12043 ~ core[4720]::fmt::{impl#11}::write_fmt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:12043 ~ core[4720]::fmt::{impl#11}::write_fmt)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::fmt::rt::<impl core::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::Try::branch (AssocFn) [DefId: DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::ControlFlow::Continue (Variant) [DefId: DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::ControlFlow::Break (Variant) [DefId: DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::fmt::Formatter::<'a>::write_fmt (AssocFn) [DefId: DefId(1:12043 ~ core[4720]::fmt::{impl#11}::write_fmt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:12043 ~ core[4720]::fmt::{impl#11}::write_fmt)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::fmt::rt::<impl core::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::Try::branch (AssocFn) [DefId: DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::ControlFlow::Continue (Variant) [DefId: DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::fmt_state_indicator USES crate::core::core::ops::ControlFlow::Break (Variant) [DefId: DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:338 ~ aho_corasick[aab5]::automaton::fmt_state_indicator)",
+      "used_def_id": "DefId(1:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::sparse_transitions USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:340 ~ aho_corasick[aab5]::automaton::sparse_transitions)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::sparse_transitions USES crate::core::core::cmp::PartialEq::eq (AssocFn) [DefId: DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:340 ~ aho_corasick[aab5]::automaton::sparse_transitions)",
+      "used_def_id": "DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::aho_corasick::automaton::sparse_transitions USES crate::core::core::option::Option::<T>::take (AssocFn) [DefId: DefId(1:10275 ~ core[4720]::option::{impl#0}::take)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:340 ~ aho_corasick[aab5]::automaton::sparse_transitions)",
+      "used_def_id": "DefId(1:10275 ~ core[4720]::option::{impl#0}::take)"
+    }
+  ]
+}

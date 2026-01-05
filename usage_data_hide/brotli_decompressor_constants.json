@@ -1,0 +1,942 @@
+{
+  "crate": "brotli_decompressor",
+  "module": "constants",
+  "usages": [
+    {
+      "usage": "CONST_DECL: kBrotliDictionaryOffsetsByLength in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kBrotliDictionaryOffsetsByLength"
+    },
+    {
+      "usage": "CONST_DECL: kBrotliDictionarySizeBitsByLength in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kBrotliDictionarySizeBitsByLength"
+    },
+    {
+      "usage": "CONST_DECL: kBrotliMinDictionaryWordLength in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kBrotliMinDictionaryWordLength"
+    },
+    {
+      "usage": "CONST_DECL: kBrotliMaxDictionaryWordLength in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kBrotliMaxDictionaryWordLength"
+    },
+    {
+      "usage": "STATIC_DECL: kBrotliDictionary in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "StaticDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kBrotliDictionary"
+    },
+    {
+      "usage": "CONST_DECL: BROTLI_SHORT_FILL_BIT_WINDOW_READ in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "BROTLI_SHORT_FILL_BIT_WINDOW_READ"
+    },
+    {
+      "usage": "CONST_DECL: kBitMask in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kBitMask"
+    },
+    {
+      "usage": "CONST_DECL: BROTLI_ALIGNED_READ in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "BROTLI_ALIGNED_READ"
+    },
+    {
+      "usage": "CONST_DECL: BROTLI_HUFFMAN_MAX_CODE_LENGTH in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "BROTLI_HUFFMAN_MAX_CODE_LENGTH"
+    },
+    {
+      "usage": "CONST_DECL: BROTLI_HUFFMAN_MAX_CODE_LENGTHS_SIZE in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "BROTLI_HUFFMAN_MAX_CODE_LENGTHS_SIZE"
+    },
+    {
+      "usage": "CONST_DECL: BROTLI_HUFFMAN_MAX_TABLE_SIZE in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "BROTLI_HUFFMAN_MAX_TABLE_SIZE"
+    },
+    {
+      "usage": "CONST_DECL: BROTLI_HUFFMAN_MAX_CODE_LENGTH_CODE_LENGTH in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "BROTLI_HUFFMAN_MAX_CODE_LENGTH_CODE_LENGTH"
+    },
+    {
+      "usage": "CONST_DECL: BROTLI_REVERSE_BITS_MAX in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "BROTLI_REVERSE_BITS_MAX"
+    },
+    {
+      "usage": "CONST_DECL: BROTLI_REVERSE_BITS_BASE in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "BROTLI_REVERSE_BITS_BASE"
+    },
+    {
+      "usage": "CONST_DECL: kReverseBits in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kReverseBits"
+    },
+    {
+      "usage": "CONST_DECL: BROTLI_REVERSE_BITS_LOWEST in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "BROTLI_REVERSE_BITS_LOWEST"
+    },
+    {
+      "usage": "CONST_DECL: table_size in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "table_size"
+    },
+    {
+      "usage": "CONST_DECL: kLiteralContextBits in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kLiteralContextBits"
+    },
+    {
+      "usage": "CONST_DECL: kBlockLengthPrefixCode in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kBlockLengthPrefixCode"
+    },
+    {
+      "usage": "CONST_DECL: kCmdLut in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kCmdLut"
+    },
+    {
+      "usage": "STATIC_DECL: kContextLookup in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "StaticDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kContextLookup"
+    },
+    {
+      "usage": "CONST_DECL: kIdentity in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kIdentity"
+    },
+    {
+      "usage": "CONST_DECL: kOmitLast1 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitLast1"
+    },
+    {
+      "usage": "CONST_DECL: kOmitLast2 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitLast2"
+    },
+    {
+      "usage": "CONST_DECL: kOmitLast3 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitLast3"
+    },
+    {
+      "usage": "CONST_DECL: kOmitLast4 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitLast4"
+    },
+    {
+      "usage": "CONST_DECL: kOmitLast5 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitLast5"
+    },
+    {
+      "usage": "CONST_DECL: kOmitLast6 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitLast6"
+    },
+    {
+      "usage": "CONST_DECL: kOmitLast7 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitLast7"
+    },
+    {
+      "usage": "CONST_DECL: kOmitLast8 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitLast8"
+    },
+    {
+      "usage": "CONST_DECL: kOmitLast9 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitLast9"
+    },
+    {
+      "usage": "CONST_DECL: kUppercaseFirst in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kUppercaseFirst"
+    },
+    {
+      "usage": "CONST_DECL: kUppercaseAll in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kUppercaseAll"
+    },
+    {
+      "usage": "CONST_DECL: kOmitFirst1 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitFirst1"
+    },
+    {
+      "usage": "CONST_DECL: kOmitFirst2 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitFirst2"
+    },
+    {
+      "usage": "CONST_DECL: kOmitFirst3 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitFirst3"
+    },
+    {
+      "usage": "CONST_DECL: kOmitFirst4 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitFirst4"
+    },
+    {
+      "usage": "CONST_DECL: kOmitFirst5 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitFirst5"
+    },
+    {
+      "usage": "CONST_DECL: kOmitFirst6 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitFirst6"
+    },
+    {
+      "usage": "CONST_DECL: kOmitFirst7 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitFirst7"
+    },
+    {
+      "usage": "CONST_DECL: kOmitFirst9 in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kOmitFirst9"
+    },
+    {
+      "usage": "CONST_DECL: kPrefixSuffix in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPrefixSuffix"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_EMPTY in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_EMPTY"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_COMMASP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_COMMASP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPofSPtheSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPofSPtheSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPtheSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPtheSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_eSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_eSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPofSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPofSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_sSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_sSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_DOT in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_DOT"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPandSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPandSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPinSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPinSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_DQUOT in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_DQUOT"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPtoSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPtoSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_DQUOTGT in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_DQUOTGT"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_NEWLINE in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_NEWLINE"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_DOTSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_DOTSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_CLOSEBR in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_CLOSEBR"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPforSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPforSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPaSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPaSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPthatSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPthatSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SQUOT in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SQUOT"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPwithSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPwithSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPfromSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPfromSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPbySP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPbySP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_OPEN in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_OPEN"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_DOTSPTheSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_DOTSPTheSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPonSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPonSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPasSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPasSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPisSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPisSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_ingSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_ingSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_NEWLINETAB in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_NEWLINETAB"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_COLON in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_COLON"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_edSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_edSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_EQDQUOT in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_EQDQUOT"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPatSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPatSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_lySP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_lySP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_COMMA in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_COMMA"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_EQSQUOT in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_EQSQUOT"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_DOTcomSLASH in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_DOTcomSLASH"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_DOTSPThisSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_DOTSPThisSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_SPnotSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_SPnotSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_erSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_erSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_alSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_alSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_fulSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_fulSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_iveSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_iveSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_lessSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_lessSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_estSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_estSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_izeSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_izeSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_NBSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_NBSP"
+    },
+    {
+      "usage": "CONST_DECL: kPFix_ousSP in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kPFix_ousSP"
+    },
+    {
+      "usage": "CONST_DECL: kNumTransforms in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kNumTransforms"
+    },
+    {
+      "usage": "CONST_DECL: kTransforms in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kTransforms"
+    },
+    {
+      "usage": "CONST_DECL: kBrotliWindowGap in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kBrotliWindowGap"
+    },
+    {
+      "usage": "CONST_DECL: kBrotliLargeMinWbits in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kBrotliLargeMinWbits"
+    },
+    {
+      "usage": "CONST_DECL: kBrotliLargeMaxWbits in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kBrotliLargeMaxWbits"
+    },
+    {
+      "usage": "CONST_DECL: kBrotliMaxPostfix in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kBrotliMaxPostfix"
+    },
+    {
+      "usage": "CONST_DECL: kBrotliMaxAllowedDistance in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kBrotliMaxAllowedDistance"
+    },
+    {
+      "usage": "CONST_DECL: kDefaultCodeLength in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kDefaultCodeLength"
+    },
+    {
+      "usage": "CONST_DECL: kCodeLengthRepeatCode in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kCodeLengthRepeatCode"
+    },
+    {
+      "usage": "CONST_DECL: kNumLiteralCodes in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kNumLiteralCodes"
+    },
+    {
+      "usage": "CONST_DECL: kNumInsertAndCopyCodes in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kNumInsertAndCopyCodes"
+    },
+    {
+      "usage": "CONST_DECL: kNumBlockLengthCodes in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kNumBlockLengthCodes"
+    },
+    {
+      "usage": "CONST_DECL: kDistanceContextBits in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kDistanceContextBits"
+    },
+    {
+      "usage": "CONST_DECL: HUFFMAN_TABLE_BITS in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "HUFFMAN_TABLE_BITS"
+    },
+    {
+      "usage": "CONST_DECL: HUFFMAN_TABLE_MASK in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "HUFFMAN_TABLE_MASK"
+    },
+    {
+      "usage": "CONST_DECL: CODE_LENGTH_CODES in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "CODE_LENGTH_CODES"
+    },
+    {
+      "usage": "CONST_DECL: kCodeLengthCodeOrder in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kCodeLengthCodeOrder"
+    },
+    {
+      "usage": "CONST_DECL: kCodeLengthPrefixLength in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kCodeLengthPrefixLength"
+    },
+    {
+      "usage": "CONST_DECL: kCodeLengthPrefixValue in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kCodeLengthPrefixValue"
+    },
+    {
+      "usage": "CONST_DECL: NUM_DISTANCE_SHORT_CODES in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "NUM_DISTANCE_SHORT_CODES"
+    },
+    {
+      "usage": "CONST_DECL: BROTLI_MAX_DISTANCE_BITS in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "BROTLI_MAX_DISTANCE_BITS"
+    },
+    {
+      "usage": "CONST_DECL: BROTLI_LARGE_MAX_DISTANCE_BITS in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "BROTLI_LARGE_MAX_DISTANCE_BITS"
+    },
+    {
+      "usage": "CONST_DECL: kRingBufferWriteAheadSlack in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kRingBufferWriteAheadSlack"
+    },
+    {
+      "usage": "CONST_DECL: kDistanceShortCodeIndexOffset in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kDistanceShortCodeIndexOffset"
+    },
+    {
+      "usage": "CONST_DECL: kDistanceShortCodeValueOffset in brotli_decompressor",
+      "usage_count": 1,
+      "usage_type": "ConstDecl",
+      "node_type": "Item",
+      "user_def_id": "brotli_decompressor",
+      "used_def_id": "kDistanceShortCodeValueOffset"
+    }
+  ]
+}

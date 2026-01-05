@@ -1,0 +1,238 @@
+{
+  "crate": "libp2p_swarm",
+  "module": "connection",
+  "usages": [
+    {
+      "usage": "crate::libp2p_swarm::connection::NEXT_CONNECTION_ID USES crate::core::std::sync::atomic::AtomicUsize::new (AssocFn) [DefId: DefId(2:50241 ~ core[4720]::sync::atomic::{impl#94}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:343 ~ libp2p_swarm[2cb2]::connection::NEXT_CONNECTION_ID)",
+      "used_def_id": "DefId(2:50241 ~ core[4720]::sync::atomic::{impl#94}::new)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::gather_supported_protocols USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ libp2p_swarm[2cb2]::connection::gather_supported_protocols)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::gather_supported_protocols USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ libp2p_swarm[2cb2]::connection::gather_supported_protocols)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::gather_supported_protocols USES crate::libp2p_swarm::upgrade::UpgradeInfoSend::protocol_info (AssocFn) [DefId: DefId(0:538 ~ libp2p_swarm[2cb2]::upgrade::UpgradeInfoSend::protocol_info)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ libp2p_swarm[2cb2]::connection::gather_supported_protocols)",
+      "used_def_id": "DefId(0:538 ~ libp2p_swarm[2cb2]::upgrade::UpgradeInfoSend::protocol_info)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::gather_supported_protocols USES crate::libp2p_swarm::handler::SubstreamProtocol::<TUpgrade, TInfo>::upgrade (AssocFn) [DefId: DefId(0:1402 ~ libp2p_swarm[2cb2]::handler::{impl#5}::upgrade)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ libp2p_swarm[2cb2]::connection::gather_supported_protocols)",
+      "used_def_id": "DefId(0:1402 ~ libp2p_swarm[2cb2]::handler::{impl#5}::upgrade)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::gather_supported_protocols USES crate::libp2p_swarm::handler::ConnectionHandler::listen_protocol (AssocFn) [DefId: DefId(0:1309 ~ libp2p_swarm[2cb2]::handler::ConnectionHandler::listen_protocol)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:378 ~ libp2p_swarm[2cb2]::connection::gather_supported_protocols)",
+      "used_def_id": "DefId(0:1309 ~ libp2p_swarm[2cb2]::handler::ConnectionHandler::listen_protocol)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::compute_new_shutdown USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:381 ~ libp2p_swarm[2cb2]::connection::compute_new_shutdown)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::compute_new_shutdown USES crate::core::web_time::Duration::ZERO (AssocConst) [DefId: DefId(2:15311 ~ core[4720]::time::{impl#0}::ZERO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:381 ~ libp2p_swarm[2cb2]::connection::compute_new_shutdown)",
+      "used_def_id": "DefId(2:15311 ~ core[4720]::time::{impl#0}::ZERO)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::compute_new_shutdown USES crate::std::web_time::Instant::now (AssocFn) [DefId: DefId(1:7940 ~ std[93f5]::time::{impl#0}::now)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:381 ~ libp2p_swarm[2cb2]::connection::compute_new_shutdown)",
+      "used_def_id": "DefId(1:7940 ~ std[93f5]::time::{impl#0}::now)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::compute_new_shutdown USES crate::futures_timer::futures_timer::Delay::new (AssocFn) [DefId: DefId(123:91 ~ futures_timer[6fc9]::native::delay::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:381 ~ libp2p_swarm[2cb2]::connection::compute_new_shutdown)",
+      "used_def_id": "DefId(123:91 ~ futures_timer[6fc9]::native::delay::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::core::std::option::Option::<T>::is_none (AssocFn) [DefId: DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::std::web_time::Instant::checked_add (AssocFn) [DefId: DefId(1:7945 ~ std[93f5]::time::{impl#0}::checked_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(1:7945 ~ std[93f5]::time::{impl#0}::checked_add)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:554 ~ tracing_core[8cf1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(73:554 ~ tracing_core[8cf1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:554 ~ tracing_core[8cf1]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(73:554 ~ tracing_core[8cf1]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(73:587 ~ tracing_core[8cf1]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(73:587 ~ tracing_core[8cf1]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(73:60 ~ tracing_core[8cf1]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(73:60 ~ tracing_core[8cf1]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(73:747 ~ tracing_core[8cf1]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(73:747 ~ tracing_core[8cf1]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[8cf1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[8cf1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[8cf1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[8cf1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(73:259 ~ tracing_core[8cf1]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(73:259 ~ tracing_core[8cf1]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::tracing_core::tracing::field::FieldSet::value_set_all (AssocFn) [DefId: DefId(73:453 ~ tracing_core[8cf1]::field::{impl#48}::value_set_all)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(73:453 ~ tracing_core[8cf1]::field::{impl#48}::value_set_all)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(73:520 ~ tracing_core[8cf1]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(73:520 ~ tracing_core[8cf1]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[8cf1]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[8cf1]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::checked_add_fraction USES crate::core::std::ops::DivAssign::div_assign (AssocFn) [DefId: DefId(2:39588 ~ core[4720]::ops::arith::DivAssign::div_assign)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:382 ~ libp2p_swarm[2cb2]::connection::checked_add_fraction)",
+      "used_def_id": "DefId(2:39588 ~ core[4720]::ops::arith::DivAssign::div_assign)"
+    },
+    {
+      "usage": "crate::libp2p_swarm::connection::to_stream_upgrade_error USES crate::std::std::io::Error::new (AssocFn) [DefId: DefId(1:3323 ~ std[93f5]::io::error::{impl#7}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:407 ~ libp2p_swarm[2cb2]::connection::to_stream_upgrade_error)",
+      "used_def_id": "DefId(1:3323 ~ std[93f5]::io::error::{impl#7}::new)"
+    }
+  ]
+}

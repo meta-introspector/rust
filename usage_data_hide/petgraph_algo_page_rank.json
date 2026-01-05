@@ -1,0 +1,542 @@
+{
+  "crate": "petgraph",
+  "module": "algo::page_rank",
+  "usages": [
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::petgraph::visit::NodeCount::node_count (AssocFn) [DefId: DefId(0:5363 ~ petgraph[6c95]::visit::NodeCount::node_count)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(0:5363 ~ petgraph[6c95]::visit::NodeCount::node_count)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::alloc::alloc::vec::Vec::<T>::new (AssocFn) [DefId: DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::cmp::PartialOrd::le (AssocFn) [DefId: DefId(1:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::petgraph::algo::UnitMeasure::zero (AssocFn) [DefId: DefId(0:2266 ~ petgraph[6c95]::algo::UnitMeasure::zero)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(0:2266 ~ petgraph[6c95]::algo::UnitMeasure::zero)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::cmp::PartialOrd::le (AssocFn) [DefId: DefId(1:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::petgraph::algo::UnitMeasure::one (AssocFn) [DefId: DefId(0:2267 ~ petgraph[6c95]::algo::UnitMeasure::one)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(0:2267 ~ petgraph[6c95]::algo::UnitMeasure::one)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::fmt::rt::<impl core::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::petgraph::algo::UnitMeasure::from_usize (AssocFn) [DefId: DefId(0:2268 ~ petgraph[6c95]::algo::UnitMeasure::from_usize)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(0:2268 ~ petgraph[6c95]::algo::UnitMeasure::from_usize)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Div::div (AssocFn) [DefId: DefId(1:38936 ~ core[4720]::ops::arith::Div::div)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:38936 ~ core[4720]::ops::arith::Div::div)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::petgraph::algo::UnitMeasure::one (AssocFn) [DefId: DefId(0:2267 ~ petgraph[6c95]::algo::UnitMeasure::one)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(0:2267 ~ petgraph[6c95]::algo::UnitMeasure::one)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::petgraph::visit::NodeIndexable::from_index (AssocFn) [DefId: DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::collect (AssocFn) [DefId: DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::map (AssocFn) [DefId: DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::sum (AssocFn) [DefId: DefId(1:9666 ~ core[4720]::iter::traits::iterator::Iterator::sum)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9666 ~ core[4720]::iter::traits::iterator::Iterator::sum)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::map (AssocFn) [DefId: DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::petgraph::visit::IntoEdges::edges (AssocFn) [DefId: DefId(0:5266 ~ petgraph[6c95]::visit::IntoEdges::edges)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(0:5266 ~ petgraph[6c95]::visit::IntoEdges::edges)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Fn::call (AssocFn) [DefId: DefId(1:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::petgraph::algo::UnitMeasure::one (AssocFn) [DefId: DefId(0:2267 ~ petgraph[6c95]::algo::UnitMeasure::one)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(0:2267 ~ petgraph[6c95]::algo::UnitMeasure::one)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::collect (AssocFn) [DefId: DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::map (AssocFn) [DefId: DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::enumerate (AssocFn) [DefId: DefId(1:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::sum (AssocFn) [DefId: DefId(1:9666 ~ core[4720]::iter::traits::iterator::Iterator::sum)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9666 ~ core[4720]::iter::traits::iterator::Iterator::sum)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::map (AssocFn) [DefId: DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::enumerate (AssocFn) [DefId: DefId(1:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::petgraph::visit::IntoEdges::edges (AssocFn) [DefId: DefId(0:5266 ~ petgraph[6c95]::visit::IntoEdges::edges)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(0:5266 ~ petgraph[6c95]::visit::IntoEdges::edges)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Fn::call (AssocFn) [DefId: DefId(1:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::any (AssocFn) [DefId: DefId(1:9563 ~ core[4720]::iter::traits::iterator::Iterator::any)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9563 ~ core[4720]::iter::traits::iterator::Iterator::any)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::cmp::PartialEq::eq (AssocFn) [DefId: DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::petgraph::visit::EdgeRef::target (AssocFn) [DefId: DefId(0:236 ~ petgraph[6c95]::visit::EdgeRef::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(0:236 ~ petgraph[6c95]::visit::EdgeRef::target)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Fn::call (AssocFn) [DefId: DefId(1:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Div::div (AssocFn) [DefId: DefId(1:38936 ~ core[4720]::ops::arith::Div::div)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:38936 ~ core[4720]::ops::arith::Div::div)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Mul::mul (AssocFn) [DefId: DefId(1:38740 ~ core[4720]::ops::arith::Mul::mul)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:38740 ~ core[4720]::ops::arith::Mul::mul)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::cmp::PartialEq::eq (AssocFn) [DefId: DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::petgraph::algo::UnitMeasure::zero (AssocFn) [DefId: DefId(0:2266 ~ petgraph[6c95]::algo::UnitMeasure::zero)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(0:2266 ~ petgraph[6c95]::algo::UnitMeasure::zero)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Div::div (AssocFn) [DefId: DefId(1:38936 ~ core[4720]::ops::arith::Div::div)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:38936 ~ core[4720]::ops::arith::Div::div)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Mul::mul (AssocFn) [DefId: DefId(1:38740 ~ core[4720]::ops::arith::Mul::mul)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:38740 ~ core[4720]::ops::arith::Mul::mul)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Div::div (AssocFn) [DefId: DefId(1:38936 ~ core[4720]::ops::arith::Div::div)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:38936 ~ core[4720]::ops::arith::Div::div)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Mul::mul (AssocFn) [DefId: DefId(1:38740 ~ core[4720]::ops::arith::Mul::mul)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:38740 ~ core[4720]::ops::arith::Mul::mul)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Sub::sub (AssocFn) [DefId: DefId(1:3781 ~ core[4720]::ops::arith::Sub::sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:3781 ~ core[4720]::ops::arith::Sub::sub)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::petgraph::algo::UnitMeasure::one (AssocFn) [DefId: DefId(0:2267 ~ petgraph[6c95]::algo::UnitMeasure::one)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(0:2267 ~ petgraph[6c95]::algo::UnitMeasure::one)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::sum (AssocFn) [DefId: DefId(1:9666 ~ core[4720]::iter::traits::iterator::Iterator::sum)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9666 ~ core[4720]::iter::traits::iterator::Iterator::sum)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::copied (AssocFn) [DefId: DefId(1:9657 ~ core[4720]::iter::traits::iterator::Iterator::copied)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9657 ~ core[4720]::iter::traits::iterator::Iterator::copied)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::collect (AssocFn) [DefId: DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::map (AssocFn) [DefId: DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::ops::Div::div (AssocFn) [DefId: DefId(1:38936 ~ core[4720]::ops::arith::Div::div)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:38936 ~ core[4720]::ops::arith::Div::div)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::page_rank USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1935 ~ petgraph[6c95]::algo::page_rank::page_rank)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::out_edges_info USES crate::petgraph::visit::NodeIndexable::from_index (AssocFn) [DefId: DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1945 ~ petgraph[6c95]::algo::page_rank::out_edges_info)",
+      "used_def_id": "DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::out_edges_info USES crate::petgraph::visit::NodeIndexable::from_index (AssocFn) [DefId: DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1945 ~ petgraph[6c95]::algo::page_rank::out_edges_info)",
+      "used_def_id": "DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::out_edges_info USES crate::petgraph::visit::IntoEdges::edges (AssocFn) [DefId: DefId(0:5266 ~ petgraph[6c95]::visit::IntoEdges::edges)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1945 ~ petgraph[6c95]::algo::page_rank::out_edges_info)",
+      "used_def_id": "DefId(0:5266 ~ petgraph[6c95]::visit::IntoEdges::edges)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::out_edges_info USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1945 ~ petgraph[6c95]::algo::page_rank::out_edges_info)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::out_edges_info USES crate::petgraph::algo::UnitMeasure::zero (AssocFn) [DefId: DefId(0:2266 ~ petgraph[6c95]::algo::UnitMeasure::zero)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1945 ~ petgraph[6c95]::algo::page_rank::out_edges_info)",
+      "used_def_id": "DefId(0:2266 ~ petgraph[6c95]::algo::UnitMeasure::zero)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::out_edges_info USES crate::core::core::ops::Add::add (AssocFn) [DefId: DefId(1:3776 ~ core[4720]::ops::arith::Add::add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1945 ~ petgraph[6c95]::algo::page_rank::out_edges_info)",
+      "used_def_id": "DefId(1:3776 ~ core[4720]::ops::arith::Add::add)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::out_edges_info USES crate::petgraph::algo::UnitMeasure::one (AssocFn) [DefId: DefId(0:2267 ~ petgraph[6c95]::algo::UnitMeasure::one)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1945 ~ petgraph[6c95]::algo::page_rank::out_edges_info)",
+      "used_def_id": "DefId(0:2267 ~ petgraph[6c95]::algo::UnitMeasure::one)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::out_edges_info USES crate::core::core::cmp::PartialEq::eq (AssocFn) [DefId: DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1945 ~ petgraph[6c95]::algo::page_rank::out_edges_info)",
+      "used_def_id": "DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::out_edges_info USES crate::petgraph::visit::EdgeRef::target (AssocFn) [DefId: DefId(0:236 ~ petgraph[6c95]::visit::EdgeRef::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1945 ~ petgraph[6c95]::algo::page_rank::out_edges_info)",
+      "used_def_id": "DefId(0:236 ~ petgraph[6c95]::visit::EdgeRef::target)"
+    },
+    {
+      "usage": "crate::petgraph::algo::page_rank::out_edges_info USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1945 ~ petgraph[6c95]::algo::page_rank::out_edges_info)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    }
+  ]
+}

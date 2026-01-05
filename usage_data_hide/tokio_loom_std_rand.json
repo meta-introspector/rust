@@ -1,0 +1,38 @@
+{
+  "crate": "tokio",
+  "module": "loom::std::rand",
+  "usages": [
+    {
+      "usage": "crate::tokio::loom::std::rand::COUNTER USES crate::core::std::sync::atomic::AtomicU32::new (AssocFn) [DefId: DefId(2:50075 ~ core[4720]::sync::atomic::{impl#74}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:498 ~ tokio[47da]::loom::std::rand::COUNTER)",
+      "used_def_id": "DefId(2:50075 ~ core[4720]::sync::atomic::{impl#74}::new)"
+    },
+    {
+      "usage": "crate::tokio::loom::std::rand::seed USES crate::std::std::hash::RandomState::new (AssocFn) [DefId: DefId(1:2698 ~ std[93f5]::hash::random::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:499 ~ tokio[47da]::loom::std::rand::seed)",
+      "used_def_id": "DefId(1:2698 ~ std[93f5]::hash::random::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::tokio::loom::std::rand::seed USES crate::core::std::hash::BuildHasher::hash_one (AssocFn) [DefId: DefId(2:12264 ~ core[4720]::hash::BuildHasher::hash_one)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:499 ~ tokio[47da]::loom::std::rand::seed)",
+      "used_def_id": "DefId(2:12264 ~ core[4720]::hash::BuildHasher::hash_one)"
+    },
+    {
+      "usage": "crate::tokio::loom::std::rand::seed USES crate::core::std::sync::atomic::AtomicU32::fetch_add (AssocFn) [DefId: DefId(2:50091 ~ core[4720]::sync::atomic::{impl#74}::fetch_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:499 ~ tokio[47da]::loom::std::rand::seed)",
+      "used_def_id": "DefId(2:50091 ~ core[4720]::sync::atomic::{impl#74}::fetch_add)"
+    }
+  ]
+}

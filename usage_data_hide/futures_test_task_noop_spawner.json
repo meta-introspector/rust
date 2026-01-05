@@ -1,0 +1,30 @@
+{
+  "crate": "futures_test",
+  "module": "task::noop_spawner",
+  "usages": [
+    {
+      "usage": "crate::futures_test::task::noop_spawner::noop_spawner_mut USES crate::alloc::std::boxed::Box::<T, A>::leak (AssocFn) [DefId: DefId(3:743 ~ alloc[27b0]::boxed::{impl#7}::leak)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:47 ~ futures_test[c424]::task::noop_spawner::noop_spawner_mut)",
+      "used_def_id": "DefId(3:743 ~ alloc[27b0]::boxed::{impl#7}::leak)"
+    },
+    {
+      "usage": "crate::futures_test::task::noop_spawner::noop_spawner_mut USES crate::alloc::std::boxed::Box::<T>::new (AssocFn) [DefId: DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:47 ~ futures_test[c424]::task::noop_spawner::noop_spawner_mut)",
+      "used_def_id": "DefId(3:680 ~ alloc[27b0]::boxed::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::futures_test::task::noop_spawner::noop_spawner_mut USES crate::futures_test::task::noop_spawner::NoopSpawner::new (AssocFn) [DefId: DefId(0:42 ~ futures_test[c424]::task::noop_spawner::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:47 ~ futures_test[c424]::task::noop_spawner::noop_spawner_mut)",
+      "used_def_id": "DefId(0:42 ~ futures_test[c424]::task::noop_spawner::{impl#0}::new)"
+    }
+  ]
+}

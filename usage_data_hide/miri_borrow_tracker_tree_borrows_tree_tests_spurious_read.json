@@ -1,0 +1,318 @@
+{
+  "crate": "miri",
+  "module": "borrow_tracker::tree_borrows::tree::tests::spurious_read",
+  "usages": [
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable USES crate::miri::borrow_tracker::tree_borrows::tree::LocationState::new_accessed (AssocFn) [DefId: DefId(0:787 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::{impl#0}::new_accessed)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5896 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable#1)",
+      "used_def_id": "DefId(0:787 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::{impl#0}::new_accessed)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable USES crate::miri::borrow_tracker::tree_borrows::perms::Permission::new_frozen (AssocFn) [DefId: DefId(0:621 ~ miri[02e8]::borrow_tracker::tree_borrows::perms::{impl#2}::new_frozen)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5896 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable#1)",
+      "used_def_id": "DefId(0:621 ~ miri[02e8]::borrow_tracker::tree_borrows::perms::{impl#2}::new_frozen)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5896 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable USES crate::miri::borrow_tracker::tree_borrows::tree::LocationState::new_non_accessed (AssocFn) [DefId: DefId(0:786 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::{impl#0}::new_non_accessed)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5896 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable#1)",
+      "used_def_id": "DefId(0:786 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::{impl#0}::new_non_accessed)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable USES crate::miri::borrow_tracker::tree_borrows::perms::Permission::new_reserved_frz (AssocFn) [DefId: DefId(0:619 ~ miri[02e8]::borrow_tracker::tree_borrows::perms::{impl#2}::new_reserved_frz)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5896 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable#1)",
+      "used_def_id": "DefId(0:619 ~ miri[02e8]::borrow_tracker::tree_borrows::perms::{impl#2}::new_reserved_frz)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5896 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable#1)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable USES crate::core::std::result::Result::<T, E>::unwrap (AssocFn) [DefId: DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5896 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable#1)",
+      "used_def_id": "DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable USES crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::LocStateProtPair::perform_test_access (AssocFn) [DefId: DefId(0:753 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::{impl#12}::perform_test_access)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5896 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable#1)",
+      "used_def_id": "DefId(0:753 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::{impl#12}::perform_test_access)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5896 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable#1)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable USES crate::miri::borrow_tracker::tree_borrows::perms::Permission::is_reserved_frz_with_conflicted (AssocFn) [DefId: DefId(0:650 ~ miri[02e8]::borrow_tracker::tree_borrows::perms::{impl#4}::is_reserved_frz_with_conflicted)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5896 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable#1)",
+      "used_def_id": "DefId(0:650 ~ miri[02e8]::borrow_tracker::tree_borrows::perms::{impl#4}::is_reserved_frz_with_conflicted)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable USES crate::miri::borrow_tracker::tree_borrows::perms::Permission::is_reserved_frz_with_conflicted (AssocFn) [DefId: DefId(0:650 ~ miri[02e8]::borrow_tracker::tree_borrows::perms::{impl#4}::is_reserved_frz_with_conflicted)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5896 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable#1)",
+      "used_def_id": "DefId(0:650 ~ miri[02e8]::borrow_tracker::tree_borrows::perms::{impl#4}::is_reserved_frz_with_conflicted)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable USES crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::LocStateProtPair::distinguishable (AssocFn) [DefId: DefId(0:5890 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::{impl#17}::distinguishable)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5896 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::reserved_aliased_protected_indistinguishable#1)",
+      "used_def_id": "DefId(0:5890 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::{impl#17}::distinguishable)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::miri::borrow_tracker::tree_borrows::exhaustive::Exhaustive::exhaustive (AssocFn) [DefId: DefId(0:959 ~ miri[02e8]::borrow_tracker::tree_borrows::exhaustive::Exhaustive::exhaustive)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(0:959 ~ miri[02e8]::borrow_tracker::tree_borrows::exhaustive::Exhaustive::exhaustive)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::Pattern::initial_state (AssocFn) [DefId: DefId(0:784 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::{impl#20}::initial_state)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(0:784 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::{impl#20}::initial_state)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::LocStateProtPair::all_states_reachable_via_opaque_code (AssocFn) [DefId: DefId(0:773 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::{impl#16}::all_states_reachable_via_opaque_code)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(0:773 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::{impl#16}::all_states_reachable_via_opaque_code)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::LocStateProtPair::perform_test_access (AssocFn) [DefId: DefId(0:753 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::{impl#12}::perform_test_access)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(0:753 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::{impl#12}::perform_test_access)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::core::bool::<impl bool>::then_some (AssocFn) [DefId: DefId(2:15934 ~ core[4720]::bool::{impl#0}::then_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:15934 ~ core[4720]::bool::{impl#0}::then_some)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::LocStateProtPair::distinguishable (AssocFn) [DefId: DefId(0:5890 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::{impl#17}::distinguishable)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(0:5890 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::{impl#17}::distinguishable)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::miri::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5909 ~ miri[02e8]::borrow_tracker::tree_borrows::tree::tests::spurious_read::test_all_patterns#1)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    }
+  ]
+}

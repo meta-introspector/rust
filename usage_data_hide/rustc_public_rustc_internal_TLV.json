@@ -1,0 +1,22 @@
+{
+  "crate": "rustc_public",
+  "module": "rustc_internal::TLV",
+  "usages": [
+    {
+      "usage": "crate::rustc_public::rustc_internal::TLV::FOO USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2680 ~ rustc_public[40af]::rustc_internal::TLV::FOO)",
+      "used_def_id": "DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::rustc_public::rustc_internal::TLV::FOO USES crate::std::std::thread::local_impl::EagerStorage::<T>::get (AssocFn) [DefId: DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2680 ~ rustc_public[40af]::rustc_internal::TLV::FOO)",
+      "used_def_id": "DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)"
+    }
+  ]
+}

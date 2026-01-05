@@ -1,0 +1,278 @@
+{
+  "crate": "tokio",
+  "module": "runtime::context",
+  "usages": [
+    {
+      "usage": "crate::tokio::runtime::context::CONTEXT USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5950 ~ tokio[47da]::runtime::context::CONTEXT)",
+      "used_def_id": "DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::CONTEXT USES crate::std::std::thread::local_impl::EagerStorage::<T>::get (AssocFn) [DefId: DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5950 ~ tokio[47da]::runtime::context::CONTEXT)",
+      "used_def_id": "DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::thread_rng_n USES crate::std::std::thread::LocalKey::<T>::with (AssocFn) [DefId: DefId(1:570 ~ std[93f5]::thread::local::{impl#4}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5692 ~ tokio[47da]::runtime::context::thread_rng_n)",
+      "used_def_id": "DefId(1:570 ~ std[93f5]::thread::local::{impl#4}::with)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::thread_rng_n USES crate::core::std::option::Option::<T>::unwrap_or_else (AssocFn) [DefId: DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5692 ~ tokio[47da]::runtime::context::thread_rng_n)",
+      "used_def_id": "DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::thread_rng_n USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5692 ~ tokio[47da]::runtime::context::thread_rng_n)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::thread_rng_n USES crate::tokio::util::rand::FastRand::new (AssocFn) [DefId: DefId(0:707 ~ tokio[47da]::util::rand::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5692 ~ tokio[47da]::runtime::context::thread_rng_n)",
+      "used_def_id": "DefId(0:707 ~ tokio[47da]::util::rand::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::thread_rng_n USES crate::tokio::util::rand::FastRand::fastrand_n (AssocFn) [DefId: DefId(0:709 ~ tokio[47da]::util::rand::{impl#1}::fastrand_n)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5692 ~ tokio[47da]::runtime::context::thread_rng_n)",
+      "used_def_id": "DefId(0:709 ~ tokio[47da]::util::rand::{impl#1}::fastrand_n)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::thread_rng_n USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5692 ~ tokio[47da]::runtime::context::thread_rng_n)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::budget USES crate::std::std::thread::LocalKey::<T>::try_with (AssocFn) [DefId: DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5694 ~ tokio[47da]::runtime::context::budget)",
+      "used_def_id": "DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::budget USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5694 ~ tokio[47da]::runtime::context::budget)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::thread_id USES crate::std::std::thread::LocalKey::<T>::try_with (AssocFn) [DefId: DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5958 ~ tokio[47da]::runtime::context::thread_id)",
+      "used_def_id": "DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::thread_id USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5958 ~ tokio[47da]::runtime::context::thread_id)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::thread_id USES crate::tokio::runtime::thread_id::ThreadId::next (AssocFn) [DefId: DefId(0:8650 ~ tokio[47da]::runtime::thread_id::{impl#0}::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5958 ~ tokio[47da]::runtime::context::thread_id)",
+      "used_def_id": "DefId(0:8650 ~ tokio[47da]::runtime::thread_id::{impl#0}::next)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::thread_id USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5958 ~ tokio[47da]::runtime::context::thread_id)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::set_current_task_id USES crate::core::std::result::Result::<T, E>::unwrap_or (AssocFn) [DefId: DefId(2:11124 ~ core[4720]::result::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5960 ~ tokio[47da]::runtime::context::set_current_task_id)",
+      "used_def_id": "DefId(2:11124 ~ core[4720]::result::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::set_current_task_id USES crate::std::std::thread::LocalKey::<T>::try_with (AssocFn) [DefId: DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5960 ~ tokio[47da]::runtime::context::set_current_task_id)",
+      "used_def_id": "DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::set_current_task_id USES crate::core::std::cell::Cell::<T>::replace (AssocFn) [DefId: DefId(2:5548 ~ core[4720]::cell::{impl#9}::replace)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5960 ~ tokio[47da]::runtime::context::set_current_task_id)",
+      "used_def_id": "DefId(2:5548 ~ core[4720]::cell::{impl#9}::replace)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::current_task_id USES crate::core::std::result::Result::<T, E>::unwrap_or (AssocFn) [DefId: DefId(2:11124 ~ core[4720]::result::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5962 ~ tokio[47da]::runtime::context::current_task_id)",
+      "used_def_id": "DefId(2:11124 ~ core[4720]::result::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::current_task_id USES crate::std::std::thread::LocalKey::<T>::try_with (AssocFn) [DefId: DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5962 ~ tokio[47da]::runtime::context::current_task_id)",
+      "used_def_id": "DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::current_task_id USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5962 ~ tokio[47da]::runtime::context::current_task_id)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::defer USES crate::tokio::runtime::scheduler::Context::defer (AssocFn) [DefId: DefId(0:6904 ~ tokio[47da]::runtime::scheduler::{impl#5}::defer)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5964 ~ tokio[47da]::runtime::context::defer)",
+      "used_def_id": "DefId(0:6904 ~ tokio[47da]::runtime::scheduler::{impl#5}::defer)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::defer USES crate::core::std::task::Waker::wake_by_ref (AssocFn) [DefId: DefId(2:15797 ~ core[4720]::task::wake::{impl#8}::wake_by_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5964 ~ tokio[47da]::runtime::context::defer)",
+      "used_def_id": "DefId(2:15797 ~ core[4720]::task::wake::{impl#8}::wake_by_ref)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::set_scheduler USES crate::std::std::thread::LocalKey::<T>::with (AssocFn) [DefId: DefId(1:570 ~ std[93f5]::thread::local::{impl#4}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5966 ~ tokio[47da]::runtime::context::set_scheduler)",
+      "used_def_id": "DefId(1:570 ~ std[93f5]::thread::local::{impl#4}::with)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::set_scheduler USES crate::tokio::runtime::context::scoped::Scoped::<T>::set (AssocFn) [DefId: DefId(0:5896 ~ tokio[47da]::runtime::context::scoped::{impl#0}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5966 ~ tokio[47da]::runtime::context::set_scheduler)",
+      "used_def_id": "DefId(0:5896 ~ tokio[47da]::runtime::context::scoped::{impl#0}::set)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::with_scheduler USES crate::core::std::result::Result::<T, E>::unwrap_or_else (AssocFn) [DefId: DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5970 ~ tokio[47da]::runtime::context::with_scheduler)",
+      "used_def_id": "DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::with_scheduler USES crate::std::std::thread::LocalKey::<T>::try_with (AssocFn) [DefId: DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5970 ~ tokio[47da]::runtime::context::with_scheduler)",
+      "used_def_id": "DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::with_scheduler USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5970 ~ tokio[47da]::runtime::context::with_scheduler)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::with_scheduler USES crate::core::std::option::Option::<T>::take (AssocFn) [DefId: DefId(2:10275 ~ core[4720]::option::{impl#0}::take)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5970 ~ tokio[47da]::runtime::context::with_scheduler)",
+      "used_def_id": "DefId(2:10275 ~ core[4720]::option::{impl#0}::take)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::with_scheduler USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5970 ~ tokio[47da]::runtime::context::with_scheduler)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::with_scheduler USES crate::tokio::runtime::context::scoped::Scoped::<T>::with (AssocFn) [DefId: DefId(0:5907 ~ tokio[47da]::runtime::context::scoped::{impl#0}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5970 ~ tokio[47da]::runtime::context::with_scheduler)",
+      "used_def_id": "DefId(0:5907 ~ tokio[47da]::runtime::context::scoped::{impl#0}::with)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::with_scheduler USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5970 ~ tokio[47da]::runtime::context::with_scheduler)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::with_scheduler USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5970 ~ tokio[47da]::runtime::context::with_scheduler)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::with_scheduler USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5970 ~ tokio[47da]::runtime::context::with_scheduler)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::tokio::runtime::context::with_scheduler USES crate::core::std::option::Option::<T>::take (AssocFn) [DefId: DefId(2:10275 ~ core[4720]::option::{impl#0}::take)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:5970 ~ tokio[47da]::runtime::context::with_scheduler)",
+      "used_def_id": "DefId(2:10275 ~ core[4720]::option::{impl#0}::take)"
+    }
+  ]
+}

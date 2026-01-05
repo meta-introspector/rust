@@ -95,6 +95,10 @@ name = "version_stable_compiler"
 path = "src/bin/version_stable_compiler.rs"
 
 [[bin]]
+name = "perfect_hash_stable_ids"
+path = "src/bin/perfect_hash_stable_ids.rs"
+
+[[bin]]
 name = "homotopy_system_g_driver"
 path = "src/bin/homotopy_system_g_driver.rs"
 
@@ -188,3 +192,4 @@ proc-macro2 = "1.0"
 quote = "1.0"
 rand = "0.8"
 wasm-bindgen = { version = "0.2", optional = true }
+chrono = { version = "0.4", features = ["serde"] }

@@ -1,0 +1,22 @@
+{
+  "crate": "tokio",
+  "module": "runtime::task",
+  "usages": [
+    {
+      "usage": "crate::tokio::runtime::task::new_task USES crate::tokio::runtime::task::raw::RawTask::new (AssocFn) [DefId: DefId(0:7976 ~ tokio[47da]::runtime::task::raw::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:8755 ~ tokio[47da]::runtime::task::new_task)",
+      "used_def_id": "DefId(0:7976 ~ tokio[47da]::runtime::task::raw::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::tokio::runtime::task::new_task USES crate::tokio::runtime::task::join::JoinHandle::<T>::new (AssocFn) [DefId: DefId(0:7836 ~ tokio[47da]::runtime::task::join::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:8755 ~ tokio[47da]::runtime::task::new_task)",
+      "used_def_id": "DefId(0:7836 ~ tokio[47da]::runtime::task::join::{impl#4}::new)"
+    }
+  ]
+}

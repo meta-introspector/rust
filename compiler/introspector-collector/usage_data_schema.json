@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Rust Usage Data Files Schema",
+  "oneOf": [
+    {
+      "title": "ModuleUsageData",
+      "type": "object",
+      "properties": {
+        "crate": {"type": "string"},
+        "module": {"type": "string"},
+        "usages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "usage": {"type": "string"},
+              "usage_count": {"type": "integer", "minimum": 1},
+              "usage_type": {
+                "type": "string",
+                "enum": ["MethodCall", "AssocConstAccess", "EnumVariant", "StructUsage", "EnumUsage", "FunctionCall", "ConstantAccess", "StaticAccess", "MacroCall", "TypeAlias", "UnionUsage", "TraitUsage", "ConstDecl", "StaticDecl", "StructDecl", "EnumDecl", "NumericLiteral", "Other"]
+              },
+              "node_type": {
+                "type": "string", 
+                "enum": ["Item", "Expr", "Stmt", "TraitItem", "ImplItem", "Pat", "Ty", "Expression", "Other"]
+              },
+              "user_def_id": {"type": "string"},
+              "used_def_id": {"type": "string"}
+            },
+            "required": ["usage", "usage_count", "usage_type", "node_type", "user_def_id", "used_def_id"]
+          }
+        }
+      },
+      "required": ["crate", "module", "usages"]
+    },
+    {
+      "title": "EnumClassificationData", 
+      "type": "object",
+      "properties": {
+        "crate": {"type": "string"},
+        "enums": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "variants": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "enum_name": {"type": "string"},
+                    "variant_name": {"type": "string"},
+                    "usage_classes": {
+                      "type": "object",
+                      "properties": {
+                        "string_conversion": {"type": "integer", "minimum": 0},
+                        "pattern_matching": {"type": "integer", "minimum": 0},
+                        "construction": {"type": "integer", "minimum": 0},
+                        "comparison": {"type": "integer", "minimum": 0},
+                        "debug_format": {"type": "integer", "minimum": 0},
+                        "serialization": {"type": "integer", "minimum": 0},
+                        "general": {"type": "integer", "minimum": 0}
+                      },
+                      "required": ["string_conversion", "pattern_matching", "construction", "comparison", "debug_format", "serialization", "general"]
+                    },
+                    "top_converters": {
+                      "type": "object",
+                      "additionalProperties": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": [
+                            {"type": "string"},
+                            {"type": "integer", "minimum": 1}
+                          ],
+                          "minItems": 2,
+                          "maxItems": 2
+                        }
+                      }
+                    }
+                  },
+                  "required": ["enum_name", "variant_name", "usage_classes", "top_converters"]
+                }
+              },
+              "total_usage_classes": {
+                "type": "object",
+                "properties": {
+                  "string_conversion": {"type": "integer", "minimum": 0},
+                  "pattern_matching": {"type": "integer", "minimum": 0},
+                  "construction": {"type": "integer", "minimum": 0},
+                  "comparison": {"type": "integer", "minimum": 0},
+                  "debug_format": {"type": "integer", "minimum": 0},
+                  "serialization": {"type": "integer", "minimum": 0},
+                  "general": {"type": "integer", "minimum": 0}
+                },
+                "required": ["string_conversion", "pattern_matching", "construction", "comparison", "debug_format", "serialization", "general"]
+              }
+            },
+            "required": ["name", "variants", "total_usage_classes"]
+          }
+        }
+      },
+      "required": ["crate", "enums"]
+    }
+  ]
+}

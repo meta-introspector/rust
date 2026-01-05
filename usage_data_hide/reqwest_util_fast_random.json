@@ -1,0 +1,62 @@
+{
+  "crate": "reqwest",
+  "module": "util::fast_random",
+  "usages": [
+    {
+      "usage": "crate::reqwest::util::fast_random::RNG USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1927 ~ reqwest[c5d8]::util::fast_random::RNG)",
+      "used_def_id": "DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::reqwest::util::fast_random::RNG USES crate::std::std::thread::local_impl::LazyStorage::<T, D>::get_or_init (AssocFn) [DefId: DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1927 ~ reqwest[c5d8]::util::fast_random::RNG)",
+      "used_def_id": "DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)"
+    },
+    {
+      "usage": "crate::reqwest::util::fast_random::RNG USES crate::std::std::thread::local_impl::LazyStorage::<T, D>::get_or_init (AssocFn) [DefId: DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1927 ~ reqwest[c5d8]::util::fast_random::RNG)",
+      "used_def_id": "DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)"
+    },
+    {
+      "usage": "crate::reqwest::util::fast_random::seed USES crate::std::std::hash::RandomState::new (AssocFn) [DefId: DefId(1:2698 ~ std[93f5]::hash::random::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1680 ~ reqwest[c5d8]::util::fast_random::seed)",
+      "used_def_id": "DefId(1:2698 ~ std[93f5]::hash::random::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::reqwest::util::fast_random::seed USES crate::core::std::hash::BuildHasher::build_hasher (AssocFn) [DefId: DefId(2:12263 ~ core[4720]::hash::BuildHasher::build_hasher)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1680 ~ reqwest[c5d8]::util::fast_random::seed)",
+      "used_def_id": "DefId(2:12263 ~ core[4720]::hash::BuildHasher::build_hasher)"
+    },
+    {
+      "usage": "crate::reqwest::util::fast_random::seed USES crate::core::std::hash::Hasher::write_usize (AssocFn) [DefId: DefId(2:12234 ~ core[4720]::hash::Hasher::write_usize)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1680 ~ reqwest[c5d8]::util::fast_random::seed)",
+      "used_def_id": "DefId(2:12234 ~ core[4720]::hash::Hasher::write_usize)"
+    },
+    {
+      "usage": "crate::reqwest::util::fast_random::seed USES crate::core::std::hash::Hasher::finish (AssocFn) [DefId: DefId(2:12227 ~ core[4720]::hash::Hasher::finish)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1680 ~ reqwest[c5d8]::util::fast_random::seed)",
+      "used_def_id": "DefId(2:12227 ~ core[4720]::hash::Hasher::finish)"
+    }
+  ]
+}

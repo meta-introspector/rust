@@ -1,0 +1,622 @@
+{
+  "crate": "petgraph",
+  "module": "algo::steiner_tree",
+  "usages": [
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_shortest_path_length USES crate::petgraph::visit::EdgeRef::weight (AssocFn) [DefId: DefId(0:237 ~ petgraph[6c95]::visit::EdgeRef::weight)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2089 ~ petgraph[6c95]::algo::steiner_tree::compute_shortest_path_length)",
+      "used_def_id": "DefId(0:237 ~ petgraph[6c95]::visit::EdgeRef::weight)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_shortest_path_length USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2089 ~ petgraph[6c95]::algo::steiner_tree::compute_shortest_path_length)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::hashbrown::hashbrown::HashMap::<K, V>::new (AssocFn) [DefId: DefId(22:602 ~ hashbrown[79d5]::map::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(22:602 ~ hashbrown[79d5]::map::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::core::core::iter::Iterator::enumerate (AssocFn) [DefId: DefId(1:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(1:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::core::core::iter::Iterator::skip (AssocFn) [DefId: DefId(1:9482 ~ core[4720]::iter::traits::iterator::Iterator::skip)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(1:9482 ~ core[4720]::iter::traits::iterator::Iterator::skip)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::hashbrown::hashbrown::HashMap::<K, V, S, A>::insert (AssocFn) [DefId: DefId(22:731 ~ hashbrown[79d5]::map::{impl#5}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(22:731 ~ hashbrown[79d5]::map::{impl#5}::insert)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::petgraph::visit::NodeIndexable::to_index (AssocFn) [DefId: DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::petgraph::visit::NodeIndexable::to_index (AssocFn) [DefId: DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::compute_metric_closure USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2092 ~ petgraph[6c95]::algo::steiner_tree::compute_metric_closure)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::hashbrown::hashbrown::HashSet::<T>::new (AssocFn) [DefId: DefId(22:1699 ~ hashbrown[79d5]::set::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(22:1699 ~ hashbrown[79d5]::set::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::alloc::alloc::vec::Vec::<T>::new (AssocFn) [DefId: DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::core::core::result::Result::<T, E>::unwrap (AssocFn) [DefId: DefId(1:11108 ~ core[4720]::result::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(1:11108 ~ core[4720]::result::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::petgraph::visit::EdgeRef::weight (AssocFn) [DefId: DefId(0:237 ~ petgraph[6c95]::visit::EdgeRef::weight)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(0:237 ~ petgraph[6c95]::visit::EdgeRef::weight)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::petgraph::visit::IntoEdgeReferences::edge_references (AssocFn) [DefId: DefId(0:5324 ~ petgraph[6c95]::visit::IntoEdgeReferences::edge_references)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(0:5324 ~ petgraph[6c95]::visit::IntoEdgeReferences::edge_references)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::petgraph::visit::NodeIndexable::to_index (AssocFn) [DefId: DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::petgraph::visit::EdgeRef::target (AssocFn) [DefId: DefId(0:236 ~ petgraph[6c95]::visit::EdgeRef::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(0:236 ~ petgraph[6c95]::visit::EdgeRef::target)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::petgraph::visit::NodeIndexable::to_index (AssocFn) [DefId: DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(0:5342 ~ petgraph[6c95]::visit::NodeIndexable::to_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::petgraph::visit::EdgeRef::source (AssocFn) [DefId: DefId(0:235 ~ petgraph[6c95]::visit::EdgeRef::source)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(0:235 ~ petgraph[6c95]::visit::EdgeRef::source)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::hashbrown::hashbrown::HashSet::<T, S, A>::insert (AssocFn) [DefId: DefId(22:1763 ~ hashbrown[79d5]::set::{impl#6}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(22:1763 ~ hashbrown[79d5]::set::{impl#6}::insert)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::petgraph::visit::NodeIndexable::from_index (AssocFn) [DefId: DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::hashbrown::hashbrown::HashSet::<T, S, A>::insert (AssocFn) [DefId: DefId(22:1763 ~ hashbrown[79d5]::set::{impl#6}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(22:1763 ~ hashbrown[79d5]::set::{impl#6}::insert)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::petgraph::visit::NodeIndexable::from_index (AssocFn) [DefId: DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::alloc::alloc::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(2:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(2:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::petgraph::visit::NodeIndexable::from_index (AssocFn) [DefId: DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::petgraph::visit::NodeIndexable::from_index (AssocFn) [DefId: DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(0:5343 ~ petgraph[6c95]::visit::NodeIndexable::from_index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::subgraph_edges_from_metric_closure USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2094 ~ petgraph[6c95]::algo::steiner_tree::subgraph_edges_from_metric_closure)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::hashbrown::hashbrown::HashSet::<T>::new (AssocFn) [DefId: DefId(22:1699 ~ hashbrown[79d5]::set::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(22:1699 ~ hashbrown[79d5]::set::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::core::core::iter::Iterator::collect (AssocFn) [DefId: DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::core::core::iter::Iterator::filter (AssocFn) [DefId: DefId(1:9468 ~ core[4720]::iter::traits::iterator::Iterator::filter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(1:9468 ~ core[4720]::iter::traits::iterator::Iterator::filter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::petgraph::visit::IntoNodeIdentifiers::node_identifiers (AssocFn) [DefId: DefId(0:5284 ~ petgraph[6c95]::visit::IntoNodeIdentifiers::node_identifiers)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(0:5284 ~ petgraph[6c95]::visit::IntoNodeIdentifiers::node_identifiers)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::hashbrown::hashbrown::HashSet::<T, S, A>::len (AssocFn) [DefId: DefId(22:1712 ~ hashbrown[79d5]::set::{impl#3}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(22:1712 ~ hashbrown[79d5]::set::{impl#3}::len)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::core::core::iter::Iterator::collect (AssocFn) [DefId: DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::petgraph::visit::IntoNeighbors::neighbors (AssocFn) [DefId: DefId(0:5253 ~ petgraph[6c95]::visit::IntoNeighbors::neighbors)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(0:5253 ~ petgraph[6c95]::visit::IntoNeighbors::neighbors)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::core::core::slice::<impl [T]>::contains (AssocFn) [DefId: DefId(1:14156 ~ core[4720]::slice::{impl#0}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(1:14156 ~ core[4720]::slice::{impl#0}::contains)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::hashbrown::hashbrown::HashSet::<T, S, A>::is_empty (AssocFn) [DefId: DefId(22:1713 ~ hashbrown[79d5]::set::{impl#3}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(22:1713 ~ hashbrown[79d5]::set::{impl#3}::is_empty)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::core::core::iter::Iterator::collect (AssocFn) [DefId: DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::core::core::iter::Iterator::filter (AssocFn) [DefId: DefId(1:9468 ~ core[4720]::iter::traits::iterator::Iterator::filter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(1:9468 ~ core[4720]::iter::traits::iterator::Iterator::filter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::petgraph::visit::IntoNodeIdentifiers::node_identifiers (AssocFn) [DefId: DefId(0:5284 ~ petgraph[6c95]::visit::IntoNodeIdentifiers::node_identifiers)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(0:5284 ~ petgraph[6c95]::visit::IntoNodeIdentifiers::node_identifiers)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::core::core::slice::<impl [T]>::contains (AssocFn) [DefId: DefId(1:14156 ~ core[4720]::slice::{impl#0}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(1:14156 ~ core[4720]::slice::{impl#0}::contains)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::hashbrown::hashbrown::HashSet::<T, S, A>::contains (AssocFn) [DefId: DefId(22:1750 ~ hashbrown[79d5]::set::{impl#6}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(22:1750 ~ hashbrown[79d5]::set::{impl#6}::contains)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::alloc::alloc::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(2:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(2:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::core::core::iter::Iterator::collect (AssocFn) [DefId: DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::hashbrown::hashbrown::HashSet::<T, S, A>::difference (AssocFn) [DefId: DefId(22:1742 ~ hashbrown[79d5]::set::{impl#6}::difference)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(22:1742 ~ hashbrown[79d5]::set::{impl#6}::difference)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::core::core::iter::Iterator::collect (AssocFn) [DefId: DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::petgraph::visit::IntoNeighbors::neighbors (AssocFn) [DefId: DefId(0:5253 ~ petgraph[6c95]::visit::IntoNeighbors::neighbors)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(0:5253 ~ petgraph[6c95]::visit::IntoNeighbors::neighbors)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::core::core::iter::Iterator::collect (AssocFn) [DefId: DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::core::core::iter::Iterator::cloned (AssocFn) [DefId: DefId(1:9660 ~ core[4720]::iter::traits::iterator::Iterator::cloned)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(1:9660 ~ core[4720]::iter::traits::iterator::Iterator::cloned)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::non_terminal_leaves USES crate::hashbrown::hashbrown::HashSet::<T, S, A>::union (AssocFn) [DefId: DefId(22:1748 ~ hashbrown[79d5]::set::{impl#6}::union)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2097 ~ petgraph[6c95]::algo::steiner_tree::non_terminal_leaves)",
+      "used_def_id": "DefId(22:1748 ~ hashbrown[79d5]::set::{impl#6}::union)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::petgraph::graph_impl::Graph::<N, E, Ty, Ix>::from_edges (AssocFn) [DefId: DefId(0:2995 ~ petgraph[6c95]::graph_impl::{impl#22}::from_edges)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(0:2995 ~ petgraph[6c95]::graph_impl::{impl#22}::from_edges)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::core::core::iter::Iterator::map (AssocFn) [DefId: DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::hashbrown::hashbrown::HashMap::<K, V, S, A>::iter (AssocFn) [DefId: DefId(22:629 ~ hashbrown[79d5]::map::{impl#4}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(22:629 ~ hashbrown[79d5]::map::{impl#4}::iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::petgraph::data::FromElements::from_elements (AssocFn) [DefId: DefId(0:735 ~ petgraph[6c95]::data::FromElements::from_elements)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(0:735 ~ petgraph[6c95]::data::FromElements::from_elements)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::core::core::convert::From::from (AssocFn) [DefId: DefId(1:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(1:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::core::core::clone::Clone::clone (AssocFn) [DefId: DefId(1:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(1:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::petgraph::graph_impl::stable_graph::StableGraph::<N, E, Ty, Ix>::retain_edges (AssocFn) [DefId: DefId(0:3632 ~ petgraph[6c95]::graph_impl::stable_graph::{impl#5}::retain_edges)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(0:3632 ~ petgraph[6c95]::graph_impl::stable_graph::{impl#5}::retain_edges)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::core::core::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(1:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(1:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::petgraph::graph_impl::stable_graph::StableGraph::<N, E, Ty, Ix>::edge_endpoints (AssocFn) [DefId: DefId(0:3607 ~ petgraph[6c95]::graph_impl::stable_graph::{impl#5}::edge_endpoints)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(0:3607 ~ petgraph[6c95]::graph_impl::stable_graph::{impl#5}::edge_endpoints)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::core::core::slice::<impl [T]>::contains (AssocFn) [DefId: DefId(1:14156 ~ core[4720]::slice::{impl#0}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(1:14156 ~ core[4720]::slice::{impl#0}::contains)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::core::core::slice::<impl [T]>::contains (AssocFn) [DefId: DefId(1:14156 ~ core[4720]::slice::{impl#0}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(1:14156 ~ core[4720]::slice::{impl#0}::contains)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::petgraph::graph_impl::stable_graph::StableGraph::<N, E, Ty, Ix>::retain_nodes (AssocFn) [DefId: DefId(0:3630 ~ petgraph[6c95]::graph_impl::stable_graph::{impl#5}::retain_nodes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(0:3630 ~ petgraph[6c95]::graph_impl::stable_graph::{impl#5}::retain_nodes)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::hashbrown::hashbrown::HashSet::<T, S, A>::contains (AssocFn) [DefId: DefId(22:1750 ~ hashbrown[79d5]::set::{impl#6}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(22:1750 ~ hashbrown[79d5]::set::{impl#6}::contains)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::petgraph::graph_impl::stable_graph::StableGraph::<N, E, Ty, Ix>::retain_nodes (AssocFn) [DefId: DefId(0:3630 ~ petgraph[6c95]::graph_impl::stable_graph::{impl#5}::retain_nodes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(0:3630 ~ petgraph[6c95]::graph_impl::stable_graph::{impl#5}::retain_nodes)"
+    },
+    {
+      "usage": "crate::petgraph::algo::steiner_tree::steiner_tree USES crate::hashbrown::hashbrown::HashSet::<T, S, A>::contains (AssocFn) [DefId: DefId(22:1750 ~ hashbrown[79d5]::set::{impl#6}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2101 ~ petgraph[6c95]::algo::steiner_tree::steiner_tree)",
+      "used_def_id": "DefId(22:1750 ~ hashbrown[79d5]::set::{impl#6}::contains)"
+    }
+  ]
+}

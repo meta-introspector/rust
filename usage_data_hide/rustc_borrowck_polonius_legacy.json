@@ -1,0 +1,2366 @@
+{
+  "crate": "rustc_borrowck",
+  "module": "polonius::legacy",
+  "usages": [
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_facts USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::generic_activity (AssocFn) [DefId: DefId(34:1067 ~ rustc_data_structures[bb44]::profiling::{impl#0}::generic_activity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2591 ~ rustc_borrowck[5558]::polonius::legacy::emit_facts)",
+      "used_def_id": "DefId(34:1067 ~ rustc_data_structures[bb44]::profiling::{impl#0}::generic_activity)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::iter::Extend::extend (AssocFn) [DefId: DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::rustc_mir_dataflow::rustc_mir_dataflow::move_paths::MovePathLookup::<'tcx>::iter_locals_enumerated (AssocFn) [DefId: DefId(216:1193 ~ rustc_mir_dataflow[d0f3]::move_paths::{impl#12}::iter_locals_enumerated)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(216:1193 ~ rustc_mir_dataflow[d0f3]::move_paths::{impl#12}::iter_locals_enumerated)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::rustc_index::rustc_index::IndexSlice::<I, T>::iter_enumerated (AssocFn) [DefId: DefId(36:527 ~ rustc_index[3575]::slice::{impl#0}::iter_enumerated)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(36:527 ~ rustc_index[3575]::slice::{impl#0}::iter_enumerated)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::rustc_borrowck::polonius::legacy::location::PoloniusLocationTable::start_index (AssocFn) [DefId: DefId(0:2506 ~ rustc_borrowck[5558]::polonius::legacy::location::{impl#0}::start_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(0:2506 ~ rustc_borrowck[5558]::polonius::legacy::location::{impl#0}::start_index)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::rustc_index::rustc_index::IndexSlice::<I, T>::iter (AssocFn) [DefId: DefId(36:526 ~ rustc_index[3575]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(36:526 ~ rustc_index[3575]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::alloc::std::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::rustc_middle::rustc_middle::mir::Terminator::<'tcx>::successors (AssocFn) [DefId: DefId(204:2831 ~ rustc_middle[f25a]::mir::terminator::{impl#6}::successors)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(204:2831 ~ rustc_middle[f25a]::mir::terminator::{impl#6}::successors)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::rustc_middle::rustc_middle::mir::BasicBlockData::<'tcx>::terminator (AssocFn) [DefId: DefId(204:3128 ~ rustc_middle[f25a]::mir::{impl#17}::terminator)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(204:3128 ~ rustc_middle[f25a]::mir::{impl#17}::terminator)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::rustc_borrowck::polonius::legacy::location::PoloniusLocationTable::start_index (AssocFn) [DefId: DefId(0:2506 ~ rustc_borrowck[5558]::polonius::legacy::location::{impl#0}::start_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(0:2506 ~ rustc_borrowck[5558]::polonius::legacy::location::{impl#0}::start_index)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::rustc_borrowck::polonius::legacy::location::PoloniusLocationTable::mid_index (AssocFn) [DefId: DefId(0:2507 ~ rustc_borrowck[5558]::polonius::legacy::location::{impl#0}::mid_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(0:2507 ~ rustc_borrowck[5558]::polonius::legacy::location::{impl#0}::mid_index)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::rustc_middle::rustc_middle::mir::Body::<'tcx>::local_kind (AssocFn) [DefId: DefId(204:3019 ~ rustc_middle[f25a]::mir::{impl#6}::local_kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(204:3019 ~ rustc_middle[f25a]::mir::{impl#6}::local_kind)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::rustc_mir_dataflow::rustc_mir_dataflow::move_paths::MovePathLookup::<'tcx>::iter_locals_enumerated (AssocFn) [DefId: DefId(216:1193 ~ rustc_mir_dataflow[d0f3]::move_paths::{impl#12}::iter_locals_enumerated)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(216:1193 ~ rustc_mir_dataflow[d0f3]::move_paths::{impl#12}::iter_locals_enumerated)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::rustc_middle::rustc_middle::mir::Body::<'tcx>::local_kind (AssocFn) [DefId: DefId(204:3019 ~ rustc_middle[f25a]::mir::{impl#6}::local_kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(204:3019 ~ rustc_middle[f25a]::mir::{impl#6}::local_kind)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::iter::Extend::extend (AssocFn) [DefId: DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::rustc_index::rustc_index::IndexSlice::<I, T>::iter (AssocFn) [DefId: DefId(36:526 ~ rustc_index[3575]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(36:526 ~ rustc_index[3575]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_move_facts USES crate::rustc_borrowck::polonius::legacy::location::PoloniusLocationTable::mid_index (AssocFn) [DefId: DefId(0:2507 ~ rustc_borrowck[5558]::polonius::legacy::location::{impl#0}::mid_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2593 ~ rustc_borrowck[5558]::polonius::legacy::emit_move_facts)",
+      "used_def_id": "DefId(0:2507 ~ rustc_borrowck[5558]::polonius::legacy::location::{impl#0}::mid_index)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::iter::Extend::extend (AssocFn) [DefId: DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::rustc_borrowck::universal_regions::UniversalRegions::<'tcx>::universal_regions_iter (AssocFn) [DefId: DefId(0:4243 ~ rustc_borrowck[5558]::universal_regions::{impl#1}::universal_regions_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(0:4243 ~ rustc_borrowck[5558]::universal_regions::{impl#1}::universal_regions_iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::rustc_borrowck::borrow_set::BorrowSet::<'tcx>::len (AssocFn) [DefId: DefId(0:188 ~ rustc_borrowck[5558]::borrow_set::{impl#5}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(0:188 ~ rustc_borrowck[5558]::borrow_set::{impl#5}::len)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(78:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(78:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(78:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(78:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(22:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(22:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(22:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(22:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(78:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(22:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(78:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(78:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::rustc_borrowck::universal_regions::UniversalRegions::<'tcx>::len (AssocFn) [DefId: DefId(0:4246 ~ rustc_borrowck[5558]::universal_regions::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(0:4246 ~ rustc_borrowck[5558]::universal_regions::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(22:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(22:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(22:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(22:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(78:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(22:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(78:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(78:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::rustc_borrowck::universal_regions::UniversalRegions::<'tcx>::len (AssocFn) [DefId: DefId(0:4246 ~ rustc_borrowck[5558]::universal_regions::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(0:4246 ~ rustc_borrowck[5558]::universal_regions::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::rustc_borrowck::universal_regions::UniversalRegions::<'tcx>::universal_regions_iter (AssocFn) [DefId: DefId(0:4243 ~ rustc_borrowck[5558]::universal_regions::{impl#1}::universal_regions_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(0:4243 ~ rustc_borrowck[5558]::universal_regions::{impl#1}::universal_regions_iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::rustc_type_ir::rustc_middle::ty::RegionVid::index (AssocFn) [DefId: DefId(211:7133 ~ rustc_type_ir[1eea]::region_kind::{impl#3}::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(211:7133 ~ rustc_type_ir[1eea]::region_kind::{impl#3}::index)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::rustc_borrowck::type_check::free_region_relations::UniversalRegionRelations::<'_>::known_outlives (AssocFn) [DefId: DefId(0:3742 ~ rustc_borrowck[5558]::type_check::free_region_relations::{impl#0}::known_outlives)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(0:3742 ~ rustc_borrowck[5558]::type_check::free_region_relations::{impl#0}::known_outlives)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(78:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(78:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(78:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(78:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(22:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(22:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(22:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(22:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(78:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(22:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(78:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(78:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(22:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(22:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(22:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(22:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(78:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(22:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(22:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(78:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(78:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_universal_region_facts USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2596 ~ rustc_borrowck[5558]::polonius::legacy::emit_universal_region_facts)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(78:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(78:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(78:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(78:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(22:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(22:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(22:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(22:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(22:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(22:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(22:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(22:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(78:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(22:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(22:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(78:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(78:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(22:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(22:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(22:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(22:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(22:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(22:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(22:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(22:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(78:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(22:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(22:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(78:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(78:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(78:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::std::option::Option::<T>::as_mut (AssocFn) [DefId: DefId(2:10221 ~ core[4720]::option::{impl#0}::as_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:10221 ~ core[4720]::option::{impl#0}::as_mut)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::generic_activity (AssocFn) [DefId: DefId(34:1067 ~ rustc_data_structures[bb44]::profiling::{impl#0}::generic_activity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(34:1067 ~ rustc_data_structures[bb44]::profiling::{impl#0}::generic_activity)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::rustc_middle::rustc_middle::ty::visit::<impl rustc_middle::ty::TyCtxt<'tcx>>::for_each_free_region (AssocFn) [DefId: DefId(204:9179 ~ rustc_middle[f25a]::ty::visit::{impl#0}::for_each_free_region)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(204:9179 ~ rustc_middle[f25a]::ty::visit::{impl#0}::for_each_free_region)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::rustc_borrowck::universal_regions::UniversalRegions::<'tcx>::to_region_vid (AssocFn) [DefId: DefId(0:4251 ~ rustc_borrowck[5558]::universal_regions::{impl#1}::to_region_vid)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(0:4251 ~ rustc_borrowck[5558]::universal_regions::{impl#1}::to_region_vid)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::alloc::std::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(3:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_drop_facts USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2597 ~ rustc_borrowck[5558]::polonius::legacy::emit_drop_facts)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_outlives_facts USES crate::core::std::iter::Extend::extend (AssocFn) [DefId: DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2600 ~ rustc_borrowck[5558]::polonius::legacy::emit_outlives_facts)",
+      "used_def_id": "DefId(2:9305 ~ core[4720]::iter::traits::collect::Extend::extend)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_outlives_facts USES crate::core::std::iter::Iterator::flat_map (AssocFn) [DefId: DefId(2:9488 ~ core[4720]::iter::traits::iterator::Iterator::flat_map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2600 ~ rustc_borrowck[5558]::polonius::legacy::emit_outlives_facts)",
+      "used_def_id": "DefId(2:9488 ~ core[4720]::iter::traits::iterator::Iterator::flat_map)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_outlives_facts USES crate::rustc_index::rustc_index::IndexSlice::<I, T>::iter (AssocFn) [DefId: DefId(36:526 ~ rustc_index[3575]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2600 ~ rustc_borrowck[5558]::polonius::legacy::emit_outlives_facts)",
+      "used_def_id": "DefId(36:526 ~ rustc_index[3575]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_outlives_facts USES crate::rustc_borrowck::constraints::OutlivesConstraintSet::<'tcx>::outlives (AssocFn) [DefId: DefId(0:378 ~ rustc_borrowck[5558]::constraints::{impl#0}::outlives)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2600 ~ rustc_borrowck[5558]::polonius::legacy::emit_outlives_facts)",
+      "used_def_id": "DefId(0:378 ~ rustc_borrowck[5558]::constraints::{impl#0}::outlives)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_outlives_facts USES crate::rustc_borrowck::type_check::Locations::from_location (AssocFn) [DefId: DefId(0:4142 ~ rustc_borrowck[5558]::type_check::{impl#1}::from_location)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2600 ~ rustc_borrowck[5558]::polonius::legacy::emit_outlives_facts)",
+      "used_def_id": "DefId(0:4142 ~ rustc_borrowck[5558]::type_check::{impl#1}::from_location)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_outlives_facts USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2600 ~ rustc_borrowck[5558]::polonius::legacy::emit_outlives_facts)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_outlives_facts USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2600 ~ rustc_borrowck[5558]::polonius::legacy::emit_outlives_facts)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_outlives_facts USES crate::rustc_borrowck::polonius::legacy::location::PoloniusLocationTable::mid_index (AssocFn) [DefId: DefId(0:2507 ~ rustc_borrowck[5558]::polonius::legacy::location::{impl#0}::mid_index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2600 ~ rustc_borrowck[5558]::polonius::legacy::emit_outlives_facts)",
+      "used_def_id": "DefId(0:2507 ~ rustc_borrowck[5558]::polonius::legacy::location::{impl#0}::mid_index)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_outlives_facts USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2600 ~ rustc_borrowck[5558]::polonius::legacy::emit_outlives_facts)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_outlives_facts USES crate::rustc_borrowck::polonius::legacy::location::PoloniusLocationTable::all_points (AssocFn) [DefId: DefId(0:2504 ~ rustc_borrowck[5558]::polonius::legacy::location::{impl#0}::all_points)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2600 ~ rustc_borrowck[5558]::polonius::legacy::emit_outlives_facts)",
+      "used_def_id": "DefId(0:2504 ~ rustc_borrowck[5558]::polonius::legacy::location::{impl#0}::all_points)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_outlives_facts USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2600 ~ rustc_borrowck[5558]::polonius::legacy::emit_outlives_facts)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_borrowck::polonius::legacy::emit_outlives_facts USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2600 ~ rustc_borrowck[5558]::polonius::legacy::emit_outlives_facts)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    }
+  ]
+}

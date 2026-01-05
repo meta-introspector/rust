@@ -1,0 +1,1758 @@
+{
+  "crate": "parking_lot_core",
+  "module": "parking_lot",
+  "usages": [
+    {
+      "usage": "crate::parking_lot_core::parking_lot::NUM_THREADS USES crate::core::std::sync::atomic::AtomicUsize::new (AssocFn) [DefId: DefId(2:50241 ~ core[4720]::sync::atomic::{impl#94}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:23 ~ parking_lot_core[aa47]::parking_lot::NUM_THREADS)",
+      "used_def_id": "DefId(2:50241 ~ core[4720]::sync::atomic::{impl#94}::new)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::HASHTABLE USES crate::core::std::sync::atomic::AtomicPtr::<T>::new (AssocFn) [DefId: DefId(2:11311 ~ core[4720]::sync::atomic::{impl#6}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:24 ~ parking_lot_core[aa47]::parking_lot::HASHTABLE)",
+      "used_def_id": "DefId(2:11311 ~ core[4720]::sync::atomic::{impl#6}::new)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::with_thread_data USES crate::core::std::result::Result::<T, E>::unwrap_or_else (AssocFn) [DefId: DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:55 ~ parking_lot_core[aa47]::parking_lot::with_thread_data)",
+      "used_def_id": "DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::with_thread_data USES crate::std::std::thread::LocalKey::<T>::try_with (AssocFn) [DefId: DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:55 ~ parking_lot_core[aa47]::parking_lot::with_thread_data)",
+      "used_def_id": "DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::with_thread_data USES crate::core::std::option::Option::<T>::get_or_insert_with (AssocFn) [DefId: DefId(2:10273 ~ core[4720]::option::{impl#0}::get_or_insert_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:55 ~ parking_lot_core[aa47]::parking_lot::with_thread_data)",
+      "used_def_id": "DefId(2:10273 ~ core[4720]::option::{impl#0}::get_or_insert_with)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::with_thread_data USES crate::parking_lot_core::parking_lot::ThreadData::new (AssocFn) [DefId: DefId(0:54 ~ parking_lot_core[aa47]::parking_lot::{impl#3}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:55 ~ parking_lot_core[aa47]::parking_lot::with_thread_data)",
+      "used_def_id": "DefId(0:54 ~ parking_lot_core[aa47]::parking_lot::{impl#3}::new)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::with_thread_data USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:55 ~ parking_lot_core[aa47]::parking_lot::with_thread_data)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::get_hashtable USES crate::core::std::sync::atomic::AtomicPtr::<T>::load (AssocFn) [DefId: DefId(2:11320 ~ core[4720]::sync::atomic::{impl#6}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:62 ~ parking_lot_core[aa47]::parking_lot::get_hashtable)",
+      "used_def_id": "DefId(2:11320 ~ core[4720]::sync::atomic::{impl#6}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::get_hashtable USES crate::core::std::ptr::mut_ptr::<impl *mut T>::is_null (AssocFn) [DefId: DefId(2:2855 ~ core[4720]::ptr::mut_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:62 ~ parking_lot_core[aa47]::parking_lot::get_hashtable)",
+      "used_def_id": "DefId(2:2855 ~ core[4720]::ptr::mut_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::create_hashtable USES crate::alloc::std::boxed::Box::<T>::into_raw (AssocFn) [DefId: DefId(3:730 ~ alloc[27b0]::boxed::{impl#6}::into_raw)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:63 ~ parking_lot_core[aa47]::parking_lot::create_hashtable)",
+      "used_def_id": "DefId(3:730 ~ alloc[27b0]::boxed::{impl#6}::into_raw)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::create_hashtable USES crate::parking_lot_core::parking_lot::HashTable::new (AssocFn) [DefId: DefId(0:31 ~ parking_lot_core[aa47]::parking_lot::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:63 ~ parking_lot_core[aa47]::parking_lot::create_hashtable)",
+      "used_def_id": "DefId(0:31 ~ parking_lot_core[aa47]::parking_lot::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::create_hashtable USES crate::core::std::sync::atomic::AtomicPtr::<T>::compare_exchange (AssocFn) [DefId: DefId(2:11324 ~ core[4720]::sync::atomic::{impl#6}::compare_exchange)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:63 ~ parking_lot_core[aa47]::parking_lot::create_hashtable)",
+      "used_def_id": "DefId(2:11324 ~ core[4720]::sync::atomic::{impl#6}::compare_exchange)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::create_hashtable USES crate::alloc::std::boxed::Box::<T>::from_raw (AssocFn) [DefId: DefId(3:728 ~ alloc[27b0]::boxed::{impl#6}::from_raw)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:63 ~ parking_lot_core[aa47]::parking_lot::create_hashtable)",
+      "used_def_id": "DefId(3:728 ~ alloc[27b0]::boxed::{impl#6}::from_raw)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::ops::RangeFull (Struct) [DefId: DefId(2:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::parking_lot_core::word_lock::WordLock::lock (AssocFn) [DefId: DefId(0:161 ~ parking_lot_core[aa47]::word_lock::{impl#1}::lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(0:161 ~ parking_lot_core[aa47]::word_lock::{impl#1}::lock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::sync::atomic::AtomicPtr::<T>::load (AssocFn) [DefId: DefId(2:11320 ~ core[4720]::sync::atomic::{impl#6}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:11320 ~ core[4720]::sync::atomic::{impl#6}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::ops::RangeFull (Struct) [DefId: DefId(2:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::parking_lot_core::parking_lot::HashTable::new (AssocFn) [DefId: DefId(0:31 ~ parking_lot_core[aa47]::parking_lot::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(0:31 ~ parking_lot_core[aa47]::parking_lot::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::ops::RangeFull (Struct) [DefId: DefId(2:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::sync::atomic::AtomicPtr::<T>::store (AssocFn) [DefId: DefId(2:11321 ~ core[4720]::sync::atomic::{impl#6}::store)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:11321 ~ core[4720]::sync::atomic::{impl#6}::store)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::alloc::std::boxed::Box::<T>::into_raw (AssocFn) [DefId: DefId(3:730 ~ alloc[27b0]::boxed::{impl#6}::into_raw)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(3:730 ~ alloc[27b0]::boxed::{impl#6}::into_raw)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::ops::RangeFull (Struct) [DefId: DefId(2:45162 ~ core[4720]::ops::range::RangeFull)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:45162 ~ core[4720]::ops::range::RangeFull)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::grow_hashtable USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:64 ~ parking_lot_core[aa47]::parking_lot::grow_hashtable)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::rehash_bucket_into USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:65 ~ parking_lot_core[aa47]::parking_lot::rehash_bucket_into)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::rehash_bucket_into USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:65 ~ parking_lot_core[aa47]::parking_lot::rehash_bucket_into)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::rehash_bucket_into USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:65 ~ parking_lot_core[aa47]::parking_lot::rehash_bucket_into)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::rehash_bucket_into USES crate::core::std::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:65 ~ parking_lot_core[aa47]::parking_lot::rehash_bucket_into)",
+      "used_def_id": "DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::rehash_bucket_into USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:65 ~ parking_lot_core[aa47]::parking_lot::rehash_bucket_into)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::rehash_bucket_into USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:65 ~ parking_lot_core[aa47]::parking_lot::rehash_bucket_into)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::rehash_bucket_into USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:65 ~ parking_lot_core[aa47]::parking_lot::rehash_bucket_into)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::rehash_bucket_into USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:65 ~ parking_lot_core[aa47]::parking_lot::rehash_bucket_into)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::rehash_bucket_into USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:65 ~ parking_lot_core[aa47]::parking_lot::rehash_bucket_into)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::rehash_bucket_into USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:65 ~ parking_lot_core[aa47]::parking_lot::rehash_bucket_into)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::rehash_bucket_into USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:65 ~ parking_lot_core[aa47]::parking_lot::rehash_bucket_into)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::hash USES crate::core::core::num::<impl usize>::wrapping_mul (AssocFn) [DefId: DefId(2:35765 ~ core[4720]::num::{impl#11}::wrapping_mul)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:66 ~ parking_lot_core[aa47]::parking_lot::hash)",
+      "used_def_id": "DefId(2:35765 ~ core[4720]::num::{impl#11}::wrapping_mul)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::lock_bucket USES crate::parking_lot_core::word_lock::WordLock::lock (AssocFn) [DefId: DefId(0:161 ~ parking_lot_core[aa47]::word_lock::{impl#1}::lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:67 ~ parking_lot_core[aa47]::parking_lot::lock_bucket)",
+      "used_def_id": "DefId(0:161 ~ parking_lot_core[aa47]::word_lock::{impl#1}::lock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::lock_bucket USES crate::core::std::sync::atomic::AtomicPtr::<T>::load (AssocFn) [DefId: DefId(2:11320 ~ core[4720]::sync::atomic::{impl#6}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:67 ~ parking_lot_core[aa47]::parking_lot::lock_bucket)",
+      "used_def_id": "DefId(2:11320 ~ core[4720]::sync::atomic::{impl#6}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::lock_bucket USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:67 ~ parking_lot_core[aa47]::parking_lot::lock_bucket)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::lock_bucket_checked USES crate::core::std::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:68 ~ parking_lot_core[aa47]::parking_lot::lock_bucket_checked)",
+      "used_def_id": "DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::lock_bucket_checked USES crate::parking_lot_core::word_lock::WordLock::lock (AssocFn) [DefId: DefId(0:161 ~ parking_lot_core[aa47]::word_lock::{impl#1}::lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:68 ~ parking_lot_core[aa47]::parking_lot::lock_bucket_checked)",
+      "used_def_id": "DefId(0:161 ~ parking_lot_core[aa47]::word_lock::{impl#1}::lock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::lock_bucket_checked USES crate::core::std::sync::atomic::AtomicPtr::<T>::load (AssocFn) [DefId: DefId(2:11320 ~ core[4720]::sync::atomic::{impl#6}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:68 ~ parking_lot_core[aa47]::parking_lot::lock_bucket_checked)",
+      "used_def_id": "DefId(2:11320 ~ core[4720]::sync::atomic::{impl#6}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::lock_bucket_checked USES crate::core::std::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:68 ~ parking_lot_core[aa47]::parking_lot::lock_bucket_checked)",
+      "used_def_id": "DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::lock_bucket_checked USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:68 ~ parking_lot_core[aa47]::parking_lot::lock_bucket_checked)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::lock_bucket_pair USES crate::parking_lot_core::word_lock::WordLock::lock (AssocFn) [DefId: DefId(0:161 ~ parking_lot_core[aa47]::word_lock::{impl#1}::lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:69 ~ parking_lot_core[aa47]::parking_lot::lock_bucket_pair)",
+      "used_def_id": "DefId(0:161 ~ parking_lot_core[aa47]::word_lock::{impl#1}::lock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::lock_bucket_pair USES crate::core::std::sync::atomic::AtomicPtr::<T>::load (AssocFn) [DefId: DefId(2:11320 ~ core[4720]::sync::atomic::{impl#6}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:69 ~ parking_lot_core[aa47]::parking_lot::lock_bucket_pair)",
+      "used_def_id": "DefId(2:11320 ~ core[4720]::sync::atomic::{impl#6}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::lock_bucket_pair USES crate::parking_lot_core::word_lock::WordLock::lock (AssocFn) [DefId: DefId(0:161 ~ parking_lot_core[aa47]::word_lock::{impl#1}::lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:69 ~ parking_lot_core[aa47]::parking_lot::lock_bucket_pair)",
+      "used_def_id": "DefId(0:161 ~ parking_lot_core[aa47]::word_lock::{impl#1}::lock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::lock_bucket_pair USES crate::parking_lot_core::word_lock::WordLock::lock (AssocFn) [DefId: DefId(0:161 ~ parking_lot_core[aa47]::word_lock::{impl#1}::lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:69 ~ parking_lot_core[aa47]::parking_lot::lock_bucket_pair)",
+      "used_def_id": "DefId(0:161 ~ parking_lot_core[aa47]::word_lock::{impl#1}::lock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::lock_bucket_pair USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:69 ~ parking_lot_core[aa47]::parking_lot::lock_bucket_pair)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unlock_bucket_pair USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:70 ~ parking_lot_core[aa47]::parking_lot::unlock_bucket_pair)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unlock_bucket_pair USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:70 ~ parking_lot_core[aa47]::parking_lot::unlock_bucket_pair)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::sync::atomic::AtomicUsize::store (AssocFn) [DefId: DefId(2:50252 ~ core[4720]::sync::atomic::{impl#94}::store)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:50252 ~ core[4720]::sync::atomic::{impl#94}::store)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::parking_lot_core::thread_parker::ThreadParkerT::prepare_park (AssocFn) [DefId: DefId(0:111 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::prepare_park)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(0:111 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::prepare_park)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::parking_lot_core::thread_parker::ThreadParkerT::park_until (AssocFn) [DefId: DefId(0:114 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::park_until)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(0:114 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::park_until)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::parking_lot_core::thread_parker::ThreadParkerT::park (AssocFn) [DefId: DefId(0:113 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::park)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(0:113 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::park)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::parking_lot_core::thread_parker::ThreadParkerT::timed_out (AssocFn) [DefId: DefId(0:112 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::timed_out)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(0:112 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::timed_out)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::park USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:75 ~ parking_lot_core[aa47]::parking_lot::park)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::parking_lot_core::parking_lot::FairTimeout::should_timeout (AssocFn) [DefId: DefId(0:44 ~ parking_lot_core[aa47]::parking_lot::{impl#2}::should_timeout)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(0:44 ~ parking_lot_core[aa47]::parking_lot::{impl#2}::should_timeout)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::cell::UnsafeCell::<T>::get (AssocFn) [DefId: DefId(2:5756 ~ core[4720]::cell::{impl#50}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:5756 ~ core[4720]::cell::{impl#50}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::parking_lot_core::thread_parker::ThreadParkerT::unpark_lock (AssocFn) [DefId: DefId(0:115 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::unpark_lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(0:115 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::unpark_lock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::parking_lot_core::thread_parker::UnparkHandleT::unpark (AssocFn) [DefId: DefId(0:117 ~ parking_lot_core[aa47]::thread_parker::UnparkHandleT::unpark)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(0:117 ~ parking_lot_core[aa47]::thread_parker::UnparkHandleT::unpark)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_one USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:80 ~ parking_lot_core[aa47]::parking_lot::unpark_one)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::smallvec::smallvec::SmallVec::<A>::new (AssocFn) [DefId: DefId(20:154 ~ smallvec[9e2e]::{impl#17}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(20:154 ~ smallvec[9e2e]::{impl#17}::new)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::smallvec::smallvec::SmallVec::<A>::push (AssocFn) [DefId: DefId(20:174 ~ smallvec[9e2e]::{impl#17}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(20:174 ~ smallvec[9e2e]::{impl#17}::push)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::parking_lot_core::thread_parker::ThreadParkerT::unpark_lock (AssocFn) [DefId: DefId(0:115 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::unpark_lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(0:115 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::unpark_lock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::smallvec::smallvec::SmallVec::<A>::len (AssocFn) [DefId: DefId(20:163 ~ smallvec[9e2e]::{impl#17}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(20:163 ~ smallvec[9e2e]::{impl#17}::len)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::parking_lot_core::thread_parker::UnparkHandleT::unpark (AssocFn) [DefId: DefId(0:117 ~ parking_lot_core[aa47]::thread_parker::UnparkHandleT::unpark)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(0:117 ~ parking_lot_core[aa47]::thread_parker::UnparkHandleT::unpark)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_all USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ parking_lot_core[aa47]::parking_lot::unpark_all)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::option::Option::<T>::is_none (AssocFn) [DefId: DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:10217 ~ core[4720]::option::{impl#0}::is_none)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::sync::atomic::AtomicUsize::store (AssocFn) [DefId: DefId(2:50252 ~ core[4720]::sync::atomic::{impl#94}::store)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:50252 ~ core[4720]::sync::atomic::{impl#94}::store)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::parking_lot_core::parking_lot::FairTimeout::should_timeout (AssocFn) [DefId: DefId(0:44 ~ parking_lot_core[aa47]::parking_lot::{impl#2}::should_timeout)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(0:44 ~ parking_lot_core[aa47]::parking_lot::{impl#2}::should_timeout)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::UnsafeCell::<T>::get (AssocFn) [DefId: DefId(2:5756 ~ core[4720]::cell::{impl#50}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5756 ~ core[4720]::cell::{impl#50}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::parking_lot_core::thread_parker::ThreadParkerT::unpark_lock (AssocFn) [DefId: DefId(0:115 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::unpark_lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(0:115 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::unpark_lock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_requeue USES crate::parking_lot_core::thread_parker::UnparkHandleT::unpark (AssocFn) [DefId: DefId(0:117 ~ parking_lot_core[aa47]::thread_parker::UnparkHandleT::unpark)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ parking_lot_core[aa47]::parking_lot::unpark_requeue)",
+      "used_def_id": "DefId(0:117 ~ parking_lot_core[aa47]::thread_parker::UnparkHandleT::unpark)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::smallvec::smallvec::SmallVec::<A>::new (AssocFn) [DefId: DefId(20:154 ~ smallvec[9e2e]::{impl#17}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(20:154 ~ smallvec[9e2e]::{impl#17}::new)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::ptr::const_ptr::<impl *const T>::is_null (AssocFn) [DefId: DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:2740 ~ core[4720]::ptr::const_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::ops::FnMut::call_mut (AssocFn) [DefId: DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::smallvec::smallvec::SmallVec::<A>::push (AssocFn) [DefId: DefId(20:174 ~ smallvec[9e2e]::{impl#17}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(20:174 ~ smallvec[9e2e]::{impl#17}::push)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::smallvec::smallvec::SmallVec::<A>::len (AssocFn) [DefId: DefId(20:163 ~ smallvec[9e2e]::{impl#17}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(20:163 ~ smallvec[9e2e]::{impl#17}::len)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::parking_lot_core::parking_lot::FairTimeout::should_timeout (AssocFn) [DefId: DefId(0:44 ~ parking_lot_core[aa47]::parking_lot::{impl#2}::should_timeout)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(0:44 ~ parking_lot_core[aa47]::parking_lot::{impl#2}::should_timeout)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::cell::UnsafeCell::<T>::get (AssocFn) [DefId: DefId(2:5756 ~ core[4720]::cell::{impl#50}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:5756 ~ core[4720]::cell::{impl#50}::get)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(2:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::parking_lot_core::thread_parker::ThreadParkerT::unpark_lock (AssocFn) [DefId: DefId(0:115 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::unpark_lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(0:115 ~ parking_lot_core[aa47]::thread_parker::ThreadParkerT::unpark_lock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::parking_lot_core::word_lock::WordLock::unlock (AssocFn) [DefId: DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(0:162 ~ parking_lot_core[aa47]::word_lock::{impl#1}::unlock)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::parking_lot_core::thread_parker::UnparkHandleT::unpark (AssocFn) [DefId: DefId(0:117 ~ parking_lot_core[aa47]::thread_parker::UnparkHandleT::unpark)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(0:117 ~ parking_lot_core[aa47]::thread_parker::UnparkHandleT::unpark)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::parking_lot_core::util::UncheckedOptionExt::unchecked_unwrap (AssocFn) [DefId: DefId(0:124 ~ parking_lot_core[aa47]::util::UncheckedOptionExt::unchecked_unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(0:124 ~ parking_lot_core[aa47]::util::UncheckedOptionExt::unchecked_unwrap)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::parking_lot_core::parking_lot::unpark_filter USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:87 ~ parking_lot_core[aa47]::parking_lot::unpark_filter)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    }
+  ]
+}

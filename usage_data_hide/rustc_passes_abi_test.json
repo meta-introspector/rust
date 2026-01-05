@@ -1,0 +1,990 @@
+{
+  "crate": "rustc_passes",
+  "module": "abi_test",
+  "usages": [
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::rustc_feature::rustc_feature::Features::rustc_attrs (AssocFn) [DefId: DefId(204:272 ~ rustc_feature[ed66]::unstable::{impl#13}::rustc_attrs)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(204:272 ~ rustc_feature[ed66]::unstable::{impl#13}::rustc_attrs)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::features (AssocFn) [DefId: DefId(20:6805 ~ rustc_middle[f25a]::ty::context::{impl#25}::features)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(20:6805 ~ rustc_middle[f25a]::ty::context::{impl#25}::features)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::rustc_middle::rustc_middle::hir::ModuleItems::definitions (AssocFn) [DefId: DefId(20:369 ~ rustc_middle[f25a]::hir::{impl#0}::definitions)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(20:369 ~ rustc_middle[f25a]::hir::{impl#0}::definitions)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_crate_items (AssocFn) [DefId: DefId(20:37656 ~ rustc_middle[f25a]::query::{impl#3}::hir_crate_items)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(20:37656 ~ rustc_middle[f25a]::query::{impl#3}::hir_crate_items)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::rustc_middle::rustc_middle::ty::<impl rustc_middle::ty::TyCtxt<'tcx>>::get_attrs (AssocFn) [DefId: DefId(20:9451 ~ rustc_middle[f25a]::ty::{impl#44}::get_attrs)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(20:9451 ~ rustc_middle[f25a]::ty::{impl#44}::get_attrs)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_kind (AssocFn) [DefId: DefId(20:37786 ~ rustc_middle[f25a]::query::{impl#3}::def_kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(20:37786 ~ rustc_middle[f25a]::query::{impl#3}::def_kind)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(21:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(21:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_span (AssocFn) [DefId: DefId(20:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(20:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:27 ~ rustc_passes[192f]::abi_test::test_abi)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::unwrap_fn_abi USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_fatal (AssocFn) [DefId: DefId(21:1229 ~ rustc_errors[740a]::{impl#9}::emit_fatal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:28 ~ rustc_passes[192f]::abi_test::unwrap_fn_abi)",
+      "used_def_id": "DefId(21:1229 ~ rustc_errors[740a]::{impl#9}::emit_fatal)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::unwrap_fn_abi USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:28 ~ rustc_passes[192f]::abi_test::unwrap_fn_abi)",
+      "used_def_id": "DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::unwrap_fn_abi USES crate::rustc_middle::rustc_middle::ty::layout::LayoutError::<'tcx>::into_diagnostic (AssocFn) [DefId: DefId(20:4433 ~ rustc_middle[f25a]::ty::layout::{impl#2}::into_diagnostic)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:28 ~ rustc_passes[192f]::abi_test::unwrap_fn_abi)",
+      "used_def_id": "DefId(20:4433 ~ rustc_middle[f25a]::ty::layout::{impl#2}::into_diagnostic)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::unwrap_fn_abi USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_span (AssocFn) [DefId: DefId(20:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:28 ~ rustc_passes[192f]::abi_test::unwrap_fn_abi)",
+      "used_def_id": "DefId(20:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::ty::TypingEnv::<'tcx>::post_analysis (AssocFn) [DefId: DefId(20:9393 ~ rustc_middle[f25a]::ty::{impl#35}::post_analysis)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:9393 ~ rustc_middle[f25a]::ty::{impl#35}::post_analysis)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::ty::generic_args::<impl rustc_middle::ty::list::RawList<(), rustc_middle::ty::GenericArg<'tcx>>>::identity_for_item (AssocFn) [DefId: DefId(20:7539 ~ rustc_middle[f25a]::ty::generic_args::{impl#18}::identity_for_item)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:7539 ~ rustc_middle[f25a]::ty::generic_args::{impl#18}::identity_for_item)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::ty::Instance::<'tcx>::try_resolve (AssocFn) [DefId: DefId(20:26750 ~ rustc_middle[f25a]::ty::instance::{impl#3}::try_resolve)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:26750 ~ rustc_middle[f25a]::ty::instance::{impl#3}::try_resolve)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_type_ir::rustc_middle::infer::canonical::rustc_type_ir::EarlyBinder::<I, T>::instantiate_identity (AssocFn) [DefId: DefId(208:1473 ~ rustc_type_ir[1eea]::binder::{impl#30}::instantiate_identity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(208:1473 ~ rustc_type_ir[1eea]::binder::{impl#30}::instantiate_identity)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::type_of (AssocFn) [DefId: DefId(20:37664 ~ rustc_middle[f25a]::query::{impl#3}::type_of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:37664 ~ rustc_middle[f25a]::query::{impl#3}::type_of)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_fatal (AssocFn) [DefId: DefId(21:1229 ~ rustc_errors[740a]::{impl#9}::emit_fatal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(21:1229 ~ rustc_errors[740a]::{impl#9}::emit_fatal)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::ty::layout::LayoutError::<'tcx>::into_diagnostic (AssocFn) [DefId: DefId(20:4433 ~ rustc_middle[f25a]::ty::layout::{impl#2}::into_diagnostic)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:4433 ~ rustc_middle[f25a]::ty::layout::{impl#2}::into_diagnostic)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_span (AssocFn) [DefId: DefId(20:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::fn_abi_of_instance (AssocFn) [DefId: DefId(20:37837 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_instance)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:37837 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_instance)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::ty::TypingEnv::<'tcx>::as_query_input (AssocFn) [DefId: DefId(20:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::ty::list::RawList::<(), T>::empty (AssocFn) [DefId: DefId(20:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::core::std::option::Option::<T>::unwrap_or_default (AssocFn) [DefId: DefId(2:10232 ~ core[4720]::option::{impl#0}::unwrap_or_default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(2:10232 ~ core[4720]::option::{impl#0}::unwrap_or_default)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_hir::rustc_hir::Attribute::meta_item_list (AssocFn) [DefId: DefId(184:577 ~ rustc_hir[6005]::hir::{impl#25}::meta_item_list)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(184:577 ~ rustc_hir[6005]::hir::{impl#25}::meta_item_list)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_ast::rustc_ast::attr::<impl rustc_ast::MetaItemInner>::name (AssocFn) [DefId: DefId(153:710 ~ rustc_ast[c120]::attr::{impl#8}::name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(153:710 ~ rustc_ast[c120]::attr::{impl#8}::name)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::ty::<impl rustc_middle::ty::TyCtxt<'tcx>>::item_name (AssocFn) [DefId: DefId(20:9437 ~ rustc_middle[f25a]::ty::{impl#44}::item_name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:9437 ~ rustc_middle[f25a]::ty::{impl#44}::item_name)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(21:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(21:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_span (AssocFn) [DefId: DefId(20:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::core::core::fmt::rt::Placeholder (Struct) [DefId: DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1_formatted (AssocFn) [DefId: DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(21:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(21:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::rustc_ast::rustc_ast::attr::<impl rustc_ast::MetaItemInner>::span (AssocFn) [DefId: DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_item USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:30 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_item)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi_eq USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:31 ~ rustc_passes[192f]::abi_test::test_abi_eq)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi_eq USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:31 ~ rustc_passes[192f]::abi_test::test_abi_eq)",
+      "used_def_id": "DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi_eq USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:31 ~ rustc_passes[192f]::abi_test::test_abi_eq)",
+      "used_def_id": "DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi_eq USES crate::rustc_target::rustc_target::callconv::ArgAbi::<'a, Ty>::eq_abi (AssocFn) [DefId: DefId(185:1165 ~ rustc_target[335a]::callconv::{impl#9}::eq_abi)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:31 ~ rustc_passes[192f]::abi_test::test_abi_eq)",
+      "used_def_id": "DefId(185:1165 ~ rustc_target[335a]::callconv::{impl#9}::eq_abi)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi_eq USES crate::core::std::iter::Iterator::all (AssocFn) [DefId: DefId(2:9556 ~ core[4720]::iter::traits::iterator::Iterator::all)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:31 ~ rustc_passes[192f]::abi_test::test_abi_eq)",
+      "used_def_id": "DefId(2:9556 ~ core[4720]::iter::traits::iterator::Iterator::all)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi_eq USES crate::core::std::iter::Iterator::zip (AssocFn) [DefId: DefId(2:9453 ~ core[4720]::iter::traits::iterator::Iterator::zip)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:31 ~ rustc_passes[192f]::abi_test::test_abi_eq)",
+      "used_def_id": "DefId(2:9453 ~ core[4720]::iter::traits::iterator::Iterator::zip)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi_eq USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:31 ~ rustc_passes[192f]::abi_test::test_abi_eq)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi_eq USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:31 ~ rustc_passes[192f]::abi_test::test_abi_eq)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::test_abi_eq USES crate::rustc_target::rustc_target::callconv::ArgAbi::<'a, Ty>::eq_abi (AssocFn) [DefId: DefId(185:1165 ~ rustc_target[335a]::callconv::{impl#9}::eq_abi)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:31 ~ rustc_passes[192f]::abi_test::test_abi_eq)",
+      "used_def_id": "DefId(185:1165 ~ rustc_target[335a]::callconv::{impl#9}::eq_abi)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::TypingEnv::<'tcx>::post_analysis (AssocFn) [DefId: DefId(20:9393 ~ rustc_middle[f25a]::ty::{impl#35}::post_analysis)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:9393 ~ rustc_middle[f25a]::ty::{impl#35}::post_analysis)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_type_ir::rustc_middle::infer::canonical::rustc_type_ir::EarlyBinder::<I, T>::instantiate_identity (AssocFn) [DefId: DefId(208:1473 ~ rustc_type_ir[1eea]::binder::{impl#30}::instantiate_identity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(208:1473 ~ rustc_type_ir[1eea]::binder::{impl#30}::instantiate_identity)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::type_of (AssocFn) [DefId: DefId(20:37664 ~ rustc_middle[f25a]::query::{impl#3}::type_of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:37664 ~ rustc_middle[f25a]::query::{impl#3}::type_of)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_span (AssocFn) [DefId: DefId(20:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::std::option::Option::<T>::unwrap_or_default (AssocFn) [DefId: DefId(2:10232 ~ core[4720]::option::{impl#0}::unwrap_or_default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:10232 ~ core[4720]::option::{impl#0}::unwrap_or_default)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_hir::rustc_hir::Attribute::meta_item_list (AssocFn) [DefId: DefId(184:577 ~ rustc_hir[6005]::hir::{impl#25}::meta_item_list)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(184:577 ~ rustc_hir[6005]::hir::{impl#25}::meta_item_list)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_ast::rustc_ast::attr::<impl rustc_ast::MetaItemInner>::name (AssocFn) [DefId: DefId(153:710 ~ rustc_ast[c120]::attr::{impl#8}::name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(153:710 ~ rustc_ast[c120]::attr::{impl#8}::name)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(20:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_ast::rustc_ast::attr::<impl rustc_ast::MetaItemInner>::span (AssocFn) [DefId: DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::fn_abi_of_fn_ptr (AssocFn) [DefId: DefId(20:37836 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_fn_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:37836 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_fn_ptr)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::TypingEnv::<'tcx>::as_query_input (AssocFn) [DefId: DefId(20:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_type_ir::rustc_middle::infer::canonical::rustc_type_ir::ty_kind::<impl rustc_middle::infer::canonical::rustc_type_ir::Binder<I, rustc_middle::ty::FnSigTys<I>>>::with (AssocFn) [DefId: DefId(208:2753 ~ rustc_type_ir[1eea]::ty_kind::{impl#30}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(208:2753 ~ rustc_type_ir[1eea]::ty_kind::{impl#30}::with)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::list::RawList::<(), T>::empty (AssocFn) [DefId: DefId(20:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::<impl rustc_middle::ty::TyCtxt<'tcx>>::item_name (AssocFn) [DefId: DefId(20:9437 ~ rustc_middle[f25a]::ty::{impl#44}::item_name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:9437 ~ rustc_middle[f25a]::ty::{impl#44}::item_name)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(21:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(21:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::Placeholder (Struct) [DefId: DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1_formatted (AssocFn) [DefId: DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(20:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_ast::rustc_ast::attr::<impl rustc_ast::MetaItemInner>::span (AssocFn) [DefId: DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_ast::rustc_ast::attr::<impl rustc_ast::MetaItemInner>::span (AssocFn) [DefId: DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(20:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_ast::rustc_ast::attr::<impl rustc_ast::MetaItemInner>::span (AssocFn) [DefId: DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::fn_abi_of_fn_ptr (AssocFn) [DefId: DefId(20:37836 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_fn_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:37836 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_fn_ptr)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::TypingEnv::<'tcx>::as_query_input (AssocFn) [DefId: DefId(20:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_type_ir::rustc_middle::infer::canonical::rustc_type_ir::ty_kind::<impl rustc_middle::infer::canonical::rustc_type_ir::Binder<I, rustc_middle::ty::FnSigTys<I>>>::with (AssocFn) [DefId: DefId(208:2753 ~ rustc_type_ir[1eea]::ty_kind::{impl#30}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(208:2753 ~ rustc_type_ir[1eea]::ty_kind::{impl#30}::with)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::list::RawList::<(), T>::empty (AssocFn) [DefId: DefId(20:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(20:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_ast::rustc_ast::attr::<impl rustc_ast::MetaItemInner>::span (AssocFn) [DefId: DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::fn_abi_of_fn_ptr (AssocFn) [DefId: DefId(20:37836 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_fn_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:37836 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_fn_ptr)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::TypingEnv::<'tcx>::as_query_input (AssocFn) [DefId: DefId(20:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_type_ir::rustc_middle::infer::canonical::rustc_type_ir::ty_kind::<impl rustc_middle::infer::canonical::rustc_type_ir::Binder<I, rustc_middle::ty::FnSigTys<I>>>::with (AssocFn) [DefId: DefId(208:2753 ~ rustc_type_ir[1eea]::ty_kind::{impl#30}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(208:2753 ~ rustc_type_ir[1eea]::ty_kind::{impl#30}::with)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::list::RawList::<(), T>::empty (AssocFn) [DefId: DefId(20:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(21:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(21:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::Placeholder (Struct) [DefId: DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1_formatted (AssocFn) [DefId: DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::Count::Implied (Ctor(Variant, Const)) [DefId: DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:50749 ~ core[4720]::fmt::rt::Count::Implied::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::Placeholder (Struct) [DefId: DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:50733 ~ core[4720]::fmt::rt::Placeholder)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1_formatted (AssocFn) [DefId: DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:11905 ~ core[4720]::fmt::rt::{impl#1}::new_v1_formatted)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(21:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(21:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(20:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::rustc_ast::rustc_ast::attr::<impl rustc_ast::MetaItemInner>::span (AssocFn) [DefId: DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(153:707 ~ rustc_ast[c120]::attr::{impl#8}::span)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_passes::abi_test::dump_abi_of_fn_type USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:34 ~ rustc_passes[192f]::abi_test::dump_abi_of_fn_type)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    }
+  ]
+}

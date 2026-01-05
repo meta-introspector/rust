@@ -1,0 +1,1630 @@
+{
+  "crate": "rustc_hir_typeck",
+  "module": "upvar",
+  "usages": [
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_reborrow_from_env_of_parent_coroutine_closure USES crate::rustc_middle::rustc_middle::ty::CapturedPlace::<'tcx>::is_by_ref (AssocFn) [DefId: DefId(202:5766 ~ rustc_middle[f25a]::ty::closure::{impl#1}::is_by_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3884 ~ rustc_hir_typeck[8fed]::upvar::should_reborrow_from_env_of_parent_coroutine_closure)",
+      "used_def_id": "DefId(202:5766 ~ rustc_middle[f25a]::ty::closure::{impl#1}::is_by_ref)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_reborrow_from_env_of_parent_coroutine_closure USES crate::core::std::iter::Iterator::any (AssocFn) [DefId: DefId(2:9563 ~ core[4720]::iter::traits::iterator::Iterator::any)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3884 ~ rustc_hir_typeck[8fed]::upvar::should_reborrow_from_env_of_parent_coroutine_closure)",
+      "used_def_id": "DefId(2:9563 ~ core[4720]::iter::traits::iterator::Iterator::any)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_reborrow_from_env_of_parent_coroutine_closure USES crate::core::std::iter::Iterator::skip (AssocFn) [DefId: DefId(2:9482 ~ core[4720]::iter::traits::iterator::Iterator::skip)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3884 ~ rustc_hir_typeck[8fed]::upvar::should_reborrow_from_env_of_parent_coroutine_closure)",
+      "used_def_id": "DefId(2:9482 ~ core[4720]::iter::traits::iterator::Iterator::skip)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_reborrow_from_env_of_parent_coroutine_closure USES crate::core::std::iter::Iterator::enumerate (AssocFn) [DefId: DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3884 ~ rustc_hir_typeck[8fed]::upvar::should_reborrow_from_env_of_parent_coroutine_closure)",
+      "used_def_id": "DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_reborrow_from_env_of_parent_coroutine_closure USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3884 ~ rustc_hir_typeck[8fed]::upvar::should_reborrow_from_env_of_parent_coroutine_closure)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_reborrow_from_env_of_parent_coroutine_closure USES crate::alloc::std::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3884 ~ rustc_hir_typeck[8fed]::upvar::should_reborrow_from_env_of_parent_coroutine_closure)",
+      "used_def_id": "DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_reborrow_from_env_of_parent_coroutine_closure USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(202:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3884 ~ rustc_hir_typeck[8fed]::upvar::should_reborrow_from_env_of_parent_coroutine_closure)",
+      "used_def_id": "DefId(202:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_reborrow_from_env_of_parent_coroutine_closure USES crate::rustc_middle::rustc_middle::hir::place::Place::<'tcx>::ty_before_projection (AssocFn) [DefId: DefId(202:318 ~ rustc_middle[f25a]::hir::place::{impl#1}::ty_before_projection)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3884 ~ rustc_hir_typeck[8fed]::upvar::should_reborrow_from_env_of_parent_coroutine_closure)",
+      "used_def_id": "DefId(202:318 ~ rustc_middle[f25a]::hir::place::{impl#1}::ty_before_projection)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_repr_packed_field_ref_capture USES crate::core::std::iter::Iterator::position (AssocFn) [DefId: DefId(2:9596 ~ core[4720]::iter::traits::iterator::Iterator::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3887 ~ rustc_hir_typeck[8fed]::upvar::restrict_repr_packed_field_ref_capture)",
+      "used_def_id": "DefId(2:9596 ~ core[4720]::iter::traits::iterator::Iterator::position)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_repr_packed_field_ref_capture USES crate::core::std::iter::Iterator::enumerate (AssocFn) [DefId: DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3887 ~ rustc_hir_typeck[8fed]::upvar::restrict_repr_packed_field_ref_capture)",
+      "used_def_id": "DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_repr_packed_field_ref_capture USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3887 ~ rustc_hir_typeck[8fed]::upvar::restrict_repr_packed_field_ref_capture)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_repr_packed_field_ref_capture USES crate::rustc_middle::rustc_middle::hir::place::Place::<'tcx>::ty_before_projection (AssocFn) [DefId: DefId(202:318 ~ rustc_middle[f25a]::hir::place::{impl#1}::ty_before_projection)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3887 ~ rustc_hir_typeck[8fed]::upvar::restrict_repr_packed_field_ref_capture)",
+      "used_def_id": "DefId(202:318 ~ rustc_middle[f25a]::hir::place::{impl#1}::ty_before_projection)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_repr_packed_field_ref_capture USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(202:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3887 ~ rustc_hir_typeck[8fed]::upvar::restrict_repr_packed_field_ref_capture)",
+      "used_def_id": "DefId(202:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_repr_packed_field_ref_capture USES crate::rustc_abi::rustc_abi::ReprOptions::packed (AssocFn) [DefId: DefId(175:484 ~ rustc_abi[6de0]::{impl#2}::packed)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3887 ~ rustc_hir_typeck[8fed]::upvar::restrict_repr_packed_field_ref_capture)",
+      "used_def_id": "DefId(175:484 ~ rustc_abi[6de0]::{impl#2}::packed)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_repr_packed_field_ref_capture USES crate::rustc_middle::rustc_middle::ty::AdtDef::<'tcx>::repr (AssocFn) [DefId: DefId(202:5589 ~ rustc_middle[f25a]::ty::adt::{impl#4}::repr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3887 ~ rustc_hir_typeck[8fed]::upvar::restrict_repr_packed_field_ref_capture)",
+      "used_def_id": "DefId(202:5589 ~ rustc_middle[f25a]::ty::adt::{impl#4}::repr)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::apply_capture_kind_on_capture_ty USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::new_ref (AssocFn) [DefId: DefId(202:8779 ~ rustc_middle[f25a]::ty::sty::{impl#9}::new_ref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3890 ~ rustc_hir_typeck[8fed]::upvar::apply_capture_kind_on_capture_ty)",
+      "used_def_id": "DefId(202:8779 ~ rustc_middle[f25a]::ty::sty::{impl#9}::new_ref)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::apply_capture_kind_on_capture_ty USES crate::rustc_middle::rustc_middle::ty::BorrowKind::to_mutbl_lossy (AssocFn) [DefId: DefId(202:5780 ~ rustc_middle[f25a]::ty::closure::{impl#3}::to_mutbl_lossy)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3890 ~ rustc_hir_typeck[8fed]::upvar::apply_capture_kind_on_capture_ty)",
+      "used_def_id": "DefId(202:5780 ~ rustc_middle[f25a]::ty::closure::{impl#3}::to_mutbl_lossy)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_get_enclosing_scope (AssocFn) [DefId: DefId(202:191 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_get_enclosing_scope)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(202:191 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_get_enclosing_scope)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_node (AssocFn) [DefId: DefId(202:120 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_node)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(202:120 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_node)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_span (AssocFn) [DefId: DefId(202:214 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(202:214 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_span)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_span (AssocFn) [DefId: DefId(202:214 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(202:214 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_span)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_span (AssocFn) [DefId: DefId(202:214 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(202:214 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_span)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::rustc_hir::rustc_hir::TraitItem::<'hir>::hir_id (AssocFn) [DefId: DefId(183:716 ~ rustc_hir[6005]::hir::{impl#52}::hir_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(183:716 ~ rustc_hir[6005]::hir::{impl#52}::hir_id)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_span (AssocFn) [DefId: DefId(202:214 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(202:214 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_span)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::rustc_hir::rustc_hir::ImplItem::<'hir>::hir_id (AssocFn) [DefId: DefId(183:722 ~ rustc_hir[6005]::hir::{impl#54}::hir_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(183:722 ~ rustc_hir[6005]::hir::{impl#54}::hir_id)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::rustc_span::rustc_span::source_map::SourceMap::end_point (AssocFn) [DefId: DefId(131:200 ~ rustc_span[d94c]::source_map::{impl#1}::end_point)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(131:200 ~ rustc_span[d94c]::source_map::{impl#1}::end_point)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::drop_location_span USES crate::rustc_session::rustc_session::Session::source_map (AssocFn) [DefId: DefId(203:1315 ~ rustc_session[5182]::session::{impl#2}::source_map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3892 ~ rustc_hir_typeck[8fed]::upvar::drop_location_span)",
+      "used_def_id": "DefId(203:1315 ~ rustc_session[5182]::session::{impl#2}::source_map)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_drop_types USES crate::rustc_trait_selection::rustc_trait_selection::infer::InferCtxtExt::type_is_copy_modulo_regions (AssocFn) [DefId: DefId(215:8554 ~ rustc_trait_selection[c701]::infer::InferCtxtExt::type_is_copy_modulo_regions)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3901 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_drop_types)",
+      "used_def_id": "DefId(215:8554 ~ rustc_trait_selection[c701]::infer::InferCtxtExt::type_is_copy_modulo_regions)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_drop_types USES crate::rustc_middle::rustc_middle::hir::place::Place::<'tcx>::ty (AssocFn) [DefId: DefId(202:316 ~ rustc_middle[f25a]::hir::place::{impl#1}::ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3901 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_drop_types)",
+      "used_def_id": "DefId(202:316 ~ rustc_middle[f25a]::hir::place::{impl#1}::ty)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_drop_types USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3901 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_drop_types)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_drop_types USES crate::alloc::std::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3901 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_drop_types)",
+      "used_def_id": "DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_drop_types USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3901 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_drop_types)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_drop_types USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3901 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_drop_types)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_drop_types USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(202:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3901 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_drop_types)",
+      "used_def_id": "DefId(202:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_drop_types USES crate::rustc_middle::rustc_middle::hir::place::Place::<'tcx>::ty_before_projection (AssocFn) [DefId: DefId(202:318 ~ rustc_middle[f25a]::hir::place::{impl#1}::ty_before_projection)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3901 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_drop_types)",
+      "used_def_id": "DefId(202:318 ~ rustc_middle[f25a]::hir::place::{impl#1}::ty_before_projection)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_drop_types USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3901 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_drop_types)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_drop_types USES crate::rustc_middle::rustc_middle::ty::AdtDef::<'tcx>::destructor (AssocFn) [DefId: DefId(202:5650 ~ rustc_middle[f25a]::ty::adt::{impl#8}::destructor)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3901 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_drop_types)",
+      "used_def_id": "DefId(202:5650 ~ rustc_middle[f25a]::ty::adt::{impl#8}::destructor)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_drop_types USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3901 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_drop_types)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_drop_types USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3901 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_drop_types)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_unsafe USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::is_raw_ptr (AssocFn) [DefId: DefId(202:8891 ~ rustc_middle[f25a]::ty::sty::{impl#11}::is_raw_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3904 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_unsafe)",
+      "used_def_id": "DefId(202:8891 ~ rustc_middle[f25a]::ty::sty::{impl#11}::is_raw_ptr)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_unsafe USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::is_union (AssocFn) [DefId: DefId(202:8903 ~ rustc_middle[f25a]::ty::sty::{impl#11}::is_union)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3904 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_unsafe)",
+      "used_def_id": "DefId(202:8903 ~ rustc_middle[f25a]::ty::sty::{impl#11}::is_union)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_unsafe USES crate::core::std::iter::Iterator::enumerate (AssocFn) [DefId: DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3904 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_unsafe)",
+      "used_def_id": "DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_unsafe USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3904 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_unsafe)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_unsafe USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3904 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_unsafe)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_unsafe USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3904 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_unsafe)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_unsafe USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::is_raw_ptr (AssocFn) [DefId: DefId(202:8891 ~ rustc_middle[f25a]::ty::sty::{impl#11}::is_raw_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3904 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_unsafe)",
+      "used_def_id": "DefId(202:8891 ~ rustc_middle[f25a]::ty::sty::{impl#11}::is_raw_ptr)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_unsafe USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::is_union (AssocFn) [DefId: DefId(202:8903 ~ rustc_middle[f25a]::ty::sty::{impl#11}::is_union)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3904 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_unsafe)",
+      "used_def_id": "DefId(202:8903 ~ rustc_middle[f25a]::ty::sty::{impl#11}::is_union)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_unsafe USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3904 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_unsafe)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_precision_for_unsafe USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3904 ~ rustc_hir_typeck[8fed]::upvar::restrict_precision_for_unsafe)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_capture_precision USES crate::alloc::std::vec::Vec::<T, A>::is_empty (AssocFn) [DefId: DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3905 ~ rustc_hir_typeck[8fed]::upvar::restrict_capture_precision)",
+      "used_def_id": "DefId(3:8183 ~ alloc[27b0]::vec::{impl#1}::is_empty)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_capture_precision USES crate::core::std::iter::Iterator::enumerate (AssocFn) [DefId: DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3905 ~ rustc_hir_typeck[8fed]::upvar::restrict_capture_precision)",
+      "used_def_id": "DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_capture_precision USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3905 ~ rustc_hir_typeck[8fed]::upvar::restrict_capture_precision)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_capture_precision USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3905 ~ rustc_hir_typeck[8fed]::upvar::restrict_capture_precision)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_capture_precision USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3905 ~ rustc_hir_typeck[8fed]::upvar::restrict_capture_precision)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_capture_precision USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3905 ~ rustc_hir_typeck[8fed]::upvar::restrict_capture_precision)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::restrict_capture_precision USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3905 ~ rustc_hir_typeck[8fed]::upvar::restrict_capture_precision)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::adjust_for_move_closure USES crate::core::std::iter::Iterator::position (AssocFn) [DefId: DefId(2:9596 ~ core[4720]::iter::traits::iterator::Iterator::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3906 ~ rustc_hir_typeck[8fed]::upvar::adjust_for_move_closure)",
+      "used_def_id": "DefId(2:9596 ~ core[4720]::iter::traits::iterator::Iterator::position)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::adjust_for_move_closure USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3906 ~ rustc_hir_typeck[8fed]::upvar::adjust_for_move_closure)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::adjust_for_move_closure USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3906 ~ rustc_hir_typeck[8fed]::upvar::adjust_for_move_closure)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::adjust_for_use_closure USES crate::core::std::iter::Iterator::position (AssocFn) [DefId: DefId(2:9596 ~ core[4720]::iter::traits::iterator::Iterator::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3908 ~ rustc_hir_typeck[8fed]::upvar::adjust_for_use_closure)",
+      "used_def_id": "DefId(2:9596 ~ core[4720]::iter::traits::iterator::Iterator::position)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::adjust_for_use_closure USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3908 ~ rustc_hir_typeck[8fed]::upvar::adjust_for_use_closure)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::adjust_for_use_closure USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3908 ~ rustc_hir_typeck[8fed]::upvar::adjust_for_use_closure)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::adjust_for_non_move_closure USES crate::core::std::iter::Iterator::position (AssocFn) [DefId: DefId(2:9596 ~ core[4720]::iter::traits::iterator::Iterator::position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3910 ~ rustc_hir_typeck[8fed]::upvar::adjust_for_non_move_closure)",
+      "used_def_id": "DefId(2:9596 ~ core[4720]::iter::traits::iterator::Iterator::position)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::adjust_for_non_move_closure USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3910 ~ rustc_hir_typeck[8fed]::upvar::adjust_for_non_move_closure)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::adjust_for_non_move_closure USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3910 ~ rustc_hir_typeck[8fed]::upvar::adjust_for_non_move_closure)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::alloc::std::string::ToString::to_string (AssocFn) [DefId: DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(3:6619 ~ alloc[27b0]::string::ToString::to_string)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::alloc::std::string::String::new (AssocFn) [DefId: DefId(3:6420 ~ alloc[27b0]::string::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(3:6420 ~ alloc[27b0]::string::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::std::iter::Iterator::enumerate (AssocFn) [DefId: DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::std::convert::From::from (AssocFn) [DefId: DefId(2:3435 ~ core[4720]::convert::From::from)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::alloc::std::string::String::push (AssocFn) [DefId: DefId(3:6458 ~ alloc[27b0]::string::{impl#0}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(3:6458 ~ alloc[27b0]::string::{impl#0}::push)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::alloc::std::string::String::push_str (AssocFn) [DefId: DefId(3:6448 ~ alloc[27b0]::string::{impl#0}::push_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(3:6448 ~ alloc[27b0]::string::{impl#0}::push_str)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::alloc::std::string::String::as_str (AssocFn) [DefId: DefId(3:6446 ~ alloc[27b0]::string::{impl#0}::as_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(3:6446 ~ alloc[27b0]::string::{impl#0}::as_str)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_place_string USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3912 ~ rustc_hir_typeck[8fed]::upvar::construct_place_string)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_kind_reason_string USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3914 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_kind_reason_string)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_kind_reason_string USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3914 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_kind_reason_string)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_kind_reason_string USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3914 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_kind_reason_string)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_kind_reason_string USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3914 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_kind_reason_string)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_kind_reason_string USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3914 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_kind_reason_string)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_kind_reason_string USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3914 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_kind_reason_string)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_kind_reason_string USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3914 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_kind_reason_string)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_path_string USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3916 ~ rustc_hir_typeck[8fed]::upvar::construct_path_string)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_path_string USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3916 ~ rustc_hir_typeck[8fed]::upvar::construct_path_string)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_info_string USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3918 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_info_string)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_info_string USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3918 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_info_string)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_info_string USES crate::core::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3918 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_info_string)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_info_string USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3918 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_info_string)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_info_string USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3918 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_info_string)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_info_string USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3918 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_info_string)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::construct_capture_info_string USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3918 ~ rustc_hir_typeck[8fed]::upvar::construct_capture_info_string)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::var_name USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_name (AssocFn) [DefId: DefId(202:211 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3920 ~ rustc_hir_typeck[8fed]::upvar::var_name)",
+      "used_def_id": "DefId(202:211 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_name)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::subscriber::Interest::never (AssocFn) [DefId: DefId(74:733 ~ tracing_core[5cb0]::subscriber::{impl#4}::never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:733 ~ tracing_core[5cb0]::subscriber::{impl#4}::never)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(74:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(74:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing::tracing::Span::new (AssocFn) [DefId: DefId(73:167 ~ tracing[3c75]::span::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(73:167 ~ tracing[3c75]::span::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing::tracing::Span::record_all (AssocFn) [DefId: DefId(73:199 ~ tracing[3c75]::span::{impl#0}::record_all)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(73:199 ~ tracing[3c75]::span::{impl#0}::record_all)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::tracing::tracing::Span::enter (AssocFn) [DefId: DefId(73:183 ~ tracing[3c75]::span::{impl#0}::enter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(73:183 ~ tracing[3c75]::span::{impl#0}::enter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::rustc_session::rustc_session::Session::at_least_rust_2021 (AssocFn) [DefId: DefId(203:1349 ~ rustc_session[5182]::session::{impl#2}::at_least_rust_2021)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(203:1349 ~ rustc_session[5182]::session::{impl#2}::at_least_rust_2021)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::should_do_rust_2021_incompatible_closure_captures_analysis USES crate::rustc_middle::rustc_middle::lint::<impl rustc_middle::ty::TyCtxt<'_>>::lint_level_at_node (AssocFn) [DefId: DefId(202:527 ~ rustc_middle[f25a]::lint::{impl#2}::lint_level_at_node)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:11139 ~ rustc_hir_typeck[8fed]::upvar::should_do_rust_2021_incompatible_closure_captures_analysis)",
+      "used_def_id": "DefId(202:527 ~ rustc_middle[f25a]::lint::{impl#2}::lint_level_at_node)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::alloc::std::slice::<impl [T]>::join (AssocFn) [DefId: DefId(3:6195 ~ alloc[27b0]::slice::{impl#0}::join)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(3:6195 ~ alloc[27b0]::slice::{impl#0}::join)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::alloc::std::slice::<impl [T]>::join (AssocFn) [DefId: DefId(3:6195 ~ alloc[27b0]::slice::{impl#0}::join)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(3:6195 ~ alloc[27b0]::slice::{impl#0}::join)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::std::iter::Iterator::collect (AssocFn) [DefId: DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::std::iter::Iterator::map (AssocFn) [DefId: DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::migration_suggestion_for_2229 USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3921 ~ rustc_hir_typeck[8fed]::upvar::migration_suggestion_for_2229)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::determine_capture_info USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3925 ~ rustc_hir_typeck[8fed]::upvar::determine_capture_info)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::determine_capture_info USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3925 ~ rustc_hir_typeck[8fed]::upvar::determine_capture_info)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::determine_capture_info USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3925 ~ rustc_hir_typeck[8fed]::upvar::determine_capture_info)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_place_to_len_and_update_capture_kind USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(202:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3926 ~ rustc_hir_typeck[8fed]::upvar::truncate_place_to_len_and_update_capture_kind)",
+      "used_def_id": "DefId(202:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_place_to_len_and_update_capture_kind USES crate::core::std::ops::Range (Struct) [DefId: DefId(2:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3926 ~ rustc_hir_typeck[8fed]::upvar::truncate_place_to_len_and_update_capture_kind)",
+      "used_def_id": "DefId(2:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_place_to_len_and_update_capture_kind USES crate::alloc::std::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3926 ~ rustc_hir_typeck[8fed]::upvar::truncate_place_to_len_and_update_capture_kind)",
+      "used_def_id": "DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_place_to_len_and_update_capture_kind USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3926 ~ rustc_hir_typeck[8fed]::upvar::truncate_place_to_len_and_update_capture_kind)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_place_to_len_and_update_capture_kind USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3926 ~ rustc_hir_typeck[8fed]::upvar::truncate_place_to_len_and_update_capture_kind)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_place_to_len_and_update_capture_kind USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3926 ~ rustc_hir_typeck[8fed]::upvar::truncate_place_to_len_and_update_capture_kind)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_place_to_len_and_update_capture_kind USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3926 ~ rustc_hir_typeck[8fed]::upvar::truncate_place_to_len_and_update_capture_kind)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_place_to_len_and_update_capture_kind USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3926 ~ rustc_hir_typeck[8fed]::upvar::truncate_place_to_len_and_update_capture_kind)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_place_to_len_and_update_capture_kind USES crate::rustc_middle::rustc_middle::hir::place::Place::<'tcx>::ty_before_projection (AssocFn) [DefId: DefId(202:318 ~ rustc_middle[f25a]::hir::place::{impl#1}::ty_before_projection)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3926 ~ rustc_hir_typeck[8fed]::upvar::truncate_place_to_len_and_update_capture_kind)",
+      "used_def_id": "DefId(202:318 ~ rustc_middle[f25a]::hir::place::{impl#1}::ty_before_projection)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_place_to_len_and_update_capture_kind USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3926 ~ rustc_hir_typeck[8fed]::upvar::truncate_place_to_len_and_update_capture_kind)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_place_to_len_and_update_capture_kind USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3926 ~ rustc_hir_typeck[8fed]::upvar::truncate_place_to_len_and_update_capture_kind)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_place_to_len_and_update_capture_kind USES crate::alloc::std::vec::Vec::<T, A>::truncate (AssocFn) [DefId: DefId(3:8112 ~ alloc[27b0]::vec::{impl#1}::truncate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3926 ~ rustc_hir_typeck[8fed]::upvar::truncate_place_to_len_and_update_capture_kind)",
+      "used_def_id": "DefId(3:8112 ~ alloc[27b0]::vec::{impl#1}::truncate)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::determine_place_ancestry_relation USES crate::core::std::cmp::PartialEq::ne (AssocFn) [DefId: DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3929 ~ rustc_hir_typeck[8fed]::upvar::determine_place_ancestry_relation)",
+      "used_def_id": "DefId(2:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::determine_place_ancestry_relation USES crate::core::std::iter::Iterator::all (AssocFn) [DefId: DefId(2:9556 ~ core[4720]::iter::traits::iterator::Iterator::all)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3929 ~ rustc_hir_typeck[8fed]::upvar::determine_place_ancestry_relation)",
+      "used_def_id": "DefId(2:9556 ~ core[4720]::iter::traits::iterator::Iterator::all)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::determine_place_ancestry_relation USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3929 ~ rustc_hir_typeck[8fed]::upvar::determine_place_ancestry_relation)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::determine_place_ancestry_relation USES crate::core::std::cmp::Ord::cmp (AssocFn) [DefId: DefId(2:3251 ~ core[4720]::cmp::Ord::cmp)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3929 ~ rustc_hir_typeck[8fed]::upvar::determine_place_ancestry_relation)",
+      "used_def_id": "DefId(2:3251 ~ core[4720]::cmp::Ord::cmp)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::determine_place_ancestry_relation USES crate::alloc::std::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3929 ~ rustc_hir_typeck[8fed]::upvar::determine_place_ancestry_relation)",
+      "used_def_id": "DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::determine_place_ancestry_relation USES crate::alloc::std::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3929 ~ rustc_hir_typeck[8fed]::upvar::determine_place_ancestry_relation)",
+      "used_def_id": "DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_capture_for_optimization USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(202:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3933 ~ rustc_hir_typeck[8fed]::upvar::truncate_capture_for_optimization)",
+      "used_def_id": "DefId(202:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_capture_for_optimization USES crate::core::std::iter::Iterator::rposition (AssocFn) [DefId: DefId(2:9604 ~ core[4720]::iter::traits::iterator::Iterator::rposition)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3933 ~ rustc_hir_typeck[8fed]::upvar::truncate_capture_for_optimization)",
+      "used_def_id": "DefId(2:9604 ~ core[4720]::iter::traits::iterator::Iterator::rposition)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_capture_for_optimization USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3933 ~ rustc_hir_typeck[8fed]::upvar::truncate_capture_for_optimization)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_capture_for_optimization USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3933 ~ rustc_hir_typeck[8fed]::upvar::truncate_capture_for_optimization)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_capture_for_optimization USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3933 ~ rustc_hir_typeck[8fed]::upvar::truncate_capture_for_optimization)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::truncate_capture_for_optimization USES crate::rustc_middle::rustc_middle::hir::place::Place::<'tcx>::ty_before_projection (AssocFn) [DefId: DefId(202:318 ~ rustc_middle[f25a]::hir::place::{impl#1}::ty_before_projection)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3933 ~ rustc_hir_typeck[8fed]::upvar::truncate_capture_for_optimization)",
+      "used_def_id": "DefId(202:318 ~ rustc_middle[f25a]::hir::place::{impl#1}::ty_before_projection)"
+    },
+    {
+      "usage": "crate::rustc_hir_typeck::upvar::enable_precise_capture USES crate::rustc_span::rustc_span::<impl rustc_span::Span>::at_least_rust_2021 (AssocFn) [DefId: DefId(131:1089 ~ rustc_span[d94c]::{impl#12}::at_least_rust_2021)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3936 ~ rustc_hir_typeck[8fed]::upvar::enable_precise_capture)",
+      "used_def_id": "DefId(131:1089 ~ rustc_span[d94c]::{impl#12}::at_least_rust_2021)"
+    }
+  ]
+}

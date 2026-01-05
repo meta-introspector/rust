@@ -1,0 +1,494 @@
+{
+  "crate": "rustix",
+  "module": "fs::at",
+  "usages": [
+    {
+      "usage": "crate::rustix::fs::at::openat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1196 ~ rustix[e5f9]::fs::at::openat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::openat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1196 ~ rustix[e5f9]::fs::at::openat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::readlinkat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1200 ~ rustix[e5f9]::fs::at::readlinkat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::readlinkat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1200 ~ rustix[e5f9]::fs::at::readlinkat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::readlinkat USES crate::core::std::convert::Into::into (AssocFn) [DefId: DefId(2:3432 ~ core[4720]::convert::Into::into)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1200 ~ rustix[e5f9]::fs::at::readlinkat)",
+      "used_def_id": "DefId(2:3432 ~ core[4720]::convert::Into::into)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::alloc::std::vec::Vec::<T, A>::clear (AssocFn) [DefId: DefId(3:8181 ~ alloc[27b0]::vec::{impl#1}::clear)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(3:8181 ~ alloc[27b0]::vec::{impl#1}::clear)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::alloc::std::vec::Vec::<T, A>::reserve (AssocFn) [DefId: DefId(3:8105 ~ alloc[27b0]::vec::{impl#1}::reserve)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(3:8105 ~ alloc[27b0]::vec::{impl#1}::reserve)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::alloc::std::vec::Vec::<T, A>::spare_capacity_mut (AssocFn) [DefId: DefId(3:8190 ~ alloc[27b0]::vec::{impl#1}::spare_capacity_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(3:8190 ~ alloc[27b0]::vec::{impl#1}::spare_capacity_mut)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::core::std::ptr::mut_ptr::<impl *mut T>::cast (AssocFn) [DefId: DefId(2:2856 ~ core[4720]::ptr::mut_ptr::{impl#0}::cast)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(2:2856 ~ core[4720]::ptr::mut_ptr::{impl#0}::cast)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::core::core::slice::<impl [T]>::as_mut_ptr (AssocFn) [DefId: DefId(2:14077 ~ core[4720]::slice::{impl#0}::as_mut_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(2:14077 ~ core[4720]::slice::{impl#0}::as_mut_ptr)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::core::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::alloc::std::vec::Vec::<T, A>::capacity (AssocFn) [DefId: DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::alloc::std::vec::Vec::<T, A>::capacity (AssocFn) [DefId: DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::alloc::std::vec::Vec::<T, A>::set_len (AssocFn) [DefId: DefId(3:8119 ~ alloc[27b0]::vec::{impl#1}::set_len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(3:8119 ~ alloc[27b0]::vec::{impl#1}::set_len)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::alloc::std::ffi::CString::from_vec_unchecked (AssocFn) [DefId: DefId(3:5300 ~ alloc[27b0]::ffi::c_str::{impl#1}::from_vec_unchecked)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(3:5300 ~ alloc[27b0]::ffi::c_str::{impl#1}::from_vec_unchecked)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::alloc::std::vec::Vec::<T, A>::reserve (AssocFn) [DefId: DefId(3:8105 ~ alloc[27b0]::vec::{impl#1}::reserve)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(3:8105 ~ alloc[27b0]::vec::{impl#1}::reserve)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::_readlinkat USES crate::alloc::std::vec::Vec::<T, A>::capacity (AssocFn) [DefId: DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1205 ~ rustix[e5f9]::fs::at::_readlinkat)",
+      "used_def_id": "DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::readlinkat_raw USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1206 ~ rustix[e5f9]::fs::at::readlinkat_raw)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::readlinkat_raw USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1206 ~ rustix[e5f9]::fs::at::readlinkat_raw)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::readlinkat_raw USES crate::rustix::buffer::private::Sealed::parts_mut (AssocFn) [DefId: DefId(0:84 ~ rustix[e5f9]::buffer::private::Sealed::parts_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1206 ~ rustix[e5f9]::fs::at::readlinkat_raw)",
+      "used_def_id": "DefId(0:84 ~ rustix[e5f9]::buffer::private::Sealed::parts_mut)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::readlinkat_raw USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1206 ~ rustix[e5f9]::fs::at::readlinkat_raw)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::readlinkat_raw USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1206 ~ rustix[e5f9]::fs::at::readlinkat_raw)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::readlinkat_raw USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1206 ~ rustix[e5f9]::fs::at::readlinkat_raw)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::readlinkat_raw USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1206 ~ rustix[e5f9]::fs::at::readlinkat_raw)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::readlinkat_raw USES crate::rustix::buffer::private::Sealed::assume_init (AssocFn) [DefId: DefId(0:85 ~ rustix[e5f9]::buffer::private::Sealed::assume_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1206 ~ rustix[e5f9]::fs::at::readlinkat_raw)",
+      "used_def_id": "DefId(0:85 ~ rustix[e5f9]::buffer::private::Sealed::assume_init)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::mkdirat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1211 ~ rustix[e5f9]::fs::at::mkdirat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::mkdirat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1211 ~ rustix[e5f9]::fs::at::mkdirat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::linkat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1215 ~ rustix[e5f9]::fs::at::linkat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::linkat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1215 ~ rustix[e5f9]::fs::at::linkat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::linkat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1215 ~ rustix[e5f9]::fs::at::linkat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::linkat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1215 ~ rustix[e5f9]::fs::at::linkat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::unlinkat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1222 ~ rustix[e5f9]::fs::at::unlinkat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::unlinkat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1222 ~ rustix[e5f9]::fs::at::unlinkat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::renameat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1226 ~ rustix[e5f9]::fs::at::renameat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::renameat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1226 ~ rustix[e5f9]::fs::at::renameat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::renameat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1226 ~ rustix[e5f9]::fs::at::renameat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::renameat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1226 ~ rustix[e5f9]::fs::at::renameat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::renameat_with USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1233 ~ rustix[e5f9]::fs::at::renameat_with)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::renameat_with USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1233 ~ rustix[e5f9]::fs::at::renameat_with)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::renameat_with USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1233 ~ rustix[e5f9]::fs::at::renameat_with)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::renameat_with USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1233 ~ rustix[e5f9]::fs::at::renameat_with)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::symlinkat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1240 ~ rustix[e5f9]::fs::at::symlinkat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::symlinkat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1240 ~ rustix[e5f9]::fs::at::symlinkat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::symlinkat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1240 ~ rustix[e5f9]::fs::at::symlinkat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::statat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1246 ~ rustix[e5f9]::fs::at::statat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::statat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1246 ~ rustix[e5f9]::fs::at::statat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::accessat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1250 ~ rustix[e5f9]::fs::at::accessat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::accessat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1250 ~ rustix[e5f9]::fs::at::accessat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::utimensat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1254 ~ rustix[e5f9]::fs::at::utimensat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::utimensat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1254 ~ rustix[e5f9]::fs::at::utimensat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::chmodat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1258 ~ rustix[e5f9]::fs::at::chmodat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::chmodat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1258 ~ rustix[e5f9]::fs::at::chmodat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::mknodat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1262 ~ rustix[e5f9]::fs::at::mknodat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::mknodat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1262 ~ rustix[e5f9]::fs::at::mknodat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::chownat USES crate::rustix::path::arg::Arg::into_with_c_str (AssocFn) [DefId: DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1266 ~ rustix[e5f9]::fs::at::chownat)",
+      "used_def_id": "DefId(0:1990 ~ rustix[e5f9]::path::arg::Arg::into_with_c_str)"
+    },
+    {
+      "usage": "crate::rustix::fs::at::chownat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1266 ~ rustix[e5f9]::fs::at::chownat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "crate": "crossbeam_epoch",
+  "module": "default",
+  "usages": [
+    {
+      "usage": "crate::crossbeam_epoch::default::collector USES crate::crossbeam_epoch::sync::once_lock::OnceLock::<T>::get_or_init (AssocFn) [DefId: DefId(0:589 ~ crossbeam_epoch[2e18]::sync::once_lock::{impl#2}::get_or_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:661 ~ crossbeam_epoch[2e18]::default::collector)",
+      "used_def_id": "DefId(0:589 ~ crossbeam_epoch[2e18]::sync::once_lock::{impl#2}::get_or_init)"
+    },
+    {
+      "usage": "crate::crossbeam_epoch::default::collector USES crate::crossbeam_epoch::collector::Collector::new (AssocFn) [DefId: DefId(0:326 ~ crossbeam_epoch[2e18]::collector::{impl#3}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:661 ~ crossbeam_epoch[2e18]::default::collector)",
+      "used_def_id": "DefId(0:326 ~ crossbeam_epoch[2e18]::collector::{impl#3}::new)"
+    },
+    {
+      "usage": "crate::crossbeam_epoch::default::HANDLE USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:739 ~ crossbeam_epoch[2e18]::default::HANDLE)",
+      "used_def_id": "DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::crossbeam_epoch::default::HANDLE USES crate::std::std::thread::local_impl::LazyStorage::<T, D>::get_or_init (AssocFn) [DefId: DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:739 ~ crossbeam_epoch[2e18]::default::HANDLE)",
+      "used_def_id": "DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)"
+    },
+    {
+      "usage": "crate::crossbeam_epoch::default::HANDLE USES crate::std::std::thread::local_impl::LazyStorage::<T, D>::get_or_init (AssocFn) [DefId: DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:739 ~ crossbeam_epoch[2e18]::default::HANDLE)",
+      "used_def_id": "DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)"
+    },
+    {
+      "usage": "crate::crossbeam_epoch::default::pin USES crate::crossbeam_epoch::collector::LocalHandle::pin (AssocFn) [DefId: DefId(0:338 ~ crossbeam_epoch[2e18]::collector::{impl#8}::pin)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:663 ~ crossbeam_epoch[2e18]::default::pin)",
+      "used_def_id": "DefId(0:338 ~ crossbeam_epoch[2e18]::collector::{impl#8}::pin)"
+    },
+    {
+      "usage": "crate::crossbeam_epoch::default::is_pinned USES crate::crossbeam_epoch::collector::LocalHandle::is_pinned (AssocFn) [DefId: DefId(0:339 ~ crossbeam_epoch[2e18]::collector::{impl#8}::is_pinned)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:665 ~ crossbeam_epoch[2e18]::default::is_pinned)",
+      "used_def_id": "DefId(0:339 ~ crossbeam_epoch[2e18]::collector::{impl#8}::is_pinned)"
+    },
+    {
+      "usage": "crate::crossbeam_epoch::default::with_handle USES crate::core::std::result::Result::<T, E>::unwrap_or_else (AssocFn) [DefId: DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:668 ~ crossbeam_epoch[2e18]::default::with_handle)",
+      "used_def_id": "DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::crossbeam_epoch::default::with_handle USES crate::std::std::thread::LocalKey::<T>::try_with (AssocFn) [DefId: DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:668 ~ crossbeam_epoch[2e18]::default::with_handle)",
+      "used_def_id": "DefId(1:573 ~ std[93f5]::thread::local::{impl#4}::try_with)"
+    },
+    {
+      "usage": "crate::crossbeam_epoch::default::with_handle USES crate::core::std::ops::FnMut::call_mut (AssocFn) [DefId: DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:668 ~ crossbeam_epoch[2e18]::default::with_handle)",
+      "used_def_id": "DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::crossbeam_epoch::default::with_handle USES crate::core::std::ops::FnMut::call_mut (AssocFn) [DefId: DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:668 ~ crossbeam_epoch[2e18]::default::with_handle)",
+      "used_def_id": "DefId(2:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::crossbeam_epoch::default::with_handle USES crate::crossbeam_epoch::collector::Collector::register (AssocFn) [DefId: DefId(0:327 ~ crossbeam_epoch[2e18]::collector::{impl#3}::register)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:668 ~ crossbeam_epoch[2e18]::default::with_handle)",
+      "used_def_id": "DefId(0:327 ~ crossbeam_epoch[2e18]::collector::{impl#3}::register)"
+    }
+  ]
+}

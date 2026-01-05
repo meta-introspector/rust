@@ -1,0 +1,1174 @@
+{
+  "crate": "nix",
+  "module": "fcntl",
+  "usages": [
+    {
+      "usage": "crate::nix::fcntl::AT_FDCWD USES crate::std::std::os::fd::BorrowedFd::<'_>::borrow_raw (AssocFn) [DefId: DefId(1:5332 ~ std[93f5]::os::fd::owned::{impl#0}::borrow_raw)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:82 ~ nix[556f]::fcntl::AT_FDCWD)",
+      "used_def_id": "DefId(1:5332 ~ std[93f5]::os::fd::owned::{impl#0}::borrow_raw)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::nix::NixPath::with_nix_path (AssocFn) [DefId: DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::core::std::ffi::CStr::as_ptr (AssocFn) [DefId: DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::nix::fcntl::_::<impl fcntl::OFlag>::bits (AssocFn) [DefId: DefId(0:1157 ~ nix[556f]::fcntl::_#1::{impl#34}::bits)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(0:1157 ~ nix[556f]::fcntl::_#1::{impl#34}::bits)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::nix::sys::stat::_::<impl sys::stat::Mode>::bits (AssocFn) [DefId: DefId(0:5588 ~ nix[556f]::sys::stat::_#1::{impl#34}::bits)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(0:5588 ~ nix[556f]::sys::stat::_#1::{impl#34}::bits)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::nix::errno::<impl errno::consts::Errno>::result (AssocFn) [DefId: DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::open USES crate::std::std::os::fd::FromRawFd::from_raw_fd (AssocFn) [DefId: DefId(1:5257 ~ std[93f5]::os::fd::raw::FromRawFd::from_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1220 ~ nix[556f]::fcntl::open)",
+      "used_def_id": "DefId(1:5257 ~ std[93f5]::os::fd::raw::FromRawFd::from_raw_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::nix::NixPath::with_nix_path (AssocFn) [DefId: DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::core::std::ffi::CStr::as_ptr (AssocFn) [DefId: DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::nix::fcntl::_::<impl fcntl::OFlag>::bits (AssocFn) [DefId: DefId(0:1157 ~ nix[556f]::fcntl::_#1::{impl#34}::bits)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(0:1157 ~ nix[556f]::fcntl::_#1::{impl#34}::bits)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::nix::sys::stat::_::<impl sys::stat::Mode>::bits (AssocFn) [DefId: DefId(0:5588 ~ nix[556f]::sys::stat::_#1::{impl#34}::bits)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(0:5588 ~ nix[556f]::sys::stat::_#1::{impl#34}::bits)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::nix::errno::<impl errno::consts::Errno>::result (AssocFn) [DefId: DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat USES crate::std::std::os::fd::FromRawFd::from_raw_fd (AssocFn) [DefId: DefId(1:5257 ~ std[93f5]::os::fd::raw::FromRawFd::from_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1224 ~ nix[556f]::fcntl::openat)",
+      "used_def_id": "DefId(1:5257 ~ std[93f5]::os::fd::raw::FromRawFd::from_raw_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::nix::NixPath::with_nix_path (AssocFn) [DefId: DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::core::std::ffi::CStr::as_ptr (AssocFn) [DefId: DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::nix::errno::<impl errno::consts::Errno>::result (AssocFn) [DefId: DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::openat2 USES crate::std::std::os::fd::FromRawFd::from_raw_fd (AssocFn) [DefId: DefId(1:5257 ~ std[93f5]::os::fd::raw::FromRawFd::from_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1245 ~ nix[556f]::fcntl::openat2)",
+      "used_def_id": "DefId(1:5257 ~ std[93f5]::os::fd::raw::FromRawFd::from_raw_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::nix::NixPath::with_nix_path (AssocFn) [DefId: DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::nix::NixPath::with_nix_path (AssocFn) [DefId: DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::core::std::ffi::CStr::as_ptr (AssocFn) [DefId: DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::core::std::ffi::CStr::as_ptr (AssocFn) [DefId: DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::core::std::result::Result::<T, E>::map (AssocFn) [DefId: DefId(2:11083 ~ core[4720]::result::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(2:11083 ~ core[4720]::result::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat USES crate::nix::errno::<impl errno::consts::Errno>::result (AssocFn) [DefId: DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1230 ~ nix[556f]::fcntl::renameat)",
+      "used_def_id": "DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::nix::NixPath::with_nix_path (AssocFn) [DefId: DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::nix::NixPath::with_nix_path (AssocFn) [DefId: DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::core::std::ffi::CStr::as_ptr (AssocFn) [DefId: DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::core::std::ffi::CStr::as_ptr (AssocFn) [DefId: DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::nix::fcntl::_::<impl fcntl::RenameFlags>::bits (AssocFn) [DefId: DefId(0:1596 ~ nix[556f]::fcntl::_#3::{impl#34}::bits)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(0:1596 ~ nix[556f]::fcntl::_#3::{impl#34}::bits)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::core::std::result::Result::<T, E>::map (AssocFn) [DefId: DefId(2:11083 ~ core[4720]::result::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(2:11083 ~ core[4720]::result::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::nix::fcntl::renameat2 USES crate::nix::errno::<impl errno::consts::Errno>::result (AssocFn) [DefId: DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1659 ~ nix[556f]::fcntl::renameat2)",
+      "used_def_id": "DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)"
+    },
+    {
+      "usage": "crate::nix::fcntl::wrap_readlink_result USES crate::alloc::std::vec::Vec::<T, A>::set_len (AssocFn) [DefId: DefId(3:8119 ~ alloc[27b0]::vec::{impl#1}::set_len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1667 ~ nix[556f]::fcntl::wrap_readlink_result)",
+      "used_def_id": "DefId(3:8119 ~ alloc[27b0]::vec::{impl#1}::set_len)"
+    },
+    {
+      "usage": "crate::nix::fcntl::wrap_readlink_result USES crate::alloc::std::vec::Vec::<T, A>::shrink_to_fit (AssocFn) [DefId: DefId(3:8109 ~ alloc[27b0]::vec::{impl#1}::shrink_to_fit)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1667 ~ nix[556f]::fcntl::wrap_readlink_result)",
+      "used_def_id": "DefId(3:8109 ~ alloc[27b0]::vec::{impl#1}::shrink_to_fit)"
+    },
+    {
+      "usage": "crate::nix::fcntl::wrap_readlink_result USES crate::std::std::os::unix::ffi::OsStringExt::from_vec (AssocFn) [DefId: DefId(1:4409 ~ std[93f5]::os::unix::ffi::os_str::OsStringExt::from_vec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1667 ~ nix[556f]::fcntl::wrap_readlink_result)",
+      "used_def_id": "DefId(1:4409 ~ std[93f5]::os::unix::ffi::os_str::OsStringExt::from_vec)"
+    },
+    {
+      "usage": "crate::nix::fcntl::wrap_readlink_result USES crate::alloc::std::slice::<impl [T]>::to_vec (AssocFn) [DefId: DefId(3:6165 ~ alloc[27b0]::slice::{impl#0}::to_vec)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1667 ~ nix[556f]::fcntl::wrap_readlink_result)",
+      "used_def_id": "DefId(3:6165 ~ alloc[27b0]::slice::{impl#0}::to_vec)"
+    },
+    {
+      "usage": "crate::nix::fcntl::readlink_maybe_at USES crate::nix::NixPath::with_nix_path (AssocFn) [DefId: DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1668 ~ nix[556f]::fcntl::readlink_maybe_at)",
+      "used_def_id": "DefId(0:346 ~ nix[556f]::NixPath::with_nix_path)"
+    },
+    {
+      "usage": "crate::nix::fcntl::readlink_maybe_at USES crate::core::std::ffi::CStr::as_ptr (AssocFn) [DefId: DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1668 ~ nix[556f]::fcntl::readlink_maybe_at)",
+      "used_def_id": "DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)"
+    },
+    {
+      "usage": "crate::nix::fcntl::readlink_maybe_at USES crate::core::std::ptr::mut_ptr::<impl *mut T>::cast (AssocFn) [DefId: DefId(2:2856 ~ core[4720]::ptr::mut_ptr::{impl#0}::cast)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1668 ~ nix[556f]::fcntl::readlink_maybe_at)",
+      "used_def_id": "DefId(2:2856 ~ core[4720]::ptr::mut_ptr::{impl#0}::cast)"
+    },
+    {
+      "usage": "crate::nix::fcntl::readlink_maybe_at USES crate::alloc::std::vec::Vec::<T, A>::as_mut_ptr (AssocFn) [DefId: DefId(3:8116 ~ alloc[27b0]::vec::{impl#1}::as_mut_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1668 ~ nix[556f]::fcntl::readlink_maybe_at)",
+      "used_def_id": "DefId(3:8116 ~ alloc[27b0]::vec::{impl#1}::as_mut_ptr)"
+    },
+    {
+      "usage": "crate::nix::fcntl::readlink_maybe_at USES crate::alloc::std::vec::Vec::<T, A>::capacity (AssocFn) [DefId: DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1668 ~ nix[556f]::fcntl::readlink_maybe_at)",
+      "used_def_id": "DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)"
+    },
+    {
+      "usage": "crate::nix::fcntl::readlink_maybe_at USES crate::core::std::ffi::CStr::as_ptr (AssocFn) [DefId: DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1668 ~ nix[556f]::fcntl::readlink_maybe_at)",
+      "used_def_id": "DefId(2:6097 ~ core[4720]::ffi::c_str::{impl#5}::as_ptr)"
+    },
+    {
+      "usage": "crate::nix::fcntl::readlink_maybe_at USES crate::core::std::ptr::mut_ptr::<impl *mut T>::cast (AssocFn) [DefId: DefId(2:2856 ~ core[4720]::ptr::mut_ptr::{impl#0}::cast)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1668 ~ nix[556f]::fcntl::readlink_maybe_at)",
+      "used_def_id": "DefId(2:2856 ~ core[4720]::ptr::mut_ptr::{impl#0}::cast)"
+    },
+    {
+      "usage": "crate::nix::fcntl::readlink_maybe_at USES crate::alloc::std::vec::Vec::<T, A>::as_mut_ptr (AssocFn) [DefId: DefId(3:8116 ~ alloc[27b0]::vec::{impl#1}::as_mut_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1668 ~ nix[556f]::fcntl::readlink_maybe_at)",
+      "used_def_id": "DefId(3:8116 ~ alloc[27b0]::vec::{impl#1}::as_mut_ptr)"
+    },
+    {
+      "usage": "crate::nix::fcntl::readlink_maybe_at USES crate::alloc::std::vec::Vec::<T, A>::capacity (AssocFn) [DefId: DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1668 ~ nix[556f]::fcntl::readlink_maybe_at)",
+      "used_def_id": "DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::alloc::std::vec::Vec::<T>::with_capacity (AssocFn) [DefId: DefId(3:8087 ~ alloc[27b0]::vec::{impl#0}::with_capacity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(3:8087 ~ alloc[27b0]::vec::{impl#0}::with_capacity)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::nix::errno::<impl errno::consts::Errno>::result (AssocFn) [DefId: DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::alloc::std::vec::Vec::<T, A>::capacity (AssocFn) [DefId: DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::result::Result::<T, E>::unwrap_or (AssocFn) [DefId: DefId(2:11124 ~ core[4720]::result::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:11124 ~ core[4720]::result::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::result::Result::<T, E>::map (AssocFn) [DefId: DefId(2:11083 ~ core[4720]::result::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:11083 ~ core[4720]::result::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::std::std::os::fd::BorrowedFd::<'_>::borrow_raw (AssocFn) [DefId: DefId(1:5332 ~ std[93f5]::os::fd::owned::{impl#0}::borrow_raw)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(1:5332 ~ std[93f5]::os::fd::owned::{impl#0}::borrow_raw)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::nix::NixPath::is_empty (AssocFn) [DefId: DefId(0:344 ~ nix[556f]::NixPath::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(0:344 ~ nix[556f]::NixPath::is_empty)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::nix::fcntl::AtFlags::AT_EMPTY_PATH (AssocConst) [DefId: DefId(0:829 ~ nix[556f]::fcntl::{impl#9}::AT_EMPTY_PATH)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(0:829 ~ nix[556f]::fcntl::{impl#9}::AT_EMPTY_PATH)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::nix::fcntl::_::<impl fcntl::AtFlags>::empty (AssocFn) [DefId: DefId(0:935 ~ nix[556f]::fcntl::_::{impl#34}::empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(0:935 ~ nix[556f]::fcntl::_::{impl#34}::empty)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::BitOr::bitor (AssocFn) [DefId: DefId(2:39961 ~ core[4720]::ops::bit::BitOr::bitor)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:39961 ~ core[4720]::ops::bit::BitOr::bitor)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::nix::fcntl::AtFlags::AT_SYMLINK_NOFOLLOW (AssocConst) [DefId: DefId(0:827 ~ nix[556f]::fcntl::{impl#9}::AT_SYMLINK_NOFOLLOW)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(0:827 ~ nix[556f]::fcntl::{impl#9}::AT_SYMLINK_NOFOLLOW)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::cmp::Ord::max (AssocFn) [DefId: DefId(2:3252 ~ core[4720]::cmp::Ord::max)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:3252 ~ core[4720]::cmp::Ord::max)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::alloc::std::vec::Vec::<T, A>::reserve_exact (AssocFn) [DefId: DefId(3:8106 ~ alloc[27b0]::vec::{impl#1}::reserve_exact)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(3:8106 ~ alloc[27b0]::vec::{impl#1}::reserve_exact)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::nix::errno::<impl errno::consts::Errno>::result (AssocFn) [DefId: DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::alloc::std::vec::Vec::<T, A>::capacity (AssocFn) [DefId: DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(3:8104 ~ alloc[27b0]::vec::{impl#1}::capacity)"
+    },
+    {
+      "usage": "crate::nix::fcntl::inner_readlink USES crate::core::bitflags::__private::core::num::<impl usize>::checked_shl (AssocFn) [DefId: DefId(2:35740 ~ core[4720]::num::{impl#11}::checked_shl)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1671 ~ nix[556f]::fcntl::inner_readlink)",
+      "used_def_id": "DefId(2:35740 ~ core[4720]::num::{impl#11}::checked_shl)"
+    },
+    {
+      "usage": "crate::nix::fcntl::readlinkat USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1677 ~ nix[556f]::fcntl::readlinkat)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::readlinkat USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1677 ~ nix[556f]::fcntl::readlinkat)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::fcntl USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2080 ~ nix[556f]::fcntl::fcntl)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::fcntl USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2080 ~ nix[556f]::fcntl::fcntl)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::fcntl USES crate::nix::fcntl::_::<impl fcntl::FdFlag>::bits (AssocFn) [DefId: DefId(0:2016 ~ nix[556f]::fcntl::_#5::{impl#34}::bits)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2080 ~ nix[556f]::fcntl::fcntl)",
+      "used_def_id": "DefId(0:2016 ~ nix[556f]::fcntl::_#5::{impl#34}::bits)"
+    },
+    {
+      "usage": "crate::nix::fcntl::fcntl USES crate::nix::fcntl::_::<impl fcntl::OFlag>::bits (AssocFn) [DefId: DefId(0:1157 ~ nix[556f]::fcntl::_#1::{impl#34}::bits)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2080 ~ nix[556f]::fcntl::fcntl)",
+      "used_def_id": "DefId(0:1157 ~ nix[556f]::fcntl::_#1::{impl#34}::bits)"
+    },
+    {
+      "usage": "crate::nix::fcntl::fcntl USES crate::nix::fcntl::_::<impl fcntl::SealFlag>::bits (AssocFn) [DefId: DefId(0:1819 ~ nix[556f]::fcntl::_#4::{impl#34}::bits)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2080 ~ nix[556f]::fcntl::fcntl)",
+      "used_def_id": "DefId(0:1819 ~ nix[556f]::fcntl::_#4::{impl#34}::bits)"
+    },
+    {
+      "usage": "crate::nix::fcntl::fcntl USES crate::nix::errno::<impl errno::consts::Errno>::result (AssocFn) [DefId: DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2080 ~ nix[556f]::fcntl::fcntl)",
+      "used_def_id": "DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)"
+    },
+    {
+      "usage": "crate::nix::fcntl::flock USES crate::core::std::result::Result::<T, E>::map (AssocFn) [DefId: DefId(2:11083 ~ core[4720]::result::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2083 ~ nix[556f]::fcntl::flock)",
+      "used_def_id": "DefId(2:11083 ~ core[4720]::result::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::nix::fcntl::flock USES crate::nix::errno::<impl errno::consts::Errno>::result (AssocFn) [DefId: DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2083 ~ nix[556f]::fcntl::flock)",
+      "used_def_id": "DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)"
+    },
+    {
+      "usage": "crate::nix::fcntl::fallocate USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2399 ~ nix[556f]::fcntl::fallocate)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::fallocate USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2399 ~ nix[556f]::fcntl::fallocate)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::fallocate USES crate::nix::fcntl::_::<impl fcntl::FallocateFlags>::bits (AssocFn) [DefId: DefId(0:2336 ~ nix[556f]::fcntl::_#6::{impl#34}::bits)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2399 ~ nix[556f]::fcntl::fallocate)",
+      "used_def_id": "DefId(0:2336 ~ nix[556f]::fcntl::_#6::{impl#34}::bits)"
+    },
+    {
+      "usage": "crate::nix::fcntl::fallocate USES crate::core::std::result::Result::<T, E>::map (AssocFn) [DefId: DefId(2:11083 ~ core[4720]::result::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2399 ~ nix[556f]::fcntl::fallocate)",
+      "used_def_id": "DefId(2:11083 ~ core[4720]::result::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::nix::fcntl::fallocate USES crate::nix::errno::<impl errno::consts::Errno>::result (AssocFn) [DefId: DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2399 ~ nix[556f]::fcntl::fallocate)",
+      "used_def_id": "DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)"
+    },
+    {
+      "usage": "crate::nix::fcntl::posix_fallocate USES crate::std::std::os::fd::AsRawFd::as_raw_fd (AssocFn) [DefId: DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2405 ~ nix[556f]::fcntl::posix_fallocate)",
+      "used_def_id": "DefId(1:5255 ~ std[93f5]::os::fd::raw::AsRawFd::as_raw_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::posix_fallocate USES crate::std::std::os::fd::AsFd::as_fd (AssocFn) [DefId: DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2405 ~ nix[556f]::fcntl::posix_fallocate)",
+      "used_def_id": "DefId(1:5353 ~ std[93f5]::os::fd::owned::AsFd::as_fd)"
+    },
+    {
+      "usage": "crate::nix::fcntl::posix_fallocate USES crate::nix::errno::<impl errno::consts::Errno>::result (AssocFn) [DefId: DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2405 ~ nix[556f]::fcntl::posix_fallocate)",
+      "used_def_id": "DefId(0:29 ~ nix[556f]::errno::{impl#0}::result)"
+    },
+    {
+      "usage": "crate::nix::fcntl::posix_fallocate USES crate::nix::errno::<impl errno::consts::Errno>::from_raw (AssocFn) [DefId: DefId(0:26 ~ nix[556f]::errno::{impl#0}::from_raw)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2405 ~ nix[556f]::fcntl::posix_fallocate)",
+      "used_def_id": "DefId(0:26 ~ nix[556f]::errno::{impl#0}::from_raw)"
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+{
+  "crate": "rustc_monomorphize",
+  "module": "mono_checks::abi_check",
+  "usages": [
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::uses_vector_registers USES crate::core::std::iter::Iterator::any (AssocFn) [DefId: DefId(2:9563 ~ core[4720]::iter::traits::iterator::Iterator::any)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:248 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::uses_vector_registers)",
+      "used_def_id": "DefId(2:9563 ~ core[4720]::iter::traits::iterator::Iterator::any)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::uses_vector_registers USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:248 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::uses_vector_registers)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::uses_vector_registers USES crate::core::std::option::Option::<T>::is_some_and (AssocFn) [DefId: DefId(2:10215 ~ core[4720]::option::{impl#0}::is_some_and)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:248 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::uses_vector_registers)",
+      "used_def_id": "DefId(2:10215 ~ core[4720]::option::{impl#0}::is_some_and)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::uses_vector_registers USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:248 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::uses_vector_registers)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::uses_vector_registers USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:248 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::uses_vector_registers)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::rustc_target::rustc_target::target_features::<impl rustc_target::spec::Target>::features_for_correct_vector_abi (AssocFn) [DefId: DefId(173:2057 ~ rustc_target[335a]::target_features::{impl#2}::features_for_correct_vector_abi)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(173:2057 ~ rustc_target[335a]::target_features::{impl#2}::features_for_correct_vector_abi)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::codegen_fn_attrs (AssocFn) [DefId: DefId(193:37799 ~ rustc_middle[f25a]::query::{impl#3}::codegen_fn_attrs)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(193:37799 ~ rustc_middle[f25a]::query::{impl#3}::codegen_fn_attrs)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::indexmap::indexmap::set::IndexSet::<T, S>::contains (AssocFn) [DefId: DefId(41:2209 ~ indexmap[01a7]::set::{impl#5}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(41:2209 ~ indexmap[01a7]::set::{impl#5}::contains)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::iter::Iterator::any (AssocFn) [DefId: DefId(2:9563 ~ core[4720]::iter::traits::iterator::Iterator::any)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:9563 ~ core[4720]::iter::traits::iterator::Iterator::any)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::iter::Iterator::chain (AssocFn) [DefId: DefId(2:9451 ~ core[4720]::iter::traits::iterator::Iterator::chain)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:9451 ~ core[4720]::iter::traits::iterator::Iterator::chain)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::iter::Iterator::find (AssocFn) [DefId: DefId(2:9570 ~ core[4720]::iter::traits::iterator::Iterator::find)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:9570 ~ core[4720]::iter::traits::iterator::Iterator::find)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::rustc_abi::rustc_abi::Size::bits (AssocFn) [DefId: DefId(21:584 ~ rustc_abi[6de0]::{impl#12}::bits)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(21:584 ~ rustc_abi[6de0]::{impl#12}::bits)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(194:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(194:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::rustc_span::rustc_span::Symbol::intern (AssocFn) [DefId: DefId(109:810 ~ rustc_span[d94c]::symbol::{impl#14}::intern)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(109:810 ~ rustc_span[d94c]::symbol::{impl#14}::intern)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(194:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(194:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_err (AssocFn) [DefId: DefId(194:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(194:1247 ~ rustc_errors[740a]::{impl#9}::emit_err)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::do_check_simd_vector_abi USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:251 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::do_check_simd_vector_abi)",
+      "used_def_id": "DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_instance_abi USES crate::rustc_middle::rustc_middle::ty::TypingEnv::<'tcx>::fully_monomorphized (AssocFn) [DefId: DefId(193:9390 ~ rustc_middle[f25a]::ty::{impl#35}::fully_monomorphized)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:257 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_instance_abi)",
+      "used_def_id": "DefId(193:9390 ~ rustc_middle[f25a]::ty::{impl#35}::fully_monomorphized)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_instance_abi USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::fn_abi_of_instance (AssocFn) [DefId: DefId(193:37837 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_instance)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:257 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_instance_abi)",
+      "used_def_id": "DefId(193:37837 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_instance)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_instance_abi USES crate::rustc_middle::rustc_middle::ty::TypingEnv::<'tcx>::as_query_input (AssocFn) [DefId: DefId(193:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:257 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_instance_abi)",
+      "used_def_id": "DefId(193:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_instance_abi USES crate::rustc_middle::rustc_middle::ty::list::RawList::<(), T>::empty (AssocFn) [DefId: DefId(193:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:257 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_instance_abi)",
+      "used_def_id": "DefId(193:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_instance_abi USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::delayed_bug (AssocFn) [DefId: DefId(194:1249 ~ rustc_errors[740a]::{impl#9}::delayed_bug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:257 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_instance_abi)",
+      "used_def_id": "DefId(194:1249 ~ rustc_errors[740a]::{impl#9}::delayed_bug)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_instance_abi USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:257 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_instance_abi)",
+      "used_def_id": "DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_instance_abi USES crate::rustc_middle::rustc_middle::ty::Instance::<'tcx>::def_id (AssocFn) [DefId: DefId(193:7816 ~ rustc_middle[f25a]::ty::instance::{impl#3}::def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:257 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_instance_abi)",
+      "used_def_id": "DefId(193:7816 ~ rustc_middle[f25a]::ty::instance::{impl#3}::def_id)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_instance_abi USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_span (AssocFn) [DefId: DefId(193:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:257 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_instance_abi)",
+      "used_def_id": "DefId(193:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_instance_abi USES crate::core::std::option::Option::<T>::unwrap_or (AssocFn) [DefId: DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:257 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_instance_abi)",
+      "used_def_id": "DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_instance_abi USES crate::core::std::option::Option::<T>::map (AssocFn) [DefId: DefId(2:10234 ~ core[4720]::option::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:257 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_instance_abi)",
+      "used_def_id": "DefId(2:10234 ~ core[4720]::option::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_instance_abi USES crate::rustc_span::rustc_hir::def_id::DefId::as_local (AssocFn) [DefId: DefId(109:571 ~ rustc_span[d94c]::def_id::{impl#10}::as_local)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:257 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_instance_abi)",
+      "used_def_id": "DefId(109:571 ~ rustc_span[d94c]::def_id::{impl#10}::as_local)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_instance_abi USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::local_def_id_to_hir_id (AssocFn) [DefId: DefId(193:37658 ~ rustc_middle[f25a]::query::{impl#3}::local_def_id_to_hir_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:257 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_instance_abi)",
+      "used_def_id": "DefId(193:37658 ~ rustc_middle[f25a]::query::{impl#3}::local_def_id_to_hir_id)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_instance_abi USES crate::rustc_middle::rustc_middle::ty::Instance::<'tcx>::def_id (AssocFn) [DefId: DefId(193:7816 ~ rustc_middle[f25a]::ty::instance::{impl#3}::def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:257 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_instance_abi)",
+      "used_def_id": "DefId(193:7816 ~ rustc_middle[f25a]::ty::instance::{impl#3}::def_id)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_abi::rustc_abi::ExternAbi::is_rustic_abi (AssocFn) [DefId: DefId(21:106 ~ rustc_abi[6de0]::extern_abi::{impl#7}::is_rustic_abi)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(21:106 ~ rustc_abi[6de0]::extern_abi::{impl#7}::is_rustic_abi)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_type_ir::rustc_middle::infer::canonical::rustc_type_ir::ty_kind::<impl rustc_middle::infer::canonical::rustc_type_ir::Binder<I, rustc_middle::infer::canonical::rustc_type_ir::FnSig<I>>>::abi (AssocFn) [DefId: DefId(208:2715 ~ rustc_type_ir[1eea]::ty_kind::{impl#19}::abi)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(208:2715 ~ rustc_type_ir[1eea]::ty_kind::{impl#19}::abi)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::fn_sig (AssocFn) [DefId: DefId(193:28249 ~ rustc_middle[f25a]::ty::sty::{impl#11}::fn_sig)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(193:28249 ~ rustc_middle[f25a]::ty::sty::{impl#11}::fn_sig)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_middle::rustc_middle::ty::TypingEnv::<'tcx>::fully_monomorphized (AssocFn) [DefId: DefId(193:9390 ~ rustc_middle[f25a]::ty::{impl#35}::fully_monomorphized)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(193:9390 ~ rustc_middle[f25a]::ty::{impl#35}::fully_monomorphized)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::kind (AssocFn) [DefId: DefId(193:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(193:8867 ~ rustc_middle[f25a]::ty::sty::{impl#11}::kind)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::fn_abi_of_fn_ptr (AssocFn) [DefId: DefId(193:37836 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_fn_ptr)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(193:37836 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_fn_ptr)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_middle::rustc_middle::ty::TypingEnv::<'tcx>::as_query_input (AssocFn) [DefId: DefId(193:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(193:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_middle::rustc_middle::ty::sty::<impl rustc_middle::ty::Ty<'tcx>>::fn_sig (AssocFn) [DefId: DefId(193:28249 ~ rustc_middle[f25a]::ty::sty::{impl#11}::fn_sig)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(193:28249 ~ rustc_middle[f25a]::ty::sty::{impl#11}::fn_sig)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_middle::rustc_middle::ty::list::RawList::<(), T>::empty (AssocFn) [DefId: DefId(193:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(193:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::intrinsic (AssocFn) [DefId: DefId(193:7071 ~ rustc_middle[f25a]::ty::context::{impl#44}::intrinsic)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(193:7071 ~ rustc_middle[f25a]::ty::context::{impl#44}::intrinsic)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_middle::rustc_middle::ty::Instance::<'tcx>::expect_resolve (AssocFn) [DefId: DefId(193:7817 ~ rustc_middle[f25a]::ty::instance::{impl#3}::expect_resolve)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(193:7817 ~ rustc_middle[f25a]::ty::instance::{impl#3}::expect_resolve)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::fn_abi_of_instance (AssocFn) [DefId: DefId(193:37837 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_instance)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(193:37837 ~ rustc_middle[f25a]::query::{impl#3}::fn_abi_of_instance)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_middle::rustc_middle::ty::TypingEnv::<'tcx>::as_query_input (AssocFn) [DefId: DefId(193:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(193:9396 ~ rustc_middle[f25a]::ty::{impl#35}::as_query_input)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_middle::rustc_middle::ty::list::RawList::<(), T>::empty (AssocFn) [DefId: DefId(193:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(193:26998 ~ rustc_middle[f25a]::ty::list::{impl#19}::empty)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::core::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_call_site_abi USES crate::rustc_middle::rustc_middle::ty::InstanceKind::<'tcx>::def_id (AssocFn) [DefId: DefId(193:7786 ~ rustc_middle[f25a]::ty::instance::{impl#1}::def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_call_site_abi)",
+      "used_def_id": "DefId(193:7786 ~ rustc_middle[f25a]::ty::instance::{impl#1}::def_id)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::rustc_middle::rustc_middle::mir::BasicBlockData::<'tcx>::terminator (AssocFn) [DefId: DefId(193:3128 ~ rustc_middle[f25a]::mir::{impl#17}::terminator)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(193:3128 ~ rustc_middle[f25a]::mir::{impl#17}::terminator)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::rustc_middle::rustc_middle::mir::statement::<impl rustc_middle::mir::Operand<'tcx>>::ty (AssocFn) [DefId: DefId(193:2673 ~ rustc_middle[f25a]::mir::statement::{impl#9}::ty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(193:2673 ~ rustc_middle[f25a]::mir::statement::{impl#9}::ty)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::rustc_middle::rustc_middle::ty::Instance::<'tcx>::instantiate_mir_and_normalize_erasing_regions (AssocFn) [DefId: DefId(193:7833 ~ rustc_middle[f25a]::ty::instance::{impl#3}::instantiate_mir_and_normalize_erasing_regions)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(193:7833 ~ rustc_middle[f25a]::ty::instance::{impl#3}::instantiate_mir_and_normalize_erasing_regions)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::rustc_middle::rustc_middle::ty::TypingEnv::<'tcx>::fully_monomorphized (AssocFn) [DefId: DefId(193:9390 ~ rustc_middle[f25a]::ty::{impl#35}::fully_monomorphized)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(193:9390 ~ rustc_middle[f25a]::ty::{impl#35}::fully_monomorphized)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::rustc_type_ir::rustc_middle::infer::canonical::rustc_type_ir::EarlyBinder::<I, T>::bind (AssocFn) [DefId: DefId(208:1360 ~ rustc_type_ir[1eea]::binder::{impl#15}::bind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(208:1360 ~ rustc_type_ir[1eea]::binder::{impl#15}::bind)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::alloc::std::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(3:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::core::std::option::Option::<T>::unwrap_or (AssocFn) [DefId: DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(2:10229 ~ core[4720]::option::{impl#0}::unwrap_or)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::rustc_middle::rustc_middle::mir::SourceScope::lint_root (AssocFn) [DefId: DefId(193:3133 ~ rustc_middle[f25a]::mir::{impl#18}::lint_root)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(193:3133 ~ rustc_middle[f25a]::mir::{impl#18}::lint_root)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::rustc_middle::rustc_middle::mir::Body::<'tcx>::source_info (AssocFn) [DefId: DefId(193:3032 ~ rustc_middle[f25a]::mir::{impl#6}::source_info)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(193:3032 ~ rustc_middle[f25a]::mir::{impl#6}::source_info)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_monomorphize::mono_checks::abi_check::check_callees_abi USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:264 ~ rustc_monomorphize[02b6]::mono_checks::abi_check::check_callees_abi)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    }
+  ]
+}

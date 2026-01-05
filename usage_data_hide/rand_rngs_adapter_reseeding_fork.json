@@ -1,0 +1,54 @@
+{
+  "crate": "rand",
+  "module": "rngs::adapter::reseeding::fork",
+  "usages": [
+    {
+      "usage": "crate::rand::rngs::adapter::reseeding::fork::RESEEDING_RNG_FORK_COUNTER USES crate::core::core::sync::atomic::AtomicUsize::new (AssocFn) [DefId: DefId(1:50241 ~ core[4720]::sync::atomic::{impl#94}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:520 ~ rand[17a6]::rngs::adapter::reseeding::fork::RESEEDING_RNG_FORK_COUNTER)",
+      "used_def_id": "DefId(1:50241 ~ core[4720]::sync::atomic::{impl#94}::new)"
+    },
+    {
+      "usage": "crate::rand::rngs::adapter::reseeding::fork::get_fork_counter USES crate::core::core::sync::atomic::AtomicUsize::load (AssocFn) [DefId: DefId(1:50251 ~ core[4720]::sync::atomic::{impl#94}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:521 ~ rand[17a6]::rngs::adapter::reseeding::fork::get_fork_counter)",
+      "used_def_id": "DefId(1:50251 ~ core[4720]::sync::atomic::{impl#94}::load)"
+    },
+    {
+      "usage": "crate::rand::rngs::adapter::reseeding::fork::fork_handler USES crate::core::core::sync::atomic::AtomicUsize::fetch_add (AssocFn) [DefId: DefId(1:50257 ~ core[4720]::sync::atomic::{impl#94}::fetch_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:522 ~ rand[17a6]::rngs::adapter::reseeding::fork::fork_handler)",
+      "used_def_id": "DefId(1:50257 ~ core[4720]::sync::atomic::{impl#94}::fetch_add)"
+    },
+    {
+      "usage": "crate::rand::rngs::adapter::reseeding::fork::register_fork_handler USES crate::std::std::sync::Once::call_once (AssocFn) [DefId: DefId(2:7436 ~ std[93f5]::sync::poison::once::{impl#2}::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:523 ~ rand[17a6]::rngs::adapter::reseeding::fork::register_fork_handler)",
+      "used_def_id": "DefId(2:7436 ~ std[93f5]::sync::poison::once::{impl#2}::call_once)"
+    },
+    {
+      "usage": "crate::rand::rngs::adapter::reseeding::fork::register_fork_handler USES crate::core::core::fmt::rt::Argument::<'_>::new_display (AssocFn) [DefId: DefId(1:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:523 ~ rand[17a6]::rngs::adapter::reseeding::fork::register_fork_handler)",
+      "used_def_id": "DefId(1:11870 ~ core[4720]::fmt::rt::{impl#0}::new_display)"
+    },
+    {
+      "usage": "crate::rand::rngs::adapter::reseeding::fork::register_fork_handler USES crate::core::core::fmt::rt::<impl core::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(1:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:523 ~ rand[17a6]::rngs::adapter::reseeding::fork::register_fork_handler)",
+      "used_def_id": "DefId(1:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    }
+  ]
+}

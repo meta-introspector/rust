@@ -1,0 +1,36 @@
+{
+  "llvm-target": "x86_64-unknown-linux-gnu",
+  "target-endian": "little",
+  "target-pointer-width": 64,
+  "target-c-int-width": 32,
+  "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128",
+  "arch": "x86_64",
+  "os": "linux",
+  "env": "gnu",
+  "vendor": "monster",
+  "linker-flavor": "gcc",
+  "pre-link-args": {
+    "gcc": ["-m64"]
+  },
+  "cpu": "x86-64",
+  "features": "+cx8,+fxsr,+mmx,+sse,+sse2,+x87",
+  "dynamic-linking": true,
+  "executables": true,
+  "relro-level": "partial",
+  "has-rpath": true,
+  "position-independent-executables": true,
+  "tls-model": "global-dynamic",
+  "panic-strategy": "unwind",
+  "crt-static-allows-dylibs": true,
+  "crt-static-default": false,
+  "crt-static-respected": true,
+  "stack-probes": {"kind": "inline-or-call", "min-llvm-version-for-inline": [16, 0, 0]},
+  "supported-sanitizers": [
+    "address",
+    "cfi", 
+    "leak",
+    "memory",
+    "thread"
+  ],
+  "default-adjusted-cabi": "SystemV"
+}

@@ -1,0 +1,718 @@
+{
+  "crate": "petgraph",
+  "module": "algo::feedback_arc_set",
+  "usages": [
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::core::core::iter::Iterator::map (AssocFn) [DefId: DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::petgraph::visit::IntoEdgeReferences::edge_references (AssocFn) [DefId: DefId(0:5324 ~ petgraph[6c95]::visit::IntoEdgeReferences::edge_references)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(0:5324 ~ petgraph[6c95]::visit::IntoEdgeReferences::edge_references)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::petgraph::graph_impl::NodeIndex::<Ix>::new (AssocFn) [DefId: DefId(0:2807 ~ petgraph[6c95]::graph_impl::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(0:2807 ~ petgraph[6c95]::graph_impl::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::petgraph::graph_impl::GraphIndex::index (AssocFn) [DefId: DefId(0:3179 ~ petgraph[6c95]::graph_impl::GraphIndex::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(0:3179 ~ petgraph[6c95]::graph_impl::GraphIndex::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::petgraph::visit::EdgeRef::source (AssocFn) [DefId: DefId(0:235 ~ petgraph[6c95]::visit::EdgeRef::source)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(0:235 ~ petgraph[6c95]::visit::EdgeRef::source)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::petgraph::graph_impl::NodeIndex::<Ix>::new (AssocFn) [DefId: DefId(0:2807 ~ petgraph[6c95]::graph_impl::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(0:2807 ~ petgraph[6c95]::graph_impl::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::petgraph::graph_impl::GraphIndex::index (AssocFn) [DefId: DefId(0:3179 ~ petgraph[6c95]::graph_impl::GraphIndex::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(0:3179 ~ petgraph[6c95]::graph_impl::GraphIndex::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::petgraph::visit::EdgeRef::target (AssocFn) [DefId: DefId(0:236 ~ petgraph[6c95]::visit::EdgeRef::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(0:236 ~ petgraph[6c95]::visit::EdgeRef::target)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::core::core::iter::Iterator::filter (AssocFn) [DefId: DefId(1:9468 ~ core[4720]::iter::traits::iterator::Iterator::filter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(1:9468 ~ core[4720]::iter::traits::iterator::Iterator::filter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::petgraph::visit::IntoEdgeReferences::edge_references (AssocFn) [DefId: DefId(0:5324 ~ petgraph[6c95]::visit::IntoEdgeReferences::edge_references)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(0:5324 ~ petgraph[6c95]::visit::IntoEdgeReferences::edge_references)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::petgraph::graph_impl::GraphIndex::index (AssocFn) [DefId: DefId(0:3179 ~ petgraph[6c95]::graph_impl::GraphIndex::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(0:3179 ~ petgraph[6c95]::graph_impl::GraphIndex::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::petgraph::visit::EdgeRef::source (AssocFn) [DefId: DefId(0:235 ~ petgraph[6c95]::visit::EdgeRef::source)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(0:235 ~ petgraph[6c95]::visit::EdgeRef::source)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::core::core::ops::Index::index (AssocFn) [DefId: DefId(1:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(1:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::petgraph::graph_impl::GraphIndex::index (AssocFn) [DefId: DefId(0:3179 ~ petgraph[6c95]::graph_impl::GraphIndex::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(0:3179 ~ petgraph[6c95]::graph_impl::GraphIndex::index)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::greedy_feedback_arc_set USES crate::petgraph::visit::EdgeRef::target (AssocFn) [DefId: DefId(0:236 ~ petgraph[6c95]::visit::EdgeRef::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1431 ~ petgraph[6c95]::algo::feedback_arc_set::greedy_feedback_arc_set)",
+      "used_def_id": "DefId(0:236 ~ petgraph[6c95]::visit::EdgeRef::target)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::vec::Vec::<T>::new (AssocFn) [DefId: DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::linked_list::LinkedList::<Data, Container, Ix>::new (AssocFn) [DefId: DefId(0:1468 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1468 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::linked_list::LinkedList::<Data, Container, Ix>::new (AssocFn) [DefId: DefId(0:1468 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1468 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::vec::Vec::<T>::new (AssocFn) [DefId: DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::vec::Vec::<T>::new (AssocFn) [DefId: DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::hashbrown::hashbrown::HashMap::<K, V>::new (AssocFn) [DefId: DefId(22:602 ~ hashbrown[79d5]::map::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(22:602 ~ hashbrown[79d5]::map::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::hashbrown::hashbrown::HashMap::<K, V, S, A>::get (AssocFn) [DefId: DefId(22:655 ~ hashbrown[79d5]::map::{impl#5}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(22:655 ~ hashbrown[79d5]::map::{impl#5}::get)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(2:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(2:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::linked_list::LinkedListEntry::<Data, Ix>::new (AssocFn) [DefId: DefId(0:1460 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1460 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::vec::Vec::<T>::new (AssocFn) [DefId: DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::vec::Vec::<T>::new (AssocFn) [DefId: DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:8086 ~ alloc[27b0]::vec::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::hashbrown::hashbrown::HashMap::<K, V, S, A>::insert (AssocFn) [DefId: DefId(22:731 ~ hashbrown[79d5]::map::{impl#5}::insert)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(22:731 ~ hashbrown[79d5]::map::{impl#5}::insert)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::ops::FnMut::call_mut (AssocFn) [DefId: DefId(1:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::ops::FnMut::call_mut (AssocFn) [DefId: DefId(1:3985 ~ core[4720]::ops::function::FnMut::call_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:3985 ~ core[4720]::ops::function::FnMut::call_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(2:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::linked_list::LinkedListEntry::<Data, Ix>::data (AssocFn) [DefId: DefId(0:1461 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1461 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::data)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::vec::Vec::<T, A>::push (AssocFn) [DefId: DefId(2:8169 ~ alloc[27b0]::vec::{impl#1}::push)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:8169 ~ alloc[27b0]::vec::{impl#1}::push)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::linked_list::LinkedListEntry::<Data, Ix>::data (AssocFn) [DefId: DefId(0:1461 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1461 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::data)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::linked_list::LinkedListEntry::<Data, Ix>::data (AssocFn) [DefId: DefId(0:1461 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1461 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::data)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(2:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(2:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::ops::Range (Struct) [DefId: DefId(1:45177 ~ core[4720]::ops::range::Range)]",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:45177 ~ core[4720]::ops::range::Range)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::vec::Vec::<T, A>::len (AssocFn) [DefId: DefId(2:8182 ~ alloc[27b0]::vec::{impl#1}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:8182 ~ alloc[27b0]::vec::{impl#1}::len)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::linked_list::LinkedList::<Data, Container, Ix>::push_front (AssocFn) [DefId: DefId(0:1469 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#1}::push_front)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1469 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#1}::push_front)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::Buckets::suitable_bucket (AssocFn) [DefId: DefId(0:1448 ~ petgraph[6c95]::algo::feedback_arc_set::{impl#2}::suitable_bucket)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1448 ~ petgraph[6c95]::algo::feedback_arc_set::{impl#2}::suitable_bucket)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::collections::VecDeque::<T>::new (AssocFn) [DefId: DefId(2:5013 ~ alloc[27b0]::collections::vec_deque::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:5013 ~ alloc[27b0]::collections::vec_deque::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::collections::VecDeque::<T>::new (AssocFn) [DefId: DefId(2:5013 ~ alloc[27b0]::collections::vec_deque::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:5013 ~ alloc[27b0]::collections::vec_deque::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::linked_list::LinkedList::<Data, Container, Ix>::pop (AssocFn) [DefId: DefId(0:1470 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#1}::pop)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1470 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#1}::pop)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::Buckets::update_neighbour_node_buckets (AssocFn) [DefId: DefId(0:1449 ~ petgraph[6c95]::algo::feedback_arc_set::{impl#2}::update_neighbour_node_buckets)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1449 ~ petgraph[6c95]::algo::feedback_arc_set::{impl#2}::update_neighbour_node_buckets)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::collections::VecDeque::<T, A>::push_front (AssocFn) [DefId: DefId(2:5091 ~ alloc[27b0]::collections::vec_deque::{impl#5}::push_front)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:5091 ~ alloc[27b0]::collections::vec_deque::{impl#5}::push_front)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::linked_list::LinkedListEntry::<Data, Ix>::data (AssocFn) [DefId: DefId(0:1461 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1461 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::data)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::linked_list::LinkedList::<Data, Container, Ix>::pop (AssocFn) [DefId: DefId(0:1470 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#1}::pop)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1470 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#1}::pop)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::Buckets::update_neighbour_node_buckets (AssocFn) [DefId: DefId(0:1449 ~ petgraph[6c95]::algo::feedback_arc_set::{impl#2}::update_neighbour_node_buckets)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1449 ~ petgraph[6c95]::algo::feedback_arc_set::{impl#2}::update_neighbour_node_buckets)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::collections::VecDeque::<T, A>::push_back (AssocFn) [DefId: DefId(2:5093 ~ alloc[27b0]::collections::vec_deque::{impl#5}::push_back)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:5093 ~ alloc[27b0]::collections::vec_deque::{impl#5}::push_back)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::linked_list::LinkedListEntry::<Data, Ix>::data (AssocFn) [DefId: DefId(0:1461 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1461 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::data)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::Iterator::find (AssocFn) [DefId: DefId(1:9570 ~ core[4720]::iter::traits::iterator::Iterator::find)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9570 ~ core[4720]::iter::traits::iterator::Iterator::find)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::Iterator::chain (AssocFn) [DefId: DefId(1:9451 ~ core[4720]::iter::traits::iterator::Iterator::chain)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9451 ~ core[4720]::iter::traits::iterator::Iterator::chain)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::Iterator::rev (AssocFn) [DefId: DefId(1:9651 ~ core[4720]::iter::traits::iterator::Iterator::rev)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9651 ~ core[4720]::iter::traits::iterator::Iterator::rev)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::option::Option::<T>::is_some (AssocFn) [DefId: DefId(1:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(1:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::linked_list::LinkedList::<Data, Container, Ix>::pop (AssocFn) [DefId: DefId(0:1470 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#1}::pop)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1470 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#1}::pop)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::Buckets::update_neighbour_node_buckets (AssocFn) [DefId: DefId(0:1449 ~ petgraph[6c95]::algo::feedback_arc_set::{impl#2}::update_neighbour_node_buckets)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1449 ~ petgraph[6c95]::algo::feedback_arc_set::{impl#2}::update_neighbour_node_buckets)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::alloc::alloc::collections::VecDeque::<T, A>::push_back (AssocFn) [DefId: DefId(2:5093 ~ alloc[27b0]::collections::vec_deque::{impl#5}::push_back)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(2:5093 ~ alloc[27b0]::collections::vec_deque::{impl#5}::push_back)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::linked_list::LinkedListEntry::<Data, Ix>::data (AssocFn) [DefId: DefId(0:1461 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::data)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1461 ~ petgraph[6c95]::algo::feedback_arc_set::linked_list::{impl#0}::data)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::ops::IndexMut::index_mut (AssocFn) [DefId: DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:4017 ~ core[4720]::ops::index::IndexMut::index_mut)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::Buckets::trim_bucket_list (AssocFn) [DefId: DefId(0:1450 ~ petgraph[6c95]::algo::feedback_arc_set::{impl#2}::trim_bucket_list)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1450 ~ petgraph[6c95]::algo::feedback_arc_set::{impl#2}::trim_bucket_list)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::algo::feedback_arc_set::Buckets::trim_bucket_list (AssocFn) [DefId: DefId(0:1450 ~ petgraph[6c95]::algo::feedback_arc_set::{impl#2}::trim_bucket_list)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:1450 ~ petgraph[6c95]::algo::feedback_arc_set::{impl#2}::trim_bucket_list)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::Iterator::collect (AssocFn) [DefId: DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9501 ~ core[4720]::iter::traits::iterator::Iterator::collect)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::Iterator::map (AssocFn) [DefId: DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::Iterator::enumerate (AssocFn) [DefId: DefId(1:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9473 ~ core[4720]::iter::traits::iterator::Iterator::enumerate)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::Iterator::chain (AssocFn) [DefId: DefId(1:9451 ~ core[4720]::iter::traits::iterator::Iterator::chain)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9451 ~ core[4720]::iter::traits::iterator::Iterator::chain)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::petgraph::algo::feedback_arc_set::good_node_sequence USES crate::petgraph::graph_impl::NodeIndex::<Ix>::index (AssocFn) [DefId: DefId(0:2808 ~ petgraph[6c95]::graph_impl::{impl#4}::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1436 ~ petgraph[6c95]::algo::feedback_arc_set::good_node_sequence)",
+      "used_def_id": "DefId(0:2808 ~ petgraph[6c95]::graph_impl::{impl#4}::index)"
+    }
+  ]
+}

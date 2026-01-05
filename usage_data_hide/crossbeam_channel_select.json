@@ -1,0 +1,942 @@
+{
+  "crate": "crossbeam_channel",
+  "module": "select",
+  "usages": [
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::slice::<impl [T]>::is_empty (AssocFn) [DefId: DefId(1:14035 ~ core[4720]::slice::{impl#0}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:14035 ~ core[4720]::slice::{impl#0}::is_empty)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::default::Default::default (AssocFn) [DefId: DefId(1:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::select::SelectHandle::try_select (AssocFn) [DefId: DefId(0:833 ~ crossbeam_channel[d705]::select::SelectHandle::try_select)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:833 ~ crossbeam_channel[d705]::select::SelectHandle::try_select)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::context::Context::with (AssocFn) [DefId: DefId(0:228 ~ crossbeam_channel[d705]::context::{impl#0}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:228 ~ crossbeam_channel[d705]::context::{impl#0}::with)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::result::Result::<T, E>::unwrap (AssocFn) [DefId: DefId(1:11108 ~ core[4720]::result::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:11108 ~ core[4720]::result::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::context::Context::try_select (AssocFn) [DefId: DefId(0:236 ~ crossbeam_channel[d705]::context::{impl#0}::try_select)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:236 ~ crossbeam_channel[d705]::context::{impl#0}::try_select)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::select::SelectHandle::register (AssocFn) [DefId: DefId(0:835 ~ crossbeam_channel[d705]::select::SelectHandle::register)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:835 ~ crossbeam_channel[d705]::select::SelectHandle::register)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::select::Operation::hook (AssocFn) [DefId: DefId(0:826 ~ crossbeam_channel[d705]::select::{impl#0}::hook)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:826 ~ crossbeam_channel[d705]::select::{impl#0}::hook)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::context::Context::try_select (AssocFn) [DefId: DefId(0:236 ~ crossbeam_channel[d705]::context::{impl#0}::try_select)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:236 ~ crossbeam_channel[d705]::context::{impl#0}::try_select)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::context::Context::selected (AssocFn) [DefId: DefId(0:239 ~ crossbeam_channel[d705]::context::{impl#0}::selected)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:239 ~ crossbeam_channel[d705]::context::{impl#0}::selected)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::cmp::PartialEq::ne (AssocFn) [DefId: DefId(1:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::cmp::PartialEq::eq (AssocFn) [DefId: DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::select::SelectHandle::deadline (AssocFn) [DefId: DefId(0:834 ~ crossbeam_channel[d705]::select::SelectHandle::deadline)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:834 ~ crossbeam_channel[d705]::select::SelectHandle::deadline)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::option::Option::<T>::or (AssocFn) [DefId: DefId(1:10265 ~ core[4720]::option::{impl#0}::or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:10265 ~ core[4720]::option::{impl#0}::or)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::option::Option::<T>::map (AssocFn) [DefId: DefId(1:10234 ~ core[4720]::option::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:10234 ~ core[4720]::option::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::cmp::Ord::min (AssocFn) [DefId: DefId(1:3253 ~ core[4720]::cmp::Ord::min)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:3253 ~ core[4720]::cmp::Ord::min)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::context::Context::wait_until (AssocFn) [DefId: DefId(0:242 ~ crossbeam_channel[d705]::context::{impl#0}::wait_until)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:242 ~ crossbeam_channel[d705]::context::{impl#0}::wait_until)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::Iterator::take (AssocFn) [DefId: DefId(1:9483 ~ core[4720]::iter::traits::iterator::Iterator::take)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9483 ~ core[4720]::iter::traits::iterator::Iterator::take)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::select::SelectHandle::unregister (AssocFn) [DefId: DefId(0:836 ~ crossbeam_channel[d705]::select::SelectHandle::unregister)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:836 ~ crossbeam_channel[d705]::select::SelectHandle::unregister)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::select::Operation::hook (AssocFn) [DefId: DefId(0:826 ~ crossbeam_channel[d705]::select::{impl#0}::hook)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:826 ~ crossbeam_channel[d705]::select::{impl#0}::hook)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::select::SelectHandle::try_select (AssocFn) [DefId: DefId(0:833 ~ crossbeam_channel[d705]::select::SelectHandle::try_select)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:833 ~ crossbeam_channel[d705]::select::SelectHandle::try_select)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::cmp::PartialEq::eq (AssocFn) [DefId: DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::select::Operation::hook (AssocFn) [DefId: DefId(0:826 ~ crossbeam_channel[d705]::select::{impl#0}::hook)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:826 ~ crossbeam_channel[d705]::select::{impl#0}::hook)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::select::SelectHandle::accept (AssocFn) [DefId: DefId(0:837 ~ crossbeam_channel[d705]::select::SelectHandle::accept)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:837 ~ crossbeam_channel[d705]::select::SelectHandle::accept)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::crossbeam_channel::select::SelectHandle::try_select (AssocFn) [DefId: DefId(0:833 ~ crossbeam_channel[d705]::select::SelectHandle::try_select)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(0:833 ~ crossbeam_channel[d705]::select::SelectHandle::try_select)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::core::core::cmp::PartialOrd::ge (AssocFn) [DefId: DefId(1:3262 ~ core[4720]::cmp::PartialOrd::ge)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(1:3262 ~ core[4720]::cmp::PartialOrd::ge)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_select USES crate::std::std::time::Instant::now (AssocFn) [DefId: DefId(2:7940 ~ std[93f5]::time::{impl#0}::now)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:851 ~ crossbeam_channel[d705]::select::run_select)",
+      "used_def_id": "DefId(2:7940 ~ std[93f5]::time::{impl#0}::now)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::slice::<impl [T]>::is_empty (AssocFn) [DefId: DefId(1:14035 ~ core[4720]::slice::{impl#0}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:14035 ~ core[4720]::slice::{impl#0}::is_empty)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_utils::crossbeam_utils::Backoff::new (AssocFn) [DefId: DefId(20:196 ~ crossbeam_utils[f6a4]::backoff::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(20:196 ~ crossbeam_utils[f6a4]::backoff::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_channel::select::SelectHandle::is_ready (AssocFn) [DefId: DefId(0:838 ~ crossbeam_channel[d705]::select::SelectHandle::is_ready)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(0:838 ~ crossbeam_channel[d705]::select::SelectHandle::is_ready)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_utils::crossbeam_utils::Backoff::is_completed (AssocFn) [DefId: DefId(20:200 ~ crossbeam_utils[f6a4]::backoff::{impl#0}::is_completed)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(20:200 ~ crossbeam_utils[f6a4]::backoff::{impl#0}::is_completed)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_utils::crossbeam_utils::Backoff::snooze (AssocFn) [DefId: DefId(20:199 ~ crossbeam_utils[f6a4]::backoff::{impl#0}::snooze)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(20:199 ~ crossbeam_utils[f6a4]::backoff::{impl#0}::snooze)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::cmp::PartialOrd::ge (AssocFn) [DefId: DefId(1:3262 ~ core[4720]::cmp::PartialOrd::ge)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:3262 ~ core[4720]::cmp::PartialOrd::ge)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::std::std::time::Instant::now (AssocFn) [DefId: DefId(2:7940 ~ std[93f5]::time::{impl#0}::now)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(2:7940 ~ std[93f5]::time::{impl#0}::now)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_channel::context::Context::with (AssocFn) [DefId: DefId(0:228 ~ crossbeam_channel[d705]::context::{impl#0}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(0:228 ~ crossbeam_channel[d705]::context::{impl#0}::with)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_channel::select::Operation::hook (AssocFn) [DefId: DefId(0:826 ~ crossbeam_channel[d705]::select::{impl#0}::hook)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(0:826 ~ crossbeam_channel[d705]::select::{impl#0}::hook)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_channel::select::SelectHandle::watch (AssocFn) [DefId: DefId(0:839 ~ crossbeam_channel[d705]::select::SelectHandle::watch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(0:839 ~ crossbeam_channel[d705]::select::SelectHandle::watch)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_channel::context::Context::try_select (AssocFn) [DefId: DefId(0:236 ~ crossbeam_channel[d705]::context::{impl#0}::try_select)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(0:236 ~ crossbeam_channel[d705]::context::{impl#0}::try_select)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_channel::context::Context::selected (AssocFn) [DefId: DefId(0:239 ~ crossbeam_channel[d705]::context::{impl#0}::selected)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(0:239 ~ crossbeam_channel[d705]::context::{impl#0}::selected)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::cmp::PartialEq::ne (AssocFn) [DefId: DefId(1:3216 ~ core[4720]::cmp::PartialEq::ne)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:3216 ~ core[4720]::cmp::PartialEq::ne)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::cmp::PartialEq::eq (AssocFn) [DefId: DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::slice::<impl [T]>::iter (AssocFn) [DefId: DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:14091 ~ core[4720]::slice::{impl#0}::iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_channel::select::SelectHandle::deadline (AssocFn) [DefId: DefId(0:834 ~ crossbeam_channel[d705]::select::SelectHandle::deadline)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(0:834 ~ crossbeam_channel[d705]::select::SelectHandle::deadline)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::option::Option::<T>::or (AssocFn) [DefId: DefId(1:10265 ~ core[4720]::option::{impl#0}::or)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:10265 ~ core[4720]::option::{impl#0}::or)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::option::Option::<T>::map (AssocFn) [DefId: DefId(1:10234 ~ core[4720]::option::{impl#0}::map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:10234 ~ core[4720]::option::{impl#0}::map)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::cmp::Ord::min (AssocFn) [DefId: DefId(1:3253 ~ core[4720]::cmp::Ord::min)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:3253 ~ core[4720]::cmp::Ord::min)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_channel::context::Context::wait_until (AssocFn) [DefId: DefId(0:242 ~ crossbeam_channel[d705]::context::{impl#0}::wait_until)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(0:242 ~ crossbeam_channel[d705]::context::{impl#0}::wait_until)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::iter::Iterator::take (AssocFn) [DefId: DefId(1:9483 ~ core[4720]::iter::traits::iterator::Iterator::take)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:9483 ~ core[4720]::iter::traits::iterator::Iterator::take)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_channel::select::SelectHandle::unwatch (AssocFn) [DefId: DefId(0:840 ~ crossbeam_channel[d705]::select::SelectHandle::unwatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(0:840 ~ crossbeam_channel[d705]::select::SelectHandle::unwatch)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_channel::select::Operation::hook (AssocFn) [DefId: DefId(0:826 ~ crossbeam_channel[d705]::select::{impl#0}::hook)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(0:826 ~ crossbeam_channel[d705]::select::{impl#0}::hook)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::slice::<impl [T]>::iter_mut (AssocFn) [DefId: DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:14092 ~ core[4720]::slice::{impl#0}::iter_mut)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::prelude::v1::None (Variant) [DefId: DefId(1:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::prelude::v1::Some (Variant) [DefId: DefId(1:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::crossbeam_channel::select::Operation::hook (AssocFn) [DefId: DefId(0:826 ~ crossbeam_channel[d705]::select::{impl#0}::hook)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(0:826 ~ crossbeam_channel[d705]::select::{impl#0}::hook)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::cmp::PartialEq::eq (AssocFn) [DefId: DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::iter::Iterator::next (AssocFn) [DefId: DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::run_ready USES crate::core::core::option::Option::<T>::is_some (AssocFn) [DefId: DefId(1:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:854 ~ crossbeam_channel[d705]::select::run_ready)",
+      "used_def_id": "DefId(1:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::select USES crate::core::core::slice::<impl [T]>::is_empty (AssocFn) [DefId: DefId(1:14035 ~ core[4720]::slice::{impl#0}::is_empty)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:859 ~ crossbeam_channel[d705]::select::select)",
+      "used_def_id": "DefId(1:14035 ~ core[4720]::slice::{impl#0}::is_empty)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::select USES crate::core::core::fmt::rt::<impl core::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:859 ~ crossbeam_channel[d705]::select::select)",
+      "used_def_id": "DefId(1:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::select USES crate::core::core::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(1:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:859 ~ crossbeam_channel[d705]::select::select)",
+      "used_def_id": "DefId(1:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::select_timeout USES crate::std::std::time::Instant::checked_add (AssocFn) [DefId: DefId(2:7945 ~ std[93f5]::time::{impl#0}::checked_add)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:861 ~ crossbeam_channel[d705]::select::select_timeout)",
+      "used_def_id": "DefId(2:7945 ~ std[93f5]::time::{impl#0}::checked_add)"
+    },
+    {
+      "usage": "crate::crossbeam_channel::select::select_timeout USES crate::std::std::time::Instant::now (AssocFn) [DefId: DefId(2:7940 ~ std[93f5]::time::{impl#0}::now)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:861 ~ crossbeam_channel[d705]::select::select_timeout)",
+      "used_def_id": "DefId(2:7940 ~ std[93f5]::time::{impl#0}::now)"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Rust Introspector Collector Schema",
+  "definitions": {
+    "UsageEntry": {
+      "type": "object",
+      "properties": {
+        "usage": {
+          "type": "string",
+          "description": "Description of the usage with DefIds"
+        },
+        "usage_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "usage_type": {
+          "type": "string",
+          "enum": ["MethodCall", "AssocConstAccess", "EnumVariant", "StructUsage", "EnumUsage", "FunctionCall", "ConstantAccess", "StaticAccess", "MacroCall", "TypeAlias", "UnionUsage", "TraitUsage", "Other", "ConstDecl", "StaticDecl", "StructDecl", "EnumDecl", "NumericLiteral"]
+        },
+        "node_type": {
+          "type": "string",
+          "enum": ["Item", "Expr", "Stmt", "TraitItem", "ImplItem", "Pat", "Ty", "Expression", "Other"]
+        },
+        "user_def_id": {
+          "type": "string",
+          "description": "DefId of the user (caller)"
+        },
+        "used_def_id": {
+          "type": "string",
+          "description": "DefId of the used item"
+        }
+      },
+      "required": ["usage", "usage_count", "usage_type", "node_type", "user_def_id", "used_def_id"]
+    },
+    "UsageClassification": {
+      "type": "object",
+      "properties": {
+        "string_conversion": {"type": "integer", "minimum": 0},
+        "pattern_matching": {"type": "integer", "minimum": 0},
+        "construction": {"type": "integer", "minimum": 0},
+        "comparison": {"type": "integer", "minimum": 0},
+        "debug_format": {"type": "integer", "minimum": 0},
+        "serialization": {"type": "integer", "minimum": 0},
+        "general": {"type": "integer", "minimum": 0}
+      },
+      "required": ["string_conversion", "pattern_matching", "construction", "comparison", "debug_format", "serialization", "general"]
+    },
+    "EnumVariantUsage": {
+      "type": "object",
+      "properties": {
+        "enum_name": {"type": "string"},
+        "variant_name": {"type": "string"},
+        "usage_classes": {"$ref": "#/definitions/UsageClassification"},
+        "top_converters": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": [
+                {"type": "string"},
+                {"type": "integer", "minimum": 0}
+              ],
+              "minItems": 2,
+              "maxItems": 2
+            }
+          }
+        }
+      },
+      "required": ["enum_name", "variant_name", "usage_classes", "top_converters"]
+    },
+    "EnumInfo": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string"},
+        "variants": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/EnumVariantUsage"}
+        },
+        "total_usage_classes": {"$ref": "#/definitions/UsageClassification"}
+      },
+      "required": ["name", "variants", "total_usage_classes"]
+    },
+    "GeneratedFile": {
+      "type": "object",
+      "properties": {
+        "path": {"type": "string"},
+        "size_bytes": {"type": "integer", "minimum": 0},
+        "type": {
+          "type": "string",
+          "enum": ["usage_data", "enum_classification"]
+        }
+      },
+      "required": ["path", "size_bytes", "type"]
+    },
+    "Environment": {
+      "type": "object",
+      "properties": {
+        "pwd": {"type": ["string", "null"]},
+        "cargo_manifest_dir": {"type": ["string", "null"]},
+        "cargo_target_dir": {"type": ["string", "null"]},
+        "profile": {"type": ["string", "null"]}
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "title": "ModuleData",
+      "type": "object",
+      "properties": {
+        "crate": {"type": "string"},
+        "module": {"type": "string"},
+        "usages": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/UsageEntry"}
+        }
+      },
+      "required": ["crate", "module", "usages"]
+    },
+    {
+      "title": "EnumData",
+      "type": "object",
+      "properties": {
+        "crate": {"type": "string"},
+        "enums": {
+          "type": "object",
+          "additionalProperties": {"$ref": "#/definitions/EnumInfo"}
+        }
+      },
+      "required": ["crate", "enums"]
+    },
+    {
+      "title": "Manifest",
+      "type": "object",
+      "properties": {
+        "crate_name": {"type": "string"},
+        "timestamp": {"type": "integer", "minimum": 0},
+        "collector_version": {"type": "string"},
+        "rustc_version": {"type": "string"},
+        "output_directory": {"type": "string"},
+        "total_usages": {"type": "integer", "minimum": 0},
+        "total_modules": {"type": "integer", "minimum": 0},
+        "total_enums": {"type": "integer", "minimum": 0},
+        "generated_files": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/GeneratedFile"}
+        },
+        "dependency_manifests": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "environment": {"$ref": "#/definitions/Environment"}
+      },
+      "required": ["crate_name", "timestamp", "collector_version", "rustc_version", "output_directory", "total_usages", "total_modules", "total_enums", "generated_files", "environment"]
+    }
+  ]
+}

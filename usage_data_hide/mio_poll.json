@@ -1,0 +1,102 @@
+{
+  "crate": "mio",
+  "module": "poll",
+  "usages": [
+    {
+      "usage": "crate::mio::poll::validate_args USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:260 ~ mio[099e]::poll::validate_args)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::mio::poll::validate_args USES crate::std::std::io::Error::new (AssocFn) [DefId: DefId(1:3323 ~ std[93f5]::io::error::{impl#7}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:260 ~ mio[099e]::poll::validate_args)",
+      "used_def_id": "DefId(1:3323 ~ std[93f5]::io::error::{impl#7}::new)"
+    },
+    {
+      "usage": "crate::mio::poll::new_registration USES crate::mio::poll::Registration::new_priv (AssocFn) [DefId: DefId(0:298 ~ mio[099e]::poll::{impl#15}::new_priv)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:294 ~ mio[099e]::poll::new_registration)",
+      "used_def_id": "DefId(0:298 ~ mio[099e]::poll::{impl#15}::new_priv)"
+    },
+    {
+      "usage": "crate::mio::poll::enqueue_with_wakeup USES crate::core::std::ptr::mut_ptr::<impl *mut T>::is_null (AssocFn) [DefId: DefId(2:2855 ~ core[4720]::ptr::mut_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:344 ~ mio[099e]::poll::enqueue_with_wakeup)",
+      "used_def_id": "DefId(2:2855 ~ core[4720]::ptr::mut_ptr::{impl#0}::is_null)"
+    },
+    {
+      "usage": "crate::mio::poll::enqueue_with_wakeup USES crate::mio::poll::ReadinessQueueInner::enqueue_node_with_wakeup (AssocFn) [DefId: DefId(0:333 ~ mio[099e]::poll::{impl#27}::enqueue_node_with_wakeup)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:344 ~ mio[099e]::poll::enqueue_with_wakeup)",
+      "used_def_id": "DefId(0:333 ~ mio[099e]::poll::{impl#27}::enqueue_node_with_wakeup)"
+    },
+    {
+      "usage": "crate::mio::poll::token USES crate::core::std::cell::UnsafeCell::<T>::get (AssocFn) [DefId: DefId(2:5756 ~ core[4720]::cell::{impl#50}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:345 ~ mio[099e]::poll::token)",
+      "used_def_id": "DefId(2:5756 ~ core[4720]::cell::{impl#50}::get)"
+    },
+    {
+      "usage": "crate::mio::poll::token USES crate::core::std::cell::UnsafeCell::<T>::get (AssocFn) [DefId: DefId(2:5756 ~ core[4720]::cell::{impl#50}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:345 ~ mio[099e]::poll::token)",
+      "used_def_id": "DefId(2:5756 ~ core[4720]::cell::{impl#50}::get)"
+    },
+    {
+      "usage": "crate::mio::poll::token USES crate::core::std::cell::UnsafeCell::<T>::get (AssocFn) [DefId: DefId(2:5756 ~ core[4720]::cell::{impl#50}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:345 ~ mio[099e]::poll::token)",
+      "used_def_id": "DefId(2:5756 ~ core[4720]::cell::{impl#50}::get)"
+    },
+    {
+      "usage": "crate::mio::poll::release_node USES crate::core::std::sync::atomic::AtomicUsize::fetch_sub (AssocFn) [DefId: DefId(2:50258 ~ core[4720]::sync::atomic::{impl#94}::fetch_sub)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:346 ~ mio[099e]::poll::release_node)",
+      "used_def_id": "DefId(2:50258 ~ core[4720]::sync::atomic::{impl#94}::fetch_sub)"
+    },
+    {
+      "usage": "crate::mio::poll::release_node USES crate::alloc::std::boxed::Box::<T>::from_raw (AssocFn) [DefId: DefId(3:728 ~ alloc[27b0]::boxed::{impl#6}::from_raw)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:346 ~ mio[099e]::poll::release_node)",
+      "used_def_id": "DefId(3:728 ~ alloc[27b0]::boxed::{impl#6}::from_raw)"
+    },
+    {
+      "usage": "crate::mio::poll::release_node USES crate::core::std::sync::atomic::AtomicPtr::<T>::load (AssocFn) [DefId: DefId(2:11320 ~ core[4720]::sync::atomic::{impl#6}::load)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:346 ~ mio[099e]::poll::release_node)",
+      "used_def_id": "DefId(2:11320 ~ core[4720]::sync::atomic::{impl#6}::load)"
+    },
+    {
+      "usage": "crate::mio::poll::release_node USES crate::core::std::ptr::mut_ptr::<impl *mut T>::is_null (AssocFn) [DefId: DefId(2:2855 ~ core[4720]::ptr::mut_ptr::{impl#0}::is_null)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:346 ~ mio[099e]::poll::release_node)",
+      "used_def_id": "DefId(2:2855 ~ core[4720]::ptr::mut_ptr::{impl#0}::is_null)"
+    }
+  ]
+}

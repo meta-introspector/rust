@@ -1,0 +1,126 @@
+{
+  "crate": "thread_local",
+  "module": "thread_id",
+  "usages": [
+    {
+      "usage": "crate::thread_local::thread_id::THREAD_ID_MANAGER USES crate::std::std::sync::Mutex::<T>::new (AssocFn) [DefId: DefId(1:7329 ~ std[93f5]::sync::poison::mutex::{impl#6}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ thread_local[1a2c]::thread_id::THREAD_ID_MANAGER)",
+      "used_def_id": "DefId(1:7329 ~ std[93f5]::sync::poison::mutex::{impl#6}::new)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::THREAD_ID_MANAGER USES crate::thread_local::thread_id::ThreadIdManager::new (AssocFn) [DefId: DefId(0:80 ~ thread_local[1a2c]::thread_id::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:84 ~ thread_local[1a2c]::thread_id::THREAD_ID_MANAGER)",
+      "used_def_id": "DefId(0:80 ~ thread_local[1a2c]::thread_id::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::THREAD USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:263 ~ thread_local[1a2c]::thread_id::THREAD)",
+      "used_def_id": "DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::THREAD USES crate::std::std::thread::local_impl::EagerStorage::<T>::get (AssocFn) [DefId: DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:263 ~ thread_local[1a2c]::thread_id::THREAD)",
+      "used_def_id": "DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::THREAD_GUARD USES crate::std::std::thread::LocalKey::<T>::new (AssocFn) [DefId: DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:270 ~ thread_local[1a2c]::thread_id::THREAD_GUARD)",
+      "used_def_id": "DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::THREAD_GUARD USES crate::std::std::thread::local_impl::EagerStorage::<T>::get (AssocFn) [DefId: DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:270 ~ thread_local[1a2c]::thread_id::THREAD_GUARD)",
+      "used_def_id": "DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::get USES crate::std::std::thread::LocalKey::<T>::with (AssocFn) [DefId: DefId(1:570 ~ std[93f5]::thread::local::{impl#4}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:259 ~ thread_local[1a2c]::thread_id::get)",
+      "used_def_id": "DefId(1:570 ~ std[93f5]::thread::local::{impl#4}::with)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::get USES crate::core::std::cell::Cell::<T>::get (AssocFn) [DefId: DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:259 ~ thread_local[1a2c]::thread_id::get)",
+      "used_def_id": "DefId(2:5552 ~ core[4720]::cell::{impl#10}::get)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::get_slow USES crate::thread_local::thread_id::Thread::new (AssocFn) [DefId: DefId(0:86 ~ thread_local[1a2c]::thread_id::{impl#1}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ thread_local[1a2c]::thread_id::get_slow)",
+      "used_def_id": "DefId(0:86 ~ thread_local[1a2c]::thread_id::{impl#1}::new)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::get_slow USES crate::thread_local::thread_id::ThreadIdManager::alloc (AssocFn) [DefId: DefId(0:81 ~ thread_local[1a2c]::thread_id::{impl#0}::alloc)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ thread_local[1a2c]::thread_id::get_slow)",
+      "used_def_id": "DefId(0:81 ~ thread_local[1a2c]::thread_id::{impl#0}::alloc)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::get_slow USES crate::core::std::result::Result::<T, E>::unwrap (AssocFn) [DefId: DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ thread_local[1a2c]::thread_id::get_slow)",
+      "used_def_id": "DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::get_slow USES crate::std::std::sync::Mutex::<T>::lock (AssocFn) [DefId: DefId(1:7335 ~ std[93f5]::sync::poison::mutex::{impl#7}::lock)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ thread_local[1a2c]::thread_id::get_slow)",
+      "used_def_id": "DefId(1:7335 ~ std[93f5]::sync::poison::mutex::{impl#7}::lock)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::get_slow USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ thread_local[1a2c]::thread_id::get_slow)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::get_slow USES crate::std::std::thread::LocalKey::<T>::with (AssocFn) [DefId: DefId(1:570 ~ std[93f5]::thread::local::{impl#4}::with)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ thread_local[1a2c]::thread_id::get_slow)",
+      "used_def_id": "DefId(1:570 ~ std[93f5]::thread::local::{impl#4}::with)"
+    },
+    {
+      "usage": "crate::thread_local::thread_id::get_slow USES crate::core::std::cell::Cell::<T>::set (AssocFn) [DefId: DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:261 ~ thread_local[1a2c]::thread_id::get_slow)",
+      "used_def_id": "DefId(2:5544 ~ core[4720]::cell::{impl#9}::set)"
+    }
+  ]
+}

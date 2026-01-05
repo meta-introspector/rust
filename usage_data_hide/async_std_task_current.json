@@ -1,0 +1,38 @@
+{
+  "crate": "async_std",
+  "module": "task::current",
+  "usages": [
+    {
+      "usage": "crate::async_std::task::current::current USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1251 ~ async_std[cb59]::task::current::current)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::async_std::task::current::try_current USES crate::async_std::task::task_locals_wrapper::TaskLocalsWrapper::get_current (AssocFn) [DefId: DefId(0:1377 ~ async_std[cb59]::task::task_locals_wrapper::{impl#0}::get_current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1252 ~ async_std[cb59]::task::current::try_current)",
+      "used_def_id": "DefId(0:1377 ~ async_std[cb59]::task::task_locals_wrapper::{impl#0}::get_current)"
+    },
+    {
+      "usage": "crate::async_std::task::current::try_current USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1252 ~ async_std[cb59]::task::current::try_current)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::async_std::task::current::try_current USES crate::async_std::task::task_locals_wrapper::TaskLocalsWrapper::task (AssocFn) [DefId: DefId(0:1371 ~ async_std[cb59]::task::task_locals_wrapper::{impl#0}::task)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1252 ~ async_std[cb59]::task::current::try_current)",
+      "used_def_id": "DefId(0:1371 ~ async_std[cb59]::task::task_locals_wrapper::{impl#0}::task)"
+    }
+  ]
+}

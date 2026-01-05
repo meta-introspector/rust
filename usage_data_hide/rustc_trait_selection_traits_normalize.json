@@ -1,0 +1,2030 @@
+{
+  "crate": "rustc_trait_selection",
+  "module": "traits::normalize",
+  "usages": [
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth USES crate::thin_vec::thin_vec::ThinVec::<T>::new (AssocFn) [DefId: DefId(38:78 ~ thin_vec[ba20]::{impl#5}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3886 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth)",
+      "used_def_id": "DefId(38:78 ~ thin_vec[ba20]::{impl#5}::new)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::subscriber::Interest::never (AssocFn) [DefId: DefId(74:733 ~ tracing_core[5cb0]::subscriber::{impl#4}::never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:733 ~ tracing_core[5cb0]::subscriber::{impl#4}::never)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(74:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(74:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing::tracing::Span::new (AssocFn) [DefId: DefId(73:167 ~ tracing[3c75]::span::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(73:167 ~ tracing[3c75]::span::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing::tracing::Span::record_all (AssocFn) [DefId: DefId(73:199 ~ tracing[3c75]::span::{impl#0}::record_all)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(73:199 ~ tracing[3c75]::span::{impl#0}::record_all)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing::tracing::Span::enter (AssocFn) [DefId: DefId(73:183 ~ tracing[3c75]::span::{impl#0}::enter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(73:183 ~ tracing[3c75]::span::{impl#0}::enter)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(74:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(74:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(74:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(23:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(23:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(23:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(23:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(74:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(23:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::thin_vec::thin_vec::ThinVec::<T>::len (AssocFn) [DefId: DefId(38:84 ~ thin_vec[ba20]::{impl#5}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(38:84 ~ thin_vec[ba20]::{impl#5}::len)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(23:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(23:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(23:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(23:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(74:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(23:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::thin_vec::thin_vec::ThinVec::<T>::len (AssocFn) [DefId: DefId(38:84 ~ thin_vec[ba20]::{impl#5}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(38:84 ~ thin_vec[ba20]::{impl#5}::len)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::rustc_trait_selection::traits::normalize::AssocTypeNormalizer::<'a, 'b, 'tcx>::new (AssocFn) [DefId: DefId(0:3908 ~ rustc_trait_selection[c701]::traits::normalize::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(0:3908 ~ rustc_trait_selection[c701]::traits::normalize::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::rustc_trait_selection::traits::normalize::AssocTypeNormalizer::<'a, 'b, 'tcx>::fold (AssocFn) [DefId: DefId(0:3909 ~ rustc_trait_selection[c701]::traits::normalize::{impl#0}::fold)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(0:3909 ~ rustc_trait_selection[c701]::traits::normalize::{impl#0}::fold)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(74:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(74:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(74:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(23:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(23:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(23:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(23:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(74:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(23:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::thin_vec::thin_vec::ThinVec::<T>::len (AssocFn) [DefId: DefId(38:84 ~ thin_vec[ba20]::{impl#5}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(38:84 ~ thin_vec[ba20]::{impl#5}::len)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(23:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(23:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(23:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(23:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(74:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(23:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::thin_vec::thin_vec::ThinVec::<T>::len (AssocFn) [DefId: DefId(38:84 ~ thin_vec[ba20]::{impl#5}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(38:84 ~ thin_vec[ba20]::{impl#5}::len)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(74:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(74:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(74:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(23:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(23:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(23:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(23:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(74:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(23:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(23:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(23:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(23:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(23:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(74:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(23:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(23:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(74:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::normalize_with_depth_to USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:9852 ~ rustc_trait_selection[c701]::traits::normalize::normalize_with_depth_to)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::needs_normalization USES crate::rustc_type_ir::rustc_middle::ty::TypeFlags::HAS_ALIAS (AssocConst) [DefId: DefId(209:5681 ~ rustc_type_ir[1eea]::flags::{impl#7}::HAS_ALIAS)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3891 ~ rustc_trait_selection[c701]::traits::normalize::needs_normalization)",
+      "used_def_id": "DefId(209:5681 ~ rustc_type_ir[1eea]::flags::{impl#7}::HAS_ALIAS)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::needs_normalization USES crate::rustc_infer::rustc_infer::infer::InferCtxt::<'tcx>::typing_mode (AssocFn) [DefId: DefId(183:1880 ~ rustc_infer[1d37]::infer::{impl#7}::typing_mode)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3891 ~ rustc_trait_selection[c701]::traits::normalize::needs_normalization)",
+      "used_def_id": "DefId(183:1880 ~ rustc_infer[1d37]::infer::{impl#7}::typing_mode)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::needs_normalization USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::TypingMode::Coherence (Ctor(Variant, Const)) [DefId: DefId(209:6073 ~ rustc_type_ir[1eea]::infer_ctxt::TypingMode::Coherence::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3891 ~ rustc_trait_selection[c701]::traits::normalize::needs_normalization)",
+      "used_def_id": "DefId(209:6073 ~ rustc_type_ir[1eea]::infer_ctxt::TypingMode::Coherence::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::needs_normalization USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::TypingMode::Analysis (Variant) [DefId: DefId(209:6074 ~ rustc_type_ir[1eea]::infer_ctxt::TypingMode::Analysis)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3891 ~ rustc_trait_selection[c701]::traits::normalize::needs_normalization)",
+      "used_def_id": "DefId(209:6074 ~ rustc_type_ir[1eea]::infer_ctxt::TypingMode::Analysis)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::needs_normalization USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::TypingMode::Borrowck (Variant) [DefId: DefId(209:6076 ~ rustc_type_ir[1eea]::infer_ctxt::TypingMode::Borrowck)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3891 ~ rustc_trait_selection[c701]::traits::normalize::needs_normalization)",
+      "used_def_id": "DefId(209:6076 ~ rustc_type_ir[1eea]::infer_ctxt::TypingMode::Borrowck)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::needs_normalization USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::TypingMode::PostBorrowckAnalysis (Variant) [DefId: DefId(209:6078 ~ rustc_type_ir[1eea]::infer_ctxt::TypingMode::PostBorrowckAnalysis)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3891 ~ rustc_trait_selection[c701]::traits::normalize::needs_normalization)",
+      "used_def_id": "DefId(209:6078 ~ rustc_type_ir[1eea]::infer_ctxt::TypingMode::PostBorrowckAnalysis)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::needs_normalization USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::flags::_::<impl rustc_middle::ty::TypeFlags>::remove (AssocFn) [DefId: DefId(209:5810 ~ rustc_type_ir[1eea]::flags::_::{impl#34}::remove)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3891 ~ rustc_trait_selection[c701]::traits::normalize::needs_normalization)",
+      "used_def_id": "DefId(209:5810 ~ rustc_type_ir[1eea]::flags::_::{impl#34}::remove)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::needs_normalization USES crate::rustc_type_ir::rustc_middle::ty::TypeFlags::HAS_TY_OPAQUE (AssocConst) [DefId: DefId(209:5678 ~ rustc_type_ir[1eea]::flags::{impl#7}::HAS_TY_OPAQUE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3891 ~ rustc_trait_selection[c701]::traits::normalize::needs_normalization)",
+      "used_def_id": "DefId(209:5678 ~ rustc_type_ir[1eea]::flags::{impl#7}::HAS_TY_OPAQUE)"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::needs_normalization USES crate::rustc_type_ir::rustc_infer::infer::canonical::rustc_type_ir::TypingMode::PostAnalysis (Ctor(Variant, Const)) [DefId: DefId(209:6081 ~ rustc_type_ir[1eea]::infer_ctxt::TypingMode::PostAnalysis::{constructor#0})]",
+      "usage_count": 1,
+      "usage_type": "Other",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3891 ~ rustc_trait_selection[c701]::traits::normalize::needs_normalization)",
+      "used_def_id": "DefId(209:6081 ~ rustc_type_ir[1eea]::infer_ctxt::TypingMode::PostAnalysis::{constructor#0})"
+    },
+    {
+      "usage": "crate::rustc_trait_selection::traits::normalize::needs_normalization USES crate::rustc_type_ir::rustc_middle::ty::TypeVisitableExt::has_type_flags (AssocFn) [DefId: DefId(209:2900 ~ rustc_type_ir[1eea]::visit::TypeVisitableExt::has_type_flags)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3891 ~ rustc_trait_selection[c701]::traits::normalize::needs_normalization)",
+      "used_def_id": "DefId(209:2900 ~ rustc_type_ir[1eea]::visit::TypeVisitableExt::has_type_flags)"
+    }
+  ]
+}

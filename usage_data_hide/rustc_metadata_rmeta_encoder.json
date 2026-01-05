@@ -1,0 +1,2078 @@
+{
+  "crate": "rustc_metadata",
+  "module": "rmeta::encoder",
+  "usages": [
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::bytes_needed USES crate::core::bitflags::__private::core::num::<impl u32>::div_ceil (AssocFn) [DefId: DefId(2:35346 ~ core[4720]::num::{impl#8}::div_ceil)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1029 ~ rustc_metadata[906b]::rmeta::encoder::bytes_needed)",
+      "used_def_id": "DefId(2:35346 ~ core[4720]::num::{impl#8}::div_ceil)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::bytes_needed USES crate::core::bitflags::__private::core::num::<impl usize>::BITS (AssocConst) [DefId: DefId(2:35683 ~ core[4720]::num::{impl#11}::BITS)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1029 ~ rustc_metadata[906b]::rmeta::encoder::bytes_needed)",
+      "used_def_id": "DefId(2:35683 ~ core[4720]::num::{impl#11}::BITS)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::bytes_needed USES crate::core::bitflags::__private::core::num::<impl usize>::leading_zeros (AssocFn) [DefId: DefId(2:35686 ~ core[4720]::num::{impl#11}::leading_zeros)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1029 ~ rustc_metadata[906b]::rmeta::encoder::bytes_needed)",
+      "used_def_id": "DefId(2:35686 ~ core[4720]::num::{impl#11}::leading_zeros)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::bytes_needed USES crate::core::bitflags::__private::core::num::<impl u8>::BITS (AssocConst) [DefId: DefId(2:34927 ~ core[4720]::num::{impl#6}::BITS)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1029 ~ rustc_metadata[906b]::rmeta::encoder::bytes_needed)",
+      "used_def_id": "DefId(2:34927 ~ core[4720]::num::{impl#6}::BITS)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::rustc_hir::rustc_hir::attrs::encode_cross_crate::<impl rustc_hir::attrs::AttributeKind>::encode_cross_crate (AssocFn) [DefId: DefId(107:76 ~ rustc_hir[6005]::attrs::encode_cross_crate::{impl#0}::encode_cross_crate)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(107:76 ~ rustc_hir[6005]::attrs::encode_cross_crate::{impl#0}::encode_cross_crate)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::rustc_hir::rustc_hir::Attribute::name (AssocFn) [DefId: DefId(107:576 ~ rustc_hir[6005]::hir::{impl#25}::name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(107:576 ~ rustc_hir[6005]::hir::{impl#25}::name)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::rustc_hir::rustc_hir::Attribute::doc_str (AssocFn) [DefId: DefId(107:591 ~ rustc_hir[6005]::hir::{impl#25}::doc_str)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(107:591 ~ rustc_hir[6005]::hir::{impl#25}::doc_str)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::rustc_hir::rustc_hir::Attribute::has_name (AssocFn) [DefId: DefId(107:583 ~ rustc_hir[6005]::hir::{impl#25}::has_name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(107:583 ~ rustc_hir[6005]::hir::{impl#25}::has_name)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::rustc_hir::rustc_hir::Attribute::meta_item_list (AssocFn) [DefId: DefId(107:577 ~ rustc_hir[6005]::hir::{impl#25}::meta_item_list)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(107:577 ~ rustc_hir[6005]::hir::{impl#25}::meta_item_list)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::core::std::prelude::v1::None (Variant) [DefId: DefId(2:49374 ~ core[4720]::option::Option::None)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::core::std::prelude::v1::Some (Variant) [DefId: DefId(2:49376 ~ core[4720]::option::Option::Some)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::rustc_ast::rustc_ast::attr::<impl rustc_hir::MetaItemInner>::has_name (AssocFn) [DefId: DefId(153:712 ~ rustc_ast[c120]::attr::{impl#8}::has_name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(153:712 ~ rustc_ast[c120]::attr::{impl#8}::has_name)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::rustc_ast::rustc_ast::attr::<impl rustc_hir::MetaItemInner>::has_name (AssocFn) [DefId: DefId(153:712 ~ rustc_ast[c120]::attr::{impl#8}::has_name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(153:712 ~ rustc_ast[c120]::attr::{impl#8}::has_name)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::core::std::iter::Iterator::next (AssocFn) [DefId: DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::core::std::iter::IntoIterator::into_iter (AssocFn) [DefId: DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::core::std::ops::Deref::deref (AssocFn) [DefId: DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(2:3943 ~ core[4720]::ops::deref::Deref::deref)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::analyze_attr USES crate::rustc_hir::rustc_hir::Attribute::path (AssocFn) [DefId: DefId(107:587 ~ rustc_hir[6005]::hir::{impl#25}::path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1078 ~ rustc_metadata[906b]::rmeta::encoder::analyze_attr)",
+      "used_def_id": "DefId(107:587 ~ rustc_hir[6005]::hir::{impl#25}::path)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_mir USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_kind (AssocFn) [DefId: DefId(193:37786 ~ rustc_middle[f25a]::query::{impl#3}::def_kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_mir)",
+      "used_def_id": "DefId(193:37786 ~ rustc_middle[f25a]::query::{impl#3}::def_kind)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_mir USES crate::rustc_session::rustc_session::config::OutputTypes::should_codegen (AssocFn) [DefId: DefId(203:444 ~ rustc_session[5182]::config::{impl#8}::should_codegen)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_mir)",
+      "used_def_id": "DefId(203:444 ~ rustc_session[5182]::config::{impl#8}::should_codegen)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_mir USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::is_coroutine (AssocFn) [DefId: DefId(193:6796 ~ rustc_middle[f25a]::ty::context::{impl#25}::is_coroutine)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_mir)",
+      "used_def_id": "DefId(193:6796 ~ rustc_middle[f25a]::ty::context::{impl#25}::is_coroutine)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_mir USES crate::rustc_span::rustc_hir::def_id::LocalDefId::to_def_id (AssocFn) [DefId: DefId(109:590 ~ rustc_span[d94c]::def_id::{impl#16}::to_def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_mir)",
+      "used_def_id": "DefId(109:590 ~ rustc_span[d94c]::def_id::{impl#16}::to_def_id)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_mir USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::generics_of (AssocFn) [DefId: DefId(193:37673 ~ rustc_middle[f25a]::query::{impl#3}::generics_of)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_mir)",
+      "used_def_id": "DefId(193:37673 ~ rustc_middle[f25a]::query::{impl#3}::generics_of)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_mir USES crate::rustc_session::rustc_session::config::OutputTypes::should_codegen (AssocFn) [DefId: DefId(203:444 ~ rustc_session[5182]::config::{impl#8}::should_codegen)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_mir)",
+      "used_def_id": "DefId(203:444 ~ rustc_session[5182]::config::{impl#8}::should_codegen)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_mir USES crate::rustc_data_structures::rustc_data_structures::unord::UnordSet::<V>::contains (AssocFn) [DefId: DefId(20:2777 ~ rustc_data_structures[bb44]::unord::{impl#7}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_mir)",
+      "used_def_id": "DefId(20:2777 ~ rustc_data_structures[bb44]::unord::{impl#7}::contains)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_mir USES crate::rustc_middle::rustc_middle::ty::Generics::requires_monomorphization (AssocFn) [DefId: DefId(193:7647 ~ rustc_middle[f25a]::ty::generics::{impl#3}::requires_monomorphization)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_mir)",
+      "used_def_id": "DefId(193:7647 ~ rustc_middle[f25a]::ty::generics::{impl#3}::requires_monomorphization)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_mir USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::cross_crate_inlinable (AssocFn) [DefId: DefId(193:37954 ~ rustc_middle[f25a]::query::{impl#3}::cross_crate_inlinable)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_mir)",
+      "used_def_id": "DefId(193:37954 ~ rustc_middle[f25a]::query::{impl#3}::cross_crate_inlinable)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_mir USES crate::rustc_middle::rustc_middle::ty::<impl rustc_middle::ty::TyCtxt<'tcx>>::is_const_fn (AssocFn) [DefId: DefId(193:9500 ~ rustc_middle[f25a]::ty::{impl#44}::is_const_fn)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_mir)",
+      "used_def_id": "DefId(193:9500 ~ rustc_middle[f25a]::ty::{impl#44}::is_const_fn)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_mir USES crate::rustc_span::rustc_hir::def_id::LocalDefId::to_def_id (AssocFn) [DefId: DefId(109:590 ~ rustc_span[d94c]::def_id::{impl#16}::to_def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_mir)",
+      "used_def_id": "DefId(109:590 ~ rustc_span[d94c]::def_id::{impl#16}::to_def_id)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_mir USES crate::rustc_middle::rustc_middle::ty::<impl rustc_middle::ty::TyCtxt<'tcx>>::is_const_default_method (AssocFn) [DefId: DefId(193:9504 ~ rustc_middle[f25a]::ty::{impl#44}::is_const_default_method)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_mir)",
+      "used_def_id": "DefId(193:9504 ~ rustc_middle[f25a]::ty::{impl#44}::is_const_default_method)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_mir USES crate::rustc_span::rustc_hir::def_id::LocalDefId::to_def_id (AssocFn) [DefId: DefId(109:590 ~ rustc_span[d94c]::def_id::{impl#16}::to_def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1084 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_mir)",
+      "used_def_id": "DefId(109:590 ~ rustc_span[d94c]::def_id::{impl#16}::to_def_id)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_variances USES crate::rustc_middle::rustc_middle::ty::<impl rustc_middle::ty::TyCtxt<'tcx>>::opt_rpitit_info (AssocFn) [DefId: DefId(193:9447 ~ rustc_middle[f25a]::ty::{impl#44}::opt_rpitit_info)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_variances)",
+      "used_def_id": "DefId(193:9447 ~ rustc_middle[f25a]::ty::{impl#44}::opt_rpitit_info)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_variances USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::type_alias_is_lazy (AssocFn) [DefId: DefId(193:37667 ~ rustc_middle[f25a]::query::{impl#3}::type_alias_is_lazy)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1085 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_variances)",
+      "used_def_id": "DefId(193:37667 ~ rustc_middle[f25a]::query::{impl#3}::type_alias_is_lazy)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_type USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::local_opaque_ty_origin (AssocFn) [DefId: DefId(193:25762 ~ rustc_middle[f25a]::ty::context::{impl#27}::local_opaque_ty_origin)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1088 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_type)",
+      "used_def_id": "DefId(193:25762 ~ rustc_middle[f25a]::ty::context::{impl#27}::local_opaque_ty_origin)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_type USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_node_by_def_id (AssocFn) [DefId: DefId(193:121 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_node_by_def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1088 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_type)",
+      "used_def_id": "DefId(193:121 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_node_by_def_id)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_type USES crate::rustc_hir::rustc_hir::TraitItem::<'hir>::expect_fn (AssocFn) [DefId: DefId(107:5115 ~ rustc_hir[6005]::hir::{impl#52}::expect_fn)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1088 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_type)",
+      "used_def_id": "DefId(107:5115 ~ rustc_hir[6005]::hir::{impl#52}::expect_fn)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_type USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::associated_item (AssocFn) [DefId: DefId(193:37737 ~ rustc_middle[f25a]::query::{impl#3}::associated_item)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1088 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_type)",
+      "used_def_id": "DefId(193:37737 ~ rustc_middle[f25a]::query::{impl#3}::associated_item)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_type USES crate::rustc_hir::rustc_hir::Defaultness::has_value (AssocFn) [DefId: DefId(107:789 ~ rustc_hir[6005]::hir::{impl#70}::has_value)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1088 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_type)",
+      "used_def_id": "DefId(107:789 ~ rustc_hir[6005]::hir::{impl#70}::has_value)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_type USES crate::rustc_middle::rustc_middle::ty::AssocItem::defaultness (AssocFn) [DefId: DefId(193:5678 ~ rustc_middle[f25a]::ty::assoc::{impl#0}::defaultness)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1088 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_type)",
+      "used_def_id": "DefId(193:5678 ~ rustc_middle[f25a]::ty::assoc::{impl#0}::defaultness)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_type USES crate::rustc_middle::rustc_middle::hir::map::<impl rustc_middle::ty::TyCtxt<'tcx>>::hir_node_by_def_id (AssocFn) [DefId: DefId(193:121 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_node_by_def_id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1088 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_type)",
+      "used_def_id": "DefId(193:121 ~ rustc_middle[f25a]::hir::map::{impl#3}::hir_node_by_def_id)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_type USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1088 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_type)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_type USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1088 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_type)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::should_encode_type USES crate::core::std::option::Option::<T>::is_some (AssocFn) [DefId: DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1088 ~ rustc_metadata[906b]::rmeta::encoder::should_encode_type)",
+      "used_def_id": "DefId(2:10214 ~ core[4720]::option::{impl#0}::is_some)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::prefetch_mir USES crate::rustc_session::rustc_session::config::OutputTypes::should_codegen (AssocFn) [DefId: DefId(203:444 ~ rustc_session[5182]::config::{impl#8}::should_codegen)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1139 ~ rustc_metadata[906b]::rmeta::encoder::prefetch_mir)",
+      "used_def_id": "DefId(203:444 ~ rustc_session[5182]::config::{impl#8}::should_codegen)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::prefetch_mir USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::reachable_set (AssocFn) [DefId: DefId(193:37782 ~ rustc_middle[f25a]::query::{impl#3}::reachable_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1139 ~ rustc_metadata[906b]::rmeta::encoder::prefetch_mir)",
+      "used_def_id": "DefId(193:37782 ~ rustc_middle[f25a]::query::{impl#3}::reachable_set)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::prefetch_mir USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::mir_keys (AssocFn) [DefId: DefId(193:37693 ~ rustc_middle[f25a]::query::{impl#3}::mir_keys)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1139 ~ rustc_metadata[906b]::rmeta::encoder::prefetch_mir)",
+      "used_def_id": "DefId(193:37693 ~ rustc_middle[f25a]::query::{impl#3}::mir_keys)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::prefetch_mir USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::query::TyCtxtEnsureDone<'tcx>>::mir_for_ctfe (AssocFn) [DefId: DefId(193:37383 ~ rustc_middle[f25a]::query::{impl#2}::mir_for_ctfe)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1139 ~ rustc_metadata[906b]::rmeta::encoder::prefetch_mir)",
+      "used_def_id": "DefId(193:37383 ~ rustc_middle[f25a]::query::{impl#2}::mir_for_ctfe)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::prefetch_mir USES crate::rustc_middle::rustc_middle::query::plumbing::<impl rustc_middle::ty::TyCtxt<'tcx>>::ensure_done (AssocFn) [DefId: DefId(193:10677 ~ rustc_middle[f25a]::query::plumbing::{impl#1}::ensure_done)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1139 ~ rustc_metadata[906b]::rmeta::encoder::prefetch_mir)",
+      "used_def_id": "DefId(193:10677 ~ rustc_middle[f25a]::query::plumbing::{impl#1}::ensure_done)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::prefetch_mir USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::query::TyCtxtEnsureDone<'tcx>>::optimized_mir (AssocFn) [DefId: DefId(193:37390 ~ rustc_middle[f25a]::query::{impl#2}::optimized_mir)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1139 ~ rustc_metadata[906b]::rmeta::encoder::prefetch_mir)",
+      "used_def_id": "DefId(193:37390 ~ rustc_middle[f25a]::query::{impl#2}::optimized_mir)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::prefetch_mir USES crate::rustc_middle::rustc_middle::query::plumbing::<impl rustc_middle::ty::TyCtxt<'tcx>>::ensure_done (AssocFn) [DefId: DefId(193:10677 ~ rustc_middle[f25a]::query::plumbing::{impl#1}::ensure_done)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1139 ~ rustc_metadata[906b]::rmeta::encoder::prefetch_mir)",
+      "used_def_id": "DefId(193:10677 ~ rustc_middle[f25a]::query::plumbing::{impl#1}::ensure_done)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::prefetch_mir USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::query::TyCtxtEnsureDone<'tcx>>::promoted_mir (AssocFn) [DefId: DefId(193:37393 ~ rustc_middle[f25a]::query::{impl#2}::promoted_mir)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1139 ~ rustc_metadata[906b]::rmeta::encoder::prefetch_mir)",
+      "used_def_id": "DefId(193:37393 ~ rustc_middle[f25a]::query::{impl#2}::promoted_mir)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::prefetch_mir USES crate::rustc_middle::rustc_middle::query::plumbing::<impl rustc_middle::ty::TyCtxt<'tcx>>::ensure_done (AssocFn) [DefId: DefId(193:10677 ~ rustc_middle[f25a]::query::plumbing::{impl#1}::ensure_done)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1139 ~ rustc_metadata[906b]::rmeta::encoder::prefetch_mir)",
+      "used_def_id": "DefId(193:10677 ~ rustc_middle[f25a]::query::plumbing::{impl#1}::ensure_done)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(73:544 ~ tracing_core[5cb0]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:544 ~ tracing_core[5cb0]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(73:544 ~ tracing_core[5cb0]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:544 ~ tracing_core[5cb0]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(73:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(73:544 ~ tracing_core[5cb0]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:544 ~ tracing_core[5cb0]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(73:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(73:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(73:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::subscriber::Interest::never (AssocFn) [DefId: DefId(73:733 ~ tracing_core[5cb0]::subscriber::{impl#4}::never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:733 ~ tracing_core[5cb0]::subscriber::{impl#4}::never)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(73:544 ~ tracing_core[5cb0]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:544 ~ tracing_core[5cb0]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(73:544 ~ tracing_core[5cb0]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:544 ~ tracing_core[5cb0]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(73:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(73:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(73:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing::tracing::Span::new (AssocFn) [DefId: DefId(72:167 ~ tracing[3c75]::span::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(72:167 ~ tracing[3c75]::span::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(73:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(73:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::TRACE (AssocConst) [DefId: DefId(73:544 ~ tracing_core[5cb0]::metadata::{impl#6}::TRACE)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:544 ~ tracing_core[5cb0]::metadata::{impl#6}::TRACE)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(73:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(73:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(73:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing::tracing::Span::record_all (AssocFn) [DefId: DefId(72:199 ~ tracing[3c75]::span::{impl#0}::record_all)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(72:199 ~ tracing[3c75]::span::{impl#0}::record_all)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(73:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(73:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing::tracing::Span::enter (AssocFn) [DefId: DefId(72:183 ~ tracing[3c75]::span::{impl#0}::enter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(72:183 ~ tracing[3c75]::span::{impl#0}::enter)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_query_system::rustc_query_system::dep_graph::graph::DepGraph::<D>::assert_ignored (AssocFn) [DefId: DefId(210:253 ~ rustc_query_system[6607]::dep_graph::graph::{impl#3}::assert_ignored)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(210:253 ~ rustc_query_system[6607]::dep_graph::graph::{impl#3}::assert_ignored)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::verbose_generic_activity (AssocFn) [DefId: DefId(20:1062 ~ rustc_data_structures[bb44]::profiling::{impl#0}::verbose_generic_activity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(20:1062 ~ rustc_data_structures[bb44]::profiling::{impl#0}::verbose_generic_activity)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_metadata::rmeta::encoder::EncodeContext::<'a, 'tcx>::lazy (AssocFn) [DefId: DefId(0:1053 ~ rustc_metadata[906b]::rmeta::encoder::{impl#9}::lazy)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(0:1053 ~ rustc_metadata[906b]::rmeta::encoder::{impl#9}::lazy)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::crate_name (AssocFn) [DefId: DefId(193:37887 ~ rustc_middle[f25a]::query::{impl#3}::crate_name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(193:37887 ~ rustc_middle[f25a]::query::{impl#3}::crate_name)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::crate_hash (AssocFn) [DefId: DefId(193:37869 ~ rustc_middle[f25a]::query::{impl#3}::crate_hash)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(193:37869 ~ rustc_middle[f25a]::query::{impl#3}::crate_hash)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::num::NonZero::<T>::get (AssocFn) [DefId: DefId(2:1246 ~ core[4720]::num::nonzero::{impl#15}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:1246 ~ core[4720]::num::nonzero::{impl#15}::get)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::verbose_generic_activity (AssocFn) [DefId: DefId(20:1062 ~ rustc_data_structures[bb44]::profiling::{impl#0}::verbose_generic_activity)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(20:1062 ~ rustc_data_structures[bb44]::profiling::{impl#0}::verbose_generic_activity)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::metadata_dep_node (AssocFn) [DefId: DefId(193:7081 ~ rustc_middle[f25a]::ty::context::{impl#44}::metadata_dep_node)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(193:7081 ~ rustc_middle[f25a]::ty::context::{impl#44}::metadata_dep_node)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_query_system::rustc_query_system::dep_graph::graph::DepGraph::<D>::is_fully_enabled (AssocFn) [DefId: DefId(210:250 ~ rustc_query_system[6607]::dep_graph::graph::{impl#3}::is_fully_enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(210:250 ~ rustc_query_system[6607]::dep_graph::graph::{impl#3}::is_fully_enabled)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_query_system::rustc_middle::dep_graph::WorkProductId::from_cgu_name (AssocFn) [DefId: DefId(210:125 ~ rustc_query_system[6607]::dep_graph::dep_node::{impl#5}::from_cgu_name)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(210:125 ~ rustc_query_system[6607]::dep_graph::dep_node::{impl#5}::from_cgu_name)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_query_system::rustc_query_system::dep_graph::graph::DepGraph::<D>::previous_work_product (AssocFn) [DefId: DefId(210:324 ~ rustc_query_system[6607]::dep_graph::graph::{impl#7}::previous_work_product)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(210:324 ~ rustc_query_system[6607]::dep_graph::graph::{impl#7}::previous_work_product)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_middle::rustc_middle::query::plumbing::<impl rustc_middle::ty::TyCtxt<'tcx>>::try_mark_green (AssocFn) [DefId: DefId(193:10679 ~ rustc_middle[f25a]::query::plumbing::{impl#1}::try_mark_green)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(193:10679 ~ rustc_middle[f25a]::query::plumbing::{impl#1}::try_mark_green)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::option::Option::<T>::unwrap (AssocFn) [DefId: DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:10228 ~ core[4720]::option::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_session::rustc_session::Session::incr_comp_session_dir_opt (AssocFn) [DefId: DefId(203:1345 ~ rustc_session[5182]::session::{impl#2}::incr_comp_session_dir_opt)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(203:1345 ~ rustc_session[5182]::session::{impl#2}::incr_comp_session_dir_opt)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::level_filters::LevelFilter::current (AssocFn) [DefId: DefId(73:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:576 ~ tracing_core[5cb0]::metadata::{impl#13}::current)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::callsite::DefaultCallsite::interest (AssocFn) [DefId: DefId(73:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:60 ~ tracing_core[5cb0]::callsite::{impl#0}::interest)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::subscriber::Interest::is_never (AssocFn) [DefId: DefId(73:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:736 ~ tracing_core[5cb0]::subscriber::{impl#4}::is_never)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::ops::Fn::call (AssocFn) [DefId: DefId(2:3982 ~ core[4720]::ops::function::Fn::call)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3982 ~ core[4720]::ops::function::Fn::call)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Event::<'a>::dispatch (AssocFn) [DefId: DefId(73:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:259 ~ tracing_core[5cb0]::event::{impl#0}::dispatch)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(73:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(73:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(73:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(73:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(73:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(73:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(22:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(22:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(22:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(22:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(22:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(22:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(22:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(22:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(73:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(22:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(22:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(73:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(73:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(73:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(73:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(73:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::ERROR (AssocConst) [DefId: DefId(73:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:540 ~ tracing_core[5cb0]::metadata::{impl#6}::ERROR)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::WARN (AssocConst) [DefId: DefId(73:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:541 ~ tracing_core[5cb0]::metadata::{impl#6}::WARN)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::INFO (AssocConst) [DefId: DefId(73:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:542 ~ tracing_core[5cb0]::metadata::{impl#6}::INFO)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Level::DEBUG (AssocConst) [DefId: DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)]",
+      "usage_count": 1,
+      "usage_type": "AssocConstAccess",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:543 ~ tracing_core[5cb0]::metadata::{impl#6}::DEBUG)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::cmp::PartialOrd::le (AssocFn) [DefId: DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:3260 ~ core[4720]::cmp::PartialOrd::le)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::log::tracing::log::MetadataBuilder::<'a>::build (AssocFn) [DefId: DefId(22:610 ~ log[e6a5]::{impl#16}::build)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(22:610 ~ log[e6a5]::{impl#16}::build)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::log::tracing::log::MetadataBuilder::<'a>::target (AssocFn) [DefId: DefId(22:609 ~ log[e6a5]::{impl#16}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(22:609 ~ log[e6a5]::{impl#16}::target)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::log::tracing::log::MetadataBuilder::<'a>::level (AssocFn) [DefId: DefId(22:608 ~ log[e6a5]::{impl#16}::level)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(22:608 ~ log[e6a5]::{impl#16}::level)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::log::tracing::log::Metadata::<'a>::builder (AssocFn) [DefId: DefId(22:602 ~ log[e6a5]::{impl#15}::builder)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(22:602 ~ log[e6a5]::{impl#15}::builder)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Metadata::<'a>::target (AssocFn) [DefId: DefId(73:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:513 ~ tracing_core[5cb0]::metadata::{impl#0}::target)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::log::tracing::log::Log::enabled (AssocFn) [DefId: DefId(22:614 ~ log[e6a5]::Log::enabled)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(22:614 ~ log[e6a5]::Log::enabled)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::field::FieldSet::iter (AssocFn) [DefId: DefId(73:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:441 ~ tracing_core[5cb0]::field::{impl#48}::iter)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::field::FieldSet::value_set (AssocFn) [DefId: DefId(73:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:442 ~ tracing_core[5cb0]::field::{impl#48}::value_set)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Metadata::<'a>::fields (AssocFn) [DefId: DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:510 ~ tracing_core[5cb0]::metadata::{impl#0}::fields)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::tracing_core::tracing::Callsite::metadata (AssocFn) [DefId: DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(73:41 ~ tracing_core[5cb0]::callsite::Callsite::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::option::Option::<T>::expect (AssocFn) [DefId: DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:10227 ~ core[4720]::option::{impl#0}::expect)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::bitflags::__private::core::fmt::rt::Argument::<'_>::new_debug (AssocFn) [DefId: DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:11872 ~ core[4720]::fmt::rt::{impl#0}::new_debug)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_v1 (AssocFn) [DefId: DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:11899 ~ core[4720]::fmt::rt::{impl#1}::new_v1)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_fatal (AssocFn) [DefId: DefId(194:1229 ~ rustc_errors[740a]::{impl#9}::emit_fatal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(194:1229 ~ rustc_errors[740a]::{impl#9}::emit_fatal)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_session::rustc_session::Session::threads (AssocFn) [DefId: DefId(203:1381 ~ rustc_session[5182]::session::{impl#3}::threads)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(203:1381 ~ rustc_session[5182]::session::{impl#3}::threads)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::exported_non_generic_symbols (AssocFn) [DefId: DefId(193:37914 ~ rustc_middle[f25a]::query::{impl#3}::exported_non_generic_symbols)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(193:37914 ~ rustc_middle[f25a]::query::{impl#3}::exported_non_generic_symbols)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::exported_generic_symbols (AssocFn) [DefId: DefId(193:37915 ~ rustc_middle[f25a]::query::{impl#3}::exported_generic_symbols)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(193:37915 ~ rustc_middle[f25a]::query::{impl#3}::exported_generic_symbols)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_query_system::rustc_query_system::dep_graph::graph::DepGraph::<D>::with_task (AssocFn) [DefId: DefId(210:261 ~ rustc_query_system[6607]::dep_graph::graph::{impl#3}::with_task)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(210:261 ~ rustc_query_system[6607]::dep_graph::graph::{impl#3}::with_task)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_metadata::rmeta::encoder::EncodeContext::<'a, 'tcx>::encode_crate_root (AssocFn) [DefId: DefId(0:1067 ~ rustc_metadata[906b]::rmeta::encoder::{impl#9}::encode_crate_root)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(0:1067 ~ rustc_metadata[906b]::rmeta::encoder::{impl#9}::encode_crate_root)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_serialize::rustc_serialize::opaque::FileEncoder::flush (AssocFn) [DefId: DefId(34:443 ~ rustc_serialize[b27c]::opaque::{impl#0}::flush)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(34:443 ~ rustc_serialize[b27c]::opaque::{impl#0}::flush)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_data_structures::rustc_data_structures::profiling::SelfProfilerRef::artifact_size (AssocFn) [DefId: DefId(20:1077 ~ rustc_data_structures[bb44]::profiling::{impl#0}::artifact_size)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(20:1077 ~ rustc_data_structures[bb44]::profiling::{impl#0}::artifact_size)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::std::std::fs::Metadata::len (AssocFn) [DefId: DefId(1:2595 ~ std[93f5]::fs::{impl#21}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(1:2595 ~ std[93f5]::fs::{impl#21}::len)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::result::Result::<T, E>::unwrap (AssocFn) [DefId: DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::std::std::fs::File::metadata (AssocFn) [DefId: DefId(1:2511 ~ std[93f5]::fs::{impl#4}::metadata)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(1:2511 ~ std[93f5]::fs::{impl#4}::metadata)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::rustc_serialize::rustc_serialize::opaque::FileEncoder::file (AssocFn) [DefId: DefId(34:444 ~ rustc_serialize[b27c]::opaque::{impl#0}::file)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(34:444 ~ rustc_serialize[b27c]::opaque::{impl#0}::file)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_metadata USES crate::core::std::num::NonZero::<T>::get (AssocFn) [DefId: DefId(2:1246 ~ core[4720]::num::nonzero::{impl#15}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:2878 ~ rustc_metadata[906b]::rmeta::encoder::encode_metadata)",
+      "used_def_id": "DefId(2:1246 ~ core[4720]::num::nonzero::{impl#15}::get)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::core::std::result::Result::<T, E>::unwrap_or_else (AssocFn) [DefId: DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(2:11125 ~ core[4720]::result::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_serialize::rustc_serialize::opaque::FileEncoder::new (AssocFn) [DefId: DefId(34:440 ~ rustc_serialize[b27c]::opaque::{impl#0}::new)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(34:440 ~ rustc_serialize[b27c]::opaque::{impl#0}::new)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_fatal (AssocFn) [DefId: DefId(194:1229 ~ rustc_errors[740a]::{impl#9}::emit_fatal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(194:1229 ~ rustc_errors[740a]::{impl#9}::emit_fatal)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_serialize::rustc_serialize::Encoder::emit_raw_bytes (AssocFn) [DefId: DefId(34:55 ~ rustc_serialize[b27c]::serialize::Encoder::emit_raw_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(34:55 ~ rustc_serialize[b27c]::serialize::Encoder::emit_raw_bytes)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_serialize::rustc_serialize::Encoder::emit_raw_bytes (AssocFn) [DefId: DefId(34:55 ~ rustc_serialize[b27c]::serialize::Encoder::emit_raw_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(34:55 ~ rustc_serialize[b27c]::serialize::Encoder::emit_raw_bytes)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::core::bitflags::__private::core::num::<impl u64>::to_le_bytes (AssocFn) [DefId: DefId(2:35508 ~ core[4720]::num::{impl#9}::to_le_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(2:35508 ~ core[4720]::num::{impl#9}::to_le_bytes)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_span::rustc_span::source_map::SourceMap::files (AssocFn) [DefId: DefId(109:123 ~ rustc_span[d94c]::source_map::{impl#1}::files)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(109:123 ~ rustc_span[d94c]::source_map::{impl#1}::files)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_session::rustc_session::Session::source_map (AssocFn) [DefId: DefId(203:1315 ~ rustc_session[5182]::session::{impl#2}::source_map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(203:1315 ~ rustc_session[5182]::session::{impl#2}::source_map)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::core::std::clone::Clone::clone (AssocFn) [DefId: DefId(2:3159 ~ core[4720]::clone::Clone::clone)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(2:3159 ~ core[4720]::clone::Clone::clone)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::core::std::ops::Index::index (AssocFn) [DefId: DefId(2:45148 ~ core[4720]::ops::index::Index::index)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::core::std::default::Default::default (AssocFn) [DefId: DefId(2:3508 ~ core[4720]::default::Default::default)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(2:3508 ~ core[4720]::default::Default::default)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::features (AssocFn) [DefId: DefId(193:6805 ~ rustc_middle[f25a]::ty::context::{impl#25}::features)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(193:6805 ~ rustc_middle[f25a]::ty::context::{impl#25}::features)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::core::bitflags::__private::core::slice::<impl [T]>::contains (AssocFn) [DefId: DefId(2:14156 ~ core[4720]::slice::{impl#0}::contains)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(2:14156 ~ core[4720]::slice::{impl#0}::contains)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::crate_types (AssocFn) [DefId: DefId(193:6810 ~ rustc_middle[f25a]::ty::context::{impl#25}::crate_types)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(193:6810 ~ rustc_middle[f25a]::ty::context::{impl#25}::crate_types)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_serialize::rustc_serialize::Encodable::encode (AssocFn) [DefId: DefId(34:78 ~ rustc_serialize[b27c]::serialize::Encodable::encode)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(34:78 ~ rustc_serialize[b27c]::serialize::Encodable::encode)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::core::std::ops::FnOnce::call_once (AssocFn) [DefId: DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(2:3989 ~ core[4720]::ops::function::FnOnce::call_once)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_serialize::rustc_serialize::opaque::FileEncoder::finish (AssocFn) [DefId: DefId(34:460 ~ rustc_serialize[b27c]::opaque::{impl#0}::finish)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(34:460 ~ rustc_serialize[b27c]::opaque::{impl#0}::finish)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_fatal (AssocFn) [DefId: DefId(194:1229 ~ rustc_errors[740a]::{impl#9}::emit_fatal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(194:1229 ~ rustc_errors[740a]::{impl#9}::emit_fatal)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_serialize::rustc_serialize::opaque::FileEncoder::file (AssocFn) [DefId: DefId(34:444 ~ rustc_serialize[b27c]::opaque::{impl#0}::file)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(34:444 ~ rustc_serialize[b27c]::opaque::{impl#0}::file)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_errors::rustc_errors::DiagCtxtHandle::<'a>::emit_fatal (AssocFn) [DefId: DefId(194:1229 ~ rustc_errors[740a]::{impl#9}::emit_fatal)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(194:1229 ~ rustc_errors[740a]::{impl#9}::emit_fatal)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_middle::rustc_middle::ty::TyCtxt::<'tcx>::dcx (AssocFn) [DefId: DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(193:6819 ~ rustc_middle[f25a]::ty::context::{impl#25}::dcx)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::with_encode_metadata_header USES crate::rustc_serialize::rustc_serialize::opaque::FileEncoder::path (AssocFn) [DefId: DefId(34:445 ~ rustc_serialize[b27c]::opaque::{impl#0}::path)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1157 ~ rustc_metadata[906b]::rmeta::encoder::with_encode_metadata_header)",
+      "used_def_id": "DefId(34:445 ~ rustc_serialize[b27c]::opaque::{impl#0}::path)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::std::result::Result::<T, E>::unwrap (AssocFn) [DefId: DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:11108 ~ core[4720]::result::{impl#0}::unwrap)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::std::std::io::Seek::stream_position (AssocFn) [DefId: DefId(1:3999 ~ std[93f5]::io::Seek::stream_position)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(1:3999 ~ std[93f5]::io::Seek::stream_position)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::bitflags::__private::core::slice::<impl [T]>::len (AssocFn) [DefId: DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:14034 ~ core[4720]::slice::{impl#0}::len)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::std::std::io::Seek::seek (AssocFn) [DefId: DefId(1:3996 ~ std[93f5]::io::Seek::seek)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(1:3996 ~ std[93f5]::io::Seek::seek)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::std::std::io::Write::write_all (AssocFn) [DefId: DefId(1:3991 ~ std[93f5]::io::Write::write_all)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(1:3991 ~ std[93f5]::io::Write::write_all)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::bitflags::__private::core::num::<impl usize>::to_le_bytes (AssocFn) [DefId: DefId(2:35810 ~ core[4720]::num::{impl#11}::to_le_bytes)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:35810 ~ core[4720]::num::{impl#11}::to_le_bytes)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::std::std::io::Seek::seek (AssocFn) [DefId: DefId(1:3996 ~ std[93f5]::io::Seek::seek)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(1:3996 ~ std[93f5]::io::Seek::seek)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::std::ops::Try::branch (AssocFn) [DefId: DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:4242 ~ core[4720]::ops::try_trait::Try::branch)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::std::ops::ControlFlow::Continue (Variant) [DefId: DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:45080 ~ core[4720]::ops::control_flow::ControlFlow::Continue)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::std::ops::FromResidual::from_residual (AssocFn) [DefId: DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:4245 ~ core[4720]::ops::try_trait::FromResidual::from_residual)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::encode_root_position USES crate::core::std::ops::ControlFlow::Break (Variant) [DefId: DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)]",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1160 ~ rustc_metadata[906b]::rmeta::encoder::encode_root_position)",
+      "used_def_id": "DefId(2:45083 ~ core[4720]::ops::control_flow::ControlFlow::Break)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::provide USES crate::core::std::option::Option::<T>::unwrap_or_else (AssocFn) [DefId: DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1161 ~ rustc_metadata[906b]::rmeta::encoder::provide)",
+      "used_def_id": "DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::provide USES crate::indexmap::indexmap::map::IndexMap::<K, V, S>::get (AssocFn) [DefId: DefId(38:1393 ~ indexmap[01a7]::map::{impl#5}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1161 ~ rustc_metadata[906b]::rmeta::encoder::provide)",
+      "used_def_id": "DefId(38:1393 ~ indexmap[01a7]::map::{impl#5}::get)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::provide USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::resolutions (AssocFn) [DefId: DefId(193:37652 ~ rustc_middle[f25a]::query::{impl#3}::resolutions)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1161 ~ rustc_metadata[906b]::rmeta::encoder::provide)",
+      "used_def_id": "DefId(193:37652 ~ rustc_middle[f25a]::query::{impl#3}::resolutions)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::provide USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_span (AssocFn) [DefId: DefId(193:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1161 ~ rustc_metadata[906b]::rmeta::encoder::provide)",
+      "used_def_id": "DefId(193:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::provide USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1161 ~ rustc_metadata[906b]::rmeta::encoder::provide)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::provide USES crate::core::std::option::Option::<T>::unwrap_or_else (AssocFn) [DefId: DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1161 ~ rustc_metadata[906b]::rmeta::encoder::provide)",
+      "used_def_id": "DefId(2:10230 ~ core[4720]::option::{impl#0}::unwrap_or_else)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::provide USES crate::indexmap::indexmap::map::IndexMap::<K, V, S>::get (AssocFn) [DefId: DefId(38:1393 ~ indexmap[01a7]::map::{impl#5}::get)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1161 ~ rustc_metadata[906b]::rmeta::encoder::provide)",
+      "used_def_id": "DefId(38:1393 ~ indexmap[01a7]::map::{impl#5}::get)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::provide USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::resolutions (AssocFn) [DefId: DefId(193:37652 ~ rustc_middle[f25a]::query::{impl#3}::resolutions)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1161 ~ rustc_metadata[906b]::rmeta::encoder::provide)",
+      "used_def_id": "DefId(193:37652 ~ rustc_middle[f25a]::query::{impl#3}::resolutions)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::provide USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_span (AssocFn) [DefId: DefId(193:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1161 ~ rustc_metadata[906b]::rmeta::encoder::provide)",
+      "used_def_id": "DefId(193:37787 ~ rustc_middle[f25a]::query::{impl#3}::def_span)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::provide USES crate::core::bitflags::__private::core::fmt::rt::<impl std::fmt::Arguments<'a>>::new_const (AssocFn) [DefId: DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1161 ~ rustc_metadata[906b]::rmeta::encoder::provide)",
+      "used_def_id": "DefId(2:11895 ~ core[4720]::fmt::rt::{impl#1}::new_const)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::rendered_const USES crate::rustc_span::rustc_span::Span::from_expansion (AssocFn) [DefId: DefId(109:703 ~ rustc_span[d94c]::span_encoding::{impl#4}::from_expansion)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1166 ~ rustc_metadata[906b]::rmeta::encoder::rendered_const)",
+      "used_def_id": "DefId(109:703 ~ rustc_span[d94c]::span_encoding::{impl#4}::from_expansion)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::rendered_const USES crate::rustc_span::rustc_span::source_map::SourceMap::span_to_snippet (AssocFn) [DefId: DefId(109:152 ~ rustc_span[d94c]::source_map::{impl#1}::span_to_snippet)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1166 ~ rustc_metadata[906b]::rmeta::encoder::rendered_const)",
+      "used_def_id": "DefId(109:152 ~ rustc_span[d94c]::source_map::{impl#1}::span_to_snippet)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::rendered_const USES crate::rustc_session::rustc_session::Session::source_map (AssocFn) [DefId: DefId(203:1315 ~ rustc_session[5182]::session::{impl#2}::source_map)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1166 ~ rustc_metadata[906b]::rmeta::encoder::rendered_const)",
+      "used_def_id": "DefId(203:1315 ~ rustc_session[5182]::session::{impl#2}::source_map)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::rendered_const USES crate::rustc_hir::rustc_hir::Body::<'hir>::id (AssocFn) [DefId: DefId(107:655 ~ rustc_hir[6005]::hir::{impl#36}::id)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1166 ~ rustc_metadata[906b]::rmeta::encoder::rendered_const)",
+      "used_def_id": "DefId(107:655 ~ rustc_hir[6005]::hir::{impl#36}::id)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::rendered_const USES crate::core::std::cmp::PartialEq::eq (AssocFn) [DefId: DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1166 ~ rustc_metadata[906b]::rmeta::encoder::rendered_const)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::rendered_const USES crate::rustc_middle::rustc_middle::query::<impl rustc_middle::ty::TyCtxt<'tcx>>::def_kind (AssocFn) [DefId: DefId(193:37786 ~ rustc_middle[f25a]::query::{impl#3}::def_kind)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1166 ~ rustc_metadata[906b]::rmeta::encoder::rendered_const)",
+      "used_def_id": "DefId(193:37786 ~ rustc_middle[f25a]::query::{impl#3}::def_kind)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::rendered_const USES crate::alloc::std::borrow::ToOwned::to_owned (AssocFn) [DefId: DefId(3:179 ~ alloc[27b0]::borrow::ToOwned::to_owned)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1166 ~ rustc_metadata[906b]::rmeta::encoder::rendered_const)",
+      "used_def_id": "DefId(3:179 ~ alloc[27b0]::borrow::ToOwned::to_owned)"
+    },
+    {
+      "usage": "crate::rustc_metadata::rmeta::encoder::rendered_const USES crate::alloc::std::borrow::ToOwned::to_owned (AssocFn) [DefId: DefId(3:179 ~ alloc[27b0]::borrow::ToOwned::to_owned)]",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1166 ~ rustc_metadata[906b]::rmeta::encoder::rendered_const)",
+      "used_def_id": "DefId(3:179 ~ alloc[27b0]::borrow::ToOwned::to_owned)"
+    }
+  ]
+}
