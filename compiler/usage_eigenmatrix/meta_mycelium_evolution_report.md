@@ -7,9 +7,9 @@
 - Mycelium connections: 12894
 
 ## Evolution Stages
-- Germinating: 8 spores
-- Mature: 55 spores
 - Dormant: 37 spores
+- Mature: 55 spores
+- Germinating: 8 spores
 
 ## Generated DWIM Fixes
 1. Add `#[derive(Clone)]` for cloning support
