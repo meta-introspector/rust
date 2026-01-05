@@ -41,8 +41,15 @@ impl RecursiveAstClassifier {
         }
         
         // Step 2: Recursive refinement within each class
-        for (index, class) in &mut self.complexity_classes {
+        let mut indices_to_refine = Vec::new();
+        for (index, class) in &self.complexity_classes {
             if class.ast_nodes.len() > 1 {
+                indices_to_refine.push(*index);
+            }
+        }
+        
+        for index in indices_to_refine {
+            if let Some(class) = self.complexity_classes.get_mut(&index) {
                 self.refine_complexity_class(class);
             }
         }

@@ -1,7 +1,36 @@
 // prime_sieve_table.rs - Print the prime sieve table
 
-mod prime_sieve_structure;
-use prime_sieve_structure::*;
+#[derive(Clone)]
+struct PrimeSieveStructure {
+    encoding: u8,
+}
+
+impl PrimeSieveStructure {
+    fn from_encoding(encoding: u8) -> Self {
+        Self { encoding }
+    }
+    
+    fn active_primes(&self) -> Vec<u32> {
+        let primes = [2, 3, 5, 7, 11, 13, 17, 19];
+        primes.iter()
+            .enumerate()
+            .filter(|(i, _)| (self.encoding >> i) & 1 == 1)
+            .map(|(_, &prime)| prime)
+            .collect()
+    }
+    
+    fn complexity(&self) -> u32 {
+        self.encoding.count_ones()
+    }
+}
+
+struct PrimeSieveGenerator;
+
+impl PrimeSieveGenerator {
+    fn generate_all_combinations() -> Vec<PrimeSieveStructure> {
+        (0..=255).map(PrimeSieveStructure::from_encoding).collect()
+    }
+}
 
 fn main() {
     println!("🔢 Prime Sieve Structure Table (First 8 Primes: 2,3,5,7,11,13,17,19)");

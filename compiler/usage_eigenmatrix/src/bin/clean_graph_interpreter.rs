@@ -21,13 +21,14 @@ fn main() -> Result<()> {
     let mut node_connections = HashMap::new();
     for (caller, callees) in call_graph {
         let count = callees.as_array().unwrap().len();
-        node_connections.insert(caller, count);
+        node_connections.insert(caller.clone(), count);
     }
     
+    let default_entry = "unknown".to_string();
     let entry_point = node_connections.iter()
         .max_by_key(|(_, &count)| count)
         .map(|(node, _)| node)
-        .unwrap_or(&"unknown".to_string());
+        .unwrap_or(&default_entry);
     
     println!("\n🚀 Entry point: {}", get_symbol_name(entry_point, symbol_table));
     println!("  Calls {} functions", node_connections.get(entry_point).unwrap_or(&0));
