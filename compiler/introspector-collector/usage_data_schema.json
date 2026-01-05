@@ -35,7 +35,7 @@
           },
           "usage_type": {
             "type": "string",
-            "enum": ["StructDecl", "EnumDecl", "FunctionCall", "TypeUsage"]
+            "enum": ["StructDecl", "EnumDecl", "FunctionCall", "TypeUsage", "MethodCall", "StructUsage", "EnumUsage", "MacroCall", "ConstantAccess", "StaticAccess", "TraitUsage", "AssocConstAccess", "EnumVariant", "ConstDecl", "StaticDecl", "NumericLiteral", "TypeAlias", "UnionUsage", "Other"]
           },
           "used_crate": {
             "type": ["string", "null"],
@@ -54,7 +54,7 @@
             "description": "Definition ID of the user"
           }
         },
-        "required": ["kind", "node_type", "symbol", "usage_count", "usage_type", "used_def_id", "user_crate", "user_def_id"],
+        "required": ["symbol", "kind", "usage_count", "usage_type", "node_type", "user_def_id", "used_def_id"],
         "additionalProperties": true
       }
     }
