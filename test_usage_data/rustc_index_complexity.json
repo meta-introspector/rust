@@ -6,125 +6,7 @@
       "field_count": 0,
       "fields": [],
       "item_type": "struct",
-      "name": "ChunkedBitIter",
-      "param_count": null,
-      "parameters": null,
-      "variant_count": null,
-      "variants": null
-    },
-    {
-      "complexity": "simple",
-      "field_count": null,
-      "fields": null,
-      "item_type": "enum",
-      "name": "Chunk",
-      "param_count": null,
-      "parameters": null,
-      "variant_count": 0,
-      "variants": []
-    },
-    {
-      "complexity": "simple",
-      "field_count": 0,
-      "fields": [],
-      "item_type": "struct",
-      "name": "BitIter",
-      "param_count": null,
-      "parameters": null,
-      "variant_count": null,
-      "variants": null
-    },
-    {
-      "complexity": "simple",
-      "field_count": null,
-      "fields": null,
-      "item_type": "function",
-      "name": "sequential_update",
-      "param_count": 2,
-      "parameters": [
-        {
-          "name": "param_0",
-          "param_type": "unknown"
-        },
-        {
-          "name": "param_1",
-          "param_type": "unknown"
-        }
-      ],
-      "variant_count": null,
-      "variants": null
-    },
-    {
-      "complexity": "simple",
-      "field_count": null,
-      "fields": null,
-      "item_type": "enum",
-      "name": "MixedBitSet",
-      "param_count": null,
-      "parameters": null,
-      "variant_count": 0,
-      "variants": []
-    },
-    {
-      "complexity": "simple",
-      "field_count": null,
-      "fields": null,
-      "item_type": "enum",
-      "name": "ChunkIter",
-      "param_count": null,
-      "parameters": null,
-      "variant_count": 0,
-      "variants": []
-    },
-    {
-      "complexity": "simple",
-      "field_count": null,
-      "fields": null,
-      "item_type": "enum",
-      "name": "MixedBitIter",
-      "param_count": null,
-      "parameters": null,
-      "variant_count": 0,
-      "variants": []
-    },
-    {
-      "complexity": "simple",
-      "field_count": null,
-      "fields": null,
-      "item_type": "function",
-      "name": "max_bit",
-      "param_count": 1,
-      "parameters": [
-        {
-          "name": "param_0",
-          "param_type": "unknown"
-        }
-      ],
-      "variant_count": null,
-      "variants": null
-    },
-    {
-      "complexity": "simple",
-      "field_count": null,
-      "fields": null,
-      "item_type": "function",
-      "name": "word_index_and_mask",
-      "param_count": 1,
-      "parameters": [
-        {
-          "name": "param_0",
-          "param_type": "unknown"
-        }
-      ],
-      "variant_count": null,
-      "variants": null
-    },
-    {
-      "complexity": "simple",
-      "field_count": 0,
-      "fields": [],
-      "item_type": "struct",
-      "name": "SparseIntervalMatrix",
+      "name": "IndexVec",
       "param_count": null,
       "parameters": null,
       "variant_count": null,
@@ -135,7 +17,18 @@
       "field_count": 0,
       "fields": [],
       "item_type": "struct",
-      "name": "IntervalSet",
+      "name": "IndexSlice",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "SparseBitMatrix",
       "param_count": null,
       "parameters": null,
       "variant_count": null,
@@ -146,7 +39,7 @@
       "field_count": null,
       "fields": null,
       "item_type": "function",
-      "name": "inclusive_start",
+      "name": "chunk_word_index_and_mask",
       "param_count": 1,
       "parameters": [
         {
@@ -182,11 +75,154 @@
       "field_count": 0,
       "fields": [],
       "item_type": "struct",
-      "name": "ChunkedBitSet",
+      "name": "GrowableBitSet",
       "param_count": null,
       "parameters": null,
       "variant_count": null,
       "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FiniteBitSet",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "OneLinePrinter",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "bitwise_changes",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "num_words",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "IntervalSet",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "MixedBitIter",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "inclusive_start",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "word_index_and_mask",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "chunk_index",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "MixedBitSet",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
     },
     {
       "complexity": "simple",
@@ -213,9 +249,58 @@
       "field_count": 0,
       "fields": [],
       "item_type": "struct",
-      "name": "FiniteBitSet",
+      "name": "ChunkedBitIter",
       "param_count": null,
       "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DenseBitSet",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ChunkIter",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Chunk",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "max_bit",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
       "variant_count": null,
       "variants": null
     },
@@ -244,45 +329,7 @@
       "field_count": 0,
       "fields": [],
       "item_type": "struct",
-      "name": "DenseBitSet",
-      "param_count": null,
-      "parameters": null,
-      "variant_count": null,
-      "variants": null
-    },
-    {
-      "complexity": "simple",
-      "field_count": 0,
-      "fields": [],
-      "item_type": "struct",
-      "name": "GrowableBitSet",
-      "param_count": null,
-      "parameters": null,
-      "variant_count": null,
-      "variants": null
-    },
-    {
-      "complexity": "simple",
-      "field_count": null,
-      "fields": null,
-      "item_type": "function",
-      "name": "chunk_index",
-      "param_count": 1,
-      "parameters": [
-        {
-          "name": "param_0",
-          "param_type": "unknown"
-        }
-      ],
-      "variant_count": null,
-      "variants": null
-    },
-    {
-      "complexity": "simple",
-      "field_count": 0,
-      "fields": [],
-      "item_type": "struct",
-      "name": "SparseBitMatrix",
+      "name": "ChunkedBitSet",
       "param_count": null,
       "parameters": null,
       "variant_count": null,
@@ -313,46 +360,11 @@
       "variants": null
     },
     {
-      "complexity": "medium",
-      "field_count": null,
-      "fields": null,
-      "item_type": "function",
-      "name": "bitwise_changes",
-      "param_count": 3,
-      "parameters": [
-        {
-          "name": "param_0",
-          "param_type": "unknown"
-        },
-        {
-          "name": "param_1",
-          "param_type": "unknown"
-        },
-        {
-          "name": "param_2",
-          "param_type": "unknown"
-        }
-      ],
-      "variant_count": null,
-      "variants": null
-    },
-    {
-      "complexity": "simple",
-      "field_count": 0,
-      "fields": [],
-      "item_type": "struct",
-      "name": "IndexVec",
-      "param_count": null,
-      "parameters": null,
-      "variant_count": null,
-      "variants": null
-    },
-    {
       "complexity": "simple",
       "field_count": null,
       "fields": null,
       "item_type": "function",
-      "name": "num_words",
+      "name": "num_chunks",
       "param_count": 1,
       "parameters": [
         {
@@ -379,11 +391,15 @@
       "field_count": null,
       "fields": null,
       "item_type": "function",
-      "name": "chunk_word_index_and_mask",
-      "param_count": 1,
+      "name": "sequential_update",
+      "param_count": 2,
       "parameters": [
         {
           "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
           "param_type": "unknown"
         }
       ],
@@ -395,7 +411,7 @@
       "field_count": 0,
       "fields": [],
       "item_type": "struct",
-      "name": "OneLinePrinter",
+      "name": "SparseIntervalMatrix",
       "param_count": null,
       "parameters": null,
       "variant_count": null,
@@ -403,26 +419,10 @@
     },
     {
       "complexity": "simple",
-      "field_count": null,
-      "fields": null,
-      "item_type": "function",
-      "name": "num_chunks",
-      "param_count": 1,
-      "parameters": [
-        {
-          "name": "param_0",
-          "param_type": "unknown"
-        }
-      ],
-      "variant_count": null,
-      "variants": null
-    },
-    {
-      "complexity": "simple",
       "field_count": 0,
       "fields": [],
       "item_type": "struct",
-      "name": "IndexSlice",
+      "name": "BitIter",
       "param_count": null,
       "parameters": null,
       "variant_count": null,
