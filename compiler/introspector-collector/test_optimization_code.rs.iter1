@@ -3,12 +3,12 @@ fn main() {
     let data = vec![1, 2, 3, 4, 5];
     
     // Clone usage - could be optimized
-    let cloned_data = data;
-    let another_clone = cloned_data;
+    let cloned_data = data.clone();
+    let another_clone = cloned_data.clone();
     
     // Unwrap usage - could be safer
     let result = Some(42);
-    let value = result?;
+    let value = result.unwrap();
     
     // String conversion patterns
     let name = "hello".to_string();
@@ -19,7 +19,7 @@ fn main() {
     
     // More unwrap usage
     let numbers = vec![1, 2, 3];
-    let first = numbers.get(0)?;
+    let first = numbers.get(0).unwrap();
     
     println!("Value: {}, First: {}", value, first);
     println!("Doubled: {:?}", doubled);
