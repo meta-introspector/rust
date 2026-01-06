@@ -3,6 +3,9 @@ name = "introspector-collector"
 version = "0.1.0"
 edition = "2024"
 
+[package.metadata]
+mycelial_data_path = "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/mycelial-usage-data/"
+
 [[bin]]
 name = "clean_collector"
 path = "src/clean_collector.rs"
@@ -48,6 +51,10 @@ name = "comprehensive_analysis"
 path = "src/bin/comprehensive_analysis.rs"
 
 [[bin]]
+name = "syn_walker"
+path = "src/bin/syn_walker.rs"
+
+[[bin]]
 name = "comprehensive_usage_report"
 path = "src/bin/comprehensive_usage_report.rs"
 
@@ -82,6 +89,14 @@ path = "src/bin/function_matcher.rs"
 [[bin]]
 name = "predictive_analyzer"
 path = "src/bin/predictive_analyzer.rs"
+
+[[bin]]
+name = "compiler_with_predictions"
+path = "src/bin/compiler_with_predictions.rs"
+
+[[bin]]
+name = "drunken_walker"
+path = "src/bin/drunken_walker.rs"
 
 [[bin]]
 name = "function_tracer"
@@ -139,13 +154,20 @@ path = "src/bin/validate_schema.rs"
 name = "validate_usage_data"
 path = "src/bin/validate_usage_data.rs"
 
+[[bin]]
+name = "usage_compiler"
+path = "src/bin/usage_compiler.rs"
+
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 quote = "1.0"
-syn = { version = "2.0", features = ["full"] }
+syn = { version = "2.0", features = ["full", "visit"] }
 jsonschema = "0.18"
 chrono = { version = "0.4", features = ["serde"] }
+glob = "0.3"
+rand = "0.8"
 rustc_index = { workspace = true }
 build_common = { workspace = true }
 analyzeme = { workspace = true }
+toml = "0.8"

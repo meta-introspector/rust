@@ -6,11 +6,6 @@ extern crate rustc_middle;
 extern crate rustc_hir;
 extern crate rustc_ast;
 
-mod usage_types;
-mod usage_classifier;
-mod generic_tracker;
-mod ast_extractor;
-mod usage_collector;
 
 use rustc_driver::{Callbacks, Compilation};
 use rustc_interface::interface;
@@ -20,10 +15,6 @@ use rustc_hir::intravisit::{self, Visitor};
 use std::io::Write;
 use std::collections::HashMap;
 use serde::{Serialize, Deserialize};
-
-use usage_types::*;
-use usage_collector::UsageCollector as ImportedUsageCollector;
-use ast_extractor::AstExtractor;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 struct CleanGraphData {
@@ -127,22 +118,6 @@ impl UsageCollector {
             enum_data: HashMap::new(),
             item_complexity: HashMap::new(),
         }
-    }
-    
-    fn get_cached_usages(&self) -> &HashMap<String, Vec<usage_types::UsageEntry>> {
-        crate::usage_collector::USAGE_CACHE.get_or_init(|| {
-            self.load_previous_data().unwrap_or_default()
-        })
-    }
-    
-    fn load_previous_data(&self) -> Result<HashMap<String, Vec<usage_types::UsageEntry>>, Box<dyn std::error::Error>> {
-        // Load from previous eigenmatrix runs
-        if let Ok(content) = std::fs::read_to_string("usage_eigenmatrix.json") {
-            if let Ok(_data) = serde_json::from_str::<serde_json::Value>(&content) {
-                return Ok(HashMap::new()); // Simplified for now
-            }
-        }
-        Ok(HashMap::new())
     }
     
     fn add_usage(&mut self, module: &str, symbol: String, kind: String, usage_type: String, node_type: String, user_def_id: String, used_def_id: String, user_crate: Option<String>, used_crate: Option<String>) {

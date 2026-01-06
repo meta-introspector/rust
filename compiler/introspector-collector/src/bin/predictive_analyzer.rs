@@ -24,8 +24,29 @@ fn load_historical_usage(usage_dir: &str) -> HashMap<String, f64> {
     
     if let Ok(entries) = fs::read_dir(usage_dir) {
         for entry in entries.flatten() {
-            if entry.path().extension().map_or(false, |ext| ext == "json") {
-                if let Ok(content) = fs::read_to_string(entry.path()) {
+            let path = entry.path();
+            if path.is_dir() {
+                // Handle nested directories like "crate_name_usage_data"
+                if let Ok(nested_entries) = fs::read_dir(&path) {
+                    for nested_entry in nested_entries.flatten() {
+                        if nested_entry.path().extension().map_or(false, |ext| ext == "json") {
+                            if let Ok(content) = fs::read_to_string(nested_entry.path()) {
+                                if let Ok(json) = serde_json::from_str::<Value>(&content) {
+                                    if let Some(obj) = json.as_object() {
+                                        for (key, value) in obj {
+                                            if let Some(count) = value.as_f64() {
+                                                *patterns.entry(key.clone()).or_insert(0.0) += count;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } else if path.extension().map_or(false, |ext| ext == "json") {
+                // Handle direct JSON files
+                if let Ok(content) = fs::read_to_string(&path) {
                     if let Ok(json) = serde_json::from_str::<Value>(&content) {
                         if let Some(obj) = json.as_object() {
                             for (key, value) in obj {
@@ -129,8 +150,8 @@ fn predict_current_run(current_usage: &HashMap<String, f64>, historical: &Histor
 fn main() {
     println!("🔮 Predictive Compiler Analysis");
     
-    // Load historical data
-    let usage_patterns = load_historical_usage("../usage_data");
+    // Load historical data from the mycelial network
+    let usage_patterns = load_historical_usage("../../mycelial_network/crate_usage_data");
     let timing_data = load_historical_profiles("../compilation_trace");
     let correlations = build_correlations(&usage_patterns, &timing_data);
     
