@@ -36,7 +36,10 @@ struct UsageEntry {
     used_def_id: String,
     user_crate: Option<String>,
     used_crate: Option<String>,
+    used_def_kind: Option<String>, // DefKind of the thing being used
+    user_def_kind: Option<String>, // DefKind of the thing doing the using
 }
+
 
 #[derive(Serialize, Deserialize, Clone, Default)]
 struct UsageClassification {
@@ -120,28 +123,30 @@ impl UsageCollector {
         }
     }
     
-    fn add_usage(&mut self, module: &str, symbol: String, kind: String, usage_type: String, node_type: String, user_def_id: String, used_def_id: String, user_crate: Option<String>, used_crate: Option<String>) {
-        // Classify the usage pattern
-        let classification = self.classify_usage(&kind, &usage_type, &used_def_id);
-        
-        let entry = UsageEntry {
-            symbol,
-            kind,
-            usage_count: 1,
-            usage_type: usage_type.clone(),
-            node_type,
-            user_def_id: user_def_id.clone(),
-            used_def_id: used_def_id.clone(),
-            user_crate,
-            used_crate,
-        };
-        
-        self.module_data.entry(module.to_string()).or_insert_with(Vec::new).push(entry);
-        
-        // Update enum data if this is an enum variant usage
-        if let Some((enum_name, variant_name)) = self.extract_enum_variant(&used_def_id) {
-            self.update_enum_usage(enum_name, variant_name, classification, &usage_type, &user_def_id);
-        }
+    fn get_defkind_from_item<'tcx>(&self, tcx: TyCtxt<'tcx>, item: &rustc_hir::Item) -> String {
+        match &item.kind {
+            rustc_hir::ItemKind::Const(_, _, _, body_id) => {
+                let body = tcx.hir_body(*body_id);
+                match &body.value.kind {
+                    rustc_hir::ExprKind::Lit(lit) => match lit.node {
+                        rustc_ast::LitKind::Str(..) => "StringLiteral",
+                        rustc_ast::LitKind::Int(..) => "IntLiteral", 
+                        rustc_ast::LitKind::Float(..) => "FloatLiteral",
+                        rustc_ast::LitKind::Bool(..) => "BoolLiteral",
+                        _ => "Const"
+                    },
+                    _ => "Const"
+                }
+            },
+            rustc_hir::ItemKind::Static(..) => "Static",
+            rustc_hir::ItemKind::Struct(..) => "Struct",
+            rustc_hir::ItemKind::Enum(..) => "Enum",
+            rustc_hir::ItemKind::Fn(..) => "Fn",
+            _ => "Other"
+        }.to_string()
+    }
+    
+
     }
     
     fn classify_usage(&self, usage: &str, usage_type: &str, _used_def_id: &str) -> UsageClassification {
@@ -499,13 +504,29 @@ impl Callbacks for UsageCollector {
                             rustc_hir::def::DefKind::Macro(_) => "macro_usage",
                             rustc_hir::def::DefKind::AssocFn => "method_call",
                             rustc_hir::def::DefKind::Fn => "function_call",
-                            _ => "other_usage",
+                            rustc_hir::def::DefKind::Const => "const_usage",
+                            rustc_hir::def::DefKind::Static { .. } => "static_usage",
+                            rustc_hir::def::DefKind::TyAlias => "type_alias_usage",
+                            rustc_hir::def::DefKind::Union => "union_usage",
+                            rustc_hir::def::DefKind::Trait => "trait_usage",
+                            rustc_hir::def::DefKind::AssocTy => "assoc_type_usage",
+                            rustc_hir::def::DefKind::AssocConst => "assoc_const_usage",
+                            rustc_hir::def::DefKind::Mod => "module_usage",
+                            rustc_hir::def::DefKind::Field => "field_usage",
+                            rustc_hir::def::DefKind::Ctor(_, _) => "constructor_usage",
+                            // Only use other_usage for truly unknown cases
+                            _ => {
+                                eprintln!("Unknown DefKind: {:?} for symbol: {}", def_kind, used_path);
+                                "unknown_usage"
+                            },
                         }.to_string();
                         
                         let user_def_id_str = format!("{:?}", item_id.owner_id.to_def_id());
                         let used_def_id_str = format!("{:?}", used_def_id);
+                        let used_def_kind_str = format!("{:?}", def_kind);
+                        let user_def_kind_str = format!("{:?}", tcx.def_kind(item_id.owner_id.to_def_id()));
                         
-                        self.add_usage(&module, symbol, kind, usage_type, node_type, user_def_id_str, used_def_id_str, Some(local_crate.to_string()), Some(used_crate.to_string()));
+                        self.add_usage(&module, symbol, kind, usage_type, node_type, user_def_id_str, used_def_id_str, Some(local_crate.to_string()), Some(used_crate.to_string()), Some(used_def_kind_str), Some(user_def_kind_str));
                     }
                 }
             }
@@ -548,6 +569,7 @@ impl UsageCollector {
             match &item.kind {
                 // Const items
                 rustc_hir::ItemKind::Const(_, _, _, body_id) => {
+                    let const_defkind = self.get_defkind_from_item(tcx, item);
                     self.add_usage(
                         "constants",
                         item_name.clone(),
@@ -557,7 +579,9 @@ impl UsageCollector {
                         crate_name.clone(),
                         item_name.clone(),
                         Some(crate_name.clone()),
-                        None
+                        None,
+                        Some(const_defkind),
+                        Some("Const".to_string())
                     );
                     
                     // Collect literals from const body
@@ -576,7 +600,9 @@ impl UsageCollector {
                         crate_name.clone(),
                         item_name.clone(),
                         Some(crate_name.clone()),
-                        None
+                        None,
+                        Some("Static".to_string()),
+                        Some("Static".to_string())
                     );
                     
                     // Collect literals from static body
@@ -601,7 +627,9 @@ impl UsageCollector {
                         crate_name.clone(),
                         item_name.clone(),
                         Some(crate_name.clone()),
-                        None
+                        None,
+                        Some("Struct".to_string()),
+                        Some("Struct".to_string())
                     );
                     
                     // Track generic parameters (HIGH IMPACT - 16 occurrences found)
