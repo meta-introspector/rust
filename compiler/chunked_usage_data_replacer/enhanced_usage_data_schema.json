@@ -1,0 +1,286 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Enhanced HIR-Syn Usage Data Schema",
+  "description": "Schema for validating enhanced usage data with HIR integration and syn patterns",
+  "type": "object",
+  "properties": {
+    "crate": {
+      "type": "string",
+      "description": "Name of the crate"
+    },
+    "module": {
+      "type": "string",
+      "description": "Module name (optional for enhanced data)"
+    },
+    "enhanced_version": {
+      "type": "string",
+      "enum": ["chunked_100x", "100x"],
+      "description": "Version of enhancement applied"
+    },
+    "generation_method": {
+      "type": "string",
+      "description": "Method used to generate enhanced data"
+    },
+    "usages": {
+      "type": "array",
+      "description": "Enhanced usage entries with HIR mapping",
+      "items": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "description": "Enhanced symbol name with variant suffix"
+          },
+          "original_symbol": {
+            "type": "string",
+            "description": "Original symbol from source data"
+          },
+          "usage_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Original usage count"
+          },
+          "enhanced_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Enhanced usage count with multiplier"
+          },
+          "hir_mapping": {
+            "type": "string",
+            "description": "HIR node mapping identifier"
+          },
+          "priority_score": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Calculated priority score for the symbol"
+          },
+          "chunk_optimized": {
+            "type": "boolean",
+            "description": "Whether this entry was optimized for chunking"
+          }
+        },
+        "required": ["symbol", "original_symbol", "usage_count", "enhanced_count", "hir_mapping", "priority_score"],
+        "additionalProperties": true
+      }
+    },
+    "hir_nodes": {
+      "type": "array",
+      "description": "HIR node representations with semantic information",
+      "items": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "description": "HIR node symbol identifier"
+          },
+          "hir_type": {
+            "type": "string",
+            "description": "Type of HIR node"
+          },
+          "usage_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Usage count for this HIR node"
+          },
+          "semantic_weight": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Semantic importance weight (optional)"
+          },
+          "syn_mapping": {
+            "type": "string",
+            "description": "Corresponding syn pattern mapping (optional)"
+          },
+          "depth_level": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Analysis depth level (optional)"
+          },
+          "transformation_potential": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Potential for transformation (optional)"
+          }
+        },
+        "required": ["symbol", "hir_type", "usage_count"],
+        "additionalProperties": true
+      }
+    },
+    "syn_patterns": {
+      "type": "array",
+      "description": "Generated syn patterns for code transformation",
+      "items": {
+        "type": "string"
+      }
+    },
+    "transformation_chains": {
+      "type": "array",
+      "description": "Multi-stage transformation sequences (optional)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string",
+            "description": "Source symbol for transformation"
+          },
+          "chain": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Sequence of transformation stages"
+          },
+          "efficiency": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Transformation efficiency score"
+          }
+        },
+        "required": ["source", "chain"],
+        "additionalProperties": true
+      }
+    },
+    "semantic_clusters": {
+      "type": "array",
+      "description": "Semantic groupings of related symbols (optional)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "cluster_id": {
+            "type": "string",
+            "description": "Unique cluster identifier"
+          },
+          "members": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Symbols in this cluster"
+          },
+          "semantic_weight": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Overall cluster importance"
+          }
+        },
+        "required": ["cluster_id", "members"],
+        "additionalProperties": true
+      }
+    },
+    "optimization_hints": {
+      "type": "array",
+      "description": "Performance optimization suggestions (optional)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "description": "Symbol to optimize"
+          },
+          "hint_type": {
+            "type": "string",
+            "enum": ["performance", "memory", "compilation", "runtime"],
+            "description": "Type of optimization hint"
+          },
+          "suggestion": {
+            "type": "string",
+            "description": "Human-readable optimization suggestion"
+          },
+          "impact_score": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Expected impact of optimization"
+          }
+        },
+        "required": ["symbol", "hint_type", "suggestion"],
+        "additionalProperties": true
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadata about the enhanced dataset",
+      "properties": {
+        "total_usages": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total_hir_nodes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total_syn_patterns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total_transformation_chains": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total_semantic_clusters": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total_optimization_hints": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "chunk_optimized": {
+          "type": "boolean",
+          "description": "Whether data was optimized for chunking"
+        },
+        "enhancement_multiplier": {
+          "type": "number",
+          "minimum": 1.0,
+          "description": "Enhancement factor applied to original data"
+        },
+        "data_compression_ratio": {
+          "type": "number",
+          "minimum": 1.0,
+          "description": "Data compression efficiency ratio"
+        },
+        "processing_efficiency": {
+          "type": "number",
+          "minimum": 1.0,
+          "description": "Processing efficiency improvement"
+        }
+      },
+      "additionalProperties": true
+    },
+    "improvements": {
+      "type": "object",
+      "description": "Features added in enhancement process",
+      "properties": {
+        "hir_integration": {
+          "type": "boolean"
+        },
+        "syn_pattern_mapping": {
+          "type": "boolean"
+        },
+        "priority_scoring": {
+          "type": "boolean"
+        },
+        "transformation_weighting": {
+          "type": "boolean"
+        },
+        "data_density_optimization": {
+          "type": "boolean"
+        },
+        "semantic_clustering": {
+          "type": "boolean"
+        },
+        "optimization_hints": {
+          "type": "boolean"
+        },
+        "transformation_chains": {
+          "type": "boolean"
+        },
+        "massive_data_expansion": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "required": ["crate", "enhanced_version", "generation_method", "usages", "hir_nodes", "syn_patterns"],
+  "additionalProperties": false
+}
