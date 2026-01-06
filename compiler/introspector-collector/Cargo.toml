@@ -28,16 +28,112 @@ name = "enum_usage_collector"
 path = "src/enum_usage_collector.rs"
 
 [[bin]]
+name = "ast_gap_analysis"
+path = "src/bin/ast_gap_analysis.rs"
+
+[[bin]]
+name = "code_synthesizer"
+path = "src/bin/code_synthesizer.rs"
+
+[[bin]]
+name = "collector_expansion_analysis"
+path = "src/bin/collector_expansion_analysis.rs"
+
+[[bin]]
+name = "collector_gap_analysis"
+path = "src/bin/collector_gap_analysis.rs"
+
+[[bin]]
+name = "comprehensive_analysis"
+path = "src/bin/comprehensive_analysis.rs"
+
+[[bin]]
+name = "comprehensive_usage_report"
+path = "src/bin/comprehensive_usage_report.rs"
+
+[[bin]]
+name = "direct_profile_reader"
+path = "src/bin/direct_profile_reader.rs"
+
+[[bin]]
+name = "embedded_graph_advisor"
+path = "src/bin/embedded_graph_advisor.rs"
+
+[[bin]]
+name = "enhanced_dwim_corrector"
+path = "src/bin/enhanced_dwim_corrector.rs"
+
+[[bin]]
+name = "enhanced_matcher"
+path = "src/bin/enhanced_matcher.rs"
+
+[[bin]]
+name = "formal_gap_analysis"
+path = "src/bin/formal_gap_analysis.rs"
+
+[[bin]]
+name = "full_graph_advisor"
+path = "src/bin/full_graph_advisor.rs"
+
+[[bin]]
+name = "function_matcher"
+path = "src/bin/function_matcher.rs"
+
+[[bin]]
+name = "function_tracer"
+path = "src/bin/function_tracer.rs"
+
+[[bin]]
+name = "hot_function_analysis"
+path = "src/bin/hot_function_analysis.rs"
+
+[[bin]]
+name = "liftable_examples"
+path = "src/bin/liftable_examples.rs"
+
+[[bin]]
+name = "merge_usage_report"
+path = "src/bin/merge_usage_report.rs"
+
+[[bin]]
+name = "module_field_analysis"
+path = "src/bin/module_field_analysis.rs"
+
+[[bin]]
+name = "profile_driven_compiler"
+path = "src/bin/profile_driven_compiler.rs"
+
+[[bin]]
 name = "read_manifest_tree"
 path = "src/bin/read_manifest_tree.rs"
+
+[[bin]]
+name = "self_analysis_demo"
+path = "src/bin/self_analysis_demo.rs"
+
+[[bin]]
+name = "self_improving_driver"
+path = "src/bin/self_improving_driver.rs"
+
+[[bin]]
+name = "test_type_prefixes"
+path = "src/bin/test_type_prefixes.rs"
+
+[[bin]]
+name = "usagemeter"
+path = "src/bin/usagemeter.rs"
+
+[[bin]]
+name = "usage_reports"
+path = "src/bin/usage_reports.rs"
 
 [[bin]]
 name = "validate_schema"
 path = "src/bin/validate_schema.rs"
 
 [[bin]]
-name = "profile_driven_compiler"
-path = "src/bin/profile_driven_compiler.rs"
+name = "validate_usage_data"
+path = "src/bin/validate_usage_data.rs"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
@@ -46,6 +142,6 @@ quote = "1.0"
 syn = { version = "2.0", features = ["full"] }
 jsonschema = "0.18"
 chrono = { version = "0.4", features = ["serde"] }
-rustc_index = { path = "../../compiler/rustc_index" }
-build_common = { path = "../build_common" }
-analyzeme = { path = "../../../measureme/analyzeme" }
+rustc_index = { workspace = true }
+build_common = { workspace = true }
+analyzeme = { workspace = true }
