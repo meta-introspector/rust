@@ -21,6 +21,29 @@ pub struct HirUsageNode {
     syn_equivalent: Option<String>,
 }
 
+fn read_cargo_config() -> (String, f64) {
+    let cargo_content = fs::read_to_string("Cargo.toml").expect("Failed to read Cargo.toml");
+    
+    // Parse output path
+    let output_path = cargo_content
+        .lines()
+        .find(|line| line.contains("output_path"))
+        .and_then(|line| line.split('=').nth(1))
+        .map(|s| s.trim().trim_matches('"'))
+        .unwrap_or("./enhanced_usage_data/")
+        .to_string();
+    
+    // Parse max file size
+    let max_size_mb = cargo_content
+        .lines()
+        .find(|line| line.contains("max_file_size_mb"))
+        .and_then(|line| line.split('=').nth(1))
+        .and_then(|s| s.trim().parse().ok())
+        .unwrap_or(1.5);
+    
+    (output_path, max_size_mb)
+}
+
 pub struct UsageDataReplacer {
     old_data_path: String,
     new_data_path: String,
@@ -307,6 +330,13 @@ impl UsageDataReplacer {
 }
 
 fn main() {
+    let (output_path, max_size_mb) = read_cargo_config();
+    
+    println!("🔄 Generating replacement usage data with HIR-based improvements...");
+    println!("📁 Output path: {}", output_path);
+    println!("📏 Max file size: {}MB", max_size_mb);
+    
     let mut replacer = UsageDataReplacer::new();
+    replacer.new_data_path = output_path;
     replacer.generate_replacement_data();
 }
