@@ -6,19 +6,23 @@ extern crate rustc_middle;
 extern crate rustc_hir;
 extern crate rustc_ast;
 
+mod usage_types;
+mod usage_classifier;
+mod generic_tracker;
+mod ast_extractor;
+mod usage_collector;
+
 use rustc_driver::{Callbacks, Compilation};
 use rustc_interface::interface;
 use rustc_middle::ty::TyCtxt;
 use rustc_hir::def_id::LOCAL_CRATE;
-//use rustc_hir::intravisit;
-//use rustc_hir::{Expr, ExprKind};
-use std::collections::HashMap;
-use std::sync::OnceLock;
+use rustc_hir::intravisit::{self, Visitor};
 use std::io::Write;
 use serde::{Serialize, Deserialize};
 
-// this is used
-static USAGE_CACHE: OnceLock<HashMap<String, Vec<UsageEntry>>> = OnceLock::new();
+use usage_types::*;
+use usage_collector::UsageCollector;
+use ast_extractor::AstExtractor;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 struct CleanGraphData {
@@ -630,6 +634,9 @@ impl UsageCollector {
                         None
                     );
                     
+                    // Track generic parameters (HIGH IMPACT - 16 occurrences found)
+                    self.track_generics(generics, &item_name, &crate_name, "struct");
+                    
                     // Collect struct complexity
                     // let fields = self.extract_struct_fields(variant_data);
                     let fields = Vec::new(); // TODO: Fix when we understand the new ItemKind::Struct structure
@@ -665,6 +672,9 @@ impl UsageCollector {
                         Some(crate_name.clone()),
                         None
                     );
+                    
+                    // Track generic parameters (HIGH IMPACT - 16 occurrences found)
+                    self.track_generics(generics, &item_name, &crate_name, "enum");
                     
                     // Collect enum complexity
                     // let variants = self.extract_enum_variants(enum_def);
