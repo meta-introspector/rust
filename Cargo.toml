@@ -62,6 +62,11 @@ exclude = [
   "obj",
 ]
 
+[workspace.dependencies]
+rustc_index = { path = "compiler/rustc_index" }
+build_common = { path = "compiler/build_common" }
+analyzeme = { path = "../measureme/analyzeme" }
+
 [profile.release.package.rustc_thread_pool]
 # The rustc fork of Rayon has deadlock detection code which intermittently
 # causes overflows in the CI (see https://github.com/rust-lang/rust/issues/90227)
