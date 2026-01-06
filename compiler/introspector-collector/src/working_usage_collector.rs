@@ -18,6 +18,7 @@ use rustc_middle::ty::TyCtxt;
 use rustc_hir::def_id::LOCAL_CRATE;
 use rustc_hir::intravisit::{self, Visitor};
 use std::io::Write;
+use std::collections::HashMap;
 use serde::{Serialize, Deserialize};
 
 use usage_types::*;
@@ -737,19 +738,44 @@ impl UsageCollector {
             fn visit_expr(&mut self, expr: &'tcx rustc_hir::Expr<'tcx>) {
                 match &expr.kind {
                     rustc_hir::ExprKind::Lit(lit) => {
-                        let literal_value = match &lit.node {
-                            rustc_ast::LitKind::Bool(b) => format!("{}", b),
-                            rustc_ast::LitKind::Char(c) => format!("'{}'", c),
-                            rustc_ast::LitKind::Int(i, _) => format!("{}", i),
-                            rustc_ast::LitKind::Float(f, _) => format!("{}", f),
-                            rustc_ast::LitKind::Str(s, _) => format!("\"{}\"", s),
-                            rustc_ast::LitKind::Byte(b) => format!("{}", b),
+                        let (literal_value, type_prefix) = match &lit.node {
+                            rustc_ast::LitKind::Bool(b) => (format!("{}", b), "b"),
+                            rustc_ast::LitKind::Char(c) => (format!("'{}'", c), "c"),
+                            rustc_ast::LitKind::Int(i, ty) => {
+                                let prefix = match ty {
+                                    rustc_ast::LitIntType::Signed(rustc_ast::IntTy::I8) => "i8_",
+                                    rustc_ast::LitIntType::Signed(rustc_ast::IntTy::I16) => "i16_",
+                                    rustc_ast::LitIntType::Signed(rustc_ast::IntTy::I32) => "i32_",
+                                    rustc_ast::LitIntType::Signed(rustc_ast::IntTy::I64) => "i64_",
+                                    rustc_ast::LitIntType::Signed(rustc_ast::IntTy::I128) => "i128_",
+                                    rustc_ast::LitIntType::Signed(rustc_ast::IntTy::Isize) => "isize_",
+                                    rustc_ast::LitIntType::Unsigned(rustc_ast::UintTy::U8) => "u8_",
+                                    rustc_ast::LitIntType::Unsigned(rustc_ast::UintTy::U16) => "u16_",
+                                    rustc_ast::LitIntType::Unsigned(rustc_ast::UintTy::U32) => "u32_",
+                                    rustc_ast::LitIntType::Unsigned(rustc_ast::UintTy::U64) => "u64_",
+                                    rustc_ast::LitIntType::Unsigned(rustc_ast::UintTy::U128) => "u128_",
+                                    rustc_ast::LitIntType::Unsigned(rustc_ast::UintTy::Usize) => "usize_",
+                                    rustc_ast::LitIntType::Unsuffixed => "int_",
+                                };
+                                (format!("{}", i), prefix)
+                            },
+                            rustc_ast::LitKind::Float(f, ty) => {
+                                let prefix = match ty {
+                                    rustc_ast::LitFloatType::Suffixed(rustc_ast::FloatTy::F32) => "f32_",
+                                    rustc_ast::LitFloatType::Suffixed(rustc_ast::FloatTy::F64) => "f64_",
+                                    rustc_ast::LitFloatType::Unsuffixed => "float_",
+                                };
+                                (format!("{}", f), prefix)
+                            },
+                            rustc_ast::LitKind::Str(s, _) => (format!("\"{}\"", s), "str_"),
+                            rustc_ast::LitKind::Byte(b) => (format!("{}", b), "byte_"),
+                            rustc_ast::LitKind::ByteStr(bytes, _) => (format!("b\"{}\"", bytes.as_str()), "bstr_"),
                             _ => return,
                         };
                         
                         self.collector.add_usage(
                             "literals", 
-                            literal_value.clone(),
+                            format!("{}{}", type_prefix, literal_value),
                             "literal".to_string(),
                             "NumericLiteral".to_string(), 
                             "Expression".to_string(), 
@@ -759,6 +785,98 @@ impl UsageCollector {
                             None
                         );
                     }
+                    
+                    // Synthesized implementations from usage pattern analysis
+                    rustc_hir::ExprKind::Field(expr, field) => {
+                        let field_name = field.name.to_string();
+                        self.collector.add_usage(
+                            "field_access",
+                            format!("field_{}", field_name),
+                            "field_access".to_string(),
+                            "FieldAccess".to_string(),
+                            "Expression".to_string(),
+                            self.context.clone(),
+                            field_name,
+                            None,
+                            None
+                        );
+                        self.visit_expr(expr);
+                    }
+                    
+                    rustc_hir::ExprKind::Call(func, args) => {
+                        let arg_count = args.len();
+                        self.collector.add_usage(
+                            "function_calls",
+                            format!("call_{}_args", arg_count),
+                            "function_call".to_string(),
+                            "FunctionCall".to_string(),
+                            "Expression".to_string(),
+                            self.context.clone(),
+                            format!("{}_args", arg_count),
+                            None,
+                            None
+                        );
+                        self.visit_expr(func);
+                        for arg in args { self.visit_expr(arg); }
+                    }
+                    
+                    rustc_hir::ExprKind::AddrOf(_, mutability, expr) => {
+                        let ref_type = match mutability {
+                            rustc_hir::Mutability::Mut => "mut_ref",
+                            rustc_hir::Mutability::Not => "ref",
+                        };
+                        self.collector.add_usage(
+                            "memory_safety",
+                            format!("addr_{}", ref_type),
+                            "memory_ref".to_string(),
+                            "MemoryRef".to_string(),
+                            "Expression".to_string(),
+                            self.context.clone(),
+                            ref_type.to_string(),
+                            None,
+                            None
+                        );
+                        self.visit_expr(expr);
+                    }
+                    
+                    rustc_hir::ExprKind::Index(base, index, _) => {
+                        self.collector.add_usage(
+                            "indexing",
+                            "index_access".to_string(),
+                            "index_access".to_string(),
+                            "IndexAccess".to_string(),
+                            "Expression".to_string(),
+                            self.context.clone(),
+                            "array_index".to_string(),
+                            None,
+                            None
+                        );
+                        self.visit_expr(base);
+                        self.visit_expr(index);
+                    }
+                    
+                    rustc_hir::ExprKind::Match(expr, arms, _) => {
+                        let arm_count = arms.len();
+                        self.collector.add_usage(
+                            "patterns",
+                            format!("match_{}_arms", arm_count),
+                            "pattern_match".to_string(),
+                            "PatternMatch".to_string(),
+                            "Expression".to_string(),
+                            self.context.clone(),
+                            format!("{}_arms", arm_count),
+                            None,
+                            None
+                        );
+                        self.visit_expr(expr);
+                        for arm in arms {
+                            if let Some(guard) = &arm.guard { 
+                                self.visit_expr(&guard.body); 
+                            }
+                            self.visit_expr(&arm.body);
+                        }
+                    }
+                    
                     _ => {}
                 }
                 
