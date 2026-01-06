@@ -1,0 +1,245 @@
+use std::collections::HashMap;
+use std::fs;
+use std::path::Path;
+use serde::{Deserialize, Serialize};
+
+#[derive(Debug, Serialize, Deserialize)]
+struct ProfileTrace {
+    #[serde(rename = "crate")]
+    crate_name: String,
+    module: String,
+    usages: Vec<UsageEntry>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+struct UsageEntry {
+    symbol: String,
+    kind: String,
+    usage_count: usize,
+    usage_type: String,
+    node_type: String,
+    user_crate: String,
+    used_crate: String,
+}
+
+#[derive(Debug)]
+struct ProfileDrivenDriver {
+    profile_traces: Vec<ProfileTrace>,
+    crate_usage_data: HashMap<String, HashMap<String, Vec<UsageEntry>>>,
+    suggestion_cache: HashMap<String, Vec<String>>,
+}
+
+impl ProfileDrivenDriver {
+    fn new() -> Self {
+        Self {
+            profile_traces: Vec::new(),
+            crate_usage_data: HashMap::new(),
+            suggestion_cache: HashMap::new(),
+        }
+    }
+
+    fn load_profile_traces(&mut self, trace_dir: &str) -> Result<(), Box<dyn std::error::Error>> {
+        println!("📊 Loading profile traces from {}", trace_dir);
+        let mut loaded = 0;
+        
+        for entry in fs::read_dir(trace_dir)? {
+            let entry = entry?;
+            let path = entry.path();
+            
+            if path.extension().map_or(false, |ext| ext == "json") {
+                let content = fs::read_to_string(&path)?;
+                if let Ok(trace) = serde_json::from_str::<ProfileTrace>(&content) {
+                    self.profile_traces.push(trace);
+                    loaded += 1;
+                }
+            }
+        }
+        
+        println!("✅ Loaded {} profile traces", loaded);
+        Ok(())
+    }
+
+    fn load_crate_usage_data(&mut self, data_dir: &str) -> Result<(), Box<dyn std::error::Error>> {
+        println!("📦 Loading crate usage data from {}", data_dir);
+        let mut loaded_crates = 0;
+        
+        for entry in fs::read_dir(data_dir)? {
+            let entry = entry?;
+            let path = entry.path();
+            
+            if path.is_dir() {
+                let crate_name = path.file_name().unwrap().to_string_lossy().to_string();
+                let mut crate_data = HashMap::new();
+                
+                for file_entry in fs::read_dir(&path)? {
+                    let file_entry = file_entry?;
+                    let file_path = file_entry.path();
+                    
+                    if file_path.extension().map_or(false, |ext| ext == "json") {
+                        let content = fs::read_to_string(&file_path)?;
+                        if let Ok(trace) = serde_json::from_str::<ProfileTrace>(&content) {
+                            crate_data.insert(trace.module.clone(), trace.usages);
+                        }
+                    }
+                }
+                
+                if !crate_data.is_empty() {
+                    self.crate_usage_data.insert(crate_name, crate_data);
+                    loaded_crates += 1;
+                }
+            }
+        }
+        
+        println!("✅ Loaded usage data for {} crates", loaded_crates);
+        Ok(())
+    }
+
+    fn suggest_next_usage(&mut self, current_crate: &str, current_module: &str) -> Vec<String> {
+        let cache_key = format!("{}::{}", current_crate, current_module);
+        
+        if let Some(cached) = self.suggestion_cache.get(&cache_key) {
+            return cached.clone();
+        }
+
+        let mut frequency_map = HashMap::new();
+
+        // Analyze profile traces for patterns
+        for trace in &self.profile_traces {
+            if trace.crate_name.contains(current_crate) || trace.module.contains(current_module) {
+                for usage in &trace.usages {
+                    let key = format!("{}::{} ({})", usage.used_crate, usage.symbol, usage.usage_type);
+                    *frequency_map.entry(key).or_insert(0) += usage.usage_count;
+                }
+            }
+        }
+
+        // Enhance with crate usage data
+        for (crate_key, modules) in &self.crate_usage_data {
+            if crate_key.contains(current_crate) {
+                for (module_key, usages) in modules {
+                    if module_key.contains(current_module) {
+                        for usage in usages {
+                            let key = format!("{}::{} ({})", usage.used_crate, usage.symbol, usage.usage_type);
+                            *frequency_map.entry(key).or_insert(0) += usage.usage_count;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Sort by frequency and take top suggestions
+        let mut sorted: Vec<_> = frequency_map.into_iter().collect();
+        sorted.sort_by(|a, b| b.1.cmp(&a.1));
+        
+        let suggestions: Vec<String> = sorted.into_iter()
+            .take(10)
+            .map(|(usage, freq)| format!("{} (freq: {})", usage, freq))
+            .collect();
+
+        self.suggestion_cache.insert(cache_key, suggestions.clone());
+        suggestions
+    }
+
+    fn integrate_with_rustc(&self, suggestions: &[String], context: &str) {
+        println!("🦀 Rustc Integration for {}", context);
+        println!("   Suggested usage vectors:");
+        
+        for (i, suggestion) in suggestions.iter().enumerate() {
+            println!("     {}. {}", i + 1, suggestion);
+        }
+        
+        // Generate rustc-compatible hints
+        let rustc_hints = serde_json::json!({
+            "type": "profile_driven_suggestions",
+            "context": context,
+            "suggestions": suggestions.iter().map(|s| {
+                let parts: Vec<&str> = s.split(" (freq: ").collect();
+                serde_json::json!({
+                    "usage": parts[0],
+                    "frequency": parts.get(1).unwrap_or(&"0)").replace(")", "").parse::<usize>().unwrap_or(0),
+                    "confidence": if parts.get(1).unwrap_or(&"0)").replace(")", "").parse::<usize>().unwrap_or(0) > 5 { "high" } else { "medium" }
+                })
+            }).collect::<Vec<_>>()
+        });
+        
+        println!("📤 Rustc integration data:");
+        println!("{}", serde_json::to_string_pretty(&rustc_hints).unwrap());
+    }
+
+    fn run_compiler_driver(&mut self, crate_name: &str, module: &str) -> Result<(), Box<dyn std::error::Error>> {
+        println!("\n🚀 Profile-Driven Compiler Driver");
+        println!("==================================");
+        let context = format!("{}::{}", crate_name, module);
+        println!("Analyzing context: {}", context);
+        
+        let suggestions = self.suggest_next_usage(crate_name, module);
+        
+        if suggestions.is_empty() {
+            println!("⚠️  No usage suggestions available for this context");
+            println!("   Consider adding more profile traces or usage data");
+        } else {
+            self.integrate_with_rustc(&suggestions, &context);
+        }
+        
+        Ok(())
+    }
+
+    fn analyze_compilation_patterns(&self) {
+        println!("\n📈 Compilation Pattern Analysis");
+        println!("==============================");
+        
+        let mut crate_usage_counts = HashMap::new();
+        let mut symbol_usage_counts = HashMap::new();
+        
+        for trace in &self.profile_traces {
+            for usage in &trace.usages {
+                *crate_usage_counts.entry(usage.used_crate.clone()).or_insert(0) += usage.usage_count;
+                *symbol_usage_counts.entry(format!("{}::{}", usage.used_crate, usage.symbol)).or_insert(0) += usage.usage_count;
+            }
+        }
+        
+        println!("Top 10 most used crates:");
+        let mut sorted_crates: Vec<_> = crate_usage_counts.iter().collect();
+        sorted_crates.sort_by(|a, b| b.1.cmp(a.1));
+        for (i, (crate_name, count)) in sorted_crates.iter().take(10).enumerate() {
+            println!("  {}. {} ({} usages)", i + 1, crate_name, count);
+        }
+        
+        println!("\nTop 10 most used symbols:");
+        let mut sorted_symbols: Vec<_> = symbol_usage_counts.iter().collect();
+        sorted_symbols.sort_by(|a, b| b.1.cmp(a.1));
+        for (i, (symbol, count)) in sorted_symbols.iter().take(10).enumerate() {
+            println!("  {}. {} ({} usages)", i + 1, symbol, count);
+        }
+    }
+}
+
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let mut driver = ProfileDrivenDriver::new();
+    
+    // Load actual profile traces
+    let trace_dir = "../../../mycelial-usage-data/test_usage_data";
+    if Path::new(trace_dir).exists() {
+        driver.load_profile_traces(trace_dir)?;
+    } else {
+        println!("⚠️  Profile trace directory not found: {}", trace_dir);
+    }
+    
+    // Load crate usage data
+    let crate_data_dir = "../../../mycelial-usage-data/crate_usage_data";
+    if Path::new(crate_data_dir).exists() {
+        driver.load_crate_usage_data(crate_data_dir)?;
+    } else {
+        println!("⚠️  Crate usage data directory not found: {}", crate_data_dir);
+    }
+    
+    // Analyze overall patterns
+    driver.analyze_compilation_patterns();
+    
+    // Example compilation contexts
+    driver.run_compiler_driver("rustc_borrowck", "region_infer")?;
+    driver.run_compiler_driver("tracing", "instrument")?;
+    driver.run_compiler_driver("serde", "de")?;
+    
+    Ok(())
+}

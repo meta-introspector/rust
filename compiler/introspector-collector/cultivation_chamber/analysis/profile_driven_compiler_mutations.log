@@ -1,0 +1,237 @@
+📊 Loading profile traces from ../../../mycelial-usage-data/test_usage_data
+✅ Loaded 8726 profile traces
+📦 Loading crate usage data from ../../../mycelial-usage-data/crate_usage_data
+✅ Loaded usage data for 211 crates
+
+📈 Compilation Pattern Analysis
+==============================
+Top 10 most used crates:
+  1. tracing_core (53409 usages)
+  2. core (45938 usages)
+  3. rustc_middle (9787 usages)
+  4. alloc (4623 usages)
+  5. rustc_span (4165 usages)
+  6. std (3530 usages)
+  7. rustc_errors (2395 usages)
+  8. rustc_type_ir (2112 usages)
+  9. rustc_query_impl (2004 usages)
+  10. tracing (1599 usages)
+
+Top 10 most used symbols:
+  1. tracing_core::new (14130 usages)
+  2. tracing_core::metadata (7824 usages)
+  3. core::le (4669 usages)
+  4. tracing_core::DEBUG (4486 usages)
+  5. tracing_core::fields (4290 usages)
+  6. tracing_core::TRACE (3690 usages)
+  7. tracing_core::EVENT (3254 usages)
+  8. core::new_v1 (2804 usages)
+  9. core::expect (2492 usages)
+  10. rustc_span::new (2453 usages)
+
+🚀 Profile-Driven Compiler Driver
+==================================
+Analyzing context: rustc_borrowck::region_infer
+🦀 Rustc Integration for rustc_borrowck::region_infer
+   Suggested usage vectors:
+     1. tracing_core::new (MethodCall) (freq: 1401)
+     2. tracing_core::DEBUG (AssocConstAccess) (freq: 638)
+     3. tracing_core::EVENT (AssocConstAccess) (freq: 384)
+     4. tracing_core::metadata (MethodCall) (freq: 342)
+     5. core::le (MethodCall) (freq: 198)
+     6. tracing_core::fields (MethodCall) (freq: 169)
+     7. core::Continue (EnumVariant) (freq: 108)
+     8. core::Break (EnumVariant) (freq: 108)
+     9. core::branch (MethodCall) (freq: 108)
+     10. core::from_residual (MethodCall) (freq: 108)
+📤 Rustc integration data:
+{
+  "context": "rustc_borrowck::region_infer",
+  "suggestions": [
+    {
+      "confidence": "high",
+      "frequency": 1401,
+      "usage": "tracing_core::new (MethodCall)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 638,
+      "usage": "tracing_core::DEBUG (AssocConstAccess)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 384,
+      "usage": "tracing_core::EVENT (AssocConstAccess)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 342,
+      "usage": "tracing_core::metadata (MethodCall)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 198,
+      "usage": "core::le (MethodCall)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 169,
+      "usage": "tracing_core::fields (MethodCall)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 108,
+      "usage": "core::Continue (EnumVariant)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 108,
+      "usage": "core::Break (EnumVariant)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 108,
+      "usage": "core::branch (MethodCall)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 108,
+      "usage": "core::from_residual (MethodCall)"
+    }
+  ],
+  "type": "profile_driven_suggestions"
+}
+
+🚀 Profile-Driven Compiler Driver
+==================================
+Analyzing context: tracing::instrument
+🦀 Rustc Integration for tracing::instrument
+   Suggested usage vectors:
+     1. tracing_core::new (MethodCall) (freq: 6)
+     2. tracing_core::DEBUG (AssocConstAccess) (freq: 2)
+     3. tracing_core::EVENT (AssocConstAccess) (freq: 1)
+     4. tracing_core::SPAN (AssocConstAccess) (freq: 1)
+     5. tracing::project (MethodCall) (freq: 1)
+     6. core::drop (MethodCall) (freq: 1)
+     7. core::get_unchecked_mut (MethodCall) (freq: 1)
+     8. tracing::enter (MethodCall) (freq: 1)
+📤 Rustc integration data:
+{
+  "context": "tracing::instrument",
+  "suggestions": [
+    {
+      "confidence": "high",
+      "frequency": 6,
+      "usage": "tracing_core::new (MethodCall)"
+    },
+    {
+      "confidence": "medium",
+      "frequency": 2,
+      "usage": "tracing_core::DEBUG (AssocConstAccess)"
+    },
+    {
+      "confidence": "medium",
+      "frequency": 1,
+      "usage": "tracing_core::EVENT (AssocConstAccess)"
+    },
+    {
+      "confidence": "medium",
+      "frequency": 1,
+      "usage": "tracing_core::SPAN (AssocConstAccess)"
+    },
+    {
+      "confidence": "medium",
+      "frequency": 1,
+      "usage": "tracing::project (MethodCall)"
+    },
+    {
+      "confidence": "medium",
+      "frequency": 1,
+      "usage": "core::drop (MethodCall)"
+    },
+    {
+      "confidence": "medium",
+      "frequency": 1,
+      "usage": "core::get_unchecked_mut (MethodCall)"
+    },
+    {
+      "confidence": "medium",
+      "frequency": 1,
+      "usage": "tracing::enter (MethodCall)"
+    }
+  ],
+  "type": "profile_driven_suggestions"
+}
+
+🚀 Profile-Driven Compiler Driver
+==================================
+Analyzing context: serde::de
+🦀 Rustc Integration for serde::de
+   Suggested usage vectors:
+     1. tracing_core::new (MethodCall) (freq: 2589)
+     2. tracing_core::metadata (MethodCall) (freq: 900)
+     3. proc_macro2::new (MethodCall) (freq: 693)
+     4. tracing_core::TRACE (AssocConstAccess) (freq: 632)
+     5. tracing_core::EVENT (AssocConstAccess) (freq: 619)
+     6. tracing_core::DEBUG (AssocConstAccess) (freq: 553)
+     7. core::le (MethodCall) (freq: 522)
+     8. rustc_errors::from_u32 (MethodCall) (freq: 517)
+     9. tracing_core::fields (MethodCall) (freq: 505)
+     10. core::new_v1 (MethodCall) (freq: 484)
+📤 Rustc integration data:
+{
+  "context": "serde::de",
+  "suggestions": [
+    {
+      "confidence": "high",
+      "frequency": 2589,
+      "usage": "tracing_core::new (MethodCall)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 900,
+      "usage": "tracing_core::metadata (MethodCall)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 693,
+      "usage": "proc_macro2::new (MethodCall)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 632,
+      "usage": "tracing_core::TRACE (AssocConstAccess)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 619,
+      "usage": "tracing_core::EVENT (AssocConstAccess)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 553,
+      "usage": "tracing_core::DEBUG (AssocConstAccess)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 522,
+      "usage": "core::le (MethodCall)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 517,
+      "usage": "rustc_errors::from_u32 (MethodCall)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 505,
+      "usage": "tracing_core::fields (MethodCall)"
+    },
+    {
+      "confidence": "high",
+      "frequency": 484,
+      "usage": "core::new_v1 (MethodCall)"
+    }
+  ],
+  "type": "profile_driven_suggestions"
+}

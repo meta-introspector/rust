@@ -1,0 +1,13 @@
+🔧 Testing Type Prefix Functionality
+✓ 42 -> int_42
+✓ 3.14 -> float_3.14
+✓ true -> btrue
+✓ 'a' -> c'a'
+✓ "hello" -> str_"hello"
+✓ 255u8 -> u8_255u8
+✓ 42i32 -> i32_42i32
+✅ All type prefix tests passed!
+📊 Type prefixes enable better literal tracking:
+   - Distinguishes int vs float vs string literals
+   - Tracks specific integer/float types (u8, i32, f64, etc.)
+   - Enables symbolic regression on typed literal patterns

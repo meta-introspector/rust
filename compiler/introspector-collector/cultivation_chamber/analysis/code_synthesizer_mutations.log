@@ -1,0 +1,17 @@
+🔧 Code Vector Expansion - Synthesizing from Usage Patterns
+📊 Expanding along highest priority vectors:
+
+🎯 ExprKind::Field (freq: 71, priority: 189.3):
+rustc_hir :: ExprKind :: Field (expr , field) => { let field_name = field . name . to_string () ; let base_type = self . get_expr_type_name (expr) ; self . add_usage ("field_access" , format ! ("{}.{}" , base_type , field_name) , "field_access" , "FieldAccess" , "Expression" , self . get_span_info (field . span)) ; self . visit_expr (expr) ; }
+
+🎯 ExprKind::Call (freq: 45, priority: 101.2):
+rustc_hir :: ExprKind :: Call (func , args) => { let func_name = self . get_function_name (func) ; let arg_count = args . len () ; self . add_usage ("function_calls" , format ! ("{}({})" , func_name , arg_count) , "function_call" , "FunctionCall" , "Expression" , self . get_span_info (func . span)) ; self . visit_expr (func) ; for arg in args { self . visit_expr (arg) ; } }
+
+🎯 ExprKind::AddrOf (freq: 31, priority: 69.8):
+rustc_hir :: ExprKind :: AddrOf (borrow_kind , mutability , expr) => { let ref_type = match mutability { rustc_hir :: Mutability :: Mut => "mut_ref" , rustc_hir :: Mutability :: Not => "ref" , } ; self . add_usage ("memory_safety" , format ! ("&{}" , ref_type) , "memory_ref" , "MemoryRef" , "Expression" , self . get_span_info (expr . span)) ; self . visit_expr (expr) ; }
+
+🎯 ExprKind::Index (freq: 18, priority: 48.0):
+rustc_hir :: ExprKind :: Index (base , index , _) => { let base_type = self . get_expr_type_name (base) ; self . add_usage ("indexing" , format ! ("{}[_]" , base_type) , "index_access" , "IndexAccess" , "Expression" , self . get_span_info (base . span)) ; self . visit_expr (base) ; self . visit_expr (index) ; }
+
+🎯 ExprKind::Match (freq: 27, priority: 45.0):
+rustc_hir :: ExprKind :: Match (expr , arms , _) => { let arm_count = arms . len () ; self . add_usage ("patterns" , format ! ("match_{}_arms" , arm_count) , "pattern_match" , "PatternMatch" , "Expression" , self . get_span_info (expr . span)) ; self . visit_expr (expr) ; for arm in arms { self . visit_pat (& arm . pat) ; if let Some (guard) = & arm . guard { self . visit_expr (& guard . body) ; } self . visit_expr (& arm . body) ; } }
