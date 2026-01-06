@@ -1,0 +1,398 @@
+{
+  "collector_version": "1.0.0",
+  "crate_name": "rustc_incremental",
+  "dependency_manifests": [
+    "./test_usage_data/rustc_public_bridge_manifest.json",
+    "./test_usage_data/rustc_hashes_manifest.json",
+    "./test_usage_data/build_script_build_manifest.json",
+    "./test_usage_data/rustc_baked_icu_data_manifest.json",
+    "./test_usage_data/rustc_span_manifest.json",
+    "./test_usage_data/rustc_ast_manifest.json",
+    "./test_usage_data/rustc_error_codes_manifest.json",
+    "./test_usage_data/rustc_parse_manifest.json",
+    "./test_usage_data/rustc_arena_manifest.json",
+    "./test_usage_data/rustc_expand_manifest.json",
+    "./test_usage_data/rustc_hir_id_manifest.json",
+    "./test_usage_data/rustc_fs_util_manifest.json",
+    "./test_usage_data/rustc_index_manifest.json",
+    "./test_usage_data/working_usage_collector_manifest.json",
+    "./test_usage_data/rustc_index_macros_manifest.json",
+    "./test_usage_data/rustc_parse_format_manifest.json",
+    "./test_usage_data/rustc_type_ir_macros_manifest.json",
+    "./test_usage_data/rustc_ast_pretty_manifest.json",
+    "./test_usage_data/rustc_next_trait_solver_manifest.json",
+    "./test_usage_data/rustc_builtin_macros_manifest.json",
+    "./test_usage_data/rustc_session_manifest.json",
+    "./test_usage_data/rustc_attr_parsing_manifest.json",
+    "./test_usage_data/rustc_ast_ir_manifest.json",
+    "./test_usage_data/rustc_fluent_macro_manifest.json",
+    "./test_usage_data/rustc_macros_manifest.json",
+    "./test_usage_data/rustc_hir_manifest.json",
+    "./test_usage_data/rustc_error_messages_manifest.json",
+    "./test_usage_data/rustc_thread_pool_manifest.json",
+    "./test_usage_data/rustc_errors_manifest.json",
+    "./test_usage_data/rustc_data_structures_manifest.json",
+    "./test_usage_data/rustc_target_manifest.json",
+    "./test_usage_data/rustc_graphviz_manifest.json",
+    "./test_usage_data/rustc_serialize_manifest.json",
+    "./test_usage_data/rustc_type_ir_manifest.json",
+    "./test_usage_data/rustc_lint_defs_manifest.json",
+    "./test_usage_data/rustc_symbol_mangling_manifest.json",
+    "./test_usage_data/rustc_pattern_analysis_manifest.json",
+    "./test_usage_data/build_common_manifest.json",
+    "./test_usage_data/rustc_abi_manifest.json",
+    "./test_usage_data/rustc_log_manifest.json",
+    "./test_usage_data/rustc_middle_manifest.json",
+    "./test_usage_data/rustc_proc_macro_manifest.json",
+    "./test_usage_data/rustc_query_system_manifest.json",
+    "./test_usage_data/rustc_feature_manifest.json",
+    "./test_usage_data/rustc_ast_passes_manifest.json",
+    "./test_usage_data/rustc_transmute_manifest.json",
+    "./test_usage_data/rustc_lexer_manifest.json",
+    "./test_usage_data/rustc_hir_pretty_manifest.json"
+  ],
+  "environment": {
+    "cargo_manifest_dir": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_incremental",
+    "cargo_target_dir": null,
+    "profile": null,
+    "pwd": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust"
+  },
+  "generated_files": [
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_file_format_save_in.json",
+      "size_bytes": 1346,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_save_save_work_product_index.json",
+      "size_bytes": 531,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_create_dir___CALLSITE.json",
+      "size_bytes": 1789,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_save_save_dep_graph___CALLSITE.json",
+      "size_bytes": 1819,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_assert_dep_graph_node_set___CALLSITE.json",
+      "size_bytes": 1800,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_assert_dep_graph_walk_between.json",
+      "size_bytes": 3000,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_assert_dep_graph_node_set.json",
+      "size_bytes": 506,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_assert_dep_graph.json",
+      "size_bytes": 67059,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_dirty_clean_DirtyCleanVisitor___tcx__assert_loaded_from_disk___CALLSITE.json",
+      "size_bytes": 1962,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_file_format_save_in___CALLSITE.json",
+      "size_bytes": 5243,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_load_setup_dep_graph__closure_1_.json",
+      "size_bytes": 541,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_save_save_dep_graph.json",
+      "size_bytes": 513,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_load.json",
+      "size_bytes": 60326,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_garbage_collect_session_directories__closure_3____CALLSITE.json",
+      "size_bytes": 14901,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_delete_old___CALLSITE.json",
+      "size_bytes": 1789,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_save_save_work_product_index___CALLSITE.json",
+      "size_bytes": 1864,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_load_setup_dep_graph__closure_1____CALLSITE.json",
+      "size_bytes": 1887,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_finalize_session_directory___CALLSITE.json",
+      "size_bytes": 8901,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_dirty_clean_DirtyCleanVisitor___tcx__assert_dirty.json",
+      "size_bytes": 559,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_constants.json",
+      "size_bytes": 73309,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental__assert_dep_graph_GraphvizDepGraph_as_rustc_graphviz_Labeller__a___node_id___CALLSITE.json",
+      "size_bytes": 1887,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental__assert_dep_graph_GraphvizDepGraph_as_rustc_graphviz_Labeller__a___node_id.json",
+      "size_bytes": 566,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_dirty_clean_check_config.json",
+      "size_bytes": 1366,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_dirty_clean_DirtyCleanVisitor___tcx__assert_clean___CALLSITE.json",
+      "size_bytes": 1907,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_dirty_clean_DirtyCleanVisitor___tcx__assert_loaded_from_disk.json",
+      "size_bytes": 581,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_garbage_collect_session_directories__closure_4_.json",
+      "size_bytes": 577,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_enums.json",
+      "size_bytes": 655,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_work_product_copy_cgu_workproduct_to_incr_comp_cache_dir___CALLSITE.json",
+      "size_bytes": 3870,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_file_format_report_format_mismatch___CALLSITE.json",
+      "size_bytes": 1890,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_garbage_collect_session_directories.json",
+      "size_bytes": 2736,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_load_delete_dirty_work_product___CALLSITE.json",
+      "size_bytes": 1874,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_dirty_clean.json",
+      "size_bytes": 48591,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_dirty_clean_DirtyCleanVisitor___tcx__assert_dirty___CALLSITE.json",
+      "size_bytes": 1907,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_prepare_session_directory___CALLSITE.json",
+      "size_bytes": 12372,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_create_dir.json",
+      "size_bytes": 501,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_assert_dep_graph_walk_nodes.json",
+      "size_bytes": 510,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs.json",
+      "size_bytes": 437940,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_find_source_directory_in_iter___CALLSITE.json",
+      "size_bytes": 7194,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_prepare_session_directory.json",
+      "size_bytes": 3089,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_save.json",
+      "size_bytes": 35354,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_garbage_collect_session_directories__closure_3_.json",
+      "size_bytes": 3727,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_literals.json",
+      "size_bytes": 150781,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_root.json",
+      "size_bytes": 455,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_garbage_collect_session_directories___CALLSITE.json",
+      "size_bytes": 10884,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_delete_old.json",
+      "size_bytes": 501,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_load_load_dep_graph.json",
+      "size_bytes": 1349,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_finalize_session_directory.json",
+      "size_bytes": 2245,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_copy_files.json",
+      "size_bytes": 501,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_load_load_dep_graph___CALLSITE.json",
+      "size_bytes": 5255,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_lock_directory.json",
+      "size_bytes": 509,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_garbage_collect_session_directories__closure_4____CALLSITE.json",
+      "size_bytes": 1979,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_load_delete_dirty_work_product.json",
+      "size_bytes": 535,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_dirty_clean_DirtyCleanVisitor___tcx__assert_clean.json",
+      "size_bytes": 559,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_structs.json",
+      "size_bytes": 14575,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_work_product_copy_cgu_workproduct_to_incr_comp_cache_dir.json",
+      "size_bytes": 1042,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_find_source_directory_in_iter.json",
+      "size_bytes": 1832,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_assert_dep_graph_walk_nodes___CALLSITE.json",
+      "size_bytes": 1810,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_dirty_clean_check_config___CALLSITE.json",
+      "size_bytes": 5308,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_generate_session_dir_path.json",
+      "size_bytes": 1812,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_generate_session_dir_path___CALLSITE.json",
+      "size_bytes": 7126,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_work_product.json",
+      "size_bytes": 29714,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_lock_directory___CALLSITE.json",
+      "size_bytes": 1809,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_fs_copy_files___CALLSITE.json",
+      "size_bytes": 1789,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_file_format.json",
+      "size_bytes": 59741,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_persist_file_format_report_format_mismatch.json",
+      "size_bytes": 542,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_incremental_complexity.json",
+      "size_bytes": 38026,
+      "type": "usage_data"
+    }
+  ],
+  "output_directory": "./test_usage_data",
+  "rustc_version": "unknown",
+  "timestamp": 1767701046,
+  "total_enums": 5,
+  "total_modules": 65,
+  "total_usages": 2807
+}

@@ -1,0 +1,50 @@
+{
+  "crate": "rustc_transmute",
+  "module": "layout::rustc",
+  "usages": [
+    {
+      "symbol": "erase_and_anonymize_regions",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:273 ~ rustc_transmute[924a]::layout::rustc::layout_of)",
+      "used_def_id": "DefId(140:7264 ~ rustc_middle[d452]::ty::erase_regions::{impl#0}::erase_and_anonymize_regions)",
+      "user_crate": "rustc_transmute",
+      "used_crate": "rustc_middle"
+    },
+    {
+      "symbol": "tcx",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:273 ~ rustc_transmute[924a]::layout::rustc::layout_of)",
+      "used_def_id": "DefId(140:4457 ~ rustc_middle[d452]::ty::layout::HasTyCtxt::tcx)",
+      "user_crate": "rustc_transmute",
+      "used_crate": "rustc_middle"
+    },
+    {
+      "symbol": "map",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:273 ~ rustc_transmute[924a]::layout::rustc::layout_of)",
+      "used_def_id": "DefId(2:11083 ~ core[4720]::result::{impl#0}::map)",
+      "user_crate": "rustc_transmute",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "layout_of",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:273 ~ rustc_transmute[924a]::layout::rustc::layout_of)",
+      "used_def_id": "DefId(140:4523 ~ rustc_middle[d452]::ty::layout::LayoutOf::layout_of)",
+      "user_crate": "rustc_transmute",
+      "used_crate": "rustc_middle"
+    }
+  ]
+}

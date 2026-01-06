@@ -1,0 +1,292 @@
+{
+  "crate": "rustc_privacy",
+  "module": "literals",
+  "usages": [
+    {
+      "symbol": "\"privacy_field_is_private =\n    {$len ->\n        [1] field\n        *[other] fields\n    } {$field_names} of {$variant_descr} `{$def_path_str}` {$len ->\n        [1] is\n        *[other] are\n    } private\n    .label = in this type\nprivacy_field_is_private_is_update_syntax_label = {$rest_len ->\n        [1] field\n        *[other] fields\n    } {$rest_field_names} {$rest_len ->\n        [1] is\n        *[other] are\n    } private\nprivacy_field_is_private_label = private field\n\nprivacy_from_private_dep_in_public_interface =\n    {$kind} `{$descr}` from private dependency '{$krate}' in public interface\n\nprivacy_in_public_interface = {$vis_descr} {$kind} `{$descr}` in public interface\n    .label = can't leak {$vis_descr} {$kind}\n    .visibility_label = `{$descr}` declared as {$vis_descr}\n\nprivacy_item_is_private = {$kind} `{$descr}` is private\n    .label = private {$kind}\n\nprivacy_private_interface_or_bounds_lint = {$ty_kind} `{$ty_descr}` is more private than the item `{$item_descr}`\n    .item_label = {$item_kind} `{$item_descr}` is reachable at visibility `{$item_vis_descr}`\n    .ty_note = but {$ty_kind} `{$ty_descr}` is only usable at visibility `{$ty_vis_descr}`\n\nprivacy_report_effective_visibility = {$descr}\n\nprivacy_unnameable_types_lint = {$kind} `{$descr}` is reachable but cannot be named\n    .label = reachable at visibility `{$reachable_vis}`, but can only be named at visibility `{$reexported_vis}`\n\nprivacy_unnamed_item_is_private = {$kind} is private\n    .label = private {$kind}\n\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "static DEFAULT_LOCALE_RESOURCE",
+      "used_def_id": "\"privacy_field_is_private =\n    {$len ->\n        [1] field\n        *[other] fields\n    } {$field_names} of {$variant_descr} `{$def_path_str}` {$len ->\n        [1] is\n        *[other] are\n    } private\n    .label = in this type\nprivacy_field_is_private_is_update_syntax_label = {$rest_len ->\n        [1] field\n        *[other] fields\n    } {$rest_field_names} {$rest_len ->\n        [1] is\n        *[other] are\n    } private\nprivacy_field_is_private_label = private field\n\nprivacy_from_private_dep_in_public_interface =\n    {$kind} `{$descr}` from private dependency '{$krate}' in public interface\n\nprivacy_in_public_interface = {$vis_descr} {$kind} `{$descr}` in public interface\n    .label = can't leak {$vis_descr} {$kind}\n    .visibility_label = `{$descr}` declared as {$vis_descr}\n\nprivacy_item_is_private = {$kind} `{$descr}` is private\n    .label = private {$kind}\n\nprivacy_private_interface_or_bounds_lint = {$ty_kind} `{$ty_descr}` is more private than the item `{$item_descr}`\n    .item_label = {$item_kind} `{$item_descr}` is reachable at visibility `{$item_vis_descr}`\n    .ty_note = but {$ty_kind} `{$ty_descr}` is only usable at visibility `{$ty_vis_descr}`\n\nprivacy_report_effective_visibility = {$descr}\n\nprivacy_unnameable_types_lint = {$kind} `{$descr}` is reachable but cannot be named\n    .label = reachable at visibility `{$reachable_vis}`, but can only be named at visibility `{$reexported_vis}`\n\nprivacy_unnamed_item_is_private = {$kind} is private\n    .label = private {$kind}\n\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"privacy_field_is_private\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_field_is_private",
+      "used_def_id": "\"privacy_field_is_private\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"label\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_label",
+      "used_def_id": "\"label\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"privacy_field_is_private_is_update_syntax_label\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_field_is_private_is_update_syntax_label",
+      "used_def_id": "\"privacy_field_is_private_is_update_syntax_label\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"privacy_field_is_private_label\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_field_is_private_label",
+      "used_def_id": "\"privacy_field_is_private_label\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"privacy_from_private_dep_in_public_interface\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_from_private_dep_in_public_interface",
+      "used_def_id": "\"privacy_from_private_dep_in_public_interface\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"privacy_in_public_interface\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_in_public_interface",
+      "used_def_id": "\"privacy_in_public_interface\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"visibility_label\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_visibility_label",
+      "used_def_id": "\"visibility_label\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"privacy_item_is_private\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_item_is_private",
+      "used_def_id": "\"privacy_item_is_private\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"privacy_private_interface_or_bounds_lint\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_private_interface_or_bounds_lint",
+      "used_def_id": "\"privacy_private_interface_or_bounds_lint\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"item_label\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_item_label",
+      "used_def_id": "\"item_label\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"ty_note\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_ty_note",
+      "used_def_id": "\"ty_note\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"privacy_report_effective_visibility\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_report_effective_visibility",
+      "used_def_id": "\"privacy_report_effective_visibility\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"privacy_unnameable_types_lint\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_unnameable_types_lint",
+      "used_def_id": "\"privacy_unnameable_types_lint\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"privacy_unnamed_item_is_private\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const privacy_unnamed_item_is_private",
+      "used_def_id": "\"privacy_unnamed_item_is_private\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"help\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const help",
+      "used_def_id": "\"help\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"note\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const note",
+      "used_def_id": "\"note\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"warn\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const warn",
+      "used_def_id": "\"warn\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"label\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const label",
+      "used_def_id": "\"label\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"suggestion\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "const suggestion",
+      "used_def_id": "\"suggestion\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"event compiler/rustc_privacy/src/lib.rs:1510\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "static META",
+      "used_def_id": "\"event compiler/rustc_privacy/src/lib.rs:1510\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"rustc_privacy\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "static META",
+      "used_def_id": "\"rustc_privacy\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"compiler/rustc_privacy/src/lib.rs\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "static META",
+      "used_def_id": "\"compiler/rustc_privacy/src/lib.rs\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "1510",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "static META",
+      "used_def_id": "1510",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"rustc_privacy\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "static META",
+      "used_def_id": "\"rustc_privacy\"",
+      "user_crate": null,
+      "used_crate": null
+    },
+    {
+      "symbol": "\"message\"",
+      "kind": "literal",
+      "usage_count": 1,
+      "usage_type": "NumericLiteral",
+      "node_type": "Expression",
+      "user_def_id": "static META",
+      "used_def_id": "\"message\"",
+      "user_crate": null,
+      "used_crate": null
+    }
+  ]
+}

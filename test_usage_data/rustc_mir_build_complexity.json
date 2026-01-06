@@ -1,0 +1,3305 @@
+{
+  "crate": "rustc_mir_build",
+  "items": [
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CoroutineDrop",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LowerRangeBoundMustBeLessThanUpper",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "thir_body",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PatCtxt",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DropIdx",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CallToFunctionWithRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "build_custom_mir",
+      "param_count": 11,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_7",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_8",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_9",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_10",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CoverageInfoBuilder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "sub_branch_bindings",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "report_non_exhaustive_match",
+      "param_count": 7,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BorrowOfLayoutConstrainedFieldRequiresUnsafeUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ParseCtxt",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UseOfInlineAssemblyRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LeadingIrrefutableLetPatterns",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "InitializingTypeWithRequiresUnsafeUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "IrrefutableLetPatternsIfLet",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BranchInfo",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "report_irrefutable_let_patterns",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DerefOfRawPointerRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NaNPattern",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BlockAnd",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NotInfo",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "StaticInPattern",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LetSource",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "TestBranch",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "DropKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LoopMatchBadRhs",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LoopMatchMissingAssignment",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AlreadyBorrowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnUseOfExternStaticRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "InvalidPattern",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ConstContinueNotMonomorphicConstReason",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UseOfUnsafeFieldRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "to_upvars_resolved_place_builder",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "TestKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Capture",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "construct_const",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "check_tail_calls",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CallToUnsafeFunctionRequiresUnsafeNamelessUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PlaceBuilder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UseOfMutableStaticRequiresUnsafeUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "ref_pat_borrow_kind",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MultipleMutBorrows",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnUseOfUnsafeFieldRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LoopMatchInvalidMatch",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonExhaustivePatternsTypeNotEmpty",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "parse_attribute",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LoopMatchUnsupportedType",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "NeedsTemporary",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "UnusedUnsafeEnclosing",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UseOfUnsafeFieldRequiresUnsafeUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FakeBorrowCollector",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "construct_error",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BlockContext",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "thir_flat",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "traverse_candidate",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CFG",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "lit_to_mir_constant",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MatchPairTree",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ProjectedUserTypesOp",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "IrrefutableLetPatternsLetElse",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ThirBuildCx",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_supported_loop_match_type",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "check_never_pattern",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "check_unsafety",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DropNode",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "parse_float_into_constval",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PatMigration",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "maybe_point_at_variant",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DropData",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "strip_prefix",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "op_trait_as_method_name",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "check_borrow_conflicts_in_at_patterns",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafetyVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstParamInPattern",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstPatternDependsOnGenericParameter",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BorrowOfMovedValue",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "user_args_applied_to_ty_of_hir_id",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AdtDefinedHere",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ForGuard",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UsedParamsNeedInstantiationVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "lit_to_const",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "check_match",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "build_mir",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LowerRangeBoundMustBeLessThanOrEqualToUpper",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "DeclareLetBindings",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BorrowOfLayoutConstrainedFieldRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CallToFunctionWithRequiresUnsafeUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "extend_type_not_partial_eq",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NestedUsedBlock",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "GuardFrameLocal",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DropTree",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AlreadyMutBorrowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Rust2024IncompatiblePatSugg",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnusedUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "assign_op",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "convert_to_hir_projections_and_truncate_for_capture",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "find_capture_matching_projections",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PointerPattern",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnAccessToUnionFieldRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "report_adt_defined_here",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "SuggestLet",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "pat_from_hir",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "IrrefutableLetPatternsIfLetGuard",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnUseOfMutableStaticRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "RefutableFlag",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "collect_fake_borrows",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnInitializingTypeWithRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TypeNotPartialEq",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnCallToUnsafeFunctionRequiresUnsafeNameless",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnionPattern",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "BreakableTarget",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CallToUnsafeFunctionRequiresUnsafeUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UseOfExternStaticRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "BlockFrame",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "report_unreachable_pattern",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DerefOfRawPointerRequiresUnsafeUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Test",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Builder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "InterpretedAsConst",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "provide",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Block",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "local",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ParseError",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "joined_uncovered_patterns",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ScopeId",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "IfThenScope",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "UnsafeOpKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LoopMatchInvalidUpdate",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnCallToUnsafeFunctionRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ThenElseArgs",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstContinueBadConst",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "SubpatternBindings",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "construct_fn",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnUnsafeBinderCastRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Binding",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnDerefOfRawPointerRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeBinderCastRequiresUnsafeUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CallToDeprecatedSafeFnRequiresUnsafeSub",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CallToUnsafeFunctionRequiresUnsafeNameless",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UseOfExternStaticRequiresUnsafeUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TypeNotStructural",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Unwind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "SafetyContext",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MatchVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnBorrowOfLayoutConstrainedFieldRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ScheduleDrops",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstContinuableScope",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TailCallCkVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LoopMatchArmWithGuard",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "thir_tree",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AccessToUnionFieldRequiresUnsafeUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "InitializingTypeWithUnsafeFieldRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "InitializingTypeWithUnsafeFieldRequiresUnsafeUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Candidate",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "enable_precise_capture",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "build_scope_drops",
+      "param_count": 10,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_7",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_8",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_9",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeNotInheritedNote",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnMutationOfLayoutConstrainedFieldRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LayoutConstrainedPlaceVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstPath",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "TestCase",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstContinueMissingLabelOrValue",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CallToDeprecatedSafeFnRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CouldNotEvalConstPattern",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CallToUnsafeFunctionRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BreakableScope",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PatternExtraData",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MovedWhileBorrowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsizedPattern",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MatchTreeSubBranch",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UseOfInlineAssemblyRequiresUnsafeUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "parse_float_into_scalar",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Rust2024IncompatiblePat",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "type_has_partial_eq_impl",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "find_fallback_pattern_typo",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "PlaceBase",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "report_arm_reachability",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MutationOfLayoutConstrainedFieldRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Ascription",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "GuardFrame",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MutationOfLayoutConstrainedFieldRequiresUnsafeUnsafeOpInUnsafeFnAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FlatPat",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_switch_ty",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PatternNotCovered",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "trait_method",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LocalsForNode",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnCallToFunctionWithRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "as_constant_inner",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ProjectedUserTypesNode",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ExitScopes",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstContinueNotMonomorphicConst",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DropNodeKey",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeBinderCastRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeNotInheritedLintNote",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ThirPrinter",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MatchTreeBranch",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnUseOfInlineAssemblyRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "HasMatchGuard",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "InterpretedAsConstSugg",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "MiscPatternSuggestion",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "RvalueFunc",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PartialEqImplStatus",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BuiltMatchTree",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Inform",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstContinueUnknownJumpTarget",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AccessToUnionFieldRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Conflict",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Category",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeOpInUnsafeFnInitializingTypeWithUnsafeFieldRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LoopMatchBadStatements",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnreachablePattern",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonExhaustiveMatchAllArmsGuarded",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BindingsWithVariantName",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstToPat",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonEmptyNeverPattern",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ArmHasGuard",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "IrrefutableLetPatternsWhileLet",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "bin_op",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LiteralOutOfRange",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Scope",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_ancestor_or_same_capture",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TrailingIrrefutableLetPatterns",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UseOfMutableStaticRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "push_sub_branch_bindings",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "collect_special_tys",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BlockMarkerGen",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Scopes",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "closure_saved_names_of_captured_variables",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "WantedConstant",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnusedUnsafeWarning",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Variant",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "pat_is_catchall",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "InitializingTypeWithRequiresUnsafe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "check_for_bindings_named_same_as_variants",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    }
+  ]
+}

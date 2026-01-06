@@ -1,0 +1,375 @@
+{
+  "collector_version": "1.0.0",
+  "crate_name": "rustc_monomorphize",
+  "dependency_manifests": [
+    "./test_usage_data/rustc_public_bridge_manifest.json",
+    "./test_usage_data/rustc_hashes_manifest.json",
+    "./test_usage_data/build_script_build_manifest.json",
+    "./test_usage_data/rustc_baked_icu_data_manifest.json",
+    "./test_usage_data/rustc_incremental_manifest.json",
+    "./test_usage_data/rustc_span_manifest.json",
+    "./test_usage_data/rustc_ast_manifest.json",
+    "./test_usage_data/rustc_error_codes_manifest.json",
+    "./test_usage_data/rustc_parse_manifest.json",
+    "./test_usage_data/rustc_arena_manifest.json",
+    "./test_usage_data/rustc_expand_manifest.json",
+    "./test_usage_data/rustc_hir_id_manifest.json",
+    "./test_usage_data/rustc_fs_util_manifest.json",
+    "./test_usage_data/rustc_index_manifest.json",
+    "./test_usage_data/working_usage_collector_manifest.json",
+    "./test_usage_data/rustc_index_macros_manifest.json",
+    "./test_usage_data/rustc_parse_format_manifest.json",
+    "./test_usage_data/rustc_type_ir_macros_manifest.json",
+    "./test_usage_data/rustc_ast_pretty_manifest.json",
+    "./test_usage_data/rustc_next_trait_solver_manifest.json",
+    "./test_usage_data/rustc_builtin_macros_manifest.json",
+    "./test_usage_data/rustc_session_manifest.json",
+    "./test_usage_data/rustc_attr_parsing_manifest.json",
+    "./test_usage_data/rustc_ast_ir_manifest.json",
+    "./test_usage_data/rustc_mir_dataflow_manifest.json",
+    "./test_usage_data/rustc_fluent_macro_manifest.json",
+    "./test_usage_data/rustc_macros_manifest.json",
+    "./test_usage_data/rustc_hir_manifest.json",
+    "./test_usage_data/rustc_error_messages_manifest.json",
+    "./test_usage_data/rustc_thread_pool_manifest.json",
+    "./test_usage_data/rustc_errors_manifest.json",
+    "./test_usage_data/rustc_data_structures_manifest.json",
+    "./test_usage_data/rustc_target_manifest.json",
+    "./test_usage_data/rustc_graphviz_manifest.json",
+    "./test_usage_data/rustc_serialize_manifest.json",
+    "./test_usage_data/rustc_type_ir_manifest.json",
+    "./test_usage_data/rustc_lint_defs_manifest.json",
+    "./test_usage_data/rustc_symbol_mangling_manifest.json",
+    "./test_usage_data/rustc_pattern_analysis_manifest.json",
+    "./test_usage_data/build_common_manifest.json",
+    "./test_usage_data/rustc_abi_manifest.json",
+    "./test_usage_data/rustc_log_manifest.json",
+    "./test_usage_data/rustc_middle_manifest.json",
+    "./test_usage_data/rustc_proc_macro_manifest.json",
+    "./test_usage_data/rustc_query_system_manifest.json",
+    "./test_usage_data/rustc_feature_manifest.json",
+    "./test_usage_data/rustc_ast_passes_manifest.json",
+    "./test_usage_data/rustc_transmute_manifest.json",
+    "./test_usage_data/rustc_lexer_manifest.json",
+    "./test_usage_data/rustc_hir_pretty_manifest.json"
+  ],
+  "environment": {
+    "cargo_manifest_dir": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_monomorphize",
+    "cargo_target_dir": null,
+    "profile": null,
+    "pwd": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust"
+  },
+  "generated_files": [
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_MirUsedCollector___a___tcx__monomorphize.json",
+      "size_bytes": 543,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_collect_crate_mono_items___CALLSITE.json",
+      "size_bytes": 3598,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_collect_const_value___CALLSITE.json",
+      "size_bytes": 1827,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_visit_instance_use___CALLSITE.json",
+      "size_bytes": 1824,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_collect_const_value.json",
+      "size_bytes": 517,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_mono_checks_abi_check.json",
+      "size_bytes": 33317,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_visit_mentioned_item___CALLSITE.json",
+      "size_bytes": 1832,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_mono_checks_move_check.json",
+      "size_bytes": 9520,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_mono_checks_move_check_MoveCheckVisitor___tcx__monomorphize___CALLSITE.json",
+      "size_bytes": 1930,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_enums.json",
+      "size_bytes": 716,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_partitioning_debug_dump___CALLSITE.json",
+      "size_bytes": 1799,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_5f0c39e6832db109.json",
+      "size_bytes": 1940,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_RootCollector_______v__push_if_root___CALLSITE.json",
+      "size_bytes": 3595,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_collect_alloc.json",
+      "size_bytes": 1333,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_create_mono_items_for_default_impls___CALLSITE.json",
+      "size_bytes": 1907,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_create_mono_items_for_vtable_methods___CALLSITE.json",
+      "size_bytes": 1914,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_MirUsedCollector___a___tcx__monomorphize___CALLSITE.json",
+      "size_bytes": 1864,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_constants.json",
+      "size_bytes": 31162,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_RootCollector_______v__process_item.json",
+      "size_bytes": 1384,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize__collector_MirUsedCollector__a___tcx__as_rustc_middle_mir_visit_Visitor__tcx___visit_terminator.json",
+      "size_bytes": 1021,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_collect_items_rec.json",
+      "size_bytes": 931,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_partitioning.json",
+      "size_bytes": 258913,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_check_recursion_limit___CALLSITE.json",
+      "size_bytes": 1839,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_root.json",
+      "size_bytes": 6273,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_create_mono_items_for_vtable_methods.json",
+      "size_bytes": 551,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_partitioning_place_mono_items.json",
+      "size_bytes": 1023,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_check_recursion_limit.json",
+      "size_bytes": 521,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_RootCollector_______v__process_item___CALLSITE.json",
+      "size_bytes": 5335,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_collect_crate_mono_items.json",
+      "size_bytes": 952,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_partitioning_debug_dump__closure_0_.json",
+      "size_bytes": 8782,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_mono_checks_move_check_MoveCheckVisitor___tcx__check_operand_move_size___CALLSITE.json",
+      "size_bytes": 1985,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_structs.json",
+      "size_bytes": 6450,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector.json",
+      "size_bytes": 304968,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_collect_items_rec___CALLSITE.json",
+      "size_bytes": 3535,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_visit_instance_use.json",
+      "size_bytes": 515,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_mono_checks_move_check_MoveCheckVisitor___tcx__monomorphize.json",
+      "size_bytes": 567,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_mono_checks_move_check_MoveCheckVisitor___tcx__check_operand_move_size.json",
+      "size_bytes": 589,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_visit_mentioned_item.json",
+      "size_bytes": 519,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize__collector_MirUsedCollector__a___tcx__as_rustc_middle_mir_visit_Visitor__tcx___visit_rvalue.json",
+      "size_bytes": 1009,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_create_fn_mono_item___CALLSITE.json",
+      "size_bytes": 3553,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_create_fn_mono_item.json",
+      "size_bytes": 937,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_partitioning_debug_dump.json",
+      "size_bytes": 505,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_4e724819abe31fec.json",
+      "size_bytes": 3645,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_collect_roots.json",
+      "size_bytes": 1333,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_create_mono_items_for_default_impls.json",
+      "size_bytes": 549,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_util.json",
+      "size_bytes": 23586,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_collect_items_of_instance.json",
+      "size_bytes": 529,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_mono_checks_move_check_MoveCheckVisitor___tcx__check_fn_args_move_size___CALLSITE.json",
+      "size_bytes": 1985,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_mono_checks_move_check_MoveCheckVisitor___tcx__check_fn_args_move_size.json",
+      "size_bytes": 589,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize__collector_MirUsedCollector__a___tcx__as_rustc_middle_mir_visit_Visitor__tcx___visit_const_operand.json",
+      "size_bytes": 600,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_mono_checks.json",
+      "size_bytes": 501,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_literals.json",
+      "size_bytes": 81942,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_collect_roots___CALLSITE.json",
+      "size_bytes": 5201,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_RootCollector_______v__push_if_root.json",
+      "size_bytes": 961,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_3cc92a9d496b94db.json",
+      "size_bytes": 3681,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_collect_alloc___CALLSITE.json",
+      "size_bytes": 5203,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_collect_items_of_instance___CALLSITE.json",
+      "size_bytes": 1857,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_collector_autodiff.json",
+      "size_bytes": 4420,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_mono_checks_move_check_MoveCheckVisitor___tcx__operand_size_if_too_large___CALLSITE.json",
+      "size_bytes": 1995,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_mono_checks_move_check_MoveCheckVisitor___tcx__operand_size_if_too_large.json",
+      "size_bytes": 593,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_monomorphize_complexity.json",
+      "size_bytes": 33055,
+      "type": "usage_data"
+    }
+  ],
+  "output_directory": "./test_usage_data",
+  "rustc_version": "unknown",
+  "timestamp": 1767701047,
+  "total_enums": 7,
+  "total_modules": 60,
+  "total_usages": 2104
+}

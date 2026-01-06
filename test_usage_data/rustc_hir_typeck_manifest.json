@@ -1,0 +1,2227 @@
+{
+  "collector_version": "1.0.0",
+  "crate_name": "rustc_hir_typeck",
+  "dependency_manifests": [
+    "./test_usage_data/rustc_lint_manifest.json",
+    "./test_usage_data/rustc_passes_manifest.json",
+    "./test_usage_data/rustc_public_bridge_manifest.json",
+    "./test_usage_data/rustc_hashes_manifest.json",
+    "./test_usage_data/rustc_trait_selection_manifest.json",
+    "./test_usage_data/rustc_resolve_manifest.json",
+    "./test_usage_data/build_script_build_manifest.json",
+    "./test_usage_data/rustc_baked_icu_data_manifest.json",
+    "./test_usage_data/rustc_mir_build_manifest.json",
+    "./test_usage_data/rustc_incremental_manifest.json",
+    "./test_usage_data/rustc_span_manifest.json",
+    "./test_usage_data/rustc_ast_manifest.json",
+    "./test_usage_data/rustc_error_codes_manifest.json",
+    "./test_usage_data/rustc_parse_manifest.json",
+    "./test_usage_data/rustc_arena_manifest.json",
+    "./test_usage_data/rustc_expand_manifest.json",
+    "./test_usage_data/rustc_hir_id_manifest.json",
+    "./test_usage_data/rustc_fs_util_manifest.json",
+    "./test_usage_data/rustc_index_manifest.json",
+    "./test_usage_data/working_usage_collector_manifest.json",
+    "./test_usage_data/rustc_index_macros_manifest.json",
+    "./test_usage_data/rustc_parse_format_manifest.json",
+    "./test_usage_data/rustc_type_ir_macros_manifest.json",
+    "./test_usage_data/rustc_ast_pretty_manifest.json",
+    "./test_usage_data/rustc_next_trait_solver_manifest.json",
+    "./test_usage_data/rustc_builtin_macros_manifest.json",
+    "./test_usage_data/rustc_session_manifest.json",
+    "./test_usage_data/rustc_attr_parsing_manifest.json",
+    "./test_usage_data/rustc_ast_ir_manifest.json",
+    "./test_usage_data/rustc_mir_dataflow_manifest.json",
+    "./test_usage_data/rustc_fluent_macro_manifest.json",
+    "./test_usage_data/rustc_ty_utils_manifest.json",
+    "./test_usage_data/rustc_macros_manifest.json",
+    "./test_usage_data/rustc_hir_manifest.json",
+    "./test_usage_data/rustc_error_messages_manifest.json",
+    "./test_usage_data/rustc_thread_pool_manifest.json",
+    "./test_usage_data/rustc_errors_manifest.json",
+    "./test_usage_data/rustc_traits_manifest.json",
+    "./test_usage_data/rustc_data_structures_manifest.json",
+    "./test_usage_data/rustc_target_manifest.json",
+    "./test_usage_data/rustc_graphviz_manifest.json",
+    "./test_usage_data/rustc_metadata_manifest.json",
+    "./test_usage_data/rustc_public_manifest.json",
+    "./test_usage_data/rustc_serialize_manifest.json",
+    "./test_usage_data/rustc_hir_analysis_manifest.json",
+    "./test_usage_data/rustc_mir_transform_manifest.json",
+    "./test_usage_data/rustc_type_ir_manifest.json",
+    "./test_usage_data/rustc_privacy_manifest.json",
+    "./test_usage_data/rustc_lint_defs_manifest.json",
+    "./test_usage_data/rustc_const_eval_manifest.json",
+    "./test_usage_data/rustc_symbol_mangling_manifest.json",
+    "./test_usage_data/rustc_monomorphize_manifest.json",
+    "./test_usage_data/rustc_pattern_analysis_manifest.json",
+    "./test_usage_data/rustc_query_impl_manifest.json",
+    "./test_usage_data/build_common_manifest.json",
+    "./test_usage_data/rustc_abi_manifest.json",
+    "./test_usage_data/rustc_log_manifest.json",
+    "./test_usage_data/rustc_ast_lowering_manifest.json",
+    "./test_usage_data/rustc_middle_manifest.json",
+    "./test_usage_data/rustc_proc_macro_manifest.json",
+    "./test_usage_data/rustc_query_system_manifest.json",
+    "./test_usage_data/rustc_feature_manifest.json",
+    "./test_usage_data/rustc_ast_passes_manifest.json",
+    "./test_usage_data/rustc_transmute_manifest.json",
+    "./test_usage_data/rustc_lexer_manifest.json",
+    "./test_usage_data/rustc_infer_manifest.json",
+    "./test_usage_data/rustc_hir_pretty_manifest.json"
+  ],
+  "environment": {
+    "cargo_manifest_dir": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_hir_typeck",
+    "cargo_target_dir": null,
+    "profile": null,
+    "pwd": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust"
+  },
+  "generated_files": [
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_opaque_types__impl_fn_ctxt_FnCtxt______tcx___handle_opaque_type_uses_next.json",
+      "size_bytes": 1019,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_expr___CALLSITE.json",
+      "size_bytes": 1869,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fallback.json",
+      "size_bytes": 10352,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__match__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_match__closure_0____CALLSITE.json",
+      "size_bytes": 3706,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe__impl_fn_ctxt_FnCtxt__a___tcx___probe_for_return_type_for_diagnostic.json",
+      "size_bytes": 598,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___add_required_obligations_with_code___CALLSITE.json",
+      "size_bytes": 1987,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fb60ebaeacae5021.json",
+      "size_bytes": 2099,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___borrow_pat_suggestion.json",
+      "size_bytes": 548,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___check_pat_slice___CALLSITE.json",
+      "size_bytes": 3553,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_checks__impl_fn_ctxt_FnCtxt__a___tcx___check_casts.json",
+      "size_bytes": 552,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_rvalue_scopes_resolve_rvalue_scopes.json",
+      "size_bytes": 947,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_Resolver___cx___tcx__handle_term.json",
+      "size_bytes": 529,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_for_nested_field_satisfying_condition_for_diag___CALLSITE.json",
+      "size_bytes": 2027,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fallback__impl_fn_ctxt_FnCtxt______tcx___create_coercion_graph___CALLSITE.json",
+      "size_bytes": 3652,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_inspect_obligations__impl_fn_ctxt_FnCtxt__a___tcx___type_matches_expected_vid___CALLSITE.json",
+      "size_bytes": 3866,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___check_pat_ref___CALLSITE.json",
+      "size_bytes": 3535,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_autoref.json",
+      "size_bytes": 980,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_checks__impl_fn_ctxt_FnCtxt__a___tcx___check_struct_path.json",
+      "size_bytes": 564,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___check_pat_slice.json",
+      "size_bytes": 953,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___write_user_type_annotation_from_args___CALLSITE.json",
+      "size_bytes": 5681,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_inspect_obligations__impl_fn_ctxt_FnCtxt__a___tcx___obligations_for_self_ty_next___CALLSITE.json",
+      "size_bytes": 2029,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_typeck_with_inspect___CALLSITE.json",
+      "size_bytes": 3428,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___supplied_sig_of_closure.json",
+      "size_bytes": 989,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__consider_candidates___CALLSITE.json",
+      "size_bytes": 1901,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_candidates_for_bounds.json",
+      "size_bytes": 578,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__pick.json",
+      "size_bytes": 942,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_kind.json",
+      "size_bytes": 956,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_field.json",
+      "size_bytes": 1378,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm_ConfirmContext___a___tcx__fresh_receiver_args__closure_0_.json",
+      "size_bytes": 588,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__xform_method_sig___CALLSITE.json",
+      "size_bytes": 3642,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_closure_to_fn___CALLSITE.json",
+      "size_bytes": 1875,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___lookup_probe.json",
+      "size_bytes": 536,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___warn_if_unreachable.json",
+      "size_bytes": 566,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe__impl_fn_ctxt_FnCtxt__a___tcx___probe_op__closure_0_.json",
+      "size_bytes": 568,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__upvar_InferBorrowKind__tcx__as_expr_use_visitor_Delegate__tcx___borrow.json",
+      "size_bytes": 549,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_inherent_candidates_from_param.json",
+      "size_bytes": 596,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___deduce_sig_from_projection.json",
+      "size_bytes": 998,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_raw_ptr.json",
+      "size_bytes": 530,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_CoerceMany___tcx___exprs__E__coerce_inner___CALLSITE.json",
+      "size_bytes": 3566,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___error_sig_of_closure___CALLSITE.json",
+      "size_bytes": 1884,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___deduce_future_output_from_projection.json",
+      "size_bytes": 1912,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_cast.json",
+      "size_bytes": 6224,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion__impl_fn_ctxt_FnCtxt__a___tcx___coerce___CALLSITE.json",
+      "size_bytes": 1819,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__consume_or_copy___CALLSITE.json",
+      "size_bytes": 1899,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___extract_sig_from_projection_and_future_bound.json",
+      "size_bytes": 602,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___closure_sigs___CALLSITE.json",
+      "size_bytes": 3560,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__consume_body___CALLSITE.json",
+      "size_bytes": 1886,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_callee__impl_fn_ctxt_FnCtxt__a___tcx___enforce_context_effects.json",
+      "size_bytes": 558,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fallback__impl_fn_ctxt_FnCtxt______tcx___calculate_diverging_fallback.json",
+      "size_bytes": 6231,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fallback_compute_unsafe_infer_vars.json",
+      "size_bytes": 522,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___resolve_ty_and_res_fully_qualified_call.json",
+      "size_bytes": 1058,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_inspect_obligations__impl_fn_ctxt_FnCtxt__a___tcx___obligations_for_self_ty.json",
+      "size_bytes": 1052,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_inspect_obligations__impl_fn_ctxt_FnCtxt__a___tcx___predicate_has_self_ty.json",
+      "size_bytes": 1046,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_with_expectation___CALLSITE.json",
+      "size_bytes": 1902,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_suggestions__impl_fn_ctxt_FnCtxt__a___tcx___suggest_missing_return_type___CALLSITE.json",
+      "size_bytes": 9302,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_ea8a00c67e774bbe.json",
+      "size_bytes": 1898,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_pin_ref__closure_0_.json",
+      "size_bytes": 990,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_from_fn_pointer___CALLSITE.json",
+      "size_bytes": 1885,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fallback_compute_unsafe_infer_vars___CALLSITE.json",
+      "size_bytes": 1840,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___resolve_vars_with_obligations__closure_0_.json",
+      "size_bytes": 1067,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___resolve_vars_with_obligations__closure_0____CALLSITE.json",
+      "size_bytes": 3895,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___supplied_sig_of_closure__closure_0____CALLSITE.json",
+      "size_bytes": 5592,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_block___CALLSITE.json",
+      "size_bytes": 1874,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_unsized___CALLSITE.json",
+      "size_bytes": 19147,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_raw_ptr___CALLSITE.json",
+      "size_bytes": 1845,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_adjustment___CALLSITE.json",
+      "size_bytes": 1901,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_pat__closure_0_.json",
+      "size_bytes": 1879,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fallback__impl_fn_ctxt_FnCtxt______tcx___create_coercion_graph.json",
+      "size_bytes": 986,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___write_resolution.json",
+      "size_bytes": 560,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fallback__impl_fn_ctxt_FnCtxt______tcx___fallback_types.json",
+      "size_bytes": 544,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_from_inference_variable.json",
+      "size_bytes": 999,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__match__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_match.json",
+      "size_bytes": 965,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm_ConfirmContext___a___tcx__confirm.json",
+      "size_bytes": 959,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_inherent_candidates_from_object.json",
+      "size_bytes": 598,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___method_exists_for_diagnostic___CALLSITE.json",
+      "size_bytes": 1917,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_op__impl_fn_ctxt_FnCtxt__a___tcx___check_overloaded_binop.json",
+      "size_bytes": 548,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat.json",
+      "size_bytes": 1215,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_field___CALLSITE.json",
+      "size_bytes": 5293,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe__impl_fn_ctxt_FnCtxt__a___tcx___probe_for_return_type_for_diagnostic___CALLSITE.json",
+      "size_bytes": 1992,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar__impl_fn_ctxt_FnCtxt__a___tcx___compute_min_captures___CALLSITE.json",
+      "size_bytes": 3616,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar__impl_fn_ctxt_FnCtxt__a___tcx___final_upvar_tys__closure_0_.json",
+      "size_bytes": 566,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback__impl_fn_ctxt_FnCtxt__a___tcx___resolve_type_vars_in_body.json",
+      "size_bytes": 1001,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_with_expectation_and_args.json",
+      "size_bytes": 2336,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_structs.json",
+      "size_bytes": 42262,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__visit_opaque_types.json",
+      "size_bytes": 546,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_cast_CastCheck___tcx__check_ptr_ptr_cast___CALLSITE.json",
+      "size_bytes": 1844,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_rvalue_scopes_resolve_rvalue_scopes___CALLSITE.json",
+      "size_bytes": 3583,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__pick_all_method__closure_1____CALLSITE.json",
+      "size_bytes": 1946,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___deduce_future_output_from_obligations.json",
+      "size_bytes": 1031,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__pick_reborrow_pin_method___CALLSITE.json",
+      "size_bytes": 1924,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___resolve_fully_qualified_call___CALLSITE.json",
+      "size_bytes": 3695,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___resolve_fully_qualified_call__closure_0_.json",
+      "size_bytes": 1040,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_place_op__impl_fn_ctxt_FnCtxt__a___tcx___try_mutable_overloaded_place_op.json",
+      "size_bytes": 578,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_extension_candidates_for_trait___CALLSITE.json",
+      "size_bytes": 3849,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe__impl_fn_ctxt_FnCtxt__a___tcx___probe_op.json",
+      "size_bytes": 542,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_inherent_impl_probe.json",
+      "size_bytes": 574,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar__impl_fn_ctxt_FnCtxt__a___tcx___compute_2229_migrations_for_drop.json",
+      "size_bytes": 3626,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar__impl_fn_ctxt_FnCtxt__a___tcx___compute_2229_migrations_for_drop___CALLSITE.json",
+      "size_bytes": 14462,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__consume_clone_or_copy___CALLSITE.json",
+      "size_bytes": 1929,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_check_check_fn___CALLSITE.json",
+      "size_bytes": 5046,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_adjustment.json",
+      "size_bytes": 559,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__pat_ty_unadjusted.json",
+      "size_bytes": 995,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__cat_pattern___CALLSITE.json",
+      "size_bytes": 5381,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_checks__impl_fn_ctxt_FnCtxt__a___tcx___check_repeat_exprs.json",
+      "size_bytes": 566,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_typeck_root_ctxt_TypeckRootCtxt___tcx__register_predicate___CALLSITE.json",
+      "size_bytes": 1907,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___no_such_field_err___CALLSITE.json",
+      "size_bytes": 1854,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__upvar_InferBorrowKind__tcx__as_expr_use_visitor_Delegate__tcx___consume.json",
+      "size_bytes": 551,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_suggest__impl_fn_ctxt_FnCtxt__a___tcx___impl_into_iterator_should_be_iterator.json",
+      "size_bytes": 4516,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___resolve_ty_and_res_fully_qualified_call___CALLSITE.json",
+      "size_bytes": 3866,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__upvar_InferBorrowKind__tcx__as_expr_use_visitor_Delegate__tcx___use_cloned___CALLSITE.json",
+      "size_bytes": 1849,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__write_ty_to_typeck_results.json",
+      "size_bytes": 562,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_inherent_candidates_from_object___CALLSITE.json",
+      "size_bytes": 2004,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_root.json",
+      "size_bytes": 116271,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_suggest__impl_fn_ctxt_FnCtxt__a___tcx___suggest_traits_to_import___CALLSITE.json",
+      "size_bytes": 3742,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_inspect_obligations__impl_fn_ctxt_FnCtxt__a___tcx___obligations_for_self_ty_next.json",
+      "size_bytes": 612,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___try_structurally_resolve_const___CALLSITE.json",
+      "size_bytes": 3785,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___check_pat_inner___CALLSITE.json",
+      "size_bytes": 6981,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___write_args.json",
+      "size_bytes": 548,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_checks__impl_fn_ctxt_FnCtxt__a___tcx___check_argument_types__closure_1____CALLSITE.json",
+      "size_bytes": 1989,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm_ConfirmContext___a___tcx__instantiate_method_args___CALLSITE.json",
+      "size_bytes": 1933,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__consider_candidates.json",
+      "size_bytes": 556,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_typeck_root_ctxt_TypeckRootCtxt___tcx__register_predicate.json",
+      "size_bytes": 558,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___supplied_sig_of_closure___CALLSITE.json",
+      "size_bytes": 3659,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar__impl_fn_ctxt_FnCtxt__a___tcx___compute_2229_migrations___CALLSITE.json",
+      "size_bytes": 1887,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___check_pat_ident.json",
+      "size_bytes": 536,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_block.json",
+      "size_bytes": 549,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_pin_ref__closure_0____CALLSITE.json",
+      "size_bytes": 3692,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe__impl_fn_ctxt_FnCtxt__a___tcx___probe_op___CALLSITE.json",
+      "size_bytes": 1854,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_suggest__impl_fn_ctxt_FnCtxt__a___tcx___report_method_error___CALLSITE.json",
+      "size_bytes": 1917,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___deduce_sig_from_projection___CALLSITE.json",
+      "size_bytes": 3686,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___extract_sig_from_projection.json",
+      "size_bytes": 1001,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__pick_method___CALLSITE.json",
+      "size_bytes": 3599,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___check_pat_ident___CALLSITE.json",
+      "size_bytes": 1839,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___instantiate_value_path.json",
+      "size_bytes": 1442,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__pick_method.json",
+      "size_bytes": 963,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_checks__impl_fn_ctxt_FnCtxt__a___tcx___check_argument_types__closure_1_.json",
+      "size_bytes": 596,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___get_field_candidates_considering_privacy_for_diag___CALLSITE.json",
+      "size_bytes": 2014,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__consider_probe__closure_0___closure_0_.json",
+      "size_bytes": 2858,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_extension_candidates_for_traits_in_scope.json",
+      "size_bytes": 616,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___write_user_type_annotation___CALLSITE.json",
+      "size_bytes": 5551,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_cast.json",
+      "size_bytes": 538,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_callee.json",
+      "size_bytes": 4698,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_cast_CastCheck___tcx__check.json",
+      "size_bytes": 2135,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_intrinsicck_check_transmute___CALLSITE.json",
+      "size_bytes": 3511,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm__impl_fn_ctxt_FnCtxt__a___tcx___confirm_method___CALLSITE.json",
+      "size_bytes": 1894,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe.json",
+      "size_bytes": 34905,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___check_pat_ref.json",
+      "size_bytes": 947,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_cast__impl_fn_ctxt_FnCtxt__a___tcx___pointer_kind___CALLSITE.json",
+      "size_bytes": 1829,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___check_pat.json",
+      "size_bytes": 524,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___borrow_pat_suggestion___CALLSITE.json",
+      "size_bytes": 1869,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_from_inference_variable___CALLSITE.json",
+      "size_bytes": 3719,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___resolve_vars_with_obligations.json",
+      "size_bytes": 1028,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fallback__impl_fn_ctxt_FnCtxt______tcx___calculate_diverging_fallback___CALLSITE.json",
+      "size_bytes": 25163,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_cast___CALLSITE.json",
+      "size_bytes": 1844,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_place_op__impl_fn_ctxt_FnCtxt__a___tcx___convert_place_derefs_to_mutable.json",
+      "size_bytes": 1016,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_typeck_root_ctxt_TypeckRootCtxt___tcx__update_infer_var_info.json",
+      "size_bytes": 564,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_callee_DeferredCallResolution___tcx__resolve.json",
+      "size_bytes": 936,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__consume_or_clone_expr.json",
+      "size_bytes": 571,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_suggest__impl_fn_ctxt_FnCtxt__a___tcx___suggest_await_before_method.json",
+      "size_bytes": 584,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__xform_self_ty___CALLSITE.json",
+      "size_bytes": 1869,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar__impl_fn_ctxt_FnCtxt__a___tcx___compute_2229_migrations.json",
+      "size_bytes": 556,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__visit_node_id.json",
+      "size_bytes": 1378,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__visit_rust_2024_migration_desugared_pats___CALLSITE.json",
+      "size_bytes": 3822,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_cast_CastCheck___tcx__check___CALLSITE.json",
+      "size_bytes": 8489,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_pin_ref.json",
+      "size_bytes": 530,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar_should_do_rust_2021_incompatible_closure_captures_analysis.json",
+      "size_bytes": 582,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___lookup_probe___CALLSITE.json",
+      "size_bytes": 1837,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__consume_or_copy.json",
+      "size_bytes": 559,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_suggest.json",
+      "size_bytes": 23243,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_borrowed_pointer.json",
+      "size_bytes": 1408,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_pin_ref___CALLSITE.json",
+      "size_bytes": 1843,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__upvar_InferBorrowKind__tcx__as_expr_use_visitor_Delegate__tcx___mutate___CALLSITE.json",
+      "size_bytes": 1829,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_CoerceMany___tcx___exprs__E__coerce_inner.json",
+      "size_bytes": 956,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_adjust_fulfillment_errors.json",
+      "size_bytes": 4014,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__cat_deref.json",
+      "size_bytes": 547,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__gather_locals_GatherLocalsVisitor__a___tcx__as_rustc_hir_intravisit_Visitor__tcx___visit_pat.json",
+      "size_bytes": 583,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_pat___CALLSITE.json",
+      "size_bytes": 1864,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm_ConfirmContext___a___tcx__instantiate_method_args.json",
+      "size_bytes": 570,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_op__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_binop.json",
+      "size_bytes": 536,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__borrow_expr.json",
+      "size_bytes": 551,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___suggest_method_call.json",
+      "size_bytes": 550,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_demand__impl_fn_ctxt_FnCtxt__a___tcx___demand_coerce_diag___CALLSITE.json",
+      "size_bytes": 1867,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___lookup_method.json",
+      "size_bytes": 1374,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm_ConfirmContext___a___tcx__instantiate_method_sig___CALLSITE.json",
+      "size_bytes": 7298,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_method_autoderef_steps___CALLSITE.json",
+      "size_bytes": 3592,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___resolve_coroutine_interiors.json",
+      "size_bytes": 582,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_with_expectation.json",
+      "size_bytes": 562,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_demand__impl_fn_ctxt_FnCtxt__a___tcx___demand_suptype_with_origin___CALLSITE.json",
+      "size_bytes": 1907,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fallback__impl_fn_ctxt_FnCtxt______tcx___type_inference_fallback.json",
+      "size_bytes": 992,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___check_pat___CALLSITE.json",
+      "size_bytes": 1807,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_probe___CALLSITE.json",
+      "size_bytes": 1874,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__visit_rust_2024_migration_desugared_pats.json",
+      "size_bytes": 1038,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__consider_probe.json",
+      "size_bytes": 972,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___resolve_vars_with_obligations___CALLSITE.json",
+      "size_bytes": 3776,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_captures.json",
+      "size_bytes": 1859,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_naked_functions.json",
+      "size_bytes": 15410,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_suggestions__impl_fn_ctxt_FnCtxt__a___tcx___suggest_floating_point_literal.json",
+      "size_bytes": 600,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__match__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_match__closure_0_.json",
+      "size_bytes": 1004,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___write_ty___CALLSITE.json",
+      "size_bytes": 1859,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___write_user_type_annotation_from_args.json",
+      "size_bytes": 1498,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_checks__impl_fn_ctxt_FnCtxt__a___tcx___check_argument_types.json",
+      "size_bytes": 1903,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt.json",
+      "size_bytes": 17364,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe__impl_fn_ctxt_FnCtxt__a___tcx___probe_for_name_many.json",
+      "size_bytes": 564,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__xform_method_sig.json",
+      "size_bytes": 978,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___resolve_fully_qualified_call.json",
+      "size_bytes": 1001,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_borrowed_pointer___CALLSITE.json",
+      "size_bytes": 5422,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_extension_candidates_for_trait.json",
+      "size_bytes": 1047,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_expr.json",
+      "size_bytes": 547,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___write_user_type_annotation.json",
+      "size_bytes": 1458,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_inherent_impl_probe___CALLSITE.json",
+      "size_bytes": 1944,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__pick_reborrow_pin_method.json",
+      "size_bytes": 566,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_place_op__impl_fn_ctxt_FnCtxt__a___tcx___try_overloaded_place_op.json",
+      "size_bytes": 562,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_from_fn_pointer.json",
+      "size_bytes": 546,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_suggestions__impl_fn_ctxt_FnCtxt__a___tcx___try_suggest_return_impl_trait.json",
+      "size_bytes": 598,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__pick___CALLSITE.json",
+      "size_bytes": 3534,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__visit_skipped_ref_pats.json",
+      "size_bytes": 984,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_demand__impl_fn_ctxt_FnCtxt__a___tcx___demand_suptype_with_origin.json",
+      "size_bytes": 564,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___lower_ty_saving_user_provided_ty___CALLSITE.json",
+      "size_bytes": 5629,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_autoref___CALLSITE.json",
+      "size_bytes": 3640,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___get_field_candidates_considering_privacy_for_diag.json",
+      "size_bytes": 606,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fallback__impl_fn_ctxt_FnCtxt______tcx___fallback_if_possible___CALLSITE.json",
+      "size_bytes": 1889,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_callee__impl_fn_ctxt_FnCtxt__a___tcx___try_overloaded_call_step.json",
+      "size_bytes": 989,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___extract_sig_from_projection_and_future_bound___CALLSITE.json",
+      "size_bytes": 2004,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___report_ambiguity_errors.json",
+      "size_bytes": 574,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm_ConfirmContext___a___tcx__unify_receivers___CALLSITE.json",
+      "size_bytes": 1893,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_extension_candidates_for_all_traits.json",
+      "size_bytes": 606,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_op.json",
+      "size_bytes": 23314,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_place_op__impl_fn_ctxt_FnCtxt__a___tcx___try_index_step___CALLSITE.json",
+      "size_bytes": 3589,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_captures___CALLSITE.json",
+      "size_bytes": 1889,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_rvalue_scopes_record_rvalue_scope___CALLSITE.json",
+      "size_bytes": 1835,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar__impl_fn_ctxt_FnCtxt__a___tcx___compute_min_captures__closure_1_.json",
+      "size_bytes": 995,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___lookup_method_for_operator___CALLSITE.json",
+      "size_bytes": 8987,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_place_op__impl_fn_ctxt_FnCtxt__a___tcx___convert_place_op_to_mutable___CALLSITE.json",
+      "size_bytes": 7270,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___lookup_method___CALLSITE.json",
+      "size_bytes": 5278,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___deduce_closure_signature___CALLSITE.json",
+      "size_bytes": 3668,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__upvar_InferBorrowKind__tcx__as_expr_use_visitor_Delegate__tcx___use_cloned.json",
+      "size_bytes": 557,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_suggestions__impl_fn_ctxt_FnCtxt__a___tcx___suggest_missing_return_type.json",
+      "size_bytes": 2378,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___merge_supplied_sig_with_expectation.json",
+      "size_bytes": 1025,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm_ConfirmContext___a___tcx__unify_receivers.json",
+      "size_bytes": 554,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___sig_of_closure_no_expectation.json",
+      "size_bytes": 572,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_pat.json",
+      "size_bytes": 545,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_suggestions__impl_fn_ctxt_FnCtxt__a___tcx___suggest_deref_unwrap_or___CALLSITE.json",
+      "size_bytes": 1962,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___extract_sig_from_projection___CALLSITE.json",
+      "size_bytes": 3697,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm_ConfirmContext___a___tcx__add_obligations.json",
+      "size_bytes": 554,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_extension_candidates_for_all_traits___CALLSITE.json",
+      "size_bytes": 2024,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_suggest__impl_fn_ctxt_FnCtxt__a___tcx___suggest_traits_to_import.json",
+      "size_bytes": 1016,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_place_op__impl_fn_ctxt_FnCtxt__a___tcx___convert_place_derefs_to_mutable___CALLSITE.json",
+      "size_bytes": 3742,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_op__impl_fn_ctxt_FnCtxt__a___tcx___lookup_op_method.json",
+      "size_bytes": 536,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_struct_fields.json",
+      "size_bytes": 556,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__visit_node_id___CALLSITE.json",
+      "size_bytes": 5309,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___lint_non_exhaustive_omitted_patterns.json",
+      "size_bytes": 9940,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___apply_adjustments.json",
+      "size_bytes": 1852,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__upvar_InferBorrowKind__tcx__as_expr_use_visitor_Delegate__tcx___borrow___CALLSITE.json",
+      "size_bytes": 1829,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe__impl_fn_ctxt_FnCtxt__a___tcx___probe_for_name.json",
+      "size_bytes": 554,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__visit_pat_adjustments.json",
+      "size_bytes": 1410,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe__impl_fn_ctxt_FnCtxt__a___tcx___probe_for_name___CALLSITE.json",
+      "size_bytes": 1882,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___sig_of_closure_with_expectation.json",
+      "size_bytes": 576,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_struct_fields___CALLSITE.json",
+      "size_bytes": 1889,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_closure_to_fn.json",
+      "size_bytes": 542,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_inherent_candidates_from_param___CALLSITE.json",
+      "size_bytes": 1999,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__pat_ty_unadjusted___CALLSITE.json",
+      "size_bytes": 3685,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_suggest__impl_fn_ctxt_FnCtxt__a___tcx___report_no_match_method_error___CALLSITE.json",
+      "size_bytes": 1962,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__visit_pat_adjustments___CALLSITE.json",
+      "size_bytes": 5413,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_suggest__impl_fn_ctxt_FnCtxt__a___tcx___report_method_error.json",
+      "size_bytes": 568,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_probe.json",
+      "size_bytes": 546,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_suggest__impl_fn_ctxt_FnCtxt__a___tcx___report_no_match_method_error.json",
+      "size_bytes": 586,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_suggest__impl_fn_ctxt_FnCtxt__a___tcx___suggest_assoc_method_call___CALLSITE.json",
+      "size_bytes": 1949,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__consume_clone_or_copy.json",
+      "size_bytes": 571,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__upvar_InferBorrowKind__tcx__as_expr_use_visitor_Delegate__tcx___consume___CALLSITE.json",
+      "size_bytes": 1834,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_suggest__impl_fn_ctxt_FnCtxt__a___tcx___suggest_await_before_method___CALLSITE.json",
+      "size_bytes": 1959,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar__impl_fn_ctxt_FnCtxt__a___tcx___analyze_closure.json",
+      "size_bytes": 1797,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_rvalue_scopes.json",
+      "size_bytes": 28481,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_gather_locals_GatherLocalsVisitor___a___tcx__declare.json",
+      "size_bytes": 958,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_suggest__impl_fn_ctxt_FnCtxt__a___tcx___suggest_assoc_method_call.json",
+      "size_bytes": 580,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__consume_body.json",
+      "size_bytes": 553,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_1af128b4a3d1b2f6.json",
+      "size_bytes": 3972,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_suggestions__impl_fn_ctxt_FnCtxt__a___tcx___suggest_deref_unwrap_or.json",
+      "size_bytes": 586,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__cat_deref___CALLSITE.json",
+      "size_bytes": 1871,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_rvalue_scopes_record_rvalue_scope.json",
+      "size_bytes": 520,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__match.json",
+      "size_bytes": 1735,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__unify_raw___CALLSITE.json",
+      "size_bytes": 1820,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___resolve_coroutine_interiors___CALLSITE.json",
+      "size_bytes": 1952,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_check_check_fn.json",
+      "size_bytes": 1286,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__match__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_match___CALLSITE.json",
+      "size_bytes": 3587,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce___CALLSITE.json",
+      "size_bytes": 6895,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_for_nested_field_satisfying_condition_for_diag.json",
+      "size_bytes": 612,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_suggestions__impl_fn_ctxt_FnCtxt__a___tcx___try_suggest_return_impl_trait___CALLSITE.json",
+      "size_bytes": 1994,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___ban_nonexisting_field___CALLSITE.json",
+      "size_bytes": 1874,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_extension_candidates_for_traits_in_scope___CALLSITE.json",
+      "size_bytes": 2049,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___sig_of_closure_with_expectation___CALLSITE.json",
+      "size_bytes": 1937,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_callee_DeferredCallResolution___tcx__resolve___CALLSITE.json",
+      "size_bytes": 3506,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___no_such_field_err.json",
+      "size_bytes": 542,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__cat_pattern.json",
+      "size_bytes": 1403,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___apply_adjustments___CALLSITE.json",
+      "size_bytes": 7200,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__pick_all_method__closure_1_.json",
+      "size_bytes": 574,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_callee__impl_fn_ctxt_FnCtxt__a___tcx___enforce_context_effects___CALLSITE.json",
+      "size_bytes": 1892,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___write_args___CALLSITE.json",
+      "size_bytes": 1869,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_gather_locals_GatherLocalsVisitor___a___tcx__declare___CALLSITE.json",
+      "size_bytes": 3570,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__consider_probe__closure_0___closure_0____CALLSITE.json",
+      "size_bytes": 11276,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___try_structurally_resolve_type.json",
+      "size_bytes": 1028,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___lower_ty_saving_user_provided_ty.json",
+      "size_bytes": 1482,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_inspect_obligations__impl_fn_ctxt_FnCtxt__a___tcx___obligations_for_self_ty___CALLSITE.json",
+      "size_bytes": 3848,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__cat_expr_unadjusted.json",
+      "size_bytes": 567,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___instantiate_bounds___CALLSITE.json",
+      "size_bytes": 1909,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___lookup_method_for_operator.json",
+      "size_bytes": 2288,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___closure_sigs.json",
+      "size_bytes": 956,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_checks__impl_fn_ctxt_FnCtxt__a___tcx___check_asms___CALLSITE.json",
+      "size_bytes": 1874,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___resolve_fully_qualified_call__closure_0____CALLSITE.json",
+      "size_bytes": 3814,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_op__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_binop___CALLSITE.json",
+      "size_bytes": 1839,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_place_op__impl_fn_ctxt_FnCtxt__a___tcx___try_mutable_overloaded_place_op___CALLSITE.json",
+      "size_bytes": 1944,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar__impl_fn_ctxt_FnCtxt__a___tcx___final_upvar_tys__closure_0____CALLSITE.json",
+      "size_bytes": 1914,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__write_ty_to_typeck_results___CALLSITE.json",
+      "size_bytes": 1916,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_typeck_with_inspect__closure_0_.json",
+      "size_bytes": 935,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_enums.json",
+      "size_bytes": 18562,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_checks__impl_fn_ctxt_FnCtxt__a___tcx___check_repeat_exprs___CALLSITE.json",
+      "size_bytes": 1914,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe__impl_fn_ctxt_FnCtxt__a___tcx___probe_for_name_many___CALLSITE.json",
+      "size_bytes": 1907,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___deduce_closure_signature_from_predicates___CALLSITE.json",
+      "size_bytes": 1984,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_inspect_obligations__impl_fn_ctxt_FnCtxt__a___tcx___type_matches_expected_vid__closure_0_.json",
+      "size_bytes": 632,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_intrinsicck_check_transmute.json",
+      "size_bytes": 923,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___add_required_obligations_with_code.json",
+      "size_bytes": 596,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm_ConfirmContext___a___tcx__add_obligations___CALLSITE.json",
+      "size_bytes": 1893,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_demand__impl_fn_ctxt_FnCtxt__a___tcx___demand_coerce_diag.json",
+      "size_bytes": 548,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar.json",
+      "size_bytes": 75611,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__visit_skipped_ref_pats___CALLSITE.json",
+      "size_bytes": 3660,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar__impl_fn_ctxt_FnCtxt__a___tcx___analyze_closure___CALLSITE.json",
+      "size_bytes": 7013,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___instantiate_value_path___CALLSITE.json",
+      "size_bytes": 5499,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__visit_adjustments.json",
+      "size_bytes": 1394,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_intrinsicck.json",
+      "size_bytes": 52544,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_from_fn_item.json",
+      "size_bytes": 540,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_7a3861ff04e2017.json",
+      "size_bytes": 2095,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___report_ambiguity_errors___CALLSITE.json",
+      "size_bytes": 1932,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_typeck_with_inspect__closure_0____CALLSITE.json",
+      "size_bytes": 3547,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___merge_supplied_sig_with_expectation___CALLSITE.json",
+      "size_bytes": 3767,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_checks__impl_fn_ctxt_FnCtxt__a___tcx___check_asms.json",
+      "size_bytes": 550,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__consider_probe___CALLSITE.json",
+      "size_bytes": 3624,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck__upvar_InferBorrowKind__tcx__as_expr_use_visitor_Delegate__tcx___mutate.json",
+      "size_bytes": 549,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_typeck_with_inspect.json",
+      "size_bytes": 896,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_cast__impl_fn_ctxt_FnCtxt__a___tcx___pointer_kind.json",
+      "size_bytes": 532,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__consume_expr.json",
+      "size_bytes": 553,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_place_op__impl_fn_ctxt_FnCtxt__a___tcx___try_index_step.json",
+      "size_bytes": 965,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_checks__impl_fn_ctxt_FnCtxt__a___tcx___check_struct_path___CALLSITE.json",
+      "size_bytes": 1909,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__probe_for_similar_candidate.json",
+      "size_bytes": 1011,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___ban_nonexisting_field.json",
+      "size_bytes": 550,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__pat_ty_adjusted.json",
+      "size_bytes": 559,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_place_op__impl_fn_ctxt_FnCtxt__a___tcx___convert_place_op_to_mutable.json",
+      "size_bytes": 1872,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_Resolver___cx___tcx__handle_term___CALLSITE.json",
+      "size_bytes": 1836,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_unsized.json",
+      "size_bytes": 4741,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___try_structurally_resolve_const.json",
+      "size_bytes": 1031,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_loops.json",
+      "size_bytes": 2087,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___check_pat_lit___CALLSITE.json",
+      "size_bytes": 1829,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__visit_opaque_types___CALLSITE.json",
+      "size_bytes": 1874,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce_from_fn_item___CALLSITE.json",
+      "size_bytes": 1870,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_place_op__impl_fn_ctxt_FnCtxt__a___tcx___try_overloaded_place_op___CALLSITE.json",
+      "size_bytes": 1904,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_prelude_edition_lints__impl_fn_ctxt_FnCtxt__a___tcx___lint_edition_dependent_dot_call.json",
+      "size_bytes": 620,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__consume_expr___CALLSITE.json",
+      "size_bytes": 1884,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__consume_or_clone_expr___CALLSITE.json",
+      "size_bytes": 1929,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___deduce_closure_signature_from_predicates.json",
+      "size_bytes": 594,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_27b3ac44067f1597.json",
+      "size_bytes": 2079,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__consider_probe__closure_0_.json",
+      "size_bytes": 572,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_cast_CastCheck___tcx__check_ptr_ptr_cast.json",
+      "size_bytes": 529,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_callee__impl_fn_ctxt_FnCtxt__a___tcx___try_overloaded_call_step___CALLSITE.json",
+      "size_bytes": 3659,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__xform_self_ty.json",
+      "size_bytes": 544,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_suggestions__impl_fn_ctxt_FnCtxt__a___tcx___suggest_missing_break_or_return_expr.json",
+      "size_bytes": 3737,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__walk_pat__closure_0____CALLSITE.json",
+      "size_bytes": 7301,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion.json",
+      "size_bytes": 2097,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__coerce.json",
+      "size_bytes": 1753,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_with_expectation_and_args___CALLSITE.json",
+      "size_bytes": 9157,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___write_resolution___CALLSITE.json",
+      "size_bytes": 1897,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion__impl_fn_ctxt_FnCtxt__a___tcx___try_find_coercion_lub.json",
+      "size_bytes": 1414,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__cat_expr_unadjusted___CALLSITE.json",
+      "size_bytes": 1921,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___instantiate_bounds.json",
+      "size_bytes": 564,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm_ConfirmContext___a___tcx__fresh_receiver_args__closure_0____CALLSITE.json",
+      "size_bytes": 1978,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe__impl_fn_ctxt_FnCtxt__a___tcx___probe_op__closure_0____CALLSITE.json",
+      "size_bytes": 1919,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar_should_do_rust_2021_incompatible_closure_captures_analysis___CALLSITE.json",
+      "size_bytes": 1988,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___error_sig_of_closure.json",
+      "size_bytes": 554,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_inspect_obligations__impl_fn_ctxt_FnCtxt__a___tcx___predicate_has_self_ty___CALLSITE.json",
+      "size_bytes": 3830,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_e301776141fda365.json",
+      "size_bytes": 640,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion_Coerce___f___tcx__unify_raw.json",
+      "size_bytes": 520,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_checks__impl_fn_ctxt_FnCtxt__a___tcx___report_arg_errors.json",
+      "size_bytes": 1947,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm_ConfirmContext___a___tcx__instantiate_method_sig.json",
+      "size_bytes": 1876,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion__impl_fn_ctxt_FnCtxt__a___tcx___coerce.json",
+      "size_bytes": 528,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__pat_ty_adjusted___CALLSITE.json",
+      "size_bytes": 1901,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_checks__impl_fn_ctxt_FnCtxt__a___tcx___check_casts___CALLSITE.json",
+      "size_bytes": 1879,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fallback__impl_fn_ctxt_FnCtxt______tcx___type_inference_fallback___CALLSITE.json",
+      "size_bytes": 3670,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_6f4a61bfe878a890.json",
+      "size_bytes": 640,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___suggest_method_call___CALLSITE.json",
+      "size_bytes": 1872,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback_WritebackCx___cx___tcx__visit_adjustments___CALLSITE.json",
+      "size_bytes": 5361,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_suggestions__impl_fn_ctxt_FnCtxt__a___tcx___suggest_calling_boxed_future_when_appropriate.json",
+      "size_bytes": 1094,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_constants.json",
+      "size_bytes": 274976,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_method_autoderef_steps.json",
+      "size_bytes": 950,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_literals.json",
+      "size_bytes": 812613,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_closure.json",
+      "size_bytes": 1398,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___deduce_closure_signature.json",
+      "size_bytes": 992,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_check.json",
+      "size_bytes": 68006,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_inspect_obligations__impl_fn_ctxt_FnCtxt__a___tcx___type_matches_expected_vid.json",
+      "size_bytes": 1058,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__probe_for_similar_candidate___CALLSITE.json",
+      "size_bytes": 3741,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___check_pat_lit.json",
+      "size_bytes": 532,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_f98be0c45a9c9b39.json",
+      "size_bytes": 2049,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm_ConfirmContext___a___tcx__confirm___CALLSITE.json",
+      "size_bytes": 3583,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_coercion__impl_fn_ctxt_FnCtxt__a___tcx___try_find_coercion_lub___CALLSITE.json",
+      "size_bytes": 5410,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___deduce_future_output_from_projection___CALLSITE.json",
+      "size_bytes": 7406,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__assemble_candidates_for_bounds___CALLSITE.json",
+      "size_bytes": 1956,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_suggest__impl_fn_ctxt_FnCtxt__a___tcx___type_derefs_to_local.json",
+      "size_bytes": 3637,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___write_method_call_and_enforce_effects.json",
+      "size_bytes": 602,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___write_method_call_and_enforce_effects___CALLSITE.json",
+      "size_bytes": 2002,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_op__impl_fn_ctxt_FnCtxt__a___tcx___lookup_op_method___CALLSITE.json",
+      "size_bytes": 1839,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_pat__impl_fn_ctxt_FnCtxt__a___tcx___check_pat_inner.json",
+      "size_bytes": 1787,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_upvar__impl_fn_ctxt_FnCtxt__a___tcx___compute_min_captures.json",
+      "size_bytes": 974,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_writeback__impl_fn_ctxt_FnCtxt__a___tcx___resolve_type_vars_in_body___CALLSITE.json",
+      "size_bytes": 3697,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___warn_if_unreachable___CALLSITE.json",
+      "size_bytes": 1914,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_typeck_root_ctxt_TypeckRootCtxt___tcx__update_infer_var_info___CALLSITE.json",
+      "size_bytes": 1924,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___write_ty.json",
+      "size_bytes": 544,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr_use_visitor_ExprUseVisitor___tcx__Cx__D__borrow_expr___CALLSITE.json",
+      "size_bytes": 1879,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_opaque_types__impl_fn_ctxt_FnCtxt______tcx___handle_opaque_type_uses_next___CALLSITE.json",
+      "size_bytes": 3749,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___deduce_future_output_from_obligations___CALLSITE.json",
+      "size_bytes": 3785,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fallback__impl_fn_ctxt_FnCtxt______tcx___fallback_types___CALLSITE.json",
+      "size_bytes": 1859,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_closure___CALLSITE.json",
+      "size_bytes": 5356,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt__impl__impl_fn_ctxt_FnCtxt__a___tcx___try_structurally_resolve_type___CALLSITE.json",
+      "size_bytes": 3776,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fn_ctxt_suggestions__impl_fn_ctxt_FnCtxt__a___tcx___suggest_floating_point_literal___CALLSITE.json",
+      "size_bytes": 1995,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_confirm__impl_fn_ctxt_FnCtxt__a___tcx___confirm_method.json",
+      "size_bytes": 558,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___supplied_sig_of_closure__closure_0_.json",
+      "size_bytes": 1470,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_expr__impl_fn_ctxt_FnCtxt__a___tcx___check_expr_kind___CALLSITE.json",
+      "size_bytes": 3560,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_fallback__impl_fn_ctxt_FnCtxt______tcx___fallback_if_possible.json",
+      "size_bytes": 556,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method__impl_fn_ctxt_FnCtxt__a___tcx___method_exists_for_diagnostic.json",
+      "size_bytes": 568,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_closure__impl_fn_ctxt_FnCtxt__a___tcx___sig_of_closure_no_expectation___CALLSITE.json",
+      "size_bytes": 1927,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_method_probe_ProbeContext___a___tcx__consider_probe__closure_0____CALLSITE.json",
+      "size_bytes": 1941,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_op__impl_fn_ctxt_FnCtxt__a___tcx___check_overloaded_binop___CALLSITE.json",
+      "size_bytes": 1869,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_typeck_complexity.json",
+      "size_bytes": 85454,
+      "type": "usage_data"
+    }
+  ],
+  "output_directory": "./test_usage_data",
+  "rustc_version": "unknown",
+  "timestamp": 1767701123,
+  "total_enums": 9,
+  "total_modules": 427,
+  "total_usages": 6570
+}

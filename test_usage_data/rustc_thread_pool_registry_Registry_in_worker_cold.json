@@ -1,0 +1,39 @@
+{
+  "crate": "rustc_thread_pool",
+  "module": "registry::Registry::in_worker_cold",
+  "usages": [
+    {
+      "symbol": "new",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1109 ~ rustc_thread_pool[1e00]::registry::{impl#6}::in_worker_cold::LOCK_LATCH)",
+      "used_def_id": "DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)",
+      "user_crate": "rustc_thread_pool",
+      "used_crate": "std"
+    },
+    {
+      "symbol": "get_or_init",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1109 ~ rustc_thread_pool[1e00]::registry::{impl#6}::in_worker_cold::LOCK_LATCH)",
+      "used_def_id": "DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)",
+      "user_crate": "rustc_thread_pool",
+      "used_crate": "std"
+    },
+    {
+      "symbol": "get_or_init",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1109 ~ rustc_thread_pool[1e00]::registry::{impl#6}::in_worker_cold::LOCK_LATCH)",
+      "used_def_id": "DefId(1:13076 ~ std[93f5]::sys::thread_local::native::lazy::{impl#2}::get_or_init)",
+      "user_crate": "rustc_thread_pool",
+      "used_crate": "std"
+    }
+  ]
+}

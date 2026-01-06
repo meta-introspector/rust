@@ -1,0 +1,2999 @@
+{
+  "crate": "rustc_const_eval",
+  "items": [
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "NonConstClosureNote",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "check_validity_requirement_strict",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RangeSet",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "report_eval_error",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "EscapingMutBorrow",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "check_validity_requirement",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "valtree_to_ref",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnmarkedIntrinsicExposed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "mir_assign_valid_types",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "dump_place",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "reconstruct_place_meta",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "DiagImportance",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RefTracking",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConditionallyConstCall",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PanicNonStr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "parent_impl_or_trait_constness",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CanAccessMutGlobal",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "create_static_alloc",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AllocInfo",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstFmtMacroCall",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "OpTy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "checking_enabled",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "intern_as_new_static",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "in_operand",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstHeapPtrInFinal",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "FnArg",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Place",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_int_bool_float_or_char",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnstableInStableExposed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "in_place",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "eval_to_allocation_raw_provider",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_offset_misaligned",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ReturnAction",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RawPtrComparison",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TypeNamePrinter",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Checker",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstFnCall",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnallowedOpInConstContext",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "in_any_value_of_ty",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstTryBlockFromOutput",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "EscapingCellBorrow",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "create_valtree_place",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "add_range_arg",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Status",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ConstConditionsHold",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RawPtrToIntErr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "mk_eval_cx_to_read_const_val",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "check_validity_requirement_lax",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "branches",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstQuestionBranch",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "FnVal",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ImmTy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "eval_in_interpreter",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "constness",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ReturnContinuation",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Qualifs",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_unstable_in_stable_exposed_error",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ThreadLocalAccess",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DanglingPtrInFinal",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "in_rvalue",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NestedStaticInThreadLocal",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "alloc_type_name",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "print_scalar",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MutableBorrowEscaping",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstIntrinsic",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_within_packed",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Zst",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnallowedFnPointerCall",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NeedsDrop",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "binop_right_homogeneous",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "relate_types",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_fn_or_trait_safe_to_expose_on_stable",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "check_live_drops",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "SpanGuard",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "InternKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ValidityVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "try_destructure_mir_constant_for_user_output",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstQuestionFromResidual",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnstableConstFn",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstAwait",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstClosure",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "valtree_to_const_value",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstOperator",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "format_interp_error",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_very_trivially_sized",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Memory",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "rustc_allow_const_fn_unstable",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PartialPtrInFinal",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "const_validate_mplace",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FrameNote",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "report_validation_error",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "ensure_monomorphic_enough",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "State",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "turn_into_const_value",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConsiderDereferencing",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Operand",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ArrayIterator",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "alloc_caller_location",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnstableIntrinsic",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RawBytesNote",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "tag_for_variant_provider",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DummyMachine",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstMatchEq",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "InteriorMutableBorrowEscaping",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "eval_to_valtree",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "validate_scalar_in_layout",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "EvaluatedCalleeAndArgs",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnallowedHeapAllocations",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FnCallIndirect",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "binop_left_homogeneous",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NeedsNonConstDrop",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PlacePrinter",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Frame",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ConstEvalErrKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MPlaceTy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RawPtrComparisonErr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstForLoopIntoIter",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "eval_static_initializer_provider",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "prepare_alloc",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Coroutine",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LocalValue",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "IntrinsicNonConst",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "eval_to_const_value_raw_provider",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "intern_shallow",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AllocRefMut",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CheckLiveDrops",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "IntrinsicUnstable",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RawPtrToIntCast",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "MemPlaceMeta",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "union_data_range_uncached",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LiveDrop",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstImplNote",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "lint",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "mk_eval_cx_for_const_val",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "provide",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "InterpCx",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AllocKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "const_caller_location_provider",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "HasMutInterior",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FnCallNonConst",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "write_allocation_track_relocs",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "HeapAllocation",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Immediate",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "intern_const_alloc_recursive",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AllocRef",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TransferFunction",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "write_path",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstCx",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LocalState",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnallowedInlineAsm",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PanicNonStrErr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "StackPopInfo",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "valtree_into_mplace",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "InternError",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CallUnstable",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "build_error_for_const_call",
+      "param_count": 7,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "eval_body_using_ecx",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MutablePtrInFinal",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "from_known_layout",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "MemoryKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_disaligned",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "intern_const_alloc_for_constprop",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "const_to_valtree_inner",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CompileTimeMachine",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CtfeValidationMode",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DumpAllocs",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "sub_types",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "get_span_and_frames",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FlowSensitiveAnalysis",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "report",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_promotable_const_fn",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "type_name",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "op_to_const",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "InlineAsm",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NonConstDerefCoercion",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LongRunning",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LongRunningWarn",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PlaceTy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FrameInfo",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CheckAlignment",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "slice_branches",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnstableConstTrait",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnmarkedConstItemExposed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MemPlace",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ThreadLocalAccessErr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "OffsetMode",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "PathElem",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    }
+  ]
+}

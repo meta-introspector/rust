@@ -1,0 +1,17 @@
+{
+  "crate": "rustc_privacy",
+  "module": "SearchInterfaceForPrivateItemsVisitor::<'_>::leaks_private_dep",
+  "usages": [
+    {
+      "symbol": "new",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:444 ~ rustc_privacy[9e30]::{impl#18}::leaks_private_dep::__CALLSITE)",
+      "used_def_id": "DefId(38:57 ~ tracing_core[77f1]::callsite::{impl#0}::new)",
+      "user_crate": "rustc_privacy",
+      "used_crate": "tracing_core"
+    }
+  ]
+}

@@ -1,0 +1,401 @@
+{
+  "collector_version": "1.0.0",
+  "crate_name": "rustc_type_ir",
+  "dependency_manifests": [
+    "./test_usage_data/rustc_lint_manifest.json",
+    "./test_usage_data/rustc_passes_manifest.json",
+    "./test_usage_data/rustc_public_bridge_manifest.json",
+    "./test_usage_data/rustc_hashes_manifest.json",
+    "./test_usage_data/rustc_trait_selection_manifest.json",
+    "./test_usage_data/rustc_resolve_manifest.json",
+    "./test_usage_data/build_script_build_manifest.json",
+    "./test_usage_data/rustc_baked_icu_data_manifest.json",
+    "./test_usage_data/rustc_mir_build_manifest.json",
+    "./test_usage_data/rustc_incremental_manifest.json",
+    "./test_usage_data/rustc_span_manifest.json",
+    "./test_usage_data/rustc_ast_manifest.json",
+    "./test_usage_data/rustc_hir_typeck_manifest.json",
+    "./test_usage_data/rustc_error_codes_manifest.json",
+    "./test_usage_data/rustc_parse_manifest.json",
+    "./test_usage_data/rustc_arena_manifest.json",
+    "./test_usage_data/rustc_expand_manifest.json",
+    "./test_usage_data/rustc_hir_id_manifest.json",
+    "./test_usage_data/rustc_fs_util_manifest.json",
+    "./test_usage_data/rustc_borrowck_manifest.json",
+    "./test_usage_data/rustc_index_manifest.json",
+    "./test_usage_data/working_usage_collector_manifest.json",
+    "./test_usage_data/rustc_index_macros_manifest.json",
+    "./test_usage_data/rustc_parse_format_manifest.json",
+    "./test_usage_data/rustc_ast_pretty_manifest.json",
+    "./test_usage_data/rustc_next_trait_solver_manifest.json",
+    "./test_usage_data/rustc_builtin_macros_manifest.json",
+    "./test_usage_data/rustc_session_manifest.json",
+    "./test_usage_data/rustc_attr_parsing_manifest.json",
+    "./test_usage_data/rustc_ast_ir_manifest.json",
+    "./test_usage_data/rustc_mir_dataflow_manifest.json",
+    "./test_usage_data/rustc_fluent_macro_manifest.json",
+    "./test_usage_data/rustc_ty_utils_manifest.json",
+    "./test_usage_data/rustc_macros_manifest.json",
+    "./test_usage_data/rustc_hir_manifest.json",
+    "./test_usage_data/rustc_error_messages_manifest.json",
+    "./test_usage_data/rustc_interface_manifest.json",
+    "./test_usage_data/rustc_thread_pool_manifest.json",
+    "./test_usage_data/rustc_errors_manifest.json",
+    "./test_usage_data/rustc_traits_manifest.json",
+    "./test_usage_data/rustc_data_structures_manifest.json",
+    "./test_usage_data/rustc_codegen_ssa_manifest.json",
+    "./test_usage_data/rustc_target_manifest.json",
+    "./test_usage_data/rustc_graphviz_manifest.json",
+    "./test_usage_data/rustc_metadata_manifest.json",
+    "./test_usage_data/rustc_public_manifest.json",
+    "./test_usage_data/rustc_serialize_manifest.json",
+    "./test_usage_data/rustc_hir_analysis_manifest.json",
+    "./test_usage_data/rustc_mir_transform_manifest.json",
+    "./test_usage_data/rustc_privacy_manifest.json",
+    "./test_usage_data/rustc_lint_defs_manifest.json",
+    "./test_usage_data/rustc_const_eval_manifest.json",
+    "./test_usage_data/rustc_driver_impl_manifest.json",
+    "./test_usage_data/rustc_symbol_mangling_manifest.json",
+    "./test_usage_data/rustc_monomorphize_manifest.json",
+    "./test_usage_data/rustc_pattern_analysis_manifest.json",
+    "./test_usage_data/rustc_query_impl_manifest.json",
+    "./test_usage_data/build_common_manifest.json",
+    "./test_usage_data/rustc_abi_manifest.json",
+    "./test_usage_data/rustc_log_manifest.json",
+    "./test_usage_data/rustc_driver_manifest.json",
+    "./test_usage_data/rustc_ast_lowering_manifest.json",
+    "./test_usage_data/rustc_middle_manifest.json",
+    "./test_usage_data/rustc_proc_macro_manifest.json",
+    "./test_usage_data/rustc_query_system_manifest.json",
+    "./test_usage_data/rustc_feature_manifest.json",
+    "./test_usage_data/rustc_ast_passes_manifest.json",
+    "./test_usage_data/rustc_transmute_manifest.json",
+    "./test_usage_data/rustc_lexer_manifest.json",
+    "./test_usage_data/rustc_infer_manifest.json",
+    "./test_usage_data/rustc_hir_pretty_manifest.json"
+  ],
+  "environment": {
+    "cargo_manifest_dir": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_type_ir",
+    "cargo_target_dir": null,
+    "profile": null,
+    "pwd": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust"
+  },
+  "generated_files": [
+    {
+      "path": "./test_usage_data/rustc_type_ir__relate_solver_relating_SolverRelating_____Infcx__I__as_relate_TypeRelation_I___consts.json",
+      "size_bytes": 574,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__evaluate_goal__closure_0____CALLSITE.json",
+      "size_bytes": 1896,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_elaborate.json",
+      "size_bytes": 20179,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_relate_structurally_relate_tys.json",
+      "size_bytes": 917,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir__relate_solver_relating_SolverRelating_____Infcx__I__as_relate_TypeRelation_I___regions.json",
+      "size_bytes": 576,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_75e4bff12df7c344.json",
+      "size_bytes": 1962,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_relate_TypeRelation_relate_item_args.json",
+      "size_bytes": 519,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_relate_combine_super_combine_tys___CALLSITE.json",
+      "size_bytes": 1808,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__handle_overflow.json",
+      "size_bytes": 529,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_root.json",
+      "size_bytes": 3818,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__evaluate_goal.json",
+      "size_bytes": 943,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir__fold_RegionFolder_I__F__as_fold_TypeFolder_I___fold_region__closure_0_.json",
+      "size_bytes": 981,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_binder_ArgFolder___a__I__shift_vars_through_binders___CALLSITE.json",
+      "size_bytes": 3620,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__evaluate_goal_in_task___CALLSITE.json",
+      "size_bytes": 3621,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_literals.json",
+      "size_bytes": 74809,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__lookup_provisional_cache.json",
+      "size_bytes": 547,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__candidate_is_applicable___CALLSITE.json",
+      "size_bytes": 5397,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__lookup_global_cache__closure_0_.json",
+      "size_bytes": 563,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__lookup_global_cache__closure_0____CALLSITE.json",
+      "size_bytes": 1926,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir__walk_TypeWalker_I__as_std_iter_Iterator__next___CALLSITE.json",
+      "size_bytes": 3418,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_structs.json",
+      "size_bytes": 31129,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__evaluate_goal__closure_0___closure_0_.json",
+      "size_bytes": 577,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir__relate_solver_relating_SolverRelating_____Infcx__I__as_relate_TypeRelation_I___regions___CALLSITE.json",
+      "size_bytes": 1895,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir__fold_RegionFolder_I__F__as_fold_TypeFolder_I___fold_region.json",
+      "size_bytes": 942,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_enums.json",
+      "size_bytes": 13843,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__check_cycle_on_stack.json",
+      "size_bytes": 539,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__handle_overflow___CALLSITE.json",
+      "size_bytes": 1841,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_constants.json",
+      "size_bytes": 94931,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir__fold_RegionFolder_I__F__as_fold_TypeFolder_I___fold_region___CALLSITE.json",
+      "size_bytes": 3492,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_relate_combine_super_combine_consts.json",
+      "size_bytes": 517,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_fold_shift_vars.json",
+      "size_bytes": 872,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__evaluate_goal__closure_0___closure_0____CALLSITE.json",
+      "size_bytes": 1961,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_walk.json",
+      "size_bytes": 27331,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__check_cycle_on_stack___CALLSITE.json",
+      "size_bytes": 1866,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_infer_ctxt.json",
+      "size_bytes": 5820,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir__relate_solver_relating_SolverRelating_____Infcx__I__as_relate_TypeRelation_I___tys.json",
+      "size_bytes": 568,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__insert_global_cache___CALLSITE.json",
+      "size_bytes": 1861,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__insert_global_cache.json",
+      "size_bytes": 537,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_fold.json",
+      "size_bytes": 25487,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir__relate_solver_relating_SolverRelating_____Infcx__I__as_relate_TypeRelation_I___relate_with_variance.json",
+      "size_bytes": 602,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_relate_structurally_relate_tys___CALLSITE.json",
+      "size_bytes": 3485,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__evaluate_goal_in_task.json",
+      "size_bytes": 967,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_relate_structurally_relate_consts___CALLSITE.json",
+      "size_bytes": 3514,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_relate_combine.json",
+      "size_bytes": 41888,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__lookup_provisional_cache___CALLSITE.json",
+      "size_bytes": 1886,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_relate.json",
+      "size_bytes": 112889,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir__relate_solver_relating_SolverRelating_____Infcx__I__as_relate_TypeRelation_I___tys___CALLSITE.json",
+      "size_bytes": 1875,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_binder_ArgFolder___a__I__shift_vars_through_binders.json",
+      "size_bytes": 968,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_relate_combine_super_combine_tys.json",
+      "size_bytes": 511,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__candidate_is_applicable.json",
+      "size_bytes": 1401,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_outlives.json",
+      "size_bytes": 5046,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir__walk_TypeWalker_I__as_std_iter_Iterator__next.json",
+      "size_bytes": 914,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir__relate_solver_relating_SolverRelating_____Infcx__I__as_relate_TypeRelation_I___consts___CALLSITE.json",
+      "size_bytes": 1890,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir__fold_RegionFolder_I__F__as_fold_TypeFolder_I___fold_region__closure_0____CALLSITE.json",
+      "size_bytes": 3611,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_relate_combine_super_combine_consts___CALLSITE.json",
+      "size_bytes": 1823,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__evaluate_goal___CALLSITE.json",
+      "size_bytes": 3547,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_fold_shift_vars___CALLSITE.json",
+      "size_bytes": 3350,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_fast_reject.json",
+      "size_bytes": 7189,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_relate_structurally_relate_consts.json",
+      "size_bytes": 926,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_relate_TypeRelation_relate_item_args___CALLSITE.json",
+      "size_bytes": 1826,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_search_graph_SearchGraph__D__evaluate_goal__closure_0_.json",
+      "size_bytes": 551,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_type_ir_complexity.json",
+      "size_bytes": 48314,
+      "type": "usage_data"
+    }
+  ],
+  "output_directory": "./test_usage_data",
+  "rustc_version": "unknown",
+  "timestamp": 1767702054,
+  "total_enums": 4,
+  "total_modules": 61,
+  "total_usages": 1529
+}

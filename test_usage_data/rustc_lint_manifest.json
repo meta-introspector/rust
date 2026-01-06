@@ -1,0 +1,689 @@
+{
+  "collector_version": "1.0.0",
+  "crate_name": "rustc_lint",
+  "dependency_manifests": [
+    "./test_usage_data/rustc_public_bridge_manifest.json",
+    "./test_usage_data/rustc_hashes_manifest.json",
+    "./test_usage_data/rustc_trait_selection_manifest.json",
+    "./test_usage_data/rustc_resolve_manifest.json",
+    "./test_usage_data/build_script_build_manifest.json",
+    "./test_usage_data/rustc_baked_icu_data_manifest.json",
+    "./test_usage_data/rustc_incremental_manifest.json",
+    "./test_usage_data/rustc_span_manifest.json",
+    "./test_usage_data/rustc_ast_manifest.json",
+    "./test_usage_data/rustc_error_codes_manifest.json",
+    "./test_usage_data/rustc_parse_manifest.json",
+    "./test_usage_data/rustc_arena_manifest.json",
+    "./test_usage_data/rustc_expand_manifest.json",
+    "./test_usage_data/rustc_hir_id_manifest.json",
+    "./test_usage_data/rustc_fs_util_manifest.json",
+    "./test_usage_data/rustc_index_manifest.json",
+    "./test_usage_data/working_usage_collector_manifest.json",
+    "./test_usage_data/rustc_index_macros_manifest.json",
+    "./test_usage_data/rustc_parse_format_manifest.json",
+    "./test_usage_data/rustc_type_ir_macros_manifest.json",
+    "./test_usage_data/rustc_ast_pretty_manifest.json",
+    "./test_usage_data/rustc_next_trait_solver_manifest.json",
+    "./test_usage_data/rustc_builtin_macros_manifest.json",
+    "./test_usage_data/rustc_session_manifest.json",
+    "./test_usage_data/rustc_attr_parsing_manifest.json",
+    "./test_usage_data/rustc_ast_ir_manifest.json",
+    "./test_usage_data/rustc_mir_dataflow_manifest.json",
+    "./test_usage_data/rustc_fluent_macro_manifest.json",
+    "./test_usage_data/rustc_ty_utils_manifest.json",
+    "./test_usage_data/rustc_macros_manifest.json",
+    "./test_usage_data/rustc_hir_manifest.json",
+    "./test_usage_data/rustc_error_messages_manifest.json",
+    "./test_usage_data/rustc_thread_pool_manifest.json",
+    "./test_usage_data/rustc_errors_manifest.json",
+    "./test_usage_data/rustc_traits_manifest.json",
+    "./test_usage_data/rustc_data_structures_manifest.json",
+    "./test_usage_data/rustc_target_manifest.json",
+    "./test_usage_data/rustc_graphviz_manifest.json",
+    "./test_usage_data/rustc_metadata_manifest.json",
+    "./test_usage_data/rustc_public_manifest.json",
+    "./test_usage_data/rustc_serialize_manifest.json",
+    "./test_usage_data/rustc_type_ir_manifest.json",
+    "./test_usage_data/rustc_symbol_mangling_manifest.json",
+    "./test_usage_data/rustc_monomorphize_manifest.json",
+    "./test_usage_data/rustc_pattern_analysis_manifest.json",
+    "./test_usage_data/rustc_query_impl_manifest.json",
+    "./test_usage_data/build_common_manifest.json",
+    "./test_usage_data/rustc_abi_manifest.json",
+    "./test_usage_data/rustc_log_manifest.json",
+    "./test_usage_data/rustc_ast_lowering_manifest.json",
+    "./test_usage_data/rustc_middle_manifest.json",
+    "./test_usage_data/rustc_proc_macro_manifest.json",
+    "./test_usage_data/rustc_query_system_manifest.json",
+    "./test_usage_data/rustc_feature_manifest.json",
+    "./test_usage_data/rustc_ast_passes_manifest.json",
+    "./test_usage_data/rustc_transmute_manifest.json",
+    "./test_usage_data/rustc_lexer_manifest.json",
+    "./test_usage_data/rustc_infer_manifest.json",
+    "./test_usage_data/rustc_hir_pretty_manifest.json"
+  ],
+  "environment": {
+    "cargo_manifest_dir": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_lint",
+    "cargo_target_dir": null,
+    "profile": null,
+    "pwd": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust"
+  },
+  "generated_files": [
+    {
+      "path": "./test_usage_data/rustc_lint_ptr_nulls.json",
+      "size_bytes": 10437,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_utils.json",
+      "size_bytes": 4038,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__unused_UnusedResults_as_passes_LateLintPass__tcx___check_stmt_emit_must_use_untranslated.json",
+      "size_bytes": 583,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__builtin_DerefNullPtr_as_passes_LateLintPass__tcx___check_expr.json",
+      "size_bytes": 1764,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_unqualified_local_imports.json",
+      "size_bytes": 538,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__builtin_EllipsisInclusiveRangePatterns_as_passes_EarlyLintPass__check_pat.json",
+      "size_bytes": 543,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_for_loops_over_fallibles.json",
+      "size_bytes": 10922,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_lifetime_syntax.json",
+      "size_bytes": 87637,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_types_get_nullable_type___CALLSITE.json",
+      "size_bytes": 1731,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_context_LintStore_is_lint_group___CALLSITE.json",
+      "size_bytes": 1772,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_enum_intrinsics_non_enums.json",
+      "size_bytes": 4833,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_foreign_modules_ClashingExternDeclarations_check_foreign_item___CALLSITE.json",
+      "size_bytes": 3578,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_levels_shallow_lint_levels_on___CALLSITE.json",
+      "size_bytes": 3425,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_macro_expr_fragment_specifier_2024_migration_Expr2024_check_tokens___CALLSITE.json",
+      "size_bytes": 1951,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__builtin_MutableTransmutes_as_passes_LateLintPass__tcx___check_expr.json",
+      "size_bytes": 3991,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_lifetime_syntax_emit_mismatch_diagnostic.json",
+      "size_bytes": 1764,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__lifetime_syntax_LifetimeSyntax_as_passes_LateLintPass__tcx___check_foreign_item___CALLSITE.json",
+      "size_bytes": 1870,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_impl_trait_overcaptures.json",
+      "size_bytes": 20708,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_opaque_hidden_inferred_bound.json",
+      "size_bytes": 547,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_structs.json",
+      "size_bytes": 108880,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_foreign_modules_structurally_same_type_impl__closure_0_.json",
+      "size_bytes": 980,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_foreign_modules_ClashingExternDeclarations_check_foreign_item.json",
+      "size_bytes": 962,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_drop_forget_useless.json",
+      "size_bytes": 3527,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_pass_by_value.json",
+      "size_bytes": 17429,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_types_improper_ctypes.json",
+      "size_bytes": 19466,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_unit_bindings.json",
+      "size_bytes": 502,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_precedence.json",
+      "size_bytes": 510,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__unused_UnusedResults_as_passes_LateLintPass__tcx___check_stmt_is_ty_must_use.json",
+      "size_bytes": 978,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_context_LintStore_check_tool_name_for_backwards_compat___CALLSITE.json",
+      "size_bytes": 1887,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_types_literal.json",
+      "size_bytes": 70112,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_noop_method_call.json",
+      "size_bytes": 953,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_late.json",
+      "size_bytes": 23313,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_types.json",
+      "size_bytes": 115087,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_foreign_modules_structurally_same_type_impl___CALLSITE.json",
+      "size_bytes": 1831,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_transmute.json",
+      "size_bytes": 38552,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_shadowed_into_iter.json",
+      "size_bytes": 1831,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_lifetime_syntax_lifetimes_use_matched_syntax.json",
+      "size_bytes": 524,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_levels_shallow_lint_levels_on.json",
+      "size_bytes": 899,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_non_ascii_idents.json",
+      "size_bytes": 1825,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_lifetime_syntax_report_mismatches.json",
+      "size_bytes": 502,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_context_LintStore_check_lint_name___CALLSITE.json",
+      "size_bytes": 1782,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_unused.json",
+      "size_bytes": 3030,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__lifetime_syntax_LifetimeSyntax_as_passes_LateLintPass__tcx___check_trait_item___CALLSITE.json",
+      "size_bytes": 1860,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__types_VariantSizeDifferences_as_passes_LateLintPass__tcx___check_item__closure_0____CALLSITE.json",
+      "size_bytes": 1857,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_early_diagnostics_decorate_builtin_lint___CALLSITE.json",
+      "size_bytes": 5236,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_d26f19c2eca90dd.json",
+      "size_bytes": 581,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_reference_casting.json",
+      "size_bytes": 20546,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_non_fmt_panic.json",
+      "size_bytes": 52692,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_enums.json",
+      "size_bytes": 20020,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_early_EarlyContextAndPass___ecx___tcx__T__with_lint_attrs.json",
+      "size_bytes": 1340,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_reference_casting_borrow_or_assign.json",
+      "size_bytes": 1368,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__unused_UnusedResults_as_passes_LateLintPass__tcx___check_stmt.json",
+      "size_bytes": 69001,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_deref_into_dyn_supertrait.json",
+      "size_bytes": 538,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_late_LateContextAndPass___tcx__T__with_lint_attrs.json",
+      "size_bytes": 923,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_internal.json",
+      "size_bytes": 29283,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__lifetime_syntax_LifetimeSyntax_as_passes_LateLintPass__tcx___check_fn___CALLSITE.json",
+      "size_bytes": 1820,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_map_unit_fn.json",
+      "size_bytes": 2944,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__unused_UnusedResults_as_passes_LateLintPass__tcx___check_stmt_is_ty_must_use___CALLSITE.json",
+      "size_bytes": 3588,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_non_local_def.json",
+      "size_bytes": 11902,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_types_get_nullable_type.json",
+      "size_bytes": 482,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_levels.json",
+      "size_bytes": 40554,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_lifetime_syntax_report_mismatches___CALLSITE.json",
+      "size_bytes": 1777,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_early_diagnostics_decorate_builtin_lint.json",
+      "size_bytes": 1348,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__lifetime_syntax_LifetimeInfoCollector__a___tcx__as_rustc_hir_intravisit_Visitor__tcx___visit_ty.json",
+      "size_bytes": 569,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_async_fn_in_trait.json",
+      "size_bytes": 514,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_context_LintStore_check_tool_name_for_backwards_compat.json",
+      "size_bytes": 545,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__builtin_InvalidValue_as_passes_LateLintPass__tcx___check_expr.json",
+      "size_bytes": 42366,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__lifetime_syntax_LifetimeSyntax_as_passes_LateLintPass__tcx___check_trait_item.json",
+      "size_bytes": 558,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_if_let_rescope.json",
+      "size_bytes": 3323,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__lifetime_syntax_LifetimeSyntax_as_passes_LateLintPass__tcx___check_foreign_item.json",
+      "size_bytes": 562,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_macro_expr_fragment_specifier_2024_migration.json",
+      "size_bytes": 1069,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_types_lint_nan.json",
+      "size_bytes": 3677,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__types_TypeLimits_as_passes_LateLintPass__tcx___check_expr.json",
+      "size_bytes": 7188,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__unused_UnusedResults_as_passes_LateLintPass__tcx___check_stmt_emit_must_use_untranslated___CALLSITE.json",
+      "size_bytes": 1926,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_nonstandard_style_NonSnakeCase_check_snake_case.json",
+      "size_bytes": 3041,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_internal_Diagnostics_diagnostic_outside_of_impl.json",
+      "size_bytes": 950,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_autorefs.json",
+      "size_bytes": 1261,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_default_could_be_derived.json",
+      "size_bytes": 7741,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__types_VariantSizeDifferences_as_passes_LateLintPass__tcx___check_item.json",
+      "size_bytes": 534,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_context_LintStore_check_lint_name.json",
+      "size_bytes": 503,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_constants.json",
+      "size_bytes": 270956,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_macro_expr_fragment_specifier_2024_migration_Expr2024_check_ident_token.json",
+      "size_bytes": 1476,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_root.json",
+      "size_bytes": 80413,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_levels_LintLevelsBuilder___s__P__insert_spec.json",
+      "size_bytes": 510,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_early.json",
+      "size_bytes": 9981,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_foreign_modules_structurally_same_type_impl__closure_0____CALLSITE.json",
+      "size_bytes": 3670,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_types_repr_nullable_ptr___CALLSITE.json",
+      "size_bytes": 1731,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_context_LintStore_is_lint_group.json",
+      "size_bytes": 499,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_early_diagnostics_check_cfg.json",
+      "size_bytes": 54593,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_types_repr_nullable_ptr.json",
+      "size_bytes": 482,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_late_LateContextAndPass___tcx__T__with_lint_attrs___CALLSITE.json",
+      "size_bytes": 3457,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_d53998ef4afe4bff.json",
+      "size_bytes": 2105,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_literals.json",
+      "size_bytes": 495729,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_traits.json",
+      "size_bytes": 902,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_builtin.json",
+      "size_bytes": 25146,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_expect.json",
+      "size_bytes": 11404,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_dangling.json",
+      "size_bytes": 15956,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_foreign_modules_structurally_same_type_impl.json",
+      "size_bytes": 522,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_macro_expr_fragment_specifier_2024_migration_Expr2024_check_ident_token___CALLSITE.json",
+      "size_bytes": 5652,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_nonstandard_style.json",
+      "size_bytes": 18539,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_foreign_modules.json",
+      "size_bytes": 61027,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_internal_Diagnostics_diagnostic_outside_of_impl___CALLSITE.json",
+      "size_bytes": 3574,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__types_VariantSizeDifferences_as_passes_LateLintPass__tcx___check_item__closure_0_.json",
+      "size_bytes": 560,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_early_diagnostics.json",
+      "size_bytes": 79790,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_invalid_from_utf8.json",
+      "size_bytes": 960,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_d78036b047d176df.json",
+      "size_bytes": 1877,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_multiple_supertrait_upcastable.json",
+      "size_bytes": 553,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_let_underscore.json",
+      "size_bytes": 945,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_early_EarlyContextAndPass___ecx___tcx__T__with_lint_attrs___CALLSITE.json",
+      "size_bytes": 5147,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_macro_expr_fragment_specifier_2024_migration_Expr2024_check_tokens.json",
+      "size_bytes": 570,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__types_VariantSizeDifferences_as_passes_LateLintPass__tcx___check_item___CALLSITE.json",
+      "size_bytes": 1792,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__lifetime_syntax_LifetimeSyntax_as_passes_LateLintPass__tcx___check_fn.json",
+      "size_bytes": 542,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_async_closures.json",
+      "size_bytes": 520,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_levels_LintLevelsBuilder___s__P__insert_spec___CALLSITE.json",
+      "size_bytes": 1774,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_lifetime_syntax_emit_mismatch_diagnostic___CALLSITE.json",
+      "size_bytes": 6946,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_redundant_semicolon.json",
+      "size_bytes": 2162,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_static_mut_refs.json",
+      "size_bytes": 1778,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_lifetime_syntax_lifetimes_use_matched_syntax___CALLSITE.json",
+      "size_bytes": 1836,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_d3fd7631b4c8208e.json",
+      "size_bytes": 1847,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_63bc6776c18c46ab.json",
+      "size_bytes": 667,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint__shadowed_into_iter_ShadowedIntoIter_as_passes_LateLintPass__tcx___check_expr.json",
+      "size_bytes": 2722,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_lint_complexity.json",
+      "size_bytes": 178505,
+      "type": "usage_data"
+    }
+  ],
+  "output_directory": "./test_usage_data",
+  "rustc_version": "unknown",
+  "timestamp": 1767701090,
+  "total_enums": 16,
+  "total_modules": 121,
+  "total_usages": 5413
+}

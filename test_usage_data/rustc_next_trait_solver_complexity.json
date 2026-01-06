@@ -1,0 +1,1075 @@
+{
+  "crate": "rustc_next_trait_solver",
+  "items": [
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "GoalEvaluation",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CanonicalizeMode",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ProbeCtxt",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Ambiguous",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "WipEvaluationStep",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CanonicalizeInputKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "extract_tupled_inputs_and_output_from_async_callable",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "EagerResolver",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AllowInferenceConstraints",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "GenerateProofTree",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "SearchGraphDelegate",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "evaluate_root_goal_for_proof_tree",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TraitProbeCtxt",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "trait_ref_is_local_or_fundamental",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "OrphanCheckErr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "orphan_check_trait_ref",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AliasBoundKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "OrphanCheckMode",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "EvaluationStepBuilder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "evaluate_root_goal_for_proof_tree_raw_provider",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "has_no_inference_or_external_constraints",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "instantiate_constituent_tys_for_copy_clone_trait",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "fn_item_to_async_callable",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "WipProbe",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "instantiate_canonical_state",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "response_no_constraints_raw",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "trait_predicate_with_def_id",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ReplaceOpaque",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "EvalCtxt",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "OrphanCheckEarlyExit",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AssembleCandidatesFrom",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ContainsTermOrNotNameable",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "trait_def_id_matches",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "coroutine_closure_to_ambiguous_coroutine",
+      "param_count": 6,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "predicates_for_object_candidate",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FindParamInClause",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AsyncCallableRelevantTypes",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "TraitGoalProvenVia",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Candidate",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FailedCandidateInfo",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UncoveredTyParams",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "__AssertEq",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "has_only_region_constraints",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "instantiate_constituent_tys_for_sizedness_trait",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "GoalStalledOn",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "instantiate_constituent_tys_for_auto_trait",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Conflict",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "extract_fn_def_from_const_callable",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "eager_resolve_vars",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ReplaceProjectionWith",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CurrentGoalKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "OrphanChecker",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ProofTreeBuilder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "MergeCandidateInfo",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "WipProbeStep",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "response_no_constraints",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "trait_ref_is_knowable",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ReplaceAliasWithInfer",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "InCrate",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "IsFirstInputType",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Canonicalizer",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "HasChanged",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BoundVarReplacer",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "extract_tupled_inputs_and_output_from_callable",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "const_conditions_for_destruct",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "make_canonical_state",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "coroutine_closure_to_certain_coroutine",
+      "param_count": 6,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    }
+  ]
+}

@@ -1,0 +1,3466 @@
+{
+  "crate": "rustc_hir",
+  "items": [
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Destination",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "MethodKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "FnRetTy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ItemKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PolyTraitRef",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "DefKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "GenericParamCount",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CoverageAttrKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "TyKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CtorOf",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AttrPath",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CoroutineKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "DelayedLint",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_trait_item_ref",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AttributeMap",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DefPath",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "GenericParam",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "GenericParamSource",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstBlock",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FnDecl",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "GenericParamKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MyVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "OptimizeAttr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_fn_ret_ty",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AttributeLintKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_expr_field",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_param_bound",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "StrippedCfgItem",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_ident",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Namespace",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CfgEntry",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "NonMacroAttrKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "PatKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DefKey",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_param",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_qpath",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_generics",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "GenericArg",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "None",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AmbigArg",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "GenericArgsParentheses",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_mod",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Target",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "FnKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LocalSource",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PartialConstStability",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ReprAttr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LifetimeSource",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Variant",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "StabilityLevel",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "StableSince",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_impl_item",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "expect_failed",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "WhereRegionPredicate",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FnSig",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AssocItemConstraintKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TraitImplHeader",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_opaque_ty",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AssocItemConstraint",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "OpaqueTyOrigin",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_trait_ref",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Mod",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "TransparencyError",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "PatExprKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "StmtKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_range_literal",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DisambiguatorState",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_fn",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_lifetime",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_pat",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ItemId",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "InferDelegationKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "EnumDef",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AttrArgs",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_defaultness",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DelayedLints",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "PredicateOrigin",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_path_segment",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AttrItem",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_path",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_unambig_const_arg",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DefaultBodyStability",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_fn_kind",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_inline_asm",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ImplicitSelfKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "OwnerInfo",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_foreign_item",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "UnsafeSource",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "UnstableReason",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CoroutineDesugaring",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ForeignItemKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "QPath",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DiagnosticItems",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "WhereBoundPredicate",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LoopSource",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_ty",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TraitBoundModifiers",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Lifetime",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "are_suggestable_generic_args",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "EncodeCrossCrate",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "UsedBy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LoopIdError",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "OwnerNodes",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Param",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "GenericBound",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Path",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ParentedNode",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_local",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Limit",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BodyId",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Attribute",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TraitCandidate",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_inline_const",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_pat_expr",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_impl_item_ref",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_generic_arg",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DotDotPos",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ExprKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "YieldSource",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Crate",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "RangeEnd",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "RpitContext",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LanguageItems",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "DefPathData",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ClosureKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Definitions",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AttributeLint",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Arena",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PatField",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RustcVersion",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "MaybeOwner",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Body",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "VariantData",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "extract",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "MatchSource",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AttributeKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PartialRes",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Res",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "MirPhase",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_stmt",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ConstArgKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ForeignItemId",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "MacroUseArgs",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Stmt",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_ty_pat",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ParamName",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_variant",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "UseKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "OwnerNode",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_fn_decl",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "WhereEqPredicate",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "WherePredicateKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UnsafeBinderTy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ClosureBinder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_body",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "MissingLifetimeKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Stability",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ExprField",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "BlockCheckMode",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_inf",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "PeImportNameType",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LinkEntry",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FnHeader",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_generic_args",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_assoc_item_constraint",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "StructTailExpr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "HeaderSafety",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "OpaqueTy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LetExpr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DefPathTable",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "PrimTy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_precise_capturing_arg",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_enum_def",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ImplItem",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "expr_needs_parens",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "IsAsync",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_foreign_item_ref",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_use",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ImplItemKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_const_param_default",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "InferArg",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Constness",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "DefPathDataName",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DisambiguatedDefPathData",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "TraitFn",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ImplItemId",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_unambig_ty",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_label",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "WherePredicate",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ForeignItem",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_item",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LifetimeRes",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Block",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Term",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Item",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LetStmt",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Defaultness",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_trait_item",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Linkage",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "HashIgnoredAttrId",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PerNS",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TraitItem",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "InlineAsmOperand",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "InlineAsm",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AngleBrackets",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_anon_const",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "DeprecatedSince",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "TyPatKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CoroutineSource",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Expr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_block",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LifetimeSyntax",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "GenericArgs",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Deprecation",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ModSpans",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Pat",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Impl",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "MirDialect",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Node",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Closure",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "EnumerateAndAdjust",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Safety",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FnPtrTy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PatExpr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FieldDef",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_pat_field",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_const_arg",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_where_predicate",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_generic_param",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MutTy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TraitItemId",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_poly_trait_ref",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TyPat",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "PreciseCapturingArgKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "NativeLibKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ConstContext",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "IntType",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_arm",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PathSegment",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AnonConst",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_expr",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_field_def",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LangItem",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "TraitItemKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstArg",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Upvar",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "walk_struct_def",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TraitRef",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstStability",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LifetimeKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Arm",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "InstructionSetAttr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ImplItemImplKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Ty",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MacroKinds",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LifetimeParamKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Config",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "GenericRequirement",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CtorKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "InferKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Generics",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "InlineAttr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "BodyOwnerKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PreciseCapturingNonLifetimeArg",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    }
+  ]
+}

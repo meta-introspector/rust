@@ -1,0 +1,4917 @@
+{
+  "crate": "rustc_borrowck",
+  "items": [
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_loan_kills",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ClosureOutlivesRequirement",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LocalsStateAtExit",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "compute_concrete_opaque_types",
+      "param_count": 6,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "mir_borrowck",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PoloniusDiagnosticsContext",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "pretty_print_points",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "SuggestIndexOperatorAlternativeVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "render_region_vid",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LocalizedOutlivesConstraintSet",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "borrowck_check_region_constraints",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Overlap",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PlaceholderIndex",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "DefiningTy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "VariableUseFinder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "RegionErrorKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "FnMutReturnTypeErr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UniversalRegionRelationsBuilder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ReadKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BorrowData",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_move_facts",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MoveBorrow",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DescribePlaceOpt",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "RegionCtxt",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "HigherRankedSubtypeError",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "place_components_conflict",
+      "param_count": 7,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_polonius_mir",
+      "param_count": 7,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "RegionRelationCheckResult",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PoloniusRegionVid",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "for_each_late_bound_region_in_item",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "InitializationRequiringAction",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LivenessResults",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LetVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "try_extract_error_from_fulfill_cx",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CheckExplicitRegionMentionAndCollectGenerics",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstraintConversion",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UniversalRegionIndices",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CaptureReasonSuggest",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UniversalRegions",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "appearances_iter",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MirTypeckResults",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BorrowckInferCtxt",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AscribeUserTypeQuery",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LocalUseMap",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "record_regular_live_regions",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "StorageDeadOrDrop",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BorrowckDiagnosticsBuffer",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FindOpaqueRegion",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LaterUseKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "create_liveness_constraints",
+      "param_count": 6,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MirTypeckRegionConstraints",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "dump_polonius_mir",
+      "param_count": 6,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_universal_region_facts",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "PrefixSet",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CollectMemberConstraintsVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "RegionElement",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "mirbug",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "SimdIntrinsicArgConst",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Finder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "GatherUsedMutsVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ExpressionFinder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "borrow_conflicts_with_place",
+      "param_count": 7,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "HigherRankedErrorCause",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "predecessor_locations",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RegionErrors",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AccessDepth",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "EdgesFromGraph",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BorrowckDomain",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "OutlivesConstraint",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "RequireStaticErr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "UniverseInfo",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AllLocalUsesVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RawConstraints",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LifetimeOutliveErr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AccessKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "GenericDoesNotLiveLongEnough",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ReadOrWrite",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "type_check",
+      "param_count": 10,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_7",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_8",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_9",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Prefixes",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "IllegalMoveOriginKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TyCtxtConsts",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FnMutError",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BreakFinder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "get_concrete_opaque_type",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TypeTest",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "suggest_ref_mut",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "VarNeedNotMut",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "sccs_info",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_nll_mir",
+      "param_count": 6,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "find",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "borrowed_data_escapes_closure",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LoanInvalidationsGenerator",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "pretty_print_region_elements",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "render_region",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LocalizedOutlivesConstraint",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "compute_loan_liveness",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "HigherRankedLifetimeError",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CaptureReasonNote",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "VarHereDenote",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "detect_opaque_types_added_while_handling_opaque_types",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "get_mut_span_in_struct_field",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MatchArgFinder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "renumber_mir",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FindUselessClone",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "suggest_ampmut",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RustcFacts",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "create",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "RegionNameHighlight",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "FieldAccessError",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LoweredConstraints",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "region_definitions",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "RichLocation",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PoloniusContext",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CreateResult",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "regions_that_outlive_free_regions",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "borrow_of_local_data",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RegionName",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Cause",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MoveSite",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LivenessValues",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "suggest_rewrite_if_let",
+      "param_count": 7,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "DefUseResult",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "apply_computed_concrete_opaque_types",
+      "param_count": 8,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_7",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "VarianceExtractor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "borrowck_collect_region_constraints",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "get_bodies_with_borrowck_facts",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MirBorrowckCtxt",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Appearance",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "DeferredOpaqueTypeError",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PlaceholderIndices",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "try_extract_error_from_region_constraints",
+      "param_count": 7,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "check_parent_of_field",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RegionInferenceContext",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MoveUnsized",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FindLocalAssignmentVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "BorrowedContentSource",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "GatherBorrows",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NllTypeRelating",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ConstraintDirection",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "IncludingTupleField",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "places_conflict",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "PlaceholderReachability",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CaptureArgLabel",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LocalizedNode",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Successors",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LiveVariablesVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "localize_terminator_constraint",
+      "param_count": 7,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "propagate_loans_between_points",
+      "param_count": 6,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "generate",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BodyWithBorrowckFacts",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ArtificialField",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RegionGraph",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "WriteKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LocalMutationIsAllowed",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "EdgesFromStatic",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "trace",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "OutlivesConstraintIndex",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LifetimeMismatchOpaqueParam",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "replace_regions_in_mir",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CapturedMessageOpt",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Trace",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BorrowCheckRootCtxt",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CaptureVarKind",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AppearancesIter",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "mut_borrow_of_mutable_ref",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ClosureFinder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConditionVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_mermaid_cfg",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RegionRenumberer",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TailExprDropOrder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CaptureVarCause",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "fully_perform_op_raw",
+      "param_count": 9,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_7",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_8",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MoveVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_upvar_field_projection",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "calculate_borrows_out_of_scope_at_location",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "dump_nll_mir",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "each_borrow_involving_path",
+      "param_count": 7,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PoloniusLivenessContext",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "provide",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "OnClosureNote",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BlameConstraint",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "place_projection_conflict",
+      "param_count": 6,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RegionDefinition",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ClosureOutlivesSubjectTy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BorrowckConsumer",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "OutlivesSuggestionBuilder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstraintSccIndex",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "TypeChecker",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "compute_regions",
+      "param_count": 11,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_7",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_8",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_9",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_10",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "render_universe",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_closure_like",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CaptureReasonLabel",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DropData",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_facts",
+      "param_count": 8,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_6",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_7",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "PlaceConflictBias",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BorrowSet",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "OutlivesConstraintSet",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UseFinder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "RegionNameSource",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "categorize",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_mermaid_nll_sccs",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "TypeNoCopy",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "suggest_ampmut_self",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DeeplyNormalizeQuery",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AppearanceIndex",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ReferencedStatementsVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FindLetExpr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PoloniusLocationTable",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "write_row",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "push_location_range",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "SuggestedConstraint",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "compute_relevant_live_locals",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "compute_closure_requirements_modulo_opaques",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_access_facts",
+      "param_count": 6,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "is_active",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "AccessFactsExtractor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LocationIndex",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "compute_concrete_types_from_defining_uses",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "get_flow_results",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AnnotatedBorrowFnSignature",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "compute_sccs_applying_placeholder_outlives_constraints",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "AmpMutSugg",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ToArgRegionsFolder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UniversalRegionsBuilder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ClosureOutlivesSubject",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FakeReadCauseFinder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_polonius_dump",
+      "param_count": 6,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RegionValues",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "add_liveness_constraint",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "clone_and_resolve_opaque_types",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "ConsumerOptions",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BindingFinder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_outlives_facts",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Reverse",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "HasStorageDead",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_html_mir",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_drop_facts",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "apply_member_constraints",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "TwoPhaseActivation",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ClosureRegionRequirements",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PropagatedBorrowCheckResults",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Borrowck",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "localize_statement_constraint",
+      "param_count": 6,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "CaptureVarPathUseCause",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ConstraintGraph",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Normal",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "BufferedDiag",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_loan_invalidations",
+      "param_count": 5,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "convert_typeck_constraints",
+      "param_count": 6,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "for_each_late_bound_region_in_recursive_scope",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "LifetimeReturnCategoryErr",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PredicateQuery",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ErrorConstraintInfo",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "dump_annotation",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "nll_var_to_universal_region",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "SccAnnotations",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Borrows",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NllOutput",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DefiningUse",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "Holds",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "DefUseVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_mermaid_constraint_graph",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "UseSpans",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LocalizedConstraintGraph",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "render_outlives_constraint",
+      "param_count": 1,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "InstantiateOpaqueType",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "MoveError",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "RegionClassification",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "CollectRegionConstraintsResult",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "emit_mermaid_nll_regions",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ReverseSccGraph",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RegionTracker",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LocalUseMapBuild",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LivenessContext",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Locations",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "RootPlace",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NormalizeQuery",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "DefUse",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "BorrowIndex",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "find_assignments",
+      "param_count": 2,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "LoanKillsGenerator",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "rewrite_placeholder_outlives",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "SccConstraints",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "OutOfScopePrecomputer",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "PoloniusOutOfScopePrecomputer",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "GroupedMoveError",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "apply_member_constraint",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "complex",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "compute_constraint_direction",
+      "param_count": 6,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_4",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_5",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "collect_defining_uses",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "Representative",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "for_each_region_constraint",
+      "param_count": 3,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "FactWriter",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "medium",
+      "field_count": null,
+      "fields": null,
+      "item_type": "function",
+      "name": "add_concrete_opaque_type",
+      "param_count": 4,
+      "parameters": [
+        {
+          "name": "param_0",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_1",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_2",
+          "param_type": "unknown"
+        },
+        {
+          "name": "param_3",
+          "param_type": "unknown"
+        }
+      ],
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "NestedStatementVisitor",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "UniversalRegionRelations",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": 0,
+      "fields": [],
+      "item_type": "struct",
+      "name": "ExprFinder",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": null,
+      "variants": null
+    },
+    {
+      "complexity": "simple",
+      "field_count": null,
+      "fields": null,
+      "item_type": "enum",
+      "name": "BorrowExplanation",
+      "param_count": null,
+      "parameters": null,
+      "variant_count": 0,
+      "variants": []
+    }
+  ]
+}

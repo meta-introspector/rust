@@ -1,0 +1,2072 @@
+{
+  "collector_version": "1.0.0",
+  "crate_name": "rustc_target",
+  "dependency_manifests": [
+    "./test_usage_data/rustc_lint_manifest.json",
+    "./test_usage_data/rustc_passes_manifest.json",
+    "./test_usage_data/rustc_public_bridge_manifest.json",
+    "./test_usage_data/rustc_hashes_manifest.json",
+    "./test_usage_data/rustc_trait_selection_manifest.json",
+    "./test_usage_data/rustc_resolve_manifest.json",
+    "./test_usage_data/build_script_build_manifest.json",
+    "./test_usage_data/rustc_baked_icu_data_manifest.json",
+    "./test_usage_data/rustc_mir_build_manifest.json",
+    "./test_usage_data/rustc_incremental_manifest.json",
+    "./test_usage_data/rustc_span_manifest.json",
+    "./test_usage_data/rustc_ast_manifest.json",
+    "./test_usage_data/rustc_hir_typeck_manifest.json",
+    "./test_usage_data/rustc_error_codes_manifest.json",
+    "./test_usage_data/rustc_parse_manifest.json",
+    "./test_usage_data/rustc_arena_manifest.json",
+    "./test_usage_data/rustc_expand_manifest.json",
+    "./test_usage_data/rustc_hir_id_manifest.json",
+    "./test_usage_data/rustc_fs_util_manifest.json",
+    "./test_usage_data/rustc_borrowck_manifest.json",
+    "./test_usage_data/rustc_index_manifest.json",
+    "./test_usage_data/working_usage_collector_manifest.json",
+    "./test_usage_data/rustc_index_macros_manifest.json",
+    "./test_usage_data/rustc_parse_format_manifest.json",
+    "./test_usage_data/rustc_type_ir_macros_manifest.json",
+    "./test_usage_data/rustc_ast_pretty_manifest.json",
+    "./test_usage_data/rustc_next_trait_solver_manifest.json",
+    "./test_usage_data/rustc_builtin_macros_manifest.json",
+    "./test_usage_data/rustc_session_manifest.json",
+    "./test_usage_data/rustc_attr_parsing_manifest.json",
+    "./test_usage_data/rustc_ast_ir_manifest.json",
+    "./test_usage_data/rustc_mir_dataflow_manifest.json",
+    "./test_usage_data/rustc_fluent_macro_manifest.json",
+    "./test_usage_data/rustc_ty_utils_manifest.json",
+    "./test_usage_data/rustc_macros_manifest.json",
+    "./test_usage_data/rustc_hir_manifest.json",
+    "./test_usage_data/rustc_error_messages_manifest.json",
+    "./test_usage_data/rustc_interface_manifest.json",
+    "./test_usage_data/rustc_thread_pool_manifest.json",
+    "./test_usage_data/rustc_errors_manifest.json",
+    "./test_usage_data/rustc_traits_manifest.json",
+    "./test_usage_data/rustc_data_structures_manifest.json",
+    "./test_usage_data/rustc_codegen_ssa_manifest.json",
+    "./test_usage_data/rustc_graphviz_manifest.json",
+    "./test_usage_data/rustc_metadata_manifest.json",
+    "./test_usage_data/rustc_public_manifest.json",
+    "./test_usage_data/rustc_serialize_manifest.json",
+    "./test_usage_data/rustc_hir_analysis_manifest.json",
+    "./test_usage_data/rustc_mir_transform_manifest.json",
+    "./test_usage_data/rustc_type_ir_manifest.json",
+    "./test_usage_data/rustc_privacy_manifest.json",
+    "./test_usage_data/rustc_lint_defs_manifest.json",
+    "./test_usage_data/rustc_const_eval_manifest.json",
+    "./test_usage_data/rustc_driver_impl_manifest.json",
+    "./test_usage_data/rustc_symbol_mangling_manifest.json",
+    "./test_usage_data/rustc_monomorphize_manifest.json",
+    "./test_usage_data/rustc_pattern_analysis_manifest.json",
+    "./test_usage_data/rustc_query_impl_manifest.json",
+    "./test_usage_data/build_common_manifest.json",
+    "./test_usage_data/rustc_abi_manifest.json",
+    "./test_usage_data/rustc_log_manifest.json",
+    "./test_usage_data/rustc_driver_manifest.json",
+    "./test_usage_data/rustc_ast_lowering_manifest.json",
+    "./test_usage_data/rustc_middle_manifest.json",
+    "./test_usage_data/rustc_proc_macro_manifest.json",
+    "./test_usage_data/rustc_query_system_manifest.json",
+    "./test_usage_data/rustc_feature_manifest.json",
+    "./test_usage_data/rustc_ast_passes_manifest.json",
+    "./test_usage_data/rustc_transmute_manifest.json",
+    "./test_usage_data/rustc_lexer_manifest.json",
+    "./test_usage_data/rustc_infer_manifest.json",
+    "./test_usage_data/rustc_hir_pretty_manifest.json"
+  ],
+  "environment": {
+    "cargo_manifest_dir": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_target",
+    "cargo_target_dir": null,
+    "profile": null,
+    "pwd": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust"
+  },
+  "generated_files": [
+    {
+      "path": "./test_usage_data/rustc_target_asm_loongarch.json",
+      "size_bytes": 47549,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_pc_windows_gnu.json",
+      "size_bytes": 3297,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv7em_none_eabihf.json",
+      "size_bytes": 2451,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_unknown_trusty.json",
+      "size_bytes": 3226,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_crt_objects.json",
+      "size_bytes": 2753,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_uwp_windows_msvc.json",
+      "size_bytes": 1663,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32gc_unknown_linux_musl.json",
+      "size_bytes": 2899,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_kmc_solid_asp3.json",
+      "size_bytes": 2458,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32imc_unknown_nuttx_elf.json",
+      "size_bytes": 3298,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv7neon_linux_androideabi.json",
+      "size_bytes": 2944,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_spirv.json",
+      "size_bytes": 1224,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_unknown_linux_gnueabi.json",
+      "size_bytes": 3281,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_arm_unknown_linux_musleabi.json",
+      "size_bytes": 2876,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_redox.json",
+      "size_bytes": 2482,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc64_ibm_aix.json",
+      "size_bytes": 2074,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_mips.json",
+      "size_bytes": 45389,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64_linux_android.json",
+      "size_bytes": 3258,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_dragonfly.json",
+      "size_bytes": 2510,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_pc_windows_msvc.json",
+      "size_bytes": 2875,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_unknown_hurd_gnu.json",
+      "size_bytes": 2489,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armebv7r_none_eabi.json",
+      "size_bytes": 2424,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc64_unknown_openbsd.json",
+      "size_bytes": 3702,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7r_none_eabi.json",
+      "size_bytes": 2410,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_uwp_windows_msvc.json",
+      "size_bytes": 1678,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7a_none_eabi.json",
+      "size_bytes": 2803,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_linux_android.json",
+      "size_bytes": 2843,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32imac_unknown_xous_elf.json",
+      "size_bytes": 3697,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_amdgcn_amd_amdhsa.json",
+      "size_bytes": 3587,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc_wrs_vxworks.json",
+      "size_bytes": 2091,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_be_unknown_linux_gnu_ilp32.json",
+      "size_bytes": 2947,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_nto_qnx710.json",
+      "size_bytes": 898,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mips_unknown_linux_uclibc.json",
+      "size_bytes": 2868,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32imac_unknown_nuttx_elf.json",
+      "size_bytes": 3307,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_root.json",
+      "size_bytes": 3776,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mipsel_unknown_netbsd.json",
+      "size_bytes": 2836,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv7em_nuttx_eabihf.json",
+      "size_bytes": 2458,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mipsisa32r6el_unknown_linux_gnu.json",
+      "size_bytes": 2916,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unikraft_linux_musl.json",
+      "size_bytes": 2514,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_xtensa_esp32s2_none_elf.json",
+      "size_bytes": 3253,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_wasm32_wasip1_threads.json",
+      "size_bytes": 3715,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_managarm_mlibc.json",
+      "size_bytes": 847,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_apple_watchos_sim.json",
+      "size_bytes": 1288,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32i_unknown_none_elf.json",
+      "size_bytes": 3271,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_uefi_msvc.json",
+      "size_bytes": 1998,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7a_vex_v5.json",
+      "size_bytes": 4699,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_wasm32_unknown_emscripten.json",
+      "size_bytes": 3320,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_arm.json",
+      "size_bytes": 126379,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_nto_qnx.json",
+      "size_bytes": 7394,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc64_unknown_freebsd.json",
+      "size_bytes": 3702,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_apple_ios_macabi.json",
+      "size_bytes": 3349,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_loongarch64_unknown_none.json",
+      "size_bytes": 3262,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_unknown_uefi.json",
+      "size_bytes": 2423,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_unknown_linux_musl.json",
+      "size_bytes": 2503,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_avr.json",
+      "size_bytes": 51437,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7a_nuttx_eabihf.json",
+      "size_bytes": 3217,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_win7_windows_gnu.json",
+      "size_bytes": 3706,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_pc_nto_qnx710_iosock.json",
+      "size_bytes": 901,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_win7_windows_gnu.json",
+      "size_bytes": 3726,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_nto_qnx700.json",
+      "size_bytes": 898,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_unknown_haiku.json",
+      "size_bytes": 2468,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_xtensa_esp32s3_espidf.json",
+      "size_bytes": 3235,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_x86_64.json",
+      "size_bytes": 25241,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_csky.json",
+      "size_bytes": 43839,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_sparc.json",
+      "size_bytes": 22940,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_fuchsia.json",
+      "size_bytes": 1226,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_unknown_openbsd.json",
+      "size_bytes": 2482,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_be_unknown_netbsd.json",
+      "size_bytes": 2078,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_linux_musl.json",
+      "size_bytes": 6201,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_unknown_netbsd_eabihf.json",
+      "size_bytes": 2884,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_unknown_freebsd.json",
+      "size_bytes": 2482,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc_unknown_openbsd.json",
+      "size_bytes": 1280,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64imac_unknown_none_elf.json",
+      "size_bytes": 4590,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_apple_darwin.json",
+      "size_bytes": 3701,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_nuttx.json",
+      "size_bytes": 4512,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_apple_ios.json",
+      "size_bytes": 2482,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_wrs_vxworks.json",
+      "size_bytes": 2073,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_apple_tvos.json",
+      "size_bytes": 1260,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_hermit.json",
+      "size_bytes": 2065,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_hexagon.json",
+      "size_bytes": 26999,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_xtensa_esp32s3_none_elf.json",
+      "size_bytes": 2859,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7a_kmc_solid_asp3_eabi.json",
+      "size_bytes": 2883,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_linux_gnu_ilp32.json",
+      "size_bytes": 2923,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_unknown_linux_uclibceabihf.json",
+      "size_bytes": 3334,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_apple_darwin.json",
+      "size_bytes": 4110,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv7neon_unknown_linux_musleabihf.json",
+      "size_bytes": 2956,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_nto_qnx710_iosock.json",
+      "size_bytes": 919,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv8m_main_none_eabihf.json",
+      "size_bytes": 2479,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_sony_vita_newlibeabihf.json",
+      "size_bytes": 5321,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_linux_uclibc.json",
+      "size_bytes": 464,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_s390x_unknown_linux_musl.json",
+      "size_bytes": 5771,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_target_features.json",
+      "size_bytes": 10750,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_linux_gnu.json",
+      "size_bytes": 458,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_wasm.json",
+      "size_bytes": 1220,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc64le_unknown_freebsd.json",
+      "size_bytes": 3722,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_unknown_freebsd.json",
+      "size_bytes": 2836,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_x86_64_classify_arg.json",
+      "size_bytes": 15402,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_x86_win32.json",
+      "size_bytes": 14330,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc64le_unknown_linux_musl.json",
+      "size_bytes": 3752,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_xtensa.json",
+      "size_bytes": 9328,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv6_unknown_netbsd_eabihf.json",
+      "size_bytes": 2884,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64gc_unknown_managarm_mlibc.json",
+      "size_bytes": 2924,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_bpf.json",
+      "size_bytes": 6095,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_arm64_32_apple_watchos.json",
+      "size_bytes": 1276,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv7em_none_eabi.json",
+      "size_bytes": 2047,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_arm_linux_androideabi.json",
+      "size_bytes": 2867,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64gc_unknown_linux_gnu.json",
+      "size_bytes": 2891,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64gc_unknown_linux_musl.json",
+      "size_bytes": 2899,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_wasm32_wali_linux_musl.json",
+      "size_bytes": 2546,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_loongarch64_unknown_none_softfloat.json",
+      "size_bytes": 3757,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_nto_qnx800.json",
+      "size_bytes": 898,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_aarch64.json",
+      "size_bytes": 26148,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_lynxos178.json",
+      "size_bytes": 458,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_s390x_unknown_linux_gnu.json",
+      "size_bytes": 5756,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_loongarch64_unknown_linux_gnu.json",
+      "size_bytes": 6648,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_linux_musl.json",
+      "size_bytes": 6229,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_win7_windows_msvc.json",
+      "size_bytes": 2891,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_hermit.json",
+      "size_bytes": 2451,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32imafc_unknown_none_elf.json",
+      "size_bytes": 3307,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_nvptx64_nvidia_cuda.json",
+      "size_bytes": 4387,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_x86.json",
+      "size_bytes": 137922,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc_unknown_linux_musl.json",
+      "size_bytes": 2524,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_pc_solaris.json",
+      "size_bytes": 4876,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_nvptx64.json",
+      "size_bytes": 22228,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_s390x.json",
+      "size_bytes": 73461,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64gc_unknown_freebsd.json",
+      "size_bytes": 2868,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_arm_unknown_linux_musleabihf.json",
+      "size_bytes": 2892,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_freebsd.json",
+      "size_bytes": 5367,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_wasm.json",
+      "size_bytes": 1967,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_x86_win64.json",
+      "size_bytes": 12264,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_thumb.json",
+      "size_bytes": 450,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_openbsd.json",
+      "size_bytes": 2066,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc_unknown_netbsd.json",
+      "size_bytes": 2496,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_arm64e_apple_darwin.json",
+      "size_bytes": 3691,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_none.json",
+      "size_bytes": 4109,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32_wrs_vxworks.json",
+      "size_bytes": 2437,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_teeos.json",
+      "size_bytes": 2059,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_netbsd.json",
+      "size_bytes": 2452,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_arm.json",
+      "size_bytes": 15998,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_win7_windows_msvc.json",
+      "size_bytes": 3311,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32imafc_esp_espidf.json",
+      "size_bytes": 4435,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv6k_nintendo_3ds.json",
+      "size_bytes": 5195,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_sparcv9_sun_solaris.json",
+      "size_bytes": 2864,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_nvptx.json",
+      "size_bytes": 2766,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_be_unknown_hermit.json",
+      "size_bytes": 2083,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32e_unknown_none_elf.json",
+      "size_bytes": 3667,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mipsisa64r6_unknown_linux_gnuabi64.json",
+      "size_bytes": 3748,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv8m_base_nuttx_eabi.json",
+      "size_bytes": 2472,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_load_builtin___CALLSITE.json",
+      "size_bytes": 1723,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_windows_gnullvm.json",
+      "size_bytes": 3946,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_unknown_linux_uclibceabi.json",
+      "size_bytes": 3316,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc64_unknown_linux_gnu.json",
+      "size_bytes": 3722,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_uwp_windows_gnu.json",
+      "size_bytes": 2526,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64gc_unknown_fuchsia.json",
+      "size_bytes": 3310,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv7a_pc_windows_msvc.json",
+      "size_bytes": 2121,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_redox.json",
+      "size_bytes": 1218,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv6m_nuttx_eabi.json",
+      "size_bytes": 2437,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_linux_musl.json",
+      "size_bytes": 460,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32im_unknown_none_elf.json",
+      "size_bytes": 2883,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_android.json",
+      "size_bytes": 857,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i586_unknown_linux_musl.json",
+      "size_bytes": 887,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_arm_unknown_linux_gnueabihf.json",
+      "size_bytes": 3281,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_hexagon_unknown_linux_musl.json",
+      "size_bytes": 2480,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_arm64e_apple_tvos.json",
+      "size_bytes": 1256,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv8r_none_eabihf.json",
+      "size_bytes": 2424,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_unknown_linux_musleabihf.json",
+      "size_bytes": 2908,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_netbsd.json",
+      "size_bytes": 452,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_unknown_linux_musleabi.json",
+      "size_bytes": 2892,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mips_unknown_linux_musl.json",
+      "size_bytes": 2852,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64gc_unknown_netbsd.json",
+      "size_bytes": 3254,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_mips.json",
+      "size_bytes": 10810,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_loongarch32_unknown_none.json",
+      "size_bytes": 3262,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_cygwin.json",
+      "size_bytes": 3105,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_unknown_linux_gnu.json",
+      "size_bytes": 2919,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_hurd_gnu.json",
+      "size_bytes": 456,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_pc_nto_qnx800.json",
+      "size_bytes": 880,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_loongarch64_unknown_linux_ohos.json",
+      "size_bytes": 6681,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_sparc64_unknown_openbsd.json",
+      "size_bytes": 2503,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_pc_cygwin.json",
+      "size_bytes": 3278,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_csky_unknown_linux_gnuabiv2hf.json",
+      "size_bytes": 3327,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armeb_unknown_linux_gnueabi.json",
+      "size_bytes": 3281,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_linux_android.json",
+      "size_bytes": 3293,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_xtensa_esp32_none_elf.json",
+      "size_bytes": 2843,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_apple.json",
+      "size_bytes": 8356,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv5te_none_eabi.json",
+      "size_bytes": 2437,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_wrs_vxworks_eabihf.json",
+      "size_bytes": 2472,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_amdgpu.json",
+      "size_bytes": 3753,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_teeos.json",
+      "size_bytes": 1218,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_haiku.json",
+      "size_bytes": 2482,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_wasm32_wasip2.json",
+      "size_bytes": 3163,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7a_kmc_solid_asp3_eabihf.json",
+      "size_bytes": 2899,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_unknown_linux_ohos.json",
+      "size_bytes": 2867,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_avr.json",
+      "size_bytes": 4485,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv7a_nuttx_eabi.json",
+      "size_bytes": 2437,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_wasm32_unknown_unknown.json",
+      "size_bytes": 2939,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv7neon_unknown_linux_gnueabihf.json",
+      "size_bytes": 2543,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i586_unknown_netbsd.json",
+      "size_bytes": 2431,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_powerpc64.json",
+      "size_bytes": 20385,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7a_none_eabihf.json",
+      "size_bytes": 2819,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_trusty.json",
+      "size_bytes": 2451,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc_wrs_vxworks_spe.json",
+      "size_bytes": 2509,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_linux_none.json",
+      "size_bytes": 2083,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_msp430.json",
+      "size_bytes": 6143,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_uefi.json",
+      "size_bytes": 2437,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_pc_windows_gnullvm.json",
+      "size_bytes": 2480,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_riscv.json",
+      "size_bytes": 79107,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_nintendo_switch_freestanding.json",
+      "size_bytes": 3777,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_sparc64.json",
+      "size_bytes": 42476,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_riscv.json",
+      "size_bytes": 42873,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mipsisa64r6el_unknown_linux_gnuabi64.json",
+      "size_bytes": 3768,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mipsisa32r6_unknown_linux_gnu.json",
+      "size_bytes": 2900,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_illumos.json",
+      "size_bytes": 3741,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_constants.json",
+      "size_bytes": 80304,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_csky.json",
+      "size_bytes": 10812,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_illumos.json",
+      "size_bytes": 4549,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc64_wrs_vxworks.json",
+      "size_bytes": 2887,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_none_softfloat.json",
+      "size_bytes": 4191,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_linux_ohos.json",
+      "size_bytes": 7481,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32imc_esp_espidf.json",
+      "size_bytes": 4411,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv8m_main_nuttx_eabihf.json",
+      "size_bytes": 2486,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armebv7r_none_eabihf.json",
+      "size_bytes": 2828,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv6_unknown_freebsd.json",
+      "size_bytes": 3227,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32imafc_unknown_nuttx_elf.json",
+      "size_bytes": 3316,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_apple_visionos.json",
+      "size_bytes": 2517,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc_unknown_linux_muslspe.json",
+      "size_bytes": 3343,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_sparc64_unknown_linux_gnu.json",
+      "size_bytes": 2078,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_aix.json",
+      "size_bytes": 2654,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_m68k.json",
+      "size_bytes": 5753,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_msp430_none_elf.json",
+      "size_bytes": 2023,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_pc_windows_msvc.json",
+      "size_bytes": 2066,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_linux_gnu.json",
+      "size_bytes": 9514,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_m68k_unknown_linux_gnu.json",
+      "size_bytes": 2452,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc_unknown_linux_gnu.json",
+      "size_bytes": 2912,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_msp430.json",
+      "size_bytes": 9797,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_apple_tvos.json",
+      "size_bytes": 869,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32ima_unknown_none_elf.json",
+      "size_bytes": 3289,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_freebsd.json",
+      "size_bytes": 4944,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_avr_none.json",
+      "size_bytes": 3175,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_apple_watchos_sim.json",
+      "size_bytes": 890,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32imac_esp_espidf.json",
+      "size_bytes": 4423,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64_wrs_vxworks.json",
+      "size_bytes": 2437,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_unikraft_linux_musl.json",
+      "size_bytes": 1630,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_bpf.json",
+      "size_bytes": 17443,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_uwp_windows_msvc.json",
+      "size_bytes": 2066,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_wasm64_unknown_unknown.json",
+      "size_bytes": 3332,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64gc_unknown_none_elf.json",
+      "size_bytes": 4566,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_wrs_vxworks.json",
+      "size_bytes": 1657,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv4t_none_eabi.json",
+      "size_bytes": 2430,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_pc_nto_qnx700.json",
+      "size_bytes": 2819,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv7m_nuttx_eabi.json",
+      "size_bytes": 2047,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv7em_nuttx_eabi.json",
+      "size_bytes": 2053,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv8m_main_nuttx_eabi.json",
+      "size_bytes": 2077,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_load_builtin.json",
+      "size_bytes": 477,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv4t_none_eabi.json",
+      "size_bytes": 2803,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_structs.json",
+      "size_bytes": 11584,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32gc_unknown_linux_gnu.json",
+      "size_bytes": 2891,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_hexagon.json",
+      "size_bytes": 6159,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv5te_unknown_linux_uclibceabi.json",
+      "size_bytes": 2924,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv5te_none_eabi.json",
+      "size_bytes": 2423,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_bpfeb_unknown_none.json",
+      "size_bytes": 1652,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec.json",
+      "size_bytes": 13951,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_solid.json",
+      "size_bytes": 1588,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mips64_unknown_linux_gnuabi64.json",
+      "size_bytes": 3698,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_x86.json",
+      "size_bytes": 30562,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv4t_unknown_linux_gnueabi.json",
+      "size_bytes": 3290,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_loongarch64_unknown_linux_musl.json",
+      "size_bytes": 6665,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i386_apple_ios.json",
+      "size_bytes": 860,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7k_apple_watchos.json",
+      "size_bytes": 1268,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_wasm32v1_none.json",
+      "size_bytes": 3635,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_pc_windows_gnullvm.json",
+      "size_bytes": 3307,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mipsel_sony_psx.json",
+      "size_bytes": 4339,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mips_mti_none_elf.json",
+      "size_bytes": 3199,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv8m_base_none_eabi.json",
+      "size_bytes": 2465,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_illumos.json",
+      "size_bytes": 854,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_windows_gnu.json",
+      "size_bytes": 4334,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_be_unknown_linux_musl.json",
+      "size_bytes": 6249,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_pc_windows_msvc.json",
+      "size_bytes": 2903,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv7a_uwp_windows_msvc.json",
+      "size_bytes": 1687,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mipsel_unknown_linux_uclibc.json",
+      "size_bytes": 2884,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32imac_unknown_none_elf.json",
+      "size_bytes": 3298,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mips64_openwrt_linux_musl.json",
+      "size_bytes": 4063,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64imac_unknown_nuttx_elf.json",
+      "size_bytes": 3750,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_netbsd.json",
+      "size_bytes": 6556,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_x86_compute_abi_info.json",
+      "size_bytes": 2952,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_windows_uwp_gnu.json",
+      "size_bytes": 2060,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_literals.json",
+      "size_bytes": 473640,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64a23_unknown_linux_gnu.json",
+      "size_bytes": 2899,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_haiku.json",
+      "size_bytes": 450,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_openbsd.json",
+      "size_bytes": 454,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_vxworks.json",
+      "size_bytes": 2314,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_s390x.json",
+      "size_bytes": 16878,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_apple_ios_sim.json",
+      "size_bytes": 2510,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_linux_ohos.json",
+      "size_bytes": 6244,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_hermit.json",
+      "size_bytes": 823,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_linux_wasm.json",
+      "size_bytes": 3488,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_linux_gnu.json",
+      "size_bytes": 8659,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_arm_unknown_linux_gnueabi.json",
+      "size_bytes": 3263,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_fuchsia.json",
+      "size_bytes": 4501,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_apple_visionos_sim.json",
+      "size_bytes": 2545,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32emc_unknown_none_elf.json",
+      "size_bytes": 3687,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7a_nuttx_eabi.json",
+      "size_bytes": 3199,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_managarm_mlibc.json",
+      "size_bytes": 2545,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_l4re.json",
+      "size_bytes": 1186,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_arm64ec_pc_windows_msvc.json",
+      "size_bytes": 2066,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_be_unknown_none_softfloat.json",
+      "size_bytes": 4224,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_wrs_vxworks.json",
+      "size_bytes": 2085,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_sparc_unknown_none_elf.json",
+      "size_bytes": 2458,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mipsel_sony_psp.json",
+      "size_bytes": 4367,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mipsel_unknown_none.json",
+      "size_bytes": 2827,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_pc_nto_qnx710.json",
+      "size_bytes": 880,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_managarm_mlibc.json",
+      "size_bytes": 2108,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_wasm32_wasip1.json",
+      "size_bytes": 3207,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mips_unknown_linux_gnu.json",
+      "size_bytes": 2844,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_sparc64_unknown_netbsd.json",
+      "size_bytes": 2888,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_fuchsia.json",
+      "size_bytes": 5788,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_unknown_linux_gnueabihf.json",
+      "size_bytes": 3299,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_wasm.json",
+      "size_bytes": 9364,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7s_apple_ios.json",
+      "size_bytes": 1252,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_apple_watchos.json",
+      "size_bytes": 1272,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64h_apple_darwin.json",
+      "size_bytes": 5303,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_freebsd.json",
+      "size_bytes": 454,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc_unknown_linux_gnuspe.json",
+      "size_bytes": 3334,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_m68k_unknown_none_elf.json",
+      "size_bytes": 2445,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_bpfel_unknown_none.json",
+      "size_bytes": 1652,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_fortanix_unknown_sgx.json",
+      "size_bytes": 6967,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_l4re_uclibc.json",
+      "size_bytes": 1688,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_linux_ohos.json",
+      "size_bytes": 460,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_csky_unknown_linux_gnuabiv2.json",
+      "size_bytes": 2912,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_loongarch.json",
+      "size_bytes": 43309,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mipsel_unknown_linux_musl.json",
+      "size_bytes": 2868,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i586_unknown_redox.json",
+      "size_bytes": 2080,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_apple_tvos_sim.json",
+      "size_bytes": 1276,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv7m_none_eabi.json",
+      "size_bytes": 2041,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64gc_unknown_nuttx_elf.json",
+      "size_bytes": 3730,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_Target_search.json",
+      "size_bytes": 2913,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_hurd_gnu.json",
+      "size_bytes": 2503,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_be_unknown_linux_gnu.json",
+      "size_bytes": 2500,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32im_risc0_zkvm_elf.json",
+      "size_bytes": 4052,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_linux_gnux32.json",
+      "size_bytes": 2928,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mips64el_unknown_linux_muslabi64.json",
+      "size_bytes": 3728,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i586_unknown_linux_gnu.json",
+      "size_bytes": 884,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_pc_windows_gnu.json",
+      "size_bytes": 3706,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_uefi.json",
+      "size_bytes": 2488,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_msvc.json",
+      "size_bytes": 845,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_powerpc.json",
+      "size_bytes": 7799,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_uwp_windows_gnu.json",
+      "size_bytes": 2932,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_lynx_lynxos178.json",
+      "size_bytes": 8204,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_apple_ios_macabi.json",
+      "size_bytes": 2947,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_mips64.json",
+      "size_bytes": 25263,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_callconv_sparc.json",
+      "size_bytes": 10838,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv7a_nuttx_eabihf.json",
+      "size_bytes": 2451,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_aarch64.json",
+      "size_bytes": 93650,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_windows_msvc.json",
+      "size_bytes": 3103,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_apple_darwin.json",
+      "size_bytes": 1256,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_redox.json",
+      "size_bytes": 2054,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_enums.json",
+      "size_bytes": 27716,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_none.json",
+      "size_bytes": 4070,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc64le_unknown_linux_gnu.json",
+      "size_bytes": 3742,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc64_unknown_linux_musl.json",
+      "size_bytes": 3732,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mips64_unknown_linux_muslabi64.json",
+      "size_bytes": 3708,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_arm64e_apple_ios.json",
+      "size_bytes": 2475,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64gc_unknown_hermit.json",
+      "size_bytes": 2867,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_linux.json",
+      "size_bytes": 450,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_xtensa_esp32_espidf.json",
+      "size_bytes": 3217,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_windows_uwp_msvc.json",
+      "size_bytes": 1278,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7r_none_eabihf.json",
+      "size_bytes": 2812,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv8m_main_none_eabi.json",
+      "size_bytes": 2071,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_xtensa.json",
+      "size_bytes": 452,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_rtems_eabihf.json",
+      "size_bytes": 3200,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32imc_unknown_none_elf.json",
+      "size_bytes": 3289,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_dragonfly.json",
+      "size_bytes": 458,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv5te_unknown_linux_musleabi.json",
+      "size_bytes": 2908,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv7_linux_androideabi.json",
+      "size_bytes": 3320,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_apple_ios.json",
+      "size_bytes": 2089,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_unknown_trusty.json",
+      "size_bytes": 2851,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_armv5te_unknown_linux_gnueabi.json",
+      "size_bytes": 3299,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_loongarch32_unknown_none_softfloat.json",
+      "size_bytes": 3757,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_powerpc.json",
+      "size_bytes": 110357,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mips64el_unknown_linux_gnuabi64.json",
+      "size_bytes": 3718,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_json.json",
+      "size_bytes": 868,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_asm_m68k.json",
+      "size_bytes": 21358,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_sparc_unknown_linux_gnu.json",
+      "size_bytes": 2880,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_aarch64_linux_android.json",
+      "size_bytes": 5758,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_hurd.json",
+      "size_bytes": 448,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_unknown_netbsd.json",
+      "size_bytes": 2864,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_powerpc_unknown_freebsd.json",
+      "size_bytes": 2896,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_hexagon_unknown_none_elf.json",
+      "size_bytes": 2466,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_i686_pc_windows_gnullvm.json",
+      "size_bytes": 2896,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_thumbv6m_none_eabi.json",
+      "size_bytes": 2430,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv32em_unknown_none_elf.json",
+      "size_bytes": 3677,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_xtensa_esp32s2_espidf.json",
+      "size_bytes": 3235,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mipsel_mti_none_elf.json",
+      "size_bytes": 3217,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_mipsel_unknown_linux_gnu.json",
+      "size_bytes": 2860,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_x86_64_unknown_openbsd.json",
+      "size_bytes": 2496,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_base_solaris.json",
+      "size_bytes": 454,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_spec_targets_riscv64gc_unknown_openbsd.json",
+      "size_bytes": 2868,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_target_complexity.json",
+      "size_bytes": 65376,
+      "type": "usage_data"
+    }
+  ],
+  "output_directory": "./test_usage_data",
+  "rustc_version": "unknown",
+  "timestamp": 1767702056,
+  "total_enums": 9,
+  "total_modules": 395,
+  "total_usages": 7850
+}

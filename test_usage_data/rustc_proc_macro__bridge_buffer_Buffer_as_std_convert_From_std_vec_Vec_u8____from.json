@@ -1,0 +1,50 @@
+{
+  "crate": "rustc_proc_macro",
+  "module": "<bridge::buffer::Buffer as std::convert::From<std::vec::Vec<u8>>>::from",
+  "usages": [
+    {
+      "symbol": "new",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:90 ~ rustc_proc_macro[4b11]::bridge::buffer::{impl#8}::from::to_vec)",
+      "used_def_id": "DefId(2:2134 ~ core[4720]::mem::manually_drop::{impl#0}::new)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "from_raw_parts",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:90 ~ rustc_proc_macro[4b11]::bridge::buffer::{impl#8}::from::to_vec)",
+      "used_def_id": "DefId(3:8089 ~ alloc[27b0]::vec::{impl#0}::from_raw_parts)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "alloc"
+    },
+    {
+      "symbol": "reserve",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:91 ~ rustc_proc_macro[4b11]::bridge::buffer::{impl#8}::from::reserve)",
+      "used_def_id": "DefId(3:8105 ~ alloc[27b0]::vec::{impl#1}::reserve)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "alloc"
+    },
+    {
+      "symbol": "from",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:91 ~ rustc_proc_macro[4b11]::bridge::buffer::{impl#8}::from::reserve)",
+      "used_def_id": "DefId(2:3435 ~ core[4720]::convert::From::from)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "core"
+    }
+  ]
+}

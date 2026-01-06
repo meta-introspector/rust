@@ -1,0 +1,1038 @@
+{
+  "collector_version": "1.0.0",
+  "crate_name": "rustc_mir_build",
+  "dependency_manifests": [
+    "./test_usage_data/rustc_lint_manifest.json",
+    "./test_usage_data/rustc_public_bridge_manifest.json",
+    "./test_usage_data/rustc_hashes_manifest.json",
+    "./test_usage_data/rustc_trait_selection_manifest.json",
+    "./test_usage_data/rustc_resolve_manifest.json",
+    "./test_usage_data/build_script_build_manifest.json",
+    "./test_usage_data/rustc_baked_icu_data_manifest.json",
+    "./test_usage_data/rustc_incremental_manifest.json",
+    "./test_usage_data/rustc_span_manifest.json",
+    "./test_usage_data/rustc_ast_manifest.json",
+    "./test_usage_data/rustc_error_codes_manifest.json",
+    "./test_usage_data/rustc_parse_manifest.json",
+    "./test_usage_data/rustc_arena_manifest.json",
+    "./test_usage_data/rustc_expand_manifest.json",
+    "./test_usage_data/rustc_hir_id_manifest.json",
+    "./test_usage_data/rustc_fs_util_manifest.json",
+    "./test_usage_data/rustc_index_manifest.json",
+    "./test_usage_data/working_usage_collector_manifest.json",
+    "./test_usage_data/rustc_index_macros_manifest.json",
+    "./test_usage_data/rustc_parse_format_manifest.json",
+    "./test_usage_data/rustc_type_ir_macros_manifest.json",
+    "./test_usage_data/rustc_ast_pretty_manifest.json",
+    "./test_usage_data/rustc_next_trait_solver_manifest.json",
+    "./test_usage_data/rustc_builtin_macros_manifest.json",
+    "./test_usage_data/rustc_session_manifest.json",
+    "./test_usage_data/rustc_attr_parsing_manifest.json",
+    "./test_usage_data/rustc_ast_ir_manifest.json",
+    "./test_usage_data/rustc_mir_dataflow_manifest.json",
+    "./test_usage_data/rustc_fluent_macro_manifest.json",
+    "./test_usage_data/rustc_ty_utils_manifest.json",
+    "./test_usage_data/rustc_macros_manifest.json",
+    "./test_usage_data/rustc_hir_manifest.json",
+    "./test_usage_data/rustc_error_messages_manifest.json",
+    "./test_usage_data/rustc_thread_pool_manifest.json",
+    "./test_usage_data/rustc_errors_manifest.json",
+    "./test_usage_data/rustc_traits_manifest.json",
+    "./test_usage_data/rustc_data_structures_manifest.json",
+    "./test_usage_data/rustc_target_manifest.json",
+    "./test_usage_data/rustc_graphviz_manifest.json",
+    "./test_usage_data/rustc_metadata_manifest.json",
+    "./test_usage_data/rustc_public_manifest.json",
+    "./test_usage_data/rustc_serialize_manifest.json",
+    "./test_usage_data/rustc_hir_analysis_manifest.json",
+    "./test_usage_data/rustc_type_ir_manifest.json",
+    "./test_usage_data/rustc_privacy_manifest.json",
+    "./test_usage_data/rustc_lint_defs_manifest.json",
+    "./test_usage_data/rustc_symbol_mangling_manifest.json",
+    "./test_usage_data/rustc_monomorphize_manifest.json",
+    "./test_usage_data/rustc_pattern_analysis_manifest.json",
+    "./test_usage_data/rustc_query_impl_manifest.json",
+    "./test_usage_data/build_common_manifest.json",
+    "./test_usage_data/rustc_abi_manifest.json",
+    "./test_usage_data/rustc_log_manifest.json",
+    "./test_usage_data/rustc_ast_lowering_manifest.json",
+    "./test_usage_data/rustc_middle_manifest.json",
+    "./test_usage_data/rustc_proc_macro_manifest.json",
+    "./test_usage_data/rustc_query_system_manifest.json",
+    "./test_usage_data/rustc_feature_manifest.json",
+    "./test_usage_data/rustc_ast_passes_manifest.json",
+    "./test_usage_data/rustc_transmute_manifest.json",
+    "./test_usage_data/rustc_lexer_manifest.json",
+    "./test_usage_data/rustc_infer_manifest.json",
+    "./test_usage_data/rustc_hir_pretty_manifest.json"
+  ],
+  "environment": {
+    "cargo_manifest_dir": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_mir_build",
+    "cargo_target_dir": null,
+    "profile": null,
+    "pwd": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust"
+  },
+  "generated_files": [
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_operand___CALLSITE.json",
+      "size_bytes": 1991,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_place__impl_builder_Builder__a___tcx___expr_as_place___CALLSITE.json",
+      "size_bytes": 1921,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_cfg__impl_builder_CFG__tcx___push.json",
+      "size_bytes": 522,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_block__impl_thir_cx_ThirBuildCx__tcx___mirror_stmts__closure_0_.json",
+      "size_bytes": 1016,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse__impl_builder_custom_ParseCtxt__a___tcx___parse_basic_block_decl___CALLSITE.json",
+      "size_bytes": 1971,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___convert_var.json",
+      "size_bytes": 549,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_cfg__impl_builder_CFG__tcx___terminate.json",
+      "size_bytes": 532,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_block__impl_thir_cx_ThirBuildCx__tcx___mirror_stmts__closure_0____CALLSITE.json",
+      "size_bytes": 3736,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder.json",
+      "size_bytes": 108578,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_5c84c274da3b5b43.json",
+      "size_bytes": 3853,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_unwind_action.json",
+      "size_bytes": 616,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_place__impl_builder_Builder__a___tcx___expr_as_place.json",
+      "size_bytes": 570,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_rvalue__impl_builder_Builder__a___tcx___as_rvalue.json",
+      "size_bytes": 994,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_constant.json",
+      "size_bytes": 53662,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___match_expr.json",
+      "size_bytes": 550,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___match_candidates___CALLSITE.json",
+      "size_bytes": 1899,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___pick_test.json",
+      "size_bytes": 548,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope__impl_builder_Builder__a___tcx___schedule_backwards_incompatible_drop___CALLSITE.json",
+      "size_bytes": 1989,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___user_args_applied_to_res___CALLSITE.json",
+      "size_bytes": 3718,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_ThirBuildCx___tcx__pattern_from_hir___CALLSITE.json",
+      "size_bytes": 1845,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_local.json",
+      "size_bytes": 600,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_const_to_pat_ConstToPat___tcx__valtree_to_pat___CALLSITE.json",
+      "size_bytes": 3727,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_PatCtxt___a___tcx__lower_pattern__closure_2____CALLSITE.json",
+      "size_bytes": 1922,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_check_match_MatchVisitor___p___tcx__check_let_chain___CALLSITE.json",
+      "size_bytes": 1935,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_e85a28a76568f519.json",
+      "size_bytes": 2001,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_rvalue__impl_builder_Builder__a___tcx___as_rvalue___CALLSITE.json",
+      "size_bytes": 3672,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___lower_match_arms__closure_1_.json",
+      "size_bytes": 588,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___sort_candidates.json",
+      "size_bytes": 988,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope_Scopes___tcx__push_scope___CALLSITE.json",
+      "size_bytes": 1842,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_29cde01c8f719255.json",
+      "size_bytes": 1953,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_static___CALLSITE.json",
+      "size_bytes": 3808,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___convert_path_expr___CALLSITE.json",
+      "size_bytes": 1897,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_return_to.json",
+      "size_bytes": 608,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_check_match_MatchVisitor___p___tcx__check_let___CALLSITE.json",
+      "size_bytes": 1905,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_structs.json",
+      "size_bytes": 49967,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___bind_matched_candidate_for_arm_body.json",
+      "size_bytes": 600,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_constant_lit_to_const__closure_0_.json",
+      "size_bytes": 957,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_check_tail_calls.json",
+      "size_bytes": 7619,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches.json",
+      "size_bytes": 11843,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_ca7557599e95a5ee.json",
+      "size_bytes": 2001,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_constant_lit_to_mir_constant.json",
+      "size_bytes": 543,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope__impl_builder_Builder__a___tcx___break_scope.json",
+      "size_bytes": 548,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_place_to_upvars_resolved_place_builder__closure_0_.json",
+      "size_bytes": 1044,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___mirror_expr_inner___CALLSITE.json",
+      "size_bytes": 8927,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_temp__impl_builder_Builder__a___tcx___as_temp_inner___CALLSITE.json",
+      "size_bytes": 5462,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___bind_and_guard_matched_candidate.json",
+      "size_bytes": 1484,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_stmt__impl_builder_Builder__a___tcx___stmt_expr__closure_1____CALLSITE.json",
+      "size_bytes": 1946,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_constant_lit_to_mir_constant___CALLSITE.json",
+      "size_bytes": 1887,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope_build_scope_drops.json",
+      "size_bytes": 515,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___make_mirror_unadjusted___CALLSITE.json",
+      "size_bytes": 3698,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_const_to_pat__impl_thir_pattern_PatCtxt__a___tcx___const_to_pat___CALLSITE.json",
+      "size_bytes": 3730,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_stmt__impl_builder_Builder__a___tcx___stmt_expr__closure_1_.json",
+      "size_bytes": 580,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope_build_scope_drops___CALLSITE.json",
+      "size_bytes": 1821,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_const_to_pat_type_has_partial_eq_impl___CALLSITE.json",
+      "size_bytes": 3717,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse__impl_builder_custom_ParseCtxt__a___tcx___parse_body___CALLSITE.json",
+      "size_bytes": 8959,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_enums.json",
+      "size_bytes": 8437,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_const_to_pat.json",
+      "size_bytes": 46005,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_literals.json",
+      "size_bytes": 389529,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_rvalue.json",
+      "size_bytes": 1046,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_misc__impl_builder_Builder__a___tcx___temp___CALLSITE.json",
+      "size_bytes": 1826,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___visit_primary_bindings_special___CALLSITE.json",
+      "size_bytes": 3787,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches_util.json",
+      "size_bytes": 15858,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___visit_primary_bindings_special.json",
+      "size_bytes": 1033,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___pick_test___CALLSITE.json",
+      "size_bytes": 1866,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_cfg__impl_builder_CFG__tcx___push___CALLSITE.json",
+      "size_bytes": 1813,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___method_callee___CALLSITE.json",
+      "size_bytes": 1877,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern.json",
+      "size_bytes": 11027,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_PatCtxt___a___tcx__lower_pattern__closure_2_.json",
+      "size_bytes": 562,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___create_or_subcandidates___CALLSITE.json",
+      "size_bytes": 1936,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___declare_binding.json",
+      "size_bytes": 988,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_operand__impl_builder_Builder__a___tcx___as_operand.json",
+      "size_bytes": 1000,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope__impl_builder_Builder__a___tcx___new_source_scope.json",
+      "size_bytes": 558,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches_util_collect_fake_borrows___CALLSITE.json",
+      "size_bytes": 1876,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope__impl_builder_Builder__a___tcx___pop_scope___CALLSITE.json",
+      "size_bytes": 1856,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___make_mirror_unadjusted__closure_0____CALLSITE.json",
+      "size_bytes": 12965,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___apply_adjustment.json",
+      "size_bytes": 1413,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_block___CALLSITE.json",
+      "size_bytes": 1981,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___convert_path_expr.json",
+      "size_bytes": 561,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_PatCtxt___a___tcx__lower_path.json",
+      "size_bytes": 530,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_const_to_pat__impl_thir_pattern_PatCtxt__a___tcx___const_to_pat.json",
+      "size_bytes": 1018,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___user_args_applied_to_res.json",
+      "size_bytes": 1010,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_pat_from_hir.json",
+      "size_bytes": 503,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse__impl_builder_custom_ParseCtxt__a___tcx___parse_basic_block_decl.json",
+      "size_bytes": 596,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_3987cd7030121652.json",
+      "size_bytes": 2021,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_call.json",
+      "size_bytes": 1040,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_check_match_MatchVisitor___p___tcx__with_let_source___CALLSITE.json",
+      "size_bytes": 1935,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope_DropTree_build_mir.json",
+      "size_bytes": 519,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope__impl_builder_Builder__a___tcx___break_scope___CALLSITE.json",
+      "size_bytes": 1866,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_operand__impl_builder_Builder__a___tcx___as_call_operand.json",
+      "size_bytes": 578,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse__impl_builder_custom_ParseCtxt__a___tcx___parse_debuginfo___CALLSITE.json",
+      "size_bytes": 3718,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom.json",
+      "size_bytes": 15074,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___convert_var___CALLSITE.json",
+      "size_bytes": 1867,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_652db20bafe546f2.json",
+      "size_bytes": 609,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_util.json",
+      "size_bytes": 13976,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_integer_literal.json",
+      "size_bytes": 620,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_terminator.json",
+      "size_bytes": 610,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___bind_and_guard_matched_candidate___CALLSITE.json",
+      "size_bytes": 5633,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_rvalue___CALLSITE.json",
+      "size_bytes": 3808,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___make_mirror_unadjusted__closure_0_.json",
+      "size_bytes": 3735,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___lower_match_arms__closure_1____CALLSITE.json",
+      "size_bytes": 1966,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_call___CALLSITE.json",
+      "size_bytes": 3790,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope_DropTree_assign_blocks___CALLSITE.json",
+      "size_bytes": 1851,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_place_to_upvars_resolved_place_builder.json",
+      "size_bytes": 1005,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope__impl_builder_Builder__a___tcx___pop_scope.json",
+      "size_bytes": 544,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_ThirBuildCx___tcx__pattern_from_hir.json",
+      "size_bytes": 532,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_c0dd198f28a45171.json",
+      "size_bytes": 2001,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx.json",
+      "size_bytes": 6212,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___match_expr___CALLSITE.json",
+      "size_bytes": 1869,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_cfg__impl_builder_CFG__tcx___terminate___CALLSITE.json",
+      "size_bytes": 1838,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches_test.json",
+      "size_bytes": 3882,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope_DropTree_assign_blocks.json",
+      "size_bytes": 527,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse__impl_builder_custom_ParseCtxt__a___tcx___parse_body.json",
+      "size_bytes": 2288,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_constant_lit_to_mir_constant__closure_0____CALLSITE.json",
+      "size_bytes": 3782,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_stmt__impl_builder_Builder__a___tcx___stmt_expr.json",
+      "size_bytes": 979,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___match_candidates.json",
+      "size_bytes": 562,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_operand.json",
+      "size_bytes": 604,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_1ca3aad92268951f.json",
+      "size_bytes": 2031,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse__impl_builder_custom_ParseCtxt__a___tcx___parse_debuginfo.json",
+      "size_bytes": 1016,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___bind_matched_candidate_for_guard.json",
+      "size_bytes": 1039,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope__impl_builder_Builder__a___tcx___new_source_scope___CALLSITE.json",
+      "size_bytes": 1891,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___make_mirror_unadjusted.json",
+      "size_bytes": 1004,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_8bd2f1b4acf6bf36.json",
+      "size_bytes": 607,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_operand__impl_builder_Builder__a___tcx___as_operand___CALLSITE.json",
+      "size_bytes": 3688,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_check_match_MatchVisitor___p___tcx__check_binding_is_irrefutable.json",
+      "size_bytes": 597,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_check_match_MatchVisitor___p___tcx__check_binding_is_irrefutable___CALLSITE.json",
+      "size_bytes": 2000,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_statement.json",
+      "size_bytes": 608,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_const_to_pat_ConstToPat___tcx__valtree_to_pat.json",
+      "size_bytes": 1003,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr.json",
+      "size_bytes": 854,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___apply_adjustment___CALLSITE.json",
+      "size_bytes": 5398,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_block__impl_builder_Builder__a___tcx___ast_block_stmts.json",
+      "size_bytes": 556,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_pat_from_hir___CALLSITE.json",
+      "size_bytes": 1791,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_PatCtxt___a___tcx__lower_variant_or_leaf___CALLSITE.json",
+      "size_bytes": 1897,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_place_inner.json",
+      "size_bytes": 1061,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___create_or_subcandidates.json",
+      "size_bytes": 576,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___sort_candidates___CALLSITE.json",
+      "size_bytes": 3654,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_constant_lit_to_const__closure_0____CALLSITE.json",
+      "size_bytes": 3611,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_const_to_pat_type_has_partial_eq_impl.json",
+      "size_bytes": 993,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_local___CALLSITE.json",
+      "size_bytes": 1981,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_into__impl_builder_Builder__a___tcx___expr_into_dest___CALLSITE.json",
+      "size_bytes": 3670,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_constant.json",
+      "size_bytes": 42717,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope__impl_builder_Builder__a___tcx___in_scope.json",
+      "size_bytes": 961,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_print.json",
+      "size_bytes": 4854,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope__impl_builder_Builder__a___tcx___in_scope___CALLSITE.json",
+      "size_bytes": 3571,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_util_user_args_applied_to_ty_of_hir_id___CALLSITE.json",
+      "size_bytes": 1881,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___declare_bindings___CALLSITE.json",
+      "size_bytes": 1899,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_PatCtxt___a___tcx__lower_path___CALLSITE.json",
+      "size_bytes": 1840,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_temp__impl_builder_Builder__a___tcx___as_temp_inner.json",
+      "size_bytes": 1432,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_place_to_upvars_resolved_place_builder___CALLSITE.json",
+      "size_bytes": 3753,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_misc__impl_builder_Builder__a___tcx___temp.json",
+      "size_bytes": 532,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_PatCtxt___a___tcx__lower_pattern_unadjusted___CALLSITE.json",
+      "size_bytes": 1910,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_stmt__impl_builder_Builder__a___tcx___stmt_expr___CALLSITE.json",
+      "size_bytes": 3627,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope__impl_builder_Builder__a___tcx___schedule_backwards_incompatible_drop.json",
+      "size_bytes": 598,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_check_unsafety.json",
+      "size_bytes": 14872,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_const_to_pat_ConstToPat___tcx__new___CALLSITE.json",
+      "size_bytes": 1876,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_place.json",
+      "size_bytes": 57799,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___bind_matched_candidate_for_arm_body___CALLSITE.json",
+      "size_bytes": 1996,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_util_user_args_applied_to_ty_of_hir_id.json",
+      "size_bytes": 539,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches_test__impl_builder_Builder__a___tcx___perform_test___CALLSITE.json",
+      "size_bytes": 5449,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___method_callee.json",
+      "size_bytes": 553,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_5bbd8c8331b034f1.json",
+      "size_bytes": 2006,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_block.json",
+      "size_bytes": 600,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_PatCtxt___a___tcx__lower_pattern_unadjusted.json",
+      "size_bytes": 558,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_tail_call.json",
+      "size_bytes": 608,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_place_to_upvars_resolved_place_builder__closure_0____CALLSITE.json",
+      "size_bytes": 3872,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope_DropTree_build_mir___CALLSITE.json",
+      "size_bytes": 1831,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_PatCtxt___a___tcx__lower_variant_or_leaf.json",
+      "size_bytes": 552,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope.json",
+      "size_bytes": 28140,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_cx_expr__impl_thir_cx_ThirBuildCx__tcx___mirror_expr_inner.json",
+      "size_bytes": 2273,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_constants.json",
+      "size_bytes": 154701,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_361b258db110a103.json",
+      "size_bytes": 1958,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches_test__impl_builder_Builder__a___tcx___perform_test.json",
+      "size_bytes": 1428,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_check_match_MatchVisitor___p___tcx__check_let_chain.json",
+      "size_bytes": 571,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_a50514eee1d5d329.json",
+      "size_bytes": 636,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___declare_binding___CALLSITE.json",
+      "size_bytes": 3652,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches_util_collect_fake_borrows.json",
+      "size_bytes": 537,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse__impl_builder_custom_ParseCtxt__a___tcx___parse_block_def___CALLSITE.json",
+      "size_bytes": 1936,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_operand__impl_builder_Builder__a___tcx___as_call_operand___CALLSITE.json",
+      "size_bytes": 1941,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___bind_matched_candidate_for_guard___CALLSITE.json",
+      "size_bytes": 3807,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_block__impl_builder_Builder__a___tcx___ast_block_stmts___CALLSITE.json",
+      "size_bytes": 1886,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_as_constant_lit_to_mir_constant__closure_0_.json",
+      "size_bytes": 1014,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_matches__impl_builder_Builder__a___tcx___declare_bindings.json",
+      "size_bytes": 562,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse_instruction__impl_builder_custom_ParseCtxt__a___tcx___parse_static.json",
+      "size_bytes": 1046,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_custom_parse__impl_builder_custom_ParseCtxt__a___tcx___parse_block_def.json",
+      "size_bytes": 582,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_expr_into__impl_builder_Builder__a___tcx___expr_into_dest.json",
+      "size_bytes": 3702,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_check_match.json",
+      "size_bytes": 195125,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_builder_scope_Scopes___tcx__push_scope.json",
+      "size_bytes": 527,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_check_match_MatchVisitor___p___tcx__check_let.json",
+      "size_bytes": 559,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_check_match_MatchVisitor___p___tcx__with_let_source.json",
+      "size_bytes": 571,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_thir_pattern_const_to_pat_ConstToPat___tcx__new.json",
+      "size_bytes": 543,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_2cb1e40c767a946.json",
+      "size_bytes": 2071,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_build_complexity.json",
+      "size_bytes": 75922,
+      "type": "usage_data"
+    }
+  ],
+  "output_directory": "./test_usage_data",
+  "rustc_version": "unknown",
+  "timestamp": 1767701103,
+  "total_enums": 6,
+  "total_modules": 190,
+  "total_usages": 3848
+}

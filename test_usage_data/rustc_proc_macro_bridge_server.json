@@ -1,0 +1,116 @@
+{
+  "crate": "rustc_proc_macro",
+  "module": "bridge::server",
+  "usages": [
+    {
+      "symbol": "new",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1485 ~ rustc_proc_macro[4b11]::bridge::server::ALREADY_RUNNING_SAME_THREAD)",
+      "used_def_id": "DefId(1:569 ~ std[93f5]::thread::local::{impl#4}::new)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "std"
+    },
+    {
+      "symbol": "get",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1485 ~ rustc_proc_macro[4b11]::bridge::server::ALREADY_RUNNING_SAME_THREAD)",
+      "used_def_id": "DefId(1:13044 ~ std[93f5]::sys::thread_local::native::eager::{impl#0}::get)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "std"
+    },
+    {
+      "symbol": "new",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:472 ~ rustc_proc_macro[4b11]::bridge::server::run_server)",
+      "used_def_id": "DefId(0:1315 ~ rustc_proc_macro[4b11]::bridge::server::{impl#10}::new)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "rustc_proc_macro"
+    },
+    {
+      "symbol": "globals",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:472 ~ rustc_proc_macro[4b11]::bridge::server::run_server)",
+      "used_def_id": "DefId(0:1355 ~ rustc_proc_macro[4b11]::bridge::server::Server::globals)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "rustc_proc_macro"
+    },
+    {
+      "symbol": "new",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:472 ~ rustc_proc_macro[4b11]::bridge::server::run_server)",
+      "used_def_id": "DefId(0:74 ~ rustc_proc_macro[4b11]::bridge::buffer::{impl#5}::new)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "rustc_proc_macro"
+    },
+    {
+      "symbol": "encode",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:472 ~ rustc_proc_macro[4b11]::bridge::server::run_server)",
+      "used_def_id": "DefId(0:286 ~ rustc_proc_macro[4b11]::bridge::rpc::Encode::encode)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "rustc_proc_macro"
+    },
+    {
+      "symbol": "run_bridge_and_client",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:472 ~ rustc_proc_macro[4b11]::bridge::server::run_server)",
+      "used_def_id": "DefId(0:428 ~ rustc_proc_macro[4b11]::bridge::server::ExecutionStrategy::run_bridge_and_client)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "rustc_proc_macro"
+    },
+    {
+      "symbol": "decode",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:472 ~ rustc_proc_macro[4b11]::bridge::server::run_server)",
+      "used_def_id": "DefId(0:298 ~ rustc_proc_macro[4b11]::bridge::rpc::DecodeMut::decode)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "rustc_proc_macro"
+    },
+    {
+      "symbol": "index",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:472 ~ rustc_proc_macro[4b11]::bridge::server::run_server)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "RangeFull",
+      "kind": "struct_usage",
+      "usage_count": 1,
+      "usage_type": "StructUsage",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:472 ~ rustc_proc_macro[4b11]::bridge::server::run_server)",
+      "used_def_id": "DefId(2:45162 ~ core[4720]::ops::range::RangeFull)",
+      "user_crate": "rustc_proc_macro",
+      "used_crate": "core"
+    }
+  ]
+}

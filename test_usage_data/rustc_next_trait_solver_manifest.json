@@ -1,0 +1,681 @@
+{
+  "collector_version": "1.0.0",
+  "crate_name": "rustc_next_trait_solver",
+  "dependency_manifests": [
+    "./test_usage_data/rustc_hashes_manifest.json",
+    "./test_usage_data/build_script_build_manifest.json",
+    "./test_usage_data/rustc_baked_icu_data_manifest.json",
+    "./test_usage_data/rustc_span_manifest.json",
+    "./test_usage_data/rustc_ast_manifest.json",
+    "./test_usage_data/rustc_error_codes_manifest.json",
+    "./test_usage_data/rustc_arena_manifest.json",
+    "./test_usage_data/rustc_hir_id_manifest.json",
+    "./test_usage_data/rustc_fs_util_manifest.json",
+    "./test_usage_data/rustc_index_manifest.json",
+    "./test_usage_data/working_usage_collector_manifest.json",
+    "./test_usage_data/rustc_index_macros_manifest.json",
+    "./test_usage_data/rustc_parse_format_manifest.json",
+    "./test_usage_data/rustc_type_ir_macros_manifest.json",
+    "./test_usage_data/rustc_ast_pretty_manifest.json",
+    "./test_usage_data/rustc_ast_ir_manifest.json",
+    "./test_usage_data/rustc_fluent_macro_manifest.json",
+    "./test_usage_data/rustc_macros_manifest.json",
+    "./test_usage_data/rustc_error_messages_manifest.json",
+    "./test_usage_data/rustc_thread_pool_manifest.json",
+    "./test_usage_data/rustc_errors_manifest.json",
+    "./test_usage_data/rustc_data_structures_manifest.json",
+    "./test_usage_data/rustc_graphviz_manifest.json",
+    "./test_usage_data/rustc_serialize_manifest.json",
+    "./test_usage_data/rustc_type_ir_manifest.json",
+    "./test_usage_data/rustc_lint_defs_manifest.json",
+    "./test_usage_data/build_common_manifest.json",
+    "./test_usage_data/rustc_abi_manifest.json",
+    "./test_usage_data/rustc_log_manifest.json",
+    "./test_usage_data/rustc_proc_macro_manifest.json",
+    "./test_usage_data/rustc_lexer_manifest.json"
+  ],
+  "environment": {
+    "cargo_manifest_dir": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_next_trait_solver",
+    "cargo_target_dir": null,
+    "profile": null,
+    "pwd": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust"
+  },
+  "generated_files": [
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver__D_as_solve_eval_ctxt_SolverDelegateEvalExt__evaluate_root_goal_for_proof_tree___CALLSITE.json",
+      "size_bytes": 2051,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_coherence_orphan_check_trait_ref___CALLSITE.json",
+      "size_bytes": 3673,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_and_evaluate_candidates.json",
+      "size_bytes": 623,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__relate___CALLSITE.json",
+      "size_bytes": 3691,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_alias_relate__impl_solve_eval_ctxt_EvalCtxt_____D___compute_alias_relate_goal___CALLSITE.json",
+      "size_bytes": 3912,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__relate.json",
+      "size_bytes": 985,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_trait_goals__impl_solve_eval_ctxt_EvalCtxt_____D___unsound_prefer_builtin_dyn_impl__closure_2_.json",
+      "size_bytes": 653,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_normalizes_to__impl_solve_eval_ctxt_EvalCtxt_____D___compute_normalizes_to_goal___CALLSITE.json",
+      "size_bytes": 3930,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_effect_goals__impl_solve_eval_ctxt_EvalCtxt_____D___compute_host_effect_goal___CALLSITE.json",
+      "size_bytes": 2033,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__add_goal___CALLSITE.json",
+      "size_bytes": 1915,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt.json",
+      "size_bytes": 5052,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__try_evaluate_added_goals___CALLSITE.json",
+      "size_bytes": 1995,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__eq.json",
+      "size_bytes": 973,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__relate_rigid_alias_non_alias___CALLSITE.json",
+      "size_bytes": 3889,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_93704b0e29b2753c.json",
+      "size_bytes": 2235,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_project_goals__impl_solve_eval_ctxt_EvalCtxt_____D___compute_projection_goal___CALLSITE.json",
+      "size_bytes": 3903,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_canonicalizer.json",
+      "size_bytes": 5238,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__term_is_fully_unconstrained___CALLSITE.json",
+      "size_bytes": 3880,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_trait_goals__impl_solve_eval_ctxt_EvalCtxt_____D___merge_trait_candidates.json",
+      "size_bytes": 1062,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_canonical__impl_solve_eval_ctxt_EvalCtxt_____D___unify_query_var_values___CALLSITE.json",
+      "size_bytes": 2063,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_and_merge_candidates.json",
+      "size_bytes": 1074,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_effect_goals__impl_solve_eval_ctxt_EvalCtxt_____D___compute_host_effect_goal.json",
+      "size_bytes": 615,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly_structural_traits_instantiate_constituent_tys_for_sizedness_trait___CALLSITE.json",
+      "size_bytes": 4123,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_ad04fa7c8bac9878.json",
+      "size_bytes": 695,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_subtype_goal___CALLSITE.json",
+      "size_bytes": 1943,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_b3f764f63d6184f0.json",
+      "size_bytes": 731,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_b5999589dc77439b.json",
+      "size_bytes": 4191,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__eq_and_get_goals___CALLSITE.json",
+      "size_bytes": 3781,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_builtin_impl_candidates___CALLSITE.json",
+      "size_bytes": 2053,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__enter_canonical___CALLSITE.json",
+      "size_bytes": 1952,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_alias_relate__impl_solve_eval_ctxt_EvalCtxt_____D___compute_alias_relate_goal.json",
+      "size_bytes": 1074,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_const_arg_has_type_goal.json",
+      "size_bytes": 1050,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt_____D___structurally_normalize_const.json",
+      "size_bytes": 1041,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__add_goals___CALLSITE.json",
+      "size_bytes": 1920,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_structs.json",
+      "size_bytes": 8143,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__term_is_fully_unconstrained.json",
+      "size_bytes": 1048,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_object_bound_candidates___CALLSITE.json",
+      "size_bytes": 2053,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__eq_structurally_relating_aliases___CALLSITE.json",
+      "size_bytes": 3925,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_canonical__impl_solve_eval_ctxt_EvalCtxt_____D___unify_query_var_values.json",
+      "size_bytes": 627,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_probe_TraitProbeCtxt__________D__I__F__enter.json",
+      "size_bytes": 578,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_alias_relate__impl_solve_eval_ctxt_EvalCtxt_____D___compute_alias_relate_goal__closure_0_.json",
+      "size_bytes": 643,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_2fb9ce46d2667c39.json",
+      "size_bytes": 2060,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_region_outlives_goal.json",
+      "size_bytes": 595,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_f87dc07388271624.json",
+      "size_bytes": 2105,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_normalizes_to__impl_solve_eval_ctxt_EvalCtxt_____D___compute_normalizes_to_goal.json",
+      "size_bytes": 1080,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_trait_goals.json",
+      "size_bytes": 1439,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_constants.json",
+      "size_bytes": 52083,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_param_env_candidates.json",
+      "size_bytes": 617,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__add_goals.json",
+      "size_bytes": 556,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___consider_coherence_unknowable_candidate.json",
+      "size_bytes": 637,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__register_hidden_type_in_storage.json",
+      "size_bytes": 1060,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly_structural_traits_instantiate_constituent_tys_for_auto_trait___CALLSITE.json",
+      "size_bytes": 4078,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly_structural_traits_instantiate_constituent_tys_for_auto_trait.json",
+      "size_bytes": 1108,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_region_outlives_goal___CALLSITE.json",
+      "size_bytes": 1983,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_d80f0e674dbdb304.json",
+      "size_bytes": 4065,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__enter_canonical.json",
+      "size_bytes": 568,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_enums.json",
+      "size_bytes": 5511,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_coherence_orphan_check_trait_ref.json",
+      "size_bytes": 973,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__try_evaluate_added_goals.json",
+      "size_bytes": 586,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_81a71207c2af0e06.json",
+      "size_bytes": 2260,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_coerce_goal.json",
+      "size_bytes": 577,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_type_outlives_goal___CALLSITE.json",
+      "size_bytes": 1973,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_trait_goals__impl_solve_eval_ctxt_EvalCtxt_____D___merge_trait_candidates___CALLSITE.json",
+      "size_bytes": 3876,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_resolve.json",
+      "size_bytes": 1378,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_subtype_goal.json",
+      "size_bytes": 579,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve.json",
+      "size_bytes": 5302,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver__D_as_solve_eval_ctxt_SolverDelegateEvalExt__evaluate_root_goal_for_proof_tree.json",
+      "size_bytes": 615,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_probe_TraitProbeCtxt__________D__I__F__enter___CALLSITE.json",
+      "size_bytes": 1951,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_builtin_impl_candidates.json",
+      "size_bytes": 623,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_param_env_candidates___CALLSITE.json",
+      "size_bytes": 2038,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly_structural_traits_instantiate_constituent_tys_for_copy_clone_trait___CALLSITE.json",
+      "size_bytes": 4132,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_well_formed_goal.json",
+      "size_bytes": 587,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_canonical.json",
+      "size_bytes": 7091,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__relate_rigid_alias_non_alias.json",
+      "size_bytes": 1051,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly_structural_traits.json",
+      "size_bytes": 202143,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_trait_goals__impl_solve_eval_ctxt_EvalCtxt_____D___compute_trait_goal___CALLSITE.json",
+      "size_bytes": 1998,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_object_bound_candidates.json",
+      "size_bytes": 623,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__eq___CALLSITE.json",
+      "size_bytes": 3655,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__evaluate_added_goals_step.json",
+      "size_bytes": 588,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__evaluate_added_goals_step___CALLSITE.json",
+      "size_bytes": 2002,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_and_merge_candidates___CALLSITE.json",
+      "size_bytes": 3912,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_canonical__impl_solve_eval_ctxt_EvalCtxt_____D___compute_external_query_constraints.json",
+      "size_bytes": 1125,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_coherence_trait_ref_is_knowable___CALLSITE.json",
+      "size_bytes": 3664,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt_____D___structurally_normalize_ty.json",
+      "size_bytes": 1032,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver__D_as_solve_eval_ctxt_SolverDelegateEvalExt__evaluate_root_goal.json",
+      "size_bytes": 585,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_6cbd35cdd5d8d201.json",
+      "size_bytes": 3984,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__eq_and_get_goals.json",
+      "size_bytes": 1015,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_alias_bound_candidates.json",
+      "size_bytes": 621,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_1aeed557c090b3bf.json",
+      "size_bytes": 2130,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_b5112670fd50d6e5.json",
+      "size_bytes": 2088,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___try_assemble_bounds_via_registered_opaques.json",
+      "size_bytes": 643,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__add_goal.json",
+      "size_bytes": 554,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_type_outlives_goal.json",
+      "size_bytes": 591,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_3e993b7740e8777b.json",
+      "size_bytes": 1167,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_const_evaluatable_goal___CALLSITE.json",
+      "size_bytes": 1993,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt_____D___structurally_normalize_ty___CALLSITE.json",
+      "size_bytes": 3786,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly_structural_traits_instantiate_constituent_tys_for_sizedness_trait.json",
+      "size_bytes": 1123,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly_structural_traits_instantiate_constituent_tys_for_copy_clone_trait.json",
+      "size_bytes": 1126,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_6a7c89bb0b35154f.json",
+      "size_bytes": 2105,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_impl_candidates___CALLSITE.json",
+      "size_bytes": 2013,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_const_evaluatable_goal.json",
+      "size_bytes": 599,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_coerce_goal___CALLSITE.json",
+      "size_bytes": 1938,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__sub___CALLSITE.json",
+      "size_bytes": 3664,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__eq_structurally_relating_aliases.json",
+      "size_bytes": 1063,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_impl_candidates.json",
+      "size_bytes": 607,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_trait_goals__impl_solve_eval_ctxt_EvalCtxt_____D___compute_trait_goal.json",
+      "size_bytes": 601,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_d1f3a6659279d07c.json",
+      "size_bytes": 2325,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_project_goals__impl_solve_eval_ctxt_EvalCtxt_____D___compute_projection_goal.json",
+      "size_bytes": 1071,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt_____D___flounder.json",
+      "size_bytes": 981,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt_____D___flounder___CALLSITE.json",
+      "size_bytes": 3633,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_coherence_trait_ref_is_knowable.json",
+      "size_bytes": 970,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__register_hidden_type_in_storage___CALLSITE.json",
+      "size_bytes": 3916,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver__D_as_solve_eval_ctxt_SolverDelegateEvalExt__evaluate_root_goal___CALLSITE.json",
+      "size_bytes": 1976,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_alias_bound_candidates___CALLSITE.json",
+      "size_bytes": 2048,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_eval_ctxt_EvalCtxt___a__D__sub.json",
+      "size_bytes": 976,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_const_arg_has_type_goal___CALLSITE.json",
+      "size_bytes": 3840,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt__a__D___compute_well_formed_goal___CALLSITE.json",
+      "size_bytes": 1963,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt_____D___try_merge_candidates.json",
+      "size_bytes": 1017,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_25f47e77b0c2712e.json",
+      "size_bytes": 705,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_literals.json",
+      "size_bytes": 172400,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_assembly__impl_solve_eval_ctxt_EvalCtxt_____D___assemble_and_evaluate_candidates___CALLSITE.json",
+      "size_bytes": 2055,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt_____D___structurally_normalize_const___CALLSITE.json",
+      "size_bytes": 3813,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve__impl_solve_eval_ctxt_EvalCtxt_____D___try_merge_candidates___CALLSITE.json",
+      "size_bytes": 3741,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_solve_normalizes_to_anon_const__impl_solve_eval_ctxt_EvalCtxt_____D___normalize_anon_const.json",
+      "size_bytes": 1098,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_coherence.json",
+      "size_bytes": 44092,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_next_trait_solver_complexity.json",
+      "size_bytes": 24171,
+      "type": "usage_data"
+    }
+  ],
+  "output_directory": "./test_usage_data",
+  "rustc_version": "unknown",
+  "timestamp": 1767701028,
+  "total_enums": 6,
+  "total_modules": 125,
+  "total_usages": 1727
+}

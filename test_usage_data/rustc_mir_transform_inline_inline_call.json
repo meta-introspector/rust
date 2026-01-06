@@ -1,0 +1,72 @@
+{
+  "crate": "rustc_mir_transform",
+  "module": "inline::inline_call",
+  "usages": [
+    {
+      "symbol": "iter",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3810 ~ rustc_mir_transform[b3c4]::inline::inline_call::dest_needs_borrow)",
+      "used_def_id": "DefId(168:7911 ~ rustc_middle[d452]::ty::list::{impl#1}::iter)",
+      "user_crate": "rustc_mir_transform",
+      "used_crate": "rustc_middle"
+    },
+    {
+      "symbol": "None",
+      "kind": "enum_variant_usage",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3810 ~ rustc_mir_transform[b3c4]::inline::inline_call::dest_needs_borrow)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)",
+      "user_crate": "rustc_mir_transform",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "Some",
+      "kind": "enum_variant_usage",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3810 ~ rustc_mir_transform[b3c4]::inline::inline_call::dest_needs_borrow)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)",
+      "user_crate": "rustc_mir_transform",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "next",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3810 ~ rustc_mir_transform[b3c4]::inline::inline_call::dest_needs_borrow)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)",
+      "user_crate": "rustc_mir_transform",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "into_iter",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:3810 ~ rustc_mir_transform[b3c4]::inline::inline_call::dest_needs_borrow)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)",
+      "user_crate": "rustc_mir_transform",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "new",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:7027 ~ rustc_mir_transform[b3c4]::inline::inline_call::__CALLSITE)",
+      "used_def_id": "DefId(39:57 ~ tracing_core[77f1]::callsite::{impl#0}::new)",
+      "user_crate": "rustc_mir_transform",
+      "used_crate": "tracing_core"
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "collector_version": "1.0.0",
+  "crate_name": "rustc_mir_dataflow",
+  "dependency_manifests": [
+    "./test_usage_data/rustc_public_bridge_manifest.json",
+    "./test_usage_data/rustc_hashes_manifest.json",
+    "./test_usage_data/build_script_build_manifest.json",
+    "./test_usage_data/rustc_baked_icu_data_manifest.json",
+    "./test_usage_data/rustc_incremental_manifest.json",
+    "./test_usage_data/rustc_span_manifest.json",
+    "./test_usage_data/rustc_ast_manifest.json",
+    "./test_usage_data/rustc_error_codes_manifest.json",
+    "./test_usage_data/rustc_parse_manifest.json",
+    "./test_usage_data/rustc_arena_manifest.json",
+    "./test_usage_data/rustc_expand_manifest.json",
+    "./test_usage_data/rustc_hir_id_manifest.json",
+    "./test_usage_data/rustc_fs_util_manifest.json",
+    "./test_usage_data/rustc_index_manifest.json",
+    "./test_usage_data/working_usage_collector_manifest.json",
+    "./test_usage_data/rustc_index_macros_manifest.json",
+    "./test_usage_data/rustc_parse_format_manifest.json",
+    "./test_usage_data/rustc_type_ir_macros_manifest.json",
+    "./test_usage_data/rustc_ast_pretty_manifest.json",
+    "./test_usage_data/rustc_next_trait_solver_manifest.json",
+    "./test_usage_data/rustc_builtin_macros_manifest.json",
+    "./test_usage_data/rustc_session_manifest.json",
+    "./test_usage_data/rustc_attr_parsing_manifest.json",
+    "./test_usage_data/rustc_ast_ir_manifest.json",
+    "./test_usage_data/rustc_fluent_macro_manifest.json",
+    "./test_usage_data/rustc_macros_manifest.json",
+    "./test_usage_data/rustc_hir_manifest.json",
+    "./test_usage_data/rustc_error_messages_manifest.json",
+    "./test_usage_data/rustc_thread_pool_manifest.json",
+    "./test_usage_data/rustc_errors_manifest.json",
+    "./test_usage_data/rustc_data_structures_manifest.json",
+    "./test_usage_data/rustc_target_manifest.json",
+    "./test_usage_data/rustc_graphviz_manifest.json",
+    "./test_usage_data/rustc_serialize_manifest.json",
+    "./test_usage_data/rustc_type_ir_manifest.json",
+    "./test_usage_data/rustc_lint_defs_manifest.json",
+    "./test_usage_data/rustc_symbol_mangling_manifest.json",
+    "./test_usage_data/rustc_pattern_analysis_manifest.json",
+    "./test_usage_data/build_common_manifest.json",
+    "./test_usage_data/rustc_abi_manifest.json",
+    "./test_usage_data/rustc_log_manifest.json",
+    "./test_usage_data/rustc_middle_manifest.json",
+    "./test_usage_data/rustc_proc_macro_manifest.json",
+    "./test_usage_data/rustc_query_system_manifest.json",
+    "./test_usage_data/rustc_feature_manifest.json",
+    "./test_usage_data/rustc_ast_passes_manifest.json",
+    "./test_usage_data/rustc_transmute_manifest.json",
+    "./test_usage_data/rustc_lexer_manifest.json",
+    "./test_usage_data/rustc_hir_pretty_manifest.json"
+  ],
+  "environment": {
+    "cargo_manifest_dir": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_mir_dataflow",
+    "cargo_target_dir": null,
+    "profile": null,
+    "pwd": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust"
+  },
+  "generated_files": [
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_framework_Analysis_iterate_to_fixpoint.json",
+      "size_bytes": 538,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__finalize.json",
+      "size_bytes": 2278,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_impls_borrowed_locals.json",
+      "size_bytes": 1359,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__gather_init___CALLSITE.json",
+      "size_bytes": 3693,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__move_path_for___CALLSITE.json",
+      "size_bytes": 1925,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_drop_flag_effects.json",
+      "size_bytes": 45935,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_rustc_peek_sanity_check_via_rustc_peek___CALLSITE.json",
+      "size_bytes": 1878,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_structs.json",
+      "size_bytes": 20282,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_279b3e9c59565d9f.json",
+      "size_bytes": 5760,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_value_analysis_Map___tcx__new.json",
+      "size_bytes": 519,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_impls_storage_liveness.json",
+      "size_bytes": 5212,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_enums.json",
+      "size_bytes": 5146,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__record_move___CALLSITE.json",
+      "size_bytes": 1915,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__gather_move.json",
+      "size_bytes": 564,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder.json",
+      "size_bytes": 11287,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_value_analysis_PlaceCollector_______tcx__register_place.json",
+      "size_bytes": 1418,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_value_analysis_Map___tcx__register_place___CALLSITE.json",
+      "size_bytes": 3654,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_7707b55d26bf450e.json",
+      "size_bytes": 1927,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_88c41cd122798bdd.json",
+      "size_bytes": 1541,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__gather_args.json",
+      "size_bytes": 564,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_value_analysis_Map___tcx__new___CALLSITE.json",
+      "size_bytes": 1831,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_rustc_peek_sanity_check.json",
+      "size_bytes": 921,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow__impls_liveness_MaybeLiveLocals_as_rustc_peek_RustcPeekAt__tcx___peek_at.json",
+      "size_bytes": 563,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__move_path_for.json",
+      "size_bytes": 568,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_framework_graphviz_write_graphviz_results.json",
+      "size_bytes": 544,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow__A_as_rustc_peek_RustcPeekAt__tcx___peek_at.json",
+      "size_bytes": 532,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_value_analysis_Map___tcx__register_place.json",
+      "size_bytes": 972,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__gather_statement.json",
+      "size_bytes": 574,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_framework_graphviz_write_graphviz_results___CALLSITE.json",
+      "size_bytes": 1898,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__record_move.json",
+      "size_bytes": 564,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__finalize___CALLSITE.json",
+      "size_bytes": 8964,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_value_analysis_Map___tcx__register.json",
+      "size_bytes": 529,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_value_analysis_Map___tcx__register___CALLSITE.json",
+      "size_bytes": 1854,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_literals.json",
+      "size_bytes": 83911,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow__A_as_rustc_peek_RustcPeekAt__tcx___peek_at___CALLSITE.json",
+      "size_bytes": 1844,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_drop_flag_effects_on_all_children_bits.json",
+      "size_bytes": 1391,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_value_analysis.json",
+      "size_bytes": 44604,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_constants.json",
+      "size_bytes": 30410,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__gather_statement___CALLSITE.json",
+      "size_bytes": 1940,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__gather_args___CALLSITE.json",
+      "size_bytes": 1915,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_framework_Analysis_iterate_to_fixpoint___CALLSITE.json",
+      "size_bytes": 1883,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_framework_graphviz.json",
+      "size_bytes": 35794,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_framework_visitor.json",
+      "size_bytes": 4666,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__gather_move___CALLSITE.json",
+      "size_bytes": 1915,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_3c1f63e83aa5b884.json",
+      "size_bytes": 5747,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_drop_flag_effects_drop_flag_effects_for_location___CALLSITE.json",
+      "size_bytes": 5540,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_framework_fmt.json",
+      "size_bytes": 18283,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_debuginfo.json",
+      "size_bytes": 3321,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_3c9c179b1cdb936.json",
+      "size_bytes": 1537,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_rustc_peek.json",
+      "size_bytes": 49787,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_rustc_peek_sanity_check___CALLSITE.json",
+      "size_bytes": 3509,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_value_analysis_PlaceCollector_______tcx__register_place___CALLSITE.json",
+      "size_bytes": 5439,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow__value_analysis_PlaceCollector______tcx__as_rustc_middle_mir_visit_Visitor__tcx___visit_place.json",
+      "size_bytes": 593,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow__impls_liveness_MaybeLiveLocals_as_rustc_peek_RustcPeekAt__tcx___peek_at___CALLSITE.json",
+      "size_bytes": 1873,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__gather_terminator.json",
+      "size_bytes": 576,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__gather_terminator___CALLSITE.json",
+      "size_bytes": 1945,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_drop_flag_effects_drop_flag_effects_for_location.json",
+      "size_bytes": 1436,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_rustc_peek_sanity_check_via_rustc_peek.json",
+      "size_bytes": 536,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_framework_graphviz_diff_pretty.json",
+      "size_bytes": 504,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_move_paths_builder_MoveDataBuilder___a___tcx__F__gather_init.json",
+      "size_bytes": 997,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_mir_dataflow_complexity.json",
+      "size_bytes": 34199,
+      "type": "usage_data"
+    }
+  ],
+  "output_directory": "./test_usage_data",
+  "rustc_version": "unknown",
+  "timestamp": 1767701047,
+  "total_enums": 6,
+  "total_modules": 60,
+  "total_usages": 1145
+}

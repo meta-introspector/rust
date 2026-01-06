@@ -1,0 +1,481 @@
+{
+  "collector_version": "1.0.0",
+  "crate_name": "rustc_ast_lowering",
+  "dependency_manifests": [
+    "./test_usage_data/rustc_public_bridge_manifest.json",
+    "./test_usage_data/rustc_hashes_manifest.json",
+    "./test_usage_data/build_script_build_manifest.json",
+    "./test_usage_data/rustc_baked_icu_data_manifest.json",
+    "./test_usage_data/rustc_incremental_manifest.json",
+    "./test_usage_data/rustc_span_manifest.json",
+    "./test_usage_data/rustc_ast_manifest.json",
+    "./test_usage_data/rustc_error_codes_manifest.json",
+    "./test_usage_data/rustc_parse_manifest.json",
+    "./test_usage_data/rustc_arena_manifest.json",
+    "./test_usage_data/rustc_expand_manifest.json",
+    "./test_usage_data/rustc_hir_id_manifest.json",
+    "./test_usage_data/rustc_fs_util_manifest.json",
+    "./test_usage_data/rustc_index_manifest.json",
+    "./test_usage_data/working_usage_collector_manifest.json",
+    "./test_usage_data/rustc_index_macros_manifest.json",
+    "./test_usage_data/rustc_parse_format_manifest.json",
+    "./test_usage_data/rustc_type_ir_macros_manifest.json",
+    "./test_usage_data/rustc_ast_pretty_manifest.json",
+    "./test_usage_data/rustc_next_trait_solver_manifest.json",
+    "./test_usage_data/rustc_builtin_macros_manifest.json",
+    "./test_usage_data/rustc_session_manifest.json",
+    "./test_usage_data/rustc_attr_parsing_manifest.json",
+    "./test_usage_data/rustc_ast_ir_manifest.json",
+    "./test_usage_data/rustc_mir_dataflow_manifest.json",
+    "./test_usage_data/rustc_fluent_macro_manifest.json",
+    "./test_usage_data/rustc_macros_manifest.json",
+    "./test_usage_data/rustc_hir_manifest.json",
+    "./test_usage_data/rustc_error_messages_manifest.json",
+    "./test_usage_data/rustc_thread_pool_manifest.json",
+    "./test_usage_data/rustc_errors_manifest.json",
+    "./test_usage_data/rustc_data_structures_manifest.json",
+    "./test_usage_data/rustc_target_manifest.json",
+    "./test_usage_data/rustc_graphviz_manifest.json",
+    "./test_usage_data/rustc_serialize_manifest.json",
+    "./test_usage_data/rustc_type_ir_manifest.json",
+    "./test_usage_data/rustc_lint_defs_manifest.json",
+    "./test_usage_data/rustc_symbol_mangling_manifest.json",
+    "./test_usage_data/rustc_monomorphize_manifest.json",
+    "./test_usage_data/rustc_pattern_analysis_manifest.json",
+    "./test_usage_data/build_common_manifest.json",
+    "./test_usage_data/rustc_abi_manifest.json",
+    "./test_usage_data/rustc_log_manifest.json",
+    "./test_usage_data/rustc_middle_manifest.json",
+    "./test_usage_data/rustc_proc_macro_manifest.json",
+    "./test_usage_data/rustc_query_system_manifest.json",
+    "./test_usage_data/rustc_feature_manifest.json",
+    "./test_usage_data/rustc_ast_passes_manifest.json",
+    "./test_usage_data/rustc_transmute_manifest.json",
+    "./test_usage_data/rustc_lexer_manifest.json",
+    "./test_usage_data/rustc_hir_pretty_manifest.json"
+  ],
+  "environment": {
+    "cargo_manifest_dir": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_ast_lowering",
+    "cargo_target_dir": null,
+    "profile": null,
+    "pwd": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust"
+  },
+  "generated_files": [
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_opaque_impl_trait___CALLSITE.json",
+      "size_bytes": 3607,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_path__impl_LoweringContext__a___hir___maybe_insert_elided_lifetimes_in_path___CALLSITE.json",
+      "size_bytes": 1972,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_expr__impl_LoweringContext______hir___lower_expr_assign.json",
+      "size_bytes": 1900,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_index_index_hir___CALLSITE.json",
+      "size_bytes": 1761,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_index_index_hir.json",
+      "size_bytes": 490,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_format.json",
+      "size_bytes": 74628,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering__index_NodeCollector__a___hir__as_rustc_hir_intravisit_Visitor__hir___visit_foreign_item.json",
+      "size_bytes": 585,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering__index_NodeCollector__a___hir__as_rustc_hir_intravisit_Visitor__hir___visit_foreign_item___CALLSITE.json",
+      "size_bytes": 1913,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_res.json",
+      "size_bytes": 925,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_item__impl_LoweringContext______hir___lower_generics.json",
+      "size_bytes": 542,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_fn_decl.json",
+      "size_bytes": 523,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering__index_NodeCollector__a___hir__as_rustc_hir_intravisit_Visitor__hir___visit_nested_item___CALLSITE.json",
+      "size_bytes": 1910,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__create_def___CALLSITE.json",
+      "size_bytes": 1802,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_node_id___CALLSITE.json",
+      "size_bytes": 3517,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_lifetime_binder___CALLSITE.json",
+      "size_bytes": 3589,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_assoc_item_constraint___CALLSITE.json",
+      "size_bytes": 3643,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_generic_param.json",
+      "size_bytes": 535,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_generic_param___CALLSITE.json",
+      "size_bytes": 1845,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_stability.json",
+      "size_bytes": 4961,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__elided_dyn_bound___CALLSITE.json",
+      "size_bytes": 1832,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_universal_param_and_bounds.json",
+      "size_bytes": 994,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_generic_arg___CALLSITE.json",
+      "size_bytes": 3553,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_poly_trait_ref.json",
+      "size_bytes": 537,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_root.json",
+      "size_bytes": 15645,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_coroutine_fn_ret_ty.json",
+      "size_bytes": 547,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_index.json",
+      "size_bytes": 19076,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_opaque_inner.json",
+      "size_bytes": 533,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_item__impl_LoweringContext______hir___lower_generics___CALLSITE.json",
+      "size_bytes": 1855,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__with_hir_id_owner.json",
+      "size_bytes": 531,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_path__impl_LoweringContext__a___hir___lower_path_segment___CALLSITE.json",
+      "size_bytes": 3623,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_anon_const_to_const_arg_direct.json",
+      "size_bytes": 569,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_param_bound.json",
+      "size_bytes": 531,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_lifetime_binder.json",
+      "size_bytes": 961,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_path__impl_LoweringContext__a___hir___lower_qpath.json",
+      "size_bytes": 536,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_path__impl_LoweringContext__a___hir___lower_qpath___CALLSITE.json",
+      "size_bytes": 1840,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_lifetime_binder__closure_0____CALLSITE.json",
+      "size_bytes": 1922,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_const_path_to_const_arg___CALLSITE.json",
+      "size_bytes": 1895,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering__index_NodeCollector__a___hir__as_rustc_hir_intravisit_Visitor__hir___visit_trait_item___CALLSITE.json",
+      "size_bytes": 1903,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__create_def.json",
+      "size_bytes": 517,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering__index_NodeCollector__a___hir__as_rustc_hir_intravisit_Visitor__hir___visit_impl_item___CALLSITE.json",
+      "size_bytes": 1898,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_ty.json",
+      "size_bytes": 513,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_res___CALLSITE.json",
+      "size_bytes": 3481,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_ty___CALLSITE.json",
+      "size_bytes": 1790,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_param_bound___CALLSITE.json",
+      "size_bytes": 1835,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__new_named_lifetime___CALLSITE.json",
+      "size_bytes": 3562,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering__index_NodeCollector__a___hir__as_rustc_hir_intravisit_Visitor__hir___visit_trait_item.json",
+      "size_bytes": 581,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_fn_decl___CALLSITE.json",
+      "size_bytes": 1815,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_path__impl_LoweringContext__a___hir___lower_path_segment.json",
+      "size_bytes": 975,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lifetime_res_to_generic_param___CALLSITE.json",
+      "size_bytes": 3661,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_coroutine_fn_ret_ty___CALLSITE.json",
+      "size_bytes": 1875,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_param_bounds.json",
+      "size_bytes": 952,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__elided_dyn_bound.json",
+      "size_bytes": 529,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering__index_NodeCollector__a___hir__as_rustc_hir_intravisit_Visitor__hir___visit_item___CALLSITE.json",
+      "size_bytes": 1873,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_opaque_impl_trait.json",
+      "size_bytes": 967,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering__index_NodeCollector__a___hir__as_rustc_hir_intravisit_Visitor__hir___visit_nested_item.json",
+      "size_bytes": 583,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_path__impl_LoweringContext__a___hir___maybe_insert_elided_lifetimes_in_path.json",
+      "size_bytes": 588,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__next_id___CALLSITE.json",
+      "size_bytes": 3463,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__with_hir_id_owner___CALLSITE.json",
+      "size_bytes": 1835,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__next_id.json",
+      "size_bytes": 919,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_item__impl_LoweringContext______hir___lower_use_tree.json",
+      "size_bytes": 542,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_index_NodeCollector___a___hir__insert___CALLSITE.json",
+      "size_bytes": 1813,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_index_NodeCollector___a___hir__insert.json",
+      "size_bytes": 521,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_enums.json",
+      "size_bytes": 4752,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_structs.json",
+      "size_bytes": 17860,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_const_path_to_const_arg.json",
+      "size_bytes": 555,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_param_bounds___CALLSITE.json",
+      "size_bytes": 3562,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering__index_NodeCollector__a___hir__as_rustc_hir_intravisit_Visitor__hir___visit_item.json",
+      "size_bytes": 569,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_item__impl_LoweringContext______hir___lower_use_tree___CALLSITE.json",
+      "size_bytes": 1855,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__new_named_lifetime.json",
+      "size_bytes": 952,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_generic_arg.json",
+      "size_bytes": 949,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_node_id.json",
+      "size_bytes": 937,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_opaque_inner___CALLSITE.json",
+      "size_bytes": 1842,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_constants.json",
+      "size_bytes": 67880,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_lifetime_binder__closure_0_.json",
+      "size_bytes": 565,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_universal_param_and_bounds___CALLSITE.json",
+      "size_bytes": 3688,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_literals.json",
+      "size_bytes": 147677,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_assoc_item_constraint.json",
+      "size_bytes": 979,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_poly_trait_ref___CALLSITE.json",
+      "size_bytes": 1850,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering__index_NodeCollector__a___hir__as_rustc_hir_intravisit_Visitor__hir___visit_impl_item.json",
+      "size_bytes": 579,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lifetime_res_to_generic_param.json",
+      "size_bytes": 985,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_LoweringContext___a___hir__lower_anon_const_to_const_arg_direct___CALLSITE.json",
+      "size_bytes": 1930,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_ast_lowering_complexity.json",
+      "size_bytes": 26043,
+      "type": "usage_data"
+    }
+  ],
+  "output_directory": "./test_usage_data",
+  "rustc_version": "unknown",
+  "timestamp": 1767701050,
+  "total_enums": 7,
+  "total_modules": 81,
+  "total_usages": 1229
+}

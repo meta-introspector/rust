@@ -1,0 +1,72 @@
+{
+  "crate": "rustc_borrowck",
+  "module": "diagnostics::conflict_errors::<impl MirBorrowckCtxt<'_, 'infcx, 'tcx>>::get_moved_indexes",
+  "usages": [
+    {
+      "symbol": "to_vec",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1273 ~ rustc_borrowck[76ac]::diagnostics::conflict_errors::{impl#0}::get_moved_indexes::predecessor_locations)",
+      "used_def_id": "DefId(3:6165 ~ alloc[27b0]::slice::{impl#0}::to_vec)",
+      "user_crate": "rustc_borrowck",
+      "used_crate": "alloc"
+    },
+    {
+      "symbol": "index",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1273 ~ rustc_borrowck[76ac]::diagnostics::conflict_errors::{impl#0}::get_moved_indexes::predecessor_locations)",
+      "used_def_id": "DefId(2:45148 ~ core[4720]::ops::index::Index::index)",
+      "user_crate": "rustc_borrowck",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "predecessors",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1273 ~ rustc_borrowck[76ac]::diagnostics::conflict_errors::{impl#0}::get_moved_indexes::predecessor_locations)",
+      "used_def_id": "DefId(170:996 ~ rustc_middle[d452]::mir::basic_blocks::{impl#0}::predecessors)",
+      "user_crate": "rustc_borrowck",
+      "used_crate": "rustc_middle"
+    },
+    {
+      "symbol": "map",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1273 ~ rustc_borrowck[76ac]::diagnostics::conflict_errors::{impl#0}::get_moved_indexes::predecessor_locations)",
+      "used_def_id": "DefId(2:9458 ~ core[4720]::iter::traits::iterator::Iterator::map)",
+      "user_crate": "rustc_borrowck",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "into_iter",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1273 ~ rustc_borrowck[76ac]::diagnostics::conflict_errors::{impl#0}::get_moved_indexes::predecessor_locations)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)",
+      "user_crate": "rustc_borrowck",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "terminator_loc",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:1273 ~ rustc_borrowck[76ac]::diagnostics::conflict_errors::{impl#0}::get_moved_indexes::predecessor_locations)",
+      "used_def_id": "DefId(170:3035 ~ rustc_middle[d452]::mir::{impl#6}::terminator_loc)",
+      "user_crate": "rustc_borrowck",
+      "used_crate": "rustc_middle"
+    }
+  ]
+}

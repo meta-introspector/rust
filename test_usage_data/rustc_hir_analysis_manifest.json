@@ -1,0 +1,1992 @@
+{
+  "collector_version": "1.0.0",
+  "crate_name": "rustc_hir_analysis",
+  "dependency_manifests": [
+    "./test_usage_data/rustc_lint_manifest.json",
+    "./test_usage_data/rustc_public_bridge_manifest.json",
+    "./test_usage_data/rustc_hashes_manifest.json",
+    "./test_usage_data/rustc_trait_selection_manifest.json",
+    "./test_usage_data/rustc_resolve_manifest.json",
+    "./test_usage_data/build_script_build_manifest.json",
+    "./test_usage_data/rustc_baked_icu_data_manifest.json",
+    "./test_usage_data/rustc_incremental_manifest.json",
+    "./test_usage_data/rustc_span_manifest.json",
+    "./test_usage_data/rustc_ast_manifest.json",
+    "./test_usage_data/rustc_error_codes_manifest.json",
+    "./test_usage_data/rustc_parse_manifest.json",
+    "./test_usage_data/rustc_arena_manifest.json",
+    "./test_usage_data/rustc_expand_manifest.json",
+    "./test_usage_data/rustc_hir_id_manifest.json",
+    "./test_usage_data/rustc_fs_util_manifest.json",
+    "./test_usage_data/rustc_index_manifest.json",
+    "./test_usage_data/working_usage_collector_manifest.json",
+    "./test_usage_data/rustc_index_macros_manifest.json",
+    "./test_usage_data/rustc_parse_format_manifest.json",
+    "./test_usage_data/rustc_type_ir_macros_manifest.json",
+    "./test_usage_data/rustc_ast_pretty_manifest.json",
+    "./test_usage_data/rustc_next_trait_solver_manifest.json",
+    "./test_usage_data/rustc_builtin_macros_manifest.json",
+    "./test_usage_data/rustc_session_manifest.json",
+    "./test_usage_data/rustc_attr_parsing_manifest.json",
+    "./test_usage_data/rustc_ast_ir_manifest.json",
+    "./test_usage_data/rustc_mir_dataflow_manifest.json",
+    "./test_usage_data/rustc_fluent_macro_manifest.json",
+    "./test_usage_data/rustc_ty_utils_manifest.json",
+    "./test_usage_data/rustc_macros_manifest.json",
+    "./test_usage_data/rustc_hir_manifest.json",
+    "./test_usage_data/rustc_error_messages_manifest.json",
+    "./test_usage_data/rustc_thread_pool_manifest.json",
+    "./test_usage_data/rustc_errors_manifest.json",
+    "./test_usage_data/rustc_traits_manifest.json",
+    "./test_usage_data/rustc_data_structures_manifest.json",
+    "./test_usage_data/rustc_target_manifest.json",
+    "./test_usage_data/rustc_graphviz_manifest.json",
+    "./test_usage_data/rustc_metadata_manifest.json",
+    "./test_usage_data/rustc_public_manifest.json",
+    "./test_usage_data/rustc_serialize_manifest.json",
+    "./test_usage_data/rustc_type_ir_manifest.json",
+    "./test_usage_data/rustc_privacy_manifest.json",
+    "./test_usage_data/rustc_lint_defs_manifest.json",
+    "./test_usage_data/rustc_symbol_mangling_manifest.json",
+    "./test_usage_data/rustc_monomorphize_manifest.json",
+    "./test_usage_data/rustc_pattern_analysis_manifest.json",
+    "./test_usage_data/rustc_query_impl_manifest.json",
+    "./test_usage_data/build_common_manifest.json",
+    "./test_usage_data/rustc_abi_manifest.json",
+    "./test_usage_data/rustc_log_manifest.json",
+    "./test_usage_data/rustc_ast_lowering_manifest.json",
+    "./test_usage_data/rustc_middle_manifest.json",
+    "./test_usage_data/rustc_proc_macro_manifest.json",
+    "./test_usage_data/rustc_query_system_manifest.json",
+    "./test_usage_data/rustc_feature_manifest.json",
+    "./test_usage_data/rustc_ast_passes_manifest.json",
+    "./test_usage_data/rustc_transmute_manifest.json",
+    "./test_usage_data/rustc_lexer_manifest.json",
+    "./test_usage_data/rustc_infer_manifest.json",
+    "./test_usage_data/rustc_hir_pretty_manifest.json"
+  ],
+  "environment": {
+    "cargo_manifest_dir": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_hir_analysis",
+    "cargo_target_dir": null,
+    "profile": null,
+    "pwd": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust"
+  },
+  "generated_files": [
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_type_relative_path.json",
+      "size_bytes": 1018,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck.json",
+      "size_bytes": 561399,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check.json",
+      "size_bytes": 150742,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_compare_impl_item.json",
+      "size_bytes": 544,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_orphan_orphan_check___CALLSITE.json",
+      "size_bytes": 3570,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_associated_type_bounds___CALLSITE.json",
+      "size_bytes": 1903,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_unused_check_unused_traits.json",
+      "size_bytes": 524,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_gather_explicit_predicates_of___CALLSITE.json",
+      "size_bytes": 3768,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_delegation.json",
+      "size_bytes": 46418,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_outlives_implicit_infer_check_explicit_predicates.json",
+      "size_bytes": 1886,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_43234cc61050811c.json",
+      "size_bytes": 2005,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_resolved_assoc_const_path___CALLSITE.json",
+      "size_bytes": 1987,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_generic_args_of_path___CALLSITE.json",
+      "size_bytes": 3784,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_lifetime___CALLSITE.json",
+      "size_bytes": 3676,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_opaque_ty__closure_0____CALLSITE.json",
+      "size_bytes": 5634,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___try_lower_anon_const_lit.json",
+      "size_bytes": 576,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_ty__closure_0____CALLSITE.json",
+      "size_bytes": 5543,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_where_clauses___CALLSITE.json",
+      "size_bytes": 1856,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_8cac55ee336d964.json",
+      "size_bytes": 1049,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_associated_item.json",
+      "size_bytes": 532,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___validate_late_bound_regions.json",
+      "size_bytes": 582,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_inherent_impls_overlap.json",
+      "size_bytes": 3283,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of__impl_collect_ItemCtxt__tcx___probe_ty_param_bounds_in_generics.json",
+      "size_bytes": 614,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_cdaad15dccc7d65f.json",
+      "size_bytes": 4167,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_resolve_bound_vars.json",
+      "size_bytes": 1866,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_region_resolve_block___CALLSITE.json",
+      "size_bytes": 1823,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_8af71da8b09bc6ba.json",
+      "size_bytes": 674,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_enums.json",
+      "size_bytes": 13170,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_receiver_is_valid.json",
+      "size_bytes": 948,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_check_type_bounds__closure_1_.json",
+      "size_bytes": 570,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_foreign_item___CALLSITE.json",
+      "size_bytes": 1853,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_impl_wf_check_min_specialization_check_specialization_on___CALLSITE.json",
+      "size_bytes": 1971,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_always_applicable.json",
+      "size_bytes": 74299,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_enter_wf_checking_ctxt___CALLSITE.json",
+      "size_bytes": 1873,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_trait.json",
+      "size_bytes": 930,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_autoderef_Autoderef___a___tcx__structurally_normalize_ty___CALLSITE.json",
+      "size_bytes": 3718,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_gather_explicit_predicates_of__closure_0_.json",
+      "size_bytes": 2413,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_compare_impl_ty.json",
+      "size_bytes": 540,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_595c42c64a31f951.json",
+      "size_bytes": 4213,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_constraints_ConstraintContext___a___tcx__add_constraints_from_invariant_args___CALLSITE.json",
+      "size_bytes": 2042,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_check_object_overlap___CALLSITE.json",
+      "size_bytes": 1838,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_outlives.json",
+      "size_bytes": 15017,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_autoderef.json",
+      "size_bytes": 2246,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_predicates_of___CALLSITE.json",
+      "size_bytes": 7140,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___probe_single_bound_for_assoc_item__closure_0_.json",
+      "size_bytes": 1084,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_3c208d8c23c5c951.json",
+      "size_bytes": 1096,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_type_of_opaque_find_opaque_ty_constraints_for_impl_trait_in_assoc_type___CALLSITE.json",
+      "size_bytes": 2086,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_fn_ty___CALLSITE.json",
+      "size_bytes": 3649,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_generic_args_of_assoc_item___CALLSITE.json",
+      "size_bytes": 1992,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_impl__closure_0____CALLSITE.json",
+      "size_bytes": 1878,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___probe_single_ty_param_bound_for_assoc_item___CALLSITE.json",
+      "size_bytes": 3928,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___compute_object_lifetime_bound___CALLSITE.json",
+      "size_bytes": 3811,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_variance_of_opaque.json",
+      "size_bytes": 933,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_solve.json",
+      "size_bytes": 6271,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_poly_trait_ref.json",
+      "size_bytes": 1444,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_builtin_visit_implementation_of_dispatch_from_dyn.json",
+      "size_bytes": 1032,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_type_relative_ty_path___CALLSITE.json",
+      "size_bytes": 3793,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_outlives_implicit_infer.json",
+      "size_bytes": 136852,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_18012766fbe420bc.json",
+      "size_bytes": 627,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___validate_late_bound_regions___CALLSITE.json",
+      "size_bytes": 1967,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_intrinsic.json",
+      "size_bytes": 197603,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_6d90b85fb7bcad48.json",
+      "size_bytes": 3773,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_78dcc0774c3cea56.json",
+      "size_bytes": 7833,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_const_evaluatable_predicates_of.json",
+      "size_bytes": 1014,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_unused.json",
+      "size_bytes": 24675,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_region_resolve_stmt___CALLSITE.json",
+      "size_bytes": 1818,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_generics_of_generics_of.json",
+      "size_bytes": 948,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of__impl_collect_ItemCtxt__tcx___probe_ty_param_bounds_in_generics___CALLSITE.json",
+      "size_bytes": 2038,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_type_of_opaque_find_opaque_ty_constraints_for_impl_trait_in_assoc_type.json",
+      "size_bytes": 620,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_resolved_lifetime___CALLSITE.json",
+      "size_bytes": 3757,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_poly_trait_ref___CALLSITE.json",
+      "size_bytes": 5528,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_outlives_implicit_infer_infer_predicates___CALLSITE.json",
+      "size_bytes": 3671,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_constraints_ConstraintContext___a___tcx__add_constraints_from_ty.json",
+      "size_bytes": 591,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_check_function_signature.json",
+      "size_bytes": 5915,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_gather_explicit_predicates_of__closure_0____CALLSITE.json",
+      "size_bytes": 7635,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__with___CALLSITE.json",
+      "size_bytes": 1915,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_impl_wf_check_min_specialization_check_always_applicable___CALLSITE.json",
+      "size_bytes": 3813,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_lifetime.json",
+      "size_bytes": 988,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_test_region_obligations___CALLSITE.json",
+      "size_bytes": 1878,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___probe_single_ty_param_bound_for_assoc_item__closure_0_.json",
+      "size_bytes": 1111,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_type_of_opaque.json",
+      "size_bytes": 41938,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_426973085799a8fd.json",
+      "size_bytes": 659,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_associated_item___CALLSITE.json",
+      "size_bytes": 1866,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__visit_segment_args.json",
+      "size_bytes": 1487,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_region_resolve_expr.json",
+      "size_bytes": 512,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_1791c9c990efb937.json",
+      "size_bytes": 2065,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_const_evaluatable_predicates_of__closure_0_.json",
+      "size_bytes": 4385,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_const_evaluatable_predicates_of__closure_0____CALLSITE.json",
+      "size_bytes": 7669,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_impl_wf_check_min_specialization_check_predicates___CALLSITE.json",
+      "size_bytes": 3750,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_extract_spans_for_error_reporting___CALLSITE.json",
+      "size_bytes": 1976,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_anon_const.json",
+      "size_bytes": 994,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_hir_ty_lowering_generics.json",
+      "size_bytes": 139474,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_autoderef_Autoderef___a___tcx__structurally_normalize_ty__closure_0____CALLSITE.json",
+      "size_bytes": 1991,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___probe_single_bound_for_assoc_item.json",
+      "size_bytes": 1045,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_refine.json",
+      "size_bytes": 90963,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_autoderef_Autoderef___a___tcx__structurally_normalize_ty__closure_0_.json",
+      "size_bytes": 589,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_test_region_obligations.json",
+      "size_bytes": 536,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_hir_ty_lowering_generics_check_generic_arg_count.json",
+      "size_bytes": 1440,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_resolved_lifetime.json",
+      "size_bytes": 1015,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_fn_ty.json",
+      "size_bytes": 979,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_check_check_coroutine_obligations___CALLSITE.json",
+      "size_bytes": 3662,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__autoderef_Autoderef__a___tcx__as_std_iter_Iterator__next.json",
+      "size_bytes": 1376,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_resolved_assoc_item_path___CALLSITE.json",
+      "size_bytes": 7496,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_compare_type_predicate_entailment___CALLSITE.json",
+      "size_bytes": 7514,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_root.json",
+      "size_bytes": 34289,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___probe_generic_path_segments.json",
+      "size_bytes": 582,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_generics_of_generics_of__closure_0_.json",
+      "size_bytes": 1861,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_implied_predicates_with_filter.json",
+      "size_bytes": 1456,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_entry.json",
+      "size_bytes": 22696,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__visit_poly_trait_ref_inner.json",
+      "size_bytes": 1063,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_collect_return_position_impl_trait_in_trait_tys.json",
+      "size_bytes": 1068,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__check_region_ScopeResolutionVisitor__tcx__as_rustc_hir_intravisit_Visitor__tcx___visit_body.json",
+      "size_bytes": 590,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_check_type_bounds___CALLSITE.json",
+      "size_bytes": 5460,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_constraints_ConstraintContext___a___tcx__add_constraint.json",
+      "size_bytes": 573,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_1c30e2c9d160524a.json",
+      "size_bytes": 615,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_b0fa03d826778acf.json",
+      "size_bytes": 2010,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_check_check_potentially_region_dependent_goals.json",
+      "size_bytes": 566,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_fn_or_method.json",
+      "size_bytes": 526,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_type_of.json",
+      "size_bytes": 83100,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_a343a185488c3784.json",
+      "size_bytes": 7911,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_check_impl.json",
+      "size_bytes": 500,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_gather_explicit_predicates_of.json",
+      "size_bytes": 1008,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_collect_return_position_impl_trait_in_trait_tys___CALLSITE.json",
+      "size_bytes": 3948,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_hir_ty_lowering_dyn_compatibility.json",
+      "size_bytes": 1439,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_8bf7fefeee95a61b.json",
+      "size_bytes": 1999,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_predicates_of.json",
+      "size_bytes": 1816,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_5ea42d83c4244b78.json",
+      "size_bytes": 2096,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_resolved_ty_path___CALLSITE.json",
+      "size_bytes": 3748,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_1efb2886e55d12d3.json",
+      "size_bytes": 621,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_structs.json",
+      "size_bytes": 67280,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_builtin_visit_implementation_of_coerce_unsized.json",
+      "size_bytes": 574,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_constraints_ConstraintContext___a___tcx__build_constraints_for_item.json",
+      "size_bytes": 597,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_orphan_orphan_check__closure_0_.json",
+      "size_bytes": 981,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_26329ac563cffd94.json",
+      "size_bytes": 2014,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_collect_return_position_impl_trait_in_trait_tys__closure_0_.json",
+      "size_bytes": 1584,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_53216c9c31b2a3a8.json",
+      "size_bytes": 694,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_impl___CALLSITE.json",
+      "size_bytes": 1811,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_check_check_type_alias_type_params_are_used___CALLSITE.json",
+      "size_bytes": 1938,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_fn_or_method___CALLSITE.json",
+      "size_bytes": 1851,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_implied_predicates_with_filter___CALLSITE.json",
+      "size_bytes": 5605,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__collect_ItemCtxt__tcx__as_hir_ty_lowering_HirTyLowerer__tcx___select_inherent_assoc_candidates.json",
+      "size_bytes": 1049,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_type_of_opaque_TaitConstraintLocator___tcx__check.json",
+      "size_bytes": 1857,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___probe_generic_path_segments___CALLSITE.json",
+      "size_bytes": 1969,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_anon_const___CALLSITE.json",
+      "size_bytes": 3694,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_trait___CALLSITE.json",
+      "size_bytes": 3532,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_constraints_ConstraintContext___a___tcx__add_constraints_from_args___CALLSITE.json",
+      "size_bytes": 3836,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_static_item___CALLSITE.json",
+      "size_bytes": 1846,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_outlives_implicit_infer_insert_required_predicates_to_be_wf___CALLSITE.json",
+      "size_bytes": 9404,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_autoderef_Autoderef___a___tcx__structurally_normalize_ty.json",
+      "size_bytes": 1000,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_constraints_ConstraintContext___a___tcx__add_constraints_from_ty___CALLSITE.json",
+      "size_bytes": 1984,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_impl.json",
+      "size_bytes": 510,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_builtin_visit_implementation_of_coerce_unsized___CALLSITE.json",
+      "size_bytes": 1973,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__resolve_lifetime_ref___CALLSITE.json",
+      "size_bytes": 1995,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_check_impl___CALLSITE.json",
+      "size_bytes": 1788,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_WfCheckingCtxt_______tcx__check_false_global_bounds___CALLSITE.json",
+      "size_bytes": 1954,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_cb7b1b20d4bbe951.json",
+      "size_bytes": 1088,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__remap_opaque_captures.json",
+      "size_bytes": 1048,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_generic_args_of_path.json",
+      "size_bytes": 1024,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_opaque_ty.json",
+      "size_bytes": 991,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_method_receiver___CALLSITE.json",
+      "size_bytes": 3624,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_ae0f5673cfa534ae.json",
+      "size_bytes": 5745,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_constraints_ConstraintContext___a___tcx__add_constraints_from_const.json",
+      "size_bytes": 597,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_opaque_ty___CALLSITE.json",
+      "size_bytes": 3685,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_variance_of_opaque___CALLSITE.json",
+      "size_bytes": 3543,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_check_type_bounds.json",
+      "size_bytes": 1412,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_compare_impl_method___CALLSITE.json",
+      "size_bytes": 1906,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__insert_lifetime.json",
+      "size_bytes": 1030,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_entry_check_main_fn_ty.json",
+      "size_bytes": 12021,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_925ba6c5d0d2578b.json",
+      "size_bytes": 3836,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_a5fac4da6360d428.json",
+      "size_bytes": 3797,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_check_check_opaque_meets_bounds.json",
+      "size_bytes": 536,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_orphan_orphan_check__closure_0____CALLSITE.json",
+      "size_bytes": 3689,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_legacy_receiver_is_implemented.json",
+      "size_bytes": 550,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_region_resolve_expr___CALLSITE.json",
+      "size_bytes": 1816,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_constrained_generic_params_setup_constraining_predicates___CALLSITE.json",
+      "size_bytes": 3806,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__resolve_object_lifetime_default.json",
+      "size_bytes": 617,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_hir_ty_lowering_generics_check_generic_arg_count__closure_2_.json",
+      "size_bytes": 1038,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_5ed6cfb3e39b5e20.json",
+      "size_bytes": 2050,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_generic_args_of_path__closure_0_.json",
+      "size_bytes": 606,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_fn_ty__closure_0_.json",
+      "size_bytes": 1018,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_outlives_dump.json",
+      "size_bytes": 12165,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_terms_determine_parameters_to_be_inferred___CALLSITE.json",
+      "size_bytes": 1943,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_hir_ty_lowering_cmse.json",
+      "size_bytes": 36881,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__remap_opaque_captures___CALLSITE.json",
+      "size_bytes": 3850,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_region_resolve_pat___CALLSITE.json",
+      "size_bytes": 1811,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_f925a4d3130d878d.json",
+      "size_bytes": 1920,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_method_receiver.json",
+      "size_bytes": 960,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_hir_ty_lowering_generics_check_generic_arg_count___CALLSITE.json",
+      "size_bytes": 5551,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_e5577586db3f492b.json",
+      "size_bytes": 4047,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_check.json",
+      "size_bytes": 525876,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_type_relative_path__closure_0____CALLSITE.json",
+      "size_bytes": 2019,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_resolved_assoc_ty_path___CALLSITE.json",
+      "size_bytes": 1972,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_ace5bc06d1cf977d.json",
+      "size_bytes": 1070,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_outlives_implicit_infer_check_explicit_predicates___CALLSITE.json",
+      "size_bytes": 7380,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_solve_SolveContext___a___tcx__solve___CALLSITE.json",
+      "size_bytes": 1859,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_4ea972b931a1fcba.json",
+      "size_bytes": 633,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_impl_wf_check_min_specialization.json",
+      "size_bytes": 130681,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_region_resolve_block.json",
+      "size_bytes": 514,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_item_bounds_associated_type_bounds.json",
+      "size_bytes": 546,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_d53751e6318a4d10.json",
+      "size_bytes": 3932,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_associated_type_bounds.json",
+      "size_bytes": 546,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_dump.json",
+      "size_bytes": 55777,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_param_wf.json",
+      "size_bytes": 2211,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_region.json",
+      "size_bytes": 65070,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_resolved_ty_path.json",
+      "size_bytes": 1012,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_impl_wf_check_min_specialization_check_always_applicable.json",
+      "size_bytes": 1023,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_generics_of_has_late_bound_regions.json",
+      "size_bytes": 3281,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_f30874cd03d77399.json",
+      "size_bytes": 2181,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_inherent_impls_overlap_InherentOverlapChecker___tcx__check_item___CALLSITE.json",
+      "size_bytes": 1980,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_item___CALLSITE.json",
+      "size_bytes": 3525,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_builtin.json",
+      "size_bytes": 254378,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_builtin_coerce_unsized_info___CALLSITE.json",
+      "size_bytes": 5410,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_orphan.json",
+      "size_bytes": 106269,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_check_check_coroutine_obligations.json",
+      "size_bytes": 972,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___compute_object_lifetime_bound.json",
+      "size_bytes": 1033,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_outlives_implicit_infer_insert_required_predicates_to_be_wf.json",
+      "size_bytes": 2388,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__resolve_lifetime_ref.json",
+      "size_bytes": 595,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___probe_single_ty_param_bound_for_assoc_item.json",
+      "size_bytes": 1072,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_bounds_from_generic_predicates.json",
+      "size_bytes": 532,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_check_check_opaque_meets_bounds___CALLSITE.json",
+      "size_bytes": 1876,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect.json",
+      "size_bytes": 217974,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_compare_impl_ty___CALLSITE.json",
+      "size_bytes": 1886,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_gat_where_clauses.json",
+      "size_bytes": 536,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_autoderef_Autoderef___a___tcx__overloaded_deref_ty___CALLSITE.json",
+      "size_bytes": 5436,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__resolve_object_lifetime_default___CALLSITE.json",
+      "size_bytes": 2050,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_impl__closure_0_.json",
+      "size_bytes": 536,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__autoderef_Autoderef__a___tcx__as_std_iter_Iterator__next___CALLSITE.json",
+      "size_bytes": 5264,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_unsafety.json",
+      "size_bytes": 24467,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_hir_ty_lowering_bounds__impl_dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_bounds___CALLSITE.json",
+      "size_bytes": 1954,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_check_check_transparent__closure_0_.json",
+      "size_bytes": 11824,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence.json",
+      "size_bytes": 55626,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_const_evaluatable_predicates_of___CALLSITE.json",
+      "size_bytes": 3786,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_2111f1343245284b.json",
+      "size_bytes": 674,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___probe_single_bound_for_assoc_item___CALLSITE.json",
+      "size_bytes": 3847,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_check_region_bounds_on_impl_item___CALLSITE.json",
+      "size_bytes": 1973,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_foreign_item.json",
+      "size_bytes": 526,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_generics_of_generics_of___CALLSITE.json",
+      "size_bytes": 3588,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_hir_ty_lowering_errors.json",
+      "size_bytes": 89724,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_const_arg___CALLSITE.json",
+      "size_bytes": 5463,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_outlives_utils.json",
+      "size_bytes": 10581,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_hir_ty_lowering_bounds.json",
+      "size_bytes": 28777,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_impl_wf_check.json",
+      "size_bytes": 38443,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_fc15be4c2facb5a7.json",
+      "size_bytes": 647,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_d17f639e83901265.json",
+      "size_bytes": 1181,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_generic_args_of_path__closure_0____CALLSITE.json",
+      "size_bytes": 2029,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_71c9408f1a2a2941.json",
+      "size_bytes": 646,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_type_of_opaque_find_opaque_ty_constraints_for_tait.json",
+      "size_bytes": 580,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of.json",
+      "size_bytes": 380575,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_static_item.json",
+      "size_bytes": 524,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_inherent_impls.json",
+      "size_bytes": 9122,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_resolved_assoc_ty_path.json",
+      "size_bytes": 584,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_check_check_potentially_region_dependent_goals___CALLSITE.json",
+      "size_bytes": 1953,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___try_lower_anon_const_lit___CALLSITE.json",
+      "size_bytes": 1952,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_951a7e45eca5f64a.json",
+      "size_bytes": 2129,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_receiver_is_valid___CALLSITE.json",
+      "size_bytes": 3590,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_constraints_ConstraintContext___a___tcx__add_constraint___CALLSITE.json",
+      "size_bytes": 1939,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_constants.json",
+      "size_bytes": 298988,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_is_late_bound_map.json",
+      "size_bytes": 1861,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_const_arg.json",
+      "size_bytes": 1424,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_fn_ty__closure_0____CALLSITE.json",
+      "size_bytes": 3768,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_constraints_ConstraintContext___a___tcx__add_constraints_from_invariant_args.json",
+      "size_bytes": 615,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_builtin_visit_implementation_of_copy___CALLSITE.json",
+      "size_bytes": 5527,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_errors_wrong_number_of_generic_args_WrongNumberOfGenericArgs___a___tcx__suggest.json",
+      "size_bytes": 596,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_item.json",
+      "size_bytes": 927,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_WfCheckingCtxt_______tcx__check_false_global_bounds.json",
+      "size_bytes": 578,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_region_resolve_local.json",
+      "size_bytes": 16076,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_region_resolve_local___CALLSITE.json",
+      "size_bytes": 1823,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_enter_wf_checking_ctxt.json",
+      "size_bytes": 534,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_4d735d944ada3be4.json",
+      "size_bytes": 2015,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_5003bf975eaa57be.json",
+      "size_bytes": 623,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__visit_segment_args___CALLSITE.json",
+      "size_bytes": 5661,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_type_relative_const_path.json",
+      "size_bytes": 1036,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_ebb65b3e6b88e470.json",
+      "size_bytes": 622,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_365d4bcb7a0fbd93.json",
+      "size_bytes": 2018,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_impl_wf_check_min_specialization_check_specialization_on.json",
+      "size_bytes": 574,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_resolve_bound_vars___CALLSITE.json",
+      "size_bytes": 7310,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_compare_const_predicate_entailment.json",
+      "size_bytes": 1931,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_builtin_visit_implementation_of_copy.json",
+      "size_bytes": 1432,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_item_bounds_associated_type_bounds___CALLSITE.json",
+      "size_bytes": 1903,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_orphan_orphan_check_impl___CALLSITE.json",
+      "size_bytes": 3615,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars.json",
+      "size_bytes": 106858,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_inherent_impls_overlap_InherentOverlapChecker___tcx__check_item.json",
+      "size_bytes": 590,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_type_param_predicates___CALLSITE.json",
+      "size_bytes": 1906,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__with.json",
+      "size_bytes": 563,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_3e4c9deb8c52a777.json",
+      "size_bytes": 611,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_compare_impl_method.json",
+      "size_bytes": 548,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_constrained_generic_params.json",
+      "size_bytes": 29272,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_is_late_bound_map___CALLSITE.json",
+      "size_bytes": 7295,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_54ec1d37a0bead93.json",
+      "size_bytes": 1985,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_932ada550c5c8f42.json",
+      "size_bytes": 4006,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_gather_gat_bounds___CALLSITE.json",
+      "size_bytes": 7074,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_da6cff00cebcb71b.json",
+      "size_bytes": 625,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_item_bounds_opaque_type_bounds___CALLSITE.json",
+      "size_bytes": 3651,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_33f233489bb45254.json",
+      "size_bytes": 1974,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_resolved_assoc_const_path.json",
+      "size_bytes": 590,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item.json",
+      "size_bytes": 785630,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_resolved_assoc_item_path.json",
+      "size_bytes": 1932,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_ty__closure_0_.json",
+      "size_bytes": 1448,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__visit_fn_like_elision___CALLSITE.json",
+      "size_bytes": 2000,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_239d2b73ec47175b.json",
+      "size_bytes": 2115,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_hir_ty_lowering_generics_check_generic_arg_count__closure_2____CALLSITE.json",
+      "size_bytes": 3860,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_ty.json",
+      "size_bytes": 970,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_impl_wf_check_min_specialization_check_predicates.json",
+      "size_bytes": 1002,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_constrained_generic_params_setup_constraining_predicates.json",
+      "size_bytes": 1020,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_terms.json",
+      "size_bytes": 25092,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_constraints.json",
+      "size_bytes": 11105,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance.json",
+      "size_bytes": 52984,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_variance_of_opaque__closure_0__OpaqueTypeLifetimeCollector___tcx__visit_opaque.json",
+      "size_bytes": 1071,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_compare_method_predicate_entailment.json",
+      "size_bytes": 2840,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_collect_return_position_impl_trait_in_trait_tys__closure_0____CALLSITE.json",
+      "size_bytes": 6021,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_dd4a171b21630d74.json",
+      "size_bytes": 2004,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_bf4a3faa118b8645.json",
+      "size_bytes": 1596,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_generics_of_generics_of__closure_0____CALLSITE.json",
+      "size_bytes": 7295,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_f558c87744f60cb7.json",
+      "size_bytes": 3932,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_58f4dba6486780e7.json",
+      "size_bytes": 3968,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_region_resolve_pat.json",
+      "size_bytes": 510,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_gat_where_clauses___CALLSITE.json",
+      "size_bytes": 1878,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_autoderef_Autoderef___a___tcx__overloaded_deref_ty.json",
+      "size_bytes": 1413,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_f61d56387eb3dc13.json",
+      "size_bytes": 1112,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__insert_lifetime___CALLSITE.json",
+      "size_bytes": 3796,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_ed1c575529c6149a.json",
+      "size_bytes": 627,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_type_relative_const_path___CALLSITE.json",
+      "size_bytes": 3820,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_item_bounds_opaque_type_bounds.json",
+      "size_bytes": 969,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_bounds_from_generic_predicates___CALLSITE.json",
+      "size_bytes": 1868,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_type_of_opaque_TaitConstraintLocator___tcx__check___CALLSITE.json",
+      "size_bytes": 7229,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_52c728f68b11e078.json",
+      "size_bytes": 1159,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_check_object_overlap.json",
+      "size_bytes": 520,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__visit_fn_like_elision.json",
+      "size_bytes": 597,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_builtin_visit_implementation_of_dispatch_from_dyn___CALLSITE.json",
+      "size_bytes": 3842,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_check_type_bounds__closure_1____CALLSITE.json",
+      "size_bytes": 1963,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_predicates_of_type_param_predicates.json",
+      "size_bytes": 548,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_compare_impl_item___CALLSITE.json",
+      "size_bytes": 1898,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_hir_wf_check.json",
+      "size_bytes": 20511,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_orphan_orphan_check_impl.json",
+      "size_bytes": 957,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_constraints_ConstraintContext___a___tcx__add_constraints_from_const___CALLSITE.json",
+      "size_bytes": 1999,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_variance_of_opaque__closure_0__OpaqueTypeLifetimeCollector___tcx__visit_opaque___CALLSITE.json",
+      "size_bytes": 3903,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_ea4f9d3258079789.json",
+      "size_bytes": 1124,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_variance_of_opaque__closure_0_.json",
+      "size_bytes": 540,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_literals.json",
+      "size_bytes": 783748,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_unused_check_unused_traits___CALLSITE.json",
+      "size_bytes": 1848,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_resolve_bound_vars_BoundVarContext___a___tcx__visit_poly_trait_ref_inner___CALLSITE.json",
+      "size_bytes": 3897,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_legacy_receiver_is_implemented___CALLSITE.json",
+      "size_bytes": 1913,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_type_relative_path___CALLSITE.json",
+      "size_bytes": 3766,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_ff395c8de0f20975.json",
+      "size_bytes": 2069,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_compare_type_predicate_entailment.json",
+      "size_bytes": 1926,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_check_region_bounds_on_impl_item.json",
+      "size_bytes": 574,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_6fec7bafd4718dce.json",
+      "size_bytes": 1136,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_compare_method_predicate_entailment___CALLSITE.json",
+      "size_bytes": 11256,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_compare_const_predicate_entailment___CALLSITE.json",
+      "size_bytes": 7531,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___probe_single_bound_for_assoc_item__closure_0____CALLSITE.json",
+      "size_bytes": 3966,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_type_relative_path__closure_0_.json",
+      "size_bytes": 602,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_ty___CALLSITE.json",
+      "size_bytes": 3622,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_generic_args_of_assoc_item.json",
+      "size_bytes": 592,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_variance_of_opaque__closure_0____CALLSITE.json",
+      "size_bytes": 1888,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_outlives_implicit_infer_infer_predicates.json",
+      "size_bytes": 975,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_gather_gat_bounds.json",
+      "size_bytes": 1796,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_terms_determine_parameters_to_be_inferred.json",
+      "size_bytes": 562,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_type_relative_ty_path.json",
+      "size_bytes": 1027,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_solve_SolveContext___a___tcx__solve.json",
+      "size_bytes": 538,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_item_bounds.json",
+      "size_bytes": 92121,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_compare_impl_item_extract_spans_for_error_reporting.json",
+      "size_bytes": 576,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_fn_sig___CALLSITE.json",
+      "size_bytes": 3426,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_hir_ty_lowering_bounds__impl_dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_bounds.json",
+      "size_bytes": 590,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_builtin_coerce_unsized_info.json",
+      "size_bytes": 1396,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_fn_sig.json",
+      "size_bytes": 894,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_generics_of.json",
+      "size_bytes": 105555,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_errors_wrong_number_of_generic_args_WrongNumberOfGenericArgs___a___tcx__suggest___CALLSITE.json",
+      "size_bytes": 1986,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_errors_wrong_number_of_generic_args_WrongNumberOfGenericArgs___a___tcx__suggest_adding_lifetime_args.json",
+      "size_bytes": 2039,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_a921b447644315dc.json",
+      "size_bytes": 2181,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_constraints_ConstraintContext___a___tcx__add_constraints_from_args.json",
+      "size_bytes": 1044,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_dump.json",
+      "size_bytes": 16346,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_region_resolve_stmt.json",
+      "size_bytes": 512,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_wfcheck_check_where_clauses.json",
+      "size_bytes": 528,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_coherence_orphan_orphan_check.json",
+      "size_bytes": 942,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis__dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_opaque_ty__closure_0_.json",
+      "size_bytes": 1476,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_check_check_check_type_alias_type_params_are_used.json",
+      "size_bytes": 560,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_variance_constraints_ConstraintContext___a___tcx__build_constraints_for_item___CALLSITE.json",
+      "size_bytes": 1999,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_hir_ty_lowering_bounds__impl_dyn_hir_ty_lowering_HirTyLowerer__tcx___lower_assoc_item_constraint.json",
+      "size_bytes": 1526,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_1112c8a23369110b.json",
+      "size_bytes": 623,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_collect_type_of_opaque_find_opaque_ty_constraints_for_tait___CALLSITE.json",
+      "size_bytes": 1986,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_f4689f53b26ab960.json",
+      "size_bytes": 5997,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_hir_analysis_complexity.json",
+      "size_bytes": 219926,
+      "type": "usage_data"
+    }
+  ],
+  "output_directory": "./test_usage_data",
+  "rustc_version": "unknown",
+  "timestamp": 1767701101,
+  "total_enums": 10,
+  "total_modules": 381,
+  "total_usages": 16420
+}

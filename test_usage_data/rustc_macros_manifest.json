@@ -4,11 +4,20 @@
   "dependency_manifests": [
     "./test_usage_data/rustc_hashes_manifest.json",
     "./test_usage_data/build_script_build_manifest.json",
+    "./test_usage_data/rustc_error_codes_manifest.json",
+    "./test_usage_data/rustc_arena_manifest.json",
+    "./test_usage_data/rustc_fs_util_manifest.json",
     "./test_usage_data/rustc_index_manifest.json",
     "./test_usage_data/working_usage_collector_manifest.json",
     "./test_usage_data/rustc_index_macros_manifest.json",
+    "./test_usage_data/rustc_parse_format_manifest.json",
+    "./test_usage_data/rustc_type_ir_macros_manifest.json",
+    "./test_usage_data/rustc_thread_pool_manifest.json",
+    "./test_usage_data/rustc_graphviz_manifest.json",
     "./test_usage_data/rustc_serialize_manifest.json",
-    "./test_usage_data/build_common_manifest.json"
+    "./test_usage_data/build_common_manifest.json",
+    "./test_usage_data/rustc_proc_macro_manifest.json",
+    "./test_usage_data/rustc_lexer_manifest.json"
   ],
   "environment": {
     "cargo_manifest_dir": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_macros",
@@ -18,48 +27,13 @@
   },
   "generated_files": [
     {
-      "path": "./test_usage_data/rustc_macros_diagnostics_error.json",
-      "size_bytes": 10260,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_query.json",
-      "size_bytes": 127047,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_serialize.json",
-      "size_bytes": 64965,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_type_visitable.json",
-      "size_bytes": 19638,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_diagnostics_utils_CODE_IDENT_COUNT.json",
-      "size_bytes": 489,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_diagnostics.json",
-      "size_bytes": 2594,
-      "type": "usage_data"
-    },
-    {
       "path": "./test_usage_data/rustc_macros_structs.json",
       "size_bytes": 7406,
       "type": "usage_data"
     },
     {
-      "path": "./test_usage_data/rustc_macros_diagnostics_utils_FieldInnerTy___ty__from_type.json",
-      "size_bytes": 3025,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_diagnostics_diagnostic_builder_DiagnosticDeriveVariantBuilder_span_and_applicability_of_ty.json",
-      "size_bytes": 1490,
+      "path": "./test_usage_data/rustc_macros_constants.json",
+      "size_bytes": 2570,
       "type": "usage_data"
     },
     {
@@ -68,8 +42,78 @@
       "type": "usage_data"
     },
     {
+      "path": "./test_usage_data/rustc_macros_type_visitable.json",
+      "size_bytes": 19638,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_diagnostics_diagnostic_generate_test.json",
+      "size_bytes": 502,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros__.json",
+      "size_bytes": 9520,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_hash_stable.json",
+      "size_bytes": 20658,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_literals.json",
+      "size_bytes": 23330,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_diagnostics_error.json",
+      "size_bytes": 10260,
+      "type": "usage_data"
+    },
+    {
       "path": "./test_usage_data/rustc_macros_print_attribute.json",
       "size_bytes": 57054,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_enums.json",
+      "size_bytes": 2744,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_root.json",
+      "size_bytes": 23607,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_query.json",
+      "size_bytes": 127047,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_diagnostics_utils_CODE_IDENT_COUNT__constant_0___closure_0_.json",
+      "size_bytes": 565,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_symbols.json",
+      "size_bytes": 46428,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_diagnostics_diagnostic_builder_DiagnosticDeriveVariantBuilder_span_and_applicability_of_ty.json",
+      "size_bytes": 1490,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_current_version.json",
+      "size_bytes": 4397,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_serialize.json",
+      "size_bytes": 64965,
       "type": "usage_data"
     },
     {
@@ -83,58 +127,33 @@
       "type": "usage_data"
     },
     {
-      "path": "./test_usage_data/rustc_macros_diagnostics_diagnostic.json",
-      "size_bytes": 26376,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_symbols.json",
-      "size_bytes": 46428,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_root.json",
-      "size_bytes": 23607,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_diagnostics_utils_CODE_IDENT_COUNT__constant_0___closure_0_.json",
-      "size_bytes": 565,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_diagnostics_utils_CODE_IDENT_COUNT__constant_0___closure_1_.json",
-      "size_bytes": 565,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_constants.json",
-      "size_bytes": 2570,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_enums.json",
-      "size_bytes": 2744,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros__.json",
-      "size_bytes": 9520,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_current_version.json",
-      "size_bytes": 4397,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_hash_stable.json",
-      "size_bytes": 20658,
+      "path": "./test_usage_data/rustc_macros_diagnostics.json",
+      "size_bytes": 2594,
       "type": "usage_data"
     },
     {
       "path": "./test_usage_data/rustc_macros_diagnostics_utils.json",
       "size_bytes": 42753,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_diagnostics_utils_FieldInnerTy___ty__from_type.json",
+      "size_bytes": 3025,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_diagnostics_utils_CODE_IDENT_COUNT.json",
+      "size_bytes": 489,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_diagnostics_diagnostic.json",
+      "size_bytes": 26376,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_macros_diagnostics_utils_CODE_IDENT_COUNT__constant_0___closure_1_.json",
+      "size_bytes": 565,
       "type": "usage_data"
     },
     {
@@ -148,16 +167,6 @@
       "type": "usage_data"
     },
     {
-      "path": "./test_usage_data/rustc_macros_literals.json",
-      "size_bytes": 23330,
-      "type": "usage_data"
-    },
-    {
-      "path": "./test_usage_data/rustc_macros_diagnostics_diagnostic_generate_test.json",
-      "size_bytes": 502,
-      "type": "usage_data"
-    },
-    {
       "path": "./test_usage_data/rustc_macros_complexity.json",
       "size_bytes": 39207,
       "type": "usage_data"
@@ -165,7 +174,7 @@
   ],
   "output_directory": "./test_usage_data",
   "rustc_version": "unknown",
-  "timestamp": 1767654427,
+  "timestamp": 1767701017,
   "total_enums": 4,
   "total_modules": 28,
   "total_usages": 1569

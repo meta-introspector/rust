@@ -1,0 +1,398 @@
+{
+  "collector_version": "1.0.0",
+  "crate_name": "rustc_builtin_macros",
+  "dependency_manifests": [
+    "./test_usage_data/rustc_hashes_manifest.json",
+    "./test_usage_data/build_script_build_manifest.json",
+    "./test_usage_data/rustc_baked_icu_data_manifest.json",
+    "./test_usage_data/rustc_span_manifest.json",
+    "./test_usage_data/rustc_ast_manifest.json",
+    "./test_usage_data/rustc_error_codes_manifest.json",
+    "./test_usage_data/rustc_parse_manifest.json",
+    "./test_usage_data/rustc_arena_manifest.json",
+    "./test_usage_data/rustc_expand_manifest.json",
+    "./test_usage_data/rustc_hir_id_manifest.json",
+    "./test_usage_data/rustc_fs_util_manifest.json",
+    "./test_usage_data/rustc_index_manifest.json",
+    "./test_usage_data/working_usage_collector_manifest.json",
+    "./test_usage_data/rustc_index_macros_manifest.json",
+    "./test_usage_data/rustc_parse_format_manifest.json",
+    "./test_usage_data/rustc_type_ir_macros_manifest.json",
+    "./test_usage_data/rustc_ast_pretty_manifest.json",
+    "./test_usage_data/rustc_next_trait_solver_manifest.json",
+    "./test_usage_data/rustc_session_manifest.json",
+    "./test_usage_data/rustc_attr_parsing_manifest.json",
+    "./test_usage_data/rustc_ast_ir_manifest.json",
+    "./test_usage_data/rustc_fluent_macro_manifest.json",
+    "./test_usage_data/rustc_macros_manifest.json",
+    "./test_usage_data/rustc_hir_manifest.json",
+    "./test_usage_data/rustc_error_messages_manifest.json",
+    "./test_usage_data/rustc_thread_pool_manifest.json",
+    "./test_usage_data/rustc_errors_manifest.json",
+    "./test_usage_data/rustc_data_structures_manifest.json",
+    "./test_usage_data/rustc_target_manifest.json",
+    "./test_usage_data/rustc_graphviz_manifest.json",
+    "./test_usage_data/rustc_serialize_manifest.json",
+    "./test_usage_data/rustc_type_ir_manifest.json",
+    "./test_usage_data/rustc_lint_defs_manifest.json",
+    "./test_usage_data/build_common_manifest.json",
+    "./test_usage_data/rustc_abi_manifest.json",
+    "./test_usage_data/rustc_log_manifest.json",
+    "./test_usage_data/rustc_middle_manifest.json",
+    "./test_usage_data/rustc_proc_macro_manifest.json",
+    "./test_usage_data/rustc_query_system_manifest.json",
+    "./test_usage_data/rustc_feature_manifest.json",
+    "./test_usage_data/rustc_ast_passes_manifest.json",
+    "./test_usage_data/rustc_lexer_manifest.json",
+    "./test_usage_data/rustc_hir_pretty_manifest.json"
+  ],
+  "environment": {
+    "cargo_manifest_dir": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/rustc_builtin_macros",
+    "cargo_target_dir": null,
+    "profile": null,
+    "pwd": "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust"
+  },
+  "generated_files": [
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_format.json",
+      "size_bytes": 184420,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_test_harness_mk_tests_slice.json",
+      "size_bytes": 520,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_debug_show_substructure.json",
+      "size_bytes": 1376,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_partial_ord.json",
+      "size_bytes": 29226,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_global_allocator.json",
+      "size_bytes": 8673,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_cfg_eval.json",
+      "size_bytes": 3435,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_clone.json",
+      "size_bytes": 37941,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_pattern_type.json",
+      "size_bytes": 14879,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_asm.json",
+      "size_bytes": 141605,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_cfg_select.json",
+      "size_bytes": 8265,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_assert_context.json",
+      "size_bytes": 5779,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_structs.json",
+      "size_bytes": 45122,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_constants.json",
+      "size_bytes": 82884,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros__cfg_eval_CfgEval_____as_rustc_ast_mut_visit_MutVisitor__visit_expr.json",
+      "size_bytes": 565,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_default.json",
+      "size_bytes": 52299,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros__cfg_eval_CfgEval_____as_rustc_ast_mut_visit_MutVisitor__visit_expr___CALLSITE.json",
+      "size_bytes": 1890,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_coerce_pointee.json",
+      "size_bytes": 73067,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_concat.json",
+      "size_bytes": 16466,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_ord.json",
+      "size_bytes": 18716,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_trace_macros.json",
+      "size_bytes": 4268,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_log_syntax.json",
+      "size_bytes": 1313,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros__cfg_eval_CfgEval_____as_rustc_ast_mut_visit_MutVisitor__visit_method_receiver_expr.json",
+      "size_bytes": 597,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_compile_error.json",
+      "size_bytes": 2153,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_cmdline_attrs.json",
+      "size_bytes": 8586,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_source_util.json",
+      "size_bytes": 62857,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros__test_harness_TestHarnessGenerator__a__as_rustc_ast_mut_visit_MutVisitor__visit_item.json",
+      "size_bytes": 586,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_format_foreign_printf.json",
+      "size_bytes": 78161,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_iter.json",
+      "size_bytes": 8972,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_contracts.json",
+      "size_bytes": 20878,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_hash.json",
+      "size_bytes": 19461,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_define_opaque.json",
+      "size_bytes": 6083,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_from.json",
+      "size_bytes": 27801,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_test.json",
+      "size_bytes": 102513,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_cfg_accessible.json",
+      "size_bytes": 5420,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_debug.json",
+      "size_bytes": 60578,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_cfg.json",
+      "size_bytes": 7304,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_generic.json",
+      "size_bytes": 10152,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros__cfg_eval_CfgEval_____as_rustc_ast_mut_visit_MutVisitor__visit_method_receiver_expr___CALLSITE.json",
+      "size_bytes": 1970,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_standard_library_imports.json",
+      "size_bytes": 13256,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_autodiff_llvm_enzyme_gen_enzyme_decl___CALLSITE.json",
+      "size_bytes": 7225,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros__test_harness_TestHarnessGenerator__a__as_rustc_ast_mut_visit_MutVisitor__visit_item___CALLSITE.json",
+      "size_bytes": 1925,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_util.json",
+      "size_bytes": 24260,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_root.json",
+      "size_bytes": 45922,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_generic_ty.json",
+      "size_bytes": 3854,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_test_expand_test_or_bench.json",
+      "size_bytes": 516,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_autodiff_llvm_enzyme.json",
+      "size_bytes": 168721,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_edition_panic.json",
+      "size_bytes": 6190,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_test_expand_test_or_bench___CALLSITE.json",
+      "size_bytes": 1831,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_proc_macro_harness.json",
+      "size_bytes": 35263,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_enums.json",
+      "size_bytes": 6526,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_autodiff_llvm_enzyme_expand_with_mode.json",
+      "size_bytes": 3066,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_concat_bytes.json",
+      "size_bytes": 33127,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_format_foreign_shell.json",
+      "size_bytes": 15766,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_test_harness_mk_tests_slice___CALLSITE.json",
+      "size_bytes": 1841,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_eq.json",
+      "size_bytes": 15801,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_literals.json",
+      "size_bytes": 94909,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_autodiff_llvm_enzyme_gen_enzyme_decl.json",
+      "size_bytes": 1839,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_partial_eq.json",
+      "size_bytes": 20348,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_assert.json",
+      "size_bytes": 22728,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_alloc_error_handler.json",
+      "size_bytes": 24370,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_env.json",
+      "size_bytes": 28434,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_derive.json",
+      "size_bytes": 5387,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_format_foreign_strcursor.json",
+      "size_bytes": 2550,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_test_harness.json",
+      "size_bytes": 47996,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving_bounds.json",
+      "size_bytes": 14826,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_deriving.json",
+      "size_bytes": 8344,
+      "type": "usage_data"
+    },
+    {
+      "path": "./test_usage_data/rustc_builtin_macros_complexity.json",
+      "size_bytes": 127926,
+      "type": "usage_data"
+    }
+  ],
+  "output_directory": "./test_usage_data",
+  "rustc_version": "unknown",
+  "timestamp": 1767701044,
+  "total_enums": 9,
+  "total_modules": 66,
+  "total_usages": 4434
+}

@@ -1,0 +1,50 @@
+{
+  "crate": "rustc_mir_transform",
+  "module": "remove_zsts",
+  "usages": [
+    {
+      "symbol": "kind",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4746 ~ rustc_mir_transform[b3c4]::remove_zsts::trivially_zst)",
+      "used_def_id": "DefId(168:8867 ~ rustc_middle[d452]::ty::sty::{impl#11}::kind)",
+      "user_crate": "rustc_mir_transform",
+      "used_crate": "rustc_middle"
+    },
+    {
+      "symbol": "is_empty",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4746 ~ rustc_mir_transform[b3c4]::remove_zsts::trivially_zst)",
+      "used_def_id": "DefId(2:14035 ~ core[4720]::slice::{impl#0}::is_empty)",
+      "user_crate": "rustc_mir_transform",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "try_to_target_usize",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4746 ~ rustc_mir_transform[b3c4]::remove_zsts::trivially_zst)",
+      "used_def_id": "DefId(168:6084 ~ rustc_middle[d452]::ty::consts::{impl#4}::try_to_target_usize)",
+      "user_crate": "rustc_mir_transform",
+      "used_crate": "rustc_middle"
+    },
+    {
+      "symbol": "is_async_drop_in_place_coroutine",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:4746 ~ rustc_mir_transform[b3c4]::remove_zsts::trivially_zst)",
+      "used_def_id": "DefId(168:6797 ~ rustc_middle[d452]::ty::context::{impl#25}::is_async_drop_in_place_coroutine)",
+      "user_crate": "rustc_mir_transform",
+      "used_crate": "rustc_middle"
+    }
+  ]
+}

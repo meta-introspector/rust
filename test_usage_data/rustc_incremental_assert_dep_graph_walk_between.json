@@ -1,0 +1,83 @@
+{
+  "crate": "rustc_incremental",
+  "module": "assert_dep_graph::walk_between",
+  "usages": [
+    {
+      "symbol": "successor_nodes",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:105 ~ rustc_incremental[346a]::assert_dep_graph::walk_between::recurse)",
+      "used_def_id": "DefId(20:353 ~ rustc_data_structures[6825]::graph::linked_graph::{impl#1}::successor_nodes)",
+      "user_crate": "rustc_incremental",
+      "used_crate": "rustc_data_structures"
+    },
+    {
+      "symbol": "None",
+      "kind": "enum_variant_usage",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:105 ~ rustc_incremental[346a]::assert_dep_graph::walk_between::recurse)",
+      "used_def_id": "DefId(2:49374 ~ core[4720]::option::Option::None)",
+      "user_crate": "rustc_incremental",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "Some",
+      "kind": "enum_variant_usage",
+      "usage_count": 1,
+      "usage_type": "EnumVariant",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:105 ~ rustc_incremental[346a]::assert_dep_graph::walk_between::recurse)",
+      "used_def_id": "DefId(2:49376 ~ core[4720]::option::Option::Some)",
+      "user_crate": "rustc_incremental",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "next",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:105 ~ rustc_incremental[346a]::assert_dep_graph::walk_between::recurse)",
+      "used_def_id": "DefId(2:9429 ~ core[4720]::iter::traits::iterator::Iterator::next)",
+      "user_crate": "rustc_incremental",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "into_iter",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:105 ~ rustc_incremental[346a]::assert_dep_graph::walk_between::recurse)",
+      "used_def_id": "DefId(2:9297 ~ core[4720]::iter::traits::collect::IntoIterator::into_iter)",
+      "user_crate": "rustc_incremental",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "eq",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:105 ~ rustc_incremental[346a]::assert_dep_graph::walk_between::recurse)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)",
+      "user_crate": "rustc_incremental",
+      "used_crate": "core"
+    },
+    {
+      "symbol": "eq",
+      "kind": "method_call",
+      "usage_count": 1,
+      "usage_type": "MethodCall",
+      "node_type": "Item",
+      "user_def_id": "DefId(0:105 ~ rustc_incremental[346a]::assert_dep_graph::walk_between::recurse)",
+      "used_def_id": "DefId(2:3215 ~ core[4720]::cmp::PartialEq::eq)",
+      "user_crate": "rustc_incremental",
+      "used_crate": "core"
+    }
+  ]
+}
