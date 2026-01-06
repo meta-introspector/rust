@@ -1,10 +1,17 @@
+#![feature(rustc_private)]
+
+extern crate rustc_middle;
+extern crate rustc_hir;
+extern crate rustc_ast;
+
 use crate::data_structures::*;
 use rustc_middle::ty::TyCtxt;
 use rustc_hir::intravisit::{self, Visitor};
 use std::collections::HashMap;
+use crate::usage_collector::UsageCollector;
 
 pub struct LiteralVisitor<'a> {
-    pub collector: &'a mut crate::usage_collector::UsageCollector,
+    pub collector: &'a mut UsageCollector,
     pub context: String,
 }
 
@@ -172,13 +179,13 @@ impl<'tcx> intravisit::Visitor<'tcx> for LiteralVisitor<'_> {
 }
 
 pub struct TypeUsageVisitor<'a, 'tcx> {
-    pub collector: &'a mut crate::usage_collector::UsageCollector,
+    pub collector: &'a mut UsageCollector,
     pub crate_name: String,
     pub tcx: TyCtxt<'tcx>,
 }
 
 impl<'tcx> intravisit::Visitor<'tcx> for TypeUsageVisitor<'_, 'tcx> {
-    fn visit_ty(&mut self, ty: &'tcx rustc_hir::Ty<'tcx>) {
+    fn visit_ty(&mut self, ty: &'tcx rustc_hir::Ty<'tcx, rustc_hir::AmbigArg>) {
         match &ty.kind {
             rustc_hir::TyKind::Path(rustc_hir::QPath::Resolved(_, path)) => {
                 if let Some(def_id) = path.res.opt_def_id() {

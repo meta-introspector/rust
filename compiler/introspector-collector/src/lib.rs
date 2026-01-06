@@ -12,5 +12,5 @@ pub mod visitors;
 pub mod usage_collector;
 pub mod collectors;
 
-pub use usage_collector::UsageCollector;
+//pub use usage_collector::UsageCollector;
 pub use data_structures::*;

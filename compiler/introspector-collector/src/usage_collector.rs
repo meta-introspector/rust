@@ -8,6 +8,7 @@ extern crate rustc_ast;
 
 use crate::data_structures::*;
 use crate::file_manager::FileManager;
+use crate::collectors::*;
 
 use rustc_driver::{Callbacks, Compilation};
 use rustc_interface::interface;
@@ -81,7 +82,7 @@ impl UsageCollector {
             rustc_hir::ItemKind::Static(..) => "Static",
             rustc_hir::ItemKind::Struct(..) => "Struct",
             rustc_hir::ItemKind::Enum(..) => "Enum",
-            rustc_hir::ItemKind::Fn(..) => "Fn",
+            rustc_hir::ItemKind::Fn { .. } => "Fn",
             _ => "Other"
         }.to_string()
     }
@@ -183,9 +184,46 @@ impl UsageCollector {
     pub fn save_to_files(&self, crate_name: &str) {
         FileManager::save_to_files(&self.module_data, &self.enum_data, &self.item_complexity, crate_name);
     }
+    
+    pub fn collect_constants<'tcx>(&mut self, tcx: TyCtxt<'tcx>) {
+        let crate_name = tcx.crate_name(LOCAL_CRATE).to_string();
+        
+        for item_id in tcx.hir_crate_items(()).free_items() {
+            let item = tcx.hir_expect_item(item_id.owner_id.def_id);
+            
+            let item_name = match &item.kind {
+                rustc_hir::ItemKind::Use(..) => continue,
+                rustc_hir::ItemKind::ExternCrate(..) => continue,
+                rustc_hir::ItemKind::Impl(..) => continue,
+                rustc_hir::ItemKind::ForeignMod { .. } => continue,
+                _ => tcx.item_name(item.owner_id.to_def_id()).to_string(),
+            };
+            
+            match &item.kind {
+                rustc_hir::ItemKind::Const(_, _, _, body_id) => {
+                    let const_defkind = self.get_defkind_from_item(tcx, item);
+                    self.add_usage(
+                        "constants",
+                        item_name.clone(),
+                        "const_decl".to_string(),
+                        "ConstDecl".to_string(),
+                        "Item".to_string(),
+                        crate_name.clone(),
+                        item_name.clone(),
+                        Some(crate_name.clone()),
+                        None,
+                        Some(const_defkind),
+                        Some("Const".to_string())
+                    );
+                }
+                _ => {}
+            }
+        }
+    }
 }
 
 impl Callbacks for UsageCollector {
+
     fn after_analysis<'tcx>(
         &mut self,
         _compiler: &interface::Compiler,
@@ -309,134 +347,5 @@ impl Callbacks for UsageCollector {
         
         Compilation::Continue
     }
-}
 
-impl Callbacks for UsageCollector {
-    fn after_analysis<'tcx>(
-        &mut self,
-        _compiler: &interface::Compiler,
-        tcx: TyCtxt<'tcx>,
-    ) -> Compilation {
-        let local_crate = tcx.crate_name(LOCAL_CRATE);
-        let all_items = tcx.hir_crate_items(());
-        
-        if std::env::var("DUMP_HIR").is_ok() {
-            eprintln!("🔍 Creating HIR dump...");
-            let hir_dump_path = "hir_dump.json";
-            if let Ok(mut hir_dump) = std::fs::File::create(hir_dump_path) {
-                let crate_items = tcx.hir_crate_items(());
-                let _ = writeln!(hir_dump, "{{\"crate_name\": \"{}\", \"items\": [", local_crate);
-                
-                let items: Vec<_> = crate_items.free_items().collect();
-                for (i, item_id) in items.iter().enumerate() {
-                    let item = tcx.hir_expect_item(item_id.owner_id.def_id);
-                    let comma = if i == items.len() - 1 { "" } else { "," };
-                    let _ = writeln!(hir_dump, "  {{\"id\": {}, \"kind\": \"{:?}\"}}{}", 
-                        item_id.owner_id.def_id.local_def_index.index(), 
-                        std::mem::discriminant(&item.kind), 
-                        comma);
-                }
-                let _ = writeln!(hir_dump, "]}}");
-                eprintln!("🔍 HIR dump saved to {}", hir_dump_path);
-            }
-        }
-        
-        for item_id in all_items.free_items() {
-            let def_id = item_id.owner_id.to_def_id();
-            let item_path = tcx.def_path_str(def_id);
-            let def_kind = tcx.def_kind(def_id);
-                
-            let (module, decl) = if item_path.contains("::") {
-                let parts: Vec<&str> = item_path.split("::").collect();
-                (parts[..parts.len()-1].join("::"), parts[parts.len()-1])
-            } else {
-                ("root".to_string(), item_path.as_str())
-            };
-            
-            if !matches!(def_kind, 
-                rustc_hir::def::DefKind::Fn | 
-                rustc_hir::def::DefKind::Const | 
-                rustc_hir::def::DefKind::Static { .. } |
-                rustc_hir::def::DefKind::AssocFn |
-                rustc_hir::def::DefKind::AssocConst
-            ) {
-                continue;
-            }
-            
-            let user_location = format!("crate::{}::{}::{}", local_crate, module, decl);
-            let typeck = tcx.typeck(item_id.owner_id.def_id);
-            
-            for (_local_id, result) in typeck.type_dependent_defs().items_in_stable_order() {
-                if let Ok((def_kind, used_def_id)) = result {
-                    let used_crate = tcx.crate_name(used_def_id.krate);
-                    let used_path = tcx.def_path_str(*used_def_id);
-                    let used_location = format!("crate::{}::{}", used_crate, used_path);
-                    let _usage = format!("{} USES {} ({:?}) [DefId: {:?}]", user_location, used_location, def_kind, used_def_id);
-                    
-                    let node_type = match tcx.hir_node_by_def_id(item_id.owner_id.def_id) {
-                        rustc_hir::Node::Item(_) => "Item",
-                        rustc_hir::Node::Expr(_) => "Expr", 
-                        rustc_hir::Node::Stmt(_) => "Stmt",
-                        rustc_hir::Node::TraitItem(_) => "TraitItem",
-                        rustc_hir::Node::ImplItem(_) => "ImplItem",
-                        rustc_hir::Node::Pat(_) => "Pat",
-                        rustc_hir::Node::Ty(_) => "Ty",
-                        _ => "Other",
-                    }.to_string();
-                    
-                    let usage_type = match def_kind {
-                        rustc_hir::def::DefKind::AssocFn => "MethodCall",
-                        rustc_hir::def::DefKind::AssocConst => "AssocConstAccess",
-                        rustc_hir::def::DefKind::Variant => "EnumVariant", 
-                        rustc_hir::def::DefKind::Struct => "StructUsage",
-                        rustc_hir::def::DefKind::Enum => "EnumUsage",
-                        rustc_hir::def::DefKind::Fn => "FunctionCall",
-                        rustc_hir::def::DefKind::Const => "ConstantAccess",
-                        rustc_hir::def::DefKind::Static { .. } => "StaticAccess",
-                        rustc_hir::def::DefKind::Macro(_) => "MacroCall",
-                        rustc_hir::def::DefKind::TyAlias => "TypeAlias",
-                        rustc_hir::def::DefKind::Union => "UnionUsage",
-                        rustc_hir::def::DefKind::Trait => "TraitUsage",
-                        _ => "Other",
-                    }.to_string();
-                    
-                    let symbol = used_path.split("::").last().unwrap_or(&used_path).to_string();
-                    let kind = match def_kind {
-                        rustc_hir::def::DefKind::Variant => "enum_variant_usage",
-                        rustc_hir::def::DefKind::Struct => "struct_usage", 
-                        rustc_hir::def::DefKind::Enum => "enum_usage",
-                        rustc_hir::def::DefKind::Macro(_) => "macro_usage",
-                        rustc_hir::def::DefKind::AssocFn => "method_call",
-                        rustc_hir::def::DefKind::Fn => "function_call",
-                        rustc_hir::def::DefKind::Const => "const_usage",
-                        rustc_hir::def::DefKind::Static { .. } => "static_usage",
-                        rustc_hir::def::DefKind::TyAlias => "type_alias_usage",
-                        rustc_hir::def::DefKind::Union => "union_usage",
-                        rustc_hir::def::DefKind::Trait => "trait_usage",
-                        rustc_hir::def::DefKind::AssocTy => "assoc_type_usage",
-                        rustc_hir::def::DefKind::AssocConst => "assoc_const_usage",
-                        rustc_hir::def::DefKind::Mod => "module_usage",
-                        rustc_hir::def::DefKind::Field => "field_usage",
-                        rustc_hir::def::DefKind::Ctor(_, _) => "constructor_usage",
-                        _ => {
-                            eprintln!("Unknown DefKind: {:?} for symbol: {}", def_kind, used_path);
-                            "unknown_usage"
-                        },
-                    }.to_string();
-                    
-                    let user_def_id_str = format!("{:?}", item_id.owner_id.to_def_id());
-                    let used_def_id_str = format!("{:?}", used_def_id);
-                    let used_def_kind_str = format!("{:?}", def_kind);
-                    let user_def_kind_str = format!("{:?}", tcx.def_kind(item_id.owner_id.to_def_id()));
-                    
-                    self.add_usage(&module, symbol, kind, usage_type, node_type, user_def_id_str, used_def_id_str, Some(local_crate.to_string()), Some(used_crate.to_string()), Some(used_def_kind_str), Some(user_def_kind_str));
-                }
-            }
-        }
-        
-        self.collect_constants(tcx);
-        self.save_to_files(&local_crate.to_string());
-        
-        Compilation::Continue
-    }
 }
