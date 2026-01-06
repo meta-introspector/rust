@@ -5,7 +5,7 @@ use crate::ast_extractor::AstExtractor;
 use std::collections::HashMap;
 use std::sync::OnceLock;
 
-static USAGE_CACHE: OnceLock<HashMap<String, Vec<UsageEntry>>> = OnceLock::new();
+pub static USAGE_CACHE: OnceLock<HashMap<String, Vec<UsageEntry>>> = OnceLock::new();
 
 pub struct UsageCollector {
     pub module_data: HashMap<String, Vec<UsageEntry>>,

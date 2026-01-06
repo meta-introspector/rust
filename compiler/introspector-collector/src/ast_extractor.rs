@@ -9,7 +9,7 @@ impl AstExtractor {
             FieldInfo {
                 name: field.ident.to_string(),
                 field_type: "unknown".to_string(), // TODO: Extract actual type
-                is_public: matches!(field.vis.node, rustc_hir::VisibilityKind::Public),
+                is_public: false, // TODO: Fix visibility detection
             }
         }).collect()
     }

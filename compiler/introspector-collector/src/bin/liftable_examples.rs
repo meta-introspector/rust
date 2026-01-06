@@ -6,8 +6,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("🔍 Extracting Liftable Usage Examples from Existing Data");
     println!("========================================================");
     
-    let mut symbol_examples = HashMap::new();
-    let mut usage_patterns = HashMap::new();
+    let mut symbol_examples: HashMap<String, Vec<(String, String, String, String)>> = HashMap::new();
+    let mut usage_patterns: HashMap<String, usize> = HashMap::new();
     
     // Process all usage files to find concrete examples
     if let Ok(entries) = fs::read_dir("../../test_usage_data") {

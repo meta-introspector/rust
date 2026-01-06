@@ -22,39 +22,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         
         scan_directory(usage_dir, &mut merged_report, &mut total_usages, &mut crate_stats)?;
     }
-        let entry = entry?;
-        let path = entry.path();
-        
-        if path.extension().map_or(false, |ext| ext == "json") {
-            let filename = path.file_name().unwrap().to_string_lossy();
-            
-            // Skip manifest and complexity files, focus on usage data
-            if filename.contains("_manifest.json") || filename.contains("_complexity.json") {
-                continue;
-            }
-            
-            let content = fs::read_to_string(&path)?;
-            if let Ok(json) = serde_json::from_str::<Value>(&content) {
-                if let Some(obj) = json.as_object() {
-                    if let (Some(crate_name), Some(module), Some(usages)) = 
-                        (obj.get("crate"), obj.get("module"), obj.get("usages")) {
-                        
-                        let crate_str = crate_name.as_str().unwrap_or("unknown");
-                        let module_str = module.as_str().unwrap_or("unknown");
-                        let usage_count = usages.as_array().map_or(0, |arr| arr.len());
-                        
-                        total_usages += usage_count;
-                        
-                        let crate_entry = crate_stats.entry(crate_str.to_string())
-                            .or_insert_with(|| HashMap::new());
-                        crate_entry.insert(module_str.to_string(), usage_count);
-                        
-                        merged_report.insert(filename.to_string(), (crate_str.to_string(), module_str.to_string(), usage_count));
-                    }
-                }
-            }
-        }
-    }
     
     println!("\n📊 MERGED USAGE REPORT");
     println!("======================");
@@ -103,5 +70,48 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     fs::write("merged_usage_report.json", serde_json::to_string_pretty(&detailed_report)?)?;
     println!("✅ Report saved successfully!");
     
+    Ok(())
+}
+
+fn scan_directory(
+    usage_dir: &str,
+    merged_report: &mut HashMap<String, (String, String, usize)>,
+    total_usages: &mut usize,
+    crate_stats: &mut HashMap<String, HashMap<String, usize>>
+) -> Result<(), Box<dyn std::error::Error>> {
+    for entry in fs::read_dir(usage_dir)? {
+        let entry = entry?;
+        let path = entry.path();
+        
+        if path.extension().map_or(false, |ext| ext == "json") {
+            let filename = path.file_name().unwrap().to_string_lossy();
+            
+            // Skip manifest and complexity files, focus on usage data
+            if filename.contains("_manifest.json") || filename.contains("_complexity.json") {
+                continue;
+            }
+            
+            let content = fs::read_to_string(&path)?;
+            if let Ok(json) = serde_json::from_str::<Value>(&content) {
+                if let Some(obj) = json.as_object() {
+                    if let (Some(crate_name), Some(module), Some(usages)) = 
+                        (obj.get("crate"), obj.get("module"), obj.get("usages")) {
+                        
+                        let crate_str = crate_name.as_str().unwrap_or("unknown");
+                        let module_str = module.as_str().unwrap_or("unknown");
+                        let usage_count = usages.as_array().map_or(0, |arr| arr.len());
+                        
+                        *total_usages += usage_count;
+                        
+                        let crate_entry = crate_stats.entry(crate_str.to_string())
+                            .or_insert_with(|| HashMap::new());
+                        crate_entry.insert(module_str.to_string(), usage_count);
+                        
+                        merged_report.insert(filename.to_string(), (crate_str.to_string(), module_str.to_string(), usage_count));
+                    }
+                }
+            }
+        }
+    }
     Ok(())
 }

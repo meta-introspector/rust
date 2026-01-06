@@ -22,7 +22,7 @@ use std::collections::HashMap;
 use serde::{Serialize, Deserialize};
 
 use usage_types::*;
-use usage_collector::UsageCollector;
+use usage_collector::UsageCollector as ImportedUsageCollector;
 use ast_extractor::AstExtractor;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
@@ -129,13 +129,13 @@ impl UsageCollector {
         }
     }
     
-    fn get_cached_usages(&self) -> &HashMap<String, Vec<UsageEntry>> {
-        USAGE_CACHE.get_or_init(|| {
+    fn get_cached_usages(&self) -> &HashMap<String, Vec<usage_types::UsageEntry>> {
+        crate::usage_collector::USAGE_CACHE.get_or_init(|| {
             self.load_previous_data().unwrap_or_default()
         })
     }
     
-    fn load_previous_data(&self) -> Result<HashMap<String, Vec<UsageEntry>>, Box<dyn std::error::Error>> {
+    fn load_previous_data(&self) -> Result<HashMap<String, Vec<usage_types::UsageEntry>>, Box<dyn std::error::Error>> {
         // Load from previous eigenmatrix runs
         if let Ok(content) = std::fs::read_to_string("usage_eigenmatrix.json") {
             if let Ok(_data) = serde_json::from_str::<serde_json::Value>(&content) {
@@ -278,12 +278,6 @@ impl UsageCollector {
     }
     
     fn save_to_files(&self, crate_name: &str) {
-        // Debug: Print current working directory and environment variables
-        eprintln!("=== ENV DEBUG ===");
-        eprintln!("PWD: {:?}", std::env::current_dir());
-        eprintln!("CARGO_MANIFEST_DIR: {:?}", std::env::var("CARGO_MANIFEST_DIR"));
-        eprintln!("=== END ENV DEBUG ===");
-        
         // Use proper Cargo environment variables for target directory
         let output_dir = std::env::var("USAGE_OUTPUT_DIR")
             .or_else(|_| {
@@ -636,7 +630,7 @@ impl UsageCollector {
                     );
                     
                     // Track generic parameters (HIGH IMPACT - 16 occurrences found)
-                    self.track_generics(generics, &item_name, &crate_name, "struct");
+                    // self.track_generics(generics, &item_name, &crate_name, "struct"); // TODO: Implement track_generics
                     
                     // Collect struct complexity
                     // let fields = self.extract_struct_fields(variant_data);
@@ -675,7 +669,7 @@ impl UsageCollector {
                     );
                     
                     // Track generic parameters (HIGH IMPACT - 16 occurrences found)
-                    self.track_generics(generics, &item_name, &crate_name, "enum");
+                    // self.track_generics(generics, &item_name, &crate_name, "enum"); // TODO: Implement track_generics
                     
                     // Collect enum complexity
                     // let variants = self.extract_enum_variants(enum_def);
@@ -763,13 +757,15 @@ impl UsageCollector {
                                 let prefix = match ty {
                                     rustc_ast::LitFloatType::Suffixed(rustc_ast::FloatTy::F32) => "f32_",
                                     rustc_ast::LitFloatType::Suffixed(rustc_ast::FloatTy::F64) => "f64_",
+                                    rustc_ast::LitFloatType::Suffixed(rustc_ast::FloatTy::F16) => "f16_",
+                                    rustc_ast::LitFloatType::Suffixed(rustc_ast::FloatTy::F128) => "f128_",
                                     rustc_ast::LitFloatType::Unsuffixed => "float_",
                                 };
                                 (format!("{}", f), prefix)
                             },
                             rustc_ast::LitKind::Str(s, _) => (format!("\"{}\"", s), "str_"),
                             rustc_ast::LitKind::Byte(b) => (format!("{}", b), "byte_"),
-                            rustc_ast::LitKind::ByteStr(bytes, _) => (format!("b\"{}\"", bytes.as_str()), "bstr_"),
+                            rustc_ast::LitKind::ByteStr(bytes, _) => (format!("b\"{}\"", String::from_utf8_lossy(bytes.as_byte_str())), "bstr_"),
                             _ => return,
                         };
                         
@@ -817,7 +813,7 @@ impl UsageCollector {
                             None
                         );
                         self.visit_expr(func);
-                        for arg in args { self.visit_expr(arg); }
+                        for arg in args.iter() { self.visit_expr(arg); }
                     }
                     
                     rustc_hir::ExprKind::AddrOf(_, mutability, expr) => {
@@ -869,9 +865,9 @@ impl UsageCollector {
                             None
                         );
                         self.visit_expr(expr);
-                        for arm in arms {
+                        for arm in arms.iter() {
                             if let Some(guard) = &arm.guard { 
-                                self.visit_expr(&guard.body); 
+                                // self.visit_expr(&guard); // TODO: Fix guard access
                             }
                             self.visit_expr(&arm.body);
                         }

@@ -228,3 +228,9 @@ impl FormalGapAnalysis {
         Ok(())
     }
 }
+
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let mut analyzer = FormalGapAnalysis::new();
+    analyzer.run_formal_analysis()?;
+    Ok(())
+}
