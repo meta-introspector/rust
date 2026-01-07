@@ -1,4 +1,5 @@
 use crate::lattice_point_derive::{LatticePoint, impl_lattice_point};
+use usage_eigenmatrix::LatticePointDerive;
 
 // Implement LatticePoint for all Rust eigenmatrix types as URL/resources
 impl_lattice_point!(RustEigenMatrix);

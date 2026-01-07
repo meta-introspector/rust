@@ -69,4 +69,5 @@ macro_rules! mkdwim_borrow_fix {
 mkdwim_borrow_fix!();
 
 // Export all fixes
-pub use self::*;
+// Export specific items instead of wildcard
+// pub use mkdwim;

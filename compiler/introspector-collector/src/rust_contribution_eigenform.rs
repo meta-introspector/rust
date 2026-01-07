@@ -1,5 +1,6 @@
 use crate::lattice_point_derive::{LatticePoint, impl_lattice_point};
 use crate::github_ecosystem_lattice::GitHubRepository;
+use crate::val_type::Val;
 use std::collections::HashMap;
 
 /// Rust Contribution Eigenform Analysis
@@ -18,13 +19,13 @@ pub struct RustCommitEigenform {
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct EigenformSignature {
-    pub compiler_core_weight: f64,
-    pub stdlib_weight: f64,
-    pub test_weight: f64,
-    pub doc_weight: f64,
-    pub infrastructure_weight: f64,
-    pub eigenvalue: f64,
-    pub eigenvector: Vec<f64>,
+    pub compiler_core_weight: Val,
+    pub stdlib_weight: Val,
+    pub test_weight: Val,
+    pub doc_weight: Val,
+    pub infrastructure_weight: Val,
+    pub eigenvalue: Val,
+    pub eigenvector: Vec<Val>,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
@@ -117,36 +118,36 @@ impl RustCommitEigenform {
         ];
         
         EigenformSignature {
-            compiler_core_weight,
-            stdlib_weight,
-            test_weight,
-            doc_weight,
-            infrastructure_weight,
-            eigenvalue,
-            eigenvector,
+            compiler_core_weight: Val::new(compiler_core_weight),
+            stdlib_weight: Val::new(stdlib_weight),
+            test_weight: Val::new(test_weight),
+            doc_weight: Val::new(doc_weight),
+            infrastructure_weight: Val::new(infrastructure_weight),
+            eigenvalue: Val::new(eigenvalue),
+            eigenvector: eigenvector.into_iter().map(Val::new).collect(),
         }
     }
     
     /// Classify the contribution pattern based on eigenform signature
     fn classify_contribution_pattern(files: &[String], signature: &EigenformSignature) -> ContributionPattern {
         // Use eigenform weights to classify the contribution
-        if signature.compiler_core_weight > 0.7 {
+        if signature.compiler_core_weight > Val::new(0.7) {
             ContributionPattern::CompilerCore
-        } else if signature.stdlib_weight > 0.6 {
+        } else if signature.stdlib_weight > Val::new(0.6) {
             ContributionPattern::StandardLibrary
-        } else if signature.test_weight > 0.8 {
+        } else if signature.test_weight > Val::new(0.8) {
             ContributionPattern::Testing
-        } else if signature.doc_weight > 0.7 {
+        } else if signature.doc_weight > Val::new(0.7) {
             ContributionPattern::Documentation
-        } else if signature.infrastructure_weight > 0.5 {
+        } else if signature.infrastructure_weight > Val::new(0.5) {
             ContributionPattern::Infrastructure
-        } else if signature.eigenvalue > 1000.0 && signature.compiler_core_weight > 0.3 {
+        } else if signature.eigenvalue > Val::new(1000.0) && signature.compiler_core_weight > Val::new(0.3) {
             ContributionPattern::LanguageFeature
         } else if files.iter().any(|f| f.contains("perf") || f.contains("opt")) {
             ContributionPattern::Performance
         } else if files.iter().any(|f| f.contains("fix") || f.contains("bug")) {
             ContributionPattern::BugFix
-        } else if signature.eigenvalue < 100.0 {
+        } else if signature.eigenvalue < Val::new(100.0) {
             ContributionPattern::Refactoring
         } else {
             ContributionPattern::Unknown

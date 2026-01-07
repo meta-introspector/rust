@@ -16,6 +16,10 @@ mycelial_data_path = "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/mycelial-u
 # path = "src/enhanced_collector.rs"
 
 [[bin]]
+name = "bandwidth_filter_demo"
+path = "src/bin/bandwidth_filter_demo.rs"
+
+[[bin]]
 name = "working_usage_collector"
 path = "src/working_usage_collector.rs"
 
@@ -46,6 +50,22 @@ path = "src/bin/spectral_decomposition_demo.rs"
 [[bin]]
 name = "ast_chunking_demo"
 path = "src/bin/ast_chunking_demo.rs"
+
+[[bin]]
+name = "topological_ast_chunking_demo"
+path = "src/bin/topological_ast_chunking_demo.rs"
+
+[[bin]]
+name = "enhanced_topological_demo"
+path = "src/bin/enhanced_topological_demo.rs"
+
+[[bin]]
+name = "rust_lattice_generation_demo"
+path = "src/bin/rust_lattice_generation_demo.rs"
+
+[[bin]]
+name = "ast_sum_comparison_demo"
+path = "src/bin/ast_sum_comparison_demo.rs"
 
 [[bin]]
 name = "llm_context_demo"
@@ -222,3 +242,10 @@ build_common = { workspace = true }
 analyzeme = { workspace = true }
 toml = "0.8"
 walkdir = "2.0"
+tempfile = "3.0"
+usage_eigenmatrix = { path = "../usage_eigenmatrix" }
+
+[build-dependencies]
+syn = { version = "2.0", features = ["full", "extra-traits"] }
+quote = "1.0"
+proc-macro2 = "1.0"

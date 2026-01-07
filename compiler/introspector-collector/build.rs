@@ -1,63 +1,152 @@
-use std::env;
-use std::fs;
-use std::path::Path;
+use std::{env, fs, path::PathBuf, collections::HashMap};
+use syn::{parse_file, Item, ItemEnum, ItemConst, ItemStruct, ItemFn};
+use quote::quote;
 
-fn main() {
-    println!("cargo:rerun-if-changed=usage_patterns/");
-    
-    let out_dir = env::var("OUT_DIR").unwrap();
-    let dest_path = Path::new(&out_dir).join("generated_usage_code.rs");
-    
-    // Generate code from usage patterns
-    let generated_code = generate_usage_code();
-    
-    fs::write(&dest_path, generated_code).unwrap();
-    
-    println!("cargo:rustc-env=GENERATED_CODE_PATH={}", dest_path.display());
+#[derive(Debug, Clone)]
+struct FilterConfig {
+    allow_consts: bool,
+    allow_enums: bool,
+    allow_structs: bool,
+    allow_fns: bool,
+    max_complexity: usize,
+    enum_variant_limit: Option<usize>,
 }
 
-fn generate_usage_code() -> String {
-    let mut code = String::new();
-    
-    code.push_str("// Auto-generated usage-driven code\n");
-    code.push_str("use std::collections::HashMap;\n\n");
-    
-    // Generate usage pattern executors
-    code.push_str("pub struct UsageExecutor {\n");
-    code.push_str("    patterns: HashMap<String, Box<dyn Fn() -> String>>,\n");
-    code.push_str("}\n\n");
-    
-    code.push_str("impl UsageExecutor {\n");
-    code.push_str("    pub fn new() -> Self {\n");
-    code.push_str("        let mut patterns = HashMap::new();\n");
-    
-    // Add common syn usage patterns
-    add_syn_patterns(&mut code);
-    
-    code.push_str("        Self { patterns }\n");
-    code.push_str("    }\n\n");
-    
-    code.push_str("    pub fn execute(&self, pattern: &str) -> Option<String> {\n");
-    code.push_str("        self.patterns.get(pattern).map(|f| f())\n");
-    code.push_str("    }\n");
-    code.push_str("}\n");
-    
-    code
+impl FilterConfig {
+    fn from_env() -> Self {
+        Self {
+            allow_consts: env::var("FILTER_CONSTS").unwrap_or("true".to_string()) == "true",
+            allow_enums: env::var("FILTER_ENUMS").unwrap_or("true".to_string()) == "true", 
+            allow_structs: env::var("FILTER_STRUCTS").unwrap_or("true".to_string()) == "true",
+            allow_fns: env::var("FILTER_FNS").unwrap_or("true".to_string()) == "true",
+            max_complexity: env::var("MAX_COMPLEXITY").unwrap_or("100".to_string()).parse().unwrap_or(100),
+            enum_variant_limit: env::var("ENUM_VARIANT_LIMIT").ok().and_then(|s| s.parse().ok()),
+        }
+    }
 }
 
-fn add_syn_patterns(code: &mut String) {
-    // Parse function pattern
-    code.push_str("        patterns.insert(\"parse_file\".to_string(), Box::new(|| {\n");
-    code.push_str("            \"syn::parse_file(&content).expect(\\\"Failed to parse\\\")\".to_string()\n");
-    code.push_str("        }));\n");
+fn calculate_complexity(item: &Item) -> usize {
+    match item {
+        Item::Const(_) => 1,
+        Item::Enum(e) => e.variants.len(),
+        Item::Struct(s) => s.fields.len(),
+        Item::Fn(f) => count_statements(&f.block.stmts),
+        _ => 0,
+    }
+}
+
+fn count_statements(stmts: &[syn::Stmt]) -> usize {
+    stmts.len() + stmts.iter().map(|stmt| match stmt {
+        syn::Stmt::Expr(syn::Expr::Block(block), _) => count_statements(&block.block.stmts),
+        syn::Stmt::Expr(syn::Expr::If(if_expr), _) => {
+            1 + count_statements(&if_expr.then_branch.stmts) +
+            if_expr.else_branch.as_ref().map_or(0, |(_, else_expr)| match else_expr.as_ref() {
+                syn::Expr::Block(block) => count_statements(&block.block.stmts),
+                _ => 1,
+            })
+        },
+        _ => 0,
+    }).sum::<usize>()
+}
+
+fn should_include_item(item: &Item, config: &FilterConfig) -> bool {
+    let complexity = calculate_complexity(item);
+    if complexity > config.max_complexity {
+        return false;
+    }
+
+    match item {
+        Item::Const(_) => config.allow_consts,
+        Item::Enum(e) => {
+            config.allow_enums && 
+            config.enum_variant_limit.map_or(true, |limit| e.variants.len() <= limit)
+        },
+        Item::Struct(_) => config.allow_structs,
+        Item::Fn(_) => config.allow_fns,
+        _ => true, // Allow other items by default
+    }
+}
+
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    println!("cargo:rerun-if-changed=build.rs");
+    println!("cargo:rerun-if-env-changed=FILTER_CONSTS");
+    println!("cargo:rerun-if-env-changed=FILTER_ENUMS");
+    println!("cargo:rerun-if-env-changed=FILTER_STRUCTS");
+    println!("cargo:rerun-if-env-changed=FILTER_FNS");
+    println!("cargo:rerun-if-env-changed=MAX_COMPLEXITY");
+    println!("cargo:rerun-if-env-changed=ENUM_VARIANT_LIMIT");
+
+    let config = FilterConfig::from_env();
+    let out_dir = PathBuf::from(env::var("OUT_DIR")?);
+    let manifest_dir = PathBuf::from(env::var("CARGO_MANIFEST_DIR")?);
+    let src_dir = manifest_dir.join("src");
+
+    fs::create_dir_all(&out_dir)?;
+
+    let mut filtered_content = String::new();
+    let mut stats = HashMap::new();
+
+    for entry in fs::read_dir(&src_dir)? {
+        let entry = entry?;
+        let path = entry.path();
+
+        if path.is_file() && path.extension().map_or(false, |ext| ext == "rs") {
+            println!("cargo:rerun-if-changed={}", path.display());
+            let code = fs::read_to_string(&path)?;
+            let ast: syn::File = parse_file(&code)?;
+
+            let mut filtered_items = Vec::new();
+            let mut total_items = 0;
+            let mut filtered_items_count = 0;
+
+            for item in ast.items {
+                total_items += 1;
+                if should_include_item(&item, &config) {
+                    filtered_items.push(item);
+                    filtered_items_count += 1;
+                } else {
+                    let item_type = match &item {
+                        Item::Const(_) => "const",
+                        Item::Enum(_) => "enum", 
+                        Item::Struct(_) => "struct",
+                        Item::Fn(_) => "fn",
+                        _ => "other",
+                    };
+                    *stats.entry(format!("filtered_{}", item_type)).or_insert(0) += 1;
+                }
+            }
+
+            if !filtered_items.is_empty() {
+                let file_stem = path.file_stem().unwrap().to_string_lossy();
+                let filtered_file = quote! { #(#filtered_items)* };
+                filtered_content.push_str(&format!("// Filtered {}: {}/{} items\n", 
+                    file_stem, filtered_items_count, total_items));
+                filtered_content.push_str(&filtered_file.to_string());
+                filtered_content.push('\n');
+            }
+        }
+    }
+
+    // Write filtered code
+    fs::write(out_dir.join("filtered.rs"), &filtered_content)?;
+
+    // Write filter stats
+    let stats_content = format!("// Filter Stats: {:?}\n// Config: {:?}\n", stats, config);
+    fs::write(out_dir.join("filter_stats.rs"), stats_content)?;
+
+    // Generate lib.rs that includes filtered code
+    let lib_content = format!(r#"
+// Bandwidth-filtered compilation
+// Config: {:?}
+include!(concat!(env!("OUT_DIR"), "/filtered.rs"));
+"#, config);
     
-    // Visit pattern
-    code.push_str("        patterns.insert(\"visit_fn\".to_string(), Box::new(|| {\n");
-    code.push_str("            \"visitor.visit_item_fn(&func)\".to_string()\n");
-    code.push_str("        }));\n");
-    
-    // Token stream pattern
-    code.push_str("        patterns.insert(\"to_tokens\".to_string(), Box::new(|| {\n");
-    code.push_str("            \"item.to_token_stream().to_string()\".to_string()\n");
-    code.push_str("        }));\n");
+    fs::write(out_dir.join("lib.rs"), lib_content)?;
+
+    println!("Bandwidth filter applied: {:?}", config);
+    for (key, value) in stats {
+        println!("cargo:warning=Filtered {}: {}", key, value);
+    }
+
+    Ok(())
 }

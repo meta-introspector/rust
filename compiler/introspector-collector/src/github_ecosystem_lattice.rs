@@ -1,4 +1,6 @@
 use crate::lattice_point_derive::{LatticePoint, impl_lattice_point};
+use std::collections::HashMap;
+use usage_eigenmatrix::LatticePointDerive;
 
 // Implement LatticePoint for all GitHub ecosystem structs - each becomes a URL/resource
 impl_lattice_point!(GitHubRepository);

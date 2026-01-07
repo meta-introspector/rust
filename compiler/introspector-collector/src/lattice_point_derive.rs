@@ -96,5 +96,5 @@ macro_rules! impl_lattice_point {
     };
 }
 
-// Re-export for compatibility
-pub use impl_lattice_point as LatticePointDerive;
+// Export the macro properly
+pub use impl_lattice_point;
