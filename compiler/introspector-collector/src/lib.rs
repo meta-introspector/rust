@@ -11,6 +11,7 @@ pub mod file_manager;
 pub mod visitors;
 pub mod usage_collector;
 pub mod collectors;
+pub mod enum_string_generator;
 
 //pub use usage_collector::UsageCollector;
 pub use data_structures::*;
