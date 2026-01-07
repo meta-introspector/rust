@@ -2,6 +2,54 @@ use std::process::Command;
 use std::env;
 use std::fs;
 use std::path::Path;
+use std::thread;
+use std::time::{Duration, SystemTime, UNIX_EPOCH};
+use std::collections::hash_map::DefaultHasher;
+use std::hash::{Hash, Hasher};
+use serde::{Serialize, Deserialize};
+
+#[derive(Debug, Serialize, Deserialize)]
+struct CompilationBlock {
+    block_number: u64,
+    timestamp: u64,
+    previous_hash: String,
+    fibonacci_level: usize,
+    complexity: usize,
+    successful_crates: Vec<String>,
+    failed_crates: Vec<String>,
+    performance_hash: String,
+    block_hash: String,
+}
+
+impl CompilationBlock {
+    fn new(block_number: u64, previous_hash: String, fib_level: usize, complexity: usize) -> Self {
+        let timestamp = SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_secs();
+        Self {
+            block_number,
+            timestamp,
+            previous_hash,
+            fibonacci_level: fib_level,
+            complexity,
+            successful_crates: Vec::new(),
+            failed_crates: Vec::new(),
+            performance_hash: String::new(),
+            block_hash: String::new(),
+        }
+    }
+    
+    fn calculate_hash(&mut self) {
+        let mut hasher = DefaultHasher::new();
+        self.block_number.hash(&mut hasher);
+        self.timestamp.hash(&mut hasher);
+        self.previous_hash.hash(&mut hasher);
+        self.fibonacci_level.hash(&mut hasher);
+        self.complexity.hash(&mut hasher);
+        self.successful_crates.hash(&mut hasher);
+        self.failed_crates.hash(&mut hasher);
+        self.performance_hash.hash(&mut hasher);
+        self.block_hash = format!("{:x}", hasher.finish());
+    }
+}
 
 fn fibonacci(n: usize) -> usize {
     match n {
@@ -12,77 +60,85 @@ fn fibonacci(n: usize) -> usize {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    println!("🌀 FIBONACCI SPIRAL RUSTC DECOMPOSITION");
+    println!("⛓️ FIBONACCI BLOCKCHAIN RUSTC DECOMPOSITION");
+    println!("♾️ ETERNAL COMPILATION BLOCKCHAIN...");
     
-    let test_crates = vec![
-        ".",
-        "../usage_eigenmatrix", 
-        "../../../syn",
-        "../../../burn",
-        "../../../cubecl", 
-        "../../../measureme",
-        "../../../rust-build",
-        "../../../rust",
-    ];
-    
+    fs::create_dir_all("blockchain")?;
     fs::create_dir_all("fibonacci_traces")?;
     
-    for fib_level in 0..=10 {
-        let complexity = fibonacci(fib_level);
-        let crate_count = fibonacci(fib_level + 1).min(test_crates.len());
-        
-        println!("\n🌀 FIBONACCI LEVEL {} - Complexity: {}, Crates: {}", 
-            fib_level, complexity, crate_count);
-        
-        env::set_var("MAX_COMPLEXITY", complexity.to_string());
-        env::set_var("FIBONACCI_LEVEL", fib_level.to_string());
-        
-        for i in 0..crate_count {
-            let crate_path = test_crates[i];
-            if !Path::new(crate_path).exists() { continue; }
-            
-            println!("  🔄 Building crate {} with complexity {}", crate_path, complexity);
-            
-            let output = Command::new("cargo")
-                .args(&["build", "--release"])
-                .current_dir(crate_path)
-                .env("MAX_COMPLEXITY", complexity.to_string())
-                .env("FIBONACCI_LEVEL", fib_level.to_string())
-                .output()?;
+    let test_crates = vec![".", "../usage_eigenmatrix", "../../../syn", "../../../burn"];
+    let mut blockchain: Vec<CompilationBlock> = Vec::new();
+    let mut block_number = 0u64;
+    
+    loop {
+        for fib_level in 0..=10 {
+            let complexity = fibonacci(fib_level);
+            let previous_hash = blockchain.last()
+                .map(|b| b.block_hash.clone())
+                .unwrap_or_else(|| "genesis".to_string());
                 
-            if output.status.success() {
-                let crate_name = Path::new(crate_path).file_name()
-                    .unwrap_or_default().to_string_lossy();
+            let mut block = CompilationBlock::new(block_number, previous_hash, fib_level, complexity);
+            
+            println!("\n⛓️ BLOCK {} - Fib:{} C:{}", block_number, fib_level, complexity);
+            
+            env::set_var("MAX_COMPLEXITY", complexity.to_string());
+            
+            // Mine the block by compiling crates
+            for crate_path in &test_crates {
+                if !Path::new(crate_path).exists() { continue; }
+                
+                let output = Command::new("cargo")
+                    .args(&["build", "--release"])
+                    .current_dir(crate_path)
+                    .env("MAX_COMPLEXITY", complexity.to_string())
+                    .output()?;
                     
-                // Collect fibonacci-spiral profiles
-                if let Ok(entries) = fs::read_dir(crate_path) {
-                    for entry in entries {
-                        if let Ok(entry) = entry {
-                            let name = entry.file_name();
-                            if let Some(name_str) = name.to_str() {
-                                if name_str.starts_with("rustc_") && name_str.ends_with(".mm_profdata") {
-                                    let new_name = format!("fibonacci_traces/fib_{}_{}_c{}_profile.mm_profdata", 
-                                        fib_level, crate_name, complexity);
-                                    let _ = fs::rename(entry.path(), &new_name);
-                                    println!("    🌀 Saved: {}", new_name);
-                                }
-                            }
+                let crate_name = Path::new(crate_path).file_name()
+                    .unwrap_or_default().to_string_lossy().to_string();
+                    
+                if output.status.success() {
+                    block.successful_crates.push(crate_name);
+                    print!("✅");
+                } else {
+                    block.failed_crates.push(crate_name);
+                    print!("❌");
+                }
+            }
+            
+            // Calculate performance hash from traces
+            let mut perf_hasher = DefaultHasher::new();
+            if let Ok(entries) = fs::read_dir("fibonacci_traces") {
+                for entry in entries {
+                    if let Ok(entry) = entry {
+                        if let Ok(metadata) = entry.metadata() {
+                            metadata.len().hash(&mut perf_hasher);
                         }
                     }
                 }
-                
-                println!("    ✅ Fibonacci spiral level {} complete", fib_level);
-            } else {
-                println!("    ❌ Failed at fibonacci level {}", fib_level);
+            }
+            block.performance_hash = format!("{:x}", perf_hasher.finish());
+            
+            // Finalize block
+            block.calculate_hash();
+            
+            // Write block to blockchain
+            let block_json = serde_json::to_string_pretty(&block)?;
+            fs::write(format!("blockchain/block_{:06}.json", block_number), &block_json)?;
+            
+            println!("\n⛓️ Block {} mined: {}", block_number, &block.block_hash[..8]);
+            println!("   ✅ Success: {}, ❌ Failed: {}", 
+                block.successful_crates.len(), block.failed_crates.len());
+            
+            blockchain.push(block);
+            block_number += 1;
+            
+            // Keep only last 100 blocks in memory
+            if blockchain.len() > 100 {
+                blockchain.remove(0);
             }
         }
         
-        println!("  🎯 Fibonacci {} → Complexity: {}, Built: {} crates", 
-            fib_level, complexity, crate_count);
+        println!("\n⛓️ Blockchain height: {} blocks", block_number);
+        thread::sleep(Duration::from_secs(30));
     }
-    
-    println!("\n🌀 FIBONACCI RUSTC DECOMPOSITION COMPLETE");
-    println!("📊 Fibonacci sequence: 0,1,1,2,3,5,8,13,21,34,55...");
-    println!("🚀 Each level builds the next with exponentially growing complexity!");
-    Ok(())
 }

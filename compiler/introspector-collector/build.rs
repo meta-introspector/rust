@@ -1,3 +1,5 @@
+// Broken build.rs - commented out for now
+/*
 use std::{env, fs, path::PathBuf, collections::HashMap};
 use syn::{parse_file, Item, ItemEnum, ItemConst, ItemStruct, ItemFn};
 use quote::quote;
@@ -149,4 +151,10 @@ include!(concat!(env!("OUT_DIR"), "/filtered.rs"));
     }
 
     Ok(())
+}
+*/
+
+fn main() {
+    println!("cargo:rerun-if-changed=build.rs");
+    println!("Build script disabled");
 }

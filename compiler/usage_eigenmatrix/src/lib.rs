@@ -3,6 +3,12 @@ use proc_macro2::TokenStream as TokenStream2;
 use quote::quote;
 use syn::{parse_macro_input, DeriveInput, Data, Fields};
 
+/// LatticePointDerive proc macro
+#[proc_macro_derive(LatticePointDerive)]
+pub fn lattice_point_derive(_input: TokenStream) -> TokenStream {
+    TokenStream::new()
+}
+
 /// Macro that applies Morse-harmonic analysis to any Rust type
 #[proc_macro_derive(MorseHarmonic)]
 pub fn morse_harmonic_derive(input: TokenStream) -> TokenStream {

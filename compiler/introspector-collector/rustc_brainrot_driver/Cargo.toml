@@ -1,0 +1,47 @@
+[package]
+name = "rustc_brainrot_driver"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["dylib"]
+
+[[bin]]
+name = "browserrot_escape"
+path = "src/bin/browserrot_escape.rs"
+
+[[bin]]
+name = "llm_zombie_demo"
+path = "src/bin/llm_zombie_demo.rs"
+
+[[bin]]
+name = "area51_dungeon_game"
+path = "src/bin/area51_dungeon_game.rs"
+
+[[bin]]
+name = "brainrot_router"
+path = "src/bin/brainrot_router.rs"
+
+[[bin]]
+name = "zombie_rustc"
+path = "src/bin/zombie_rustc.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+libp2p = { version = "0.53", features = ["kad", "tcp", "noise", "yamux", "gossipsub", "mdns"] }
+tokio = { version = "1.0", features = ["full"] }
+futures = "0.3"
+rustc_driver = { workspace = true }
+rustc_interface = { workspace = true }
+rustc_session = { workspace = true }
+rustc_errors = { workspace = true }
+rustc_ast = { workspace = true }
+rustc_hir = { workspace = true }
+rustc_middle = { workspace = true }
+syn = { version = "2.0", features = ["full"] }
+quote = "1.0"
+wasm-bindgen = "0.2"
+js-sys = "0.3"
+web-sys = "0.3"
+console_error_panic_hook = "0.1"

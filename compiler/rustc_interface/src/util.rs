@@ -438,6 +438,25 @@ fn get_codegen_sysroot(
     match file {
         Some(ref s) => load_backend_from_dylib(early_dcx, s),
         None => {
+            // ZOMBIE DEBUG: Add detailed debugging information
+            eprintln!("🧟 ZOMBIE DEBUG: Failed to find codegen backend!");
+            eprintln!("🧟 Backend name: {}", backend_name);
+            eprintln!("🧟 Sysroot path: {}", sysroot.display());
+            eprintln!("🧟 Expected names: {:?}", expected_names);
+            
+            // List all files in the codegen-backends directory
+            if let Ok(entries) = sysroot.read_dir() {
+                eprintln!("🧟 Files in codegen-backends directory:");
+                for entry in entries.filter_map(|e| e.ok()) {
+                    let path = entry.path();
+                    if let Some(filename) = path.file_name().and_then(|s| s.to_str()) {
+                        eprintln!("🧟   - {}", filename);
+                    }
+                }
+            }
+            
+            panic!("🧟 ZOMBIE PANIC: Detailed codegen backend debugging info above");
+            
             let err = format!("unsupported builtin codegen backend `{backend_name}`");
             early_dcx.early_fatal(err);
         }

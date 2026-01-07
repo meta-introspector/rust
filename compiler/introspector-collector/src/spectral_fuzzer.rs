@@ -5,11 +5,11 @@ use std::process::Command;
 /// Spectral component from syn/HIR decomposition
 #[derive(Debug, Clone)]
 pub struct SpectralComponent {
-    pub frequency: f64,
-    pub amplitude: f64,
+    pub frequency: Val,
+    pub amplitude: Val,
     pub syn_pattern: String,
     pub hir_pattern: String,
-    pub phase: f64,
+    pub phase: Val,
 }
 
 /// Spectral Fuzzing System - Automatically assign enum rarity via execution measurement
@@ -23,11 +23,11 @@ pub struct SpectralFuzzer {
 
 #[derive(Debug, Clone)]
 pub struct ExecutionMetrics {
-    pub compile_time_ms: f64,
-    pub execution_time_ns: u64,
-    pub memory_usage_kb: u64,
-    pub instruction_count: u64,
-    pub frequency_score: f64,
+    pub compile_time_ms: Val,
+    pub execution_time_ns: Val,
+    pub memory_usage_kb: Val,
+    pub instruction_count: Val,
+    pub frequency_score: Val,
 }
 
 #[derive(Debug, Clone)]
@@ -218,16 +218,17 @@ impl SpectralFuzzer {
         for (i, syn_pattern) in syn_patterns.iter().enumerate() {
             let hir_pattern = hir_patterns.get(i).cloned().unwrap_or_default();
             
-            // Spectral decomposition: extract frequency components
-            let frequency = (i + 1) as f64 / syn_patterns.len() as f64;
-            let amplitude = 1.0 / (i + 1) as f64; // Higher frequency = lower amplitude
+            // Spectral decomposition: extract frequency components using Val
+            let frequency = Val::from_nat((i + 1) * 100) / Val::from_nat(syn_patterns.len());
+            let amplitude = Val::from_nat(1000) / Val::from_nat(i + 1); // Higher frequency = lower amplitude
+            let phase = Val::from_nat(i * 314) / Val::from_nat(100); // Phase shift in Val units
             
             components.push(SpectralComponent {
                 frequency,
                 amplitude,
                 syn_pattern: syn_pattern.clone(),
                 hir_pattern,
-                phase: i as f64 * std::f64::consts::PI / 4.0, // Phase shift
+                phase,
             });
         }
         
@@ -271,14 +272,14 @@ impl SpectralFuzzer {
         
         // Simulate compilation and execution
         let compile_success = self.simulate_compile(program);
-        let compile_time = start.elapsed().as_millis() as f64;
+        let compile_time = Val::from_nat(start.elapsed().as_millis() as u64);
         
         ExecutionMetrics {
             compile_time_ms: compile_time,
-            execution_time_ns: if compile_success { 1000000 } else { 0 },
-            memory_usage_kb: if compile_success { 1024 } else { 0 },
-            instruction_count: if compile_success { 10000 } else { 0 },
-            frequency_score: if compile_success { 1.0 } else { 0.0 },
+            execution_time_ns: if compile_success { Val::from_nat(1000000) } else { Val::from_nat(0) },
+            memory_usage_kb: if compile_success { Val::from_nat(1024) } else { Val::from_nat(0) },
+            instruction_count: if compile_success { Val::from_nat(10000) } else { Val::from_nat(0) },
+            frequency_score: if compile_success { Val::from_nat(1) } else { Val::from_nat(0) },
         }
     }
     
@@ -289,13 +290,14 @@ impl SpectralFuzzer {
     }
     
     /// Auto-assign rarity based on execution frequency
-    fn assign_rarity_by_frequency(&self, frequency: f64) -> EnumRarity {
-        match frequency {
-            f if f >= 0.8 => EnumRarity::Fundamental,
-            f if f >= 0.6 => EnumRarity::Common,
-            f if f >= 0.4 => EnumRarity::Uncommon,
-            f if f >= 0.2 => EnumRarity::Rare,
-            f if f >= 0.1 => EnumRarity::VeryRare,
+    fn assign_rarity_by_frequency(&self, frequency: Val) -> EnumRarity {
+        let freq_nat = frequency.to_nat();
+        match freq_nat {
+            f if f >= 80 => EnumRarity::Fundamental,
+            f if f >= 60 => EnumRarity::Common,
+            f if f >= 40 => EnumRarity::Uncommon,
+            f if f >= 20 => EnumRarity::Rare,
+            f if f >= 10 => EnumRarity::VeryRare,
             _ => EnumRarity::ExtremelyRare,
         }
     }

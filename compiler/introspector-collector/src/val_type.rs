@@ -8,7 +8,6 @@ use std::cmp::Ordering;
 pub struct Val(pub f64);
 
 impl Val {
-impl Val {
     /// Zero - the empty program (no enums)
     pub const ZERO: Val = Val(0.0);
     
@@ -293,6 +292,7 @@ impl EnumOfEnums {
         let prime_idx = (hash as usize) % Self::PRIMES.len();
         Val::from_nat(Self::PRIMES[prime_idx])
     }
+}
     
 /// Enum rarity classification based on prime size
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
