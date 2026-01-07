@@ -2,10 +2,7 @@
 resolver = "2"
 members = [
 # tidy-alphabetical-start
-  "compiler/introspector-collector",
-  "compiler/ontology_aggregator",
-  "compiler/rustc", "compiler/rustc_brainrot_driver",
-  "compiler/usage_eigenmatrix",
+  "compiler/rustc",
   "src/build_helper",
   "src/rustc-std-workspace/rustc-std-workspace-alloc",
   "src/rustc-std-workspace/rustc-std-workspace-core",
@@ -61,12 +58,6 @@ exclude = [
   # HACK(eddyb) This hardcodes the fact that our CI uses `/checkout/obj`.
   "obj",
 ]
-
-[workspace.dependencies]
-rustc_index = { path = "compiler/rustc_index" }
-build_common = { path = "compiler/build_common" }
-analyzeme = { path = "../measureme/analyzeme" }
-portable-atomic = { path = "../portable-atomic" }
 
 [profile.release.package.rustc_thread_pool]
 # The rustc fork of Rayon has deadlock detection code which intermittently

@@ -1,0 +1,97 @@
+1985843 execve("./zombie.sh", ["./zombie.sh", "--no-net", "hello_zombie.rs", "--crate-type", "bin", "-o", "hello_zombie"], 0x7fffffff5a98 /* 132 vars */) = 0
+1985843 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1985843 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1985843 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=138808, ...}, AT_EMPTY_PATH) = 0
+1985843 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3
+1985843 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=200136, ...}, AT_EMPTY_PATH) = 0
+1985843 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1985843 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+1985843 openat(AT_FDCWD, "/dev/tty", O_RDWR|O_NONBLOCK) = 3
+1985843 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+1985843 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3048928, ...}, AT_EMPTY_PATH) = 0
+1985843 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+1985843 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+1985843 newfstatat(AT_FDCWD, "/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1985843 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1985843 newfstatat(AT_FDCWD, "/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1985843 newfstatat(AT_FDCWD, "/home/mdupont", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+1985843 newfstatat(AT_FDCWD, "/home/mdupont/nix", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+1985843 newfstatat(AT_FDCWD, "/home/mdupont/nix/vendor", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+1985843 newfstatat(AT_FDCWD, "/home/mdupont/nix/vendor/rust", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+1985843 newfstatat(AT_FDCWD, "/home/mdupont/nix/vendor/rust/cargo2nix", {st_mode=S_IFDIR|0775, st_size=20480, ...}, 0) = 0
+1985843 newfstatat(AT_FDCWD, "/home/mdupont/nix/vendor/rust/cargo2nix/submodules", {st_mode=S_IFDIR|0775, st_size=20480, ...}, 0) = 0
+1985843 newfstatat(AT_FDCWD, "/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1985843 newfstatat(AT_FDCWD, "/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1985843 newfstatat(AT_FDCWD, "/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1985843 newfstatat(AT_FDCWD, "/home/mdupont/nix/vendor/rust/cargo2nix/submodules/rust/compiler", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1985843 openat(AT_FDCWD, "./zombie.sh", O_RDONLY) = 3
+1985843 newfstatat(AT_FDCWD, "./zombie.sh", {st_mode=S_IFREG|0755, st_size=557, ...}, 0) = 0
+1985843 newfstatat(255, "", {st_mode=S_IFREG|0755, st_size=557, ...}, AT_EMPTY_PATH) = 0
+1985843 newfstatat(AT_FDCWD, "target/debug/zombie_rustc_driver", {st_mode=S_IFREG|0755, st_size=74660328, ...}, 0) = 0
+1985844 execve("./target/debug/zombie_rustc_driver", ["./target/debug/zombie_rustc_driv"..., "--no-net", "hello_zombie.rs", "--crate-type", "bin", "-o", "hello_zombie"], 0x5555556da200 /* 136 vars */) = 0
+1985844 access("/etc/ld-nix.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1985844 openat(AT_FDCWD, "target/debug/glibc-hwcaps/x86-64-v3/librustc_driver.so", O_RDONLY|O_CLOEXEC) = 3
+1985844 getcwd("/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver", 128) = 76
+1985844 openat(AT_FDCWD, "target/debug/glibc-hwcaps/x86-64-v3/libstd-55e31a9915372a07.so", O_RDONLY|O_CLOEXEC) = 3
+1985844 getcwd("/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver", 128) = 76
+1985844 openat(AT_FDCWD, "target/debug/glibc-hwcaps/x86-64-v3/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+1985844 getcwd("/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver", 128) = 76
+1985844 openat(AT_FDCWD, "target/debug/glibc-hwcaps/x86-64-v3/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+1985844 getcwd("/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver", 128) = 76
+1985844 openat(AT_FDCWD, "target/debug/glibc-hwcaps/x86-64-v3/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1985844 getcwd("/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver", 128) = 76
+1985844 openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 3
+1985844 openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 3
+1985844 statx(3, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0444, stx_size=0, ...}) = 0
+1985844 statx(AT_FDCWD, "/sys/fs/cgroup/user.slice/user-1000.slice/session-1855.scope/cgroup.controllers", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0444, stx_size=0, ...}) = 0
+1985844 openat(AT_FDCWD, "/sys/fs/cgroup/user.slice/user-1000.slice/session-1855.scope/cpu.max", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1985844 openat(AT_FDCWD, "/sys/fs/cgroup/user.slice/user-1000.slice/cpu.max", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1985844 openat(AT_FDCWD, "/sys/fs/cgroup/user.slice/cpu.max", O_RDONLY|O_CLOEXEC) = 3
+1985844 statx(3, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=0, ...}) = 0
+1985844 openat(AT_FDCWD, "/sys/fs/cgroup/cpu.max", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1985853 openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 13
+1985844 readlink("./target/debug/zombie_rustc_driver", 0x555555f54930, 256) = -1 EINVAL (Invalid argument)
+1985844 getcwd("/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver", 1024) = 76
+1985844 readlink("/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver/target", 0x7ffffffe6770, 1023) = -1 EINVAL (Invalid argument)
+1985844 readlink("/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver/target/debug", 0x7ffffffe6770, 1023) = -1 EINVAL (Invalid argument)
+1985844 readlink("/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver/target/debug/glibc-hwcaps", 0x7ffffffe6770, 1023) = -1 EINVAL (Invalid argument)
+1985844 readlink("/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver/target/debug/glibc-hwcaps/x86-64-v3", 0x7ffffffe6770, 1023) = -1 EINVAL (Invalid argument)
+1985844 readlink("/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver/target/debug/glibc-hwcaps/x86-64-v3/librustc_driver.so", 0x7ffffffe6770, 1023) = -1 EINVAL (Invalid argument)
+1985844 statx(AT_FDCWD, "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver/target/debug/glibc-hwcaps/lib/rustlib/src/rust", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1985844 statx(AT_FDCWD, "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver/target/debug/glibc-hwcaps/lib/rustlib/src/rust/library/std/src/lib.rs", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffffffe7010) = -1 ENOENT (No such file or directory)
+1985844 statx(AT_FDCWD, "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver/target/debug/glibc-hwcaps/lib/rustlib/rustc-src/rust", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1985844 statx(AT_FDCWD, "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver/target/debug/glibc-hwcaps/lib/rustlib/rustc-src/rust/compiler/rustc/src/main.rs", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffffffe7010) = -1 ENOENT (No such file or directory)
+1985844 getcwd("/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver", 512) = 76
+1985844 getcwd("/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver", 512) = 76
+1985869 statx(AT_FDCWD, "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver/target/debug/glibc-hwcaps/lib64/rustlib", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fffe25d3ab0) = -1 ENOENT (No such file or directory)
+1985869 statx(AT_FDCWD, "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver/target/debug/glibc-hwcaps/lib/rustlib/x86_64-unknown-linux-gnu/codegen-backends", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1985869 openat(AT_FDCWD, "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/zombie_driver/target/debug/glibc-hwcaps/lib/rustlib/x86_64-unknown-linux-gnu/codegen-backends", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 15
+1985869 +++ exited with 0 +++
+1985870 +++ exited with 1 +++
+1985868 +++ exited with 1 +++
+1985867 +++ exited with 1 +++
+1985866 +++ exited with 1 +++
+1985865 +++ exited with 1 +++
+1985864 +++ exited with 1 +++
+1985863 +++ exited with 1 +++
+1985862 +++ exited with 1 +++
+1985861 +++ exited with 1 +++
+1985860 +++ exited with 1 +++
+1985858 +++ exited with 1 +++
+1985857 +++ exited with 1 +++
+1985856 +++ exited with 1 +++
+1985855 +++ exited with 1 +++
+1985854 +++ exited with 1 +++
+1985853 +++ exited with 1 +++
+1985852 +++ exited with 1 +++
+1985851 +++ exited with 1 +++
+1985850 +++ exited with 1 +++
+1985849 +++ exited with 1 +++
+1985848 +++ exited with 1 +++
+1985847 +++ exited with 1 +++
+1985846 +++ exited with 1 +++
+1985845 +++ exited with 1 +++
+1985859 +++ exited with 1 +++
+1985844 +++ exited with 1 +++
+1985843 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1985844, si_uid=1000, si_status=1, si_utime=7, si_stime=3} ---
+1985843 +++ exited with 1 +++
