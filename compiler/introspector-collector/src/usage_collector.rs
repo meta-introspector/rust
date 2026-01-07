@@ -116,6 +116,68 @@ impl UsageCollector {
         classification
     }
     
+    pub fn collect_enum_variants(&mut self, tcx: TyCtxt<'_>) {
+        let crate_items = tcx.hir_crate_items(());
+        
+        for item_id in crate_items.free_items() {
+            let item = tcx.hir_item(item_id);
+            
+            if let rustc_hir::ItemKind::Enum(enum_def, generics, _) = &item.kind {
+                let enum_name = tcx.item_name(item.owner_id.to_def_id()).to_string();
+                let mut variants = Vec::new();
+                
+                for variant in enum_def.variants.iter() {
+                    let variant_name = variant.ident.name.to_string();
+                    
+                    // Collect variant info
+                    variants.push(EnumVariantUsage {
+                        enum_name: enum_name.clone(),
+                        variant_name: variant_name.clone(),
+                        usage_classes: UsageClassification::default(),
+                        top_converters: HashMap::new(),
+                    });
+                    
+                    // Add variant as usage entry
+                    self.add_usage(
+                        "enums",
+                        variant_name.clone(),
+                        "enum_variant".to_string(),
+                        "EnumVariant".to_string(),
+                        "Item".to_string(),
+                        format!("{}::{}", enum_name, variant_name),
+                        variant_name,
+                        Some(tcx.crate_name(rustc_hir::def_id::LOCAL_CRATE).to_string()),
+                        None,
+                        Some("Variant".to_string()),
+                        Some("Enum".to_string()),
+                    );
+                }
+                
+                // Add enum declaration
+                self.add_usage(
+                    "enums",
+                    enum_name.clone(),
+                    "enum_decl".to_string(),
+                    "EnumDecl".to_string(),
+                    "Item".to_string(),
+                    enum_name.clone(),
+                    enum_name.clone(),
+                    Some(tcx.crate_name(rustc_hir::def_id::LOCAL_CRATE).to_string()),
+                    None,
+                    Some("Enum".to_string()),
+                    Some("Enum".to_string()),
+                );
+                
+                // Store enum info
+                self.enum_data.insert(enum_name.clone(), EnumInfo {
+                    name: enum_name,
+                    variants,
+                    total_usage_classes: UsageClassification::default(),
+                });
+            }
+        }
+    }
+
     pub fn extract_enum_variant(&self, def_id: &str) -> Option<(String, String)> {
         if let Some(path_part) = def_id.strip_prefix("DefId(").and_then(|s| s.split(" ~ ").nth(1)) {
             if let Some(clean_path) = path_part.strip_suffix(")") {
@@ -227,10 +289,15 @@ impl Callbacks for UsageCollector {
     fn after_analysis<'tcx>(
         &mut self,
         _compiler: &interface::Compiler,
-        tcx: TyCtxt<'tcx>,
+        queries: &'tcx interface::Queries<'tcx>,
     ) -> Compilation {
-        let local_crate = tcx.crate_name(LOCAL_CRATE);
-        let all_items = tcx.hir_crate_items(());
+        queries.global_ctxt().unwrap().enter(|tcx| {
+            let local_crate = tcx.crate_name(LOCAL_CRATE);
+            
+            // Collect enum variants first
+            self.collect_enum_variants(tcx);
+            
+            let all_items = tcx.hir_crate_items(());
         
         if std::env::var("DUMP_HIR").is_ok() {
             eprintln!("🔍 Creating HIR dump...");
@@ -346,6 +413,6 @@ impl Callbacks for UsageCollector {
         self.save_to_files(&local_crate.to_string());
         
         Compilation::Continue
+        })
     }
-
 }

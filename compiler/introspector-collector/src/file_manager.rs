@@ -45,6 +45,19 @@ impl FileManager {
             eprintln!("=== SAVED {} COMPLEXITY ITEMS FOR CRATE: {} ===", item_complexity.len(), crate_name);
         }
         
+        // Save enum data with variants
+        if !enum_data.is_empty() {
+            let enum_filename = format!("{}/{}_enum_variants.json", output_dir, crate_name);
+            let enum_output = serde_json::json!({
+                "crate": crate_name,
+                "enums": enum_data.values().collect::<Vec<_>>()
+            });
+            let enum_json = serde_json::to_string_pretty(&enum_output).unwrap();
+            std::fs::write(&enum_filename, enum_json).unwrap();
+            generated_files.push(enum_filename);
+            eprintln!("=== SAVED {} ENUMS WITH VARIANTS FOR CRATE: {} ===", enum_data.len(), crate_name);
+        }
+        
         Self::generate_manifest(crate_name, &output_dir, &generated_files, total_usages);
         eprintln!("=== COLLECTING USAGE DATA FOR CRATE: {} === ({} total usages)", crate_name, total_usages);
     }

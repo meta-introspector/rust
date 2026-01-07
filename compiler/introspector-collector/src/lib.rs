@@ -12,6 +12,9 @@ pub mod visitors;
 pub mod usage_collector;
 pub mod collectors;
 pub mod enum_string_generator;
+pub mod libusagedata;
+pub mod rustc_enum_generator;
+pub mod hir_enum_collector;
 
 //pub use usage_collector::UsageCollector;
 pub use data_structures::*;
