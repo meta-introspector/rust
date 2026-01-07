@@ -138,7 +138,7 @@ impl MetaCoqLambda {
         let mut bits = vec![];
         
         // Magic header: MetaCoq signature
-        bits.extend_from_slice(&[0xME, 0xTA, 0xCO, 0xQ]);
+        bits.extend_from_slice(&[0xDE, 0xAD, 0xBE, 0xEF]);
         
         // Encode self-application lambda
         if let Some(ref self_app) = self.lambda_calculus.self_application {

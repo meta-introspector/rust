@@ -8,6 +8,7 @@ use std::collections::HashMap;
 pub struct UniversalNode {
     pub id: String,
     pub semantic_meaning: String,
+    pub universal_mapping: String,
     
     // Source representations
     pub source_code: Option<String>,
@@ -82,6 +83,55 @@ pub struct UsageMetrics {
 }
 
 /// Core expression model - now enhanced to capture all layers
+#[derive(Debug, Clone)]
+pub struct UniversalRustTree {
+    pub root: RustExpr,
+    pub mappings: HashMap<String, String>,
+}
+
+impl UniversalRustTree {
+    pub fn new() -> Self {
+        Self {
+            root: RustExpr::Universal(UniversalNode {
+                id: "root".to_string(),
+                semantic_meaning: "ROOT".to_string(),
+                universal_mapping: "ROOT".to_string(),
+                source_code: None,
+                syn_ast: None,
+                hir: None,
+                mir: None,
+                llvm_ir: None,
+                assembly: None,
+                bytecode: None,
+                memory_layout: None,
+                execution_trace: vec![],
+                runtime_state: None,
+                usage_data: UsageMetrics {
+                    compilation_frequency: 0,
+                    runtime_frequency: 0,
+                    optimization_impact: 0.0,
+                    memory_efficiency: 0.0,
+                },
+                generated_macros: vec![],
+                annotations: HashMap::new(),
+            }),
+            mappings: HashMap::new(),
+        }
+    }
+}
+
+#[derive(Debug, Clone)]
+pub struct RustLiteral {
+    pub value: String,
+    pub literal_type: String,
+}
+
+#[derive(Debug, Clone)]
+pub struct RustType {
+    pub name: String,
+    pub generics: Vec<String>,
+}
+
 #[derive(Debug, Clone)]
 pub enum RustExpr {
     // Universal node that maps across all representations
@@ -318,41 +368,6 @@ impl RustTreeOfLife {
 }
 
 impl RustTreeOfLife {
-    pub fn new() -> Self {
-        Self {
-            root: RustExpr::Module {
-                name: "rust_universe".to_string(),
-                items: vec![],
-                syn_module: None,
-                hir_module: None,
-                mir_module: None,
-            },
-            enum_bindings: HashMap::new(),
-            macro_bindings: HashMap::new(),
-            universal_tree: UniversalRustTree {
-                root: RustExpr::Module {
-                    name: "universal_rust".to_string(),
-                    items: vec![],
-                    syn_module: None,
-                    hir_module: None,
-                    mir_module: None,
-                },
-                layer_mappings: HashMap::new(),
-                execution_history: vec![],
-                compilation_pipeline: CompilationPipeline {
-                    stages: vec![],
-                    optimizations: vec![],
-                    metrics: CompilationMetrics {
-                        total_time: 0.0,
-                        memory_usage: 0,
-                        optimization_level: 0,
-                        target_architecture: "unknown".to_string(),
-                    },
-                },
-            },
-        }
-    }
-    
     /// Bind a rustc enum directly into our model
     pub fn bind_rustc_enum(&mut self, enum_name: &str, variants: Vec<String>) {
         self.enum_bindings.insert(enum_name.to_string(), variants);

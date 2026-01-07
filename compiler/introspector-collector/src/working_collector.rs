@@ -95,7 +95,7 @@ impl Callbacks for UsageCollector {
         let local_crate = tcx.crate_name(LOCAL_CRATE);
         let all_items = tcx.hir_crate_items(());
         
-        eprintln!("=== COLLECTING USAGE DATA FOR CRATE: {} ===", local_crate);
+        // eprintln!("=== COLLECTING USAGE DATA FOR CRATE: {} ===", local_crate);
         
         for item_id in all_items.free_items() {
             let def_id = item_id.owner_id.to_def_id();

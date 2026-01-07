@@ -59,7 +59,7 @@ impl FileManager {
         }
         
         Self::generate_manifest(crate_name, &output_dir, &generated_files, total_usages);
-        eprintln!("=== COLLECTING USAGE DATA FOR CRATE: {} === ({} total usages)", crate_name, total_usages);
+        // eprintln!("=== COLLECTING USAGE DATA FOR CRATE: {} === ({} total usages)", crate_name, total_usages);
     }
     
     fn get_output_dir() -> String {
@@ -164,6 +164,6 @@ impl FileManager {
         
         let manifest_path = format!("{}/{}_manifest.json", output_dir, crate_name);
         std::fs::write(&manifest_path, serde_json::to_string_pretty(&manifest).unwrap()).unwrap();
-        eprintln!("=== MANIFEST SAVED: {} ===", manifest_path);
+        // eprintln!("=== MANIFEST SAVED: {} ===", manifest_path);
     }
 }

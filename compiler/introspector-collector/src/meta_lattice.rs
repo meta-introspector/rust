@@ -2,6 +2,7 @@
 /// K → Query → Code Snippets → Macro Wrapper → MCTS → Genetic → Artificial Life → Meta Mycelium → Quasifibers → Bott Periodicity → Morse Theory → Frequency
 
 use crate::rust_lattice::*;
+use crate::mkdwim_random;
 use std::collections::HashMap;
 use rand::Rng;
 
@@ -205,7 +206,7 @@ impl MetaLattice {
         for _ in 0..100 { // MCTS iterations
             for wrapper in &mut explored {
                 // Simulate random exploration
-                wrapper.fitness += rng.gen::<f64>() * 0.1 - 0.05;
+                wrapper.fitness += mkdwim_random!(0.1 - 0.05);
             }
         }
         
@@ -253,12 +254,12 @@ impl MetaLattice {
                 
                 let mut child_genome = parent1.genome.clone();
                 for (i, gene) in child_genome.iter_mut().enumerate() {
-                    if rng.gen::<f64>() < 0.5 {
+                    if mkdwim_random!(0.5) < 0.5 {
                         *gene = parent2.genome[i];
                     }
                     // Mutation
-                    if rng.gen::<f64>() < 0.1 {
-                        *gene += rng.gen::<f64>() * 0.2 - 0.1;
+                    if mkdwim_random!(0.1) < 0.1 {
+                        *gene += mkdwim_random!(0.2) - 0.1;
                     }
                 }
                 
@@ -301,7 +302,7 @@ impl MetaLattice {
         let node_ids: Vec<_> = network.nodes.keys().cloned().collect();
         for i in 0..node_ids.len() {
             for j in (i+1)..node_ids.len() {
-                let strength = rand::thread_rng().gen::<f64>();
+                let strength = mkdwim_random!(1.0);
                 if strength > 0.5 {
                     network.connections.push(MyceliumConnection {
                         from: node_ids[i].clone(),

@@ -93,7 +93,7 @@ impl QuineRelayProof {
                  println!(\"fn main(){{let s=r#\\\"{{}}\\\"#;println!(s,s);}}\", s);\n\
                  // Polyfill: {:?}\n\
              }}",
-            "QUINE_TEMPLATE", profile.polyfill_features
+            profile.polyfill_percentage, "QUINE_TEMPLATE", profile.polyfill_features
         )
     }
     

@@ -196,44 +196,41 @@ impl DeltaLattice {
     
     /// Generate C polyfill (no macros, use preprocessor)
     fn generate_c_polyfill(&self, pos: usize, base_enum: &DiracDeltaEnum) -> String {
-        format!(
-            "/* Delta function {} polyfill for C */\n\
-             #ifndef DELTA_{}_H\n\
-             #define DELTA_{}_H\n\
-             \n\
-             #include <stdio.h>\n\
-             #include <stdlib.h>\n\
-             #include <string.h>\n\
-             \n\
-             #define DELTA_{}_POSITION {}\n\
-             #define DELTA_{}_BASE_ENUM \"{}\"\n\
-             \n\
-             typedef struct {{\n\
-               int position;\n\
-               char* base_enum;\n\
-             }} Delta{};\n\
-             \n\
-             char* delta_{}_map_from_perspective(int target) {{\n\
-               if (target == DELTA_{}_POSITION) {{\n\
-                 return \"SELF\";\n\
-               }} else {{\n\
-                 int distance = abs(target - DELTA_{}_POSITION);\n\
-                 char* result = malloc(20);\n\
-                 sprintf(result, \"DELTA_%d\", distance);\n\
-                 return result;\n\
-               }}\n\
-             }}\n\
-             \n\
-             /* Polyfill macro behavior with function pointers */\n\
-             void* delta_{}_apply(void* (*func)(Delta{}*)) {{\n\
-               Delta{} delta = {{DELTA_{}_POSITION, DELTA_{}_BASE_ENUM}};\n\
-               return func(&delta);\n\
-             }}\n\
-             \n\
-             #endif",
-            pos, pos, pos, pos, pos, pos, format!("{:?}", base_enum), 
-            pos, pos, pos, pos, pos, pos, pos, pos, pos, pos
-        )
+        [
+            &format!("/* Delta function {} polyfill for C */", pos),
+            &format!("#ifndef DELTA_{}_H", pos),
+            &format!("#define DELTA_{}_H", pos),
+            "",
+            "#include <stdio.h>",
+            "#include <stdlib.h>",
+            "#include <string.h>",
+            "",
+            &format!("#define DELTA_POSITION {}", pos),
+            &format!("#define DELTA_BASE_ENUM \"{}\"", format!("{:?}", base_enum)),
+            "",
+            "typedef struct {",
+            "  int position;",
+            "  char* base_enum;",
+            "} Delta;",
+            "",
+            "char* delta_map_from_perspective(int target) {",
+            "  if (target == DELTA_POSITION) {",
+            "    return \"SELF\";",
+            "  } else {",
+            "    int distance = abs(target - DELTA_POSITION);",
+            "    char* result = malloc(20);",
+            "    sprintf(result, \"DELTA_%d\", distance);",
+            "    return result;",
+            "  }",
+            "}",
+            "",
+            "void* delta_apply(void* (*func)(Delta*)) {",
+            "  Delta delta = {DELTA_POSITION, DELTA_BASE_ENUM};",
+            "  return func(&delta);",
+            "}",
+            "",
+            "#endif"
+        ].join("\n")
     }
     
     /// Get delta at specific position

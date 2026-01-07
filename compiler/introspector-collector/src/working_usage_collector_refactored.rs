@@ -292,7 +292,7 @@ impl Callbacks for UsageCallbacks {
                     let _ = file.write_all(json_str.as_bytes());
                 }
             }
-            eprintln!("=== MANIFEST SAVED: {} ===", manifest_path);
+            // eprintln!("=== MANIFEST SAVED: {} ===", manifest_path);
             
             // Save usage data for each module
             for (module, usages) in &visitor.collector.module_data {
@@ -312,7 +312,7 @@ impl Callbacks for UsageCallbacks {
                 }
             }
             
-            eprintln!("=== COLLECTING USAGE DATA FOR CRATE: {} === ({} total usages)", crate_name, total_usages);
+            // eprintln!("=== COLLECTING USAGE DATA FOR CRATE: {} === ({} total usages)", crate_name, total_usages);
         });
         
         Compilation::Continue

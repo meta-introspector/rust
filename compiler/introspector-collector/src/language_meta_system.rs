@@ -197,7 +197,7 @@ fn get_wikidata_entry(lang: &str) -> Option<String> {
         "coq" => Some("Q1136376".to_string()),
         "lean4" => Some("Q28865".to_string()),
         "regex" => Some("Q185612".to_string()),
-        "sed" => Some("Q1194858".to_string(),
+        "sed" => Some("Q1194858".to_string()),
         "awk" => Some("Q217595".to_string()),
         _ => None,
     }

@@ -362,7 +362,7 @@ impl UniversalResourceMetrics {
         setup_costs.sort_by_key(|(_, cost)| *cost);
         
         for (name, cost) in setup_costs {
-            comparison.push_str(&format!("  {}: {:,} cycles\n", name, cost));
+            comparison.push_str(&format!("  {}: {} cycles\n", name, cost));
         }
         
         comparison.push_str("\nExecution Costs (with polyfill overhead):\n");
@@ -373,7 +373,7 @@ impl UniversalResourceMetrics {
         exec_costs.sort_by_key(|(_, cost)| *cost);
         
         for (name, cost) in exec_costs {
-            comparison.push_str(&format!("  {}: {:,} cycles\n", name, cost));
+            comparison.push_str(&format!("  {}: {} cycles\n", name, cost));
         }
         
         comparison.push_str("\nPolyfill Overhead:\n");
