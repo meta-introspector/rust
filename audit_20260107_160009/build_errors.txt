@@ -1,0 +1,176 @@
+Building bootstrap
+running: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage0/bin/cargo build --jobs=default --manifest-path /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/src/bootstrap/Cargo.toml -Zroot-dir=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build
+    Finished `dev` profile [unoptimized] target(s) in 0.07s
+running: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/bootstrap/debug/bootstrap build --verbose
+Removing sysroot /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage1/lib/rustlib/x86_64-unknown-linux-gnu/lib to avoid caching bugs
+Removing sysroot /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage0-sysroot/lib/rustlib/x86_64-unknown-linux-gnu/lib to avoid caching bugs
+   Compiling synstructure v0.13.2
+   Compiling displaydoc v0.2.5
+   Compiling zerovec-derive v0.11.1
+   Compiling tracing-attributes v0.1.30
+   Compiling rustc_index_macros v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/rustc_index_macros)
+   Compiling thiserror-impl v2.0.15
+   Compiling derive-where v1.6.0
+   Compiling serde_derive v1.0.228
+   Compiling ref-cast-impl v1.0.24
+   Compiling serde_derive_internals v0.29.1
+   Compiling darling_core v0.20.11
+   Compiling regex v1.11.1
+   Compiling regex-automata v0.1.10
+   Compiling rustc_llvm v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/rustc_llvm)
+   Compiling ar_archive_writer v0.5.1
+   Compiling bstr v1.12.0
+   Compiling rustc_driver v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/rustc_driver)
+   Compiling jiff v0.2.15
+   Compiling ruzstd v0.7.3
+   Compiling nix v0.30.1
+   Compiling shlex v1.3.0
+   Compiling rustc-main v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/rustc)
+   Compiling zerofrom-derive v0.1.6
+   Compiling yoke-derive v0.8.0
+   Compiling rustc_macros v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/rustc_macros)
+   Compiling ref-cast v1.0.24
+   Compiling rustc_type_ir_macros v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/rustc_type_ir_macros)
+   Compiling tinystr v0.8.1
+   Compiling zerotrie v0.2.2
+   Compiling object v0.36.7
+warning: rustc_llvm@0.0.0: In file included from /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/bits/stl_algo.h:71,
+warning: rustc_llvm@0.0.0:                  from /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/algorithm:61,
+warning: rustc_llvm@0.0.0:                  from /nix/store/v9cr3iv7wnrkjy1s3z1fi7wpkl7sy4hx-llvm-21.1.2-dev/include/llvm/ADT/SmallVector.h:19,
+warning: rustc_llvm@0.0.0:                  from /nix/store/v9cr3iv7wnrkjy1s3z1fi7wpkl7sy4hx-llvm-21.1.2-dev/include/llvm/Support/raw_ostream.h:16,
+warning: rustc_llvm@0.0.0:                  from llvm-wrapper/LLVMWrapper.h:7,
+warning: rustc_llvm@0.0.0:                  from llvm-wrapper/PassWrapper.cpp:1:
+warning: rustc_llvm@0.0.0: /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/cstdlib:79:15: fatal error: stdlib.h: No such file or directory
+warning: rustc_llvm@0.0.0:    79 | #include_next <stdlib.h>
+warning: rustc_llvm@0.0.0:       |               ^~~~~~~~~~
+warning: rustc_llvm@0.0.0: compilation terminated.
+error: failed to run custom build command for `rustc_llvm v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/rustc_llvm)`
+
+Caused by:
+  process didn't exit successfully: `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage1-rustc/release/build/rustc_llvm-43e92fbf21fe0196/build-script-build` (exit status: 1)
+  --- stdout
+  cargo:rustc-check-cfg=cfg(llvm_component,values("ipo"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("bitreader"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("bitwriter"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("linker"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("asmparser"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("lto"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("coverage"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("instrumentation"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("x86"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("arm"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("aarch64"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("amdgpu"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("avr"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("loongarch"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("m68k"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("csky"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("mips"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("powerpc"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("systemz"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("webassembly"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("msp430"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("sparc"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("nvptx"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("hexagon"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("riscv"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("xtensa"))
+  cargo:rustc-check-cfg=cfg(llvm_component,values("bpf"))
+  cargo:rerun-if-env-changed=RUST_CHECK
+  cargo:rerun-if-env-changed=REAL_LIBRARY_PATH_VAR
+  cargo:rerun-if-env-changed=REAL_LIBRARY_PATH
+  cargo:rerun-if-env-changed=LLVM_CONFIG
+  cargo:rerun-if-changed=/nix/store/v9cr3iv7wnrkjy1s3z1fi7wpkl7sy4hx-llvm-21.1.2-dev/bin/llvm-config
+  cargo:rustc-cfg=llvm_component="aarch64"
+  cargo:rustc-cfg=llvm_component="amdgpu"
+  cargo:rustc-cfg=llvm_component="arm"
+  cargo:rustc-cfg=llvm_component="asmparser"
+  cargo:rustc-cfg=llvm_component="avr"
+  cargo:rustc-cfg=llvm_component="bitreader"
+  cargo:rustc-cfg=llvm_component="bitwriter"
+  cargo:rustc-cfg=llvm_component="bpf"
+  cargo:rustc-cfg=llvm_component="coverage"
+  cargo:rustc-cfg=llvm_component="hexagon"
+  cargo:rustc-cfg=llvm_component="instrumentation"
+  cargo:rustc-cfg=llvm_component="ipo"
+  cargo:rustc-cfg=llvm_component="linker"
+  cargo:rustc-cfg=llvm_component="loongarch"
+  cargo:rustc-cfg=llvm_component="lto"
+  cargo:rustc-cfg=llvm_component="mips"
+  cargo:rustc-cfg=llvm_component="msp430"
+  cargo:rustc-cfg=llvm_component="nvptx"
+  cargo:rustc-cfg=llvm_component="powerpc"
+  cargo:rustc-cfg=llvm_component="riscv"
+  cargo:rustc-cfg=llvm_component="sparc"
+  cargo:rustc-cfg=llvm_component="systemz"
+  cargo:rustc-cfg=llvm_component="webassembly"
+  cargo:rustc-cfg=llvm_component="x86"
+  cargo:rerun-if-env-changed=LLVM_ENZYME
+  cargo:rerun-if-env-changed=LLVM_RUSTLLVM
+  cargo:rerun-if-env-changed=LLVM_ASSERTIONS
+  cargo:rerun-if-changed=llvm-wrapper/SymbolWrapper.cpp
+  cargo:rerun-if-changed=llvm-wrapper/RustWrapper.cpp
+  cargo:rerun-if-changed=llvm-wrapper/CoverageMappingWrapper.cpp
+  cargo:rerun-if-changed=llvm-wrapper/LLVMWrapper.h
+  cargo:rerun-if-changed=llvm-wrapper/.editorconfig
+  cargo:rerun-if-changed=llvm-wrapper/Linker.cpp
+  cargo:rerun-if-changed=llvm-wrapper/README
+  cargo:rerun-if-changed=llvm-wrapper/SuppressLLVMWarnings.h
+  cargo:rerun-if-changed=llvm-wrapper/PassWrapper.cpp
+  OUT_DIR = Some(/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage1-rustc/x86_64-unknown-linux-gnu/release/build/rustc_llvm-6a55ee0304373f6b/out)
+  OPT_LEVEL = Some(3)
+  TARGET = Some(x86_64-unknown-linux-gnu)
+  HOST = Some(x86_64-unknown-linux-gnu)
+  cargo:rerun-if-env-changed=CXX_x86_64-unknown-linux-gnu
+  CXX_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CXX_x86_64_unknown_linux_gnu
+  CXX_x86_64_unknown_linux_gnu = Some(g++)
+  cargo:rerun-if-env-changed=CC_KNOWN_WRAPPER_CUSTOM
+  CC_KNOWN_WRAPPER_CUSTOM = None
+  RUSTC_WRAPPER = Some(/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/bootstrap/debug/rustc)
+  cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  DEBUG = Some(true)
+  CARGO_CFG_TARGET_FEATURE = Some(fxsr,sse,sse2,x87)
+  cargo:rerun-if-env-changed=CXXFLAGS
+  CXXFLAGS = Some(-O2 -g -isystem /nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include)
+  cargo:rerun-if-env-changed=CC_SHELL_ESCAPED_FLAGS
+  CC_SHELL_ESCAPED_FLAGS = None
+  cargo:rerun-if-env-changed=HOST_CXXFLAGS
+  HOST_CXXFLAGS = None
+  cargo:rerun-if-env-changed=CXXFLAGS_x86_64_unknown_linux_gnu
+  CXXFLAGS_x86_64_unknown_linux_gnu = Some()
+  cargo:rerun-if-env-changed=CXXFLAGS_x86_64-unknown-linux-gnu
+  CXXFLAGS_x86_64-unknown-linux-gnu = None
+  CARGO_ENCODED_RUSTFLAGS = Some(--cfg=bootstrap--cfg=windows_raw_dylib-Csymbol-mangling-version=v0-Zunstable-options--check-cfg=cfg(bootstrap)-Zmacro-backtrace-Csplit-debuginfo=off-Clink-args=-Wl,-z,origin-Clink-args=-Wl,-rpath,$ORIGIN/../lib-Alinker-messages-Zon-broken-pipe=kill)
+  cargo:warning=In file included from /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/bits/stl_algo.h:71,
+  cargo:warning=                 from /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/algorithm:61,
+  cargo:warning=                 from /nix/store/v9cr3iv7wnrkjy1s3z1fi7wpkl7sy4hx-llvm-21.1.2-dev/include/llvm/ADT/SmallVector.h:19,
+  cargo:warning=                 from /nix/store/v9cr3iv7wnrkjy1s3z1fi7wpkl7sy4hx-llvm-21.1.2-dev/include/llvm/Support/raw_ostream.h:16,
+  cargo:warning=                 from llvm-wrapper/LLVMWrapper.h:7,
+  cargo:warning=                 from llvm-wrapper/PassWrapper.cpp:1:
+  cargo:warning=/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/cstdlib:79:15: fatal error: stdlib.h: No such file or directory
+  cargo:warning=   79 | #include_next <stdlib.h>
+  cargo:warning=      |               ^~~~~~~~~~
+  cargo:warning=compilation terminated.
+
+  --- stderr
+
+
+  error occurred in cc-rs: command did not execute successfully (status code exit status: 1): LC_ALL="C" "g++" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I/nix/store/v9cr3iv7wnrkjy1s3z1fi7wpkl7sy4hx-llvm-21.1.2-dev/include" "-std=c++17" "-fno-exceptions" "-funwind-tables" "-D_GNU_SOURCE" "-DEXPERIMENTAL_KEY_INSTRUCTIONS" "-D__STDC_CONSTANT_MACROS" "-D__STDC_FORMAT_MACROS" "-D__STDC_LIMIT_MACROS" "-DLLVM_COMPONENT_AARCH64" "-DLLVM_COMPONENT_AMDGPU" "-DLLVM_COMPONENT_ARM" "-DLLVM_COMPONENT_ASMPARSER" "-DLLVM_COMPONENT_AVR" "-DLLVM_COMPONENT_BITREADER" "-DLLVM_COMPONENT_BITWRITER" "-DLLVM_COMPONENT_BPF" "-DLLVM_COMPONENT_COVERAGE" "-DLLVM_COMPONENT_HEXAGON" "-DLLVM_COMPONENT_INSTRUMENTATION" "-DLLVM_COMPONENT_IPO" "-DLLVM_COMPONENT_LINKER" "-DLLVM_COMPONENT_LOONGARCH" "-DLLVM_COMPONENT_LTO" "-DLLVM_COMPONENT_MIPS" "-DLLVM_COMPONENT_MSP430" "-DLLVM_COMPONENT_NVPTX" "-DLLVM_COMPONENT_POWERPC" "-DLLVM_COMPONENT_RISCV" "-DLLVM_COMPONENT_SPARC" "-DLLVM_COMPONENT_SYSTEMZ" "-DLLVM_COMPONENT_WEBASSEMBLY" "-DLLVM_COMPONENT_X86" "-DNDEBUG" "-O2" "-g" "-isystem" "/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include" "-o" "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage1-rustc/x86_64-unknown-linux-gnu/release/build/rustc_llvm-6a55ee0304373f6b/out/ef10e86dc40538c1-PassWrapper.o" "-c" "llvm-wrapper/PassWrapper.cpp"
+
+
+warning: build failed, waiting for other jobs to finish...
+command did not execute successfully: cd "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build" && env -u MAKEFLAGS -u MFLAGS AR_x86_64_unknown_linux_gnu="ar" CARGO_BUILD_BUILD_DIR="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage1-rustc" CARGO_INCREMENTAL="0" CARGO_PROFILE_RELEASE_DEBUG="1" CARGO_PROFILE_RELEASE_DEBUG_ASSERTIONS="true" CARGO_PROFILE_RELEASE_OVERFLOW_CHECKS="true" CARGO_PROFILE_RELEASE_STRIP="false" CARGO_TARGET_DIR="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage1-rustc" CC_x86_64_unknown_linux_gnu="gcc" CFG_COMPILER_BUILD_TRIPLE="x86_64-unknown-linux-gnu" CFG_COMPILER_HOST_TRIPLE="x86_64-unknown-linux-gnu" CFG_DEFAULT_CODEGEN_BACKEND="llvm" CFG_LIBDIR_RELATIVE="lib" CFG_OMIT_GIT_HASH="1" CFG_RELEASE="1.92.0-dev" CFG_RELEASE_CHANNEL="dev" CFG_VERSION="1.92.0-dev" CFLAGS_x86_64_unknown_linux_gnu="" CXXFLAGS_x86_64_unknown_linux_gnu="" CXX_x86_64_unknown_linux_gnu="g++" LIBC_CHECK_CFG="1" LLVM_CONFIG="/nix/store/v9cr3iv7wnrkjy1s3z1fi7wpkl7sy4hx-llvm-21.1.2-dev/bin/llvm-config" LLVM_LINK_SHARED="1" RANLIB_x86_64_unknown_linux_gnu="ar s" REAL_LIBRARY_PATH_VAR="LD_LIBRARY_PATH" RUSTBUILD_NATIVE_DIR="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/native" RUSTC="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/bootstrap/debug/rustc" RUSTC_BOOTSTRAP="1" RUSTC_BREAK_ON_ICE="1" RUSTC_ERROR_METADATA_DST="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/tmp/extended-error-metadata" RUSTC_FORCE_UNSTABLE="1" RUSTC_HOST_FLAGS="--check-cfg=cfg(bootstrap) --cfg=bootstrap" RUSTC_INSTALL_BINDIR="bin" RUSTC_LIBDIR="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage0/lib" RUSTC_LINK_STD_INTO_RUSTC_DRIVER="1" RUSTC_LINT_FLAGS="-Wrust_2018_idioms -Wunused_lifetimes -Dwarnings -Wrustc::internal -Drustc::symbol_intern_string_literal -Wkeyword_idents_2024 -Wunreachable_pub -Wunsafe_op_in_unsafe_fn -Wunused_crate_dependencies" RUSTC_REAL="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage0/bin/rustc" RUSTC_SNAPSHOT="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage0/bin/rustc" RUSTC_SNAPSHOT_LIBDIR="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage0/lib" RUSTC_STAGE="0" RUSTC_SYSROOT="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage0-sysroot" RUSTC_TLS_MODEL_INITIAL_EXEC="1" RUSTC_VERBOSE="1" RUSTC_WRAPPER="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/bootstrap/debug/rustc" RUSTDOC="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/bootstrap/debug/rustdoc" RUSTDOCFLAGS="--cfg=bootstrap --cfg=windows_raw_dylib -Csymbol-mangling-version=v0 -Zunstable-options --check-cfg=cfg(bootstrap) -Dwarnings -Wrustdoc::invalid_codeblock_attributes --crate-version 1.92.0-dev -Zcrate-attr=warn(rust_2018_idioms)" RUSTDOC_LIBDIR="/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage0/lib" RUSTDOC_REAL="/path/to/nowhere/rustdoc/not/required" RUSTFLAGS="--cfg=bootstrap --cfg=windows_raw_dylib -Csymbol-mangling-version=v0 -Zunstable-options --check-cfg=cfg(bootstrap) -Zmacro-backtrace -Csplit-debuginfo=off -Clink-args=-Wl,-z,origin -Clink-args=-Wl,-rpath,$ORIGIN/../lib -Alinker-messages -Zon-broken-pipe=kill" RUST_TEST_THREADS="24" WINAPI_NO_BUNDLED_LIBRARIES="1" __CARGO_DEFAULT_LIB_METADATA="bootstrap1.92.0" "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage0/bin/cargo" "build" "--target" "x86_64-unknown-linux-gnu" "-Zbinary-dep-depinfo" "-j" "24" "-Zroot-dir=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build" "--release" "--features" "llvm" "--manifest-path" "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/rustc/Cargo.toml" "--message-format" "json-render-diagnostics" (failure_mode=Exit)
+expected success, got: exit status: 101
+Traceback (most recent call last):
+  File "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/./x.py", line 53, in <module>
+    bootstrap.main()
+  File "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/src/bootstrap/bootstrap.py", line 1410, in main
+    bootstrap(args)
+  File "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/src/bootstrap/bootstrap.py", line 1370, in bootstrap
+    run(args, env=env, verbose=build.verbose, is_bootstrap=True)
+  File "/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/src/bootstrap/bootstrap.py", line 237, in run
+    raise RuntimeError(err)
+RuntimeError: failed to run: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/bootstrap/debug/bootstrap build --verbose

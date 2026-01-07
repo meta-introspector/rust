@@ -1,0 +1,12 @@
+#!/bin/bash
+# g++ wrapper that adds system include paths for Nix environment and logs calls
+
+# Log the call for debugging
+echo "$(date): g++ called with args: $*" >> /tmp/gpp-wrapper.log
+
+# Use -I instead of -isystem for glibc so #include_next works properly
+exec /nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/g++ \
+  -I/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include \
+  -isystem /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0 \
+  -isystem /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/x86_64-unknown-linux-gnu \
+  "$@"
