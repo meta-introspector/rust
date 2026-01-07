@@ -1,13 +1,13 @@
-use crate::lattice_macros::LatticePointDerive;
+use crate::meta_lattice::LatticePointDerive;
 use crate::github_ecosystem_lattice::GitHubEcosystem;
 use std::collections::HashMap;
 
-#[derive(Debug, Clone, PartialEq, Eq, Hash, LatticePointDerive)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct RustEigenMatrix {
     pub core_modules: Vec<ModuleNode>,
     pub stdlib_decls: Vec<DeclNode>,
     pub canonical_asts: Vec<AstNode>,
-    pub eigenvalues: Vec<f64>,
+    pub eigenvalues: Vec<u32>, // Changed from f64 to u32
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash, LatticePointDerive)]
@@ -34,7 +34,7 @@ pub struct AstNode {
     pub in_eigenspace: bool,
 }
 
-#[derive(Debug, Clone, PartialEq, Eq, Hash, LatticePointDerive)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct EcosystemProjection {
     pub repo_name: String,
     pub modules_in: u32,
@@ -43,7 +43,7 @@ pub struct EcosystemProjection {
     pub decls_out: u32,
     pub asts_in: u32,
     pub asts_out: u32,
-    pub eigenspace_coverage: f64,
+    pub eigenspace_coverage: u32, // Changed from f64 to u32
 }
 
 impl RustEigenMatrix {
@@ -60,7 +60,7 @@ impl RustEigenMatrix {
     
     fn analyze_repo_projection(&self, repo_name: &str) -> EcosystemProjection {
         let repo_modules: Vec<_> = self.core_modules.iter()
-            .filter(|m| m.repo_source.as_ref() == Some(repo_name))
+            .filter(|m| m.repo_source.as_ref() == Some(&repo_name.to_string()))
             .collect();
             
         let modules_in = repo_modules.iter().filter(|m| m.in_eigenspace).count() as u32;
@@ -83,8 +83,8 @@ impl RustEigenMatrix {
         let total_elements = modules_in + decls_in + asts_in;
         let total_possible = repo_modules.len() + repo_decls.len() + repo_asts.len();
         let eigenspace_coverage = if total_possible > 0 {
-            total_elements as f64 / total_possible as f64
-        } else { 0.0 };
+            ((total_elements as f64 / total_possible as f64) * 100.0) as u32
+        } else { 0 };
         
         EcosystemProjection {
             repo_name: repo_name.to_string(),

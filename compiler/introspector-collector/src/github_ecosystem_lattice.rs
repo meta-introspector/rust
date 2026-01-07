@@ -1,4 +1,4 @@
-use crate::lattice_macros::LatticePointDerive;
+use crate::meta_lattice::LatticePointDerive;
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash, LatticePointDerive)]
 pub enum GitHubEcosystem {
@@ -61,12 +61,12 @@ pub struct PullRequestNode {
     pub state: String,
 }
 
-#[derive(Debug, Clone, PartialEq, Eq, Hash, LatticePointDerive)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct LanguageStats {
     pub repo: String,
     pub language: String,
     pub bytes: u64,
-    pub percentage: f32,
+    pub percentage: u32, // Changed from f32 to u32
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash, LatticePointDerive)]

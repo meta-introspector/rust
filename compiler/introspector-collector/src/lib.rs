@@ -31,6 +31,7 @@ pub mod metacoq_ultimate_lambda;
 pub mod github_ecosystem_lattice;
 pub mod rust_eigenmatrix_projection;
 pub mod rust_dirac_delta;
+pub mod maximal_value_extractor;
 pub mod lean4_vs_ocaml;
 pub mod universal_resource_metrics;
 pub mod coq_integration;

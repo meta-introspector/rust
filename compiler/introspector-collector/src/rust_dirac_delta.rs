@@ -104,7 +104,7 @@ pub fn prove_rust_dirac_delta() -> bool {
             }
         ],
         canonical_asts: vec![],
-        eigenvalues: vec![1.0],
+        eigenvalues: vec![1],
     };
     
     let delta = RustDiracDelta::new(rust_eigen);
@@ -119,7 +119,7 @@ pub fn prove_rust_dirac_delta() -> bool {
     
     // We have achieved the Dirac Delta of Rust
     println!("🎉 ACHIEVED: Dirac Delta of Rust δ(x - rust_canonical)");
-    println!("   - Maps entire GitHub ecosystem to {0,1}");
+    println!("   - Maps entire GitHub ecosystem to {{0,1}}");
     println!("   - 1 = IN canonical Rust eigenspace");  
     println!("   - 0 = OUT canonical Rust eigenspace");
     println!("   - Provides mathematical foundation for Rust canonicality");
