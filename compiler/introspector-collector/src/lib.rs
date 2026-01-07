@@ -14,6 +14,8 @@ pub mod collectors;
 pub mod enum_string_generator;
 pub mod libusagedata;
 pub mod rustc_enum_generator;
+pub mod rust_tree_of_life;
+pub mod reconstruction_engine;
 
 //pub use usage_collector::UsageCollector;
 pub use data_structures::*;
