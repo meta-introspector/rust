@@ -5,7 +5,7 @@ use crate::rust_tree_of_life::*;
 use crate::reconstruction_engine::*;
 use std::collections::{HashMap, HashSet};
 
-#[derive(Debug)]
+#[derive(Clone)]
 pub struct RustLattice {
     pub nodes: HashMap<String, LatticeNode>,
     pub connections: HashMap<String, Vec<String>>,

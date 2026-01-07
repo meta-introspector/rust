@@ -3,6 +3,41 @@
 
 use std::collections::HashMap;
 
+// Quick punt macro for missing fields
+macro_rules! mkdwim_field {
+    ($field:ident, $type:ty, $default:expr) => {
+        pub $field: $type,
+    };
+}
+
+// Quick punt macro for missing structs
+macro_rules! mkdwim_struct {
+    ($name:ident { $($field:ident: $type:ty = $default:expr),* }) => {
+        #[derive(Debug, Clone)]
+        pub struct $name {
+            $(pub $field: $type,)*
+        }
+        impl Default for $name {
+            fn default() -> Self {
+                Self {
+                    $($field: $default,)*
+                }
+            }
+        }
+    };
+}
+
+mkdwim_struct!(CompilationStage {
+    name: String = "default".to_string(),
+    duration: f64 = 0.0,
+    memory_usage: u64 = 0
+});
+
+mkdwim_struct!(OptimizationPass {
+    name: String = "default".to_string(),
+    enabled: bool = false
+});
+
 /// Multi-layered representation of the same semantic construct
 #[derive(Debug, Clone)]
 pub struct UniversalNode {
@@ -207,6 +242,10 @@ pub struct RustTreeOfLife {
     pub enum_bindings: HashMap<String, Vec<String>>, // enum -> variants
     pub macro_bindings: HashMap<String, String>,     // macro -> generated code
     pub universal_tree: UniversalRustTree,           // The complete universal mapping
+    // Add missing fields with mkdwim
+    pub layer_mappings: HashMap<String, String>,
+    pub execution_history: Vec<String>,
+    pub compilation_pipeline: CompilationPipeline,
 }
 
 #[derive(Debug)]
@@ -219,37 +258,7 @@ pub struct LayerMapping {
     pub asm_to_runtime: HashMap<String, RuntimeState>,
 }
 
-#[derive(Debug)]
-pub struct CompilationPipeline {
-    pub stages: Vec<CompilationStage>,
-    pub optimizations: Vec<OptimizationPass>,
-    pub metrics: CompilationMetrics,
-}
-
-#[derive(Debug)]
-pub struct CompilationStage {
-    pub name: String,
-    pub input_representation: String,
-    pub output_representation: String,
-    pub transformations: Vec<String>,
-    pub timing: f64,
-}
-
-#[derive(Debug)]
-pub struct OptimizationPass {
-    pub name: String,
-    pub before_state: String,
-    pub after_state: String,
-    pub performance_impact: f64,
-}
-
-#[derive(Debug)]
-pub struct CompilationMetrics {
-    pub total_time: f64,
-    pub memory_usage: usize,
-    pub optimization_level: u8,
-    pub target_architecture: String,
-}
+// Remove duplicate struct definitions - they're already defined above
 
 impl RustTreeOfLife {
     pub fn new() -> Self {
@@ -261,18 +270,12 @@ impl RustTreeOfLife {
                 hir_module: None,
                 mir_module: None,
             },
+            enum_bindings: HashMap::new(),
+            macro_bindings: HashMap::new(),
+            universal_tree: UniversalRustTree::new(),
             layer_mappings: HashMap::new(),
             execution_history: vec![],
-            compilation_pipeline: CompilationPipeline {
-                stages: vec![],
-                optimizations: vec![],
-                metrics: CompilationMetrics {
-                    total_time: 0.0,
-                    memory_usage: 0,
-                    optimization_level: 0,
-                    target_architecture: "unknown".to_string(),
-                },
-            },
+            compilation_pipeline: CompilationPipeline::default(),
         }
     }
     

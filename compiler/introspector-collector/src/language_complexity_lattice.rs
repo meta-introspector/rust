@@ -4,7 +4,7 @@
 use std::collections::HashMap;
 
 /// Language complexity levels based on polyfill requirements
-#[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord)]
+#[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub enum ComplexityLevel {
     Minimal = 0,      // 0-5: Advanced languages, minimal polyfill
     Low = 1,          // 6-15: Good languages, some polyfill  

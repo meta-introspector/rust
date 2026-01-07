@@ -15,7 +15,7 @@ pub struct ReductionStep {
 }
 
 /// Language complexity level
-#[derive(Debug, Clone, PartialEq)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub enum ComplexityLevel {
     Rustc,              // Full rustc compiler
     AdvancedRust,       // Advanced Rust features

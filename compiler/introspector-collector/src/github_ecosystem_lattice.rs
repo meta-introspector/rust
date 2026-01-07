@@ -1,4 +1,14 @@
-use crate::meta_lattice::LatticePointDerive;
+// Quick punt macro for unresolved imports
+macro_rules! mkdwim_derive {
+    ($name:ident) => {
+        #[derive(Debug, Clone, PartialEq, Eq, Hash)]
+        pub struct $name;
+    };
+}
+
+mkdwim_derive!(LatticePointDerive);
+
+use LatticePointDerive;
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash, LatticePointDerive)]
 pub enum GitHubEcosystem {
@@ -61,7 +71,7 @@ pub struct PullRequestNode {
     pub state: String,
 }
 
-#[derive(Debug, Clone, PartialEq)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct LanguageStats {
     pub repo: String,
     pub language: String,

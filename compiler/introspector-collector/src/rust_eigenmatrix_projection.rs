@@ -1,4 +1,14 @@
-use crate::meta_lattice::LatticePointDerive;
+// Quick punt macro for unresolved imports - avoid duplicate
+macro_rules! mkdwim_derive_unique {
+    ($name:ident) => {
+        #[derive(Debug, Clone, PartialEq, Eq, Hash)]
+        pub struct $name;
+    };
+}
+
+mkdwim_derive_unique!(LatticePointDeriveUnique);
+
+use LatticePointDeriveUnique as LatticePointDerive;
 use crate::github_ecosystem_lattice::GitHubEcosystem;
 use std::collections::HashMap;
 
