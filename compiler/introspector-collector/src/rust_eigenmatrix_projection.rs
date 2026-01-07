@@ -1,14 +1,11 @@
-// Quick punt macro for unresolved imports - avoid duplicate
-macro_rules! mkdwim_derive_unique {
-    ($name:ident) => {
-        #[derive(Debug, Clone, PartialEq, Eq, Hash)]
-        pub struct $name;
-    };
-}
+use crate::lattice_point_derive::{LatticePoint, impl_lattice_point};
 
-mkdwim_derive_unique!(LatticePointDeriveUnique);
-
-use LatticePointDeriveUnique as LatticePointDerive;
+// Implement LatticePoint for all Rust eigenmatrix types as URL/resources
+impl_lattice_point!(RustEigenMatrix);
+impl_lattice_point!(ModuleNode);
+impl_lattice_point!(DeclNode);
+impl_lattice_point!(AstNode);
+impl_lattice_point!(EcosystemProjection);
 use crate::github_ecosystem_lattice::GitHubEcosystem;
 use std::collections::HashMap;
 

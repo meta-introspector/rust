@@ -1,14 +1,16 @@
-// Quick punt macro for unresolved imports
-macro_rules! mkdwim_derive {
-    ($name:ident) => {
-        #[derive(Debug, Clone, PartialEq, Eq, Hash)]
-        pub struct $name;
-    };
-}
+use crate::lattice_point_derive::{LatticePoint, impl_lattice_point};
 
-mkdwim_derive!(LatticePointDerive);
-
-use LatticePointDerive;
+// Implement LatticePoint for all GitHub ecosystem structs - each becomes a URL/resource
+impl_lattice_point!(GitHubRepository);
+impl_lattice_point!(StarRelation);
+impl_lattice_point!(ForkRelation);
+impl_lattice_point!(ContributorRelation);
+impl_lattice_point!(IssueNode);
+impl_lattice_point!(PullRequestNode);
+impl_lattice_point!(LanguageStats);
+impl_lattice_point!(TopicTag);
+impl_lattice_point!(LicenseType);
+impl_lattice_point!(DependencyEdge);
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash, LatticePointDerive)]
 pub enum GitHubEcosystem {
