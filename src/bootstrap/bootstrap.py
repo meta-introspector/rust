@@ -223,6 +223,16 @@ def run(args, verbose=False, exception=False, is_bootstrap=False, **kwargs):
     if verbose:
         eprint("running: " + " ".join(args))
     sys.stdout.flush()
+    
+    # Add strace for bootstrap binary execution
+    if is_bootstrap and args[0].endswith("bootstrap"):
+        import datetime
+        audit_dir = f"audit_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        os.makedirs(audit_dir, exist_ok=True)
+        trace_file = os.path.join(audit_dir, "bootstrap_trace.txt")
+        eprint(f"TRACING: Running bootstrap with strace, output to {trace_file}")
+        args = ["strace", "-f", "-o", trace_file, "-e", "trace=openat,open,execve"] + args
+    
     # Ensure that the .exe is used on Windows just in case a Linux ELF has been
     # compiled in the same directory.
     if os.name == "nt" and not args[0].endswith(".exe"):

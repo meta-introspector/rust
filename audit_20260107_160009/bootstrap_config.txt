@@ -1,0 +1,13 @@
+=== Bootstrap Configuration ===
+[llvm]
+# Use system LLVM instead of building from source
+download-ci-llvm = false
+link-shared = true
+
+[target.x86_64-unknown-linux-gnu]
+# Point to system LLVM config
+llvm-config = "/nix/store/v9cr3iv7wnrkjy1s3z1fi7wpkl7sy4hx-llvm-21.1.2-dev/bin/llvm-config"
+
+[rust]
+# Enable debug info for better debugging
+debug = true

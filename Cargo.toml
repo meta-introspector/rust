@@ -2,7 +2,11 @@
 resolver = "2"
 members = [
 # tidy-alphabetical-start
+  "compiler/libzombie",
   "compiler/rustc",
+  "compiler/zombie_client",
+  "compiler/zombie_driver/rustc_driver_impl",
+  "compiler/zombie_wrapper",
   "src/build_helper",
   "src/rustc-std-workspace/rustc-std-workspace-alloc",
   "src/rustc-std-workspace/rustc-std-workspace-core",

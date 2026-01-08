@@ -1,0 +1,417 @@
+error: let chains are only allowed in Rust 2024 or later
+   --> compiler/rustc_hir/src/hir.rs:671:12
+    |
+671 |         if let Some(first) = self.params.first()
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: let chains are only allowed in Rust 2024 or later
+   --> compiler/rustc_hir/src/hir.rs:756:47
+    |
+756 |                 let span_for_parentheses = if let Some(trait_ref) = bound.trait_ref()
+    |                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: let chains are only allowed in Rust 2024 or later
+   --> compiler/rustc_hir/src/hir.rs:757:24
+    |
+757 |                     && let [.., segment] = trait_ref.path.segments
+    |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: let chains are only allowed in Rust 2024 or later
+   --> compiler/rustc_hir/src/hir.rs:758:24
+    |
+758 |                     && let Some(ret_ty) = segment.args().paren_sugar_output()
+    |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: let chains are only allowed in Rust 2024 or later
+   --> compiler/rustc_hir/src/hir.rs:759:24
+    |
+759 |                     && let ret_ty = ret_ty.peel_refs()
+    |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: let chains are only allowed in Rust 2024 or later
+   --> compiler/rustc_hir/src/hir.rs:760:24
+    |
+760 |                       && let TyKind::TraitObject(
+    |  ________________________^
+761 | |                         _,
+762 | |                         _,
+763 | |                         TraitObjectSyntax::Dyn | TraitObjectSyntax::DynStar,
+764 | |                     ) = ret_ty.kind
+    | |___________________________________^
+
+error: let chains are only allowed in Rust 2024 or later
+    --> compiler/rustc_hir/src/hir.rs:2995:12
+     |
+2995 |         if let FnRetTy::Return(ty) = self.output
+     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: let chains are only allowed in Rust 2024 or later
+    --> compiler/rustc_hir/src/hir.rs:2996:16
+     |
+2996 |             && let TyKind::InferDelegation(sig_id, _) = ty.kind
+     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rustc_ast`
+ --> compiler/rustc_hir/src/hir.rs:4:5
+  |
+4 | use rustc_ast::util::parser::ExprPrecedence;
+  |     ^^^^^^^^^ use of unresolved module or unlinked crate `rustc_ast`
+  |
+help: you might be missing a crate named `rustc_ast`, add it to your project and import it in your code
+  |
+1 + extern crate rustc_ast;
+  |
+
+error[E0432]: unresolved import `rustc_ast`
+ --> compiler/rustc_hir/src/hir.rs:3:5
+  |
+3 | use rustc_ast as ast;
+  |     ^^^^^^^^^^^^^^^^ no `rustc_ast` in the root
+
+error[E0432]: unresolved import `rustc_ast`
+ --> compiler/rustc_hir/src/hir.rs:5:5
+  |
+5 | use rustc_ast::{
+  |     ^^^^^^^^^ use of unresolved module or unlinked crate `rustc_ast`
+  |
+help: you might be missing a crate named `rustc_ast`, add it to your project and import it in your code
+  |
+1 + extern crate rustc_ast;
+  |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rustc_data_structures`
+  --> compiler/rustc_hir/src/hir.rs:13:5
+   |
+13 | use rustc_data_structures::fingerprint::Fingerprint;
+   |     ^^^^^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_data_structures`
+   |
+help: you might be missing a crate named `rustc_data_structures`, add it to your project and import it in your code
+   |
+ 1 + extern crate rustc_data_structures;
+   |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rustc_data_structures`
+  --> compiler/rustc_hir/src/hir.rs:14:5
+   |
+14 | use rustc_data_structures::sorted_map::SortedMap;
+   |     ^^^^^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_data_structures`
+   |
+help: you might be missing a crate named `rustc_data_structures`, add it to your project and import it in your code
+   |
+ 1 + extern crate rustc_data_structures;
+   |
+
+error[E0432]: unresolved import `rustc_ast`
+ --> compiler/rustc_hir/src/hir.rs:9:9
+  |
+9 | pub use rustc_ast::{
+  |         ^^^^^^^^^ use of unresolved module or unlinked crate `rustc_ast`
+  |
+help: you might be missing a crate named `rustc_ast`, add it to your project and import it in your code
+  |
+1 + extern crate rustc_ast;
+  |
+
+error[E0432]: unresolved import `rustc_index`
+  --> compiler/rustc_hir/src/hir.rs:15:5
+   |
+15 | use rustc_index::IndexVec;
+   |     ^^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_index`
+   |
+help: you might be missing a crate named `rustc_index`, add it to your project and import it in your code
+   |
+ 1 + extern crate rustc_index;
+   |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rustc_span`
+  --> compiler/rustc_hir/src/hir.rs:17:5
+   |
+17 | use rustc_span::def_id::LocalDefId;
+   |     ^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_span`
+   |
+help: you might be missing a crate named `rustc_span`, add it to your project and import it in your code
+   |
+ 1 + extern crate rustc_span;
+   |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rustc_span`
+  --> compiler/rustc_hir/src/hir.rs:18:5
+   |
+18 | use rustc_span::hygiene::MacroKind;
+   |     ^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_span`
+   |
+help: you might be missing a crate named `rustc_span`, add it to your project and import it in your code
+   |
+ 1 + extern crate rustc_span;
+   |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rustc_span`
+  --> compiler/rustc_hir/src/hir.rs:19:5
+   |
+19 | use rustc_span::source_map::Spanned;
+   |     ^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_span`
+   |
+help: you might be missing a crate named `rustc_span`, add it to your project and import it in your code
+   |
+ 1 + extern crate rustc_span;
+   |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rustc_span`
+  --> compiler/rustc_hir/src/hir.rs:20:5
+   |
+20 | use rustc_span::symbol::{Ident, Symbol, kw, sym};
+   |     ^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_span`
+   |
+help: you might be missing a crate named `rustc_span`, add it to your project and import it in your code
+   |
+ 1 + extern crate rustc_span;
+   |
+
+error[E0432]: unresolved import `rustc_macros`
+  --> compiler/rustc_hir/src/hir.rs:16:5
+   |
+16 | use rustc_macros::{Decodable, Encodable, HashStable_Generic};
+   |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_macros`
+   |
+help: you might be missing a crate named `rustc_macros`, add it to your project and import it in your code
+   |
+ 1 + extern crate rustc_macros;
+   |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rustc_target`
+  --> compiler/rustc_hir/src/hir.rs:22:5
+   |
+22 | use rustc_target::asm::InlineAsmRegOrRegClass;
+   |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_target`
+   |
+help: you might be missing a crate named `rustc_target`, add it to your project and import it in your code
+   |
+ 1 + extern crate rustc_target;
+   |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rustc_target`
+  --> compiler/rustc_hir/src/hir.rs:23:5
+   |
+23 | use rustc_target::spec::abi::Abi;
+   |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_target`
+   |
+help: you might be missing a crate named `rustc_target`, add it to your project and import it in your code
+   |
+ 1 + extern crate rustc_target;
+   |
+
+error[E0432]: unresolved import `rustc_span`
+  --> compiler/rustc_hir/src/hir.rs:21:5
+   |
+21 | use rustc_span::{BytePos, DUMMY_SP, ErrorGuaranteed, Span};
+   |     ^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_span`
+   |
+help: you might be missing a crate named `rustc_span`, add it to your project and import it in your code
+   |
+ 1 + extern crate rustc_span;
+   |
+
+error[E0432]: unresolved import `smallvec`
+  --> compiler/rustc_hir/src/hir.rs:24:5
+   |
+24 | use smallvec::SmallVec;
+   |     ^^^^^^^^ use of unresolved module or unlinked crate `smallvec`
+   |
+help: you might be missing a crate named `smallvec`, add it to your project and import it in your code
+   |
+ 1 + extern crate smallvec;
+   |
+
+error[E0432]: unresolved import `tracing`
+  --> compiler/rustc_hir/src/hir.rs:25:5
+   |
+25 | use tracing::debug;
+   |     ^^^^^^^ use of unresolved module or unlinked crate `tracing`
+   |
+help: you might be missing a crate named `tracing`, add it to your project and import it in your code
+   |
+ 1 + extern crate tracing;
+   |
+
+error[E0432]: unresolved import `crate::LangItem`
+  --> compiler/rustc_hir/src/hir.rs:27:5
+   |
+27 | use crate::LangItem;
+   |     ^^^^^^^^^^^^^^^ no `LangItem` in the root
+   |
+help: consider importing this variant instead
+   |
+27 - use crate::LangItem;
+27 + use QPath::LangItem;
+   |
+
+error[E0432]: unresolved import `crate::def`
+  --> compiler/rustc_hir/src/hir.rs:28:12
+   |
+28 | use crate::def::{CtorKind, DefKind, Res};
+   |            ^^^ use of unresolved module or unlinked crate `def`
+   |
+help: you might be missing a crate named `def`, add it to your project and import it in your code
+   |
+ 1 + extern crate def;
+   |
+
+error[E0432]: unresolved import `crate::def_id`
+  --> compiler/rustc_hir/src/hir.rs:29:12
+   |
+29 | use crate::def_id::{DefId, LocalDefIdMap};
+   |            ^^^^^^ use of unresolved module or unlinked crate `def_id`
+   |
+help: you might be missing a crate named `def_id`, add it to your project and import it in your code
+   |
+ 1 + extern crate def_id;
+   |
+
+error[E0432]: unresolved import `crate::hir_id`
+  --> compiler/rustc_hir/src/hir.rs:30:23
+   |
+30 | pub(crate) use crate::hir_id::{HirId, ItemLocalId, ItemLocalMap, OwnerId};
+   |                       ^^^^^^ use of unresolved module or unlinked crate `hir_id`
+   |
+help: you might be missing a crate named `hir_id`, add it to your project and import it in your code
+   |
+ 1 + extern crate hir_id;
+   |
+
+error[E0432]: unresolved import `crate::intravisit`
+  --> compiler/rustc_hir/src/hir.rs:31:12
+   |
+31 | use crate::intravisit::FnKind;
+   |            ^^^^^^^^^^ use of unresolved module or unlinked crate `intravisit`
+   |
+help: you might be missing a crate named `intravisit`, add it to your project and import it in your code
+   |
+ 1 + extern crate intravisit;
+   |
+
+error[E0432]: unresolved import `crate::intravisit`
+    --> compiler/rustc_hir/src/hir.rs:2593:20
+     |
+2593 |         use crate::intravisit::Visitor;
+     |                    ^^^^^^^^^^ use of unresolved module or unlinked crate `intravisit`
+     |
+help: you might be missing a crate named `intravisit`, add it to your project and import it in your code
+     |
+   1 + extern crate intravisit;
+     |
+
+error[E0432]: unresolved import `rustc_data_structures`
+    --> compiler/rustc_hir/src/hir.rs:4076:9
+     |
+4076 |     use rustc_data_structures::static_assert_size;
+     |         ^^^^^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_data_structures`
+     |
+help: you might be missing a crate named `rustc_data_structures`, add it to your project and import it in your code
+     |
+   1 + extern crate rustc_data_structures;
+     |
+
+error: cannot find attribute `stable_hasher` in this scope
+   --> compiler/rustc_hir/src/hir.rs:262:7
+    |
+262 |     #[stable_hasher(ignore)]
+    |       ^^^^^^^^^^^^^
+
+error: cannot find attribute `stable_hasher` in this scope
+    --> compiler/rustc_hir/src/hir.rs:1105:7
+     |
+1105 |     #[stable_hasher(ignore)]
+     |       ^^^^^^^^^^^^^
+
+error: cannot find attribute `stable_hasher` in this scope
+    --> compiler/rustc_hir/src/hir.rs:1129:7
+     |
+1129 |     #[stable_hasher(ignore)]
+     |       ^^^^^^^^^^^^^
+
+error: cannot find attribute `stable_hasher` in this scope
+    --> compiler/rustc_hir/src/hir.rs:1225:7
+     |
+1225 |     #[stable_hasher(ignore)]
+     |       ^^^^^^^^^^^^^
+
+error: cannot find attribute `stable_hasher` in this scope
+    --> compiler/rustc_hir/src/hir.rs:1390:7
+     |
+1390 |     #[stable_hasher(ignore)]
+     |       ^^^^^^^^^^^^^
+
+error: cannot find attribute `stable_hasher` in this scope
+    --> compiler/rustc_hir/src/hir.rs:1419:7
+     |
+1419 |     #[stable_hasher(ignore)]
+     |       ^^^^^^^^^^^^^
+
+error: cannot find attribute `stable_hasher` in this scope
+    --> compiler/rustc_hir/src/hir.rs:3165:7
+     |
+3165 |     #[stable_hasher(ignore)]
+     |       ^^^^^^^^^^^^^
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `def`
+    --> compiler/rustc_hir/src/hir.rs:2600:37
+     |
+2600 |                         res: crate::def::Res::SelfTyAlias { .. },
+     |                                     ^^^ use of unresolved module or unlinked crate `def`
+     |
+help: you might be missing a crate named `def`, add it to your project and import it in your code
+     |
+   1 + extern crate def;
+     |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `intravisit`
+    --> compiler/rustc_hir/src/hir.rs:2607:24
+     |
+2607 |                 crate::intravisit::walk_ty(self, t);
+     |                        ^^^^^^^^^^ use of unresolved module or unlinked crate `intravisit`
+     |
+help: you might be missing a crate named `intravisit`, add it to your project and import it in your code
+     |
+   1 + extern crate intravisit;
+     |
+
+error[E0425]: cannot find value `CRATE_HIR_ID` in the crate root
+    --> compiler/rustc_hir/src/hir.rs:3732:44
+     |
+3732 |             OwnerNode::Crate(..) => crate::CRATE_HIR_ID.owner,
+     |                                            ^^^^^^^^^^^^ not found in the crate root
+
+warning: unused import: `super::*`
+    --> compiler/rustc_hir/src/hir.rs:4078:9
+     |
+4078 |     use super::*;
+     |         ^^^^^^^^
+     |
+     = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+error[E0601]: `main` function not found in crate `hir`
+    --> compiler/rustc_hir/src/hir.rs:4120:2
+     |
+4120 | }
+     |  ^ consider adding a `main` function to `compiler/rustc_hir/src/hir.rs`
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rustc_span`
+    --> compiler/rustc_hir/src/hir.rs:2127:9
+     |
+2127 |     Err(rustc_span::ErrorGuaranteed),
+     |         ^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_span`
+     |
+     = help: you might be missing a crate named `rustc_span`
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rustc_span`
+    --> compiler/rustc_hir/src/hir.rs:2888:9
+     |
+2888 |     Err(rustc_span::ErrorGuaranteed),
+     |         ^^^^^^^^^^ use of unresolved module or unlinked crate `rustc_span`
+     |
+     = help: you might be missing a crate named `rustc_span`
+
+error: aborting due to 45 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0425, E0432, E0433, E0601.
+For more information about an error, try `rustc --explain E0425`.
