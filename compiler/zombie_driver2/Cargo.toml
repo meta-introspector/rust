@@ -1,27 +1,32 @@
 [package]
-name = "zombie_rustc_driver"
+name = "rust-eigenmatrix"
 version = "0.1.0"
 edition = "2021"
 
 [workspace]
 
 [[bin]]
-name = "zombie_rustc_driver"
-path = "src/main.rs"
+name = "zombie-rustc"
+path = "lib-zombie/src/bin/zombie_rustc.rs"
+
+[[bin]]
+name = "rust-eigenmatrix"
+path = "rust_eigenmatrix.rs"
+
+[[bin]]
+name = "frequency-analysis"
+path = "frequency_analysis.rs"
+
+[[bin]]
+name = "relationship-analysis"
+path = "relationship_analysis.rs"
+
+[[bin]]
+name = "count-analysis"
+path = "count_analysis.rs"
 
 [dependencies]
-rustc_driver = { path = "../../compiler/rustc_driver" }
-rustc_interface = { path = "../../compiler/rustc_interface" }
-rustc_session = { path = "../../compiler/rustc_session" }
-rustc_errors = { path = "../../compiler/rustc_errors" }
-rustc_span = { path = "../../compiler/rustc_span" }
-rustc_ast = { path = "../../compiler/rustc_ast" }
-rustc_hir = { path = "../../compiler/rustc_hir" }
-rustc_middle = { path = "../../compiler/rustc_middle" }
-
-# LibP2P networking
-libp2p = { version = "0.53", features = ["gossipsub", "mdns", "noise", "tcp", "yamux", "macros", "tokio"] }
-tokio = { version = "1.0", features = ["full"] }
-serde = { version = "1.0", features = ["derive"] }
+nalgebra = "0.33"
 serde_json = "1.0"
-futures = "0.3"
+lib-zombie = { path = "lib-zombie" }
+syn-analyzer = { path = "syn-analyzer" }

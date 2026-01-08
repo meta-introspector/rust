@@ -1,0 +1,57 @@
+[package]
+name = "lib-zombie"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[[bin]]
+name = "zombie-loader"
+path = "src/bin/zombie_loader.rs"
+
+[[bin]]
+name = "spectral-analyzer"
+path = "src/bin/spectral_analyzer.rs"
+
+[[bin]]
+name = "periodic-table-generator"
+path = "src/bin/periodic_table_generator.rs"
+
+[[bin]]
+name = "hierarchical-extractor"
+path = "src/bin/hierarchical_extractor.rs"
+
+[[bin]]
+name = "char-analyzer"
+path = "src/bin/char_analyzer.rs"
+
+[[bin]]
+name = "zombie-rustc"
+path = "src/bin/zombie_rustc.rs"
+
+[[bin]]
+name = "merge-analysis"
+path = "src/bin/merge_analysis.rs"
+
+[[bin]]
+name = "syn-analyzer"
+path = "src/bin/syn_analyzer.rs"
+
+[build-dependencies]
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = { version = "2.0", features = ["full", "extra-traits"] }
+
+[features]
+[dependencies]
+syn-analyzer = { path = "../syn-analyzer" }
+libloading = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+libp2p = "0.53"
+sha2 = "0.10"
+ed25519-dalek = "2.0"
+rand = "0.8"
+chrono = { version = "0.4", features = ["serde"] }
+petgraph = "0.6"
+nalgebra = "0.33"

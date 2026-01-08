@@ -7,9 +7,8 @@ echo "🧟♂️ Zombie Rustc Driver Build System"
 echo "======================================"
 
 # Setup sccache
-# export RUSTC_WRAPPER="$HOME/.cargo/bin/sccache_wrapper.sh"
-# echo "📦 Using sccache wrapper: $RUSTC_WRAPPER"
-echo "📦 Building without cache to fix version mismatch"
+export RUSTC_WRAPPER="$HOME/.cargo/bin/sccache_wrapper.sh"
+echo "📦 Using sccache wrapper: $RUSTC_WRAPPER"
 
 # Build with optimizations
 echo "🔨 Building zombie driver..."
@@ -34,14 +33,14 @@ else
 fi
 
 # Now build the binary
-echo "🧟 Building zombie binary..."
-CFG_COMPILER_HOST_TRIPLE=x86_64-unknown-linux-gnu time cargo build --bin zombie_rustc_driver -j 20 2>&1 | tee build.log
+echo "🧟 Building zombie binary with verbose output..."
+CFG_COMPILER_HOST_TRIPLE=x86_64-unknown-linux-gnu time cargo build --bin zombie_rustc_driver -j 20 -v 2>&1 | tee cargo_verbose.log
 
 # Check for build errors
 if [ ${PIPESTATUS[0]} -ne 0 ]; then
     echo "❌ Build failed! Checking for extern location errors..."
-    grep -n "extern location.*does not exist" build.log || echo "No extern location errors found"
-    grep -n "could not compile" build.log || echo "No compilation errors found"
+    grep -n "extern location.*does not exist" cargo_verbose.log || echo "No extern location errors found"
+    grep -n "could not compile" cargo_verbose.log || echo "No compilation errors found"
     exit 1
 fi
 

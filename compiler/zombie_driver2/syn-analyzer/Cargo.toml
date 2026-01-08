@@ -1,0 +1,17 @@
+[package]
+name = "syn-analyzer"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "test_topological"
+path = "src/bin/test_topological.rs"
+
+[dependencies]
+syn-serde = { path = "/mnt/data1/nix/time/2025/06/01/solfunmeme-dioxus/vendor/syn-serde", features = ["json"] }
+syn = { version = "2.0", features = ["full", "parsing"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"

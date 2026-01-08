@@ -1,4 +1,21 @@
-target/
-*.so
-*.dylib
-*.dll
+# Ignore build artifacts
+/target/
+**/*.syn_analysis.json
+**/*_combined.json
+
+# Ignore large log files
+*.log
+rustc_*_build.log
+cargo_build.log
+
+# Ignore temporary analysis files
+*_analysis_files.txt
+analysis_files.txt
+all_*.txt
+
+# Keep source code and small config files
+!src/
+!Cargo.toml
+!build.rs
+!README.md
+!*.rs
