@@ -1,0 +1,72 @@
+19:36:45 rustc --crate-name rustc_data_structures --edition=2024 /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/rustc_data_structures/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg cfg(docsrs,test) --check-cfg cfg(feature, values()) -C metadata=832cc0c07d5b07cd -C extra-filename=-7a05c3f43ea74b8d --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps -C incremental=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/incremental -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps --extern arrayvec=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libarrayvec-c021e29661c7469b.rmeta --extern bitflags=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libbitflags-56146a5f1712337b.rmeta --extern either=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libeither-80e22dfc3e1c5c46.rmeta --extern elsa=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libelsa-53f23f390de761f9.rmeta --extern ena=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libena-1648719ed79fdde0.rmeta --extern hashbrown=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libhashbrown-b6b7ca87d2a248bd.rmeta --extern indexmap=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libindexmap-66ebc7fee9cc3992.rmeta --extern jobserver_crate=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libjobserver-91532f8d6ab1af1c.rmeta --extern libc=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/liblibc-7339e6ca6cd594d4.rmeta --extern measureme=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libmeasureme-e809843b8260ce6d.rmeta --extern memmap2=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libmemmap2-3e455424f9fc4bf4.rmeta --extern parking_lot=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libparking_lot-5a779b867d2a60db.rmeta --extern rustc_hash=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_hash-daeb5380c885f655.rmeta --extern rustc_stable_hash=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_stable_hash-08a3d32966cfbc48.rmeta --extern rustc_arena=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_arena-fbfbfc9e2ae2c81f.rmeta --extern rustc_graphviz=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_graphviz-c7812eafe07feea7.rmeta --extern rustc_hashes=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_hashes-90e81dae7d173bd5.rmeta --extern rustc_index=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_index-3aa7163ed688dde0.rmeta --extern rustc_macros=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_macros-533b3ebf51685542.so --extern rustc_serialize=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_serialize-865b9514c43ea76f.rmeta --extern rustc_thread_pool=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_thread_pool-83aef153b3813075.rmeta --extern smallvec=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libsmallvec-3970d95f1529de22.rmeta --extern stacker=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libstacker-368582b1ee0e928e.rmeta --extern tempfile=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libtempfile-31b01a5ab7576b73.rmeta --extern thin_vec=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libthin_vec-c5a2b73fca668a41.rmeta --extern tracing=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libtracing-82b3a1ccd9aeceb8.rmeta -L native=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/build/psm-51115e95e3afce55/out
+19:36:47 STATS_CHANGE: Compile requests                    347
+Compile requests executed           260
+Cache hits                          230
+Cache hits (Rust)                   230
+Cache misses                         14
+Cache misses (Rust)                  14
+Cache hits rate                   94.26 %
+Cache hits rate (Rust)            94.26 %
+Cache timeouts                        0
+Cache read errors                     0
+Forced recaches                       0
+Cache write errors                    0
+Cache errors                          0
+Compilations                         14
+Compilation failures                  4
+Non-cacheable compilations            0
+Non-cacheable calls                  86
+Non-compilation calls                 1
+Unsupported compiler calls            0
+Average cache write               0.001 s
+Average compiler                  0.557 s
+Average cache read hit            0.003 s
+Failed distributed compilations       0
+
+Non-cacheable reasons:
+crate-type                           66
+incremental                          12
+missing input                         4
+-o                                    3
+-                                     1
+
+Cache location                  Local disk: "/home/mdupont/.cache/sccache"
+Use direct/preprocessor mode?   yes
+Version (client)                0.12.0
+Cache size                            1 GiB
+Max cache size                       10 GiB -> Compile requests                    383
+Compile requests executed           286
+Cache hits                          262
+Cache hits (Rust)                   262
+Cache misses                         19
+Cache misses (Rust)                  19
+Cache hits rate                   93.24 %
+Cache hits rate (Rust)            93.24 %
+Cache timeouts                        0
+Cache read errors                     0
+Forced recaches                       0
+Cache write errors                    0
+Cache errors                          0
+Compilations                         19
+Compilation failures                  4
+Non-cacheable compilations            0
+Non-cacheable calls                  96
+Non-compilation calls                 1
+Unsupported compiler calls            0
+Average cache write               0.000 s
+Average compiler                  0.587 s
+Average cache read hit            0.003 s
+Failed distributed compilations       0
+
+Non-cacheable reasons:
+crate-type                           72
+incremental                          16
+missing input                         4
+-o                                    3
+-                                     1
+
+Cache location                  Local disk: "/home/mdupont/.cache/sccache"
+Use direct/preprocessor mode?   yes
+Version (client)                0.12.0
+Cache size                            1 GiB
+Max cache size                       10 GiB

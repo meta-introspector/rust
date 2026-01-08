@@ -1,0 +1,41 @@
+warning: unexpected `cfg` condition name: `bootstrap`
+ --> compiler/rustc_index/src/lib.rs:3:13
+  |
+3 | #![cfg_attr(bootstrap, feature(new_zeroed_alloc))]
+  |             ^^^^^^^^^
+  |
+  = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+  = help: consider using a Cargo feature instead
+  = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+           [lints.rust]
+           unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+  = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+  = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+  = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `bootstrap`
+   --> compiler/rustc_index/src/idx.rs:138:36
+    |
+138 | #[cfg(all(feature = "nightly", not(bootstrap)))]
+    |                                    ^^^^^^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+Zombie library initialized
+🧟♂️ Zombie rustc wrapper with libp2p network started
+Processing file: test_program.rs
+🧠 Zombie compilation complete - network server running...
+🧟 Starting zombie libp2p network...
+🧠 Zombie peer ID: 12D3KooWEVxVuFodujBYVyWEPDvafqXZY8JMCdPceNLiNqkezPBP
+🌐 Zombie network listening on port 4001
+🧟♂️ Broadcasting compilation data: 42 nodes
+🧟 Failed to publish: InsufficientPeers
+🧠 Zombie listening on /ip4/127.0.0.1/tcp/4001
+🧠 Zombie listening on /ip4/192.168.68.62/tcp/4001
+🧠 Zombie listening on /ip4/192.168.68.79/tcp/4001
+🧠 Zombie listening on /ip4/172.17.0.1/tcp/4001

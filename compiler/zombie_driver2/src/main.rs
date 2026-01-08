@@ -1,3 +1,5 @@
+#![feature(rustc_private)]
+
 use std::env;
 use std::process;
 
@@ -21,6 +23,8 @@ struct CompilationData {
     crate_name: String,
     ast_nodes: u32,
     compilation_time_ms: u64,
+    tyctx_harmonics: Vec<f64>,
+    topology: Vec<u32>,
 }
 
 #[derive(NetworkBehaviour)]
@@ -41,27 +45,123 @@ impl ZombieCallbacks {
             start_time: std::time::Instant::now(),
         }
     }
+
+    fn serialize_tyctx<'tcx>(&self, tcx: rustc_middle::ty::TyCtxt<'tcx>) -> serde_json::Value {
+        // Use serde to automatically serialize TyCtxt data
+        serde_json::json!({
+            "crate_name": tcx.crate_name(rustc_span::def_id::LOCAL_CRATE).to_string(),
+            "crate_hash": format!("{:?}", tcx.crate_hash(rustc_span::def_id::LOCAL_CRATE))
+        })
+    }
+
+    fn flatten_json(&self, json: &serde_json::Value) -> Vec<f64> {
+        let mut flat = Vec::new();
+        self.flatten_recursive(json, &mut flat);
+        flat
+    }
+
+    fn flatten_recursive(&self, value: &serde_json::Value, flat: &mut Vec<f64>) {
+        match value {
+            serde_json::Value::Number(n) => {
+                if let Some(f) = n.as_f64() {
+                    flat.push(f);
+                }
+            }
+            serde_json::Value::String(s) => {
+                // Convert string to numeric hash
+                let hash = s.bytes().fold(0u64, |acc, b| acc.wrapping_mul(31).wrapping_add(b as u64));
+                flat.push(hash as f64);
+            }
+            serde_json::Value::Array(arr) => {
+                for item in arr {
+                    self.flatten_recursive(item, flat);
+                }
+            }
+            serde_json::Value::Object(obj) => {
+                for (_, v) in obj {
+                    self.flatten_recursive(v, flat);
+                }
+            }
+            _ => {}
+        }
+    }
+
+    fn compute_harmonics(&self, data: &[f64]) -> Vec<f64> {
+        if data.is_empty() {
+            return Vec::new();
+        }
+        
+        let len = data.len();
+        let mut harmonics = Vec::with_capacity(len.min(8));
+        
+        // Compute first 8 harmonics
+        for h in 1..=8.min(len) {
+            let mut sum = 0.0;
+            for (i, &val) in data.iter().enumerate() {
+                sum += val * (2.0 * std::f64::consts::PI * h as f64 * i as f64 / len as f64).sin();
+            }
+            harmonics.push(sum / len as f64);
+        }
+        
+        harmonics
+    }
+
+    fn capture_topology(&self, data: &[f64]) -> Vec<u32> {
+        if data.is_empty() {
+            return Vec::new();
+        }
+        
+        let mut topology = Vec::new();
+        let chunk_size = (data.len() / 16).max(1);
+        
+        for chunk in data.chunks(chunk_size) {
+            let sum: f64 = chunk.iter().sum();
+            topology.push((sum.abs() as u32) % 1000);
+        }
+        
+        topology
+    }
 }
 
 impl Callbacks for ZombieCallbacks {
     fn config(&mut self, config: &mut interface::Config) {
         println!("🧟♂️ Zombie infected compiler config");
-        
-        // Hardcode sysroot to system rustc
-        // config.opts.maybe_sysroot = Some(std::path::PathBuf::from("/nix/store/i6xakg19vy8vc2g211yr9d5nmb0wk7v0-rustc-1.91.1"));
-        
-        // Send basic compilation data
+    }
+
+    fn after_expansion<'tcx>(
+        &mut self,
+        _compiler: &interface::Compiler,
+        tcx: rustc_middle::ty::TyCtxt<'tcx>,
+    ) -> rustc_driver::Compilation {
+        let crate_name = tcx.crate_name(rustc_span::def_id::LOCAL_CRATE).to_string();
         let compilation_time = self.start_time.elapsed().as_millis() as u64;
+        
+        // Serialize TyCtxt to JSON
+        let tyctx_json = self.serialize_tyctx(tcx);
+        
+        // Flatten JSON to array
+        let flat_array = self.flatten_json(&tyctx_json);
+        
+        // Split array in harmonics
+        let harmonics = self.compute_harmonics(&flat_array);
+        
+        // Capture topology
+        let topology = self.capture_topology(&flat_array);
+        
         let data = CompilationData {
             peer_id: "zombie_node".to_string(),
-            crate_name: "unknown".to_string(),
-            ast_nodes: 42,
+            crate_name,
+            ast_nodes: flat_array.len() as u32,
             compilation_time_ms: compilation_time,
+            tyctx_harmonics: harmonics,
+            topology,
         };
         
         if let Err(e) = self.data_sender.send(data) {
-            eprintln!("🧟 Failed to send compilation data: {}", e);
+            eprintln!("🧟 Failed to send TyCtxt data: {}", e);
         }
+        
+        rustc_driver::Compilation::Continue
     }
 }
 

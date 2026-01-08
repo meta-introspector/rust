@@ -1,0 +1,72 @@
+19:36:46 rustc --crate-name rustc_span --edition=2024 /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/rustc_span/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --check-cfg cfg(docsrs,test) --check-cfg cfg(feature, values()) -C metadata=92941468918fd807 -C extra-filename=-cca3b45fe3825eda --out-dir /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps -C incremental=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/incremental -L dependency=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps --extern blake3=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libblake3-67602f1edf44901b.rmeta --extern derive_where=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libderive_where-46629126e8026b37.so --extern indexmap=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libindexmap-66ebc7fee9cc3992.rmeta --extern itoa=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libitoa-5ce5252d093512e7.rmeta --extern md5=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libmd5-01e187488dec5dc9.rmeta --extern rustc_arena=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_arena-fbfbfc9e2ae2c81f.rmeta --extern rustc_data_structures=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_data_structures-7a05c3f43ea74b8d.rmeta --extern rustc_hashes=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_hashes-90e81dae7d173bd5.rmeta --extern rustc_index=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_index-3aa7163ed688dde0.rmeta --extern rustc_macros=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_macros-533b3ebf51685542.so --extern rustc_serialize=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/librustc_serialize-865b9514c43ea76f.rmeta --extern scoped_tls=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libscoped_tls-1263fbaeec8a7d02.rmeta --extern sha1=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libsha1-d3b10b7ef439480f.rmeta --extern sha2=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libsha2-c847699277eae709.rmeta --extern tracing=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libtracing-82b3a1ccd9aeceb8.rmeta --extern unicode_width=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/deps/libunicode_width-42bf7702f7615ad2.rmeta -L native=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/build/blake3-b449a45f526127c8/out -L native=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/build/blake3-b449a45f526127c8/out -L native=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/build/psm-51115e95e3afce55/out
+19:36:48 STATS_CHANGE: Compile requests                    382
+Compile requests executed           286
+Cache hits                          262
+Cache hits (Rust)                   262
+Cache misses                         18
+Cache misses (Rust)                  18
+Cache hits rate                   93.57 %
+Cache hits rate (Rust)            93.57 %
+Cache timeouts                        0
+Cache read errors                     0
+Forced recaches                       0
+Cache write errors                    0
+Cache errors                          0
+Compilations                         18
+Compilation failures                  4
+Non-cacheable compilations            0
+Non-cacheable calls                  95
+Non-compilation calls                 1
+Unsupported compiler calls            0
+Average cache write               0.001 s
+Average compiler                  0.578 s
+Average cache read hit            0.003 s
+Failed distributed compilations       0
+
+Non-cacheable reasons:
+crate-type                           72
+incremental                          15
+missing input                         4
+-o                                    3
+-                                     1
+
+Cache location                  Local disk: "/home/mdupont/.cache/sccache"
+Use direct/preprocessor mode?   yes
+Version (client)                0.12.0
+Cache size                            1 GiB
+Max cache size                       10 GiB -> Compile requests                    393
+Compile requests executed           293
+Cache hits                          262
+Cache hits (Rust)                   262
+Cache misses                         26
+Cache misses (Rust)                  26
+Cache hits rate                   90.97 %
+Cache hits rate (Rust)            90.97 %
+Cache timeouts                        0
+Cache read errors                     0
+Forced recaches                       0
+Cache write errors                    0
+Cache errors                          0
+Compilations                         26
+Compilation failures                  4
+Non-cacheable compilations            0
+Non-cacheable calls                  99
+Non-compilation calls                 1
+Unsupported compiler calls            0
+Average cache write               0.000 s
+Average compiler                  0.525 s
+Average cache read hit            0.003 s
+Failed distributed compilations       0
+
+Non-cacheable reasons:
+crate-type                           72
+incremental                          19
+missing input                         4
+-o                                    3
+-                                     1
+
+Cache location                  Local disk: "/home/mdupont/.cache/sccache"
+Use direct/preprocessor mode?   yes
+Version (client)                0.12.0
+Cache size                            1 GiB
+Max cache size                       10 GiB

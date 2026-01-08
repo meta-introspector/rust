@@ -1,0 +1,74 @@
+error: output of --print=file-names missing when learning about target-specific information from rustc
+command was: `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/target/release/zombie_rustc - --crate-name ___ --print=file-names --crate-type bin --crate-type rlib --crate-type dylib --crate-type cdylib --crate-type staticlib --crate-type proc-macro --print=sysroot --print=split-debuginfo --print=crate-name --print=cfg -Wwarnings`
+
+--- stdout
+Zombie library initialized
+🧟‍♂️ Zombie Compiler Driver with Frequency Analysis
+🧟 Callback: after_parsing (frequency: 1)
+  📊 Prime 2 harmonic: parsing phase
+🧟 Callback: after_analysis (frequency: 1)
+  📊 Prime 3 harmonic: analysis phase - TrollArmy active
+🧟 Callback: after_parsing (frequency: 2)
+  📊 Prime 2 harmonic: parsing phase
+🧟 Callback: after_analysis (frequency: 2)
+  📊 Prime 3 harmonic: analysis phase - TrollArmy active
+
+🎭🔱⭐ CALLBACK FREQUENCY ANALYSIS 🎭🔱⭐
+==========================================
+📡 after_parsing: 2 calls - Prime 2 (🎭 Binary)
+📡 after_analysis: 2 calls - Prime 3 (🔱 Trinity)
+🧌 Total TrollArmy activations: 4
+___
+lib___.rlib
+lib___.so
+lib___.so
+lib___.a
+lib___.so
+/nix/store/i6xakg19vy8vc2g211yr9d5nmb0wk7v0-rustc-1.91.1
+off
+packed
+unpacked
+___
+debug_assertions
+fmt_debug="full"
+overflow_checks
+panic="unwind"
+proc_macro
+relocation_model="pic"
+target_abi=""
+target_arch="x86_64"
+target_endian="little"
+target_env="gnu"
+target_family="unix"
+target_feature="fxsr"
+target_feature="sse"
+target_feature="sse2"
+target_feature="x87"
+target_has_atomic
+target_has_atomic="16"
+target_has_atomic="32"
+target_has_atomic="64"
+target_has_atomic="8"
+target_has_atomic="ptr"
+target_has_atomic_equal_alignment="16"
+target_has_atomic_equal_alignment="32"
+target_has_atomic_equal_alignment="64"
+target_has_atomic_equal_alignment="8"
+target_has_atomic_equal_alignment="ptr"
+target_has_atomic_load_store
+target_has_atomic_load_store="16"
+target_has_atomic_load_store="32"
+target_has_atomic_load_store="64"
+target_has_atomic_load_store="8"
+target_has_atomic_load_store="ptr"
+target_has_reliable_f128
+target_has_reliable_f16
+target_has_reliable_f16_math
+target_os="linux"
+target_pointer_width="64"
+target_thread_local
+target_vendor="unknown"
+ub_checks
+unix
+🧟 Compilation successful with frequency analysis
+

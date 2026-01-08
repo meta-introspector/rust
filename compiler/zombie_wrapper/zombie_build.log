@@ -1,0 +1,881 @@
+📍 Current directory: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_wrapper
+🔨 Running: RUSTFLAGS="--cfg bootstrap" cargo build --release --bin zombie_rustc
+warning: unexpected `cfg` condition name: `bootstrap`
+ --> compiler/rustc_index/src/lib.rs:3:13
+  |
+3 | #![cfg_attr(bootstrap, feature(new_zeroed_alloc))]
+  |             ^^^^^^^^^
+  |
+  = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+  = help: consider using a Cargo feature instead
+  = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+           [lints.rust]
+           unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+  = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+  = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+  = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `bootstrap`
+   --> compiler/rustc_index/src/idx.rs:138:36
+    |
+138 | #[cfg(all(feature = "nightly", not(bootstrap)))]
+    |                                    ^^^^^^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: `rustc_index` (lib) generated 2 warnings
+   Compiling zombie_wrapper v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_wrapper)
+error[E0252]: the name `Deserialize` is defined multiple times
+  --> compiler/zombie_wrapper/src/main.rs:13:13
+   |
+ 8 | use serde::{Deserialize, Serialize};
+   |             ----------- previous import of the trait `Deserialize` here
+...
+13 | use serde::{Deserialize, Serialize};
+   |             ^^^^^^^^^^^--
+   |             |
+   |             `Deserialize` reimported here
+   |             help: remove unnecessary import
+   |
+   = note: `Deserialize` must be defined only once in the type namespace of this module
+
+error[E0252]: the name `Serialize` is defined multiple times
+  --> compiler/zombie_wrapper/src/main.rs:13:26
+   |
+ 8 | use serde::{Deserialize, Serialize};
+   |                          --------- previous import of the trait `Serialize` here
+...
+13 | use serde::{Deserialize, Serialize};
+   |                          ^^^^^^^^^ `Serialize` reimported here
+   |
+   = note: `Serialize` must be defined only once in the type namespace of this module
+
+error: `self` parameter is only allowed in associated functions
+   --> compiler/zombie_wrapper/src/main.rs:189:29
+    |
+189 |     fn weave_emoji_tapestry(&self) -> String {
+    |                             ^^^^^ not semantically valid as function parameter
+    |
+    = note: associated functions are those in `impl` or `trait` definitions
+
+error: `self` parameter is only allowed in associated functions
+   --> compiler/zombie_wrapper/src/main.rs:232:33
+    |
+232 |     fn blockchain_genesis_story(&self) -> String {
+    |                                 ^^^^^ not semantically valid as function parameter
+    |
+    = note: associated functions are those in `impl` or `trait` definitions
+
+error: `self` parameter is only allowed in associated functions
+   --> compiler/zombie_wrapper/src/main.rs:245:27
+    |
+245 |     fn split_by_frequency(&self) -> Vec<TcxSubset> {
+    |                           ^^^^^ not semantically valid as function parameter
+    |
+    = note: associated functions are those in `impl` or `trait` definitions
+
+error[E0432]: unresolved import `sha2`
+  --> compiler/zombie_wrapper/src/main.rs:14:5
+   |
+14 | use sha2::{Sha256, Digest};
+   |     ^^^^ use of unresolved module or unlinked crate `sha2`
+   |
+   = help: if you wanted to use a crate named `sha2`, use `cargo add sha2` to add it to your `Cargo.toml`
+
+error[E0401]: can't use `Self` from outer item
+   --> compiler/zombie_wrapper/src/main.rs:189:30
+    |
+149 | impl TcxCapture {
+    | ---- `Self` type implicitly declared here, by this `impl`
+...
+189 |     fn weave_emoji_tapestry(&self) -> String {
+    |                              ^^^^
+    |                              |
+    |                              use of `Self` from outer item
+    |                              refer to the type directly here instead
+
+error[E0401]: can't use `Self` from outer item
+   --> compiler/zombie_wrapper/src/main.rs:232:34
+    |
+149 | impl TcxCapture {
+    | ---- `Self` type implicitly declared here, by this `impl`
+...
+232 |     fn blockchain_genesis_story(&self) -> String {
+    |                                  ^^^^
+    |                                  |
+    |                                  use of `Self` from outer item
+    |                                  refer to the type directly here instead
+
+error[E0401]: can't use `Self` from outer item
+   --> compiler/zombie_wrapper/src/main.rs:245:28
+    |
+149 | impl TcxCapture {
+    | ---- `Self` type implicitly declared here, by this `impl`
+...
+245 |     fn split_by_frequency(&self) -> Vec<TcxSubset> {
+    |                            ^^^^
+    |                            |
+    |                            use of `Self` from outer item
+    |                            refer to the type directly here instead
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `sha2`
+   --> compiler/zombie_wrapper/src/main.rs:293:45
+    |
+293 |             compilation_id: format!("{:x}", sha2::Sha256::digest(peer_id.as_bytes()))[..8].to_string(),
+    |                                             ^^^^ use of unresolved module or unlinked crate `sha2`
+    |
+    = help: if you wanted to use a crate named `sha2`, use `cargo add sha2` to add it to your `Cargo.toml`
+help: there is an enum variant `libzombie::SourceFileHashAlgorithm::Sha256`; try using the variant's enum
+    |
+293 -             compilation_id: format!("{:x}", sha2::Sha256::digest(peer_id.as_bytes()))[..8].to_string(),
+293 +             compilation_id: format!("{:x}", libzombie::SourceFileHashAlgorithm::digest(peer_id.as_bytes()))[..8].to_string(),
+    |
+
+error[E0425]: cannot find value `compilation_time` in this scope
+    --> compiler/zombie_wrapper/src/main.rs:1661:61
+     |
+1661 | ...                   let brainrot_score = if compilation_time > 0 {
+     |                                               ^^^^^^^^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `compilation_time` in this scope
+    --> compiler/zombie_wrapper/src/main.rs:1662:68
+     |
+1662 | ...                   (actual_ast_nodes as f32 / compilation_time as f32) * 1000.0
+     |                                                  ^^^^^^^^^^^^^^^^ not found in this scope
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:16:7
+   |
+16 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:18:7
+   |
+18 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:20:7
+   |
+20 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:22:7
+   |
+22 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:25:7
+   |
+25 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:27:7
+   |
+27 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:29:7
+   |
+29 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:31:7
+   |
+31 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+   --> compiler/zombie_wrapper/src/main.rs:317:7
+    |
+317 | #[cfg(feature = "rustc_private")]
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused imports: `Deserialize` and `Serialize`
+  --> compiler/zombie_wrapper/src/main.rs:13:13
+   |
+13 | use serde::{Deserialize, Serialize};
+   |             ^^^^^^^^^^^  ^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unexpected `cfg` condition value: `rustc_private`
+   --> compiler/zombie_wrapper/src/main.rs:110:11
+    |
+110 |     #[cfg(feature = "rustc_private")]
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+   --> compiler/zombie_wrapper/src/main.rs:118:11
+    |
+118 |     #[cfg(feature = "rustc_private")]
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+error[E0063]: missing fields `ast_nodes`, `brainrot_score`, `file_path` and 2 other fields in initializer of `CompilationResult`
+    --> compiler/zombie_wrapper/src/main.rs:1694:49
+     |
+1694 | ...                   CompilationResult {
+     |                       ^^^^^^^^^^^^^^^^^ missing `ast_nodes`, `brainrot_score`, `file_path` and 2 other fields
+
+error[E0063]: missing fields `ast_nodes`, `brainrot_score`, `file_path` and 2 other fields in initializer of `CompilationResult`
+    --> compiler/zombie_wrapper/src/main.rs:1705:45
+     |
+1705 | ...                   CompilationResult {
+     |                       ^^^^^^^^^^^^^^^^^ missing `ast_nodes`, `brainrot_score`, `file_path` and 2 other fields
+
+error[E0308]: mismatched types
+   --> compiler/zombie_wrapper/src/main.rs:150:37
+    |
+150 |     fn split_by_frequency(&self) -> Vec<TcxSubset> {
+    |        ------------------           ^^^^^^^^^^^^^^ expected `Vec<TcxSubset>`, found `()`
+    |        |
+    |        implicitly returns `()` as its body has no tail or `return` expression
+    |
+    = note: expected struct `Vec<TcxSubset>`
+            found unit type `()`
+help: consider returning the local binding `subsets`
+    |
+285 ~     }
+286 +     subsets
+    |
+
+error[E0609]: no field `tcx_captures` on type `&TcxCapture`
+   --> compiler/zombie_wrapper/src/main.rs:291:32
+    |
+291 |             tcx_captures: self.tcx_captures.clone(),
+    |                                ^^^^^^^^^^^^ unknown field
+    |
+    = note: available fields are: `crate_name`, `def_paths`, `item_count`, `timestamp`
+
+error[E0609]: no field `span_fixmes` on type `&TcxCapture`
+   --> compiler/zombie_wrapper/src/main.rs:292:30
+    |
+292 |             span_count: self.span_fixmes.len(),
+    |                              ^^^^^^^^^^^ unknown field
+    |
+    = note: available fields are: `crate_name`, `def_paths`, `item_count`, `timestamp`
+
+error[E0609]: no field `tcx_captures` on type `&TcxCapture`
+   --> compiler/zombie_wrapper/src/main.rs:300:30
+    |
+300 |         for capture in &self.tcx_captures {
+    |                              ^^^^^^^^^^^^ unknown field
+    |
+    = note: available fields are: `crate_name`, `def_paths`, `item_count`, `timestamp`
+
+error[E0609]: no field `span_fixmes` on type `&TcxCapture`
+   --> compiler/zombie_wrapper/src/main.rs:313:22
+    |
+313 |                 self.span_fixmes.len(), self.tcx_captures.len())
+    |                      ^^^^^^^^^^^ unknown field
+    |
+    = note: available fields are: `crate_name`, `def_paths`, `item_count`, `timestamp`
+
+error[E0609]: no field `tcx_captures` on type `&TcxCapture`
+   --> compiler/zombie_wrapper/src/main.rs:313:46
+    |
+313 |                 self.span_fixmes.len(), self.tcx_captures.len())
+    |                                              ^^^^^^^^^^^^ unknown field
+    |
+    = note: available fields are: `crate_name`, `def_paths`, `item_count`, `timestamp`
+
+error[E0061]: this method takes 3 arguments but 2 arguments were supplied
+   --> compiler/zombie_wrapper/src/main.rs:841:18
+    |
+841 |         features.analyze_span_text(trimmed, depth);
+    |                  ^^^^^^^^^^^^^^^^^---------------- argument #3 of type `std::option::Option<&str>` is missing
+    |
+note: method defined here
+   --> compiler/zombie_wrapper/src/main.rs:416:8
+    |
+416 |     fn analyze_span_text(&mut self, text: &str, depth: u32, parent_type: Option<&str>) {
+    |        ^^^^^^^^^^^^^^^^^                                    -------------------------
+help: provide the argument
+    |
+841 |         features.analyze_span_text(trimmed, depth, /* std::option::Option<&str> */);
+    |                                                  +++++++++++++++++++++++++++++++++
+
+warning: unused variable: `troll_army`
+    --> compiler/zombie_wrapper/src/main.rs:1753:13
+     |
+1753 |     let mut troll_army = TrollArmy::new();
+     |             ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_troll_army`
+     |
+     = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+    --> compiler/zombie_wrapper/src/main.rs:1753:9
+     |
+1753 |     let mut troll_army = TrollArmy::new();
+     |         ----^^^^^^^^^^
+     |         |
+     |         help: remove this `mut`
+     |
+     = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+Some errors have detailed explanations: E0061, E0063, E0252, E0308, E0401, E0425, E0432, E0433, E0609.
+For more information about an error, try `rustc --explain E0061`.
+warning: `zombie_wrapper` (bin "zombie_rustc") generated 14 warnings
+error: could not compile `zombie_wrapper` (bin "zombie_rustc") due to 21 previous errors; 14 warnings emitted
+❌ Build failed with exit code: 101
+📝 Full build log saved to: zombie_build.log
+🧟‍♂️ Build completed at Wed Jan  7 06:43:55 PM EST 2026
+📍 Current directory: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_wrapper
+🔨 Running: RUSTFLAGS="--cfg bootstrap" cargo build --release --bin zombie_rustc
+warning: unexpected `cfg` condition name: `bootstrap`
+ --> compiler/rustc_index/src/lib.rs:3:13
+  |
+3 | #![cfg_attr(bootstrap, feature(new_zeroed_alloc))]
+  |             ^^^^^^^^^
+  |
+  = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+  = help: consider using a Cargo feature instead
+  = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+           [lints.rust]
+           unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+  = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+  = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+  = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `bootstrap`
+   --> compiler/rustc_index/src/idx.rs:138:36
+    |
+138 | #[cfg(all(feature = "nightly", not(bootstrap)))]
+    |                                    ^^^^^^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: `rustc_index` (lib) generated 2 warnings
+   Compiling zombie_wrapper v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_wrapper)
+error: `self` parameter is only allowed in associated functions
+   --> compiler/zombie_wrapper/src/main.rs:188:29
+    |
+188 |     fn weave_emoji_tapestry(&self) -> String {
+    |                             ^^^^^ not semantically valid as function parameter
+    |
+    = note: associated functions are those in `impl` or `trait` definitions
+
+error: `self` parameter is only allowed in associated functions
+   --> compiler/zombie_wrapper/src/main.rs:231:33
+    |
+231 |     fn blockchain_genesis_story(&self) -> String {
+    |                                 ^^^^^ not semantically valid as function parameter
+    |
+    = note: associated functions are those in `impl` or `trait` definitions
+
+error: `self` parameter is only allowed in associated functions
+   --> compiler/zombie_wrapper/src/main.rs:244:27
+    |
+244 |     fn split_by_frequency(&self) -> Vec<TcxSubset> {
+    |                           ^^^^^ not semantically valid as function parameter
+    |
+    = note: associated functions are those in `impl` or `trait` definitions
+
+error[E0401]: can't use `Self` from outer item
+   --> compiler/zombie_wrapper/src/main.rs:188:30
+    |
+148 | impl TcxCapture {
+    | ---- `Self` type implicitly declared here, by this `impl`
+...
+188 |     fn weave_emoji_tapestry(&self) -> String {
+    |                              ^^^^
+    |                              |
+    |                              use of `Self` from outer item
+    |                              refer to the type directly here instead
+
+error[E0401]: can't use `Self` from outer item
+   --> compiler/zombie_wrapper/src/main.rs:231:34
+    |
+148 | impl TcxCapture {
+    | ---- `Self` type implicitly declared here, by this `impl`
+...
+231 |     fn blockchain_genesis_story(&self) -> String {
+    |                                  ^^^^
+    |                                  |
+    |                                  use of `Self` from outer item
+    |                                  refer to the type directly here instead
+
+error[E0401]: can't use `Self` from outer item
+   --> compiler/zombie_wrapper/src/main.rs:244:28
+    |
+148 | impl TcxCapture {
+    | ---- `Self` type implicitly declared here, by this `impl`
+...
+244 |     fn split_by_frequency(&self) -> Vec<TcxSubset> {
+    |                            ^^^^
+    |                            |
+    |                            use of `Self` from outer item
+    |                            refer to the type directly here instead
+
+error[E0425]: cannot find value `compilation_time` in this scope
+    --> compiler/zombie_wrapper/src/main.rs:1660:61
+     |
+1660 | ...                   let brainrot_score = if compilation_time > 0 {
+     |                                               ^^^^^^^^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `compilation_time` in this scope
+    --> compiler/zombie_wrapper/src/main.rs:1661:68
+     |
+1661 | ...                   (actual_ast_nodes as f32 / compilation_time as f32) * 1000.0
+     |                                                  ^^^^^^^^^^^^^^^^ not found in this scope
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:15:7
+   |
+15 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:17:7
+   |
+17 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:19:7
+   |
+19 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:21:7
+   |
+21 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:24:7
+   |
+24 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:26:7
+   |
+26 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:28:7
+   |
+28 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+  --> compiler/zombie_wrapper/src/main.rs:30:7
+   |
+30 | #[cfg(feature = "rustc_private")]
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+   |
+   = note: no expected values for `feature`
+   = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+   --> compiler/zombie_wrapper/src/main.rs:316:7
+    |
+316 | #[cfg(feature = "rustc_private")]
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+   --> compiler/zombie_wrapper/src/main.rs:109:11
+    |
+109 |     #[cfg(feature = "rustc_private")]
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `rustc_private`
+   --> compiler/zombie_wrapper/src/main.rs:117:11
+    |
+117 |     #[cfg(feature = "rustc_private")]
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `rustc_private` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+error[E0063]: missing fields `ast_nodes`, `brainrot_score`, `file_path` and 2 other fields in initializer of `CompilationResult`
+    --> compiler/zombie_wrapper/src/main.rs:1693:49
+     |
+1693 | ...                   CompilationResult {
+     |                       ^^^^^^^^^^^^^^^^^ missing `ast_nodes`, `brainrot_score`, `file_path` and 2 other fields
+
+error[E0063]: missing fields `ast_nodes`, `brainrot_score`, `file_path` and 2 other fields in initializer of `CompilationResult`
+    --> compiler/zombie_wrapper/src/main.rs:1704:45
+     |
+1704 | ...                   CompilationResult {
+     |                       ^^^^^^^^^^^^^^^^^ missing `ast_nodes`, `brainrot_score`, `file_path` and 2 other fields
+
+error[E0308]: mismatched types
+   --> compiler/zombie_wrapper/src/main.rs:149:37
+    |
+149 |     fn split_by_frequency(&self) -> Vec<TcxSubset> {
+    |        ------------------           ^^^^^^^^^^^^^^ expected `Vec<TcxSubset>`, found `()`
+    |        |
+    |        implicitly returns `()` as its body has no tail or `return` expression
+    |
+    = note: expected struct `Vec<TcxSubset>`
+            found unit type `()`
+help: consider returning the local binding `subsets`
+    |
+284 ~     }
+285 +     subsets
+    |
+
+error[E0609]: no field `tcx_captures` on type `&TcxCapture`
+   --> compiler/zombie_wrapper/src/main.rs:290:32
+    |
+290 |             tcx_captures: self.tcx_captures.clone(),
+    |                                ^^^^^^^^^^^^ unknown field
+    |
+    = note: available fields are: `crate_name`, `def_paths`, `item_count`, `timestamp`
+
+error[E0609]: no field `span_fixmes` on type `&TcxCapture`
+   --> compiler/zombie_wrapper/src/main.rs:291:30
+    |
+291 |             span_count: self.span_fixmes.len(),
+    |                              ^^^^^^^^^^^ unknown field
+    |
+    = note: available fields are: `crate_name`, `def_paths`, `item_count`, `timestamp`
+
+error[E0609]: no field `tcx_captures` on type `&TcxCapture`
+   --> compiler/zombie_wrapper/src/main.rs:299:30
+    |
+299 |         for capture in &self.tcx_captures {
+    |                              ^^^^^^^^^^^^ unknown field
+    |
+    = note: available fields are: `crate_name`, `def_paths`, `item_count`, `timestamp`
+
+error[E0609]: no field `span_fixmes` on type `&TcxCapture`
+   --> compiler/zombie_wrapper/src/main.rs:312:22
+    |
+312 |                 self.span_fixmes.len(), self.tcx_captures.len())
+    |                      ^^^^^^^^^^^ unknown field
+    |
+    = note: available fields are: `crate_name`, `def_paths`, `item_count`, `timestamp`
+
+error[E0609]: no field `tcx_captures` on type `&TcxCapture`
+   --> compiler/zombie_wrapper/src/main.rs:312:46
+    |
+312 |                 self.span_fixmes.len(), self.tcx_captures.len())
+    |                                              ^^^^^^^^^^^^ unknown field
+    |
+    = note: available fields are: `crate_name`, `def_paths`, `item_count`, `timestamp`
+
+error[E0061]: this method takes 3 arguments but 2 arguments were supplied
+   --> compiler/zombie_wrapper/src/main.rs:840:18
+    |
+840 |         features.analyze_span_text(trimmed, depth);
+    |                  ^^^^^^^^^^^^^^^^^---------------- argument #3 of type `std::option::Option<&str>` is missing
+    |
+note: method defined here
+   --> compiler/zombie_wrapper/src/main.rs:415:8
+    |
+415 |     fn analyze_span_text(&mut self, text: &str, depth: u32, parent_type: Option<&str>) {
+    |        ^^^^^^^^^^^^^^^^^                                    -------------------------
+help: provide the argument
+    |
+840 |         features.analyze_span_text(trimmed, depth, /* std::option::Option<&str> */);
+    |                                                  +++++++++++++++++++++++++++++++++
+
+warning: unused variable: `troll_army`
+    --> compiler/zombie_wrapper/src/main.rs:1752:13
+     |
+1752 |     let mut troll_army = TrollArmy::new();
+     |             ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_troll_army`
+     |
+     = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+    --> compiler/zombie_wrapper/src/main.rs:1752:9
+     |
+1752 |     let mut troll_army = TrollArmy::new();
+     |         ----^^^^^^^^^^
+     |         |
+     |         help: remove this `mut`
+     |
+     = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+Some errors have detailed explanations: E0061, E0063, E0308, E0401, E0425, E0609.
+For more information about an error, try `rustc --explain E0061`.
+warning: `zombie_wrapper` (bin "zombie_rustc") generated 13 warnings
+error: could not compile `zombie_wrapper` (bin "zombie_rustc") due to 17 previous errors; 13 warnings emitted
+❌ Build failed with exit code: 101
+📝 Full build log saved to: zombie_build.log
+🧟‍♂️ Build completed at Wed Jan  7 06:44:49 PM EST 2026
+📍 Current directory: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_wrapper
+🔨 Running: RUSTFLAGS="--cfg bootstrap" cargo build --release --bin zombie_rustc
+warning: unexpected `cfg` condition name: `bootstrap`
+ --> compiler/rustc_index/src/lib.rs:3:13
+  |
+3 | #![cfg_attr(bootstrap, feature(new_zeroed_alloc))]
+  |             ^^^^^^^^^
+  |
+  = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+  = help: consider using a Cargo feature instead
+  = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+           [lints.rust]
+           unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+  = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+  = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+  = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `bootstrap`
+   --> compiler/rustc_index/src/idx.rs:138:36
+    |
+138 | #[cfg(all(feature = "nightly", not(bootstrap)))]
+    |                                    ^^^^^^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: `rustc_index` (lib) generated 2 warnings
+   Compiling zombie_wrapper v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_wrapper)
+error: unexpected closing delimiter: `}`
+   --> compiler/zombie_wrapper/src/main.rs:317:1
+    |
+313 |     fn report(&self) -> String {
+    |                                - this opening brace...
+...
+316 |     }
+    |     - ...matches this closing brace
+317 | }
+    | ^ unexpected closing delimiter
+
+error: could not compile `zombie_wrapper` (bin "zombie_rustc") due to 1 previous error
+❌ Build failed with exit code: 101
+📝 Full build log saved to: zombie_build.log
+🧟‍♂️ Build completed at Wed Jan  7 06:45:59 PM EST 2026
+📍 Current directory: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_wrapper
+🔨 Running: RUSTFLAGS="--cfg bootstrap" cargo build --release --bin zombie_rustc
+warning: unexpected `cfg` condition name: `bootstrap`
+ --> compiler/rustc_index/src/lib.rs:3:13
+  |
+3 | #![cfg_attr(bootstrap, feature(new_zeroed_alloc))]
+  |             ^^^^^^^^^
+  |
+  = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+  = help: consider using a Cargo feature instead
+  = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+           [lints.rust]
+           unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+  = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+  = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+  = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `bootstrap`
+   --> compiler/rustc_index/src/idx.rs:138:36
+    |
+138 | #[cfg(all(feature = "nightly", not(bootstrap)))]
+    |                                    ^^^^^^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: `rustc_index` (lib) generated 2 warnings
+   Compiling zombie_wrapper v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_wrapper)
+error: unexpected closing delimiter: `}`
+   --> compiler/zombie_wrapper/src/main.rs:312:1
+    |
+299 |     fn distribute_tcx_by_frequency(&self, peer_id: &str) -> Vec<TcxSubset> {
+    |                                                                            - this opening brace...
+...
+311 |     }
+    |     - ...matches this closing brace
+312 | }
+    | ^ unexpected closing delimiter
+
+error: could not compile `zombie_wrapper` (bin "zombie_rustc") due to 1 previous error
+❌ Build failed with exit code: 101
+📝 Full build log saved to: zombie_build.log
+🧟‍♂️ Build completed at Wed Jan  7 06:46:44 PM EST 2026
+📍 Current directory: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_wrapper
+🔨 Running: RUSTFLAGS="--cfg bootstrap" cargo build --release --bin zombie_rustc
+warning: unexpected `cfg` condition name: `bootstrap`
+ --> compiler/rustc_index/src/lib.rs:3:13
+  |
+3 | #![cfg_attr(bootstrap, feature(new_zeroed_alloc))]
+  |             ^^^^^^^^^
+  |
+  = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+  = help: consider using a Cargo feature instead
+  = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+           [lints.rust]
+           unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+  = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+  = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+  = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `bootstrap`
+   --> compiler/rustc_index/src/idx.rs:138:36
+    |
+138 | #[cfg(all(feature = "nightly", not(bootstrap)))]
+    |                                    ^^^^^^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: `rustc_index` (lib) generated 2 warnings
+   Compiling zombie_wrapper v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_wrapper)
+error: unexpected closing delimiter: `}`
+   --> compiler/zombie_wrapper/src/main.rs:317:1
+    |
+313 |     fn report(&self) -> String {
+    |                                - this opening brace...
+...
+316 |     }
+    |     - ...matches this closing brace
+317 | }
+    | ^ unexpected closing delimiter
+
+error: could not compile `zombie_wrapper` (bin "zombie_rustc") due to 1 previous error
+❌ Build failed with exit code: 101
+📝 Full build log saved to: zombie_build.log
+🧟‍♂️ Build completed at Wed Jan  7 06:47:49 PM EST 2026
+📍 Current directory: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_wrapper
+🔨 Running: RUSTFLAGS="--cfg bootstrap" cargo build --release --bin zombie_rustc
+warning: unexpected `cfg` condition name: `bootstrap`
+ --> compiler/rustc_index/src/lib.rs:3:13
+  |
+3 | #![cfg_attr(bootstrap, feature(new_zeroed_alloc))]
+  |             ^^^^^^^^^
+  |
+  = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+  = help: consider using a Cargo feature instead
+  = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+           [lints.rust]
+           unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+  = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+  = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+  = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `bootstrap`
+   --> compiler/rustc_index/src/idx.rs:138:36
+    |
+138 | #[cfg(all(feature = "nightly", not(bootstrap)))]
+    |                                    ^^^^^^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(bootstrap)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(bootstrap)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: `rustc_index` (lib) generated 2 warnings
+   Compiling zombie_wrapper v0.0.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_wrapper)
+    Finished `release` profile [optimized] target(s) in 0.40s
+✅ Build completed successfully!
+⚠️  Binary not found in expected location
+🔍 Searching for zombie_rustc...
+📝 Full build log saved to: zombie_build.log
+🧟‍♂️ Build completed at Wed Jan  7 06:49:21 PM EST 2026
