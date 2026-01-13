@@ -1,1 +1,1 @@
-pub struct Test { x: i32 } impl Test { fn new() -> Self { Test { x: 0 } } } pub enum Color { Red, Green, Blue } mod inner { pub fn helper() {} }
+struct Point { x: i32, y: i32 } fn main() { let p = Point { x: 1, y: 2 }; println!("{:?}", p); } enum Color { Red, Blue }

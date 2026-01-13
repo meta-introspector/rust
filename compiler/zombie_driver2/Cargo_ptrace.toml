@@ -1,0 +1,12 @@
+[package]
+name = "ptrace-parser-interceptor"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "ptrace_parser_interceptor"
+path = "ptrace_parser_interceptor.rs"
+
+[dependencies]
+libc = "0.2"
+serde_json = "1.0"

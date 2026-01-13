@@ -1,0 +1,35 @@
+[Unit]
+Description=Unified P2P Rust Compilation Server
+Documentation=https://github.com/rust-lang/rust/tree/master/compiler/zombie_driver2
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=p2p-rust
+Group=p2p-rust
+WorkingDirectory=/opt/unified-p2p-server
+EnvironmentFile=/etc/unified-p2p-server/config.env
+ExecStart=/opt/unified-p2p-server/unified_p2p_server
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=unified-p2p-server
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/unified-p2p-server
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+
+# Resource limits
+LimitNOFILE=65536
+LimitNPROC=4096
+
+[Install]
+WantedBy=multi-user.target

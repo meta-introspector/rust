@@ -1,0 +1,1 @@
+/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/test_standalone/target/debug/test_standalone: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/test_standalone/src/main.rs

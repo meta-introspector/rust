@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Disable GNU pinentry
+export GPG_TTY=""
+export PINENTRY_USER_DATA="USE_CURSES=0"
+
+
 echo "🧟♂️ Optimized Zombie Build (Skip Rustc Recompilation)"
 echo "====================================================="
 

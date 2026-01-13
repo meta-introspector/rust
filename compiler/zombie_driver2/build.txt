@@ -1,0 +1,1680 @@
+warning: unused import: `proc_macro2::TokenStream`
+ --> lib-zombie/build.rs:1:5
+  |
+1 | use proc_macro2::TokenStream;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `lib-zombie` (build script) generated 1 warning
+warning: unreachable expression
+    --> /mnt/data1/nix/time/2025/06/01/solfunmeme-dioxus/vendor/syn-serde/src/macros.rs:33:14
+     |
+  32 |                 Self::Adapter::from(self)
+     |                 ------------------------- any code following this expression is unreachable
+  33 |             }
+     |              ^ unreachable expression
+     |
+    ::: /mnt/data1/nix/time/2025/06/01/solfunmeme-dioxus/vendor/syn-serde/src/gen/convert.rs:1612:1
+     |
+1612 | syn_trait_impl!(syn::ImplRestriction);
+     | ------------------------------------- in this macro invocation
+     |
+note: this expression has type `ast_enum::ImplRestriction`, which is uninhabited
+    --> /mnt/data1/nix/time/2025/06/01/solfunmeme-dioxus/vendor/syn-serde/src/macros.rs:32:17
+     |
+  32 |                 Self::Adapter::from(self)
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+     |
+    ::: /mnt/data1/nix/time/2025/06/01/solfunmeme-dioxus/vendor/syn-serde/src/gen/convert.rs:1612:1
+     |
+1612 | syn_trait_impl!(syn::ImplRestriction);
+     | ------------------------------------- in this macro invocation
+     = note: `#[warn(unreachable_code)]` (part of `#[warn(unused)]`) on by default
+     = note: this warning originates in the macro `syn_trait_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: `syn-serde` (lib) generated 1 warning
+warning: unused import: `syn_serde::json`
+ --> syn-analyzer/src/lib.rs:5:5
+  |
+5 | use syn_serde::json;
+  |     ^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `syn-analyzer` (lib) generated 1 warning (run `cargo fix --lib -p syn-analyzer` to apply 1 suggestion)
+warning: unused variable: `analyzer`
+  --> lib-zombie/src/periodic_table.rs:66:9
+   |
+66 |         analyzer: &TopologicalCompilationAnalyzer,
+   |         ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_analyzer`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `module`
+   --> lib-zombie/src/periodic_table.rs:151:41
+    |
+151 |     fn compute_module_bott_class(&self, module: &str, period: usize) -> BottPeriodicityClass {
+    |                                         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_module`
+
+warning: field `driver` is never read
+ --> /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2/target/debug/build/lib-zombie-203fc6c80176baaf/out/p2p_server_wrapper.rs:1:30
+  |
+1 | pub struct P2PPluginServer { driver : PluginDriver , } impl P2PPluginServer { pub fn new () -> Self { Self { driver : PluginDriver :: default () , } } }
+  |            ---------------   ^^^^^^
+  |            |
+  |            field in this struct
+  |
+  = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: fields `name` and `library` are never read
+  --> lib-zombie/src/crate_loader.rs:52:5
+   |
+51 | struct CrateWrapper {
+   |        ------------ fields in this struct
+52 |     name: String,
+   |     ^^^^
+53 |     library: Library,
+   |     ^^^^^^^
+
+warning: methods `generate_universal_labels`, `classify_spectrum`, `calculate_periodicity`, `calculate_entropy`, `convert_to_spectra`, and `convert_u64_to_spectra` are never used
+   --> lib-zombie/src/spectral_profiler.rs:254:8
+    |
+ 61 | impl ModuleSpectralProfiler {
+    | --------------------------- methods in this implementation
+...
+254 |     fn generate_universal_labels(
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+305 |     fn classify_spectrum(
+    |        ^^^^^^^^^^^^^^^^^
+...
+378 |     fn calculate_periodicity(&self, spectrum: &[f64]) -> f64 {
+    |        ^^^^^^^^^^^^^^^^^^^^^
+...
+385 |     fn calculate_entropy(&self, spectrum: &[f64]) -> f64 {
+    |        ^^^^^^^^^^^^^^^^^
+...
+405 |     fn convert_to_spectra(&self, data: HashMap<String, Vec<u64>>) -> HashMap<String, Vec<f64>> {
+    |        ^^^^^^^^^^^^^^^^^^
+...
+409 |     fn convert_u64_to_spectra(&self, data: HashMap<u64, Vec<u64>>) -> HashMap<u64, Vec<f64>> {
+    |        ^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `lib-zombie` (lib) generated 5 warnings (run `cargo fix --lib -p lib-zombie` to apply 2 suggestions)
+warning: unused import: `std::collections::HashMap`
+ --> live_rustc_caller.rs:2:5
+  |
+2 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `i`
+   --> live_rustc_caller.rs:118:10
+    |
+118 |     for (i, target) in calls_to.iter().enumerate() {
+    |          ^ help: if this is intentional, prefix it with an underscore: `_i`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `dlsym` is never used
+  --> live_rustc_caller.rs:10:8
+   |
+10 |     fn dlsym(handle: *mut c_void, symbol: *const c_char) -> *mut c_void;
+   |        ^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `usage_type`
+   --> static_usage_analyzer.rs:211:14
+    |
+211 |         for (usage_type, usages) in &by_type {
+    |              ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_usage_type`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `usage_type`
+   --> static_usage_analyzer.rs:228:14
+    |
+228 |         for (usage_type, usages) in &by_type {
+    |              ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_usage_type`
+
+warning: variant `JumpTable` is never constructed
+  --> static_usage_analyzer.rs:34:5
+   |
+29 | enum UsageType {
+   |      --------- variant in this enum
+...
+34 |     JumpTable,     // Function in jump table
+   |     ^^^^^^^^^
+   |
+   = note: `UsageType` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+   --> automorphic_orbit_tracer.rs:243:9
+    |
+243 |     let mut tracer = trace_automorphic_orbit!(usage_patterns, start: start_address);
+    |         ----^^^^^^
+    |         |
+    |         help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `usage_type` is never read
+  --> automorphic_orbit_tracer.rs:22:5
+   |
+19 | struct UsagePattern {
+   |        ------------ field in this struct
+...
+22 |     usage_type: String,
+   |     ^^^^^^^^^^
+   |
+   = note: `UsagePattern` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `Array`
+ --> parquet_converter.rs:1:20
+  |
+1 | use arrow::array::{Array, Int64Array, StringArray, UInt64Array};
+  |                    ^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `parquet_path`
+   --> parquet_converter.rs:128:5
+    |
+128 |     parquet_path: &str,
+    |     ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_parquet_path`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `i`
+   --> lattice_pole_calculator.rs:164:10
+    |
+164 |     for (i, (&prime, &sum)) in primes.iter().zip(coordinate_sums.iter()).enumerate() {
+    |          ^ help: if this is intentional, prefix it with an underscore: `_i`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `coordinates` is never read
+   --> lattice_pole_calculator.rs:248:5
+    |
+247 | struct LatticeEntry {
+    |        ------------ field in this struct
+248 |     coordinates: Vec<u64>,
+    |     ^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `prime_dimension_sums` is never read
+   --> lattice_pole_calculator.rs:262:5
+    |
+255 | struct PolePosition {
+    |        ------------ field in this struct
+...
+262 |     prime_dimension_sums: Vec<u64>,
+    |     ^^^^^^^^^^^^^^^^^^^^
+
+warning: variable `target_signature` is assigned to, but never used
+  --> spectral_zombie_rustc.rs:11:9
+   |
+11 |     let mut target_signature: Option<u128> = None;
+   |         ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: consider using `_target_signature` instead
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: value assigned to `target_signature` is never read
+  --> spectral_zombie_rustc.rs:19:21
+   |
+19 |                     target_signature = args[i + 1].parse::<u128>().ok();
+   |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: maybe it is overwritten before being read?
+   = note: `#[warn(unused_assignments)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `HashSet`
+ --> src/bin/compiler_topology.rs:2:33
+  |
+2 | use std::collections::{HashMap, HashSet};
+  |                                 ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `dependencies` is never read
+  --> src/bin/compiler_topology.rs:13:5
+   |
+ 6 | struct CompilerNode {
+   |        ------------ field in this struct
+...
+13 |     dependencies: Vec<String>,
+   |     ^^^^^^^^^^^^
+   |
+   = note: `CompilerNode` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `functions` is never read
+ --> src/bin/complexity_lattice.rs:8:5
+  |
+6 | struct ComplexityOrbit {
+  |        --------------- field in this struct
+7 |     length: usize,
+8 |     functions: Vec<String>,
+  |     ^^^^^^^^^
+  |
+  = note: `ComplexityOrbit` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `address`
+   --> auto_suggest_bad_data.rs:117:29
+    |
+117 |                         let address = text_section.sh_addr + func_start as u64 + (i * 4) as u64;
+    |                             ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_address`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::collections::HashSet`
+ --> cheap_prime_extension.rs:2:5
+  |
+2 | use std::collections::HashSet;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::collections::HashMap`
+ --> complete_proof_trace_generator.rs:3:5
+  |
+3 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `rust-eigenmatrix` (bin "live_rustc_caller") generated 3 warnings (run `cargo fix --bin "live_rustc_caller" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "static_usage_analyzer") generated 3 warnings (run `cargo fix --bin "static_usage_analyzer" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "automorphic_orbit_tracer") generated 2 warnings (run `cargo fix --bin "automorphic_orbit_tracer" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "parquet_converter") generated 2 warnings (run `cargo fix --bin "parquet_converter" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "lattice_pole_calculator") generated 3 warnings (run `cargo fix --bin "lattice_pole_calculator" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "spectral-zombie-rustc") generated 2 warnings
+warning: `rust-eigenmatrix` (bin "compiler_topology") generated 2 warnings (run `cargo fix --bin "compiler_topology" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "complexity_lattice") generated 1 warning
+warning: `rust-eigenmatrix` (bin "auto_suggest_bad_data") generated 1 warning (run `cargo fix --bin "auto_suggest_bad_data" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "cheap_prime_extension") generated 1 warning (run `cargo fix --bin "cheap_prime_extension" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "complete_proof_trace_generator") generated 1 warning (run `cargo fix --bin "complete_proof_trace_generator" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: unused import: `std::fs`
+ --> lmfdb_validator.rs:2:5
+  |
+2 | use std::fs;
+  |     ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `cmf_path`
+  --> lmfdb_validator.rs:86:13
+   |
+86 |         let cmf_path = format!("{}/classical_modular_forms", self.lmfdb_path);
+   |             ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_cmf_path`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: fields `character` and `dimension` are never read
+  --> lmfdb_validator.rs:10:5
+   |
+ 6 | struct LMFDBModularForm {
+   |        ---------------- fields in this struct
+...
+10 |     character: String,
+   |     ^^^^^^^^^
+11 |     dimension: u32,
+   |     ^^^^^^^^^
+   |
+   = note: `LMFDBModularForm` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `form_type` is never read
+  --> lmfdb_validator.rs:29:5
+   |
+25 | struct ModularForm {
+   |        ----------- field in this struct
+...
+29 |     form_type: String,
+   |     ^^^^^^^^^
+   |
+   = note: `ModularForm` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: constant `MONSTER_ORDER` is never used
+  --> rigorous_monster_proof.rs:25:7
+   |
+25 | const MONSTER_ORDER: &str = "808017424794512875886459904961710757005754368000000000";
+   |       ^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::collections::HashMap`
+ --> rust_consuming_fungus.rs:2:5
+  |
+2 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `symbol_count`
+   --> rust_consuming_fungus.rs:176:13
+    |
+176 |         let symbol_count = elf.syms.len();
+    |             ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_symbol_count`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `instruction`
+   --> modular_forms_analyzer.rs:324:13
+    |
+324 |         let instruction = u32::from_le_bytes([chunk[0], chunk[1], chunk[2], chunk[3]]);
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_instruction`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `address` is never read
+  --> modular_forms_analyzer.rs:63:5
+   |
+62 | struct ModularOperation {
+   |        ---------------- field in this struct
+63 |     address: u64,
+   |     ^^^^^^^
+   |
+   = note: `ModularOperation` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: variants `Division`, `Multiplication`, `Addition`, `Exponentiation`, and `Unknown` are never constructed
+  --> modular_forms_analyzer.rs:74:5
+   |
+72 | enum ModularOpType {
+   |      ------------- variants in this enum
+73 |     Remainder,      // x % n
+74 |     Division,       // x / n (integer division)
+   |     ^^^^^^^^
+75 |     Multiplication, // (x * y) % n
+   |     ^^^^^^^^^^^^^^
+76 |     Addition,       // (x + y) % n
+   |     ^^^^^^^^
+77 |     Exponentiation, // x^y % n
+   |     ^^^^^^^^^^^^^^
+78 |     Unknown,
+   |     ^^^^^^^
+   |
+   = note: `ModularOpType` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: field `forms` is never read
+  --> modular_forms_analyzer.rs:95:5
+   |
+93 | struct ModularSpace {
+   |        ------------ field in this struct
+94 |     dimension: usize,
+95 |     forms: Vec<ModularForm>,
+   |     ^^^^^
+   |
+   = note: `ModularSpace` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+
+warning: fields `modular_form_index`, `euler_factors`, and `functional_equation` are never read
+   --> modular_forms_analyzer.rs:104:5
+    |
+103 | struct LFunction {
+    |        --------- fields in this struct
+104 |     modular_form_index: usize,
+    |     ^^^^^^^^^^^^^^^^^^
+105 |     euler_factors: Vec<(u32, Vec<i64>)>, // (prime, coefficients)
+    |     ^^^^^^^^^^^^^
+106 |     functional_equation: String,
+    |     ^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `LFunction` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: fields `modular_form_index`, `dimension`, `conductor`, and `determinant` are never read
+   --> modular_forms_analyzer.rs:111:5
+    |
+110 | struct GaloisRep {
+    |        --------- fields in this struct
+111 |     modular_form_index: usize,
+    |     ^^^^^^^^^^^^^^^^^^
+112 |     dimension: u32,
+    |     ^^^^^^^^^
+113 |     conductor: u32,
+    |     ^^^^^^^^^
+114 |     determinant: String,
+    |     ^^^^^^^^^^^
+    |
+    = note: `GaloisRep` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: unused import: `std::collections::HashMap`
+ --> run_compiler_analyzer.rs:2:5
+  |
+2 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unnecessary parentheses around assigned value
+   --> ngram_monster_phi.rs:208:20
+    |
+208 |     let base_phi = (normalized_char * char_weight + normalized_byte * byte_weight);
+    |                    ^                                                             ^
+    |
+    = note: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
+help: remove these parentheses
+    |
+208 -     let base_phi = (normalized_char * char_weight + normalized_byte * byte_weight);
+208 +     let base_phi = normalized_char * char_weight + normalized_byte * byte_weight;
+    |
+
+warning: unused import: `DVector`
+ --> rust_eigenmatrix.rs:1:25
+  |
+1 | use nalgebra::{DMatrix, DVector};
+  |                         ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+   Compiling rust-eigenmatrix v0.1.0 (/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/compiler/zombie_driver2)
+warning: unused import: `std::collections::HashMap`
+ --> bott_periodic_report_generator.rs:1:5
+  |
+1 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `primes`
+  --> sqrt_n_sampling_validator.rs:96:9
+   |
+96 |     let primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37];
+   |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_primes`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `sample`
+   --> sqrt_n_sampling_validator.rs:139:5
+    |
+139 |     sample: &[SampleFunction],
+    |     ^^^^^^ help: if this is intentional, prefix it with an underscore: `_sample`
+
+warning: unused variable: `j`
+   --> sqrt_n_sampling_validator.rs:215:34
+    |
+215 |         for ((&residue, &count), j) in sorted_residues.iter().zip(0..3) {
+    |                                  ^ help: if this is intentional, prefix it with an underscore: `_j`
+
+warning: unused variable: `sample`
+   --> sqrt_n_sampling_validator.rs:258:5
+    |
+258 |     sample: &[SampleFunction],
+    |     ^^^^^^ help: if this is intentional, prefix it with an underscore: `_sample`
+
+warning: unused variable: `node`
+  --> semantic_monster_mapping.rs:71:47
+   |
+71 | fn analyze_demangled_name(mangled_name: &str, node: &Value) -> Option<SemanticMonsterMapping> {
+   |                                               ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `type_map`
+   --> semantic_monster_mapping.rs:332:5
+    |
+332 |     type_map: &HashMap<String, Vec<String>>,
+    |     ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_type_map`
+
+warning: unused variable: `i`
+  --> src/bin/enum_string_lattice.rs:47:10
+   |
+47 |     for (i, sym) in elf.syms.iter().enumerate() {
+   |          ^ help: if this is intentional, prefix it with an underscore: `_i`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `length` is never read
+ --> src/bin/enum_string_lattice.rs:8:5
+  |
+7 | struct EnumStringOrbit {
+  |        --------------- field in this struct
+8 |     length: usize,
+  |     ^^^^^^
+  |
+  = note: `EnumStringOrbit` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+  = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::collections::HashMap`
+ --> rdf_linked_data_generator.rs:2:5
+  |
+2 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::collections::HashMap`
+ --> perf_rustc_tracer.rs:1:5
+  |
+1 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `CStr`
+ --> perf_rustc_tracer.rs:2:16
+  |
+2 | use std::ffi::{CStr, CString};
+  |                ^^^^
+
+warning: unused import: `c_int`
+ --> perf_rustc_tracer.rs:3:28
+  |
+3 | use std::os::raw::{c_char, c_int, c_void};
+  |                            ^^^^^
+
+warning: struct `PerfEventAttr` is never constructed
+  --> perf_rustc_tracer.rs:19:8
+   |
+19 | struct PerfEventAttr {
+   |        ^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `perf_event_open` is never used
+ --> perf_rustc_tracer.rs:7:8
+  |
+7 |     fn perf_event_open(
+  |        ^^^^^^^^^^^^^^^
+
+warning: `rust-eigenmatrix` (bin "lmfdb_validator") generated 4 warnings (run `cargo fix --bin "lmfdb_validator" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "rigorous_monster_proof") generated 1 warning
+warning: `rust-eigenmatrix` (bin "rust_consuming_fungus") generated 2 warnings (run `cargo fix --bin "rust_consuming_fungus" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "modular_forms_analyzer") generated 6 warnings (run `cargo fix --bin "modular_forms_analyzer" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "run_compiler_analyzer") generated 1 warning (run `cargo fix --bin "run_compiler_analyzer" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "ngram_monster_phi") generated 1 warning (run `cargo fix --bin "ngram_monster_phi" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "rust-eigenmatrix") generated 1 warning (run `cargo fix --bin "rust-eigenmatrix" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "bott_periodic_report_generator") generated 1 warning (run `cargo fix --bin "bott_periodic_report_generator" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "sqrt_n_sampling_validator") generated 4 warnings (run `cargo fix --bin "sqrt_n_sampling_validator" -p rust-eigenmatrix` to apply 4 suggestions)
+warning: `rust-eigenmatrix` (bin "semantic_monster_mapping") generated 2 warnings (run `cargo fix --bin "semantic_monster_mapping" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "enum_string_lattice") generated 2 warnings (run `cargo fix --bin "enum_string_lattice" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "rdf_linked_data_generator") generated 1 warning (run `cargo fix --bin "rdf_linked_data_generator" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "perf_rustc_tracer") generated 5 warnings (run `cargo fix --bin "perf_rustc_tracer" -p rust-eigenmatrix` to apply 3 suggestions)
+warning: unused imports: `HashMap`, `HashSet`, and `VecDeque`
+ --> trace_run_compiler.rs:2:24
+  |
+2 | use std::collections::{HashMap, HashSet, VecDeque};
+  |                        ^^^^^^^  ^^^^^^^  ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::collections::HashMap`
+ --> monster_group_connection.rs:1:5
+  |
+1 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `execution_path` is never read
+  --> number_name_codec_extractor.rs:67:5
+   |
+64 | struct NumberToNameMapping {
+   |        ------------------- field in this struct
+...
+67 |     execution_path: Vec<u64>,
+   |     ^^^^^^^^^^^^^^
+   |
+   = note: `NumberToNameMapping` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: variants `Hash` and `Linear` are never constructed
+  --> number_name_codec_extractor.rs:91:5
+   |
+88 | enum FunctionType {
+   |      ------------ variants in this enum
+...
+91 |     Hash,   // Hash-based mapping
+   |     ^^^^
+92 |     Linear, // Linear transformation
+   |     ^^^^^^
+   |
+   = note: `FunctionType` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: unused variable: `i`
+   --> full_rustc_lattice_analyzer.rs:310:10
+    |
+310 |     for (i, (&prime, &sum)) in primes.iter().zip(coordinate_sums.iter()).enumerate() {
+    |          ^ help: if this is intentional, prefix it with an underscore: `_i`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `prime_sums` is never read
+   --> full_rustc_lattice_analyzer.rs:413:5
+    |
+405 | struct MegaPole {
+    |        -------- field in this struct
+...
+413 |     prime_sums: Vec<u64>,
+    |     ^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `lmfdb`
+  --> decompilation_proof_validator.rs:30:17
+   |
+30 |             let lmfdb = parts[4];
+   |                 ^^^^^ help: if this is intentional, prefix it with an underscore: `_lmfdb`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `address`
+  --> decompilation_proof_validator.rs:88:5
+   |
+88 |     address: &str,
+   |     ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_address`
+
+warning: unused variable: `results`
+   --> decompilation_proof_validator.rs:160:5
+    |
+160 |     results: &HashMap<String, ValidationResult>,
+    |     ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_results`
+
+warning: field `extracted_strings` is never read
+   --> decompilation_proof_validator.rs:251:5
+    |
+244 | struct ValidationResult {
+    |        ---------------- field in this struct
+...
+251 |     extracted_strings: String,
+    |     ^^^^^^^^^^^^^^^^^
+    |
+    = note: `ValidationResult` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `libp2p::PeerId`
+ --> unified_p2p_server.rs:5:5
+  |
+5 | use libp2p::PeerId;
+  |     ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::ffi::CString`
+ --> unified_p2p_server.rs:8:5
+  |
+8 | use std::ffi::CString;
+  |     ^^^^^^^^^^^^^^^^^
+
+warning: fields `event_registry`, `stored_data`, `results`, and `nix_manager` are never read
+   --> unified_p2p_server.rs:144:5
+    |
+141 | pub struct UnifiedP2PServer {
+    |            ---------------- fields in this struct
+...
+144 |     event_registry: HashMap<String, Vec<u32>>,
+    |     ^^^^^^^^^^^^^^
+145 |     stored_data: HashMap<String, Vec<u8>>,
+    |     ^^^^^^^^^^^
+146 |     results: HashMap<String, Vec<u8>>,
+    |     ^^^^^^^
+...
+168 |     nix_manager: NixManager,
+    |     ^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: method `find_call_only_functions` is never used
+   --> unified_p2p_server.rs:814:8
+    |
+171 | impl UnifiedP2PServer {
+    | --------------------- method in this implementation
+...
+814 |     fn find_call_only_functions(&self) -> Result<(), Box<dyn std::error::Error>> {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: type alias `DebugFmtFn` is never used
+  --> enum_string_caller.rs:16:6
+   |
+16 | type DebugFmtFn = unsafe extern "C" fn(*const c_void, *mut c_void) -> i32;
+   |      ^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `dlsym` is never used
+ --> enum_string_caller.rs:9:8
+  |
+9 |     fn dlsym(handle: *mut c_void, symbol: *const c_char) -> *mut c_void;
+  |        ^^^^^
+
+warning: unused import: `std::ffi::CString`
+ --> ptrace_parser_interceptor.rs:3:5
+  |
+3 | use std::ffi::CString;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::collections::HashMap`
+ --> huggingface_dataset_exporter.rs:2:5
+  |
+2 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::collections::HashMap`
+ --> signature_filter.rs:2:5
+  |
+2 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `sample_num`
+  --> three_sample_analyzer.rs:74:53
+   |
+74 | fn analyze_sample_function(sample: &SampleFunction, sample_num: usize) {
+   |                                                     ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_sample_num`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `i`
+  --> three_sample_analyzer.rs:88:14
+   |
+88 |         for (i, (&prime, &coord)) in primes.iter().zip(coordinates.iter()).enumerate() {
+   |              ^ help: if this is intentional, prefix it with an underscore: `_i`
+
+warning: fields `depth_distribution` and `monster_correlations` are never read
+  --> syn_monster_topology.rs:12:5
+   |
+10 | struct SynTopology {
+   |        ----------- fields in this struct
+11 |     node_counts: HashMap<String, u64>,
+12 |     depth_distribution: Vec<u64>,
+   |     ^^^^^^^^^^^^^^^^^^
+13 |     symmetry_groups: HashMap<u64, Vec<String>>,
+14 |     monster_correlations: HashMap<u64, f64>,
+   |     ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `SynTopology` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::fs`
+ --> src/bin/libp2p2_server.rs:3:5
+  |
+3 | use std::fs;
+  |     ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `VecDeque`
+ --> symbolic_execution_engine.rs:4:33
+  |
+4 | use std::collections::{HashMap, VecDeque};
+  |                                 ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `find_next_execution_addresses` is never used
+   --> symbolic_execution_engine.rs:349:4
+    |
+349 | fn find_next_execution_addresses(binary: &[u8], _elf: &Elf, current_address: u64) -> Vec<u64> {
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `rust-eigenmatrix` (bin "trace_run_compiler") generated 1 warning (run `cargo fix --bin "trace_run_compiler" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "monster_group_connection") generated 1 warning (run `cargo fix --bin "monster_group_connection" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "number_name_codec_extractor") generated 2 warnings
+warning: `rust-eigenmatrix` (bin "full_rustc_lattice_analyzer") generated 2 warnings (run `cargo fix --bin "full_rustc_lattice_analyzer" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "decompilation_proof_validator") generated 4 warnings (run `cargo fix --bin "decompilation_proof_validator" -p rust-eigenmatrix` to apply 3 suggestions)
+warning: `rust-eigenmatrix` (bin "unified_p2p_server") generated 4 warnings (run `cargo fix --bin "unified_p2p_server" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "enum_string_caller") generated 2 warnings
+warning: `rust-eigenmatrix` (bin "ptrace_parser_interceptor") generated 1 warning (run `cargo fix --bin "ptrace_parser_interceptor" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "huggingface_dataset_exporter") generated 1 warning (run `cargo fix --bin "huggingface_dataset_exporter" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "signature-filter") generated 1 warning (run `cargo fix --bin "signature-filter" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "three_sample_analyzer") generated 2 warnings (run `cargo fix --bin "three_sample_analyzer" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "syn_monster_topology") generated 1 warning
+warning: `rust-eigenmatrix` (bin "libp2p2_server") generated 1 warning (run `cargo fix --bin "libp2p2_server" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "symbolic_execution_engine") generated 2 warnings (run `cargo fix --bin "symbolic_execution_engine" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: unnecessary parentheses around block return value
+   --> src/bin/ast_lmfdb_mapper.rs:208:9
+    |
+208 |         (type_name.len() % 3)
+    |         ^                   ^
+    |
+    = note: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
+help: remove these parentheses
+    |
+208 -         (type_name.len() % 3)
+208 +         type_name.len() % 3 
+    |
+
+warning: unused import: `goblin::elf::Elf`
+ --> step4_install_trampolines.rs:1:5
+  |
+1 | use goblin::elf::Elf;
+  |     ^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `CStr`
+ --> step4_install_trampolines.rs:4:16
+  |
+4 | use std::ffi::{CStr, CString};
+  |                ^^^^
+
+warning: variable `loaded_path` is assigned to, but never used
+  --> step4_install_trampolines.rs:48:9
+   |
+48 |     let mut loaded_path = String::new();
+   |         ^^^^^^^^^^^^^^^
+   |
+   = note: consider using `_loaded_path` instead
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: value assigned to `loaded_path` is never read
+  --> step4_install_trampolines.rs:55:13
+   |
+55 |             loaded_path = path.to_string();
+   |             ^^^^^^^^^^^
+   |
+   = help: maybe it is overwritten before being read?
+   = note: `#[warn(unused_assignments)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `wrapper_code`
+   --> step4_install_trampolines.rs:143:9
+    |
+143 |     let wrapper_code = create_wrapper_code(original_func, func_name)?;
+    |         ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_wrapper_code`
+
+warning: unused variable: `original_func`
+   --> step4_install_trampolines.rs:172:5
+    |
+172 |     original_func: *mut c_void,
+    |     ^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_original_func`
+
+warning: fields `original_address`, `wrapper_address`, and `original_bytes` are never read
+  --> step4_install_trampolines.rs:24:5
+   |
+23 | struct TrampolineInfo {
+   |        -------------- fields in this struct
+24 |     original_address: *mut c_void,
+   |     ^^^^^^^^^^^^^^^^
+25 |     wrapper_address: *mut c_void,
+   |     ^^^^^^^^^^^^^^^
+26 |     original_bytes: Vec<u8>,
+   |     ^^^^^^^^^^^^^^
+   |
+   = note: `TrampolineInfo` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `dlclose` is never used
+  --> step4_install_trampolines.rs:12:8
+   |
+12 |     fn dlclose(handle: *mut c_void) -> i32;
+   |        ^^^^^^^
+
+warning: function `dlerror` is never used
+  --> step4_install_trampolines.rs:13:8
+   |
+13 |     fn dlerror() -> *mut c_char;
+   |        ^^^^^^^
+
+warning: unused import: `goblin::elf::Elf`
+ --> src/bin/test_p2p_verbs.rs:1:5
+  |
+1 | use goblin::elf::Elf;
+  |     ^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::fs`
+ --> src/bin/test_p2p_verbs.rs:2:5
+  |
+2 | use std::fs;
+  |     ^^^^^^^
+
+warning: unused import: `std::path::Path`
+ --> src/bin/test_p2p_verbs.rs:3:5
+  |
+3 | use std::path::Path;
+  |     ^^^^^^^^^^^^^^^
+
+warning: unused import: `std::collections::HashSet`
+ --> plantuml_generator.rs:2:5
+  |
+2 | use std::collections::HashSet;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `nesting_depth`
+  --> comprehensive_enum_analysis.rs:33:13
+   |
+33 |         let nesting_depth = enum_name.matches("::").count();
+   |             ^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_nesting_depth`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `modular_key`
+  --> comprehensive_enum_analysis.rs:59:21
+   |
+59 |     for (enum_name, modular_key, level, weight, hotness, _) in &enum_modular_forms {
+   |                     ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_modular_key`
+
+warning: field `auto_generated` is never read
+  --> auto_test_suggestions.rs:67:5
+   |
+64 | struct TestFeature {
+   |        ----------- field in this struct
+...
+67 |     auto_generated: bool,
+   |     ^^^^^^^^^^^^^^
+   |
+   = note: `TestFeature` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `results` is never read
+   --> auto_test_suggestions.rs:213:5
+    |
+209 | struct ExperimentResults {
+    |        ----------------- field in this struct
+...
+213 |     results: HashMap<String, bool>,
+    |     ^^^^^^^
+    |
+    = note: `ExperimentResults` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+
+warning: unused variable: `j`
+   --> modular_prime_lattice_generator.rs:184:34
+    |
+184 |         for ((&residue, &count), j) in sorted_residues.iter().zip(0..5) {
+    |                                  ^ help: if this is intentional, prefix it with an underscore: `_j`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `dimension` is never read
+   --> modular_prime_lattice_generator.rs:272:5
+    |
+267 | struct LatticePoint {
+    |        ------------ field in this struct
+...
+272 |     dimension: usize,
+    |     ^^^^^^^^^
+    |
+    = note: `LatticePoint` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `func_type`
+   --> address_learning_system.rs:141:14
+    |
+141 |         for (func_type, functions) in &by_type {
+    |              ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_func_type`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `func_type`
+   --> address_learning_system.rs:157:14
+    |
+157 |         for (func_type, functions) in &by_type {
+    |              ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_func_type`
+
+warning: field `name` is never read
+  --> address_learning_system.rs:21:5
+   |
+20 | struct LearnedFunction {
+   |        --------------- field in this struct
+21 |     name: String,
+   |     ^^^^
+   |
+   = note: `LearnedFunction` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: variant `Codegen` is never constructed
+  --> address_learning_system.rs:32:5
+   |
+29 | enum FunctionType {
+   |      ------------ variant in this enum
+...
+32 |     Codegen,
+   |     ^^^^^^^
+   |
+   = note: `FunctionType` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: unused import: `serde_json::Value`
+ --> sqrt_validator.rs:1:5
+  |
+1 | use serde_json::Value;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::collections::HashMap`
+ --> sqrt_validator.rs:2:5
+  |
+2 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `rust-eigenmatrix` (bin "ast_lmfdb_mapper") generated 1 warning (run `cargo fix --bin "ast_lmfdb_mapper" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "step4_install_trampolines") generated 9 warnings (run `cargo fix --bin "step4_install_trampolines" -p rust-eigenmatrix` to apply 4 suggestions)
+warning: `rust-eigenmatrix` (bin "test_p2p_verbs") generated 3 warnings (run `cargo fix --bin "test_p2p_verbs" -p rust-eigenmatrix` to apply 3 suggestions)
+warning: `rust-eigenmatrix` (bin "plantuml_generator") generated 1 warning (run `cargo fix --bin "plantuml_generator" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "comprehensive_enum_analysis") generated 2 warnings (run `cargo fix --bin "comprehensive_enum_analysis" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "auto_test_suggestions") generated 2 warnings
+warning: `rust-eigenmatrix` (bin "modular_prime_lattice_generator") generated 2 warnings (run `cargo fix --bin "modular_prime_lattice_generator" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "address_learning_system") generated 4 warnings (run `cargo fix --bin "address_learning_system" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "sqrt_validator") generated 2 warnings (run `cargo fix --bin "sqrt_validator" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: unused import: `lib_zombie::crate_loader::ZombieSOSystem`
+ --> lib-zombie/src/bin/zombie_rustc.rs:1:5
+  |
+1 | use lib_zombie::crate_loader::ZombieSOSystem;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused imports: `CStr` and `CString`
+ --> lib-zombie/src/bin/zombie_rustc.rs:3:16
+  |
+3 | use std::ffi::{CStr, CString};
+  |                ^^^^  ^^^^^^^
+
+warning: variable does not need to be mutable
+  --> lib-zombie/src/bin/zombie_rustc.rs:84:9
+   |
+84 |     let mut total_essential_arrows = 0;
+   |         ----^^^^^^^^^^^^^^^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable `metadata` is assigned to, but never used
+   --> lib-zombie/src/bin/zombie_rustc.rs:158:9
+    |
+158 |     let mut metadata = "".to_string();
+    |         ^^^^^^^^^^^^
+    |
+    = note: consider using `_metadata` instead
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: value assigned to `metadata` is never read
+   --> lib-zombie/src/bin/zombie_rustc.rs:176:21
+    |
+176 |                     metadata = flag[9..].to_string();
+    |                     ^^^^^^^^
+    |
+    = help: maybe it is overwritten before being read?
+    = note: `#[warn(unused_assignments)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `json`
+ --> frequency_analysis.rs:1:25
+  |
+1 | use serde_json::{Value, json};
+  |                         ^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unnecessary parentheses around type
+   --> symbol_monster_morse_analysis.rs:330:24
+    |
+330 |     critical_points: &[((&str, f64, f64, usize))],
+    |                        ^                       ^
+    |
+    = note: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
+help: remove these parentheses
+    |
+330 -     critical_points: &[((&str, f64, f64, usize))],
+330 +     critical_points: &[(&str, f64, f64, usize)],
+    |
+
+warning: unnecessary parentheses around closure body
+   --> symbol_monster_morse_analysis.rs:344:42
+    |
+344 |                 .filter(|(_, pos, _, _)| ((*pos - sym.address as f64).abs() < 1000.0))
+    |                                          ^                                          ^
+    |
+help: remove these parentheses
+    |
+344 -                 .filter(|(_, pos, _, _)| ((*pos - sym.address as f64).abs() < 1000.0))
+344 +                 .filter(|(_, pos, _, _)| (*pos - sym.address as f64).abs() < 1000.0)
+    |
+
+warning: fields `size` and `bytes` are never read
+  --> symbol_monster_morse_analysis.rs:15:5
+   |
+12 | struct SymbolMonsterData {
+   |        ----------------- fields in this struct
+...
+15 |     size: u64,
+   |     ^^^^
+16 |     bytes: Vec<u8>,
+   |     ^^^^^
+   |
+   = note: `SymbolMonsterData` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::collections::HashMap`
+ --> custom_demangler.rs:2:5
+  |
+2 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::fs`
+ --> traced_meta_simulator.rs:2:5
+  |
+2 | use std::fs;
+  |     ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused macro definition: `construct_language`
+  --> rust_language_constructor.rs:74:14
+   |
+74 | macro_rules! construct_language {
+   |              ^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_macros)]` (part of `#[warn(unused)]`) on by default
+
+warning: fields `address`, `weight`, `instruction_count`, `call_count`, and `constant_count` are never read
+   --> rust_language_constructor.rs:114:5
+    |
+113 | struct FunctionClassification {
+    |        ---------------------- fields in this struct
+114 |     address: u64,
+    |     ^^^^^^^
+115 |     complexity_level: ComplexityLevel,
+116 |     weight: f64,
+    |     ^^^^^^
+117 |     instruction_count: u32,
+    |     ^^^^^^^^^^^^^^^^^
+118 |     call_count: u32,
+    |     ^^^^^^^^^^
+119 |     constant_count: u32,
+    |     ^^^^^^^^^^^^^^
+    |
+    = note: `FunctionClassification` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: fields `start_address`, `end_address`, and `instructions` are never read
+   --> rust_language_constructor.rs:124:5
+    |
+123 | struct BasicBlock {
+    |        ---------- fields in this struct
+124 |     start_address: u64,
+    |     ^^^^^^^^^^^^^
+125 |     end_address: u64,
+    |     ^^^^^^^^^^^
+126 |     instructions: Vec<String>,
+    |     ^^^^^^^^^^^^
+    |
+    = note: `BasicBlock` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: unused macro definition: `decode_enum_arithmetic`
+  --> string_codec_extractor.rs:37:14
+   |
+37 | macro_rules! decode_enum_arithmetic {
+   |              ^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_macros)]` (part of `#[warn(unused)]`) on by default
+
+warning: method `predict_next_case` is never used
+  --> string_codec_extractor.rs:96:8
+   |
+78 | impl EnumArithmetic {
+   | ------------------- method in this implementation
+...
+96 |     fn predict_next_case(&self) -> u32 {
+   |        ^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `extract_numeric_value` is never used
+   --> string_codec_extractor.rs:350:4
+    |
+350 | fn extract_numeric_value(pattern: &str) -> Option<u32> {
+    |    ^^^^^^^^^^^^^^^^^^^^^
+
+warning: fields `nesting_depth`, `usage_count`, and `variant_signatures` are never read
+  --> enum_modular_analysis.rs:11:5
+   |
+ 6 | struct EnumModularForm {
+   |        --------------- fields in this struct
+...
+11 |     nesting_depth: usize,
+   |     ^^^^^^^^^^^^^
+12 |     usage_count: usize,
+   |     ^^^^^^^^^^^
+13 |     module_hotness: f64, // How "hot" this enum is in different topics
+14 |     variant_signatures: Vec<String>,
+   |     ^^^^^^^^^^^^^^^^^^
+   |
+   = note: `EnumModularForm` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `address` is never read
+   --> enum_string_validator.rs:295:5
+    |
+294 | struct ValidationResult {
+    |        ---------------- field in this struct
+295 |     address: String,
+    |     ^^^^^^^
+    |
+    = note: `ValidationResult` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::process::Command`
+ --> comprehensive_string_analysis.rs:6:5
+  |
+6 | use std::process::Command;
+  |     ^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `elf`
+   --> comprehensive_string_analysis.rs:193:5
+    |
+193 |     elf: &Elf,
+    |     ^^^ help: if this is intentional, prefix it with an underscore: `_elf`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+   --> automorphic_orbit_prover.rs:142:13
+    |
+142 |         let mut current = trace.address;
+    |             ----^^^^^^^
+    |             |
+    |             help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `symbol_name`
+  --> symbol_lmfdb_mapper.rs:56:41
+   |
+56 | fn generate_lmfdb_index(signature: u64, symbol_name: &str) -> LMFDBIndex {
+   |                                         ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_symbol_name`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: fields `character` and `dimension` are never read
+  --> symbol_lmfdb_mapper.rs:10:5
+   |
+ 6 | struct LMFDBIndex {
+   |        ---------- fields in this struct
+...
+10 |     character: String,
+   |     ^^^^^^^^^
+11 |     dimension: u32,
+   |     ^^^^^^^^^
+   |
+   = note: `LMFDBIndex` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `modular_signature` is never read
+  --> symbol_lmfdb_mapper.rs:19:5
+   |
+15 | struct SymbolLMFDBMapping {
+   |        ------------------ field in this struct
+...
+19 |     modular_signature: u64,
+   |     ^^^^^^^^^^^^^^^^^
+   |
+   = note: `SymbolLMFDBMapping` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+
+warning: unused import: `std::collections::HashSet`
+ --> provable_traced_simulator.rs:2:5
+  |
+2 | use std::collections::HashSet;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+  --> provable_traced_simulator.rs:52:9
+   |
+52 |     let mut meta_flow: Vec<String> = Vec::new();
+   |         ----^^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `meta_flow`
+  --> provable_traced_simulator.rs:52:9
+   |
+52 |     let mut meta_flow: Vec<String> = Vec::new();
+   |         ^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_meta_flow`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: `rust-eigenmatrix` (bin "zombie-rustc") generated 5 warnings (run `cargo fix --bin "zombie-rustc" -p rust-eigenmatrix` to apply 3 suggestions)
+warning: `rust-eigenmatrix` (bin "frequency-analysis") generated 1 warning (run `cargo fix --bin "frequency-analysis" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "symbol_monster_morse_analysis") generated 3 warnings (run `cargo fix --bin "symbol_monster_morse_analysis" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "custom_demangler") generated 1 warning (run `cargo fix --bin "custom_demangler" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "traced_meta_simulator") generated 1 warning (run `cargo fix --bin "traced_meta_simulator" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "rust_language_constructor") generated 3 warnings
+warning: `rust-eigenmatrix` (bin "string_codec_extractor") generated 3 warnings
+warning: `rust-eigenmatrix` (bin "enum_modular_analysis") generated 1 warning
+warning: `rust-eigenmatrix` (bin "enum_string_validator") generated 1 warning
+warning: `rust-eigenmatrix` (bin "comprehensive_string_analysis") generated 2 warnings (run `cargo fix --bin "comprehensive_string_analysis" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "automorphic_orbit_prover") generated 1 warning (run `cargo fix --bin "automorphic_orbit_prover" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "symbol_lmfdb_mapper") generated 3 warnings (run `cargo fix --bin "symbol_lmfdb_mapper" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "provable_traced_simulator") generated 3 warnings (run `cargo fix --bin "provable_traced_simulator" -p rust-eigenmatrix` to apply 3 suggestions)
+warning: unused variable: `node_type`
+   --> rustc_dataset_monster_analysis.rs:174:14
+    |
+174 |         for (node_type, &count) in &all_node_counts {
+    |              ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_node_type`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `binary`
+   --> instruction_decoding_proof.rs:146:5
+    |
+146 |     binary: &[u8],
+    |     ^^^^^^ help: if this is intentional, prefix it with an underscore: `_binary`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `elf`
+   --> instruction_decoding_proof.rs:147:5
+    |
+147 |     elf: &Elf,
+    |     ^^^ help: if this is intentional, prefix it with an underscore: `_elf`
+
+warning: field `raw` is never read
+  --> instruction_decoding_proof.rs:45:5
+   |
+43 | struct DecodedInstruction {
+   |        ------------------ field in this struct
+44 |     address: u64,
+45 |     raw: u32,
+   |     ^^^
+   |
+   = note: `DecodedInstruction` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `serde_json::Value`
+ --> meta_simulator.rs:1:5
+  |
+1 | use serde_json::Value;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::collections::HashMap`
+ --> monster_proof_42_steps.rs:4:5
+  |
+4 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `evidence`
+   --> monster_proof_42_steps.rs:273:5
+    |
+273 |     evidence: &mut MonsterEvidence,
+    |     ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_evidence`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `binary`
+   --> monster_proof_42_steps.rs:293:5
+    |
+293 |     binary: &[u8],
+    |     ^^^^^^ help: if this is intentional, prefix it with an underscore: `_binary`
+
+warning: unused variable: `binary`
+   --> monster_proof_42_steps.rs:365:27
+    |
+365 | fn detect_monster_pattern(binary: &[u8], pattern_id: u8) -> bool {
+    |                           ^^^^^^ help: if this is intentional, prefix it with an underscore: `_binary`
+
+warning: unused import: `json`
+ --> relationship_analysis.rs:1:25
+  |
+1 | use serde_json::{Value, json};
+  |                         ^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+  --> relationship_analysis.rs:19:9
+   |
+19 |     let mut feature_weights: HashMap<String, f64> = features
+   |         ----^^^^^^^^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `high_bits`
+  --> text_bit_analysis.rs:35:13
+   |
+35 |         let high_bits = instruction >> 24; // High byte
+   |             ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_high_bits`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `i`
+   --> duplicate_function_detector.rs:163:27
+    |
+163 |     for ((&size, &count), i) in sorted_sizes.iter().zip(0..10) {
+    |                           ^ help: if this is intentional, prefix it with an underscore: `_i`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `goblin::elf::Elf`
+ --> src/bin/p2p_lib_wrapper.rs:1:5
+  |
+1 | use goblin::elf::Elf;
+  |     ^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `i`
+  --> linux_gogobglabulab.rs:32:14
+   |
+32 |         for (i, line) in kallsyms.lines().take(50).enumerate() {
+   |              ^ help: if this is intentional, prefix it with an underscore: `_i`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `i`
+   --> linux_gogobglabulab.rs:101:10
+    |
+101 |     for (i, &(prime, address, ref system, ref name)) in all_assignments.iter().take(20).enumerate()
+    |          ^ help: if this is intentional, prefix it with an underscore: `_i`
+
+warning: unused variable: `class`
+   --> monster_lattice_system.rs:224:10
+    |
+224 |     for (class, indices) in class_groups {
+    |          ^^^^^ help: if this is intentional, prefix it with an underscore: `_class`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: constant `MONSTER_PRIMES` is never used
+ --> monster_lattice_system.rs:7:7
+  |
+7 | const MONSTER_PRIMES: [u64; 35] = [
+  |       ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `main` is never used
+   --> src/bin/p2p_lib_wrapper.rs:183:4
+    |
+183 | fn main() {
+    |    ^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `label_ngrams`
+   --> unified_monster_topology.rs:102:5
+    |
+102 |     label_ngrams: &Value,
+    |     ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_label_ngrams`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `ngram_map`
+   --> unified_monster_topology.rs:432:5
+    |
+432 |     ngram_map: &HashMap<String, Vec<(f64, f64, f64)>>,
+    |     ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_ngram_map`
+
+warning: unused variable: `i`
+  --> individual_symbol_analysis.rs:37:10
+   |
+37 |     for (i, sym) in elf.syms.iter().enumerate() {
+   |          ^ help: if this is intentional, prefix it with an underscore: `_i`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `reloc::RelocSection`
+ --> src/bin/symbol_counter.rs:1:24
+  |
+1 | use goblin::elf::{Elf, reloc::RelocSection};
+  |                        ^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+  --> src/bin/symbol_counter.rs:27:9
+   |
+27 |     let mut referenced_by = HashMap::<usize, Vec<String>>::new();
+   |         ----^^^^^^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+  --> src/bin/symbol_counter.rs:40:9
+   |
+40 |     let mut weighted_symbols: Vec<_> = elf.syms.iter().enumerate().take(100).collect();
+   |         ----^^^^^^^^^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+
+warning: unused variable: `referenced_by`
+  --> src/bin/symbol_counter.rs:27:9
+   |
+27 |     let mut referenced_by = HashMap::<usize, Vec<String>>::new();
+   |         ^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_referenced_by`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: `rust-eigenmatrix` (bin "rustc_dataset_monster_analysis") generated 1 warning (run `cargo fix --bin "rustc_dataset_monster_analysis" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "instruction_decoding_proof") generated 3 warnings (run `cargo fix --bin "instruction_decoding_proof" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "meta_simulator") generated 1 warning (run `cargo fix --bin "meta_simulator" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "monster_proof_42_steps") generated 4 warnings (run `cargo fix --bin "monster_proof_42_steps" -p rust-eigenmatrix` to apply 4 suggestions)
+warning: `rust-eigenmatrix` (bin "relationship-analysis") generated 2 warnings (run `cargo fix --bin "relationship-analysis" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "text_bit_analysis") generated 1 warning (run `cargo fix --bin "text_bit_analysis" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "duplicate_function_detector") generated 1 warning (run `cargo fix --bin "duplicate_function_detector" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "p2p_lib_wrapper") generated 1 warning (run `cargo fix --bin "p2p_lib_wrapper" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "linux_gogobglabulab") generated 2 warnings (run `cargo fix --bin "linux_gogobglabulab" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "monster_lattice_system") generated 2 warnings (run `cargo fix --bin "monster_lattice_system" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "real_lib_test") generated 2 warnings (1 duplicate)
+warning: `rust-eigenmatrix` (bin "unified_monster_topology") generated 2 warnings (run `cargo fix --bin "unified_monster_topology" -p rust-eigenmatrix` to apply 2 suggestions)
+warning: `rust-eigenmatrix` (bin "individual_symbol_analysis") generated 1 warning (run `cargo fix --bin "individual_symbol_analysis" -p rust-eigenmatrix` to apply 1 suggestion)
+warning: `rust-eigenmatrix` (bin "symbol_counter") generated 4 warnings (run `cargo fix --bin "symbol_counter" -p rust-eigenmatrix` to apply 4 suggestions)
+error[E0255]: the name `AutoExperiment` is defined multiple times
+   --> evolving_rust_consumer.rs:369:1
+    |
+ 21 | use experiment::runner::AutoExperiment;
+    |     ---------------------------------- previous import of the type `AutoExperiment` here
+...
+369 | struct AutoExperiment {
+    | ^^^^^^^^^^^^^^^^^^^^^ `AutoExperiment` redefined here
+    |
+    = note: `AutoExperiment` must be defined only once in the type namespace of this module
+help: you can use `as` to change the binding name of the import
+    |
+ 21 | use experiment::runner::AutoExperiment as OtherAutoExperiment;
+    |                                        ++++++++++++++++++++++
+
+error[E0255]: the name `TestFeature` is defined multiple times
+   --> evolving_rust_consumer.rs:297:1
+    |
+ 20 | use experiment::types::TestFeature;
+    |     ------------------------------ previous import of the type `TestFeature` here
+...
+297 | struct TestFeature {
+    | ^^^^^^^^^^^^^^^^^^ `TestFeature` redefined here
+    |
+    = note: `TestFeature` must be defined only once in the type namespace of this module
+help: you can use `as` to change the binding name of the import
+    |
+ 20 | use experiment::types::TestFeature as OtherTestFeature;
+    |                                    +++++++++++++++++++
+
+warning: unused import: `std::collections::HashMap`
+ --> evolving_rust_consumer.rs:3:5
+  |
+3 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `experiment::types::TestFeature`
+  --> evolving_rust_consumer.rs:20:5
+   |
+20 | use experiment::types::TestFeature;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `experiment::runner::AutoExperiment`
+  --> evolving_rust_consumer.rs:21:5
+   |
+21 | use experiment::runner::AutoExperiment;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0308]: mismatched types
+  --> random/binary_entropy.rs:13:78
+   |
+13 |                 if let Some(entropy) = extract_symbol_entropy(&binary, &elf, sym, arg) {
+   |                                        ----------------------                ^^^ expected `&Sym`, found `Sym`
+   |                                        |
+   |                                        arguments to this function are incorrect
+   |
+note: function defined here
+  --> random/binary_entropy.rs:23:4
+   |
+23 | fn extract_symbol_entropy(binary: &[u8], elf: &Elf, sym: &goblin::elf::Sym, arg: u64) -> Option<f64> {
+   |    ^^^^^^^^^^^^^^^^^^^^^^                           ----------------------
+help: consider borrowing here
+   |
+13 |                 if let Some(entropy) = extract_symbol_entropy(&binary, &elf, &sym, arg) {
+   |                                                                              +
+
+error[E0308]: mismatched types
+   --> evolving_rust_consumer.rs:75:41
+    |
+ 62 | /                                     if func_start + func_size <= text_bytes.len() {
+ 63 | |                                         let func_bytes = &text_bytes[func_start..func_start + func_size];
+...   |
+ 75 | |                                         ((entropy >> 16) & 0xFFFFFFFF) as f64 / 4294967296.0
+    | |                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `()`, found `f64`
+ 76 | |                                     }
+    | |_____________________________________- expected this to be `()`
+...
+398 |               let result = mkfun!("rand", "bool", feature.name.len() + feature.complexity as usize);
+    |                            ------------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `mkfun` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using a semicolon here
+    |
+ 76 |                                     };
+    |                                      +
+help: you might have meant to break the loop with this value
+    |
+ 75 |                                         break ((entropy >> 16) & 0xFFFFFFFF) as f64 / 4294967296.0;
+    |                                         +++++                                                     +
+
+Some errors have detailed explanations: E0255, E0308.
+For more information about an error, try `rustc --explain E0255`.
+warning: `rust-eigenmatrix` (bin "evolving_rust_consumer") generated 3 warnings
+error: could not compile `rust-eigenmatrix` (bin "evolving_rust_consumer") due to 4 previous errors; 3 warnings emitted

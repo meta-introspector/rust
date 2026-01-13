@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# Disable GNU pinentry
+export GPG_TTY=""
+export PINENTRY_USER_DATA="USE_CURSES=0"
+
 if [[ "$1" == "-vV" ]]; then
     rustc -vV
 else

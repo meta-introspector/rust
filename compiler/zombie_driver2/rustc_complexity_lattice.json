@@ -1,0 +1,45 @@
+{
+  "max_complexity": 6,
+  "orbit_count": 3,
+  "orbits": [
+    {
+      "associativity": true,
+      "closure": true,
+      "generator_count": 5,
+      "generators": [
+        "rustc_hir",
+        "nix",
+        "impl core",
+        "aho_corasick",
+        "rustc_errors"
+      ],
+      "length": 20,
+      "level": 4
+    },
+    {
+      "associativity": true,
+      "closure": true,
+      "generator_count": 5,
+      "generators": [
+        "rustc_hir",
+        "rustc_middle",
+        "rustc_ast",
+        "impl core",
+        "rustc_type_ir"
+      ],
+      "length": 26,
+      "level": 5
+    },
+    {
+      "associativity": true,
+      "closure": false,
+      "generator_count": 1,
+      "generators": [
+        "rustc_apfloat"
+      ],
+      "length": 4,
+      "level": 6
+    }
+  ],
+  "total_functions": 50
+}

@@ -1,0 +1,220 @@
+{
+  "novel_blocks": 16554,
+  "novelty_rate": 28.861342120403787,
+  "similar_tools": [
+    {
+      "shared_blocks": 4902998,
+      "similarity_percent": 8548.212075248008,
+      "tool": "libsyn_analyzer.so"
+    },
+    {
+      "shared_blocks": 1824992,
+      "similarity_percent": 3181.8121589343937,
+      "tool": "graph_analyzer"
+    },
+    {
+      "shared_blocks": 1255199,
+      "similarity_percent": 2188.3972313754207,
+      "tool": "basic_block_analyzer"
+    },
+    {
+      "shared_blocks": 1099640,
+      "similarity_percent": 1917.1853479087122,
+      "tool": "complete_binary_analyzer"
+    },
+    {
+      "shared_blocks": 1082094,
+      "similarity_percent": 1886.5944871593701,
+      "tool": "comprehensive_string_analysis"
+    },
+    {
+      "shared_blocks": 1029404,
+      "similarity_percent": 1794.7312446606343,
+      "tool": "main_dependency_analyzer"
+    },
+    {
+      "shared_blocks": 955092,
+      "similarity_percent": 1665.170772529944,
+      "tool": "individual_symbol_analysis"
+    },
+    {
+      "shared_blocks": 932412,
+      "similarity_percent": 1625.6289554893037,
+      "tool": "duplicate_block_detector"
+    },
+    {
+      "shared_blocks": 928433,
+      "similarity_percent": 1618.6917028435935,
+      "tool": "label_ngram_monster_analysis"
+    },
+    {
+      "shared_blocks": 913784,
+      "similarity_percent": 1593.1516641386404,
+      "tool": "call_count_analyzer"
+    }
+  ],
+  "target_binary": "semantic_signature_generator",
+  "top_novel_blocks": [
+    {
+      "address": "0x56c11",
+      "function": "core::unicode::unicode_data::white_space::lookup::h409d748760635c2f",
+      "hash": "a93569e45b07e15e",
+      "instruction_pattern": "35 48 8b 4c 24 10 48 8b 05 aa 2a 10 00 8a 04 08",
+      "size": 29,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56c33",
+      "function": "core::unicode::unicode_data::white_space::lookup::h409d748760635c2f",
+      "hash": "71ecc3a5d07323a4",
+      "instruction_pattern": "24 10 be 00 01 00 00 48 8d 15 97 6e 0f 00 ff 15",
+      "size": 30,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56c52",
+      "function": "core::unicode::unicode_data::white_space::lookup::h409d748760635c2f",
+      "hash": "3a9e055c24c5f75f",
+      "instruction_pattern": "48 8b 4c 24 08 48 8b 05 6a 2a 10 00 8a 04 08 24",
+      "size": 28,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56c73",
+      "function": "core::unicode::unicode_data::white_space::lookup::h409d748760635c2f",
+      "hash": "0fc2b687695793a9",
+      "instruction_pattern": "24 08 be 00 01 00 00 48 8d 15 6f 6e 0f 00 ff 15",
+      "size": 20,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56d17",
+      "function": "core::ub_checks::maybe_is_nonoverlapping::runtime::hb532dab9a6f18d7b",
+      "hash": "ac8b34c6a7f7abac",
+      "instruction_pattern": "12 48 8d 3d 9f 2f fc ff be 3d 00 00 00 ff 15 b6",
+      "size": 37,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56da2",
+      "function": "core::ops::try_trait::NeverShortCircuit<T>::wrap_mut_2::{{closure}}::h410ba56b0ac6a024",
+      "hash": "66f66e8af4b344b8",
+      "instruction_pattern": "da a0 02 00 48 83 c4 38 c3",
+      "size": 9,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x571a7",
+      "function": "<serde_core::de::impls::<impl serde_core::de::Deserialize for alloc::vec::Vec<T>>::deserialize::VecVisitor<T> as serde_core::de::Visitor>::expecting::h650b58ad8f26fe31",
+      "hash": "8af8fed2ed16a8d8",
+      "instruction_pattern": "24 10 48 8d 35 10 2f fc ff ba 0a 00 00 00 ff 15",
+      "size": 27,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x571e7",
+      "function": "<serde_core::de::impls::<impl serde_core::de::Deserialize for alloc::vec::Vec<T>>::deserialize::VecVisitor<T> as serde_core::de::Visitor>::expecting::h7d6f0ded053e8180",
+      "hash": "ade404d9fd400ba2",
+      "instruction_pattern": "24 10 48 8d 35 d0 2e fc ff ba 0a 00 00 00 ff 15",
+      "size": 27,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x57607",
+      "function": "<serde_core::de::impls::<impl serde_core::de::Deserialize for std::collections::hash::map::HashMap<K,V,S>>::deserialize::MapVisitor<K,V,S> as serde_core::de::Visitor>::expecting::h74f8c9bf2fd15338",
+      "hash": "0eed8378205e6440",
+      "instruction_pattern": "24 10 48 8d 35 ba 2a fc ff ba 05 00 00 00 ff 15",
+      "size": 27,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x5764d",
+      "function": "<serde_core::de::impls::<impl serde_core::de::Deserialize for std::collections::hash::map::HashMap<K,V,S>>::deserialize::MapVisitor<K,V,S> as serde_core::de::Visitor>::expecting::hf34555142a6b279a",
+      "hash": "b127d5ef1379c156",
+      "instruction_pattern": "2a fc ff ba 05 00 00 00 ff 15 9d 20 10 00 24 01",
+      "size": 21,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56dc6",
+      "function": "serde_core::de::impls::<impl serde_core::de::Deserialize for f64>::deserialize::h0e15a18ae20071c6",
+      "hash": "07121f5845ce6bef",
+      "instruction_pattern": "66 f1 03 00 48 8b 04 24 48 83 c4 18 c3",
+      "size": 13,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56df2",
+      "function": "serde_core::de::impls::<impl serde_core::de::Deserialize for f64>::deserialize::h923e13f63c99103b",
+      "hash": "813903e76240459b",
+      "instruction_pattern": "aa f0 00 00 48 8b 44 24 08 48 83 c4 18 c3",
+      "size": 14,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56e0f",
+      "function": "serde_core::de::impls::<impl serde_core::de::Deserialize for u64>::deserialize::hc3a01aeaf1bead1f",
+      "hash": "8db5f07bc87b46b1",
+      "instruction_pattern": "0d f2 03 00 48 83 c4 18 c3",
+      "size": 9,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56e42",
+      "function": "serde_core::de::impls::<impl serde_core::de::Deserialize for bool>::deserialize::h7c216ceb995ec482",
+      "hash": "ad37e232b41962cc",
+      "instruction_pattern": "6a 0e 01 00 48 8b 44 24 08 48 83 c4 18 c3",
+      "size": 14,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56e66",
+      "function": "serde_core::de::impls::<impl serde_core::de::Deserialize for bool>::deserialize::ha98a5a96c8e3e9ae",
+      "hash": "36ac5ff5756f99d1",
+      "instruction_pattern": "f6 f1 03 00 48 8b 04 24 48 83 c4 18 c3",
+      "size": 13,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56e86",
+      "function": "serde_core::de::impls::<impl serde_core::de::Deserialize for usize>::deserialize::h0e9df9c285ac0c1c",
+      "hash": "72df3df0efe0cec5",
+      "instruction_pattern": "06 0e 01 00 59 c3",
+      "size": 6,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56e9f",
+      "function": "serde_core::de::impls::<impl serde_core::de::Deserialize for usize>::deserialize::h9b60ef91a1637ee1",
+      "hash": "96a79cd71c7e0f4f",
+      "instruction_pattern": "9d f1 03 00 48 83 c4 18 c3",
+      "size": 9,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56eb0",
+      "function": "serde_core::de::Visitor::visit_f64::h68f5093dfcbb720d",
+      "hash": "fdb801cdd9bf0ebf",
+      "instruction_pattern": "48 83 ec 48 f2 0f 11 44 24 30 f2 0f 11 44 24 20",
+      "size": 37,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56eec",
+      "function": "serde_core::de::Visitor::visit_f64::h68f5093dfcbb720d",
+      "hash": "654453d28c1384a3",
+      "instruction_pattern": "80 5b 0f 00 48 89 c1 89 d0 48 89 4c 24 38 89 44",
+      "size": 18,
+      "uniqueness": 1.0
+    },
+    {
+      "address": "0x56f10",
+      "function": "serde_core::de::Visitor::visit_f64::h942eed28baf811d4",
+      "hash": "3d2d80388b32fad7",
+      "instruction_pattern": "48 83 ec 48 f2 0f 11 44 24 30 f2 0f 11 44 24 20",
+      "size": 37,
+      "uniqueness": 1.0
+    }
+  ],
+  "total_blocks": 57357
+}

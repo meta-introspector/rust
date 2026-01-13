@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# Disable GNU pinentry
+export GPG_TTY=""
+export PINENTRY_USER_DATA="USE_CURSES=0"
+
 # Zombie Autorepair Script - Fixes missing .so files from strace logs
 
 set -e

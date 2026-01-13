@@ -1,0 +1,100 @@
+// Auto-generated automorphic execution trace
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum AutomorphicExecutionTrace {
+    // Main Execution Path
+    MainPath_0 = 0x400000,
+    MainPath_1 = 0x500000,
+    MainPath_2 = 0x432000,
+    MainPath_3 = 0x500000,
+    MainPath_4 = 0x400000,
+    // Automorphic Orbit 1
+    Orbit1_0 = 0x400000,
+    Orbit1_1 = 0x500000,
+    Orbit1_2 = 0x432000,
+    Orbit1_3 = 0x500000,
+    Orbit1_4 = 0x400000,
+    // Automorphic Orbit 2
+    Orbit2_0 = 0x400000,
+    Orbit2_1 = 0x500000,
+    Orbit2_2 = 0x432000,
+    Orbit2_3 = 0x500000,
+    Orbit2_4 = 0x400000,
+    // Automorphic Orbit 3
+    Orbit3_0 = 0x400000,
+    Orbit3_1 = 0x500000,
+    Orbit3_2 = 0x432000,
+    Orbit3_3 = 0x500000,
+    Orbit3_4 = 0x400000,
+    // Automorphic Orbit 4
+    Orbit4_0 = 0x400000,
+    Orbit4_1 = 0x500000,
+    Orbit4_2 = 0x432000,
+    Orbit4_3 = 0x500000,
+    Orbit4_4 = 0x400000,
+    // Automorphic Orbit 5
+    Orbit5_0 = 0x400000,
+    Orbit5_1 = 0x500000,
+    Orbit5_2 = 0x432000,
+    Orbit5_3 = 0x500000,
+    Orbit5_4 = 0x400000,
+}
+
+impl AutomorphicExecutionTrace {
+    pub fn address(&self) -> u64 { *self as u64 }
+    
+    pub fn is_automorphic_orbit(&self) -> bool {
+        match self {
+            AutomorphicExecutionTrace::Orbit1_0 => true,
+            AutomorphicExecutionTrace::Orbit1_1 => true,
+            AutomorphicExecutionTrace::Orbit1_2 => true,
+            AutomorphicExecutionTrace::Orbit1_3 => true,
+            AutomorphicExecutionTrace::Orbit1_4 => true,
+            AutomorphicExecutionTrace::Orbit1_5 => true,
+            AutomorphicExecutionTrace::Orbit1_6 => true,
+            AutomorphicExecutionTrace::Orbit1_7 => true,
+            AutomorphicExecutionTrace::Orbit1_8 => true,
+            AutomorphicExecutionTrace::Orbit1_9 => true,
+            AutomorphicExecutionTrace::Orbit2_0 => true,
+            AutomorphicExecutionTrace::Orbit2_1 => true,
+            AutomorphicExecutionTrace::Orbit2_2 => true,
+            AutomorphicExecutionTrace::Orbit2_3 => true,
+            AutomorphicExecutionTrace::Orbit2_4 => true,
+            AutomorphicExecutionTrace::Orbit2_5 => true,
+            AutomorphicExecutionTrace::Orbit2_6 => true,
+            AutomorphicExecutionTrace::Orbit2_7 => true,
+            AutomorphicExecutionTrace::Orbit2_8 => true,
+            AutomorphicExecutionTrace::Orbit2_9 => true,
+            AutomorphicExecutionTrace::Orbit3_0 => true,
+            AutomorphicExecutionTrace::Orbit3_1 => true,
+            AutomorphicExecutionTrace::Orbit3_2 => true,
+            AutomorphicExecutionTrace::Orbit3_3 => true,
+            AutomorphicExecutionTrace::Orbit3_4 => true,
+            AutomorphicExecutionTrace::Orbit3_5 => true,
+            AutomorphicExecutionTrace::Orbit3_6 => true,
+            AutomorphicExecutionTrace::Orbit3_7 => true,
+            AutomorphicExecutionTrace::Orbit3_8 => true,
+            AutomorphicExecutionTrace::Orbit3_9 => true,
+            AutomorphicExecutionTrace::Orbit4_0 => true,
+            AutomorphicExecutionTrace::Orbit4_1 => true,
+            AutomorphicExecutionTrace::Orbit4_2 => true,
+            AutomorphicExecutionTrace::Orbit4_3 => true,
+            AutomorphicExecutionTrace::Orbit4_4 => true,
+            AutomorphicExecutionTrace::Orbit4_5 => true,
+            AutomorphicExecutionTrace::Orbit4_6 => true,
+            AutomorphicExecutionTrace::Orbit4_7 => true,
+            AutomorphicExecutionTrace::Orbit4_8 => true,
+            AutomorphicExecutionTrace::Orbit4_9 => true,
+            AutomorphicExecutionTrace::Orbit5_0 => true,
+            AutomorphicExecutionTrace::Orbit5_1 => true,
+            AutomorphicExecutionTrace::Orbit5_2 => true,
+            AutomorphicExecutionTrace::Orbit5_3 => true,
+            AutomorphicExecutionTrace::Orbit5_4 => true,
+            AutomorphicExecutionTrace::Orbit5_5 => true,
+            AutomorphicExecutionTrace::Orbit5_6 => true,
+            AutomorphicExecutionTrace::Orbit5_7 => true,
+            AutomorphicExecutionTrace::Orbit5_8 => true,
+            AutomorphicExecutionTrace::Orbit5_9 => true,
+            _ => false,
+        }
+    }
+}

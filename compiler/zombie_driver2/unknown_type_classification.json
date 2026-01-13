@@ -1,0 +1,176 @@
+{
+  "analysis_type": "unknown_type_classification",
+  "classifications": [
+    {
+      "common_patterns": [
+        "param_&Unknown",
+        "param_&Unknown",
+        "param_&Unknown",
+        "param_&Unknown",
+        "param_&Unknown"
+      ],
+      "confidence": 0.015517241379310341,
+      "inferred_type": "String",
+      "occurrences": 348,
+      "pattern": "parameter_&Unknown",
+      "sample_functions": [
+        {
+          "context": "parameter",
+          "file": "./memory_structured_exporter.rs",
+          "function": "process_symbol",
+          "variable_names": [
+            "binary"
+          ]
+        },
+        {
+          "context": "parameter",
+          "file": "./memory_structured_exporter.rs",
+          "function": "extract_function_bytes",
+          "variable_names": [
+            "binary"
+          ]
+        },
+        {
+          "context": "parameter",
+          "file": "./cargo_hijack_system.rs",
+          "function": "execute_with_zombie_driver",
+          "variable_names": [
+            "build_order"
+          ]
+        },
+        {
+          "context": "parameter",
+          "file": "./symbol_monster_morse_analysis.rs",
+          "function": "analyze_symbols_monster",
+          "variable_names": [
+            "binary"
+          ]
+        },
+        {
+          "context": "parameter",
+          "file": "./symbol_monster_morse_analysis.rs",
+          "function": "calculate_monster_signature",
+          "variable_names": [
+            "bytes"
+          ]
+        }
+      ],
+      "trait_evidence": []
+    },
+    {
+      "common_patterns": [
+        "param_Unknown",
+        "param_Unknown",
+        "param_Unknown",
+        "param_Unknown",
+        "param_Unknown"
+      ],
+      "confidence": 0.0,
+      "inferred_type": "Unknown",
+      "occurrences": 32,
+      "pattern": "parameter_Unknown",
+      "sample_functions": [
+        {
+          "context": "parameter",
+          "file": "./syn-analyzer/src/lib.rs",
+          "function": "analyze_rust_file",
+          "variable_names": [
+            "file_path"
+          ]
+        },
+        {
+          "context": "parameter",
+          "file": "./syn-analyzer/src/lib.rs",
+          "function": "analyze_rust_file",
+          "variable_names": [
+            "content"
+          ]
+        },
+        {
+          "context": "parameter",
+          "file": "./char-analyzer/src/lib.rs",
+          "function": "analyze_char_transitions",
+          "variable_names": [
+            "file_path"
+          ]
+        },
+        {
+          "context": "parameter",
+          "file": "./char-analyzer/src/lib.rs",
+          "function": "analyze_char_transitions",
+          "variable_names": [
+            "content"
+          ]
+        },
+        {
+          "context": "parameter",
+          "file": "./lib-zombie/src/ty_wrapper.rs",
+          "function": "ty_execute_c",
+          "variable_names": [
+            "data"
+          ]
+        }
+      ],
+      "trait_evidence": []
+    },
+    {
+      "common_patterns": [
+        "return_Unknown",
+        "return_Unknown",
+        "return_Unknown",
+        "return_Unknown",
+        "return_Unknown"
+      ],
+      "confidence": 0.0,
+      "inferred_type": "Unknown",
+      "occurrences": 10,
+      "pattern": "return_Unknown",
+      "sample_functions": [
+        {
+          "context": "return",
+          "file": "./syn-analyzer/src/lib.rs",
+          "function": "analyze_rust_file",
+          "variable_names": []
+        },
+        {
+          "context": "return",
+          "file": "./char-analyzer/src/lib.rs",
+          "function": "analyze_char_transitions",
+          "variable_names": []
+        },
+        {
+          "context": "return",
+          "file": "./live_parser_interceptor.rs",
+          "function": "rustc_parse_crate_from_file",
+          "variable_names": []
+        },
+        {
+          "context": "return",
+          "file": "./live_parser_interceptor.rs",
+          "function": "rustc_parse_token_stream",
+          "variable_names": []
+        },
+        {
+          "context": "return",
+          "file": "./live_parser_interceptor.rs",
+          "function": "rustc_parse_expr",
+          "variable_names": []
+        }
+      ],
+      "trait_evidence": []
+    }
+  ],
+  "enhanced_io_matrix": {
+    "enhanced": true,
+    "note": "IO matrix enhanced with resolved Unknown types",
+    "resolved_types": 0
+  },
+  "summary": {
+    "files_analyzed": 316,
+    "high_confidence_resolutions": 0,
+    "total_signatures": 3838,
+    "unique_unknown_patterns": 3
+  },
+  "timestamp": "2026-01-12T11:32:02.497027154+00:00",
+  "type_mappings": {}
+}

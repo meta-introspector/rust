@@ -3,6 +3,10 @@
 
 set -e
 
+# Disable GNU pinentry
+export GPG_TTY=""
+export PINENTRY_USER_DATA="USE_CURSES=0"
+
 echo "🧟♂️ Zombie Rustc Driver Build System"
 echo "======================================"
 

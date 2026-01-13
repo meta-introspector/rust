@@ -43,29 +43,26 @@ impl CrateLoadOrder {
             "rustc_driver_impl".to_string(),
             "rustc_driver".to_string(),
         ];
-        
-        Self {
-            crates,
-            dependencies: HashMap::new(),
-        }
+
+        Self { crates, dependencies: HashMap::new() }
     }
 }
 
 struct CrateWrapper {
     name: String,
     library: Library,
-    entry_points: Vec<String>, // Just track entry point names
-    types: HashMap<String, String>,    // type name -> wrapper type
+    entry_points: Vec<String>,      // Just track entry point names
+    types: HashMap<String, String>, // type name -> wrapper type
 }
 
 impl CrateWrapper {
     unsafe fn load(crate_name: &str, so_path: &str) -> Result<Self, Box<dyn std::error::Error>> {
         println!("🔧 Wrapping crate: {}", crate_name);
-        
+
         let library = Library::new(so_path)?;
         let mut entry_points = Vec::new();
         let mut types = HashMap::new();
-        
+
         // Wrap common rustc functions with goo
         match crate_name {
             "rustc_driver" => {
@@ -88,13 +85,8 @@ impl CrateWrapper {
                 println!("   📦 Generic wrapper for {}", crate_name);
             }
         }
-        
-        Ok(Self {
-            name: crate_name.to_string(),
-            library,
-            entry_points,
-            types,
-        })
+
+        Ok(Self { name: crate_name.to_string(), library, entry_points, types })
     }
 }
 
@@ -105,15 +97,12 @@ pub struct ZombieSOSystem {
 
 impl ZombieSOSystem {
     pub fn new() -> Self {
-        Self {
-            load_order: CrateLoadOrder::from_build_log(),
-            loaded_crates: HashMap::new(),
-        }
+        Self { load_order: CrateLoadOrder::from_build_log(), loaded_crates: HashMap::new() }
     }
-    
+
     pub fn load_all_crates(&mut self, deps_dir: &str) -> Result<(), Box<dyn std::error::Error>> {
         println!("🧟 Loading crates in dependency order...");
-        
+
         for crate_name in &self.load_order.crates {
             if let Ok(so_path) = self.find_crate_so(deps_dir, crate_name) {
                 unsafe {
@@ -125,28 +114,32 @@ impl ZombieSOSystem {
                 println!("⚠️  Skipping missing crate: {}", crate_name);
             }
         }
-        
+
         Ok(())
     }
-    
-    fn find_crate_so(&self, deps_dir: &str, crate_name: &str) -> Result<String, Box<dyn std::error::Error>> {
+
+    fn find_crate_so(
+        &self,
+        deps_dir: &str,
+        crate_name: &str,
+    ) -> Result<String, Box<dyn std::error::Error>> {
         let dir = std::fs::read_dir(deps_dir)?;
         let prefix = format!("lib{}", crate_name.replace("_", "_"));
-        
+
         for entry in dir {
             let entry = entry?;
             let path = entry.path();
-            
+
             if let Some(filename) = path.file_name().and_then(|n| n.to_str()) {
                 if filename.starts_with(&prefix) && filename.ends_with(".so") {
                     return Ok(path.to_string_lossy().to_string());
                 }
             }
         }
-        
+
         Err(format!("No .so found for crate: {}", crate_name).into())
     }
-    
+
     pub fn has_entry_point(&self, crate_name: &str, func_name: &str) -> bool {
         if let Some(wrapper) = self.loaded_crates.get(crate_name) {
             wrapper.entry_points.contains(&func_name.to_string())
@@ -154,7 +147,7 @@ impl ZombieSOSystem {
             false
         }
     }
-    
+
     pub fn get_wrapped_type(&self, crate_name: &str, type_name: &str) -> Option<&String> {
         self.loaded_crates.get(crate_name)?.types.get(type_name)
     }

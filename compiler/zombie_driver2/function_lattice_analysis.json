@@ -1,0 +1,397 @@
+{
+  "analysis_type": "function_lattice",
+  "complexity_distribution": [
+    {
+      "complexity_class": "Conditional",
+      "function_count": 46
+    },
+    {
+      "complexity_class": "Transformation",
+      "function_count": 34
+    },
+    {
+      "complexity_class": "Aggregation",
+      "function_count": 4
+    }
+  ],
+  "dimension_analysis": [
+    {
+      "function_count": 24,
+      "input_dimension": 1,
+      "output_cardinality": null
+    },
+    {
+      "function_count": 23,
+      "input_dimension": 0,
+      "output_cardinality": 1
+    },
+    {
+      "function_count": 12,
+      "input_dimension": 1,
+      "output_cardinality": 2
+    },
+    {
+      "function_count": 8,
+      "input_dimension": 0,
+      "output_cardinality": 2
+    },
+    {
+      "function_count": 4,
+      "input_dimension": 2,
+      "output_cardinality": 2
+    },
+    {
+      "function_count": 4,
+      "input_dimension": 3,
+      "output_cardinality": null
+    },
+    {
+      "function_count": 3,
+      "input_dimension": 3,
+      "output_cardinality": 2
+    },
+    {
+      "function_count": 3,
+      "input_dimension": 2,
+      "output_cardinality": null
+    },
+    {
+      "function_count": 2,
+      "input_dimension": 4,
+      "output_cardinality": null
+    },
+    {
+      "function_count": 1,
+      "input_dimension": 4,
+      "output_cardinality": 1
+    }
+  ],
+  "lattice_classes": [
+    {
+      "function_count": 20,
+      "functions": [
+        "test_Some",
+        "test_new",
+        "resolved",
+        "resolved",
+        "resolved",
+        "resolved",
+        "resolved",
+        "resolved",
+        "resolved",
+        "resolved",
+        "test_start_time",
+        "test_install_ice_hook",
+        "main",
+        "test_early_dcx",
+        "test_default",
+        "test_DEFAULT_BUG_REPORT_URL",
+        "main",
+        "test_fn",
+        "main",
+        "main"
+      ],
+      "signature": {
+        "complexity_class": "Transformation",
+        "input_arity": 0,
+        "input_dimension": 0,
+        "output_cardinality": 1,
+        "output_type": "()",
+        "purity_level": "Pure"
+      }
+    },
+    {
+      "function_count": 5,
+      "functions": [
+        "classify_x86_instruction",
+        "extract_return_type",
+        "detect_architecture",
+        "type_to_string",
+        "generate_io_signature"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 1,
+        "input_dimension": 1,
+        "output_cardinality": null,
+        "output_type": "String",
+        "purity_level": "Pure"
+      }
+    },
+    {
+      "function_count": 5,
+      "functions": [
+        "generate_workspace_deps_from_project_root",
+        "find_cargo_tomls",
+        "parse_rmeta_data",
+        "find_rust_files",
+        "find_rust_files_in_repo"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 1,
+        "input_dimension": 1,
+        "output_cardinality": 2,
+        "output_type": "Result",
+        "purity_level": "Stateful"
+      }
+    },
+    {
+      "function_count": 4,
+      "functions": [
+        "main",
+        "find_analysis_tools",
+        "main",
+        "main"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 0,
+        "input_dimension": 0,
+        "output_cardinality": 2,
+        "output_type": "Result",
+        "purity_level": "Stateful"
+      }
+    },
+    {
+      "function_count": 2,
+      "functions": [
+        "count_statements_recursive",
+        "estimate_basic_blocks"
+      ],
+      "signature": {
+        "complexity_class": "Transformation",
+        "input_arity": 1,
+        "input_dimension": 1,
+        "output_cardinality": null,
+        "output_type": "usize",
+        "purity_level": "Pure"
+      }
+    },
+    {
+      "function_count": 2,
+      "functions": [
+        "main",
+        "main"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 0,
+        "input_dimension": 0,
+        "output_cardinality": 1,
+        "output_type": "()",
+        "purity_level": "Pure"
+      }
+    },
+    {
+      "function_count": 2,
+      "functions": [
+        "main",
+        "main"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 0,
+        "input_dimension": 0,
+        "output_cardinality": 2,
+        "output_type": "Result",
+        "purity_level": "Pure"
+      }
+    },
+    {
+      "function_count": 2,
+      "functions": [
+        "analyze_types",
+        "analyze_semantics"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 1,
+        "input_dimension": 1,
+        "output_cardinality": null,
+        "output_type": "tuple",
+        "purity_level": "Stateful"
+      }
+    },
+    {
+      "function_count": 2,
+      "functions": [
+        "add_prelude_syn",
+        "analyze_syn_ast"
+      ],
+      "signature": {
+        "complexity_class": "Transformation",
+        "input_arity": 1,
+        "input_dimension": 1,
+        "output_cardinality": 2,
+        "output_type": "Result",
+        "purity_level": "Stateful"
+      }
+    },
+    {
+      "function_count": 2,
+      "functions": [
+        "calculate_ast_complexity",
+        "calculate_complexity_from_code"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 1,
+        "input_dimension": 1,
+        "output_cardinality": null,
+        "output_type": "usize",
+        "purity_level": "Stateful"
+      }
+    },
+    {
+      "function_count": 2,
+      "functions": [
+        "rustc_driver_main",
+        "extract_crate_info"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 1,
+        "input_dimension": 1,
+        "output_cardinality": 2,
+        "output_type": "Result",
+        "purity_level": "Pure"
+      }
+    },
+    {
+      "function_count": 2,
+      "functions": [
+        "process_rlib",
+        "extract_basic_blocks"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 3,
+        "input_dimension": 3,
+        "output_cardinality": 2,
+        "output_type": "Result",
+        "purity_level": "Stateful"
+      }
+    },
+    {
+      "function_count": 2,
+      "functions": [
+        "extract_function_dependencies",
+        "extract_struct_dependencies"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 1,
+        "input_dimension": 1,
+        "output_cardinality": null,
+        "output_type": "Vec",
+        "purity_level": "Stateful"
+      }
+    },
+    {
+      "function_count": 1,
+      "functions": [
+        "classify_function_layer"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 2,
+        "input_dimension": 2,
+        "output_cardinality": null,
+        "output_type": "LayerType",
+        "purity_level": "Pure"
+      }
+    },
+    {
+      "function_count": 1,
+      "functions": [
+        "detect_vulnerability_patterns"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 1,
+        "input_dimension": 1,
+        "output_cardinality": null,
+        "output_type": "Vec",
+        "purity_level": "Unsafe"
+      }
+    },
+    {
+      "function_count": 1,
+      "functions": [
+        "compare_semantic_profiles"
+      ],
+      "signature": {
+        "complexity_class": "Transformation",
+        "input_arity": 2,
+        "input_dimension": 2,
+        "output_cardinality": 2,
+        "output_type": "Result",
+        "purity_level": "Pure"
+      }
+    },
+    {
+      "function_count": 1,
+      "functions": [
+        "analyze_character_frequency"
+      ],
+      "signature": {
+        "complexity_class": "Aggregation",
+        "input_arity": 1,
+        "input_dimension": 1,
+        "output_cardinality": 2,
+        "output_type": "Result",
+        "purity_level": "Stateful"
+      }
+    },
+    {
+      "function_count": 1,
+      "functions": [
+        "transform_struct"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 1,
+        "input_dimension": 1,
+        "output_cardinality": null,
+        "output_type": "TokenStream",
+        "purity_level": "Stateful"
+      }
+    },
+    {
+      "function_count": 1,
+      "functions": [
+        "generate_semantic_profile"
+      ],
+      "signature": {
+        "complexity_class": "Conditional",
+        "input_arity": 2,
+        "input_dimension": 2,
+        "output_cardinality": 2,
+        "output_type": "Result",
+        "purity_level": "Unsafe"
+      }
+    },
+    {
+      "function_count": 1,
+      "functions": [
+        "process_rmeta"
+      ],
+      "signature": {
+        "complexity_class": "Transformation",
+        "input_arity": 3,
+        "input_dimension": 3,
+        "output_cardinality": 2,
+        "output_type": "Result",
+        "purity_level": "Pure"
+      }
+    }
+  ],
+  "summary": {
+    "complexity_classes": 3,
+    "lattice_classes": 45,
+    "total_constants": 0,
+    "total_functions": 84
+  },
+  "timestamp": "2026-01-12T12:27:28.277069939+00:00"
+}

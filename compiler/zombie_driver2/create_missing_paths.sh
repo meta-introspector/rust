@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# Disable GNU pinentry
+export GPG_TTY=""
+export PINENTRY_USER_DATA="USE_CURSES=0"
+
 # Create missing target paths from strace
 
 echo "🔧 Creating missing target paths..."

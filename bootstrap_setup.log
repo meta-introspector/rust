@@ -1,68 +1,0 @@
-downloading https://static.rust-lang.org/dist/2025-10-30/rust-std-1.91.0-x86_64-unknown-linux-gnu.tar.xz
-                                                                                                                                   0.1%#                                                                                                                                  1.5%####                                                                                                                               3.4%#######                                                                                                                            5.7%##########                                                                                                                         8.1%#############                                                                                                                     10.8%#################                                                                                                                 13.8%#####################                                                                                                             17.1%##########################                                                                                                        20.7%################################                                                                                                  25.4%######################################                                                                                            30.2%#############################################                                                                                     35.2%###################################################                                                                               40.4%###########################################################                                                                       46.7%####################################################################                                                              53.4%#############################################################################                                                     60.4%######################################################################################                                            67.8%################################################################################################                                  75.3%########################################################################################################                          81.5%##################################################################################################################                89.1%###########################################################################################################################       96.6%################################################################################################################################ 100.0%
-downloading https://static.rust-lang.org/dist/2025-10-30/rustc-1.91.0-x86_64-unknown-linux-gnu.tar.xz
-##                                                                                                                                 2.0%################                                                                                                                  12.6%##############################                                                                                                    23.6%#######################################                                                                                           30.8%###################################################                                                                               39.8%############################################################                                                                      47.5%#######################################################################                                                           56.0%##################################################################################                                                64.2%#############################################################################################                                     73.0%########################################################################################################                          81.5%####################################################################################################################              90.6%################################################################################################################################ 100.0%
-downloading https://static.rust-lang.org/dist/2025-10-30/cargo-1.91.0-x86_64-unknown-linux-gnu.tar.xz
-###################################                                                                                               27.7%######################################################################################################################            92.9%################################################################################################################################ 100.0%
-extracting /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/cache/2025-10-30/rust-std-1.91.0-x86_64-unknown-linux-gnu.tar.xz
-extracting /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/cache/2025-10-30/rustc-1.91.0-x86_64-unknown-linux-gnu.tar.xz
-extracting /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/cache/2025-10-30/cargo-1.91.0-x86_64-unknown-linux-gnu.tar.xz
-The IN_NIX_SHELL environment variable is `impure`; you may need to set `patch-binaries-for-nix=true` in bootstrap.toml
-Building bootstrap
-error: failed to load manifest for workspace member `/mnt/data1/nix/vendor/rust/cargo2nix/tools/trait-fixer`
-referenced by workspace at `/mnt/data1/nix/vendor/rust/cargo2nix/Cargo.toml`
-
-Caused by:
-  failed to load manifest for dependency `trait-fixer-attribute-reader-mock`
-
-Caused by:
-  failed to load manifest for dependency `rustc_span`
-
-Caused by:
-  failed to load manifest for dependency `rustc_data_structures`
-
-Caused by:
-  failed to load manifest for dependency `rustc_index`
-
-Caused by:
-  failed to load manifest for dependency `rustc_macros`
-
-Caused by:
-  failed to load manifest for dependency `build_common`
-
-Caused by:
-  failed to read `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/build_common/Cargo.toml`
-
-Caused by:
-  No such file or directory (os error 2)
-failed to run: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage0/bin/cargo build --jobs=default --manifest-path /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/src/bootstrap/Cargo.toml -Zroot-dir=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build
-Build completed unsuccessfully in 0:00:10
-Building bootstrap
-error: failed to load manifest for workspace member `/mnt/data1/nix/vendor/rust/cargo2nix/tools/trait-fixer`
-referenced by workspace at `/mnt/data1/nix/vendor/rust/cargo2nix/Cargo.toml`
-
-Caused by:
-  failed to load manifest for dependency `trait-fixer-attribute-reader-mock`
-
-Caused by:
-  failed to load manifest for dependency `rustc_span`
-
-Caused by:
-  failed to load manifest for dependency `rustc_data_structures`
-
-Caused by:
-  failed to load manifest for dependency `rustc_index`
-
-Caused by:
-  failed to load manifest for dependency `rustc_macros`
-
-Caused by:
-  failed to load manifest for dependency `build_common`
-
-Caused by:
-  failed to read `/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust/compiler/build_common/Cargo.toml`
-
-Caused by:
-  No such file or directory (os error 2)
-failed to run: /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/build/x86_64-unknown-linux-gnu/stage0/bin/cargo build --jobs=default --manifest-path /mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build/src/bootstrap/Cargo.toml -Zroot-dir=/mnt/data1/nix/vendor/rust/cargo2nix/submodules/rust-build
-Build completed unsuccessfully in 0:00:00

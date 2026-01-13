@@ -1,21 +1,29 @@
-# Ignore build artifacts
-/target/
-**/*.syn_analysis.json
-**/*_combined.json
+# Rust build artifacts
+target/
+**/target/
+Cargo.lock
+**/Cargo.lock
 
-# Ignore large log files
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
 *.log
-rustc_*_build.log
-cargo_build.log
 
-# Ignore temporary analysis files
-*_analysis_files.txt
-analysis_files.txt
-all_*.txt
+# Secrets and keys
+*.pem
+*.key
+.env
+**/secrets/
+**/.solfunmeme-keys/
 
-# Keep source code and small config files
-!src/
-!Cargo.toml
-!build.rs
-!README.md
-!*.rs
+# Temporary files
+*.tmp
+*.bak

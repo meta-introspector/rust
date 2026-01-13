@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# Disable GNU pinentry
+export GPG_TTY=""
+export PINENTRY_USER_DATA="USE_CURSES=0"
+
 # Zombie compile with strace capture
 
 echo "🔍 Running zombie compile with strace..."

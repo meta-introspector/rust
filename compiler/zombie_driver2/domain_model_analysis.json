@@ -1,0 +1,387 @@
+{
+  "abstraction_levels": [
+    {
+      "concept_count": 92,
+      "level": "Abstract"
+    },
+    {
+      "concept_count": 3,
+      "level": "System"
+    },
+    {
+      "concept_count": 2,
+      "level": "Concrete"
+    },
+    {
+      "concept_count": 2,
+      "level": "Meta"
+    }
+  ],
+  "analysis_type": "domain_model",
+  "concepts": [
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 12,
+      "name": "main",
+      "related_functions": 12,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 8,
+      "name": "resolved",
+      "related_functions": 8,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 8,
+      "name": "test",
+      "related_functions": 8,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 7,
+      "name": "analyzer",
+      "related_functions": 7,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 5,
+      "name": "extract",
+      "related_functions": 5,
+      "semantic_category": "Action"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 4,
+      "name": "analyze",
+      "related_functions": 4,
+      "semantic_category": "Action"
+    },
+    {
+      "abstraction_level": "System",
+      "frequency": 4,
+      "name": "rust",
+      "related_functions": 4,
+      "semantic_category": "System"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 4,
+      "name": "find",
+      "related_functions": 4,
+      "semantic_category": "Action"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 3,
+      "name": "type",
+      "related_functions": 3,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Meta",
+      "frequency": 3,
+      "name": "semantic",
+      "related_functions": 3,
+      "semantic_category": "Property"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 3,
+      "name": "generate",
+      "related_functions": 3,
+      "semantic_category": "Action"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 3,
+      "name": "signature",
+      "related_functions": 3,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 3,
+      "name": "function",
+      "related_functions": 3,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 3,
+      "name": "basic",
+      "related_functions": 3,
+      "semantic_category": "Property"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "struct",
+      "related_functions": 2,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "rmeta",
+      "related_functions": 2,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "calculate",
+      "related_functions": 2,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "blocks",
+      "related_functions": 2,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "ast",
+      "related_functions": 2,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "repo",
+      "related_functions": 2,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "syn",
+      "related_functions": 2,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "process",
+      "related_functions": 2,
+      "semantic_category": "Action"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "detect",
+      "related_functions": 2,
+      "semantic_category": "Action"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "block",
+      "related_functions": 2,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "complexity",
+      "related_functions": 2,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "extractor",
+      "related_functions": 2,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "dependencies",
+      "related_functions": 2,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "tld",
+      "related_functions": 2,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "files",
+      "related_functions": 2,
+      "semantic_category": "Entity"
+    },
+    {
+      "abstraction_level": "Abstract",
+      "frequency": 2,
+      "name": "classify",
+      "related_functions": 2,
+      "semantic_category": "Action"
+    }
+  ],
+  "relationships": [
+    {
+      "from": "root",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "project"
+    },
+    {
+      "from": "root",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "deps"
+    },
+    {
+      "from": "root",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "workspace"
+    },
+    {
+      "from": "tomls",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "cargo"
+    },
+    {
+      "from": "start",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "time"
+    },
+    {
+      "from": "info",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "crate"
+    },
+    {
+      "from": "add",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "prelude"
+    },
+    {
+      "from": "statements",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "recursive"
+    },
+    {
+      "from": "statements",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "count"
+    },
+    {
+      "from": "prelude",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "add"
+    },
+    {
+      "from": "identifier",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "personal"
+    },
+    {
+      "from": "calculate",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "complexity"
+    },
+    {
+      "from": "hook",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "install"
+    },
+    {
+      "from": "hook",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "ice"
+    },
+    {
+      "from": "recursive",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "statements"
+    },
+    {
+      "from": "recursive",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "count"
+    },
+    {
+      "from": "time",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "start"
+    },
+    {
+      "from": "cargo",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "tomls"
+    },
+    {
+      "from": "organizer",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "directory"
+    },
+    {
+      "from": "character",
+      "relation": "Uses",
+      "strength": 1.0,
+      "to": "frequency"
+    }
+  ],
+  "semantic_categories": [
+    {
+      "category": "Entity",
+      "concept_count": 81
+    },
+    {
+      "category": "Action",
+      "concept_count": 7
+    },
+    {
+      "category": "System",
+      "concept_count": 5
+    },
+    {
+      "category": "Property",
+      "concept_count": 3
+    },
+    {
+      "category": "Data",
+      "concept_count": 2
+    },
+    {
+      "category": "Meta",
+      "concept_count": 1
+    }
+  ],
+  "summary": {
+    "functions_analyzed": 74,
+    "total_concepts": 99,
+    "total_relations": 296
+  },
+  "timestamp": "2026-01-12T12:27:28.282925345+00:00"
+}

@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# Disable GNU pinentry
+export GPG_TTY=""
+export PINENTRY_USER_DATA="USE_CURSES=0"
+
 # Test script to build and test each wrapper individually
 
 echo "🧟 Testing Zombie Driver Components"

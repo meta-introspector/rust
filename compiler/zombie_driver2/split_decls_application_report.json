@@ -1,0 +1,260 @@
+{
+  "analysis_type": "split_decls_application",
+  "repositories": [
+    {
+      "layer_count": 5,
+      "layers": [
+        {
+          "io_signature": "input → output",
+          "item_count": 6,
+          "name": "IO",
+          "sample_items": [
+            {
+              "complexity": 2,
+              "name": "parse_modular_key",
+              "type": "function"
+            },
+            {
+              "complexity": 6,
+              "name": "load_parser_functions",
+              "type": "function"
+            },
+            {
+              "complexity": 2,
+              "name": "dump_parser_data",
+              "type": "function"
+            }
+          ],
+          "type": "IO"
+        },
+        {
+          "io_signature": "error → result",
+          "item_count": 1,
+          "name": "Error",
+          "sample_items": [
+            {
+              "complexity": 1,
+              "name": "setup_hijack_environment",
+              "type": "function"
+            }
+          ],
+          "type": "Error"
+        },
+        {
+          "io_signature": "trait → impl",
+          "item_count": 4,
+          "name": "Interface",
+          "sample_items": [
+            {
+              "complexity": 16,
+              "name": "main",
+              "type": "function"
+            },
+            {
+              "complexity": 3,
+              "name": "extract_rust_code",
+              "type": "function"
+            },
+            {
+              "complexity": 8,
+              "name": "main",
+              "type": "function"
+            }
+          ],
+          "type": "Interface"
+        },
+        {
+          "io_signature": "() → struct",
+          "item_count": 45,
+          "name": "Data",
+          "sample_items": [
+            {
+              "complexity": 4,
+              "name": "TestType",
+              "type": "enum"
+            },
+            {
+              "complexity": 1,
+              "name": "TestFeature",
+              "type": "struct"
+            },
+            {
+              "complexity": 1,
+              "name": "AutoExperiment",
+              "type": "struct"
+            }
+          ],
+          "type": "Data"
+        },
+        {
+          "io_signature": "data → result",
+          "item_count": 91,
+          "name": "Logic",
+          "sample_items": [
+            {
+              "complexity": 8,
+              "name": "impl_AutoExperiment",
+              "type": "impl"
+            },
+            {
+              "complexity": 2,
+              "name": "main",
+              "type": "function"
+            },
+            {
+              "complexity": 11,
+              "name": "rust_demangle",
+              "type": "function"
+            }
+          ],
+          "type": "Logic"
+        }
+      ],
+      "repository": "."
+    },
+    {
+      "layer_count": 3,
+      "layers": [
+        {
+          "io_signature": "() → struct",
+          "item_count": 8,
+          "name": "Data",
+          "sample_items": [
+            {
+              "complexity": 1,
+              "name": "ProductionEnvironmentOps",
+              "type": "struct"
+            },
+            {
+              "complexity": 1,
+              "name": "ProductionFileSystemOps",
+              "type": "struct"
+            },
+            {
+              "complexity": 1,
+              "name": "MockEnvironmentOps",
+              "type": "struct"
+            }
+          ],
+          "type": "Data"
+        },
+        {
+          "io_signature": "trait → impl",
+          "item_count": 6,
+          "name": "Interface",
+          "sample_items": [
+            {
+              "complexity": 5,
+              "name": "EnvironmentOps",
+              "type": "trait"
+            },
+            {
+              "complexity": 5,
+              "name": "IOOps",
+              "type": "trait"
+            },
+            {
+              "complexity": 6,
+              "name": "FileSystemOps",
+              "type": "trait"
+            }
+          ],
+          "type": "Interface"
+        },
+        {
+          "io_signature": "data → result",
+          "item_count": 19,
+          "name": "Logic",
+          "sample_items": [
+            {
+              "complexity": 5,
+              "name": "impl_ProductionEnvironmentOps",
+              "type": "impl"
+            },
+            {
+              "complexity": 6,
+              "name": "impl_ProductionFileSystemOps",
+              "type": "impl"
+            },
+            {
+              "complexity": 5,
+              "name": "impl_MockEnvironmentOps",
+              "type": "impl"
+            }
+          ],
+          "type": "Logic"
+        }
+      ],
+      "repository": "./nix/vendor/rust/cargo2nix/submodules/split-decls-rs"
+    },
+    {
+      "layer_count": 2,
+      "layers": [
+        {
+          "io_signature": "data → result",
+          "item_count": 22,
+          "name": "Logic",
+          "sample_items": [
+            {
+              "complexity": 1,
+              "name": "test_Some",
+              "type": "function"
+            },
+            {
+              "complexity": 1,
+              "name": "add_prelude_syn",
+              "type": "function"
+            },
+            {
+              "complexity": 3,
+              "name": "main",
+              "type": "function"
+            }
+          ],
+          "type": "Logic"
+        },
+        {
+          "io_signature": "trait → impl",
+          "item_count": 1,
+          "name": "Interface",
+          "sample_items": [
+            {
+              "complexity": 3,
+              "name": "wrap_item",
+              "type": "function"
+            }
+          ],
+          "type": "Interface"
+        }
+      ],
+      "repository": "./nix/vendor/rust/cargo2nix/submodules/split-decls-genesis"
+    }
+  ],
+  "summary": {
+    "layer_types": [
+      {
+        "count": 3,
+        "type": "Interface"
+      },
+      {
+        "count": 3,
+        "type": "Logic"
+      },
+      {
+        "count": 2,
+        "type": "Data"
+      },
+      {
+        "count": 1,
+        "type": "Error"
+      },
+      {
+        "count": 1,
+        "type": "IO"
+      }
+    ],
+    "repositories_processed": 3,
+    "total_layers_created": 10
+  },
+  "timestamp": "2026-01-12T12:15:15.141577599+00:00"
+}

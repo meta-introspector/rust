@@ -1,4 +1,5 @@
 #![feature(rustc_private)]
+#![feature(str_as_str)]
 
 mod span_wrapper;
 mod ty_wrapper; 

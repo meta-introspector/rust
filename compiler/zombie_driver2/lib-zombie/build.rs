@@ -6,7 +6,7 @@ use std::path::Path;
 
 fn main() {
     let out_dir = env::var("OUT_DIR").unwrap();
-    
+
     // Generate wrappers for the problematic files
     generate_main_wrapper(&out_dir);
     generate_plugin_driver_wrapper(&out_dir);
@@ -25,14 +25,14 @@ fn generate_main_wrapper(out_dir: &str) {
                 }
                 pub fn run(self) -> Result<(), ()> { Ok(()) }
             }
-            
+
             pub enum Compilation { Continue, Stop }
-            
+
             pub trait Callbacks {
                 // Remove after_parsing - not in current API
             }
         }
-        
+
         pub mod rustc_interface {
             pub struct Queries;
             pub mod interface {
@@ -40,7 +40,7 @@ fn generate_main_wrapper(out_dir: &str) {
             }
         }
     };
-    
+
     let dest_path = Path::new(out_dir).join("main_wrapper.rs");
     fs::write(&dest_path, wrapper.to_string()).unwrap();
 }
@@ -51,14 +51,14 @@ fn generate_plugin_driver_wrapper(out_dir: &str) {
         pub struct PluginDriver {
             // Add fields as needed
         }
-        
+
         impl PluginDriver {
             pub fn new() -> Self {
                 Self::default()
             }
         }
     };
-    
+
     let dest_path = Path::new(out_dir).join("plugin_driver_wrapper.rs");
     fs::write(&dest_path, wrapper.to_string()).unwrap();
 }
@@ -68,7 +68,7 @@ fn generate_p2p_server_wrapper(out_dir: &str) {
         pub struct P2PPluginServer {
             driver: PluginDriver,
         }
-        
+
         impl P2PPluginServer {
             pub fn new() -> Self {
                 Self {
@@ -77,7 +77,7 @@ fn generate_p2p_server_wrapper(out_dir: &str) {
             }
         }
     };
-    
+
     let dest_path = Path::new(out_dir).join("p2p_server_wrapper.rs");
     fs::write(&dest_path, wrapper.to_string()).unwrap();
 }
@@ -91,7 +91,7 @@ fn generate_ty_wrapper(out_dir: &str) {
             }
         }
     };
-    
+
     let dest_path = Path::new(out_dir).join("ty_wrapper.rs");
     fs::write(&dest_path, wrapper.to_string()).unwrap();
 }

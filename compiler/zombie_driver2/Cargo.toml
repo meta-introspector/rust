@@ -4,10 +4,543 @@ version = "0.1.0"
 edition = "2021"
 
 [workspace]
+members = ["syn_moonshine"]
+
+[[bin]]
+name = "self_analyzer"
+path = "self_analyzer.rs"
+
+[[bin]]
+name = "basic_block_analyzer"
+path = "basic_block_analyzer.rs"
+
+[[bin]]
+name = "io_matrix_analyzer"
+path = "io_matrix_analyzer.rs"
+
+[[bin]]
+name = "unknown_type_classifier"
+path = "unknown_type_classifier.rs"
+
+[[bin]]
+name = "code_snippet_extractor"
+path = "code_snippet_extractor.rs"
+
+[[bin]]
+name = "meta_repo_analyzer"
+path = "meta_repo_analyzer.rs"
+
+[[bin]]
+name = "massive_rust_analyzer"
+path = "massive_rust_analyzer.rs"
+
+[[bin]]
+name = "git_structure_analyzer"
+path = "git_structure_analyzer.rs"
+
+[[bin]]
+name = "master_tld_analyzer"
+path = "master_tld_analyzer.rs"
+
+[[bin]]
+name = "tld_directory_organizer"
+path = "tld_directory_organizer.rs"
+
+[[bin]]
+name = "personal_repo_identifier"
+path = "personal_repo_identifier.rs"
+
+[[bin]]
+name = "rust_signature_extractor"
+path = "rust_signature_extractor.rs"
+
+[[bin]]
+name = "split_decls_applicator"
+path = "split_decls_applicator.rs"
+
+[[bin]]
+name = "function_lattice_analyzer"
+path = "function_lattice_analyzer.rs"
+
+[[bin]]
+name = "domain_model_analyzer"
+path = "domain_model_analyzer.rs"
+
+[[bin]]
+name = "typed_domain_analyzer"
+path = "typed_domain_analyzer.rs"
+
+[[bin]]
+name = "model_expander"
+path = "model_expander.rs"
+
+[[bin]]
+name = "continuous_expander"
+path = "continuous_expander.rs"
+
+[[bin]]
+name = "canonical_structure_builder"
+path = "canonical_structure_builder.rs"
+
+[[bin]]
+name = "complete_indexer"
+path = "complete_indexer.rs"
+
+[[bin]]
+name = "deduplicating_indexer"
+path = "deduplicating_indexer.rs"
+
+[[bin]]
+name = "code_finder"
+path = "code_finder.rs"
+
+[[bin]]
+name = "value_lattice_indexer"
+path = "value_lattice_indexer.rs"
+
+[[bin]]
+name = "value_lattice_server"
+path = "value_lattice_server.rs"
+
+[[bin]]
+name = "duplicate_block_detector"
+path = "duplicate_block_detector.rs"
+
+[[bin]]
+name = "semantic_signature_generator"
+path = "semantic_signature_generator.rs"
+
+[[bin]]
+name = "binary_signature_generator"
+path = "binary_signature_generator.rs"
 
 [[bin]]
 name = "zombie-rustc"
 path = "lib-zombie/src/bin/zombie_rustc.rs"
+
+[[bin]]
+name = "bytecode_decoder_discovery"
+path = "bytecode_decoder_discovery.rs"
+
+[[bin]]
+name = "spectral_bytecode_decoder"
+path = "spectral_bytecode_decoder.rs"
+
+[[bin]]
+name = "text_bit_analysis"
+path = "text_bit_analysis.rs"
+
+[[bin]]
+name = "merged_bit_constant_analysis"
+path = "merged_bit_constant_analysis.rs"
+
+[[bin]]
+name = "function_opcode_matrix"
+path = "function_opcode_matrix.rs"
+
+[[bin]]
+name = "ptrace_parser_interceptor"
+path = "ptrace_parser_interceptor.rs"
+
+[[bin]]
+name = "step2_extract_callgraph"
+path = "step2_extract_callgraph.rs"
+
+[[bin]]
+name = "step3_prepare_targets"  
+path = "step3_prepare_targets.rs"
+
+[[bin]]
+name = "step4_install_trampolines"
+path = "step4_install_trampolines.rs"
+
+[[bin]]
+name = "perf_rustc_tracer"
+path = "perf_rustc_tracer.rs"
+
+[[bin]]
+name = "goblin_symbol_extractor"
+path = "goblin_symbol_extractor.rs"
+
+[[bin]]
+name = "direct_parser_caller"
+path = "direct_parser_caller.rs"
+
+[[bin]]
+name = "test_parse"
+path = "test_parse.rs"
+
+[[bin]]
+name = "cargo_hijack_system"
+path = "cargo_hijack_system.rs"
+
+[[bin]]
+name = "symbol_ngram_clustering"
+path = "symbol_ngram_clustering.rs"
+
+[[bin]]
+name = "custom_demangler"
+path = "custom_demangler.rs"
+
+[[bin]]
+name = "instruction_decoding_proof"
+path = "instruction_decoding_proof.rs"
+
+[[bin]]
+name = "macro_pattern_proof"
+path = "macro_pattern_proof.rs"
+
+[[bin]]
+name = "auto_suggest_bad_data"
+path = "auto_suggest_bad_data.rs"
+
+[[bin]]
+name = "auto_test_suggestions"
+path = "auto_test_suggestions.rs"
+
+[[bin]]
+name = "evolving_rust_consumer"
+path = "evolving_rust_consumer.rs"
+
+[[bin]]
+name = "rust_consuming_fungus"
+path = "rust_consuming_fungus.rs"
+
+[[bin]]
+name = "address_learning_system"
+path = "address_learning_system.rs"
+
+[[bin]]
+name = "static_usage_analyzer"
+path = "static_usage_analyzer.rs"
+
+[[bin]]
+name = "automorphic_orbit_tracer"
+path = "automorphic_orbit_tracer.rs"
+
+[[bin]]
+name = "rust_language_constructor"
+path = "rust_language_constructor.rs"
+
+[[bin]]
+name = "string_codec_extractor"
+path = "string_codec_extractor.rs"
+
+[[bin]]
+name = "number_name_codec_extractor"
+path = "number_name_codec_extractor.rs"
+
+[[bin]]
+name = "modular_forms_analyzer"
+path = "modular_forms_analyzer.rs"
+
+[[bin]]
+name = "lmfdb_validator"
+path = "lmfdb_validator.rs"
+
+[[bin]]
+name = "automorphic_orbit_prover"
+path = "automorphic_orbit_prover.rs"
+
+[[bin]]
+name = "proof_validator"
+path = "proof_validator.rs"
+
+[[bin]]
+name = "symbol_lmfdb_mapper"
+path = "symbol_lmfdb_mapper.rs"
+
+[[bin]]
+name = "call_graph_containment_test"
+path = "call_graph_containment_test.rs"
+
+[[bin]]
+name = "type_propagation_glabulab"
+path = "type_propagation_glabulab.rs"
+
+[[bin]]
+name = "gogobglabulab_primes"
+path = "gogobglabulab_primes.rs"
+
+[[bin]]
+name = "linux_gogobglabulab"
+path = "linux_gogobglabulab.rs"
+
+[[bin]]
+name = "monster_group_connection"
+path = "monster_group_connection.rs"
+
+[[bin]]
+name = "magic_equation"
+path = "magic_equation.rs"
+
+[[bin]]
+name = "enum_modular_analysis"
+path = "enum_modular_analysis.rs"
+
+[[bin]]
+name = "comprehensive_enum_analysis"
+path = "comprehensive_enum_analysis.rs"
+
+[[bin]]
+name = "rust_periodic_table_generator"
+path = "rust_periodic_table_generator.rs"
+
+[[bin]]
+name = "lmfdb_prediction_validator"
+path = "lmfdb_prediction_validator.rs"
+
+[[bin]]
+name = "bott_periodic_report_generator"
+path = "bott_periodic_report_generator.rs"
+
+[[bin]]
+name = "huggingface_dataset_exporter"
+path = "huggingface_dataset_exporter.rs"
+
+[[bin]]
+name = "rdf_linked_data_generator"
+path = "rdf_linked_data_generator.rs"
+
+[[bin]]
+name = "complete_proof_trace_generator"
+path = "complete_proof_trace_generator.rs"
+
+[[bin]]
+name = "proof_evidence_exporter"
+path = "proof_evidence_exporter.rs"
+
+[[bin]]
+name = "memory_structured_exporter"
+path = "memory_structured_exporter.rs"
+
+[[bin]]
+name = "chunked_memory_exporter"
+path = "chunked_memory_exporter.rs"
+
+[[bin]]
+name = "complete_binary_analyzer"
+path = "complete_binary_analyzer.rs"
+
+[[bin]]
+name = "main_dependency_analyzer"
+path = "main_dependency_analyzer.rs"
+
+[[bin]]
+name = "top_functions_exporter"
+path = "top_functions_exporter.rs"
+
+[[bin]]
+name = "call_graph_exporter"
+path = "call_graph_exporter.rs"
+
+[[bin]]
+name = "huggingface_consolidator"
+path = "huggingface_consolidator.rs"
+
+[[bin]]
+name = "gogobglabulab_merger"
+path = "gogobglabulab_merger.rs"
+
+[[bin]]
+name = "gogobglabulab_rollup"
+path = "gogobglabulab_rollup.rs"
+
+[[bin]]
+name = "true_main_rollup"
+path = "true_main_rollup.rs"
+
+[[bin]]
+name = "call_count_analyzer"
+path = "call_count_analyzer.rs"
+
+[[bin]]
+name = "top_indirect_users"
+path = "top_indirect_users.rs"
+
+[[bin]]
+name = "run_compiler_analyzer"
+path = "run_compiler_analyzer.rs"
+
+[[bin]]
+name = "trace_run_compiler"
+path = "trace_run_compiler.rs"
+
+[[bin]]
+name = "compiler_simulator"
+path = "compiler_simulator.rs"
+
+[[bin]]
+name = "plantuml_generator"
+path = "plantuml_generator.rs"
+
+[[bin]]
+name = "meta_simulator"
+path = "meta_simulator.rs"
+
+[[bin]]
+name = "traced_meta_simulator"
+path = "traced_meta_simulator.rs"
+
+[[bin]]
+name = "provable_traced_simulator"
+path = "provable_traced_simulator.rs"
+
+[[bin]]
+name = "live_rustc_caller"
+path = "live_rustc_caller.rs"
+
+[[bin]]
+name = "enum_string_caller"
+path = "enum_string_caller.rs"
+
+[[bin]]
+name = "enum_string_validator"
+path = "enum_string_validator.rs"
+
+[[bin]]
+name = "enum_string_scanner"
+path = "enum_string_scanner.rs"
+
+[[bin]]
+name = "enum_csv_exporter"
+path = "enum_csv_exporter.rs"
+
+[[bin]]
+name = "decompilation_proof_validator"
+path = "decompilation_proof_validator.rs"
+
+[[bin]]
+name = "mathematical_constants_extractor"
+path = "mathematical_constants_extractor.rs"
+
+[[bin]]
+name = "modular_prime_lattice_generator"
+path = "modular_prime_lattice_generator.rs"
+
+[[bin]]
+name = "lattice_pole_calculator"
+path = "lattice_pole_calculator.rs"
+
+[[bin]]
+name = "full_rustc_lattice_analyzer"
+path = "full_rustc_lattice_analyzer.rs"
+
+[[bin]]
+name = "duplicate_function_detector"
+path = "duplicate_function_detector.rs"
+
+[[bin]]
+name = "sqrt_validator"
+path = "sqrt_validator.rs"
+
+[[bin]]
+name = "sqrt_n_sampling_validator"
+path = "sqrt_n_sampling_validator.rs"
+
+[[bin]]
+name = "three_sample_analyzer"
+path = "three_sample_analyzer.rs"
+
+[[bin]]
+name = "parquet_converter"
+path = "parquet_converter.rs"
+
+[[bin]]
+name = "unified_p2p_server"
+path = "unified_p2p_server.rs"
+
+[[bin]]
+name = "so_to_parquet"
+path = "so_to_parquet.rs"
+
+[[bin]]
+name = "schema_documenter"
+path = "schema_documenter.rs"
+
+[[bin]]
+name = "instruction_lattice_decoder"
+path = "instruction_lattice_decoder.rs"
+
+[[bin]]
+name = "semantic_monster_mapping"
+path = "semantic_monster_mapping.rs"
+
+[[bin]]
+name = "rustc_topological_reconstruction"
+path = "rustc_topological_reconstruction.rs"
+
+[[bin]]
+name = "symbolic_execution_engine"
+path = "symbolic_execution_engine.rs"
+
+[[bin]]
+name = "complete_bit_pattern_analysis"
+path = "complete_bit_pattern_analysis.rs"
+
+[[bin]]
+name = "comprehensive_string_analysis"
+path = "comprehensive_string_analysis.rs"
+
+[[bin]]
+name = "unified_monster_topology"
+path = "unified_monster_topology.rs"
+
+[[bin]]
+name = "label_ngram_monster_analysis"
+path = "label_ngram_monster_analysis.rs"
+
+[[bin]]
+name = "lattice_string_extraction"
+path = "lattice_string_extraction.rs"
+
+[[bin]]
+name = "monster_lattice_system"
+path = "monster_lattice_system.rs"
+
+[[bin]]
+name = "monster_labeling_system"
+path = "monster_labeling_system.rs"
+
+[[bin]]
+name = "ngram_monster_phi"
+path = "ngram_monster_phi.rs"
+
+[[bin]]
+name = "individual_symbol_analysis"
+path = "individual_symbol_analysis.rs"
+
+[[bin]]
+name = "iterative_prime_growth"
+path = "iterative_prime_growth.rs"
+
+[[bin]]
+name = "cheap_prime_extension"
+path = "cheap_prime_extension.rs"
+
+[[bin]]
+name = "symbol_monster_morse_analysis"
+path = "symbol_monster_morse_analysis.rs"
+
+[[bin]]
+name = "rustc_dataset_monster_analysis"
+path = "rustc_dataset_monster_analysis.rs"
+
+[[bin]]
+name = "syn_monster_topology"
+path = "syn_monster_topology.rs"
+
+[[bin]]
+name = "rigorous_monster_proof"
+path = "rigorous_monster_proof.rs"
+
+[[bin]]
+name = "monster_proof_42_steps"
+path = "monster_proof_42_steps.rs"
+
+[[bin]]
+name = "zombie_evolution"
+path = "zombie_evolution.rs"
 
 [[bin]]
 name = "rust-eigenmatrix"
@@ -25,8 +558,84 @@ path = "relationship_analysis.rs"
 name = "count-analysis"
 path = "count_analysis.rs"
 
+[[bin]]
+name = "spectral-filter-generator"
+path = "spectral_filter_generator.rs"
+
+[[bin]]
+name = "positional-prime-encoder"
+path = "positional_prime_encoder.rs"
+
+[[bin]]
+name = "signature-ast-classifier"
+path = "signature_ast_classifier.rs"
+
+[[bin]]
+name = "signature-compiler"
+path = "signature_compiler.rs"
+
+[[bin]]
+name = "example-extractor"
+path = "example_extractor.rs"
+
+[[bin]]
+name = "simple-example-extractor"
+path = "simple_example_extractor.rs"
+
+[[bin]]
+name = "signature-filter"
+path = "signature_filter.rs"
+
+[[bin]]
+name = "crate-signature-analysis"
+path = "crate_signature_analysis.rs"
+
+[[bin]]
+name = "eigenmatrix-resonance"
+path = "eigenmatrix_resonance.rs"
+
+[[bin]]
+name = "rust-soul-finder"
+path = "rust_soul_finder.rs"
+
+[[bin]]
+name = "crate-eigenvalue-analyzer"
+path = "crate_eigenvalue_analyzer.rs"
+
+[[bin]]
+name = "global-ast-collector"
+path = "global_ast_collector.rs"
+
+
+
+[[bin]]
+name = "spectral-zombie-rustc"
+path = "spectral_zombie_rustc.rs"
+
+[[bin]]
+name = "syn-node-matrix-generator"
+path = "syn_node_matrix_generator.rs"
+
 [dependencies]
+rand = "0.8"
+goblin = "0.8"
+libloading = "0.8"
+libp2p = { version = "0.53", features = ["gossipsub", "mdns", "tcp", "tokio"] }
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
 nalgebra = "0.33"
 serde_json = "1.0"
+syn = { version = "2.0", features = ["full", "visit"] }
+warp = "0.3"
+rustc-demangle = "0.1"
+chrono = { version = "0.4", features = ["serde"] }
+quote = "1.0"
 lib-zombie = { path = "lib-zombie" }
+arrow = "53.0"
+parquet = "53.0"
 syn-analyzer = { path = "syn-analyzer" }
+libc = "0.2.180"
+nix = "0.27"
+
+[build-dependencies]
+cc = "1.0"
